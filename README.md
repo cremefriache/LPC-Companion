@@ -18,7 +18,7 @@ Use the manual controls on their own, or opt into model tools for supported pres
 
 > **Development preview · `0.1.0-dev.38`**
 >
-> Tested on SillyTavern **1.19.0**. Install through SillyTavern’s **Extensions → Install extension** using the repository URL. Actual Android acceptance is still pending.
+> Tested on SillyTavern **1.18.0**. Install through SillyTavern’s **Extensions → Install extension** using the repository URL. Actual Android acceptance is still pending.
 
 ## Meet your companion
 
@@ -182,3 +182,6 @@ Built for the quiet details that make a character feel present.<br>
 </div>
 
 Brief actions and sequences repeat after a seven-second cooldown while their panel remains active, until stopped or replaced. Pause and hidden panels suspend playback. Repeats are page-local and do not resume after reload or a history/context change.
+
+### Special Thanks
+To the wonderful SillyTavern team for helping to create so many wonderful memories. https://github.com/SillyTavern/SillyTavern
