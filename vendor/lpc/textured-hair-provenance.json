@@ -1,0 +1,134 @@
+{
+  "repository": "https://github.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator",
+  "commit": "86160e7507d6841259cff624a51a63c1d4847ee3",
+  "metadata": {
+    "palette_definitions/hair/hair_ulpc.json": "1a15d9856ee8ab52d93baa334503fbca5a7261449320ae9d82e53bc962d5cc7b",
+    "sheet_definitions/hair/afro/hair_afro.json": "529ff4da431f44fe589f8c1c30d92aec1c67234772a4620cc202efd0d3418815",
+    "sheet_definitions/hair/curly/hair_curly_short.json": "bf703e31625d538144b1d3c11bd2a30c440cb8741987b8f8683c0f0f069d7761"
+  },
+  "sprites": {
+    "spritesheets/hair/afro/adult/idle.png": "c680cfe8d8afad2a733aac79d7250dcc52f8f45d413b8806a2e5da72366b0386",
+    "spritesheets/hair/afro/adult/walk.png": "3f01666af81773d3a844b121547f59389bbf4145ef5ad05c76ccbd1de357d134",
+    "spritesheets/hair/afro/adult/run.png": "17821109c342f1be81aec3abcdeb07db5a6f0b70ce12385e1d0b013dededfca2",
+    "spritesheets/hair/afro/adult/jump.png": "61babd0dd63afba164856abb8ddb99edaaec2021b6f7caa7c8fb346beda0b008",
+    "spritesheets/hair/afro/adult/spellcast.png": "6898b55b43b9e08b5bbe00c91af05f5501f4b2771c779e8252366ddd9a75c7c7",
+    "spritesheets/hair/afro/adult/sit.png": "03b0112786e172cff58d7b117308184c2dc6f8a13ee2bd64f9c3ba349e48ac07",
+    "spritesheets/hair/afro/adult/emote.png": "d22e4069cfbc0d3be233de1e7d63b81102512cd57d7e1278001fa01e568b47fc",
+    "spritesheets/hair/curly_short/adult/idle.png": "c383cbe299a49d09aea9fa90a0feca4f8a08bfd1501ee4b325a92ad45f92c22e",
+    "spritesheets/hair/curly_short/adult/walk.png": "aca65f3f0e4c16ae936a9ed5aa78ffe439cc8f6abc9df79cbe796bae308e7317",
+    "spritesheets/hair/curly_short/adult/run.png": "d462f02ed31b26e668066e97fa92aafed39db7f07054b34655765ffa931c9722",
+    "spritesheets/hair/curly_short/adult/jump.png": "1a3dab74e08e1406d48cc4701d3609f5e84730cc35a9c339272acc1be2b33c93",
+    "spritesheets/hair/curly_short/adult/spellcast.png": "9b7cd44577454b573e94731c4aa1bf12b398dfb95acd387b0186fc0a8c54c16a",
+    "spritesheets/hair/curly_short/adult/sit.png": "2eba97c76c47e6d441cb0a74cb56990b04c874dc655a165bb957de7317c447c2",
+    "spritesheets/hair/curly_short/adult/emote.png": "5ffd62d37b6c0b8894e3aa47f7c7e44a66203eff9cdf029b7ba14a9c37b5ecde"
+  },
+  "items": {
+    "hair_afro": {
+      "name": "Afro",
+      "slot": "hair",
+      "bodyTypes": [
+        "male",
+        "female"
+      ],
+      "counterparts": {},
+      "material": "hair",
+      "sourcePalette": "orange",
+      "selectedLicense": "CC0",
+      "layers": [
+        {
+          "z": 120,
+          "required": true,
+          "paths": {
+            "idle": "spritesheets/hair/afro/adult/idle.png",
+            "walk": "spritesheets/hair/afro/adult/walk.png",
+            "run": "spritesheets/hair/afro/adult/run.png",
+            "jump": "spritesheets/hair/afro/adult/jump.png",
+            "spellcast": "spritesheets/hair/afro/adult/spellcast.png",
+            "sit": "spritesheets/hair/afro/adult/sit.png",
+            "emote": "spritesheets/hair/afro/adult/emote.png"
+          }
+        }
+      ],
+      "requiredLayerCount": 1,
+      "occupies": [
+        "hair"
+      ],
+      "requires": {},
+      "conflictsWith": [],
+      "credits": [
+        {
+          "file": "hair/afro",
+          "notes": "",
+          "authors": [
+            "bluecarrot16"
+          ],
+          "licenses": [
+            "CC0"
+          ],
+          "urls": [
+            "https://opengameart.org/content/lpc-hair"
+          ]
+        }
+      ],
+      "upstreamSource": {
+        "repository": "https://github.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator",
+        "commit": "86160e7507d6841259cff624a51a63c1d4847ee3",
+        "itemId": "hair_afro"
+      }
+    },
+    "hair_curly_short": {
+      "name": "Curly short",
+      "slot": "hair",
+      "bodyTypes": [
+        "male",
+        "female"
+      ],
+      "counterparts": {},
+      "material": "hair",
+      "sourcePalette": "orange",
+      "selectedLicense": "OGA-BY 3.0",
+      "layers": [
+        {
+          "z": 120,
+          "required": true,
+          "paths": {
+            "idle": "spritesheets/hair/curly_short/adult/idle.png",
+            "walk": "spritesheets/hair/curly_short/adult/walk.png",
+            "run": "spritesheets/hair/curly_short/adult/run.png",
+            "jump": "spritesheets/hair/curly_short/adult/jump.png",
+            "spellcast": "spritesheets/hair/curly_short/adult/spellcast.png",
+            "sit": "spritesheets/hair/curly_short/adult/sit.png",
+            "emote": "spritesheets/hair/curly_short/adult/emote.png"
+          }
+        }
+      ],
+      "requiredLayerCount": 1,
+      "occupies": [
+        "hair"
+      ],
+      "requires": {},
+      "conflictsWith": [],
+      "credits": [
+        {
+          "file": "hair/curly_short",
+          "notes": "",
+          "authors": [
+            "ElizaWy"
+          ],
+          "licenses": [
+            "OGA-BY 3.0"
+          ],
+          "urls": [
+            "https://opengameart.org/content/lpc-hair",
+            "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
+          ]
+        }
+      ],
+      "upstreamSource": {
+        "repository": "https://github.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator",
+        "commit": "86160e7507d6841259cff624a51a63c1d4847ee3",
+        "itemId": "hair_curly_short"
+      }
+    }
+  }
+}

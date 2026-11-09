@@ -1,0 +1,2 @@
+export const phaseLayers=(plan,itemId)=>plan.layers.filter(l=>l.itemId===itemId).map(l=>({path:l.path,sha256:l.sha256,layer:l.layer,z:l.z,isMask:l.isMask,sourceWidth:l.sourceWidth,sourceHeight:l.sourceHeight,frames:l.frames}));
+export const phaseLayout=plan=>({width:plan.width,height:plan.height,frameWidth:plan.layout.frameWidth,directions:plan.layout.directions,cycle:plan.layout.cycle,authoredDirectionOnly:plan.layout.authoredDirectionOnly});

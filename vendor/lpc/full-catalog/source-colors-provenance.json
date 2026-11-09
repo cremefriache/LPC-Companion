@@ -1,0 +1,10 @@
+{
+  "commit": "86160e7507d6841259cff624a51a63c1d4847ee3",
+  "scope": "Visible RGB histogram over entire unchanged source PNGs, including unused rows. Discovery only; a whole-sheet match does not prove each playable frame or color channel is effective.",
+  "summary": {
+    "sourceBlobs": 72914,
+    "uniqueSha256": 72914,
+    "maxVisibleColors": 433
+  },
+  "decodedDataSha256": "0692b037ddaed08264798ded1bc2da1d2b316b98ad7e7d71caec09a82fe67f29"
+}

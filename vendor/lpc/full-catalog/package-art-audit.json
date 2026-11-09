@@ -1,0 +1,11 @@
+{
+  "scope": "Every unique original banked PNG through the actual source-package base64/PNG/dimension/CRC/hash validator; no animation or full outfit compatibility claim.",
+  "sourceCommit": "86160e7507d6841259cff624a51a63c1d4847ee3",
+  "libraryIndexSha256": "b0579d8d5445de198088b2e0ad465231d5a163b29cce9dfb31c1deaaaa4b7257",
+  "validatorSourceSha256": "893cd7c490b42068c8074d730411ac8864932cc8b39cc26af15f0515dd70aab5",
+  "blobs": 72914,
+  "paths": 73924,
+  "pngBytes": 104256434,
+  "allCanonicalBase64": true,
+  "allDimensionsChunksCrcAndHashes": true
+}

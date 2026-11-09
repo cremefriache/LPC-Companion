@@ -1,0 +1,522 @@
+{
+  "schemaVersion": 1,
+  "kind": "reviewed-source-repairs",
+  "commit": "86160e7507d6841259cff624a51a63c1d4847ee3",
+  "originalMetadata": {
+    "sheet_definitions/hair/short/hair_messy.json": "155e370cea179e6bd9f2efe4656a2ac1c1bb23fa0eaa4eb8872aefdfc384e3e5",
+    "sheet_definitions/weapons/shields/engrailed/shield_two_engrailed_trim.json": "9dd0430391b37d119d6b753369e9b867ed1116d3ddc7bf462cdc2b0b8d7ee264",
+    "sheet_definitions/headwear/coverings/headbands/hat_headband_kerchief.json": "e9603e91845855d3ba532e09b6eec2f1976888016964a45570ffb942570873d7",
+    "sheet_definitions/hair/mustaches/beards_handlebar.json": "34cdf7677680a40e6f17c5d7e10c999818f467a4c78f8acfa0ae576f622ed61a",
+    "sheet_definitions/head/faces/face_shame.json": "ed1d18eead51fd3f0105a614d024a37c4641f78ee4ec582d1a09db5ed84f1465",
+    "sheet_definitions/head/heads/human/heads_human_female_elderly.json": "c5aaa131082b36e154317fb55b31afacc5945aaf24e6a43750b7bd675629ffc3",
+    "sheet_definitions/head/heads/human/heads_human_male_elderly.json": "9341b060e5d162565b93a43c2ea91575bf339a9094fe3fd5b0c440b436cf4cbd",
+    "sheet_definitions/head/faces/face_angry2.json": "4fac3aa372d7d795fd55cc778445e770b0e7c477da7a7e731a1c7985a7f5751f",
+    "sheet_definitions/head/faces/face_sad2.json": "1bd2b333224c9980e95fc1f3daf69ce0c73be11b4335b05e7430e0b35ed35f52",
+    "sheet_definitions/head/faces/face_happy2.json": "5c79ef4a2005dcc21519a7b819f6a6a3ceda7e7660abeac6c55deb00a17afdec"
+  },
+  "selectedLicenses": {
+    "hair_messy": "OGA-BY 3.0",
+    "shield_two_engrailed_trim": "OGA-BY 3.0",
+    "hat_headband_kerchief": "OGA-BY 3.0",
+    "beards_handlebar": "OGA-BY 3.0",
+    "face_shame": "OGA-BY 3.0",
+    "heads_human_female_elderly": "OGA-BY 3.0",
+    "heads_human_male_elderly": "OGA-BY 3.0",
+    "face_angry2": "CC-BY-SA 3.0",
+    "face_sad2": "CC-BY-SA 3.0",
+    "face_happy2": "CC-BY-SA 3.0"
+  },
+  "repairs": [
+    {
+      "id": "child-messy-universal-raven",
+      "itemId": "hair_messy",
+      "layer": 1,
+      "bodies": [
+        "child"
+      ],
+      "sourcePath": "spritesheets/hair/messy/child/raven.png",
+      "actionRows": {
+        "walk": 8
+      },
+      "paletteBases": {
+        "hair": "hair.ulpc.raven"
+      },
+      "reason": "The declared split recolorable sheets are absent. The pinned original child Raven universal sheet has the canonical Raven palette and supplies only Walk; every other legacy action row is fully blank.",
+      "evidence": {
+        "width": 768,
+        "height": 1344,
+        "rowNonblankPixels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2889,
+          1485,
+          1854,
+          2286,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "visibleColors": [
+          "#010107",
+          "#040B18",
+          "#061421",
+          "#071F2A",
+          "#0D384D"
+        ],
+        "sourcePalette": [
+          "#010107",
+          "#040B18",
+          "#061421",
+          "#071F2A",
+          "#0D384D",
+          "#1A5369"
+        ],
+        "allVisibleColorsExactlyInSourcePalette": true,
+        "sourceActions": "Only original Walk rows 8\u201311 contain artwork; all other legacy standard rows are blank and reject."
+      }
+    },
+    {
+      "id": "engrailed-trim-background-filename",
+      "itemId": "shield_two_engrailed_trim",
+      "layer": 1,
+      "bodies": [
+        "male",
+        "female",
+        "muscular",
+        "pregnant"
+      ],
+      "pathAliases": {
+        "spritesheets/shield/two_engrailed/trim/bg/spellcast/two_engrailed_trim.png": "spritesheets/shield/two_engrailed/trim/bg/spellcast/two_engrailed.png",
+        "spritesheets/shield/two_engrailed/trim/bg/thrust/two_engrailed_trim.png": "spritesheets/shield/two_engrailed/trim/bg/thrust/two_engrailed.png",
+        "spritesheets/shield/two_engrailed/trim/bg/walk/two_engrailed_trim.png": "spritesheets/shield/two_engrailed/trim/bg/walk/two_engrailed.png",
+        "spritesheets/shield/two_engrailed/trim/bg/slash/two_engrailed_trim.png": "spritesheets/shield/two_engrailed/trim/bg/slash/two_engrailed.png",
+        "spritesheets/shield/two_engrailed/trim/bg/shoot/two_engrailed_trim.png": "spritesheets/shield/two_engrailed/trim/bg/shoot/two_engrailed.png",
+        "spritesheets/shield/two_engrailed/trim/bg/hurt/two_engrailed_trim.png": "spritesheets/shield/two_engrailed/trim/bg/hurt/two_engrailed.png"
+      },
+      "reason": "Every existing background Trim sheet uses two_engrailed.png while its required foreground sheets use two_engrailed_trim.png. Correct only these six exact background paths."
+    },
+    {
+      "id": "kerchief-brown-source-palette",
+      "itemId": "hat_headband_kerchief",
+      "layer": 1,
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "paletteBases": {
+        "headcover": "cloth.ulpc.brown"
+      },
+      "reason": "All fifteen original sheets use the exact pinned cloth Brown palette, while metadata declares White. Correct only the source palette used for recoloring; original PNGs and selected target colors are unchanged.",
+      "evidence": {
+        "allVisibleColorsExactlyInSourcePalette": true,
+        "sourcePalette": [
+          "#1D131E",
+          "#411E05",
+          "#4B2B13",
+          "#62351C",
+          "#744B30",
+          "#996B4A"
+        ],
+        "sheets": [
+          {
+            "path": "spritesheets/hat/pirate/kerchief/adult/backslash.png",
+            "sha256": "4c42ebc83801e743f78633a92211c24475632ae61829bcc7603b26eb0496d250",
+            "visibleColors": [
+              "#1D131E",
+              "#411E05",
+              "#4B2B13",
+              "#62351C",
+              "#744B30"
+            ]
+          },
+          {
+            "path": "spritesheets/hat/pirate/kerchief/adult/climb.png",
+            "sha256": "9934bff4de238a81a6917302e307c14413b073174e7f272207bd0f44f40714bb",
+            "visibleColors": [
+              "#1D131E",
+              "#411E05",
+              "#4B2B13",
+              "#62351C",
+              "#744B30"
+            ]
+          },
+          {
+            "path": "spritesheets/hat/pirate/kerchief/adult/combat_idle.png",
+            "sha256": "7f05c8356d67ca11f538b4bec5f15f08abd86cb55707f981aff0bfecd6aa901b",
+            "visibleColors": [
+              "#1D131E",
+              "#411E05",
+              "#4B2B13",
+              "#62351C",
+              "#744B30"
+            ]
+          },
+          {
+            "path": "spritesheets/hat/pirate/kerchief/adult/emote.png",
+            "sha256": "be55b478b5470f6f47824153d7a0830f6f6cdc91a653814403adde8fd758ecf5",
+            "visibleColors": [
+              "#1D131E",
+              "#411E05",
+              "#4B2B13",
+              "#62351C",
+              "#744B30"
+            ]
+          },
+          {
+            "path": "spritesheets/hat/pirate/kerchief/adult/halfslash.png",
+            "sha256": "3b65d7f6355a25b9dc117f21f2fbb195415f951df5ff11f6a071ad2b7575586c",
+            "visibleColors": [
+              "#1D131E",
+              "#411E05",
+              "#4B2B13",
+              "#62351C",
+              "#744B30"
+            ]
+          },
+          {
+            "path": "spritesheets/hat/pirate/kerchief/adult/hurt.png",
+            "sha256": "3a34f7c7b30dc8c5142880cab14e3460af76f29c4de420a0f32b5498e4d9662d",
+            "visibleColors": [
+              "#1D131E",
+              "#411E05",
+              "#4B2B13",
+              "#62351C",
+              "#744B30"
+            ]
+          },
+          {
+            "path": "spritesheets/hat/pirate/kerchief/adult/idle.png",
+            "sha256": "c366f9bfef51865c9e5258fa77aa47d6a287ebec52bdb8a1d655606269503d8b",
+            "visibleColors": [
+              "#1D131E",
+              "#411E05",
+              "#4B2B13",
+              "#62351C",
+              "#744B30"
+            ]
+          },
+          {
+            "path": "spritesheets/hat/pirate/kerchief/adult/jump.png",
+            "sha256": "2489bd5846e073e3e8f9dd4e6b0a877b50d8cdef01a7fd01621497358144ef6a",
+            "visibleColors": [
+              "#1D131E",
+              "#411E05",
+              "#4B2B13",
+              "#62351C",
+              "#744B30"
+            ]
+          },
+          {
+            "path": "spritesheets/hat/pirate/kerchief/adult/run.png",
+            "sha256": "9375f69889838fe4c4a5ba1d566ad4820b3af4c5dc2e32d36fa667248be7ddd1",
+            "visibleColors": [
+              "#1D131E",
+              "#411E05",
+              "#4B2B13",
+              "#62351C",
+              "#744B30"
+            ]
+          },
+          {
+            "path": "spritesheets/hat/pirate/kerchief/adult/shoot.png",
+            "sha256": "6387dcfcbb99ed43fe5cfa1a2fd81ea5c1aa2ccaba68ea9d5ca8295a3d4ca097",
+            "visibleColors": [
+              "#1D131E",
+              "#411E05",
+              "#4B2B13",
+              "#62351C",
+              "#744B30"
+            ]
+          },
+          {
+            "path": "spritesheets/hat/pirate/kerchief/adult/sit.png",
+            "sha256": "88653e5fbf4c55c105a6328612c3aaf52d31cf5d421f4255ef2393b71c31546b",
+            "visibleColors": [
+              "#1D131E",
+              "#411E05",
+              "#4B2B13",
+              "#62351C",
+              "#744B30"
+            ]
+          },
+          {
+            "path": "spritesheets/hat/pirate/kerchief/adult/slash.png",
+            "sha256": "acadd977ac3bc85a2b7d41f517332685c5bc436671aeb660243547b0c1e1b7c3",
+            "visibleColors": [
+              "#1D131E",
+              "#411E05",
+              "#4B2B13",
+              "#62351C",
+              "#744B30"
+            ]
+          },
+          {
+            "path": "spritesheets/hat/pirate/kerchief/adult/spellcast.png",
+            "sha256": "d098c559c893f60e199405973cbb796d7d0a485546f547331a6781c14bedca86",
+            "visibleColors": [
+              "#1D131E",
+              "#411E05",
+              "#4B2B13",
+              "#62351C",
+              "#744B30"
+            ]
+          },
+          {
+            "path": "spritesheets/hat/pirate/kerchief/adult/thrust.png",
+            "sha256": "91f6e5a950ac3e2de2c1b862a8090dbd2844323479887c9a30a399747284f750",
+            "visibleColors": [
+              "#1D131E",
+              "#411E05",
+              "#4B2B13",
+              "#62351C",
+              "#744B30"
+            ]
+          },
+          {
+            "path": "spritesheets/hat/pirate/kerchief/adult/walk.png",
+            "sha256": "69c0626ea41104e37e764a9c81f7c17ab902e50af17c66fdcf3347c7a5a1dbd0",
+            "visibleColors": [
+              "#1D131E",
+              "#411E05",
+              "#4B2B13",
+              "#62351C",
+              "#744B30"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "handlebar-revised-blonde-base",
+      "itemId": "beards_handlebar",
+      "layer": 1,
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "paletteBases": {
+        "mustache": "hair.lpcr.blonde"
+      },
+      "reason": "All visible mustache pixels belong exactly to the authored Revised Blonde ramp, not the declared Universal Orange base.",
+      "paletteOnly": true,
+      "evidenceFile": "evidence/full-catalog-engine/palette-review.json",
+      "message": "Reviewed source-palette correction keeps the selected hair color consistent."
+    },
+    {
+      "id": "shame-explicit-eye-source",
+      "itemId": "face_shame",
+      "layer": 1,
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "paletteSources": {
+        "eyes": [
+          "#293D4B",
+          "#5187B3",
+          "#50D4EC"
+        ]
+      },
+      "reason": "The eye colors exactly match the explicit source ramp supplied by the same authoring family of sibling expression metadata; the Shame record omits it.",
+      "paletteOnly": true,
+      "evidenceFile": "evidence/full-catalog-engine/palette-review.json",
+      "message": "Reviewed source-palette correction keeps the selected eye color consistent."
+    },
+    {
+      "id": "elder-female-explicit-eye-source",
+      "itemId": "heads_human_female_elderly",
+      "layer": 1,
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "paletteSources": {
+        "eyes": [
+          "#18506F",
+          "#4F8FBA",
+          "#6CDCE7"
+        ]
+      },
+      "reason": "The pinned elder iris uses its own three-shade blue ramp, with white sclera remaining fixed.",
+      "paletteOnly": true,
+      "evidenceFile": "evidence/full-catalog-engine/palette-review.json",
+      "message": "Reviewed source-palette correction keeps the selected eye color consistent."
+    },
+    {
+      "id": "elder-male-explicit-eye-source",
+      "itemId": "heads_human_male_elderly",
+      "layer": 1,
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "paletteSources": {
+        "eyes": [
+          "#18506F",
+          "#4F8FBA",
+          "#6CDCE7"
+        ]
+      },
+      "reason": "The pinned elder iris uses the same three-shade ramp as its paired female head, with white sclera remaining fixed.",
+      "paletteOnly": true,
+      "evidenceFile": "evidence/full-catalog-engine/palette-review.json",
+      "message": "Reviewed source-palette correction keeps the selected eye color consistent."
+    },
+    {
+      "id": "legacy-angry2-skin-source",
+      "itemId": "face_angry2",
+      "layer": 1,
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "paletteSources": {
+        "expression": [
+          "#281820",
+          "#9E3E37",
+          "#D28560",
+          "#EAA377",
+          "#FDD5B7",
+          "#FBECE6"
+        ]
+      },
+      "reason": "The original credited 2012 accessories.xcf Male Base/Female Base and expression layers prove this six-shade legacy skin ramp. Correct only skin; keep fixed blush, eye and other detail pixels unchanged.",
+      "paletteOnly": true,
+      "evidenceFile": "evidence/full-catalog-engine/palette-review.json",
+      "message": "Reviewed source-palette correction keeps the selected skin tone consistent."
+    },
+    {
+      "id": "legacy-sad2-skin-source",
+      "itemId": "face_sad2",
+      "layer": 1,
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "paletteSources": {
+        "expression": [
+          "#281820",
+          "#9E3E37",
+          "#D28560",
+          "#EAA377",
+          "#FDD5B7",
+          "#FBECE6"
+        ]
+      },
+      "reason": "The original credited 2012 accessories.xcf Male Base/Female Base and expression layers prove this six-shade legacy skin ramp. Correct only skin; keep fixed blush, eye and other detail pixels unchanged.",
+      "paletteOnly": true,
+      "evidenceFile": "evidence/full-catalog-engine/palette-review.json",
+      "message": "Reviewed source-palette correction keeps the selected skin tone consistent."
+    },
+    {
+      "id": "legacy-happy2-skin-source",
+      "itemId": "face_happy2",
+      "layer": 1,
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "paletteSources": {
+        "expression": [
+          "#281820",
+          "#9E3E37",
+          "#D28560",
+          "#EAA377",
+          "#FDD5B7",
+          "#FBECE6"
+        ]
+      },
+      "reason": "The original credited 2012 accessories.xcf Male Base/Female Base and expression layers prove this six-shade legacy skin ramp. Correct only skin; keep fixed blush, eye and other detail pixels unchanged.",
+      "paletteOnly": true,
+      "evidenceFile": "evidence/full-catalog-engine/palette-review.json",
+      "message": "Reviewed source-palette correction keeps the selected skin tone consistent."
+    }
+  ],
+  "assets": [
+    {
+      "path": "spritesheets/hair/messy/child/raven.png",
+      "gitBlob": "7088378be748c546ac9b9c721d2aad155aa78788",
+      "sha256": "8b62a25b3bafb6ad7893a918f3a201be89b5a0f76f77bad630481e880fadde93",
+      "width": 768,
+      "height": 1344
+    },
+    {
+      "path": "spritesheets/shield/two_engrailed/trim/bg/spellcast/two_engrailed.png",
+      "gitBlob": "77bc4aa351a944ae894ade28d1a8cbb7ed039f31",
+      "sha256": "51159069c2f0d37ac5efe11b91eacb212000064993f4eaba4eacd16ed7a17b47",
+      "width": 448,
+      "height": 256
+    },
+    {
+      "path": "spritesheets/shield/two_engrailed/trim/bg/thrust/two_engrailed.png",
+      "gitBlob": "fa165fc9f72af97b1332a3c382c6c933eda406d1",
+      "sha256": "52f3f12ccf0ddd5570c2116fcb6669e7e5132ec34fda4df5b847812cd4164478",
+      "width": 512,
+      "height": 256
+    },
+    {
+      "path": "spritesheets/shield/two_engrailed/trim/bg/walk/two_engrailed.png",
+      "gitBlob": "aa15dff7f022819c1c97f3f9f6e0c22ca03a4d4c",
+      "sha256": "97ff2a8001cccca84b13440ada50500a781f945e3374b0d13f45256849452f77",
+      "width": 576,
+      "height": 256
+    },
+    {
+      "path": "spritesheets/shield/two_engrailed/trim/bg/slash/two_engrailed.png",
+      "gitBlob": "c1ecce16cfcfbdc3dce341e2736738f4b7761aaf",
+      "sha256": "bdb75a15076e920ec8c5c6dd2803504dbe6cb0319e87a07fb8bffabc9d60020f",
+      "width": 384,
+      "height": 256
+    },
+    {
+      "path": "spritesheets/shield/two_engrailed/trim/bg/shoot/two_engrailed.png",
+      "gitBlob": "2cebeb39376163d705afbbfa9f55471eadad6b46",
+      "sha256": "78d11cb614c6c176c745095e4d781c2493231c17bbaa16b08f6a465078851411",
+      "width": 832,
+      "height": 256
+    },
+    {
+      "path": "spritesheets/shield/two_engrailed/trim/bg/hurt/two_engrailed.png",
+      "gitBlob": "c617f58bc2a50b37ad2df14465ad0996f6c414d7",
+      "sha256": "f402e203dd51a583e1a2e73e1626b7b97598d4fbeb0063fe28cfdc8ae02ae72a",
+      "width": 384,
+      "height": 64
+    }
+  ]
+}

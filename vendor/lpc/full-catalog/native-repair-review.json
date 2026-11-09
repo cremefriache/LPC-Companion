@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "sourceCommit": "86160e7507d6841259cff624a51a63c1d4847ee3",
+  "scope": "Explicit missing terminal-cell repairs. Use only a nonblank glyph from this same original sheet where the complete source/destination head is identical and every body/head underlay pixel at the glyph is unchanged. Preserve all original nonempty cells. Unproven directions stay blank and retain availability failures.",
+  "items": [
+    {"itemId":"beards_trimmed","bodies":["male","female","teen","muscular","pregnant"],"actions":["1h_slash","1h_backslash"],"destination":6,"preferredSources":[1,0,2,3,4,5],"directions":["west","south","east"]},
+    {"itemId":"eyebrows_thin","bodies":["child"],"actions":["walk"],"destination":8,"preferredSources":[0,1,2,3,4,5,6,7],"directions":["west","south","east"]}
+  ]
+}

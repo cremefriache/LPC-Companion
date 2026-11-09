@@ -1,0 +1,52 @@
+{
+  "durationSeconds": 12,
+  "width": 960,
+  "height": 720,
+  "frames": 240,
+  "fps": 20,
+  "loop": "infinite GIF; final card dissolves back to opening",
+  "audio": false,
+  "actualCuratedRenderer": true,
+  "marketingCompositionNotHostRecording": true,
+  "pageErrors": [],
+  "files": {
+    "lpc-companion-12s.gif": {
+      "bytes": 1591379,
+      "sha256": "bbdbe62f38799f033157e64ca2e2f10f00854bf4952972e560b6434cf1fb39f2",
+      "probe": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "gif",
+            "width": 960,
+            "height": 720,
+            "r_frame_rate": "20/1",
+            "nb_frames": "240"
+          }
+        ],
+        "format": {
+          "duration": "12.000000"
+        }
+      }
+    },
+    "lpc-companion-12s.mp4": {
+      "bytes": 410213,
+      "sha256": "8edcb489459ce3e42499e8eece3d3ab9ba8c0eabeee16fafcbd9bcd9cd2a0b0e",
+      "probe": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 960,
+            "height": 720,
+            "r_frame_rate": "20/1",
+            "nb_frames": "240"
+          }
+        ],
+        "format": {
+          "duration": "12.000000"
+        }
+      }
+    }
+  }
+}

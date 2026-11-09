@@ -1,0 +1,66 @@
+{
+  "repository": "https://github.com/codyaboyd/Universal-LPC-Modern-Sprite-Generator",
+  "commit": "7736d762aa2113f29342dad869ef4931218aa7ae",
+  "functions": [
+    {
+      "file": "sources/utils/helpers.ts",
+      "name": "variantToFilename",
+      "line": 23
+    },
+    {
+      "file": "sources/state/constants.ts",
+      "name": "FRAME_SIZE",
+      "line": 2
+    },
+    {
+      "file": "sources/state/constants.ts",
+      "name": "ANIMATIONS",
+      "line": 60
+    },
+    {
+      "file": "sources/state/constants.ts",
+      "name": "ANIMATION_CONFIGS",
+      "line": 124
+    },
+    {
+      "file": "sources/state/path.ts",
+      "name": "getSpritePath",
+      "line": 116
+    },
+    {
+      "file": "sources/state/meta.ts",
+      "name": "logIfNotFound",
+      "line": 18
+    },
+    {
+      "file": "sources/state/meta.ts",
+      "name": "getSortedLayersByAnim",
+      "line": 66
+    },
+    {
+      "file": "sources/canvas/canvas-utils.ts",
+      "name": "get2DContext",
+      "line": 32
+    },
+    {
+      "file": "sources/canvas/palette-recolor.ts",
+      "name": "hexToRgb",
+      "line": 44
+    },
+    {
+      "file": "sources/canvas/palette-recolor.ts",
+      "name": "buildColorMap",
+      "line": 59
+    },
+    {
+      "file": "sources/canvas/palette-recolor.ts",
+      "name": "findMatchingColor",
+      "line": 81
+    },
+    {
+      "file": "sources/canvas/palette-recolor.ts",
+      "name": "recolorImageCPU",
+      "line": 106
+    }
+  ]
+}

@@ -1,0 +1,428 @@
+{
+  "repository": "https://github.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator",
+  "commit": "86160e7507d6841259cff624a51a63c1d4847ee3",
+  "metadata": {
+    "palette_definitions/cloth/cloth_ulpc.json": "5958053c1492f79a5a994b5e0c5c3bd07c14b8f7431e08444f164e0902301411",
+    "sheet_definitions/torso/shirts/sleeveless/torso_clothes_sleeveless2.json": "b9d6cf887b1dbcb3562e0e8e899fbd810a70be680c36eabb14be0020c6720c20",
+    "sheet_definitions/torso/shirts/longsleeve/torso_clothes_longsleeve2_cardigan.json": "215bb4e4e4f2926e491f6e5ad744c7962f75f44f935379b02a39b54fbc949422",
+    "sheet_definitions/torso/shirts/longsleeve/torso_clothes_longsleeve2_polo.json": "385382b6dd176500c9869bafd9a6bb54964d39d4e953a667cbd83b7aa48e48df"
+  },
+  "sprites": {
+    "spritesheets/torso/clothes/sleeveless/sleeveless2/male/idle.png": "6afa5c5c53bd5eaefb83fbd66406dafa4fa532c077e5b5a64eddec3186d1db8f",
+    "spritesheets/torso/clothes/sleeveless/sleeveless2/male/walk.png": "f532eab031a7c4b8e47634e60138e0be32f568659381bda1038689a0fca94836",
+    "spritesheets/torso/clothes/sleeveless/sleeveless2/male/run.png": "7e1bbd03cf88d2c5571da33fb9d2cc406b7db74669d4c107323017f285b85631",
+    "spritesheets/torso/clothes/sleeveless/sleeveless2/male/jump.png": "bb475837b7dc3a0a2a64f9ada142307c0b0a9f8f090a82f8a5ea0279e6ff6b76",
+    "spritesheets/torso/clothes/sleeveless/sleeveless2/male/spellcast.png": "7d16e2be65aa19f0361964acfe385f1f16a5a41034228b3292e95becafc35281",
+    "spritesheets/torso/clothes/sleeveless/sleeveless2/male/sit.png": "4e48d202c92f04f2206674db74af93c08ab52b10d874fed62c530e0b395b0342",
+    "spritesheets/torso/clothes/sleeveless/sleeveless2/male/emote.png": "b492a1e491689e9c04b9d8195adcfe00d3e8ae1dad308ce3a2ac7ad7e876c959",
+    "spritesheets/torso/clothes/sleeveless/sleeveless2/female/idle.png": "99d3c1cf70988833ab916066dda6726eafd8e4c598a2e78a88ca82a3b2146898",
+    "spritesheets/torso/clothes/sleeveless/sleeveless2/female/walk.png": "fab759f5fba4526f9c7a5be90bdcbfb4805417c4d4c6bd264285eeb623c61daf",
+    "spritesheets/torso/clothes/sleeveless/sleeveless2/female/run.png": "549d07db510c3c263fa700a5cb90be57da1c38570f00f2fae80fc0fc6d5286f5",
+    "spritesheets/torso/clothes/sleeveless/sleeveless2/female/jump.png": "5b9755e10b57a351ca08df09156db7939a41e324359889395c4fc4b9c439142e",
+    "spritesheets/torso/clothes/sleeveless/sleeveless2/female/spellcast.png": "182b45a356e8778df45705019847ba78fd0f90615620ac8cca03526b4c9e1c04",
+    "spritesheets/torso/clothes/sleeveless/sleeveless2/female/sit.png": "9d130afe0479310343fe731f6d491586c47e3d81e3fc6d41b8ed533ecb1b7d7d",
+    "spritesheets/torso/clothes/sleeveless/sleeveless2/female/emote.png": "c8a78704a5f3d3a65c856e67f534d422e124bd02f33dc10954eebcab76367802",
+    "spritesheets/torso/clothes/longsleeve/longsleeve2_cardigan/male/idle.png": "42f08aa82fe0f7c61016bb12bca5954942840c516311ee9ee48751ffe68e4a08",
+    "spritesheets/torso/clothes/longsleeve/longsleeve2_cardigan/male/walk.png": "d29f452e7d89404514a3992ef0d48ecdd7df262b819a04735cbc4c889f762202",
+    "spritesheets/torso/clothes/longsleeve/longsleeve2_cardigan/male/run.png": "c1387be93417acebb3c23ec16e971d714fc4f1bf4f5f12752febe88dc6044692",
+    "spritesheets/torso/clothes/longsleeve/longsleeve2_cardigan/male/jump.png": "51013fc128fc7b8d362afc36a22cb9623b45a45c24279a75d3831d2048cfd75b",
+    "spritesheets/torso/clothes/longsleeve/longsleeve2_cardigan/male/spellcast.png": "c2dc70059293427922049b00634a2f3457ed932f5f123d32f5fe1a18793920d4",
+    "spritesheets/torso/clothes/longsleeve/longsleeve2_cardigan/male/sit.png": "a613fa7978cae055b281db5d2426198362e39f499479774ea85e41961c5517d5",
+    "spritesheets/torso/clothes/longsleeve/longsleeve2_cardigan/male/emote.png": "378d3545ca0d30220875b51fe6d7279e68c555f25f735be584b9672838ff39c3",
+    "spritesheets/torso/clothes/longsleeve/longsleeve2_cardigan/female/idle.png": "908ac13d04b82ea3568da8e60c985919a0ad1895e5e3c333ba458b30be8f8e36",
+    "spritesheets/torso/clothes/longsleeve/longsleeve2_cardigan/female/walk.png": "0ba3fe357fafc384d08de8262317d02f1f6e6d4642aa19b8b3f9840d462369b3",
+    "spritesheets/torso/clothes/longsleeve/longsleeve2_cardigan/female/run.png": "eab1017fc2b0d0985ac3449347fa7675ad1f7e73fd1a49b5d2d6a7afc4edfc03",
+    "spritesheets/torso/clothes/longsleeve/longsleeve2_cardigan/female/jump.png": "65d324e43502516b8f984f12d42d17b5fe12f3c185a3f634a39f602264e6b9ee",
+    "spritesheets/torso/clothes/longsleeve/longsleeve2_cardigan/female/spellcast.png": "4769329a9477fd202e981c7ac1a85b1364f51449643d6c905725086abce9e22a",
+    "spritesheets/torso/clothes/longsleeve/longsleeve2_cardigan/female/sit.png": "c6e24d657ed4e3c703deb9d8bca787ef99668aaedc53f69ab19528e209b05ad8",
+    "spritesheets/torso/clothes/longsleeve/longsleeve2_cardigan/female/emote.png": "1ff0c3a3cc1eea20717125a32e728956f153183847013a3723ee1f33f6b04031",
+    "spritesheets/torso/clothes/longsleeve/longsleeve2_polo/male/idle.png": "7f1049881e62aa58484e6350a0a78cf2145fb4bcaafafb3d45406d2093cdbc6e",
+    "spritesheets/torso/clothes/longsleeve/longsleeve2_polo/male/walk.png": "aebbc80a3533b795de8589690b05299d161d1d232fc888849277b10e00ea1e3d",
+    "spritesheets/torso/clothes/longsleeve/longsleeve2_polo/male/run.png": "57727295808bddeaf71ef3ef9342341f98cb7fc14f796276f8a356486fe71a94",
+    "spritesheets/torso/clothes/longsleeve/longsleeve2_polo/male/jump.png": "905d4b7134b2f2d12d213c0909efc5fe2a502d974ef46176a3a143ee9beb02d5",
+    "spritesheets/torso/clothes/longsleeve/longsleeve2_polo/male/spellcast.png": "a12da5b9926277ea8b4c1eb8784adde678fbdf0c7e88fa7ddc65b79baf4c2733",
+    "spritesheets/torso/clothes/longsleeve/longsleeve2_polo/male/sit.png": "c1a23b83944a2f20eeeaef10507edbee48bce2e3850b37223e998ec789ae61a9",
+    "spritesheets/torso/clothes/longsleeve/longsleeve2_polo/male/emote.png": "3ed34f1089e0a82856537cc918414df0c5f7f88d09b7996b2656e1ea3173b9a3",
+    "spritesheets/torso/clothes/longsleeve/longsleeve2_polo/female/idle.png": "542e1a94c6b7855be62ab7caf999ca276b9d84a64dc2140f5b7a4c3740ca2367",
+    "spritesheets/torso/clothes/longsleeve/longsleeve2_polo/female/walk.png": "86212bed71e55b9e7894c99564670444fb9e974a21b66945b20da68b052cbc14",
+    "spritesheets/torso/clothes/longsleeve/longsleeve2_polo/female/run.png": "de039e31063b89f99e10bcf9137df6f9cf87cf3b310603f90c55aa4a3e3dc091",
+    "spritesheets/torso/clothes/longsleeve/longsleeve2_polo/female/jump.png": "93dfc846cf79376649d4b7ba915c767340eb7352a3b8c38e49cc2fa18d707bb8",
+    "spritesheets/torso/clothes/longsleeve/longsleeve2_polo/female/spellcast.png": "f74874d7b051d4bf86b85027a175e139065e4c8e7be21f6b5d10890810a7324d",
+    "spritesheets/torso/clothes/longsleeve/longsleeve2_polo/female/sit.png": "45da5f057eab256db042443d76ffac158fd19a6e8bcfd162ccfa3bb3c0c78100",
+    "spritesheets/torso/clothes/longsleeve/longsleeve2_polo/female/emote.png": "897e5f2593a1287e55f7684bc3d0a7a3f2b7895d61db8c66f4912bda07a214dd"
+  },
+  "items": {
+    "torso_clothes_sleeveless2": {
+      "name": "Sleeveless",
+      "slot": "clothes",
+      "bodyTypes": [
+        "male"
+      ],
+      "counterparts": {
+        "male": "torso_clothes_sleeveless2",
+        "female": "torso_clothes_sleeveless2_female"
+      },
+      "material": "cloth",
+      "sourcePalette": "white",
+      "selectedLicense": "OGA-BY 3.0",
+      "layers": [
+        {
+          "z": 35,
+          "required": true,
+          "paths": {
+            "idle": "spritesheets/torso/clothes/sleeveless/sleeveless2/male/idle.png",
+            "walk": "spritesheets/torso/clothes/sleeveless/sleeveless2/male/walk.png",
+            "run": "spritesheets/torso/clothes/sleeveless/sleeveless2/male/run.png",
+            "jump": "spritesheets/torso/clothes/sleeveless/sleeveless2/male/jump.png",
+            "spellcast": "spritesheets/torso/clothes/sleeveless/sleeveless2/male/spellcast.png",
+            "sit": "spritesheets/torso/clothes/sleeveless/sleeveless2/male/sit.png",
+            "emote": "spritesheets/torso/clothes/sleeveless/sleeveless2/male/emote.png"
+          }
+        }
+      ],
+      "requiredLayerCount": 1,
+      "occupies": [
+        "clothes"
+      ],
+      "requires": {},
+      "conflictsWith": [],
+      "credits": [
+        {
+          "file": "torso/clothes/sleeveless/sleeveless2",
+          "notes": "original by ElizaWy; sleeveless adapted from original by JaidynReiman",
+          "authors": [
+            "ElizaWy",
+            "JaidynReiman",
+            "Stephen Challener (Redshrike)",
+            "Johannes Sjölund (wulax)"
+          ],
+          "licenses": [
+            "OGA-BY 3.0"
+          ],
+          "urls": [
+            "http://opengameart.org/content/lpc-revised-character-basics",
+            "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+            "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+            "https://opengameart.org/content/lpc-expanded-simple-shirts"
+          ]
+        }
+      ],
+      "upstreamSource": {
+        "repository": "https://github.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator",
+        "commit": "86160e7507d6841259cff624a51a63c1d4847ee3",
+        "itemId": "torso_clothes_sleeveless2",
+        "bodyType": "male"
+      }
+    },
+    "torso_clothes_sleeveless2_female": {
+      "name": "Sleeveless (female)",
+      "slot": "clothes",
+      "bodyTypes": [
+        "female"
+      ],
+      "counterparts": {
+        "male": "torso_clothes_sleeveless2",
+        "female": "torso_clothes_sleeveless2_female"
+      },
+      "material": "cloth",
+      "sourcePalette": "white",
+      "selectedLicense": "OGA-BY 3.0",
+      "layers": [
+        {
+          "z": 35,
+          "required": true,
+          "paths": {
+            "idle": "spritesheets/torso/clothes/sleeveless/sleeveless2/female/idle.png",
+            "walk": "spritesheets/torso/clothes/sleeveless/sleeveless2/female/walk.png",
+            "run": "spritesheets/torso/clothes/sleeveless/sleeveless2/female/run.png",
+            "jump": "spritesheets/torso/clothes/sleeveless/sleeveless2/female/jump.png",
+            "spellcast": "spritesheets/torso/clothes/sleeveless/sleeveless2/female/spellcast.png",
+            "sit": "spritesheets/torso/clothes/sleeveless/sleeveless2/female/sit.png",
+            "emote": "spritesheets/torso/clothes/sleeveless/sleeveless2/female/emote.png"
+          }
+        }
+      ],
+      "requiredLayerCount": 1,
+      "occupies": [
+        "clothes"
+      ],
+      "requires": {},
+      "conflictsWith": [],
+      "credits": [
+        {
+          "file": "torso/clothes/sleeveless/sleeveless2",
+          "notes": "original by ElizaWy; sleeveless adapted from original by JaidynReiman",
+          "authors": [
+            "ElizaWy",
+            "JaidynReiman",
+            "Stephen Challener (Redshrike)",
+            "Johannes Sjölund (wulax)"
+          ],
+          "licenses": [
+            "OGA-BY 3.0"
+          ],
+          "urls": [
+            "http://opengameart.org/content/lpc-revised-character-basics",
+            "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+            "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+            "https://opengameart.org/content/lpc-expanded-simple-shirts"
+          ]
+        }
+      ],
+      "upstreamSource": {
+        "repository": "https://github.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator",
+        "commit": "86160e7507d6841259cff624a51a63c1d4847ee3",
+        "itemId": "torso_clothes_sleeveless2",
+        "bodyType": "female"
+      }
+    },
+    "torso_clothes_longsleeve2_cardigan": {
+      "name": "Cardigan",
+      "slot": "clothes",
+      "bodyTypes": [
+        "male"
+      ],
+      "counterparts": {
+        "male": "torso_clothes_longsleeve2_cardigan",
+        "female": "torso_clothes_longsleeve2_cardigan_female"
+      },
+      "material": "cloth",
+      "sourcePalette": "white",
+      "selectedLicense": "OGA-BY 3.0",
+      "layers": [
+        {
+          "z": 35,
+          "required": true,
+          "paths": {
+            "idle": "spritesheets/torso/clothes/longsleeve/longsleeve2_cardigan/male/idle.png",
+            "walk": "spritesheets/torso/clothes/longsleeve/longsleeve2_cardigan/male/walk.png",
+            "run": "spritesheets/torso/clothes/longsleeve/longsleeve2_cardigan/male/run.png",
+            "jump": "spritesheets/torso/clothes/longsleeve/longsleeve2_cardigan/male/jump.png",
+            "spellcast": "spritesheets/torso/clothes/longsleeve/longsleeve2_cardigan/male/spellcast.png",
+            "sit": "spritesheets/torso/clothes/longsleeve/longsleeve2_cardigan/male/sit.png",
+            "emote": "spritesheets/torso/clothes/longsleeve/longsleeve2_cardigan/male/emote.png"
+          }
+        }
+      ],
+      "requiredLayerCount": 1,
+      "occupies": [
+        "clothes"
+      ],
+      "requires": {},
+      "conflictsWith": [],
+      "credits": [
+        {
+          "file": "torso/clothes/longsleeve/longsleeve2_cardigan",
+          "notes": "original by ElizaWy; spellcast/thrust/shoot/hurt/male adapted from original by JaidynReiman",
+          "authors": [
+            "ElizaWy",
+            "JaidynReiman",
+            "Stephen Challener (Redshrike)",
+            "Johannes Sjölund (wulax)"
+          ],
+          "licenses": [
+            "OGA-BY 3.0"
+          ],
+          "urls": [
+            "http://opengameart.org/content/lpc-revised-character-basics",
+            "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+            "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+            "https://opengameart.org/content/lpc-expanded-simple-shirts"
+          ]
+        }
+      ],
+      "upstreamSource": {
+        "repository": "https://github.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator",
+        "commit": "86160e7507d6841259cff624a51a63c1d4847ee3",
+        "itemId": "torso_clothes_longsleeve2_cardigan",
+        "bodyType": "male"
+      }
+    },
+    "torso_clothes_longsleeve2_cardigan_female": {
+      "name": "Cardigan (female)",
+      "slot": "clothes",
+      "bodyTypes": [
+        "female"
+      ],
+      "counterparts": {
+        "male": "torso_clothes_longsleeve2_cardigan",
+        "female": "torso_clothes_longsleeve2_cardigan_female"
+      },
+      "material": "cloth",
+      "sourcePalette": "white",
+      "selectedLicense": "OGA-BY 3.0",
+      "layers": [
+        {
+          "z": 35,
+          "required": true,
+          "paths": {
+            "idle": "spritesheets/torso/clothes/longsleeve/longsleeve2_cardigan/female/idle.png",
+            "walk": "spritesheets/torso/clothes/longsleeve/longsleeve2_cardigan/female/walk.png",
+            "run": "spritesheets/torso/clothes/longsleeve/longsleeve2_cardigan/female/run.png",
+            "jump": "spritesheets/torso/clothes/longsleeve/longsleeve2_cardigan/female/jump.png",
+            "spellcast": "spritesheets/torso/clothes/longsleeve/longsleeve2_cardigan/female/spellcast.png",
+            "sit": "spritesheets/torso/clothes/longsleeve/longsleeve2_cardigan/female/sit.png",
+            "emote": "spritesheets/torso/clothes/longsleeve/longsleeve2_cardigan/female/emote.png"
+          }
+        }
+      ],
+      "requiredLayerCount": 1,
+      "occupies": [
+        "clothes"
+      ],
+      "requires": {},
+      "conflictsWith": [],
+      "credits": [
+        {
+          "file": "torso/clothes/longsleeve/longsleeve2_cardigan",
+          "notes": "original by ElizaWy; spellcast/thrust/shoot/hurt/male adapted from original by JaidynReiman",
+          "authors": [
+            "ElizaWy",
+            "JaidynReiman",
+            "Stephen Challener (Redshrike)",
+            "Johannes Sjölund (wulax)"
+          ],
+          "licenses": [
+            "OGA-BY 3.0"
+          ],
+          "urls": [
+            "http://opengameart.org/content/lpc-revised-character-basics",
+            "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+            "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+            "https://opengameart.org/content/lpc-expanded-simple-shirts"
+          ]
+        }
+      ],
+      "upstreamSource": {
+        "repository": "https://github.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator",
+        "commit": "86160e7507d6841259cff624a51a63c1d4847ee3",
+        "itemId": "torso_clothes_longsleeve2_cardigan",
+        "bodyType": "female"
+      }
+    },
+    "torso_clothes_longsleeve2_polo": {
+      "name": "Long-sleeve polo",
+      "slot": "clothes",
+      "bodyTypes": [
+        "male"
+      ],
+      "counterparts": {
+        "male": "torso_clothes_longsleeve2_polo",
+        "female": "torso_clothes_longsleeve2_polo_female"
+      },
+      "material": "cloth",
+      "sourcePalette": "white",
+      "selectedLicense": "OGA-BY 3.0",
+      "layers": [
+        {
+          "z": 35,
+          "required": true,
+          "paths": {
+            "idle": "spritesheets/torso/clothes/longsleeve/longsleeve2_polo/male/idle.png",
+            "walk": "spritesheets/torso/clothes/longsleeve/longsleeve2_polo/male/walk.png",
+            "run": "spritesheets/torso/clothes/longsleeve/longsleeve2_polo/male/run.png",
+            "jump": "spritesheets/torso/clothes/longsleeve/longsleeve2_polo/male/jump.png",
+            "spellcast": "spritesheets/torso/clothes/longsleeve/longsleeve2_polo/male/spellcast.png",
+            "sit": "spritesheets/torso/clothes/longsleeve/longsleeve2_polo/male/sit.png",
+            "emote": "spritesheets/torso/clothes/longsleeve/longsleeve2_polo/male/emote.png"
+          }
+        }
+      ],
+      "requiredLayerCount": 1,
+      "occupies": [
+        "clothes"
+      ],
+      "requires": {},
+      "conflictsWith": [],
+      "credits": [
+        {
+          "file": "torso/clothes/longsleeve/longsleeve2_polo",
+          "notes": "original by ElizaWy; spellcast/thrust/shoot/hurt/male adapted from original by JaidynReiman",
+          "authors": [
+            "ElizaWy",
+            "JaidynReiman",
+            "Stephen Challener (Redshrike)",
+            "Johannes Sjölund (wulax)"
+          ],
+          "licenses": [
+            "OGA-BY 3.0"
+          ],
+          "urls": [
+            "http://opengameart.org/content/lpc-revised-character-basics",
+            "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+            "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+            "https://opengameart.org/content/lpc-expanded-simple-shirts"
+          ]
+        }
+      ],
+      "upstreamSource": {
+        "repository": "https://github.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator",
+        "commit": "86160e7507d6841259cff624a51a63c1d4847ee3",
+        "itemId": "torso_clothes_longsleeve2_polo",
+        "bodyType": "male"
+      }
+    },
+    "torso_clothes_longsleeve2_polo_female": {
+      "name": "Long-sleeve polo (female)",
+      "slot": "clothes",
+      "bodyTypes": [
+        "female"
+      ],
+      "counterparts": {
+        "male": "torso_clothes_longsleeve2_polo",
+        "female": "torso_clothes_longsleeve2_polo_female"
+      },
+      "material": "cloth",
+      "sourcePalette": "white",
+      "selectedLicense": "OGA-BY 3.0",
+      "layers": [
+        {
+          "z": 35,
+          "required": true,
+          "paths": {
+            "idle": "spritesheets/torso/clothes/longsleeve/longsleeve2_polo/female/idle.png",
+            "walk": "spritesheets/torso/clothes/longsleeve/longsleeve2_polo/female/walk.png",
+            "run": "spritesheets/torso/clothes/longsleeve/longsleeve2_polo/female/run.png",
+            "jump": "spritesheets/torso/clothes/longsleeve/longsleeve2_polo/female/jump.png",
+            "spellcast": "spritesheets/torso/clothes/longsleeve/longsleeve2_polo/female/spellcast.png",
+            "sit": "spritesheets/torso/clothes/longsleeve/longsleeve2_polo/female/sit.png",
+            "emote": "spritesheets/torso/clothes/longsleeve/longsleeve2_polo/female/emote.png"
+          }
+        }
+      ],
+      "requiredLayerCount": 1,
+      "occupies": [
+        "clothes"
+      ],
+      "requires": {},
+      "conflictsWith": [],
+      "credits": [
+        {
+          "file": "torso/clothes/longsleeve/longsleeve2_polo",
+          "notes": "original by ElizaWy; spellcast/thrust/shoot/hurt/male adapted from original by JaidynReiman",
+          "authors": [
+            "ElizaWy",
+            "JaidynReiman",
+            "Stephen Challener (Redshrike)",
+            "Johannes Sjölund (wulax)"
+          ],
+          "licenses": [
+            "OGA-BY 3.0"
+          ],
+          "urls": [
+            "http://opengameart.org/content/lpc-revised-character-basics",
+            "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+            "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+            "https://opengameart.org/content/lpc-expanded-simple-shirts"
+          ]
+        }
+      ],
+      "upstreamSource": {
+        "repository": "https://github.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator",
+        "commit": "86160e7507d6841259cff624a51a63c1d4847ee3",
+        "itemId": "torso_clothes_longsleeve2_polo",
+        "bodyType": "female"
+      }
+    }
+  }
+}

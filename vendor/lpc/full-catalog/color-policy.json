@@ -1,0 +1,5512 @@
+{
+  "schemaVersion": 1,
+  "sourceCommit": "86160e7507d6841259cff624a51a63c1d4847ee3",
+  "scope": "Exact-hash inactive channels and original-author palette correspondences only. Unknown sheets and ineffective colors retain strict gates.",
+  "inactiveChannels": [
+    {
+      "itemId": "heads_human_elderly_small",
+      "action": "climb",
+      "channel": "eyes",
+      "path": "spritesheets/head/heads/human/elderly_small/climb.png",
+      "sha256": "64c0d97de797ce9feef1906937c6718cd3e0f8f8e83d226ed412d213c5d6310c",
+      "reason": "This single authored Climb view shows the back of the head; eye color is retained for other poses."
+    },
+    {
+      "itemId": "heads_human_female",
+      "action": "climb",
+      "channel": "eyes",
+      "path": "spritesheets/head/heads/human/female/climb.png",
+      "sha256": "5015d16de12650d295d76358c19f149868ded8112b849b3c1ce66f2d0172f7ad",
+      "reason": "This single authored Climb view shows the back of the head; eye color is retained for other poses."
+    },
+    {
+      "itemId": "heads_human_female_elderly",
+      "action": "climb",
+      "channel": "eyes",
+      "path": "spritesheets/head/heads/human/female_elderly/climb.png",
+      "sha256": "88981b8d8afd1d5d1cf12f9709300cea8d1dba314c44350ee19c0fb02b8512be",
+      "reason": "This single authored Climb view shows the back of the head; eye color is retained for other poses."
+    },
+    {
+      "itemId": "heads_human_female_small",
+      "action": "climb",
+      "channel": "eyes",
+      "path": "spritesheets/head/heads/human/female_small/climb.png",
+      "sha256": "4ad7575ee064b4923a680d3863cea04ff95f71dc134324e0a7173d200d3a933a",
+      "reason": "This single authored Climb view shows the back of the head; eye color is retained for other poses."
+    },
+    {
+      "itemId": "heads_human_male",
+      "action": "climb",
+      "channel": "eyes",
+      "path": "spritesheets/head/heads/human/male/climb.png",
+      "sha256": "3ecc1afb8c6872011d26c69a0f4c08790c7755fd6e45c895d819358bb0c1e3af",
+      "reason": "This single authored Climb view shows the back of the head; eye color is retained for other poses."
+    },
+    {
+      "itemId": "heads_human_male_elderly",
+      "action": "climb",
+      "channel": "eyes",
+      "path": "spritesheets/head/heads/human/male_elderly/climb.png",
+      "sha256": "69ea0f6c356f914a6d57625848961774c018cf0eaef02fc35d31b77168e9f3c9",
+      "reason": "This single authored Climb view shows the back of the head; eye color is retained for other poses."
+    },
+    {
+      "itemId": "heads_human_male_gaunt",
+      "action": "climb",
+      "channel": "eyes",
+      "path": "spritesheets/head/heads/human/male_gaunt/climb.png",
+      "sha256": "dbd8ac2bc1582f1a96a82fe8040e40de09edeb50785d2bb739784de7ae943eab",
+      "reason": "This single authored Climb view shows the back of the head; eye color is retained for other poses."
+    },
+    {
+      "itemId": "heads_human_male_plump",
+      "action": "climb",
+      "channel": "eyes",
+      "path": "spritesheets/head/heads/human/male_plump/climb.png",
+      "sha256": "941425afc9e4cc848cddbecd2b03b72809ad4b4911eee3e5dd9f6bec5a16f1db",
+      "reason": "This single authored Climb view shows the back of the head; eye color is retained for other poses."
+    },
+    {
+      "itemId": "heads_human_male_small",
+      "action": "climb",
+      "channel": "eyes",
+      "path": "spritesheets/head/heads/human/male_small/climb.png",
+      "sha256": "8f9fbfb50f501330f2f3c0855ad3988301efc2dfc885e20c330d55e966cd75a7",
+      "reason": "This single authored Climb view shows the back of the head; eye color is retained for other poses."
+    }
+  ],
+  "layerCorrections": [
+    {
+      "itemId": "legs_formal",
+      "path": "spritesheets/legs/formal/male/backslash.png",
+      "sha256": "66aca5962cd40d0a34295ccbcdaf03eaff3f04c8a0a008296c1416f155b2756a",
+      "action": "backslash",
+      "bodies": [
+        "male",
+        "muscular"
+      ],
+      "channels": {
+        "legs": {
+          "source": [
+            "#182611",
+            "#203416",
+            "#314F22"
+          ],
+          "targetIndices": [
+            1,
+            3,
+            4
+          ]
+        }
+      },
+      "requiredVersion": 2,
+      "unquarantine": false,
+      "message": "Reviewed source-palette correction keeps Formal Pants colors consistent across poses; original artwork is preserved."
+    },
+    {
+      "itemId": "legs_formal",
+      "path": "spritesheets/legs/formal/male/climb.png",
+      "sha256": "c52e51d400c8599678540484c84c44dba0c76638247e383d1e9c4418f31af33f",
+      "action": "climb",
+      "bodies": [
+        "male",
+        "muscular"
+      ],
+      "channels": {
+        "legs": {
+          "source": [
+            "#182611",
+            "#203416",
+            "#314F22"
+          ],
+          "targetIndices": [
+            1,
+            3,
+            4
+          ]
+        }
+      },
+      "requiredVersion": 2,
+      "unquarantine": false,
+      "message": "Reviewed source-palette correction keeps Formal Pants colors consistent across poses; original artwork is preserved."
+    },
+    {
+      "itemId": "legs_formal",
+      "path": "spritesheets/legs/formal/male/combat_idle.png",
+      "sha256": "a10d08a8a1fd9ee17ab604aadac85fcaedde864e589fa76c2282ad4f5c482cfe",
+      "action": "combat_idle",
+      "bodies": [
+        "male",
+        "muscular"
+      ],
+      "channels": {
+        "legs": {
+          "source": [
+            "#182611",
+            "#203416",
+            "#314F22"
+          ],
+          "targetIndices": [
+            1,
+            3,
+            4
+          ]
+        }
+      },
+      "requiredVersion": 2,
+      "unquarantine": false,
+      "message": "Reviewed source-palette correction keeps Formal Pants colors consistent across poses; original artwork is preserved."
+    },
+    {
+      "itemId": "legs_formal",
+      "path": "spritesheets/legs/formal/male/emote.png",
+      "sha256": "91811b6c8d55622537e22278c49a4363929d755a45fcc9a01afd9a3025ad635d",
+      "action": "emote",
+      "bodies": [
+        "male",
+        "muscular"
+      ],
+      "channels": {
+        "legs": {
+          "source": [
+            "#4D4A5D",
+            "#C4B59F",
+            "#E5E6C7"
+          ],
+          "targetIndices": [
+            1,
+            3,
+            4
+          ]
+        }
+      },
+      "requiredVersion": 2,
+      "unquarantine": false,
+      "message": "Reviewed source-palette correction keeps Formal Pants colors consistent across poses; original artwork is preserved."
+    },
+    {
+      "itemId": "legs_formal",
+      "path": "spritesheets/legs/formal/male/halfslash.png",
+      "sha256": "f0941b0fc86a1ad1fd092234bd901cb6def033a9722c61f0d567939087726cf8",
+      "action": "halfslash",
+      "bodies": [
+        "male",
+        "muscular"
+      ],
+      "channels": {
+        "legs": {
+          "source": [
+            "#182611",
+            "#203416",
+            "#314F22"
+          ],
+          "targetIndices": [
+            1,
+            3,
+            4
+          ]
+        }
+      },
+      "requiredVersion": 2,
+      "unquarantine": false,
+      "message": "Reviewed source-palette correction keeps Formal Pants colors consistent across poses; original artwork is preserved."
+    },
+    {
+      "itemId": "legs_formal",
+      "path": "spritesheets/legs/formal/male/hurt.png",
+      "sha256": "30523e70c10af53ff731fad9c1ca6e0b45d12d5bd4bd4e4ff250ef6d67450080",
+      "action": "hurt",
+      "bodies": [
+        "male",
+        "muscular"
+      ],
+      "channels": {
+        "legs": {
+          "source": [
+            "#182611",
+            "#203416",
+            "#314F22"
+          ],
+          "targetIndices": [
+            1,
+            3,
+            4
+          ]
+        }
+      },
+      "requiredVersion": 2,
+      "unquarantine": false,
+      "message": "Reviewed source-palette correction keeps Formal Pants colors consistent across poses; original artwork is preserved."
+    },
+    {
+      "itemId": "legs_formal",
+      "path": "spritesheets/legs/formal/male/idle.png",
+      "sha256": "12406def0dfec622f435ff46b7b0c61412fe40cf666fb4d6b6b616e214585bd8",
+      "action": "idle",
+      "bodies": [
+        "male",
+        "muscular"
+      ],
+      "channels": {
+        "legs": {
+          "source": [
+            "#182611",
+            "#203416",
+            "#314F22"
+          ],
+          "targetIndices": [
+            1,
+            3,
+            4
+          ]
+        }
+      },
+      "requiredVersion": 2,
+      "unquarantine": false,
+      "message": "Reviewed source-palette correction keeps Formal Pants colors consistent across poses; original artwork is preserved."
+    },
+    {
+      "itemId": "legs_formal",
+      "path": "spritesheets/legs/formal/male/jump.png",
+      "sha256": "4a3b9eb748d73cd3a31431c9744d3f512b0eb3ad25f3c5a8d1372beeeff1fa14",
+      "action": "jump",
+      "bodies": [
+        "male",
+        "muscular"
+      ],
+      "channels": {
+        "legs": {
+          "source": [
+            "#4D4A5D",
+            "#C4B59F",
+            "#E5E6C7"
+          ],
+          "targetIndices": [
+            1,
+            3,
+            4
+          ]
+        }
+      },
+      "requiredVersion": 2,
+      "unquarantine": false,
+      "message": "Reviewed source-palette correction keeps Formal Pants colors consistent across poses; original artwork is preserved."
+    },
+    {
+      "itemId": "legs_formal",
+      "path": "spritesheets/legs/formal/male/run.png",
+      "sha256": "85b99c68029f1e83e6d695173c7c20766395e482d06b44050d9cc70657acd5fc",
+      "action": "run",
+      "bodies": [
+        "male",
+        "muscular"
+      ],
+      "channels": {
+        "legs": {
+          "source": [
+            "#182611",
+            "#203416",
+            "#314F22"
+          ],
+          "targetIndices": [
+            1,
+            3,
+            4
+          ]
+        }
+      },
+      "requiredVersion": 2,
+      "unquarantine": false,
+      "message": "Reviewed source-palette correction keeps Formal Pants colors consistent across poses; original artwork is preserved."
+    },
+    {
+      "itemId": "legs_formal",
+      "path": "spritesheets/legs/formal/male/shoot.png",
+      "sha256": "cc8c4c525807b20192f69140ec655679cad9b4a351aa3e453949e2e6ba4920da",
+      "action": "shoot",
+      "bodies": [
+        "male",
+        "muscular"
+      ],
+      "channels": {
+        "legs": {
+          "source": [
+            "#182611",
+            "#203416",
+            "#314F22"
+          ],
+          "targetIndices": [
+            1,
+            3,
+            4
+          ]
+        }
+      },
+      "requiredVersion": 2,
+      "unquarantine": false,
+      "message": "Reviewed source-palette correction keeps Formal Pants colors consistent across poses; original artwork is preserved."
+    },
+    {
+      "itemId": "legs_formal",
+      "path": "spritesheets/legs/formal/male/sit.png",
+      "sha256": "6d61307f4af77c135039956c97dff288854780455c3a3d5ee694a46353157373",
+      "action": "sit",
+      "bodies": [
+        "male",
+        "muscular"
+      ],
+      "channels": {
+        "legs": {
+          "source": [
+            "#4D4A5D",
+            "#C4B59F",
+            "#E5E6C7"
+          ],
+          "targetIndices": [
+            1,
+            3,
+            4
+          ]
+        }
+      },
+      "requiredVersion": 2,
+      "unquarantine": false,
+      "message": "Reviewed source-palette correction keeps Formal Pants colors consistent across poses; original artwork is preserved."
+    },
+    {
+      "itemId": "legs_formal",
+      "path": "spritesheets/legs/formal/male/slash.png",
+      "sha256": "31e52f0f67777aa00a604dd335c1a97b917483f85c4b3fa36d9075253229a3aa",
+      "action": "slash",
+      "bodies": [
+        "male",
+        "muscular"
+      ],
+      "channels": {
+        "legs": {
+          "source": [
+            "#182611",
+            "#203416",
+            "#314F22"
+          ],
+          "targetIndices": [
+            1,
+            3,
+            4
+          ]
+        }
+      },
+      "requiredVersion": 2,
+      "unquarantine": false,
+      "message": "Reviewed source-palette correction keeps Formal Pants colors consistent across poses; original artwork is preserved."
+    },
+    {
+      "itemId": "legs_formal",
+      "path": "spritesheets/legs/formal/male/spellcast.png",
+      "sha256": "550a5f5525db5345ffc3190ec3c69ed2eca0702b1528f966b65ccf0d4dfa01ed",
+      "action": "spellcast",
+      "bodies": [
+        "male",
+        "muscular"
+      ],
+      "channels": {
+        "legs": {
+          "source": [
+            "#182611",
+            "#203416",
+            "#314F22"
+          ],
+          "targetIndices": [
+            1,
+            3,
+            4
+          ]
+        }
+      },
+      "requiredVersion": 2,
+      "unquarantine": false,
+      "message": "Reviewed source-palette correction keeps Formal Pants colors consistent across poses; original artwork is preserved."
+    },
+    {
+      "itemId": "legs_formal",
+      "path": "spritesheets/legs/formal/male/thrust.png",
+      "sha256": "2c84dcb9ab428dfee874cbf47bf6e7baf15876ad39126f2cbb42ceae43e96f90",
+      "action": "thrust",
+      "bodies": [
+        "male",
+        "muscular"
+      ],
+      "channels": {
+        "legs": {
+          "source": [
+            "#182611",
+            "#203416",
+            "#314F22"
+          ],
+          "targetIndices": [
+            1,
+            3,
+            4
+          ]
+        }
+      },
+      "requiredVersion": 2,
+      "unquarantine": false,
+      "message": "Reviewed source-palette correction keeps Formal Pants colors consistent across poses; original artwork is preserved."
+    },
+    {
+      "itemId": "legs_formal",
+      "path": "spritesheets/legs/formal/male/walk.png",
+      "sha256": "cfd7ad4d0d64b3d580b5f8cddd8b9622e14f506ecef2d979a5c7674f627b16ad",
+      "action": "walk",
+      "bodies": [
+        "male",
+        "muscular"
+      ],
+      "channels": {
+        "legs": {
+          "source": [
+            "#182611",
+            "#203416",
+            "#314F22"
+          ],
+          "targetIndices": [
+            1,
+            3,
+            4
+          ]
+        }
+      },
+      "requiredVersion": 2,
+      "unquarantine": true,
+      "message": "Reviewed source-palette correction keeps Formal Pants colors consistent across poses; original artwork is preserved."
+    },
+    {
+      "itemId": "legs_formal",
+      "path": "spritesheets/legs/formal/thin/backslash.png",
+      "sha256": "bedd6dffc4ab77da931d34d9e3f09fd9c87d35fbb10abe9456791274ab038f56",
+      "action": "backslash",
+      "bodies": [
+        "female",
+        "teen",
+        "pregnant"
+      ],
+      "channels": {
+        "legs": {
+          "source": [
+            "#4D4A5D",
+            "#C4B59F",
+            "#E5E6C7"
+          ],
+          "targetIndices": [
+            1,
+            3,
+            4
+          ]
+        }
+      },
+      "requiredVersion": 2,
+      "unquarantine": false,
+      "message": "Reviewed source-palette correction keeps Formal Pants colors consistent across poses; original artwork is preserved."
+    },
+    {
+      "itemId": "legs_formal",
+      "path": "spritesheets/legs/formal/thin/climb.png",
+      "sha256": "88630ca772cba8e50a46796f57c331076e47576ad69c672375aa2432ec15eb7a",
+      "action": "climb",
+      "bodies": [
+        "female",
+        "teen",
+        "pregnant"
+      ],
+      "channels": {
+        "legs": {
+          "source": [
+            "#4D4A5D",
+            "#C4B59F",
+            "#E5E6C7"
+          ],
+          "targetIndices": [
+            1,
+            3,
+            4
+          ]
+        }
+      },
+      "requiredVersion": 2,
+      "unquarantine": false,
+      "message": "Reviewed source-palette correction keeps Formal Pants colors consistent across poses; original artwork is preserved."
+    },
+    {
+      "itemId": "legs_formal",
+      "path": "spritesheets/legs/formal/thin/combat_idle.png",
+      "sha256": "0986caee50c36666b83a2d43a792a0a2910f763c41a6792ffc367a7ff68b4d5a",
+      "action": "combat_idle",
+      "bodies": [
+        "female",
+        "teen",
+        "pregnant"
+      ],
+      "channels": {
+        "legs": {
+          "source": [
+            "#4D4A5D",
+            "#C4B59F",
+            "#E5E6C7"
+          ],
+          "targetIndices": [
+            1,
+            3,
+            4
+          ]
+        }
+      },
+      "requiredVersion": 2,
+      "unquarantine": false,
+      "message": "Reviewed source-palette correction keeps Formal Pants colors consistent across poses; original artwork is preserved."
+    },
+    {
+      "itemId": "legs_formal",
+      "path": "spritesheets/legs/formal/thin/emote.png",
+      "sha256": "0ff4f95debc06a1b7b1a6c4b69ef22ca6aea18687c0fe943eb0fb795a45561fc",
+      "action": "emote",
+      "bodies": [
+        "female",
+        "teen",
+        "pregnant"
+      ],
+      "channels": {
+        "legs": {
+          "source": [
+            "#4D4A5D",
+            "#C4B59F",
+            "#E5E6C7"
+          ],
+          "targetIndices": [
+            1,
+            3,
+            4
+          ]
+        }
+      },
+      "requiredVersion": 2,
+      "unquarantine": false,
+      "message": "Reviewed source-palette correction keeps Formal Pants colors consistent across poses; original artwork is preserved."
+    },
+    {
+      "itemId": "legs_formal",
+      "path": "spritesheets/legs/formal/thin/halfslash.png",
+      "sha256": "9ebb6bf2281f2d52d730298cff5a89f3fca92881273e75037d5d533b5095d5ee",
+      "action": "halfslash",
+      "bodies": [
+        "female",
+        "teen",
+        "pregnant"
+      ],
+      "channels": {
+        "legs": {
+          "source": [
+            "#4D4A5D",
+            "#C4B59F",
+            "#E5E6C7"
+          ],
+          "targetIndices": [
+            1,
+            3,
+            4
+          ]
+        }
+      },
+      "requiredVersion": 2,
+      "unquarantine": false,
+      "message": "Reviewed source-palette correction keeps Formal Pants colors consistent across poses; original artwork is preserved."
+    },
+    {
+      "itemId": "legs_formal",
+      "path": "spritesheets/legs/formal/thin/hurt.png",
+      "sha256": "c3c97fa06530a086a08d9b6821dd9fc85c623126546f2201de91db6ac2ac50f9",
+      "action": "hurt",
+      "bodies": [
+        "female",
+        "teen",
+        "pregnant"
+      ],
+      "channels": {
+        "legs": {
+          "source": [
+            "#4D4A5D",
+            "#C4B59F",
+            "#E5E6C7"
+          ],
+          "targetIndices": [
+            1,
+            3,
+            4
+          ]
+        }
+      },
+      "requiredVersion": 2,
+      "unquarantine": false,
+      "message": "Reviewed source-palette correction keeps Formal Pants colors consistent across poses; original artwork is preserved."
+    },
+    {
+      "itemId": "legs_formal",
+      "path": "spritesheets/legs/formal/thin/idle.png",
+      "sha256": "3c73945b489fda07fcb964fc24a7c4861e1a9b093f608f68de160de8eeebfad8",
+      "action": "idle",
+      "bodies": [
+        "female",
+        "teen",
+        "pregnant"
+      ],
+      "channels": {
+        "legs": {
+          "source": [
+            "#4D4A5D",
+            "#C4B59F",
+            "#E5E6C7"
+          ],
+          "targetIndices": [
+            1,
+            3,
+            4
+          ]
+        }
+      },
+      "requiredVersion": 2,
+      "unquarantine": false,
+      "message": "Reviewed source-palette correction keeps Formal Pants colors consistent across poses; original artwork is preserved."
+    },
+    {
+      "itemId": "legs_formal",
+      "path": "spritesheets/legs/formal/thin/jump.png",
+      "sha256": "ff3d4b9c74540279c6cb63d3bd4fc9ea69756322bb68e8bd6386c70bd52c1fa4",
+      "action": "jump",
+      "bodies": [
+        "female",
+        "teen",
+        "pregnant"
+      ],
+      "channels": {
+        "legs": {
+          "source": [
+            "#4D4A5D",
+            "#C4B59F",
+            "#E5E6C7"
+          ],
+          "targetIndices": [
+            1,
+            3,
+            4
+          ]
+        }
+      },
+      "requiredVersion": 2,
+      "unquarantine": false,
+      "message": "Reviewed source-palette correction keeps Formal Pants colors consistent across poses; original artwork is preserved."
+    },
+    {
+      "itemId": "legs_formal",
+      "path": "spritesheets/legs/formal/thin/run.png",
+      "sha256": "d55465e46ba07eca497444c28b2d6278b7ef929503eba1843ac83748f5616796",
+      "action": "run",
+      "bodies": [
+        "female",
+        "teen",
+        "pregnant"
+      ],
+      "channels": {
+        "legs": {
+          "source": [
+            "#4D4A5D",
+            "#C4B59F",
+            "#E5E6C7"
+          ],
+          "targetIndices": [
+            1,
+            3,
+            4
+          ]
+        }
+      },
+      "requiredVersion": 2,
+      "unquarantine": false,
+      "message": "Reviewed source-palette correction keeps Formal Pants colors consistent across poses; original artwork is preserved."
+    },
+    {
+      "itemId": "legs_formal",
+      "path": "spritesheets/legs/formal/thin/shoot.png",
+      "sha256": "da19f510ec669d1c294b7ab9ad8218ea8f01335c8362e5a32b6189af476b2c44",
+      "action": "shoot",
+      "bodies": [
+        "female",
+        "teen",
+        "pregnant"
+      ],
+      "channels": {
+        "legs": {
+          "source": [
+            "#4D4A5D",
+            "#C4B59F",
+            "#E5E6C7"
+          ],
+          "targetIndices": [
+            1,
+            3,
+            4
+          ]
+        }
+      },
+      "requiredVersion": 2,
+      "unquarantine": false,
+      "message": "Reviewed source-palette correction keeps Formal Pants colors consistent across poses; original artwork is preserved."
+    },
+    {
+      "itemId": "legs_formal",
+      "path": "spritesheets/legs/formal/thin/sit.png",
+      "sha256": "f0aee637da417b8e7483f8a8be09f2136715ed27edf465ebe40d4d5d23efe468",
+      "action": "sit",
+      "bodies": [
+        "female",
+        "teen",
+        "pregnant"
+      ],
+      "channels": {
+        "legs": {
+          "source": [
+            "#4D4A5D",
+            "#C4B59F",
+            "#E5E6C7"
+          ],
+          "targetIndices": [
+            1,
+            3,
+            4
+          ]
+        }
+      },
+      "requiredVersion": 2,
+      "unquarantine": false,
+      "message": "Reviewed source-palette correction keeps Formal Pants colors consistent across poses; original artwork is preserved."
+    },
+    {
+      "itemId": "legs_formal",
+      "path": "spritesheets/legs/formal/thin/slash.png",
+      "sha256": "c88d86732e7c714600bb8cb8409d07b1e0f72ec550560b73900c9177e801ee3b",
+      "action": "slash",
+      "bodies": [
+        "female",
+        "teen",
+        "pregnant"
+      ],
+      "channels": {
+        "legs": {
+          "source": [
+            "#4D4A5D",
+            "#C4B59F",
+            "#E5E6C7"
+          ],
+          "targetIndices": [
+            1,
+            3,
+            4
+          ]
+        }
+      },
+      "requiredVersion": 2,
+      "unquarantine": false,
+      "message": "Reviewed source-palette correction keeps Formal Pants colors consistent across poses; original artwork is preserved."
+    },
+    {
+      "itemId": "legs_formal",
+      "path": "spritesheets/legs/formal/thin/spellcast.png",
+      "sha256": "52e6cf7b4a0520f38a58f9a3b149586a052556f88a307ff7998b592e7bfc2dd1",
+      "action": "spellcast",
+      "bodies": [
+        "female",
+        "teen",
+        "pregnant"
+      ],
+      "channels": {
+        "legs": {
+          "source": [
+            "#4D4A5D",
+            "#C4B59F",
+            "#E5E6C7"
+          ],
+          "targetIndices": [
+            1,
+            3,
+            4
+          ]
+        }
+      },
+      "requiredVersion": 2,
+      "unquarantine": false,
+      "message": "Reviewed source-palette correction keeps Formal Pants colors consistent across poses; original artwork is preserved."
+    },
+    {
+      "itemId": "legs_formal",
+      "path": "spritesheets/legs/formal/thin/thrust.png",
+      "sha256": "ae817a56fe8af74e64a5ba82a1f70ee87e13481b1f159d8d2c3394a180c479c2",
+      "action": "thrust",
+      "bodies": [
+        "female",
+        "teen",
+        "pregnant"
+      ],
+      "channels": {
+        "legs": {
+          "source": [
+            "#4D4A5D",
+            "#C4B59F",
+            "#E5E6C7"
+          ],
+          "targetIndices": [
+            1,
+            3,
+            4
+          ]
+        }
+      },
+      "requiredVersion": 2,
+      "unquarantine": false,
+      "message": "Reviewed source-palette correction keeps Formal Pants colors consistent across poses; original artwork is preserved."
+    },
+    {
+      "itemId": "legs_formal",
+      "path": "spritesheets/legs/formal/thin/walk.png",
+      "sha256": "3c60f2356bc821d50b7d851a18d2fa45b0976c02a674c656dd7775d69ffceac8",
+      "action": "walk",
+      "bodies": [
+        "female",
+        "teen",
+        "pregnant"
+      ],
+      "channels": {
+        "legs": {
+          "source": [
+            "#4D4A5D",
+            "#C4B59F",
+            "#E5E6C7"
+          ],
+          "targetIndices": [
+            1,
+            3,
+            4
+          ]
+        }
+      },
+      "requiredVersion": 2,
+      "unquarantine": false,
+      "message": "Reviewed source-palette correction keeps Formal Pants colors consistent across poses; original artwork is preserved."
+    },
+    {
+      "itemId": "wound_eye_left",
+      "path": "spritesheets/body/wound/eye_left/thrust.png",
+      "sha256": "69d5408dea1d977275472d407d9684f63fb4eb27ef2f04907b978e5be75d638d",
+      "action": "thrust",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "wound_eye_left": {
+          "source": [
+            "#511818",
+            "#9F2828"
+          ],
+          "targetIndices": [
+            1,
+            3
+          ]
+        }
+      },
+      "requiredVersion": 2,
+      "message": "Reviewed source-palette correction keeps the left-eye overlay color consistent in Thrust; original artwork is preserved."
+    },
+    {
+      "itemId": "hair_shorthawk",
+      "path": "spritesheets/hair/shorthawk/adult/backslash.png",
+      "sha256": "972b8050e45a8fdce8a27933ba6a9bea3f90f7e3d9cd6301db94fe16f7ec94d9",
+      "action": "backslash",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_shorthawk",
+      "path": "spritesheets/hair/shorthawk/adult/climb.png",
+      "sha256": "889db2df98d9957cbeb34c2b4b0c390acda094791a29e129c8e42e0727b83e98",
+      "action": "climb",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_shorthawk",
+      "path": "spritesheets/hair/shorthawk/adult/combat_idle.png",
+      "sha256": "add213e0276027583c3cc331d2e645f7bbd44650fc24e4cfafd67fd931fc4e87",
+      "action": "combat_idle",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_shorthawk",
+      "path": "spritesheets/hair/shorthawk/adult/emote.png",
+      "sha256": "f7b96740b5c9d117724321e591d081503b2fd0e21bafd5c93e690ec0ccfbe61f",
+      "action": "emote",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_shorthawk",
+      "path": "spritesheets/hair/shorthawk/adult/halfslash.png",
+      "sha256": "629f9087395e5507c29a739a36453df47fd2f3deed9b4ddd74a92ccf47f7c4d7",
+      "action": "halfslash",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_shorthawk",
+      "path": "spritesheets/hair/shorthawk/adult/hurt.png",
+      "sha256": "a4ad67543239e970d5fcc275922e6f43c6d2e9e4a617bb7a916e5127c46010f1",
+      "action": "hurt",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_shorthawk",
+      "path": "spritesheets/hair/shorthawk/adult/idle.png",
+      "sha256": "e8bf1d9604b2cb5da443f42f74cfedb3f28111d316e2f1284a41a0745b09883f",
+      "action": "idle",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_shorthawk",
+      "path": "spritesheets/hair/shorthawk/adult/jump.png",
+      "sha256": "75c8066623e84b247fdef2745e2144b1332b6554cd24d32678721abfae09e5d2",
+      "action": "jump",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_shorthawk",
+      "path": "spritesheets/hair/shorthawk/adult/run.png",
+      "sha256": "7201d92ad737bb9c25eaffd6c055947e1789644ca140256c45bd375b1ba1b49a",
+      "action": "run",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_shorthawk",
+      "path": "spritesheets/hair/shorthawk/adult/shoot.png",
+      "sha256": "4bbc0f28a844ab0008565893f90227e302d62a6462778c856d8a0b106f617f34",
+      "action": "shoot",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_shorthawk",
+      "path": "spritesheets/hair/shorthawk/adult/sit.png",
+      "sha256": "b03f7c01f13714f2c1a651673c7084f41e1b3768918a15facab482a483ac188b",
+      "action": "sit",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_shorthawk",
+      "path": "spritesheets/hair/shorthawk/adult/slash.png",
+      "sha256": "de8ddf9010d8e9a8c04cc47d360ea612b9cfcac529e57d307604e4225687c570",
+      "action": "slash",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_shorthawk",
+      "path": "spritesheets/hair/shorthawk/adult/spellcast.png",
+      "sha256": "f4d8637efaf077c6ea7aa5f2396a03bc7c5a605d9b5c25df2cee7ef6e4dd1e1a",
+      "action": "spellcast",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_shorthawk",
+      "path": "spritesheets/hair/shorthawk/adult/thrust.png",
+      "sha256": "0e9c088bb54f3f2230460ad1d787599b20fe4b971051e465451208e387efbd1d",
+      "action": "thrust",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_shorthawk",
+      "path": "spritesheets/hair/shorthawk/adult/walk.png",
+      "sha256": "02d0f51f025c0d9879387fe4a472ef956e37fdbfbc9c32b0566cdea8cb40fa60",
+      "action": "walk",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_high_and_tight",
+      "path": "spritesheets/hair/high_and_tight/adult/backslash.png",
+      "sha256": "828b198e8084e8c56a6635dd96a2c08b59279c4b1066bf2ec60c7c260870c168",
+      "action": "backslash",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A22600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_high_and_tight",
+      "path": "spritesheets/hair/high_and_tight/adult/climb.png",
+      "sha256": "de7b2af483a301284431a895364ac64e388fd1f7f657d250f7c91eb8a7d058b2",
+      "action": "climb",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A22600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_high_and_tight",
+      "path": "spritesheets/hair/high_and_tight/adult/combat_idle.png",
+      "sha256": "b752f1d296a6963d41d6a35cce5f6ad4fe9c04100d129d0ec6fff4c72970495c",
+      "action": "combat_idle",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A22600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_high_and_tight",
+      "path": "spritesheets/hair/high_and_tight/adult/emote.png",
+      "sha256": "aea31ec8202172a02f7c3129cf63b54dd484edb5f169a73f1b062058325011d2",
+      "action": "emote",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A22600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_high_and_tight",
+      "path": "spritesheets/hair/high_and_tight/adult/halfslash.png",
+      "sha256": "ba92c0db298de7a290bafba7653da581dc7f0b941460e5519a249e219879645d",
+      "action": "halfslash",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A22600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_high_and_tight",
+      "path": "spritesheets/hair/high_and_tight/adult/hurt.png",
+      "sha256": "969ebd3ec46d48cce244491de9a4c59889092e0650e6124a5a166e3a4cb01447",
+      "action": "hurt",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A22600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_high_and_tight",
+      "path": "spritesheets/hair/high_and_tight/adult/idle.png",
+      "sha256": "fe4c414c968ac423ee4e7623a0ce5d06d1eeff77c93877578b21e33307409dab",
+      "action": "idle",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A22600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_high_and_tight",
+      "path": "spritesheets/hair/high_and_tight/adult/jump.png",
+      "sha256": "322c881f7e60b00d8897386d7d91c8f7f394997ee4bd62a2edb47373b5340e35",
+      "action": "jump",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A22600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_high_and_tight",
+      "path": "spritesheets/hair/high_and_tight/adult/run.png",
+      "sha256": "4a7b99d2540e5b9598efc8704e66191991b5af8ccd24cd7d5034898899c62da8",
+      "action": "run",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A22600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_high_and_tight",
+      "path": "spritesheets/hair/high_and_tight/adult/shoot.png",
+      "sha256": "dfc91189b2343dc6f101b3de1fc0615caa6af6a4b6f55556193b33c36bdfa692",
+      "action": "shoot",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A22600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_high_and_tight",
+      "path": "spritesheets/hair/high_and_tight/adult/sit.png",
+      "sha256": "8a74198f925d8169af7530de4431e9a25847f8c02956deef008f838fb9ed21e9",
+      "action": "sit",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A22600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_high_and_tight",
+      "path": "spritesheets/hair/high_and_tight/adult/slash.png",
+      "sha256": "68c399d1fc89a9679328aecf59a7dee973f17ffcf60cba2d40a9e26e17ae42e5",
+      "action": "slash",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A22600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_high_and_tight",
+      "path": "spritesheets/hair/high_and_tight/adult/spellcast.png",
+      "sha256": "4e0fa4f3495f3c3a82093e9f0470e6600d2b979d3d6f771d1f769f89d957103b",
+      "action": "spellcast",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A22600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_high_and_tight",
+      "path": "spritesheets/hair/high_and_tight/adult/thrust.png",
+      "sha256": "b355142367d4a4c82f8b9854612f6a9f9724241ec5107857e3cb74182d7c5726",
+      "action": "thrust",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A22600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_high_and_tight",
+      "path": "spritesheets/hair/high_and_tight/adult/walk.png",
+      "sha256": "38b1e8bfe0aa58a32aebb764aac7e6f39988605918819e1b4ba14b10604d808d",
+      "action": "walk",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A22600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_flat_top_fade",
+      "path": "spritesheets/hair/flat_top_fade/adult/backslash.png",
+      "sha256": "22651f953700b03bd46bfbc853d163bae16d212cb6760e841d043ab7e0a111f3",
+      "action": "backslash",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_flat_top_fade",
+      "path": "spritesheets/hair/flat_top_fade/adult/climb.png",
+      "sha256": "a7be504b48eef2ef7db3332c0c0434ecb985e70ef806b06ad6e72060b4aa7e1a",
+      "action": "climb",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_flat_top_fade",
+      "path": "spritesheets/hair/flat_top_fade/adult/combat_idle.png",
+      "sha256": "a371e89700f036582de8c5685e99d63f0535934e1b61092c65e7d7ebf247e731",
+      "action": "combat_idle",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_flat_top_fade",
+      "path": "spritesheets/hair/flat_top_fade/adult/emote.png",
+      "sha256": "09441aeb0cb5343b3d00dfd43127e98336b3d289408b1a5c29bc5c65b4c913a2",
+      "action": "emote",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_flat_top_fade",
+      "path": "spritesheets/hair/flat_top_fade/adult/halfslash.png",
+      "sha256": "58bcee898e5a0c8f16585dd73b18a05526f6b3bb3605870490e41d20ad035e44",
+      "action": "halfslash",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_flat_top_fade",
+      "path": "spritesheets/hair/flat_top_fade/adult/hurt.png",
+      "sha256": "81cbb333f20640cbc02183c669b743e6360101aa2d8b545b40cb2e4f7f99ef24",
+      "action": "hurt",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_flat_top_fade",
+      "path": "spritesheets/hair/flat_top_fade/adult/idle.png",
+      "sha256": "46935fc69522f04e6cb04b9ee14604e4f8b4a6aaf78497f3c65c34c8b4d4c7c9",
+      "action": "idle",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_flat_top_fade",
+      "path": "spritesheets/hair/flat_top_fade/adult/jump.png",
+      "sha256": "62046a3943300cd9d45927db04c5298c0b95c5133694c7218104860943069f88",
+      "action": "jump",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_flat_top_fade",
+      "path": "spritesheets/hair/flat_top_fade/adult/run.png",
+      "sha256": "f38574f6c31b6742389b51f68e912665fe7d1c9e12c0d0cec5bd5c10f61be249",
+      "action": "run",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_flat_top_fade",
+      "path": "spritesheets/hair/flat_top_fade/adult/shoot.png",
+      "sha256": "c0117afed34783a5b729ba6c622e29b2b6a624a136df81b957c85362ff0b3a57",
+      "action": "shoot",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_flat_top_fade",
+      "path": "spritesheets/hair/flat_top_fade/adult/sit.png",
+      "sha256": "143e134ba4af7057a506e588f1c5417952c3edbb5050703539bcf43592c636e4",
+      "action": "sit",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_flat_top_fade",
+      "path": "spritesheets/hair/flat_top_fade/adult/slash.png",
+      "sha256": "ee06dbb6873779fa1a181b2c50b2c2bcd02ac5f6cfe4a472f8e16004c9550c37",
+      "action": "slash",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_flat_top_fade",
+      "path": "spritesheets/hair/flat_top_fade/adult/spellcast.png",
+      "sha256": "bdd81b13a3eda78d0ebe4d2285ae64c64a0f3392bdf39183cb4d4d4c8bacb771",
+      "action": "spellcast",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_flat_top_fade",
+      "path": "spritesheets/hair/flat_top_fade/adult/thrust.png",
+      "sha256": "ccc9d985429b0e685db194e28d438d6aeafbdc1300da7d94bf514243b6e2cefe",
+      "action": "thrust",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_flat_top_fade",
+      "path": "spritesheets/hair/flat_top_fade/adult/walk.png",
+      "sha256": "22ceb08f2f4a141a2fff5630eaa12f6ffc42d8d22ae69176141ae8ee78a94fbc",
+      "action": "walk",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_longhawk",
+      "path": "spritesheets/hair/longhawk/adult/backslash.png",
+      "sha256": "b840402c1255bfcae5de1a8efa0839809dbc750d4ddeeea0c8ed3e12004d7cd6",
+      "action": "backslash",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_longhawk",
+      "path": "spritesheets/hair/longhawk/adult/combat_idle.png",
+      "sha256": "ca011b16c0a726f9f506f3c7979a1688c587120e7a8468ef795084afd95a5927",
+      "action": "combat_idle",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_longhawk",
+      "path": "spritesheets/hair/longhawk/adult/emote.png",
+      "sha256": "179f77782cfe8d72370cb02846f7c84b199a40c331a2894c2c860cb36a1ad00d",
+      "action": "emote",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_longhawk",
+      "path": "spritesheets/hair/longhawk/adult/halfslash.png",
+      "sha256": "b5848f6f7d47e6a90a914b33ec9b7ac5008796837428b40e812b5b1d54b1df79",
+      "action": "halfslash",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_longhawk",
+      "path": "spritesheets/hair/longhawk/adult/hurt.png",
+      "sha256": "adafe3192405223732449ef3729c3c4f12e75716bf280bbb5eab941ac5990f99",
+      "action": "hurt",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_longhawk",
+      "path": "spritesheets/hair/longhawk/adult/idle.png",
+      "sha256": "128493932167ecec17cc750e4332667e2f15a4a1a74dd6846aa90bc4dd7dc539",
+      "action": "idle",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_longhawk",
+      "path": "spritesheets/hair/longhawk/adult/jump.png",
+      "sha256": "62bc85f05bbb1e703b2111a52c3f14141206bb2b4cfc5dd84d659237cfc8f524",
+      "action": "jump",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_longhawk",
+      "path": "spritesheets/hair/longhawk/adult/run.png",
+      "sha256": "1939966135555898963bb0af1a5a73324377e8748d21a3c2ff6bd9d3699c608b",
+      "action": "run",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_longhawk",
+      "path": "spritesheets/hair/longhawk/adult/shoot.png",
+      "sha256": "84d4a71d43bba64cc3119226d2b903a981c9ba3fab2f80409b5e66d6a6045afa",
+      "action": "shoot",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_longhawk",
+      "path": "spritesheets/hair/longhawk/adult/sit.png",
+      "sha256": "685fbe1faa70ec5a31bc0385b68d6fdac5972f0f3433c977f827dd9951b0d914",
+      "action": "sit",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_longhawk",
+      "path": "spritesheets/hair/longhawk/adult/slash.png",
+      "sha256": "c7e8bf3624b130e1902796f996d1880059135c7eb0bc3137b61e0ec44e3a95a7",
+      "action": "slash",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_longhawk",
+      "path": "spritesheets/hair/longhawk/adult/spellcast.png",
+      "sha256": "28a419bf492b6e93d07fdf66e3d59fddcb0195e0e6427587e74345951877e558",
+      "action": "spellcast",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_longhawk",
+      "path": "spritesheets/hair/longhawk/adult/thrust.png",
+      "sha256": "1ccb24d8e6c7f8b27585e8fdb64acdc8fa9d79c2852565ed8a84d328f127ac39",
+      "action": "thrust",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_longhawk",
+      "path": "spritesheets/hair/longhawk/adult/walk.png",
+      "sha256": "bda9eedcb2c4b282895dec553832e1019138baf9dc19c94fadc98dcea254e01b",
+      "action": "walk",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_lob",
+      "path": "spritesheets/hair/lob/adult/backslash.png",
+      "sha256": "2f3c229b7c925eb9af10e7c00c7005c4609beb27c3588fed4f1285be6e4e5ea9",
+      "action": "backslash",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A22600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_lob",
+      "path": "spritesheets/hair/lob/adult/combat_idle.png",
+      "sha256": "2b2587d7ab82061f42652dc890d2e35dd063cab667c8da7cb819e662a7bfda55",
+      "action": "combat_idle",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A22600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_lob",
+      "path": "spritesheets/hair/lob/adult/emote.png",
+      "sha256": "5ec07b612861de8f00a81795ee11a0857380d091426fa28954cf3e5026fe47ef",
+      "action": "emote",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A22600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_lob",
+      "path": "spritesheets/hair/lob/adult/halfslash.png",
+      "sha256": "25eb60718fcbb0546da199b63771d2f0647ccf29296561c493dc7e806ad640fd",
+      "action": "halfslash",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A22600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_lob",
+      "path": "spritesheets/hair/lob/adult/hurt.png",
+      "sha256": "b90f635f35dbe944370a40f69d90116bd407fae47c48b6a04d769f8930e1f890",
+      "action": "hurt",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A22500",
+            "#A22600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_lob",
+      "path": "spritesheets/hair/lob/adult/idle.png",
+      "sha256": "02aa4d7ffc839f4f2d6753fac0f84ac0f84385058922349b6a7c360022b30639",
+      "action": "idle",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A22600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_lob",
+      "path": "spritesheets/hair/lob/adult/jump.png",
+      "sha256": "f354176046e9152e977f8d87f7c12b8059f332cc4da109a56bbb44bb335cc6b9",
+      "action": "jump",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A22600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_lob",
+      "path": "spritesheets/hair/lob/adult/run.png",
+      "sha256": "df845337240315ccde5997d32fc06848304494ed87ba7c0811f5eb9959e9d05b",
+      "action": "run",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A22600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_lob",
+      "path": "spritesheets/hair/lob/adult/shoot.png",
+      "sha256": "5a36fa4703cff86525e0a4ea7dd7f47deb101e6b0f2e52473503853412c322a8",
+      "action": "shoot",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A22600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_lob",
+      "path": "spritesheets/hair/lob/adult/sit.png",
+      "sha256": "bf4f4079e6a33cc9f014be245f3003c59ba84e85e68876de5604bc4ab044a4c7",
+      "action": "sit",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A22600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_lob",
+      "path": "spritesheets/hair/lob/adult/slash.png",
+      "sha256": "5ee95253fb684adddf8d741209f40377853d2ac58caf614b36fd929261c1fe92",
+      "action": "slash",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A22600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_lob",
+      "path": "spritesheets/hair/lob/adult/spellcast.png",
+      "sha256": "66d6a72f96399ab5a8e70d935db9402043e83a0ff8a85fd4635f76b7aa648df5",
+      "action": "spellcast",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A22600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_lob",
+      "path": "spritesheets/hair/lob/adult/thrust.png",
+      "sha256": "0acf6b3b911f24e6c329441993f361aed8c19922dc0553977518739c87820ccd",
+      "action": "thrust",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A22600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_lob",
+      "path": "spritesheets/hair/lob/adult/walk.png",
+      "sha256": "bd4543642b80fc92cb945bc67f2c434d8872ee4921eb01e7ca4c4d3358f0102a",
+      "action": "walk",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A22600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_dreadlocks_long",
+      "path": "spritesheets/hair/dreadlocks_long/adult/backslash.png",
+      "sha256": "17793f49782ec79a00b186c712a4860236bd0534f296a70e0d94118974f12704",
+      "action": "backslash",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_dreadlocks_long",
+      "path": "spritesheets/hair/dreadlocks_long/adult/combat_idle.png",
+      "sha256": "35bfeacb4cb2c5c8a0a0f41ff241304901bcd7b4126434b7239303ad781c734a",
+      "action": "combat_idle",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_dreadlocks_long",
+      "path": "spritesheets/hair/dreadlocks_long/adult/emote.png",
+      "sha256": "d75ce46e18dc6a760523e577bb45f593d8e1a3b94531628db6850cac77b47e58",
+      "action": "emote",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_dreadlocks_long",
+      "path": "spritesheets/hair/dreadlocks_long/adult/halfslash.png",
+      "sha256": "bf4231a0c3c8902c6ae16d388b1b299d7b72c99db78ba286d55e70f46b2fde5e",
+      "action": "halfslash",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_dreadlocks_long",
+      "path": "spritesheets/hair/dreadlocks_long/adult/hurt.png",
+      "sha256": "837d5f751ca6eabad97001c7c5508837b6b63f797d19b90ee2d53cb78b1b6968",
+      "action": "hurt",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_dreadlocks_long",
+      "path": "spritesheets/hair/dreadlocks_long/adult/idle.png",
+      "sha256": "0a87112e794eac92ed850581803f992304367b6fca3d916107fbd4326fca6ad3",
+      "action": "idle",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_dreadlocks_long",
+      "path": "spritesheets/hair/dreadlocks_long/adult/jump.png",
+      "sha256": "d91d9d3e10a1ea96c64fe3f65656acf0d00a0493eb61ce1f3541e4c6ce558524",
+      "action": "jump",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_dreadlocks_long",
+      "path": "spritesheets/hair/dreadlocks_long/adult/run.png",
+      "sha256": "c2650df12fbc32aa45ddc302b5e36151f0dacc40f99fb77d532d2fcf411cc299",
+      "action": "run",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_dreadlocks_long",
+      "path": "spritesheets/hair/dreadlocks_long/adult/shoot.png",
+      "sha256": "31140af8e06bca38f1818814d7d0be56ffbfcb8018471e0b5e686c8f72fd3dc2",
+      "action": "shoot",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_dreadlocks_long",
+      "path": "spritesheets/hair/dreadlocks_long/adult/sit.png",
+      "sha256": "e11798d65b79348f1cb23430821c86e1211366876faf119e0c2b704ebe3b6df3",
+      "action": "sit",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_dreadlocks_long",
+      "path": "spritesheets/hair/dreadlocks_long/adult/slash.png",
+      "sha256": "cdda8a2df70a27bfa027295570f31837eaa6802475bf09ae1d0b1bebd263e45e",
+      "action": "slash",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_dreadlocks_long",
+      "path": "spritesheets/hair/dreadlocks_long/adult/spellcast.png",
+      "sha256": "8e41b34e21a129dfa649fd7688abb0039c7008ecf565cadbfa4774be91fa4a09",
+      "action": "spellcast",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_dreadlocks_long",
+      "path": "spritesheets/hair/dreadlocks_long/adult/thrust.png",
+      "sha256": "5adb6b601843fe0c977cb59161fd7f29fd86c5cb1323ae8502b64e7c9bf05cc3",
+      "action": "thrust",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_dreadlocks_long",
+      "path": "spritesheets/hair/dreadlocks_long/adult/walk.png",
+      "sha256": "077de7ef7f9ee889f30773065051a676846f2fd65f3819279a9a1809759f1068",
+      "action": "walk",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_parted",
+      "path": "spritesheets/hair/parted/adult/backslash.png",
+      "sha256": "39bd99c1ef5df69ebf52a719673294ff39e14c7cb044ca8582364f4942e062e8",
+      "action": "backslash",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_parted",
+      "path": "spritesheets/hair/parted/adult/climb.png",
+      "sha256": "7f5490456f614dc605eee509e133dc4f1b50234dab502136826fa48dffadcfee",
+      "action": "climb",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_parted",
+      "path": "spritesheets/hair/parted/adult/combat_idle.png",
+      "sha256": "45882d268922ae421aefeacfe6bf2f813018d4af7fa1f1e862f95931aeb4234f",
+      "action": "combat_idle",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_parted",
+      "path": "spritesheets/hair/parted/adult/emote.png",
+      "sha256": "1d3c07a509ea8a4b2d68e0356e68a9264e82612d5808bf7acd25c5496482d366",
+      "action": "emote",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_parted",
+      "path": "spritesheets/hair/parted/adult/halfslash.png",
+      "sha256": "56592ea5f2c6919160623569a4ad06bacd7b52d674cb3185b43f2883b3277341",
+      "action": "halfslash",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_parted",
+      "path": "spritesheets/hair/parted/adult/hurt.png",
+      "sha256": "00cf109918d298ff59c35d4f7ed155fa6e5cc6d33d2734d7f70df9e5f9463f9e",
+      "action": "hurt",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_parted",
+      "path": "spritesheets/hair/parted/adult/idle.png",
+      "sha256": "9b3f559fe16ca9fd9529b8eed5e8d3f7ed84e899a915efd9b5d1e8d38c8ad10c",
+      "action": "idle",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_parted",
+      "path": "spritesheets/hair/parted/adult/jump.png",
+      "sha256": "58b0779d7fc759acffa19d29f206bdda9e8aedd94c5c6271996ea1447369d261",
+      "action": "jump",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_parted",
+      "path": "spritesheets/hair/parted/adult/run.png",
+      "sha256": "4f14967f95e55a202155c16b9991107a7e0d93fa39766d1582985010090db504",
+      "action": "run",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_parted",
+      "path": "spritesheets/hair/parted/adult/shoot.png",
+      "sha256": "2cb4e434b15f071a7b3087a6bb69a69d1478d4f8c0f1acba678c52438942b6a5",
+      "action": "shoot",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_parted",
+      "path": "spritesheets/hair/parted/adult/sit.png",
+      "sha256": "60b9a0839868f47d5762b778a3b32e22053e85711c2d7c1dbc3843d34b98d8de",
+      "action": "sit",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_parted",
+      "path": "spritesheets/hair/parted/adult/slash.png",
+      "sha256": "8f33b471227be37a071a3ba4fc695ba21e380c94aacf6031cb8cad206e07bb69",
+      "action": "slash",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_parted",
+      "path": "spritesheets/hair/parted/adult/spellcast.png",
+      "sha256": "efadd3b4795983b932c0a38713ca23962c2705527cb790247532a4a035ed0858",
+      "action": "spellcast",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_parted",
+      "path": "spritesheets/hair/parted/adult/thrust.png",
+      "sha256": "8831f20e04d5a7723761ab1cb70791e08558d8303eaa92ac66917ed0f2abaa19",
+      "action": "thrust",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_parted",
+      "path": "spritesheets/hair/parted/adult/walk.png",
+      "sha256": "aa86f9c6af54afb0b5ec52417fabf48f8d667a40ab9ccb44c8c46569b085898e",
+      "action": "walk",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A02600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_half_up",
+      "path": "spritesheets/hair/half_up/adult/backslash.png",
+      "sha256": "00ac0d43b6c5a4cbdb34f73b63c71827990c58e193fa87bf6c5169cd1d396bab",
+      "action": "backslash",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A22600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_half_up",
+      "path": "spritesheets/hair/half_up/adult/combat_idle.png",
+      "sha256": "08e31e0c32ca87aac26d0bf269b17ccdf18cb78f4ac33a192174e9082e54d1be",
+      "action": "combat_idle",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A22600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_half_up",
+      "path": "spritesheets/hair/half_up/adult/emote.png",
+      "sha256": "ca0458421b879f7b6e39d28685152c3877efaefe6eb6b87228c6526d8ee5dbc8",
+      "action": "emote",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A22600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_half_up",
+      "path": "spritesheets/hair/half_up/adult/halfslash.png",
+      "sha256": "3de00ddbec00e8f6185ff712ceff59f985410c1f38dd9e8a64942a9e368a5190",
+      "action": "halfslash",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A22600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_half_up",
+      "path": "spritesheets/hair/half_up/adult/hurt.png",
+      "sha256": "05bd3c3605efc98f1863b3a6f76afc08d3e7ff556925fc4456e59f1b7c88c305",
+      "action": "hurt",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A22600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_half_up",
+      "path": "spritesheets/hair/half_up/adult/idle.png",
+      "sha256": "a424871a61213819b89ea8c3a4cac5f8a690cd589394822a1f7d05789960b905",
+      "action": "idle",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A22600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_half_up",
+      "path": "spritesheets/hair/half_up/adult/jump.png",
+      "sha256": "d08c51b1fd8dc970871e247c977b5944fa30764bc5b54949fa6f7e2b035b9d61",
+      "action": "jump",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A22600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_half_up",
+      "path": "spritesheets/hair/half_up/adult/run.png",
+      "sha256": "fd6c315b77b795dc9553ca7a3ae927836e2fc654ea65d713702818a0aff1f5ab",
+      "action": "run",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A22600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_half_up",
+      "path": "spritesheets/hair/half_up/adult/shoot.png",
+      "sha256": "1c92cfcd1919c531995dbfb405950ede498242fb450260e3f4902d2dcaa5f723",
+      "action": "shoot",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A22600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_half_up",
+      "path": "spritesheets/hair/half_up/adult/sit.png",
+      "sha256": "aa7092b5d3dc3cd39181b29bf6a314262580528b10625791f3a11c7d129b6857",
+      "action": "sit",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A22600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_half_up",
+      "path": "spritesheets/hair/half_up/adult/slash.png",
+      "sha256": "8c95b775376750eb6ab24ef9805dada44cc686437b75f115853bd0e33a51b2aa",
+      "action": "slash",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A22600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_half_up",
+      "path": "spritesheets/hair/half_up/adult/spellcast.png",
+      "sha256": "68bb8d70249723403775ec80ea531dbc735d041ca4f68085bc0657edfa738ca3",
+      "action": "spellcast",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A22600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_half_up",
+      "path": "spritesheets/hair/half_up/adult/thrust.png",
+      "sha256": "0861842c6be1e742c808f4db7a6627634926a17145f705e473af7412c047067d",
+      "action": "thrust",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A22600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_half_up",
+      "path": "spritesheets/hair/half_up/adult/walk.png",
+      "sha256": "2fbc108e915410951015beb25ba48e6f154bf43781173d89bdc0b6b0c23ac007",
+      "action": "walk",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A22600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    },
+    {
+      "itemId": "hair_flat_top_straight",
+      "path": "spritesheets/hair/flat_top_straight/adult/hurt.png",
+      "sha256": "b15652cdb6f7ed2e06c4080299d918f2192be3a8b08b7238d9818bfa269d0d83",
+      "action": "hurt",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "channels": {
+        "hair": {
+          "source": [
+            "#260D14",
+            "#6A1108",
+            "#A42600",
+            "#BF4000",
+            "#E55600",
+            "#FF8A00",
+            "#A22600"
+          ],
+          "targetIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            2
+          ],
+          "extraShadeStart": 6,
+          "extraShadeTargets": "hair_shadow_2021"
+        }
+      },
+      "requiredVersion": 3,
+      "message": "Reviewed translucent-hair mapping keeps the selected color in the shadow; original transparency is preserved."
+    }
+  ],
+  "sharedPhysicalColors": [
+    {
+      "itemId": "eyes_cyclops",
+      "slot": "eyes",
+      "channel": "eyes",
+      "material": "eye"
+    },
+    {
+      "itemId": "eyes_cyclops2",
+      "slot": "eyes",
+      "channel": "eyes",
+      "material": "eye"
+    }
+  ]
+}

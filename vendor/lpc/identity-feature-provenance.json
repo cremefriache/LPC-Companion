@@ -1,0 +1,252 @@
+{
+  "repository": "https://github.com/codyaboyd/Universal-LPC-Modern-Sprite-Generator",
+  "commit": "7736d762aa2113f29342dad869ef4931218aa7ae",
+  "metadata": {
+    "sheet_definitions/hair/beards/beards_trimmed.json": {
+      "sha256": "31d21d20396f6194b09407328394f2eb13794e5d56682afa89ce2b822bc18ec1",
+      "original": {
+        "name": "Trimmed Beard",
+        "layer_1": {
+          "zPos": 110,
+          "male": "beards/beard/trimmed/",
+          "female": "beards/beard/trimmed/",
+          "muscular": "beards/beard/trimmed/",
+          "teen": "beards/beard/trimmed/",
+          "pregnant": "beards/beard/trimmed/"
+        },
+        "animations": [
+          "spellcast",
+          "thrust",
+          "walk",
+          "slash",
+          "shoot",
+          "hurt",
+          "watering",
+          "idle",
+          "jump",
+          "run",
+          "sit",
+          "emote",
+          "climb",
+          "combat",
+          "1h_slash",
+          "1h_backslash",
+          "1h_halfslash"
+        ],
+        "credits": [
+          {
+            "file": "beards/beard/trimmed",
+            "notes": "",
+            "authors": [
+              "ElizaWy"
+            ],
+            "licenses": [
+              "OGA-BY 3.0"
+            ],
+            "urls": [
+              "https://github.com/ElizaWy/LPC/tree/main/Characters/Hair",
+              "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
+            ]
+          }
+        ],
+        "recolors": {
+          "material": "hair",
+          "palettes": [
+            "ulpc",
+            "lpcr",
+            "all.lpcr"
+          ]
+        },
+        "type_name": "beard"
+      }
+    },
+    "sheet_definitions/head/ears/head_ears_elven.json": {
+      "sha256": "a26d85dfab2ff37995ed0dadd00718fbcb1e040e2e91f8b497148f0378d69cbc",
+      "original": {
+        "name": "Elven ears",
+        "layer_1": {
+          "zPos": 126,
+          "male": "head/ears/elven/adult/",
+          "muscular": "head/ears/elven/adult/",
+          "female": "head/ears/elven/adult/",
+          "teen": "head/ears/elven/adult/",
+          "pregnant": "head/ears/elven/adult/",
+          "child": "head/ears/elven/child/"
+        },
+        "match_body_color": true,
+        "animations": [
+          "spellcast",
+          "thrust",
+          "walk",
+          "slash",
+          "shoot",
+          "hurt",
+          "watering",
+          "idle",
+          "jump",
+          "run",
+          "sit",
+          "emote",
+          "climb",
+          "combat",
+          "1h_slash",
+          "1h_backslash",
+          "1h_halfslash"
+        ],
+        "credits": [
+          {
+            "file": "head/ears/elven",
+            "notes": "adapted to v3 base by bluecarrot16; expanded to other animations and child by JaidynReiman",
+            "authors": [
+              "JaidynReiman",
+              "bluecarrot16",
+              "Thane Brimhall (pennomi)",
+              "laetissima",
+              "Matthew Krohn (makrohn)",
+              "JaidynReiman"
+            ],
+            "licenses": [
+              "GPL 3.0",
+              "CC-BY-SA 3.0"
+            ],
+            "urls": [
+              "https://opengameart.org/content/lpc-base-character-expressions",
+              "http://opengameart.org/content/lpc-clothing-updates"
+            ]
+          }
+        ],
+        "recolors": {
+          "material": "body",
+          "palettes": [
+            "ulpc",
+            "lpcr",
+            "all.lpcr"
+          ]
+        },
+        "type_name": "ears"
+      }
+    }
+  },
+  "sprites": {
+    "spritesheets/beards/beard/trimmed/idle.png": "10a881b082886011dc3141fa74df6d071141f585cde2c241c37fa01f789427c8",
+    "spritesheets/beards/beard/trimmed/walk.png": "f7477aca2a172358f56d4f8109af0c788938c1fc8e392af48f29b65085fd6d0e",
+    "spritesheets/beards/beard/trimmed/run.png": "b1b8a8b74cc2788646a269b03091dcea79945cf4d42e762265ba98413eed7d6a",
+    "spritesheets/beards/beard/trimmed/jump.png": "a54ded06c407d48cf280840f683ba187cb1fa9beb9beeda4d0fbb35724b44411",
+    "spritesheets/beards/beard/trimmed/spellcast.png": "2cf0793320d815500c2e6523be24a18de91eefd09b82b218b825272cda9f26ab",
+    "spritesheets/beards/beard/trimmed/sit.png": "1cdebbdf77f7684716285f033e565ac364e31f4ebf822a324ecd9b895ea0e519",
+    "spritesheets/beards/beard/trimmed/emote.png": "5dd154cbdfcacbea3bcad09c73381b4bde2a4b5a7d744848cd566d58cb24a6d2",
+    "spritesheets/head/ears/elven/adult/idle.png": "a4dbd76d47119390f736105a1d045c359c752ce83a8ddc91c6a9d9c658995653",
+    "spritesheets/head/ears/elven/adult/walk.png": "7a04b1d8f5095e53dad4da5d497fb8db7e709eba4ab022d2d5f3000b4c547b66",
+    "spritesheets/head/ears/elven/adult/run.png": "347e4643aff9fe7d9de1dfa4f36db4667e803320d0f9bd5f3c71e130fbf9aa2c",
+    "spritesheets/head/ears/elven/adult/jump.png": "d0470098ca034051f42553852d90de29633aa7babf879971082dfb45176cc458",
+    "spritesheets/head/ears/elven/adult/spellcast.png": "f01ab14373ef6a94a7a63936cd75dc3319e026567c959e8a67f3d3e43a9abacb",
+    "spritesheets/head/ears/elven/adult/sit.png": "c2be4dd7f38a07b623e0edb56c2071574b3df0185bbdb58f4b00a009a6a85370",
+    "spritesheets/head/ears/elven/adult/emote.png": "5bfe128e3c6816c5270f3fc85ebf9f7d7ed333d1651cd2a8e9071cf607615429"
+  },
+  "items": {
+    "beards_trimmed": {
+      "name": "Trimmed beard",
+      "slot": "beard",
+      "bodyTypes": [
+        "male",
+        "female"
+      ],
+      "counterparts": {},
+      "material": "hair",
+      "selectedLicense": "OGA-BY 3.0",
+      "sourcePalette": "orange",
+      "layers": [
+        {
+          "z": 110,
+          "required": true,
+          "paths": {
+            "idle": "spritesheets/beards/beard/trimmed/idle.png",
+            "walk": "spritesheets/beards/beard/trimmed/walk.png",
+            "run": "spritesheets/beards/beard/trimmed/run.png",
+            "jump": "spritesheets/beards/beard/trimmed/jump.png",
+            "spellcast": "spritesheets/beards/beard/trimmed/spellcast.png",
+            "sit": "spritesheets/beards/beard/trimmed/sit.png",
+            "emote": "spritesheets/beards/beard/trimmed/emote.png"
+          }
+        }
+      ],
+      "requiredLayerCount": 1,
+      "occupies": [
+        "beard"
+      ],
+      "requires": {},
+      "conflictsWith": [],
+      "credits": [
+        {
+          "file": "beards/beard/trimmed",
+          "notes": "",
+          "authors": [
+            "ElizaWy"
+          ],
+          "licenses": [
+            "OGA-BY 3.0"
+          ],
+          "urls": [
+            "https://github.com/ElizaWy/LPC/tree/main/Characters/Hair",
+            "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
+          ]
+        }
+      ]
+    },
+    "head_ears_elven": {
+      "name": "Elven ears",
+      "slot": "ears",
+      "bodyTypes": [
+        "male",
+        "female"
+      ],
+      "counterparts": {},
+      "material": "body",
+      "selectedLicense": "GPL 3.0",
+      "sourcePalette": "light",
+      "layers": [
+        {
+          "z": 126,
+          "required": true,
+          "paths": {
+            "idle": "spritesheets/head/ears/elven/adult/idle.png",
+            "walk": "spritesheets/head/ears/elven/adult/walk.png",
+            "run": "spritesheets/head/ears/elven/adult/run.png",
+            "jump": "spritesheets/head/ears/elven/adult/jump.png",
+            "spellcast": "spritesheets/head/ears/elven/adult/spellcast.png",
+            "sit": "spritesheets/head/ears/elven/adult/sit.png",
+            "emote": "spritesheets/head/ears/elven/adult/emote.png"
+          }
+        }
+      ],
+      "requiredLayerCount": 1,
+      "occupies": [
+        "ears"
+      ],
+      "requires": {},
+      "conflictsWith": [],
+      "credits": [
+        {
+          "file": "head/ears/elven",
+          "notes": "adapted to v3 base by bluecarrot16; expanded to other animations and child by JaidynReiman",
+          "authors": [
+            "JaidynReiman",
+            "bluecarrot16",
+            "Thane Brimhall (pennomi)",
+            "laetissima",
+            "Matthew Krohn (makrohn)",
+            "JaidynReiman"
+          ],
+          "licenses": [
+            "GPL 3.0",
+            "CC-BY-SA 3.0"
+          ],
+          "urls": [
+            "https://opengameart.org/content/lpc-base-character-expressions",
+            "http://opengameart.org/content/lpc-clothing-updates"
+          ]
+        }
+      ]
+    }
+  }
+}

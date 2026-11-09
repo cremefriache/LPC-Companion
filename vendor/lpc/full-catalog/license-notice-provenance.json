@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "source": "Creative Commons official versioned legalcode.txt endpoints",
+  "notices": {
+    "CC-BY-3.0": {
+      "url": "https://creativecommons.org/licenses/by/3.0/legalcode.txt",
+      "file": "LICENSE-CC-BY-3.0.txt",
+      "sha256": "e6bc9e9c474700b708f568bac9e5a8a9bcb2b1dad53442f5ba449fcb848b8e76",
+      "bytes": 19467,
+      "title": "Attribution 3.0 Unported"
+    },
+    "CC-BY-4.0": {
+      "url": "https://creativecommons.org/licenses/by/4.0/legalcode.txt",
+      "file": "LICENSE-CC-BY-4.0.txt",
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
+      "bytes": 18657,
+      "title": "Attribution 4.0 International"
+    },
+    "CC-BY-SA-3.0": {
+      "url": "https://creativecommons.org/licenses/by-sa/3.0/legalcode.txt",
+      "file": "LICENSE-CC-BY-SA-3.0.txt",
+      "sha256": "3f941b3b89cf7b8370ceb83cc76d2120d471b58735d8ca60238a751a48d7f72f",
+      "bytes": 22240,
+      "title": "Attribution-ShareAlike 3.0 Unported"
+    },
+    "CC-BY-SA-4.0": {
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/legalcode.txt",
+      "file": "LICENSE-CC-BY-SA-4.0.txt",
+      "sha256": "28a9529c7d0bb4dc51f4bf5c116a3d16ef247a052f7591466768ddf563fd1cf5",
+      "bytes": 20138,
+      "title": "Attribution-ShareAlike 4.0 International"
+    }
+  }
+}

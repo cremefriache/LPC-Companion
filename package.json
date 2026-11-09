@@ -1,0 +1,22 @@
+{
+  "name": "lpc-companion",
+  "version": "0.1.0-dev.38",
+  "private": true,
+  "description": "Local LPC companions, shared scenes and durable chat continuity for SillyTavern",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "check": "node tools/build.mjs --check",
+    "test": "node --test test/*.test.mjs",
+    "render:promo": "node tools/render-promo.mjs"
+  },
+  "devDependencies": {
+    "@noble/hashes": "1.8.0",
+    "ajv": "8.17.1",
+    "esbuild": "0.25.12",
+    "playwright": "1.56.1"
+  },
+  "license": "GPL-3.0-only"
+}

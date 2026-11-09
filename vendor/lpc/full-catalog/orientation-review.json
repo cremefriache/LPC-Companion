@@ -1,0 +1,1147 @@
+{
+  "schemaVersion": 1,
+  "sourceCommit": "86160e7507d6841259cff624a51a63c1d4847ee3",
+  "scope": "Explicit visually reviewed whole-direction omissions. Review compares original full bodies and isolated items across native actions; no generic rear/side/accessory allowance. Unknown sources, missing assets, unproved frames and invisible parents retain failures.",
+  "reviewedShapeGroups": 93,
+  "approved": [
+    {
+      "itemId": "arms_gloves",
+      "action": "run",
+      "directions": [
+        "north"
+      ],
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ],
+      "reviewedShapeGroups": [
+        0,
+        1
+      ],
+      "witnessAction": "walk",
+      "reason": "Hands and wrists are carried in front of the torso in the rear-facing Run pose, unlike the original Walk witness.",
+      "witnessFocus": "body_and_head"
+    },
+    {
+      "itemId": "backpack",
+      "action": "spellcast",
+      "directions": [
+        "south"
+      ],
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "pregnant"
+      ],
+      "reviewedShapeGroups": [
+        2,
+        5
+      ],
+      "witnessAction": "thrust",
+      "reason": "Back-mounted artwork is hidden by the front-facing torso; the original turned-torso witness exposes its edge.",
+      "witnessFocus": "body_and_head"
+    },
+    {
+      "itemId": "backpack",
+      "action": "walk",
+      "directions": [
+        "south"
+      ],
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "pregnant"
+      ],
+      "reviewedShapeGroups": [
+        3,
+        6
+      ],
+      "witnessAction": "thrust",
+      "reason": "Back-mounted artwork is hidden by the front-facing torso; the original turned-torso witness exposes its edge.",
+      "witnessFocus": "body_and_head"
+    },
+    {
+      "itemId": "backpack",
+      "action": "slash",
+      "directions": [
+        "south"
+      ],
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "pregnant"
+      ],
+      "reviewedShapeGroups": [
+        4,
+        7
+      ],
+      "witnessAction": "thrust",
+      "reason": "Back-mounted artwork is hidden by the front-facing torso; the original turned-torso witness exposes its edge.",
+      "witnessFocus": "body_and_head"
+    },
+    {
+      "itemId": "backpack_jetpack",
+      "action": "spellcast",
+      "directions": [
+        "south"
+      ],
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "pregnant"
+      ],
+      "reviewedShapeGroups": [
+        8,
+        11
+      ],
+      "witnessAction": "thrust",
+      "reason": "Back-mounted artwork is hidden by the front-facing torso; the original turned-torso witness exposes its edge.",
+      "witnessFocus": "body_and_head"
+    },
+    {
+      "itemId": "backpack_jetpack",
+      "action": "walk",
+      "directions": [
+        "south"
+      ],
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "pregnant"
+      ],
+      "reviewedShapeGroups": [
+        9,
+        12
+      ],
+      "witnessAction": "thrust",
+      "reason": "Back-mounted artwork is hidden by the front-facing torso; the original turned-torso witness exposes its edge.",
+      "witnessFocus": "body_and_head"
+    },
+    {
+      "itemId": "backpack_jetpack",
+      "action": "slash",
+      "directions": [
+        "south"
+      ],
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "pregnant"
+      ],
+      "reviewedShapeGroups": [
+        10,
+        13
+      ],
+      "witnessAction": "thrust",
+      "reason": "Back-mounted artwork is hidden by the front-facing torso; the original turned-torso witness exposes its edge.",
+      "witnessFocus": "body_and_head"
+    },
+    {
+      "itemId": "backpack_jetpack_fins",
+      "action": "spellcast",
+      "directions": [
+        "south"
+      ],
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "pregnant"
+      ],
+      "reviewedShapeGroups": [
+        14,
+        19
+      ],
+      "witnessAction": "thrust",
+      "reason": "Back-mounted artwork is hidden by the front-facing torso; the original turned-torso witness exposes its edge.",
+      "witnessFocus": "body_and_head"
+    },
+    {
+      "itemId": "backpack_jetpack_fins",
+      "action": "walk",
+      "directions": [
+        "south"
+      ],
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "pregnant"
+      ],
+      "reviewedShapeGroups": [
+        15,
+        20
+      ],
+      "witnessAction": "thrust",
+      "reason": "Back-mounted artwork is hidden by the front-facing torso; the original turned-torso witness exposes its edge.",
+      "witnessFocus": "body_and_head"
+    },
+    {
+      "itemId": "backpack_jetpack_fins",
+      "action": "slash",
+      "directions": [
+        "south"
+      ],
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "pregnant"
+      ],
+      "reviewedShapeGroups": [
+        17,
+        21
+      ],
+      "witnessAction": "thrust",
+      "reason": "Back-mounted artwork is hidden by the front-facing torso; the original turned-torso witness exposes its edge.",
+      "witnessFocus": "body_and_head"
+    },
+    {
+      "itemId": "backpack_squarepack",
+      "action": "spellcast",
+      "directions": [
+        "south"
+      ],
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "pregnant"
+      ],
+      "reviewedShapeGroups": [
+        22,
+        25
+      ],
+      "witnessAction": "thrust",
+      "reason": "Back-mounted artwork is hidden by the front-facing torso; the original turned-torso witness exposes its edge.",
+      "witnessFocus": "body_and_head"
+    },
+    {
+      "itemId": "backpack_squarepack",
+      "action": "walk",
+      "directions": [
+        "south"
+      ],
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "pregnant"
+      ],
+      "reviewedShapeGroups": [
+        23,
+        26
+      ],
+      "witnessAction": "thrust",
+      "reason": "Back-mounted artwork is hidden by the front-facing torso; the original turned-torso witness exposes its edge.",
+      "witnessFocus": "body_and_head"
+    },
+    {
+      "itemId": "backpack_squarepack",
+      "action": "slash",
+      "directions": [
+        "south"
+      ],
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "pregnant"
+      ],
+      "reviewedShapeGroups": [
+        24,
+        27
+      ],
+      "witnessAction": "thrust",
+      "reason": "Back-mounted artwork is hidden by the front-facing torso; the original turned-torso witness exposes its edge.",
+      "witnessFocus": "body_and_head"
+    },
+    {
+      "itemId": "belt_obi_knot_left",
+      "action": "spellcast",
+      "directions": [
+        "north"
+      ],
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ],
+      "reviewedShapeGroups": [
+        38,
+        52
+      ],
+      "witnessAction": "run",
+      "reason": "The front sash knot is hidden in the rear view; the original angled Run torso exposes the knot.",
+      "witnessFocus": "body_and_head"
+    },
+    {
+      "itemId": "belt_obi_knot_left",
+      "action": "thrust",
+      "directions": [
+        "north"
+      ],
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ],
+      "reviewedShapeGroups": [
+        39,
+        53
+      ],
+      "witnessAction": "run",
+      "reason": "The front sash knot is hidden in the rear view; the original angled Run torso exposes the knot.",
+      "witnessFocus": "body_and_head"
+    },
+    {
+      "itemId": "belt_obi_knot_left",
+      "action": "walk",
+      "directions": [
+        "north"
+      ],
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ],
+      "reviewedShapeGroups": [
+        40,
+        54
+      ],
+      "witnessAction": "run",
+      "reason": "The front sash knot is hidden in the rear view; the original angled Run torso exposes the knot.",
+      "witnessFocus": "body_and_head"
+    },
+    {
+      "itemId": "belt_obi_knot_left",
+      "action": "slash",
+      "directions": [
+        "north"
+      ],
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ],
+      "reviewedShapeGroups": [
+        41,
+        55
+      ],
+      "witnessAction": "run",
+      "reason": "The front sash knot is hidden in the rear view; the original angled Run torso exposes the knot.",
+      "witnessFocus": "body_and_head"
+    },
+    {
+      "itemId": "belt_obi_knot_left",
+      "action": "shoot",
+      "directions": [
+        "north"
+      ],
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "pregnant"
+      ],
+      "reviewedShapeGroups": [
+        42,
+        56
+      ],
+      "witnessAction": "run",
+      "reason": "The front sash knot is hidden in the rear view; the original angled Run torso exposes the knot.",
+      "witnessFocus": "body_and_head"
+    },
+    {
+      "itemId": "belt_obi_knot_left",
+      "action": "watering",
+      "directions": [
+        "north"
+      ],
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ],
+      "reviewedShapeGroups": [
+        43,
+        57
+      ],
+      "witnessAction": "run",
+      "reason": "The front sash knot is hidden in the rear view; the original angled Run torso exposes the knot.",
+      "witnessFocus": "body_and_head"
+    },
+    {
+      "itemId": "belt_obi_knot_left",
+      "action": "idle",
+      "directions": [
+        "north"
+      ],
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ],
+      "reviewedShapeGroups": [
+        44,
+        58
+      ],
+      "witnessAction": "run",
+      "reason": "The front sash knot is hidden in the rear view; the original angled Run torso exposes the knot.",
+      "witnessFocus": "body_and_head"
+    },
+    {
+      "itemId": "belt_obi_knot_left",
+      "action": "jump",
+      "directions": [
+        "north"
+      ],
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ],
+      "reviewedShapeGroups": [
+        45,
+        59
+      ],
+      "witnessAction": "run",
+      "reason": "The front sash knot is hidden in the rear view; the original angled Run torso exposes the knot.",
+      "witnessFocus": "body_and_head"
+    },
+    {
+      "itemId": "belt_obi_knot_left",
+      "action": "sit",
+      "directions": [
+        "north"
+      ],
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ],
+      "reviewedShapeGroups": [
+        46,
+        60
+      ],
+      "witnessAction": "run",
+      "reason": "The front sash knot is hidden in the rear view; the original angled Run torso exposes the knot.",
+      "witnessFocus": "body_and_head"
+    },
+    {
+      "itemId": "belt_obi_knot_left",
+      "action": "emote",
+      "directions": [
+        "north"
+      ],
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "pregnant"
+      ],
+      "reviewedShapeGroups": [
+        47,
+        61
+      ],
+      "witnessAction": "run",
+      "reason": "The front sash knot is hidden in the rear view; the original angled Run torso exposes the knot.",
+      "witnessFocus": "body_and_head"
+    },
+    {
+      "itemId": "belt_obi_knot_left",
+      "action": "combat",
+      "directions": [
+        "north"
+      ],
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "pregnant"
+      ],
+      "reviewedShapeGroups": [
+        48,
+        62
+      ],
+      "witnessAction": "run",
+      "reason": "The front sash knot is hidden in the rear view; the original angled Run torso exposes the knot.",
+      "witnessFocus": "body_and_head"
+    },
+    {
+      "itemId": "belt_obi_knot_left",
+      "action": "1h_slash",
+      "directions": [
+        "north"
+      ],
+      "bodies": [
+        "male",
+        "female",
+        "teen"
+      ],
+      "reviewedShapeGroups": [
+        49
+      ],
+      "witnessAction": "run",
+      "reason": "The front sash knot is hidden in the rear view; the original angled Run torso exposes the knot.",
+      "witnessFocus": "body_and_head"
+    },
+    {
+      "itemId": "belt_obi_knot_left",
+      "action": "1h_backslash",
+      "directions": [
+        "north"
+      ],
+      "bodies": [
+        "male",
+        "female",
+        "teen"
+      ],
+      "reviewedShapeGroups": [
+        50
+      ],
+      "witnessAction": "run",
+      "reason": "The front sash knot is hidden in the rear view; the original angled Run torso exposes the knot.",
+      "witnessFocus": "body_and_head"
+    },
+    {
+      "itemId": "belt_obi_knot_left",
+      "action": "1h_halfslash",
+      "directions": [
+        "north"
+      ],
+      "bodies": [
+        "male",
+        "female",
+        "teen"
+      ],
+      "reviewedShapeGroups": [
+        51
+      ],
+      "witnessAction": "run",
+      "reason": "The front sash knot is hidden in the rear view; the original angled Run torso exposes the knot.",
+      "witnessFocus": "body_and_head"
+    },
+    {
+      "itemId": "belt_obi_knot_right",
+      "action": "spellcast",
+      "directions": [
+        "north"
+      ],
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ],
+      "reviewedShapeGroups": [
+        63,
+        77
+      ],
+      "witnessAction": "run",
+      "reason": "The front sash knot is hidden in the rear view; the original angled Run torso exposes the knot.",
+      "witnessFocus": "body_and_head"
+    },
+    {
+      "itemId": "belt_obi_knot_right",
+      "action": "thrust",
+      "directions": [
+        "north"
+      ],
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ],
+      "reviewedShapeGroups": [
+        64,
+        78
+      ],
+      "witnessAction": "run",
+      "reason": "The front sash knot is hidden in the rear view; the original angled Run torso exposes the knot.",
+      "witnessFocus": "body_and_head"
+    },
+    {
+      "itemId": "belt_obi_knot_right",
+      "action": "walk",
+      "directions": [
+        "north"
+      ],
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ],
+      "reviewedShapeGroups": [
+        65,
+        79
+      ],
+      "witnessAction": "run",
+      "reason": "The front sash knot is hidden in the rear view; the original angled Run torso exposes the knot.",
+      "witnessFocus": "body_and_head"
+    },
+    {
+      "itemId": "belt_obi_knot_right",
+      "action": "slash",
+      "directions": [
+        "north"
+      ],
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ],
+      "reviewedShapeGroups": [
+        66,
+        80
+      ],
+      "witnessAction": "run",
+      "reason": "The front sash knot is hidden in the rear view; the original angled Run torso exposes the knot.",
+      "witnessFocus": "body_and_head"
+    },
+    {
+      "itemId": "belt_obi_knot_right",
+      "action": "shoot",
+      "directions": [
+        "north"
+      ],
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "pregnant"
+      ],
+      "reviewedShapeGroups": [
+        67,
+        81
+      ],
+      "witnessAction": "run",
+      "reason": "The front sash knot is hidden in the rear view; the original angled Run torso exposes the knot.",
+      "witnessFocus": "body_and_head"
+    },
+    {
+      "itemId": "belt_obi_knot_right",
+      "action": "watering",
+      "directions": [
+        "north"
+      ],
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ],
+      "reviewedShapeGroups": [
+        68,
+        82
+      ],
+      "witnessAction": "run",
+      "reason": "The front sash knot is hidden in the rear view; the original angled Run torso exposes the knot.",
+      "witnessFocus": "body_and_head"
+    },
+    {
+      "itemId": "belt_obi_knot_right",
+      "action": "idle",
+      "directions": [
+        "north"
+      ],
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ],
+      "reviewedShapeGroups": [
+        69,
+        83
+      ],
+      "witnessAction": "run",
+      "reason": "The front sash knot is hidden in the rear view; the original angled Run torso exposes the knot.",
+      "witnessFocus": "body_and_head"
+    },
+    {
+      "itemId": "belt_obi_knot_right",
+      "action": "jump",
+      "directions": [
+        "north"
+      ],
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ],
+      "reviewedShapeGroups": [
+        70,
+        84
+      ],
+      "witnessAction": "run",
+      "reason": "The front sash knot is hidden in the rear view; the original angled Run torso exposes the knot.",
+      "witnessFocus": "body_and_head"
+    },
+    {
+      "itemId": "belt_obi_knot_right",
+      "action": "sit",
+      "directions": [
+        "north"
+      ],
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ],
+      "reviewedShapeGroups": [
+        71,
+        85
+      ],
+      "witnessAction": "run",
+      "reason": "The front sash knot is hidden in the rear view; the original angled Run torso exposes the knot.",
+      "witnessFocus": "body_and_head"
+    },
+    {
+      "itemId": "belt_obi_knot_right",
+      "action": "emote",
+      "directions": [
+        "north"
+      ],
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "pregnant"
+      ],
+      "reviewedShapeGroups": [
+        72,
+        86
+      ],
+      "witnessAction": "run",
+      "reason": "The front sash knot is hidden in the rear view; the original angled Run torso exposes the knot.",
+      "witnessFocus": "body_and_head"
+    },
+    {
+      "itemId": "belt_obi_knot_right",
+      "action": "combat",
+      "directions": [
+        "north"
+      ],
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "pregnant"
+      ],
+      "reviewedShapeGroups": [
+        73
+      ],
+      "witnessAction": "run",
+      "reason": "The front sash knot is hidden in the rear view; the original angled Run torso exposes the knot.",
+      "witnessFocus": "body_and_head"
+    },
+    {
+      "itemId": "belt_obi_knot_right",
+      "action": "1h_slash",
+      "directions": [
+        "north"
+      ],
+      "bodies": [
+        "male",
+        "female",
+        "teen"
+      ],
+      "reviewedShapeGroups": [
+        74
+      ],
+      "witnessAction": "run",
+      "reason": "The front sash knot is hidden in the rear view; the original angled Run torso exposes the knot.",
+      "witnessFocus": "body_and_head"
+    },
+    {
+      "itemId": "belt_obi_knot_right",
+      "action": "1h_backslash",
+      "directions": [
+        "north"
+      ],
+      "bodies": [
+        "male",
+        "female",
+        "teen"
+      ],
+      "reviewedShapeGroups": [
+        75
+      ],
+      "witnessAction": "run",
+      "reason": "The front sash knot is hidden in the rear view; the original angled Run torso exposes the knot.",
+      "witnessFocus": "body_and_head"
+    },
+    {
+      "itemId": "belt_obi_knot_right",
+      "action": "1h_halfslash",
+      "directions": [
+        "north"
+      ],
+      "bodies": [
+        "male",
+        "female",
+        "teen"
+      ],
+      "reviewedShapeGroups": [
+        76
+      ],
+      "witnessAction": "run",
+      "reason": "The front sash knot is hidden in the rear view; the original angled Run torso exposes the knot.",
+      "witnessFocus": "body_and_head"
+    },
+    {
+      "itemId": "facial_earring_right",
+      "action": "spellcast",
+      "directions": [
+        "west"
+      ],
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "reviewedShapeGroups": [
+        87
+      ],
+      "witnessAction": "1h_backslash",
+      "reason": "The far-side right ear is hidden in this profile; later original Backslash cells expose it as the head turns.",
+      "witnessFocus": "head"
+    },
+    {
+      "itemId": "facial_earring_right",
+      "action": "thrust",
+      "directions": [
+        "west"
+      ],
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "reviewedShapeGroups": [
+        88
+      ],
+      "witnessAction": "1h_backslash",
+      "reason": "The far-side right ear is hidden in this profile; later original Backslash cells expose it as the head turns.",
+      "witnessFocus": "head"
+    },
+    {
+      "itemId": "facial_earring_right",
+      "action": "walk",
+      "directions": [
+        "west"
+      ],
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "reviewedShapeGroups": [
+        89
+      ],
+      "witnessAction": "1h_backslash",
+      "reason": "The far-side right ear is hidden in this profile; later original Backslash cells expose it as the head turns.",
+      "witnessFocus": "head"
+    },
+    {
+      "itemId": "facial_earring_right",
+      "action": "slash",
+      "directions": [
+        "west"
+      ],
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "reviewedShapeGroups": [
+        90
+      ],
+      "witnessAction": "1h_backslash",
+      "reason": "The far-side right ear is hidden in this profile; later original Backslash cells expose it as the head turns.",
+      "witnessFocus": "head"
+    },
+    {
+      "itemId": "facial_earring_right",
+      "action": "shoot",
+      "directions": [
+        "west"
+      ],
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "pregnant"
+      ],
+      "reviewedShapeGroups": [
+        91
+      ],
+      "witnessAction": "1h_backslash",
+      "reason": "The far-side right ear is hidden in this profile; later original Backslash cells expose it as the head turns.",
+      "witnessFocus": "head"
+    },
+    {
+      "itemId": "facial_earring_right",
+      "action": "watering",
+      "directions": [
+        "west"
+      ],
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "reviewedShapeGroups": [
+        92
+      ],
+      "witnessAction": "1h_backslash",
+      "reason": "The far-side right ear is hidden in this profile; later original Backslash cells expose it as the head turns.",
+      "witnessFocus": "head"
+    },
+    {
+      "itemId": "facial_earring_right",
+      "action": "idle",
+      "directions": [
+        "west"
+      ],
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "reviewedShapeGroups": [
+        93
+      ],
+      "witnessAction": "1h_backslash",
+      "reason": "The far-side right ear is hidden in this profile; later original Backslash cells expose it as the head turns.",
+      "witnessFocus": "head"
+    },
+    {
+      "itemId": "facial_earring_right",
+      "action": "jump",
+      "directions": [
+        "west"
+      ],
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "reviewedShapeGroups": [
+        94
+      ],
+      "witnessAction": "1h_backslash",
+      "reason": "The far-side right ear is hidden in this profile; later original Backslash cells expose it as the head turns.",
+      "witnessFocus": "head"
+    },
+    {
+      "itemId": "facial_earring_right",
+      "action": "run",
+      "directions": [
+        "west"
+      ],
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "reviewedShapeGroups": [
+        95
+      ],
+      "witnessAction": "1h_backslash",
+      "reason": "The far-side right ear is hidden in this profile; later original Backslash cells expose it as the head turns.",
+      "witnessFocus": "head"
+    },
+    {
+      "itemId": "facial_earring_right",
+      "action": "sit",
+      "directions": [
+        "west"
+      ],
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "reviewedShapeGroups": [
+        96
+      ],
+      "witnessAction": "1h_backslash",
+      "reason": "The far-side right ear is hidden in this profile; later original Backslash cells expose it as the head turns.",
+      "witnessFocus": "head"
+    },
+    {
+      "itemId": "facial_earring_right",
+      "action": "emote",
+      "directions": [
+        "west"
+      ],
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "pregnant"
+      ],
+      "reviewedShapeGroups": [
+        97
+      ],
+      "witnessAction": "1h_backslash",
+      "reason": "The far-side right ear is hidden in this profile; later original Backslash cells expose it as the head turns.",
+      "witnessFocus": "head"
+    },
+    {
+      "itemId": "facial_earring_right",
+      "action": "combat",
+      "directions": [
+        "west"
+      ],
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "pregnant"
+      ],
+      "reviewedShapeGroups": [
+        98
+      ],
+      "witnessAction": "1h_backslash",
+      "reason": "The far-side right ear is hidden in this profile; later original Backslash cells expose it as the head turns.",
+      "witnessFocus": "head"
+    },
+    {
+      "itemId": "facial_earring_right",
+      "action": "1h_slash",
+      "directions": [
+        "west"
+      ],
+      "bodies": [
+        "male",
+        "female",
+        "teen"
+      ],
+      "reviewedShapeGroups": [
+        99
+      ],
+      "witnessAction": "1h_backslash",
+      "reason": "The far-side right ear is hidden in this profile; later original Backslash cells expose it as the head turns.",
+      "witnessFocus": "head"
+    },
+    {
+      "itemId": "facial_earring_right",
+      "action": "1h_halfslash",
+      "directions": [
+        "west"
+      ],
+      "bodies": [
+        "male",
+        "female",
+        "teen"
+      ],
+      "reviewedShapeGroups": [
+        100
+      ],
+      "witnessAction": "1h_backslash",
+      "reason": "The far-side right ear is hidden in this profile; later original Backslash cells expose it as the head turns.",
+      "witnessFocus": "head"
+    },
+    {
+      "itemId": "wrists_cuffs",
+      "action": "run",
+      "directions": [
+        "north"
+      ],
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ],
+      "reviewedShapeGroups": [
+        131,
+        132
+      ],
+      "witnessAction": "walk",
+      "reason": "Hands and wrists are carried in front of the torso in the rear-facing Run pose, unlike the original Walk witness.",
+      "witnessFocus": "body_and_head"
+    },
+    {
+      "itemId": "wrists_cuffs_lace",
+      "action": "run",
+      "directions": [
+        "north"
+      ],
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ],
+      "reviewedShapeGroups": [
+        133,
+        134
+      ],
+      "witnessAction": "walk",
+      "reason": "Hands and wrists are carried in front of the torso in the rear-facing Run pose, unlike the original Walk witness.",
+      "witnessFocus": "body_and_head"
+    }
+  ]
+}

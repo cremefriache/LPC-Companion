@@ -1,0 +1,29 @@
+{
+  "commit": "86160e7507d6841259cff624a51a63c1d4847ee3",
+  "scope": "Raw source PNGs only. Blank cells/layers may be intentional; source layout and complete-item/action validation remain mandatory. No runtime adoption or license-clearance claim.",
+  "summary": {
+    "paths": 73917,
+    "uniqueBlobs": 72907,
+    "pngBytes": 104227307,
+    "physical64Cells": 1909596,
+    "fullyBlankPngBlobs": 2,
+    "dimensions": {
+      "1152x768": 25,
+      "128x256": 8377,
+      "128x320": 1,
+      "1536x768": 186,
+      "1664x512": 174,
+      "192x256": 7799,
+      "320x256": 3925,
+      "384x254": 1,
+      "384x256": 10145,
+      "384x64": 8843,
+      "448x256": 6296,
+      "512x256": 10237,
+      "576x256": 6591,
+      "768x512": 38,
+      "832x256": 10269
+    }
+  },
+  "decodedDataSha256": "af5126c2879bf6dfcbcfd14832e7f7bfbba66b9d7df1852ee86db323e542784b"
+}

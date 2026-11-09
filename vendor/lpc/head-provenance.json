@@ -1,0 +1,291 @@
+{
+  "repository": "https://github.com/codyaboyd/Universal-LPC-Modern-Sprite-Generator",
+  "commit": "7736d762aa2113f29342dad869ef4931218aa7ae",
+  "selectedLicense": "OGA-BY 3.0",
+  "metadata": {
+    "sheet_definitions/head/heads/human/heads_human_male_elderly.json": {
+      "sha256": "9341b060e5d162565b93a43c2ea91575bf339a9094fe3fd5b0c440b436cf4cbd",
+      "original": {
+        "name": "Human Male Elderly",
+        "tags": [
+          "human",
+          "elderly"
+        ],
+        "layer_1": {
+          "zPos": 100,
+          "male": "head/heads/human/male_elderly/",
+          "muscular": "head/heads/human/male_elderly/",
+          "female": "head/heads/human/male_elderly/",
+          "pregnant": "head/heads/human/male_elderly/",
+          "teen": "head/heads/human/male_elderly/"
+        },
+        "match_body_color": true,
+        "animations": [
+          "spellcast",
+          "thrust",
+          "walk",
+          "slash",
+          "shoot",
+          "hurt",
+          "watering",
+          "idle",
+          "jump",
+          "run",
+          "sit",
+          "emote",
+          "climb",
+          "combat",
+          "1h_slash",
+          "1h_backslash",
+          "1h_halfslash"
+        ],
+        "credits": [
+          {
+            "file": "head/heads/human/male_elderly",
+            "notes": "",
+            "authors": [
+              "Benjamin K. Smith (BenCreating)",
+              "Eliza Wyatt (ElizaWy)",
+              "Stephen Challener (Redshrike)"
+            ],
+            "licenses": [
+              "OGA-BY 3.0",
+              "CC-BY 3.0"
+            ],
+            "urls": [
+              "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+              "https://opengameart.org/content/lpc-revised-elders",
+              "https://opengameart.org/content/lpc-character-bases"
+            ]
+          }
+        ],
+        "recolors": {
+          "color_1": {
+            "material": "body",
+            "palettes": [
+              "ulpc",
+              "lpcr",
+              "all.lpcr"
+            ]
+          },
+          "color_2": {
+            "type_name": "eyes",
+            "label": "Eye Color",
+            "material": "eye",
+            "palettes": [
+              "ulpc",
+              "lpcr"
+            ]
+          }
+        },
+        "type_name": "head"
+      }
+    },
+    "sheet_definitions/head/heads/human/heads_human_female_elderly.json": {
+      "sha256": "c5aaa131082b36e154317fb55b31afacc5945aaf24e6a43750b7bd675629ffc3",
+      "original": {
+        "name": "Human Female Elderly",
+        "tags": [
+          "human",
+          "elderly"
+        ],
+        "layer_1": {
+          "zPos": 100,
+          "male": "head/heads/human/female_elderly/",
+          "muscular": "head/heads/human/female_elderly/",
+          "female": "head/heads/human/female_elderly/",
+          "pregnant": "head/heads/human/female_elderly/",
+          "teen": "head/heads/human/female_elderly/"
+        },
+        "match_body_color": true,
+        "animations": [
+          "spellcast",
+          "thrust",
+          "walk",
+          "slash",
+          "shoot",
+          "hurt",
+          "watering",
+          "idle",
+          "jump",
+          "run",
+          "sit",
+          "emote",
+          "climb",
+          "combat",
+          "1h_slash",
+          "1h_backslash",
+          "1h_halfslash"
+        ],
+        "credits": [
+          {
+            "file": "head/heads/human/female_elderly",
+            "notes": "",
+            "authors": [
+              "Benjamin K. Smith (BenCreating)",
+              "Eliza Wyatt (ElizaWy)",
+              "Stephen Challener (Redshrike)"
+            ],
+            "licenses": [
+              "OGA-BY 3.0",
+              "CC-BY 3.0"
+            ],
+            "urls": [
+              "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+              "https://opengameart.org/content/lpc-revised-elders",
+              "https://opengameart.org/content/lpc-character-bases"
+            ]
+          }
+        ],
+        "recolors": {
+          "color_1": {
+            "material": "body",
+            "palettes": [
+              "ulpc",
+              "lpcr",
+              "all.lpcr"
+            ]
+          },
+          "color_2": {
+            "type_name": "eyes",
+            "label": "Eye Color",
+            "material": "eye",
+            "palettes": [
+              "ulpc",
+              "lpcr"
+            ]
+          }
+        },
+        "type_name": "head"
+      }
+    }
+  },
+  "sprites": {
+    "spritesheets/head/heads/human/male_elderly/idle.png": "135f9ff9f2bf483a327e81911de0a83497065d5370140d467c9cdbdb51f8f041",
+    "spritesheets/head/heads/human/male_elderly/walk.png": "4d23bd0f66514d1b56760d576f0a4b73b1c9731976931b4f51434bb0eb45a904",
+    "spritesheets/head/heads/human/male_elderly/run.png": "69b714f3d898db59f05d406145e5f6a281318103bcb107d0141b14c8d9a2bace",
+    "spritesheets/head/heads/human/male_elderly/jump.png": "ce96a7a90b48c42485ed2c65aea10d362d4b3a399297a6ead5e0065db9bd26a9",
+    "spritesheets/head/heads/human/male_elderly/spellcast.png": "e94be5cfa4aecea6f8bbc3a3c1ed020086ae8630fd3da2a1526d45e4de5de83a",
+    "spritesheets/head/heads/human/male_elderly/sit.png": "eb43bf64f13c04a0e8468963a57b137418545e203cd3dfadde792e3127aea334",
+    "spritesheets/head/heads/human/male_elderly/emote.png": "3f77d4842b55efcc971d5ebc37328d4b57e7b2a6e1c672b3da1ee50e951b4e06",
+    "spritesheets/head/heads/human/female_elderly/idle.png": "1595f3b496bad9a8d018949bca554d36af012c5ee0d203511ac3be44827964fe",
+    "spritesheets/head/heads/human/female_elderly/walk.png": "fa73ae9482c1a697ef4fbdb6e0d8d709d2a80aaff29f31054e5c8c0b3b59a2ca",
+    "spritesheets/head/heads/human/female_elderly/run.png": "9b19ca5f59e2afed37afe10a587f4f36f6d8e967aee026cf399968d77f7b83c5",
+    "spritesheets/head/heads/human/female_elderly/jump.png": "5c2472b986e3601e355a5567e65ba93c9e35eed39b0340e7120a3062e5787641",
+    "spritesheets/head/heads/human/female_elderly/spellcast.png": "a3a2f7961512f84249faa9ceff2c0ace004d71c26bf4d8edd90394c6b8d2cabb",
+    "spritesheets/head/heads/human/female_elderly/sit.png": "5a3106ded62e60af0b2597659c6c165328c6f5651b4f9551617ee22d0f004418",
+    "spritesheets/head/heads/human/female_elderly/emote.png": "3a9d7b5e2d54271030c9cd7d798e1202fdd7bed9b865a1cdb2c4a97c9ef96317"
+  },
+  "items": {
+    "heads_human_male_elderly": {
+      "name": "Elder human head",
+      "slot": "head",
+      "bodyTypes": [
+        "male"
+      ],
+      "counterparts": {
+        "male": "heads_human_male_elderly",
+        "female": "heads_human_female_elderly"
+      },
+      "material": "body",
+      "selectedLicense": "OGA-BY 3.0",
+      "sourcePalette": "light",
+      "layers": [
+        {
+          "z": 100,
+          "required": true,
+          "paths": {
+            "idle": "spritesheets/head/heads/human/male_elderly/idle.png",
+            "walk": "spritesheets/head/heads/human/male_elderly/walk.png",
+            "run": "spritesheets/head/heads/human/male_elderly/run.png",
+            "jump": "spritesheets/head/heads/human/male_elderly/jump.png",
+            "spellcast": "spritesheets/head/heads/human/male_elderly/spellcast.png",
+            "sit": "spritesheets/head/heads/human/male_elderly/sit.png",
+            "emote": "spritesheets/head/heads/human/male_elderly/emote.png"
+          }
+        }
+      ],
+      "requiredLayerCount": 1,
+      "occupies": [
+        "head"
+      ],
+      "requires": {},
+      "conflictsWith": [],
+      "credits": [
+        {
+          "file": "head/heads/human/male_elderly",
+          "notes": "",
+          "authors": [
+            "Benjamin K. Smith (BenCreating)",
+            "Eliza Wyatt (ElizaWy)",
+            "Stephen Challener (Redshrike)"
+          ],
+          "licenses": [
+            "OGA-BY 3.0",
+            "CC-BY 3.0"
+          ],
+          "urls": [
+            "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+            "https://opengameart.org/content/lpc-revised-elders",
+            "https://opengameart.org/content/lpc-character-bases"
+          ]
+        }
+      ]
+    },
+    "heads_human_female_elderly": {
+      "name": "Elder human head",
+      "slot": "head",
+      "bodyTypes": [
+        "female"
+      ],
+      "counterparts": {
+        "female": "heads_human_female_elderly",
+        "male": "heads_human_male_elderly"
+      },
+      "material": "body",
+      "selectedLicense": "OGA-BY 3.0",
+      "sourcePalette": "light",
+      "layers": [
+        {
+          "z": 100,
+          "required": true,
+          "paths": {
+            "idle": "spritesheets/head/heads/human/female_elderly/idle.png",
+            "walk": "spritesheets/head/heads/human/female_elderly/walk.png",
+            "run": "spritesheets/head/heads/human/female_elderly/run.png",
+            "jump": "spritesheets/head/heads/human/female_elderly/jump.png",
+            "spellcast": "spritesheets/head/heads/human/female_elderly/spellcast.png",
+            "sit": "spritesheets/head/heads/human/female_elderly/sit.png",
+            "emote": "spritesheets/head/heads/human/female_elderly/emote.png"
+          }
+        }
+      ],
+      "requiredLayerCount": 1,
+      "occupies": [
+        "head"
+      ],
+      "requires": {},
+      "conflictsWith": [],
+      "credits": [
+        {
+          "file": "head/heads/human/female_elderly",
+          "notes": "",
+          "authors": [
+            "Benjamin K. Smith (BenCreating)",
+            "Eliza Wyatt (ElizaWy)",
+            "Stephen Challener (Redshrike)"
+          ],
+          "licenses": [
+            "OGA-BY 3.0",
+            "CC-BY 3.0"
+          ],
+          "urls": [
+            "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+            "https://opengameart.org/content/lpc-revised-elders",
+            "https://opengameart.org/content/lpc-character-bases"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,4026 @@
+{
+  "schemaVersion": 1,
+  "kind": "full-source-license-selection",
+  "commit": "86160e7507d6841259cff624a51a63c1d4847ee3",
+  "metadataSha256": "e16f85ded3cd5cd10e41f091cdbbc54c4b2b4444854ccf19787c79e8f630e02a",
+  "scope": "Selections from the original offered labels, checked per actual asset path/profile. Original authors, alternatives and URL fields remain unchanged. Does not authorize runtime adoption or claim source ownership verification beyond the pinned records.",
+  "labels": {
+    "OGA-BY 3.0": {
+      "licenseId": "OGA-BY-3.0",
+      "file": "LICENSE-OGA-BY-3.0.txt",
+      "url": "https://static.opengameart.org/OGA-BY-3.0.txt"
+    },
+    "CC0": {
+      "licenseId": "CC0-1.0",
+      "file": "LICENSE-CC0-1.0.txt",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode.txt"
+    },
+    "CC-BY 3.0": {
+      "licenseId": "CC-BY-3.0",
+      "file": "LICENSE-CC-BY-3.0.txt",
+      "url": "https://creativecommons.org/licenses/by/3.0/legalcode.txt"
+    },
+    "CC-BY 4.0": {
+      "licenseId": "CC-BY-4.0",
+      "file": "LICENSE-CC-BY-4.0.txt",
+      "url": "https://creativecommons.org/licenses/by/4.0/legalcode.txt"
+    },
+    "CC-BY-SA 3.0": {
+      "licenseId": "CC-BY-SA-3.0",
+      "file": "LICENSE-CC-BY-SA-3.0.txt",
+      "url": "https://creativecommons.org/licenses/by-sa/3.0/legalcode.txt"
+    },
+    "CC-BY-SA 4.0": {
+      "licenseId": "CC-BY-SA-4.0",
+      "file": "LICENSE-CC-BY-SA-4.0.txt",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/legalcode.txt"
+    },
+    "CC-BY 3.0+": {
+      "licenseId": "CC-BY-3.0",
+      "file": "LICENSE-CC-BY-3.0.txt",
+      "url": "https://creativecommons.org/licenses/by/3.0/legalcode.txt",
+      "versionChoice": "Use the explicitly named 3.0 version; retain the original + label."
+    },
+    "CC-BY 4.0+": {
+      "licenseId": "CC-BY-4.0",
+      "file": "LICENSE-CC-BY-4.0.txt",
+      "url": "https://creativecommons.org/licenses/by/4.0/legalcode.txt",
+      "versionChoice": "Use the explicitly named 4.0 version; retain the original + label."
+    }
+  },
+  "noticeHashes": {
+    "LICENSE-OGA-BY-3.0.txt": "a88798a4f7ec10432d3ed2bf92e4a7ecae0db1e4b55f29c160cb8689201efdad",
+    "LICENSE-CC0-1.0.txt": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+    "LICENSE-CC-BY-3.0.txt": "e6bc9e9c474700b708f568bac9e5a8a9bcb2b1dad53442f5ba449fcb848b8e76",
+    "LICENSE-CC-BY-4.0.txt": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
+    "LICENSE-CC-BY-SA-3.0.txt": "3f941b3b89cf7b8370ceb83cc76d2120d471b58735d8ca60238a751a48d7f72f",
+    "LICENSE-CC-BY-SA-4.0.txt": "28a9529c7d0bb4dc51f4bf5c116a3d16ef247a052f7591466768ddf563fd1cf5"
+  },
+  "summary": {
+    "sourceItems": 657,
+    "realAssetPaths": 73924,
+    "assetItemCreditChecks": 74373,
+    "selectedLabels": {
+      "OGA-BY 3.0": 36151,
+      "CC0": 7201,
+      "CC-BY-SA 3.0": 15716,
+      "CC-BY 3.0+": 10364,
+      "CC-BY-SA 4.0": 2760,
+      "CC-BY 3.0": 1813,
+      "CC-BY 4.0": 362,
+      "CC-BY 4.0+": 6
+    },
+    "supplementedSourceRecords": [
+      "head_wrinkles",
+      "heads_human_elderly_small",
+      "heads_human_female_small",
+      "heads_human_male_small"
+    ]
+  },
+  "items": {
+    "arms_armour": {
+      "creditedAssetPaths": 22,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "arms_bracers": {
+      "creditedAssetPaths": 24,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "arms_gloves": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "arms_hands_ring_stud": {
+      "creditedAssetPaths": 22,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "backpack": {
+      "creditedAssetPaths": 240,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "backpack_basket": {
+      "creditedAssetPaths": 24,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "backpack_contents_ore": {
+      "creditedAssetPaths": 96,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "backpack_contents_wood": {
+      "creditedAssetPaths": 24,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "backpack_jetpack": {
+      "creditedAssetPaths": 36,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "backpack_jetpack_fins": {
+      "creditedAssetPaths": 36,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "backpack_squarepack": {
+      "creditedAssetPaths": 240,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "backpack_straps": {
+      "creditedAssetPaths": 240,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "bauldron": {
+      "creditedAssetPaths": 24,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "beards_5oclock_shadow": {
+      "creditedAssetPaths": 14,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "beards_beard": {
+      "creditedAssetPaths": 14,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "beards_bigstache": {
+      "creditedAssetPaths": 14,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "beards_chevron": {
+      "creditedAssetPaths": 14,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "beards_french": {
+      "creditedAssetPaths": 14,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "beards_handlebar": {
+      "creditedAssetPaths": 14,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "beards_horseshoe": {
+      "creditedAssetPaths": 14,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "beards_lampshade": {
+      "creditedAssetPaths": 14,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "beards_medium": {
+      "creditedAssetPaths": 14,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "beards_mustache": {
+      "creditedAssetPaths": 14,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "beards_trimmed": {
+      "creditedAssetPaths": 14,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "beards_walrus": {
+      "creditedAssetPaths": 14,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "beards_winter": {
+      "creditedAssetPaths": 28,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "belt_belly": {
+      "creditedAssetPaths": 84,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "belt_double": {
+      "creditedAssetPaths": 84,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "belt_formal": {
+      "creditedAssetPaths": 6,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "belt_leather": {
+      "creditedAssetPaths": 84,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "belt_leather2": {
+      "creditedAssetPaths": 12,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "belt_loose": {
+      "creditedAssetPaths": 84,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "belt_mage": {
+      "creditedAssetPaths": 24,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "belt_obi": {
+      "creditedAssetPaths": 720,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "belt_obi_knot_left": {
+      "creditedAssetPaths": 672,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "belt_obi_knot_right": {
+      "creditedAssetPaths": 672,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "belt_robe": {
+      "creditedAssetPaths": 24,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "belt_sash": {
+      "creditedAssetPaths": 288,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "belt_sash_narrow": {
+      "creditedAssetPaths": 288,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "belt_waistband": {
+      "creditedAssetPaths": 288,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "body": {
+      "creditedAssetPaths": 73,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "body_skeleton": {
+      "creditedAssetPaths": 7,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "body_zombie": {
+      "creditedAssetPaths": 6,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "buckles": {
+      "creditedAssetPaths": 16,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "cape_solid": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "cape_tattered": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "cape_trim": {
+      "creditedAssetPaths": 8,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "dress_bodice": {
+      "creditedAssetPaths": 168,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "dress_kimono": {
+      "creditedAssetPaths": 168,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "dress_kimono_longsleeve": {
+      "creditedAssetPaths": 192,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "dress_kimono_longsleeve_trim": {
+      "creditedAssetPaths": 192,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "dress_kimono_oversize": {
+      "creditedAssetPaths": 192,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "dress_kimono_oversize_trim": {
+      "creditedAssetPaths": 192,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "dress_kimono_split": {
+      "creditedAssetPaths": 168,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "dress_kimono_split_trim": {
+      "creditedAssetPaths": 168,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "dress_kimono_trim": {
+      "creditedAssetPaths": 168,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "dress_sash": {
+      "creditedAssetPaths": 168,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "dress_slit": {
+      "creditedAssetPaths": 168,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "eyebrows_thick": {
+      "creditedAssetPaths": 28,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "eyebrows_thin": {
+      "creditedAssetPaths": 28,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "eyes_cyclops": {
+      "creditedAssetPaths": 28,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "eyes_cyclops2": {
+      "creditedAssetPaths": 28,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "face_angry": {
+      "creditedAssetPaths": 39,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "face_angry2": {
+      "creditedAssetPaths": 13,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "face_blush": {
+      "creditedAssetPaths": 39,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "face_closed": {
+      "creditedAssetPaths": 39,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "face_closing": {
+      "creditedAssetPaths": 39,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "face_eyeroll": {
+      "creditedAssetPaths": 39,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "face_happy": {
+      "creditedAssetPaths": 39,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "face_happy2": {
+      "creditedAssetPaths": 13,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "face_look_l": {
+      "creditedAssetPaths": 39,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "face_look_r": {
+      "creditedAssetPaths": 39,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "face_neutral": {
+      "creditedAssetPaths": 39,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "face_sad": {
+      "creditedAssetPaths": 39,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "face_sad2": {
+      "creditedAssetPaths": 13,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "face_shame": {
+      "creditedAssetPaths": 39,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "face_shock": {
+      "creditedAssetPaths": 39,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "face_tears": {
+      "creditedAssetPaths": 13,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "facial_earring_left": {
+      "creditedAssetPaths": 990,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "facial_earring_right": {
+      "creditedAssetPaths": 990,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "facial_earrings_emerald": {
+      "creditedAssetPaths": 72,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "facial_earrings_moon": {
+      "creditedAssetPaths": 96,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "facial_earrings_pear": {
+      "creditedAssetPaths": 72,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "facial_earrings_princess": {
+      "creditedAssetPaths": 72,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "facial_earrings_stud": {
+      "creditedAssetPaths": 96,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "facial_eyepatch_ambi": {
+      "creditedAssetPaths": 750,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "facial_eyepatch_left": {
+      "creditedAssetPaths": 750,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "facial_eyepatch_right": {
+      "creditedAssetPaths": 735,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "facial_eyepatch_small_left": {
+      "creditedAssetPaths": 720,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "facial_eyepatch_small_right": {
+      "creditedAssetPaths": 720,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "facial_eyepatch2_left": {
+      "creditedAssetPaths": 720,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "facial_eyepatch2_right": {
+      "creditedAssetPaths": 720,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "facial_glasses": {
+      "creditedAssetPaths": 896,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "facial_glasses_halfmoon": {
+      "creditedAssetPaths": 864,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "facial_glasses_nerd": {
+      "creditedAssetPaths": 896,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "facial_glasses_round": {
+      "creditedAssetPaths": 952,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "facial_glasses_secretary": {
+      "creditedAssetPaths": 896,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "facial_glasses_shades": {
+      "creditedAssetPaths": 910,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "facial_glasses_sunglasses": {
+      "creditedAssetPaths": 952,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "facial_mask_plain": {
+      "creditedAssetPaths": 924,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "facial_monocle_left": {
+      "creditedAssetPaths": 224,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "facial_monocle_left_frame": {
+      "creditedAssetPaths": 896,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "facial_monocle_right": {
+      "creditedAssetPaths": 224,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "facial_monocle_right_frame": {
+      "creditedAssetPaths": 896,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "feet_armour": {
+      "creditedAssetPaths": 24,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "feet_boots_basic": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "feet_boots_fold": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "feet_boots_revised": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "feet_boots_rim": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "feet_hoofs": {
+      "creditedAssetPaths": 22,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "feet_plate_toe": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "feet_plate_toe_thick": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "feet_sandals": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "feet_shoes_basic": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "feet_shoes_ghillies": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "feet_shoes_revised": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "feet_shoes_sara": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "feet_slippers": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "feet_socks_ankle": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "feet_socks_high": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "feet_socks_tabi": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "hair_afro": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "hair_balding": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hair_bangs": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hair_bangs_bun": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "hair_bangslong": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hair_bangslong2": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hair_bangsshort": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hair_bedhead": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hair_bob": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "hair_bob_side_part": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "hair_braid": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hair_braid2": {
+      "creditedAssetPaths": 29,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hair_bunches": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hair_buzzcut": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hair_cornrows": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "hair_cowlick": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "hair_cowlick_tall": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hair_curls_large": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "hair_curls_large_xlong": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "hair_curly_long": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hair_curly_short": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hair_curly_short2": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hair_curtains": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY 3.0"
+      ]
+    },
+    "hair_curtains_long": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY 3.0"
+      ]
+    },
+    "hair_dreadlocks_long": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "hair_dreadlocks_short": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "hair_flat_top_fade": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "hair_flat_top_straight": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "hair_half_up": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hair_halfmessy": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hair_high_and_tight": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hair_high_ponytail": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hair_idol": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "hair_jewfro": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hair_lob": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "hair_long": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hair_long_band": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hair_long_center_part": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "hair_long_messy": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY 3.0"
+      ]
+    },
+    "hair_long_messy2": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hair_long_straight": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "hair_long_tied": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "hair_longhawk": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hair_loose": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hair_messy": {
+      "creditedAssetPaths": 1,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hair_messy1": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hair_messy2": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hair_messy3": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hair_mop": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hair_natural": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "hair_page": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hair_page2": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hair_parted": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hair_parted_side_bangs": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hair_parted_side_bangs2": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hair_parted2": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hair_parted3": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hair_pigtails": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hair_pigtails_bangs": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hair_pixie": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hair_plain": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hair_ponytail": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hair_ponytail2": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hair_princess": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hair_relm_ponytail": {
+      "creditedAssetPaths": 42,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "hair_relm_short": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "hair_relm_xlong": {
+      "creditedAssetPaths": 29,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "hair_sara": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hair_shorthawk": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hair_shoulderl": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hair_shoulderr": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hair_single": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hair_spiked": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY 4.0"
+      ]
+    },
+    "hair_spiked_beehive": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hair_spiked_liberty": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hair_spiked_liberty2": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY 3.0"
+      ]
+    },
+    "hair_spiked_porcupine": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hair_spiked2": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hair_swoop": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hair_swoop_side": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hair_topknot_long": {
+      "creditedAssetPaths": 86,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hair_topknot_long2": {
+      "creditedAssetPaths": 86,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hair_topknot_short": {
+      "creditedAssetPaths": 59,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hair_topknot_short2": {
+      "creditedAssetPaths": 59,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hair_twists_fade": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "hair_twists_straight": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "hair_unkempt": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hair_wavy": {
+      "creditedAssetPaths": 29,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hair_wavy_child": {
+      "creditedAssetPaths": 6,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hair_xlong": {
+      "creditedAssetPaths": 29,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hair_xlong_wavy": {
+      "creditedAssetPaths": 29,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hairext_braidl": {
+      "creditedAssetPaths": 23,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hairext_braidr": {
+      "creditedAssetPaths": 23,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hairext_high_bun": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hairext_long_straightl": {
+      "creditedAssetPaths": 14,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "hairext_long_straightr": {
+      "creditedAssetPaths": 14,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "hairext_long_wavyl": {
+      "creditedAssetPaths": 14,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "hairext_long_wavyr": {
+      "creditedAssetPaths": 14,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "hairext_topknot_long": {
+      "creditedAssetPaths": 56,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hairext_topknot_relm": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "hairext_topknot_short": {
+      "creditedAssetPaths": 29,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hairext_xlong_bangl": {
+      "creditedAssetPaths": 21,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "hairext_xlong_bangr": {
+      "creditedAssetPaths": 23,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "hairext_xlong_braidl": {
+      "creditedAssetPaths": 34,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "hairext_xlong_braidr": {
+      "creditedAssetPaths": 34,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "hairext_xlong_curlyl": {
+      "creditedAssetPaths": 14,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "hairext_xlong_curlyr": {
+      "creditedAssetPaths": 14,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "hairext_xlong_wavyl": {
+      "creditedAssetPaths": 14,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "hairext_xlong_wavyr": {
+      "creditedAssetPaths": 14,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "hat_accessory_crest": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_accessory_crest_centurion": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "hat_accessory_horns_downward": {
+      "creditedAssetPaths": 28,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_accessory_horns_short": {
+      "creditedAssetPaths": 29,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_accessory_horns_upward": {
+      "creditedAssetPaths": 28,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_accessory_plumage": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_accessory_plumage_centurion": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "hat_accessory_plumage_legion": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_accessory_wings": {
+      "creditedAssetPaths": 29,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "hat_bandana": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_bandana_pirate": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hat_bandana_pirate_skull": {
+      "creditedAssetPaths": 14,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hat_bandana2": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_bicorne_athwart_admiral": {
+      "creditedAssetPaths": 360,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_bicorne_athwart_admiral_cockade": {
+      "creditedAssetPaths": 336,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_bicorne_athwart_admiral_trim": {
+      "creditedAssetPaths": 495,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_bicorne_athwart_basic": {
+      "creditedAssetPaths": 360,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_bicorne_athwart_basic_skull": {
+      "creditedAssetPaths": 336,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_bicorne_athwart_captain": {
+      "creditedAssetPaths": 360,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_bicorne_athwart_captain_skull": {
+      "creditedAssetPaths": 336,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_bicorne_athwart_commodore": {
+      "creditedAssetPaths": 360,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_bicorne_athwart_commodore_trim": {
+      "creditedAssetPaths": 495,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_bicorne_foreaft": {
+      "creditedAssetPaths": 360,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_bicorne_foreaft_commodore": {
+      "creditedAssetPaths": 360,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_bicorne_foreaft_commodore_trim": {
+      "creditedAssetPaths": 495,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_cap_bonnie": {
+      "creditedAssetPaths": 360,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_cap_bonnie_feather": {
+      "creditedAssetPaths": 360,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_cap_bonnie_tilt": {
+      "creditedAssetPaths": 360,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_cap_bonnie_trim": {
+      "creditedAssetPaths": 360,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_cap_cavalier": {
+      "creditedAssetPaths": 360,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_cap_cavalier_feather": {
+      "creditedAssetPaths": 360,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_cap_leather": {
+      "creditedAssetPaths": 375,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_cap_leather_feather": {
+      "creditedAssetPaths": 360,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_formal_bowler": {
+      "creditedAssetPaths": 390,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hat_formal_crown": {
+      "creditedAssetPaths": 540,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hat_formal_tiara": {
+      "creditedAssetPaths": 555,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hat_formal_tophat": {
+      "creditedAssetPaths": 390,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hat_headband_hairtie": {
+      "creditedAssetPaths": 28,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "hat_headband_hairtie_rune": {
+      "creditedAssetPaths": 28,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "hat_headband_kerchief": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_headband_thick": {
+      "creditedAssetPaths": 28,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "hat_headband_thick_rune": {
+      "creditedAssetPaths": 28,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "hat_headband_tied": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_helmet_armet": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_helmet_armet_simple": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_helmet_barbarian": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_helmet_barbarian_nasal": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_helmet_barbarian_viking": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_helmet_barbuta": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_helmet_barbuta_simple": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_helmet_bascinet": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_helmet_bascinet_round": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_helmet_close": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_helmet_flattop": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_helmet_greathelm": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_helmet_horned": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hat_helmet_kettle": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_helmet_legion": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_helmet_mail": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_helmet_maximus": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_helmet_morion": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_helmet_nasal": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_helmet_norman": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_helmet_pointed": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_helmet_spangenhelm": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_helmet_spangenhelm_viking": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_helmet_sugarloaf": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_helmet_sugarloaf_simple": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_helmet_xeon": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_holiday_christmas": {
+      "creditedAssetPaths": 360,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_holiday_elf": {
+      "creditedAssetPaths": 360,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_holiday_santa": {
+      "creditedAssetPaths": 360,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_hood_cloth": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_hood_hijab": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "hat_hood_sack_cloth": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_magic_celestial": {
+      "creditedAssetPaths": 360,
+      "selectedSourceLabels": [
+        "CC-BY 3.0"
+      ]
+    },
+    "hat_magic_celestial_moon": {
+      "creditedAssetPaths": 360,
+      "selectedSourceLabels": [
+        "CC-BY 3.0"
+      ]
+    },
+    "hat_magic_celestial_moon_trim": {
+      "creditedAssetPaths": 448,
+      "selectedSourceLabels": [
+        "CC-BY 3.0"
+      ]
+    },
+    "hat_magic_celestial_trim": {
+      "creditedAssetPaths": 480,
+      "selectedSourceLabels": [
+        "CC-BY 3.0"
+      ]
+    },
+    "hat_magic_large": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hat_magic_wizard": {
+      "creditedAssetPaths": 450,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hat_magic_wizard_belt": {
+      "creditedAssetPaths": 450,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hat_magic_wizard_buckle": {
+      "creditedAssetPaths": 112,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hat_tricorne": {
+      "creditedAssetPaths": 360,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_tricorne_captain": {
+      "creditedAssetPaths": 360,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_tricorne_captain_skull": {
+      "creditedAssetPaths": 336,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_tricorne_captain_trim": {
+      "creditedAssetPaths": 495,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_tricorne_lieutenant": {
+      "creditedAssetPaths": 360,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_tricorne_lieutenant_trim": {
+      "creditedAssetPaths": 495,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_tricorne_stitched": {
+      "creditedAssetPaths": 360,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_tricorne_thatch": {
+      "creditedAssetPaths": 360,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_visor_grated": {
+      "creditedAssetPaths": 14,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_visor_grated_narrow": {
+      "creditedAssetPaths": 14,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_visor_horned": {
+      "creditedAssetPaths": 14,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "hat_visor_pigface": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_visor_pigface_raised": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_visor_round": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_visor_round_raised": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_visor_slit": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "hat_visor_slit_narrow": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "head_ears_avyon": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "head_ears_avyon_skin": {
+      "creditedAssetPaths": 28,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "head_ears_big": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "head_ears_cat": {
+      "creditedAssetPaths": 56,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "head_ears_cat_skin": {
+      "creditedAssetPaths": 49,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "head_ears_down": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "head_ears_dragon": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "head_ears_elven": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "head_ears_hang": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "head_ears_long": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "head_ears_lykon": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "head_ears_lykon_skin": {
+      "creditedAssetPaths": 28,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "head_ears_medium": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "head_ears_wolf": {
+      "creditedAssetPaths": 56,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "head_ears_wolf_skin": {
+      "creditedAssetPaths": 54,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "head_ears_zabos": {
+      "creditedAssetPaths": 28,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "head_ears_zabos_skin": {
+      "creditedAssetPaths": 28,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "head_fins_fin": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "head_fins_fin_short": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "head_horns_backwards": {
+      "creditedAssetPaths": 56,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "head_horns_curled": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "head_nose_big": {
+      "creditedAssetPaths": 14,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "head_nose_button": {
+      "creditedAssetPaths": 14,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "head_nose_elderly": {
+      "creditedAssetPaths": 14,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "head_nose_large": {
+      "creditedAssetPaths": 14,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "head_nose_straight": {
+      "creditedAssetPaths": 14,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "head_wrinkles": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "heads_alien": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "heads_boarman": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY 3.0"
+      ]
+    },
+    "heads_boarman_child": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "heads_frankenstein": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "heads_goblin": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "heads_goblin_child": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "heads_human_child": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "heads_human_elderly_small": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "heads_human_female": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "heads_human_female_elderly": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "heads_human_female_small": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "heads_human_male": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "heads_human_male_elderly": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "heads_human_male_gaunt": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "heads_human_male_plump": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "heads_human_male_small": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "heads_jack": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "heads_lizard_child": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "heads_lizard_female": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "heads_lizard_male": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "heads_minotaur": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "heads_minotaur_child": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "heads_minotaur_female": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "heads_mouse": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "heads_mouse_child": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "heads_orc_child": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "heads_orc_female": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "heads_orc_male": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "heads_pig": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY 3.0"
+      ]
+    },
+    "heads_pig_child": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY 3.0"
+      ]
+    },
+    "heads_rabbit": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "heads_rabbit_child": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "heads_rat": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "heads_rat_child": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "heads_sheep": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY 3.0"
+      ]
+    },
+    "heads_sheep_child": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY 3.0"
+      ]
+    },
+    "heads_skeleton": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "heads_troll": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY 3.0"
+      ]
+    },
+    "heads_troll_child": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY 3.0"
+      ]
+    },
+    "heads_vampire": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "heads_wartotaur": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "heads_wolf_child": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "heads_wolf_female": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "heads_wolf_male": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "heads_zombie": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "legs_armour": {
+      "creditedAssetPaths": 22,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "legs_childpants": {
+      "creditedAssetPaths": 9,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "legs_childskirts": {
+      "creditedAssetPaths": 10,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "legs_cuffed": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "legs_formal": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "legs_formal_striped": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "legs_hose": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "legs_leggings": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "legs_leggings2": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "legs_pantaloons": {
+      "creditedAssetPaths": 39,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "legs_pants": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "legs_pants2": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "legs_pregnantpants": {
+      "creditedAssetPaths": 114,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "legs_shorts": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "legs_shorts_short": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "legs_skirt_belle": {
+      "creditedAssetPaths": 9,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "legs_skirt_overskirt": {
+      "creditedAssetPaths": 9,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "legs_skirt_straight": {
+      "creditedAssetPaths": 9,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "legs_skirts_legion": {
+      "creditedAssetPaths": 24,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "legs_skirts_plain": {
+      "creditedAssetPaths": 20,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "legs_skirts_slit": {
+      "creditedAssetPaths": 9,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "legs_widepants": {
+      "creditedAssetPaths": 144,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "neck_amulet_cross": {
+      "creditedAssetPaths": 672,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "neck_amulet_dangle": {
+      "creditedAssetPaths": 672,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "neck_amulet_spider": {
+      "creditedAssetPaths": 672,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "neck_amulet_star": {
+      "creditedAssetPaths": 672,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "neck_bowtie": {
+      "creditedAssetPaths": 14,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "neck_bowtie2": {
+      "creditedAssetPaths": 14,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "neck_capeclip": {
+      "creditedAssetPaths": 22,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "neck_capetie": {
+      "creditedAssetPaths": 22,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "neck_charm_box": {
+      "creditedAssetPaths": 112,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "neck_charm_oval": {
+      "creditedAssetPaths": 112,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "neck_charm_ring": {
+      "creditedAssetPaths": 112,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "neck_charm_star": {
+      "creditedAssetPaths": 112,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "neck_cravat": {
+      "creditedAssetPaths": 22,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "neck_gem_emerald": {
+      "creditedAssetPaths": 84,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "neck_gem_marquise": {
+      "creditedAssetPaths": 84,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "neck_gem_natural": {
+      "creditedAssetPaths": 84,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "neck_gem_pear": {
+      "creditedAssetPaths": 84,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "neck_gem_pearl": {
+      "creditedAssetPaths": 84,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "neck_gem_princess": {
+      "creditedAssetPaths": 84,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "neck_gem_round": {
+      "creditedAssetPaths": 84,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "neck_gem_trilliant": {
+      "creditedAssetPaths": 84,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "neck_jabot": {
+      "creditedAssetPaths": 22,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "neck_necklace": {
+      "creditedAssetPaths": 59,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "neck_necklace_beaded_large": {
+      "creditedAssetPaths": 22,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "neck_necklace_beaded_small": {
+      "creditedAssetPaths": 22,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "neck_necklace_chain": {
+      "creditedAssetPaths": 112,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "neck_necklace_simple": {
+      "creditedAssetPaths": 112,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "neck_necktie": {
+      "creditedAssetPaths": 28,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "neck_scarf": {
+      "creditedAssetPaths": 11,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "prosthesis_hook": {
+      "creditedAssetPaths": 12,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "prosthesis_peg_leg": {
+      "creditedAssetPaths": 16,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "quiver": {
+      "creditedAssetPaths": 6,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shadow": {
+      "creditedAssetPaths": 21,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "shield_crusader": {
+      "creditedAssetPaths": 18,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_paint": {
+      "creditedAssetPaths": 18,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_pattern_barry": {
+      "creditedAssetPaths": 18,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_pattern_bend": {
+      "creditedAssetPaths": 18,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_pattern_bend_sinister": {
+      "creditedAssetPaths": 17,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_pattern_bendy": {
+      "creditedAssetPaths": 18,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_pattern_bendy_sinister": {
+      "creditedAssetPaths": 18,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_pattern_bordure": {
+      "creditedAssetPaths": 18,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_pattern_chevron": {
+      "creditedAssetPaths": 18,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_pattern_chevron_inverted": {
+      "creditedAssetPaths": 17,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_pattern_chief": {
+      "creditedAssetPaths": 17,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_pattern_cross": {
+      "creditedAssetPaths": 18,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_pattern_fess": {
+      "creditedAssetPaths": 17,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_pattern_lozengy": {
+      "creditedAssetPaths": 17,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_pattern_pale": {
+      "creditedAssetPaths": 17,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_pattern_pall": {
+      "creditedAssetPaths": 17,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_pattern_paly": {
+      "creditedAssetPaths": 18,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_pattern_per_bend": {
+      "creditedAssetPaths": 17,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_pattern_per_bend_sinister": {
+      "creditedAssetPaths": 18,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_pattern_per_chevron": {
+      "creditedAssetPaths": 18,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_pattern_per_chevron_inverted": {
+      "creditedAssetPaths": 17,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_pattern_per_fess": {
+      "creditedAssetPaths": 17,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_pattern_per_pale": {
+      "creditedAssetPaths": 17,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_pattern_per_saltire": {
+      "creditedAssetPaths": 18,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_pattern_quarterly": {
+      "creditedAssetPaths": 18,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_pattern_saltire": {
+      "creditedAssetPaths": 18,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_revised_paint": {
+      "creditedAssetPaths": 19,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_revised_pattern_barry": {
+      "creditedAssetPaths": 19,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_revised_pattern_bend": {
+      "creditedAssetPaths": 19,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_revised_pattern_bend_sinister": {
+      "creditedAssetPaths": 18,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_revised_pattern_bendy": {
+      "creditedAssetPaths": 19,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_revised_pattern_bendy_sinister": {
+      "creditedAssetPaths": 19,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_revised_pattern_bordure": {
+      "creditedAssetPaths": 19,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_revised_pattern_chevron": {
+      "creditedAssetPaths": 19,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_revised_pattern_chevron_inverted": {
+      "creditedAssetPaths": 17,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_revised_pattern_chief": {
+      "creditedAssetPaths": 18,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_revised_pattern_cross": {
+      "creditedAssetPaths": 19,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_revised_pattern_fess": {
+      "creditedAssetPaths": 18,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_revised_pattern_lozengy": {
+      "creditedAssetPaths": 18,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_revised_pattern_pale": {
+      "creditedAssetPaths": 18,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_revised_pattern_pall": {
+      "creditedAssetPaths": 18,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_revised_pattern_paly": {
+      "creditedAssetPaths": 19,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_revised_pattern_per_bend": {
+      "creditedAssetPaths": 18,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_revised_pattern_per_bend_sinister": {
+      "creditedAssetPaths": 19,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_revised_pattern_per_chevron": {
+      "creditedAssetPaths": 19,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_revised_pattern_per_chevron_inverted": {
+      "creditedAssetPaths": 18,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_revised_pattern_per_fess": {
+      "creditedAssetPaths": 18,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_revised_pattern_per_pale": {
+      "creditedAssetPaths": 18,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_revised_pattern_per_saltire": {
+      "creditedAssetPaths": 19,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_revised_pattern_quarterly": {
+      "creditedAssetPaths": 19,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_revised_pattern_saltire": {
+      "creditedAssetPaths": 19,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_revised_trim": {
+      "creditedAssetPaths": 26,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_revised_wood": {
+      "creditedAssetPaths": 26,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_trim": {
+      "creditedAssetPaths": 23,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_heater_wood": {
+      "creditedAssetPaths": 23,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_kite": {
+      "creditedAssetPaths": 60,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "shield_plus": {
+      "creditedAssetPaths": 18,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_round": {
+      "creditedAssetPaths": 18,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_scutum": {
+      "creditedAssetPaths": 17,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_scutum_trim": {
+      "creditedAssetPaths": 17,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_spartan": {
+      "creditedAssetPaths": 12,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_two_engrailed": {
+      "creditedAssetPaths": 18,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shield_two_engrailed_trim": {
+      "creditedAssetPaths": 18,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shoulders_epaulets": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shoulders_legion": {
+      "creditedAssetPaths": 14,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shoulders_mantal": {
+      "creditedAssetPaths": 24,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "shoulders_pauldrons": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "tail_cat": {
+      "creditedAssetPaths": 1914,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "tail_lizard": {
+      "creditedAssetPaths": 58,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "tail_lizard_alt": {
+      "creditedAssetPaths": 1914,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "tail_wolf": {
+      "creditedAssetPaths": 1848,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "tail_wolf_fluffy": {
+      "creditedAssetPaths": 1914,
+      "selectedSourceLabels": [
+        "CC-BY 3.0+"
+      ]
+    },
+    "tool_axe": {
+      "creditedAssetPaths": 4,
+      "selectedSourceLabels": [
+        "CC-BY 4.0"
+      ]
+    },
+    "tool_hammer": {
+      "creditedAssetPaths": 4,
+      "selectedSourceLabels": [
+        "CC-BY 4.0"
+      ]
+    },
+    "tool_hoe": {
+      "creditedAssetPaths": 4,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "tool_pickaxe": {
+      "creditedAssetPaths": 4,
+      "selectedSourceLabels": [
+        "CC-BY 4.0"
+      ]
+    },
+    "tool_rod": {
+      "creditedAssetPaths": 2,
+      "selectedSourceLabels": [
+        "CC-BY 4.0+"
+      ]
+    },
+    "tool_shovel": {
+      "creditedAssetPaths": 4,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "tool_watering_can": {
+      "creditedAssetPaths": 4,
+      "selectedSourceLabels": [
+        "CC-BY 4.0+"
+      ]
+    },
+    "tool_whip": {
+      "creditedAssetPaths": 2,
+      "selectedSourceLabels": [
+        "CC-BY 4.0"
+      ]
+    },
+    "torso_aprons_apron": {
+      "creditedAssetPaths": 288,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_aprons_apron_full": {
+      "creditedAssetPaths": 144,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_aprons_apron_half": {
+      "creditedAssetPaths": 144,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_aprons_overalls": {
+      "creditedAssetPaths": 1080,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_aprons_suspenders": {
+      "creditedAssetPaths": 1080,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_armour_leather": {
+      "creditedAssetPaths": 36,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_armour_legion": {
+      "creditedAssetPaths": 45,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_armour_plate": {
+      "creditedAssetPaths": 45,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_bandages": {
+      "creditedAssetPaths": 12,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_chainmail": {
+      "creditedAssetPaths": 24,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_clothes_blouse": {
+      "creditedAssetPaths": 114,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_clothes_blouse_longsleeve": {
+      "creditedAssetPaths": 114,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_clothes_child_shirt": {
+      "creditedAssetPaths": 10,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_clothes_corset": {
+      "creditedAssetPaths": 114,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "torso_clothes_longsleeve": {
+      "creditedAssetPaths": 45,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_clothes_longsleeve_formal": {
+      "creditedAssetPaths": 6,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "torso_clothes_longsleeve_formal_striped": {
+      "creditedAssetPaths": 6,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "torso_clothes_longsleeve_laced": {
+      "creditedAssetPaths": 144,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "torso_clothes_longsleeve_scoop": {
+      "creditedAssetPaths": 30,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_clothes_longsleeve2": {
+      "creditedAssetPaths": 45,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_clothes_longsleeve2_buttoned": {
+      "creditedAssetPaths": 45,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_clothes_longsleeve2_cardigan": {
+      "creditedAssetPaths": 45,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_clothes_longsleeve2_polo": {
+      "creditedAssetPaths": 45,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_clothes_longsleeve2_scoop": {
+      "creditedAssetPaths": 45,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_clothes_longsleeve2_vneck": {
+      "creditedAssetPaths": 45,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_clothes_longsleeves": {
+      "creditedAssetPaths": 45,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_clothes_longsleeves_cuffed": {
+      "creditedAssetPaths": 45,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_clothes_longsleeves2": {
+      "creditedAssetPaths": 45,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_clothes_robe": {
+      "creditedAssetPaths": 40,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "torso_clothes_shortsleeve": {
+      "creditedAssetPaths": 45,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_clothes_shortsleeve_cardigan": {
+      "creditedAssetPaths": 45,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_clothes_shortsleeve_polo": {
+      "creditedAssetPaths": 45,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_clothes_shortsleeves": {
+      "creditedAssetPaths": 45,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_clothes_shortsleeves2": {
+      "creditedAssetPaths": 45,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_clothes_sleeveless": {
+      "creditedAssetPaths": 288,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_clothes_sleeveless_laced": {
+      "creditedAssetPaths": 144,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_clothes_sleeveless_striped": {
+      "creditedAssetPaths": 144,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_clothes_sleeveless_tanktop": {
+      "creditedAssetPaths": 288,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_clothes_sleeveless1": {
+      "creditedAssetPaths": 45,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_clothes_sleeveless2": {
+      "creditedAssetPaths": 45,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_clothes_sleeveless2_buttoned": {
+      "creditedAssetPaths": 45,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_clothes_sleeveless2_cardigan": {
+      "creditedAssetPaths": 45,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_clothes_sleeveless2_polo": {
+      "creditedAssetPaths": 45,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_clothes_sleeveless2_scoop": {
+      "creditedAssetPaths": 45,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_clothes_sleeveless2_vneck": {
+      "creditedAssetPaths": 45,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_clothes_tshirt": {
+      "creditedAssetPaths": 45,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_clothes_tshirt_buttoned": {
+      "creditedAssetPaths": 45,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_clothes_tshirt_scoop": {
+      "creditedAssetPaths": 45,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_clothes_tshirt_vneck": {
+      "creditedAssetPaths": 45,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_clothes_tunic": {
+      "creditedAssetPaths": 144,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_clothes_tunic_sara": {
+      "creditedAssetPaths": 144,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_clothes_vest": {
+      "creditedAssetPaths": 182,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "torso_clothes_vest_open": {
+      "creditedAssetPaths": 168,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "torso_jacket_collared": {
+      "creditedAssetPaths": 150,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "torso_jacket_frock": {
+      "creditedAssetPaths": 144,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "torso_jacket_frock_buttons": {
+      "creditedAssetPaths": 42,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_jacket_frock_collar": {
+      "creditedAssetPaths": 42,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_jacket_frock_lace": {
+      "creditedAssetPaths": 42,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_jacket_frock_lapel": {
+      "creditedAssetPaths": 42,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_jacket_iverness": {
+      "creditedAssetPaths": 6,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "torso_jacket_pockets": {
+      "creditedAssetPaths": 144,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_jacket_santa": {
+      "creditedAssetPaths": 144,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_jacket_tabard": {
+      "creditedAssetPaths": 228,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "torso_jacket_trench": {
+      "creditedAssetPaths": 12,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "weapon_blunt_club": {
+      "creditedAssetPaths": 2,
+      "selectedSourceLabels": [
+        "CC-BY 4.0"
+      ]
+    },
+    "weapon_blunt_flail": {
+      "creditedAssetPaths": 6,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "weapon_blunt_mace": {
+      "creditedAssetPaths": 6,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "weapon_blunt_waraxe": {
+      "creditedAssetPaths": 5,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "weapon_magic_crystal": {
+      "creditedAssetPaths": 36,
+      "selectedSourceLabels": [
+        "CC-BY 4.0"
+      ]
+    },
+    "weapon_magic_diamond": {
+      "creditedAssetPaths": 72,
+      "selectedSourceLabels": [
+        "CC-BY 4.0"
+      ]
+    },
+    "weapon_magic_gnarled": {
+      "creditedAssetPaths": 72,
+      "selectedSourceLabels": [
+        "CC-BY 4.0"
+      ]
+    },
+    "weapon_magic_loop": {
+      "creditedAssetPaths": 72,
+      "selectedSourceLabels": [
+        "CC-BY 4.0"
+      ]
+    },
+    "weapon_magic_s": {
+      "creditedAssetPaths": 72,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "weapon_magic_simple": {
+      "creditedAssetPaths": 8,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "weapon_magic_wand": {
+      "creditedAssetPaths": 2,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "weapon_polearm_cane": {
+      "creditedAssetPaths": 4,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "weapon_polearm_dragonspear": {
+      "creditedAssetPaths": 48,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "weapon_polearm_halberd": {
+      "creditedAssetPaths": 8,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "weapon_polearm_longspear": {
+      "creditedAssetPaths": 48,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "weapon_polearm_scythe": {
+      "creditedAssetPaths": 6,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "weapon_polearm_spear": {
+      "creditedAssetPaths": 72,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "weapon_polearm_trident": {
+      "creditedAssetPaths": 48,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "weapon_ranged_boomerang": {
+      "creditedAssetPaths": 1,
+      "selectedSourceLabels": [
+        "CC-BY 4.0"
+      ]
+    },
+    "weapon_ranged_bow_arrow": {
+      "creditedAssetPaths": 1,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "weapon_ranged_bow_great": {
+      "creditedAssetPaths": 60,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "weapon_ranged_bow_normal": {
+      "creditedAssetPaths": 72,
+      "selectedSourceLabels": [
+        "CC-BY 4.0"
+      ]
+    },
+    "weapon_ranged_bow_recurve": {
+      "creditedAssetPaths": 72,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "weapon_ranged_crossbow": {
+      "creditedAssetPaths": 6,
+      "selectedSourceLabels": [
+        "CC0"
+      ]
+    },
+    "weapon_ranged_slingshot": {
+      "creditedAssetPaths": 6,
+      "selectedSourceLabels": [
+        "CC-BY 4.0"
+      ]
+    },
+    "weapon_sword_arming": {
+      "creditedAssetPaths": 112,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "weapon_sword_dagger": {
+      "creditedAssetPaths": 6,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "weapon_sword_glowsword": {
+      "creditedAssetPaths": 12,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "weapon_sword_katana": {
+      "creditedAssetPaths": 4,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "weapon_sword_longsword": {
+      "creditedAssetPaths": 10,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "weapon_sword_longsword_alt": {
+      "creditedAssetPaths": 4,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "weapon_sword_rapier": {
+      "creditedAssetPaths": 5,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "weapon_sword_saber": {
+      "creditedAssetPaths": 6,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "weapon_sword_scimitar": {
+      "creditedAssetPaths": 4,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "wheelchair": {
+      "creditedAssetPaths": 10,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "wings_bat": {
+      "creditedAssetPaths": 1276,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "wings_dragonfly": {
+      "creditedAssetPaths": 348,
+      "selectedSourceLabels": [
+        "CC-BY-SA 4.0"
+      ]
+    },
+    "wings_dragonfly_transparent": {
+      "creditedAssetPaths": 348,
+      "selectedSourceLabels": [
+        "CC-BY-SA 4.0"
+      ]
+    },
+    "wings_feathered": {
+      "creditedAssetPaths": 957,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "wings_lizard": {
+      "creditedAssetPaths": 29,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "wings_lizard_alt": {
+      "creditedAssetPaths": 957,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "wings_lizard_bat": {
+      "creditedAssetPaths": 29,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "wings_lunar": {
+      "creditedAssetPaths": 348,
+      "selectedSourceLabels": [
+        "CC-BY-SA 4.0"
+      ]
+    },
+    "wings_monarch": {
+      "creditedAssetPaths": 348,
+      "selectedSourceLabels": [
+        "CC-BY-SA 4.0"
+      ]
+    },
+    "wings_monarch_dots": {
+      "creditedAssetPaths": 336,
+      "selectedSourceLabels": [
+        "CC-BY-SA 4.0"
+      ]
+    },
+    "wings_monarch_edge": {
+      "creditedAssetPaths": 336,
+      "selectedSourceLabels": [
+        "CC-BY-SA 4.0"
+      ]
+    },
+    "wings_pixie": {
+      "creditedAssetPaths": 348,
+      "selectedSourceLabels": [
+        "CC-BY-SA 4.0"
+      ]
+    },
+    "wings_pixie_transparent": {
+      "creditedAssetPaths": 348,
+      "selectedSourceLabels": [
+        "CC-BY-SA 4.0"
+      ]
+    },
+    "wound_arm": {
+      "creditedAssetPaths": 12,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "wound_brain": {
+      "creditedAssetPaths": 15,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "wound_eye_left": {
+      "creditedAssetPaths": 14,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "wound_eye_right": {
+      "creditedAssetPaths": 14,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "wound_mouth": {
+      "creditedAssetPaths": 14,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "wound_ribs": {
+      "creditedAssetPaths": 11,
+      "selectedSourceLabels": [
+        "CC-BY-SA 3.0"
+      ]
+    },
+    "wrists_cuffs": {
+      "creditedAssetPaths": 24,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    },
+    "wrists_cuffs_lace": {
+      "creditedAssetPaths": 24,
+      "selectedSourceLabels": [
+        "OGA-BY 3.0"
+      ]
+    }
+  }
+}

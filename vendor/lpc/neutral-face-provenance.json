@@ -1,0 +1,502 @@
+{
+  "repository": "https://github.com/codyaboyd/Universal-LPC-Modern-Sprite-Generator",
+  "commit": "7736d762aa2113f29342dad869ef4931218aa7ae",
+  "metadata": {
+    "sheet_definitions/head/faces/face_neutral.json": {
+      "sha256": "1418d3c092e8a95538ea5524f9a53c0a369dacaddd44137fdef8a9c5fa2a31bf",
+      "original": {
+        "name": "Neutral",
+        "tags": [
+          "expression"
+        ],
+        "required_tags": [
+          "human"
+        ],
+        "replace_in_path": {
+          "head": {
+            "Human_Male": "male",
+            "Human_Male_Small": "male",
+            "Human_Male_Plump": "male",
+            "Human_Male_Gaunt": "male",
+            "Human_Female": "female",
+            "Human_Female_Small": "female",
+            "Human_Male_Elderly": "elderly",
+            "Human_Female_Elderly": "elderly",
+            "Human_Elderly_Small": "elderly"
+          }
+        },
+        "layer_1": {
+          "zPos": 101,
+          "male": "head/faces/${head}/neutral/",
+          "muscular": "head/faces/${head}/neutral/",
+          "female": "head/faces/${head}/neutral/",
+          "teen": "head/faces/${head}/neutral/",
+          "pregnant": "head/faces/${head}/neutral/"
+        },
+        "match_body_color": true,
+        "animations": [
+          "spellcast",
+          "thrust",
+          "walk",
+          "slash",
+          "shoot",
+          "watering",
+          "idle",
+          "jump",
+          "run",
+          "sit",
+          "emote",
+          "combat",
+          "1h_slash",
+          "1h_backslash",
+          "1h_halfslash"
+        ],
+        "credits": [
+          {
+            "file": "head/faces",
+            "notes": "Original by Redshrike, Expressions by ElizaWy, mapped to all frames by JaidynReiman",
+            "authors": [
+              "JaidynReiman",
+              "ElizaWy",
+              "Stephen Challener (Redshrike)"
+            ],
+            "licenses": [
+              "OGA-BY 3.0"
+            ],
+            "urls": [
+              "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+              "https://opengameart.org/content/ulpc-expanded-expressions"
+            ]
+          },
+          {
+            "file": "head/faces/elderly/neutral",
+            "notes": "Original by Redshrike, Elderly Head/Eyes by ElizaWy, mapped to all frames by JaidynReiman",
+            "authors": [
+              "JaidynReiman",
+              "ElizaWy",
+              "Stephen Challener (Redshrike)"
+            ],
+            "licenses": [
+              "OGA-BY 3.0",
+              "CC-BY-SA 3.0",
+              "GPL 3.0"
+            ],
+            "urls": [
+              "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+              "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+              "https://opengameart.org/content/ulpc-expanded-expressions"
+            ]
+          },
+          {
+            "file": "head/faces/female/neutral",
+            "notes": "Original by Redshrike, spellcast and jump overrides by JaidynReiman",
+            "authors": [
+              "JaidynReiman",
+              "Stephen Challener (Redshrike)"
+            ],
+            "licenses": [
+              "OGA-BY 3.0",
+              "CC-BY-SA 3.0",
+              "GPL 3.0"
+            ],
+            "urls": [
+              "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+              "https://opengameart.org/content/ulpc-expanded-expressions"
+            ]
+          },
+          {
+            "file": "head/faces/male/neutral",
+            "notes": "Original by Redshrike, spellcast and jump overrides by JaidynReiman",
+            "authors": [
+              "JaidynReiman",
+              "Stephen Challener (Redshrike)"
+            ],
+            "licenses": [
+              "OGA-BY 3.0",
+              "CC-BY-SA 3.0",
+              "GPL 3.0"
+            ],
+            "urls": [
+              "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+              "https://opengameart.org/content/ulpc-expanded-expressions"
+            ]
+          }
+        ],
+        "recolors": {
+          "color_1": {
+            "material": "body",
+            "palettes": [
+              "ulpc",
+              "lpcr",
+              "all.lpcr"
+            ]
+          },
+          "color_2": {
+            "type_name": "eyes",
+            "label": "Eye Color",
+            "material": "eye",
+            "palettes": [
+              "ulpc",
+              "lpcr"
+            ]
+          }
+        },
+        "type_name": "expression"
+      }
+    }
+  },
+  "sprites": {
+    "spritesheets/head/faces/male/neutral/idle.png": "cac832a04e22a8f8d0e10b103e77b5483ae5bd79226eb5867cdc5dfe3ee39737",
+    "spritesheets/head/faces/male/neutral/walk.png": "fdf6a898252038e61c3d0b582795df87b04afb4738c6ca1eefda2e317b16fe25",
+    "spritesheets/head/faces/male/neutral/run.png": "fd49d504dc80396ea5885763b4e8b162446596da4fbb425d7f51b18aafa7015e",
+    "spritesheets/head/faces/male/neutral/jump.png": "c4d3e4122561300515eb3a7d89c418ff42d4ad4de16a7f5147f562eabbf4b7cd",
+    "spritesheets/head/faces/male/neutral/spellcast.png": "931d2d3cb83061128a9eb7e6e79dc4862cc09bf44f5a3392994089976b8032c9",
+    "spritesheets/head/faces/male/neutral/sit.png": "9777d3ca5e7cb4fb903db84cc44d7a0908de790a59400df5cbabb68c563a9c9e",
+    "spritesheets/head/faces/male/neutral/emote.png": "354f51ec2f4d3b81660f2c2f3ca1f51198a5236b7fa08c21f0ae4c63885b27ee",
+    "spritesheets/head/faces/female/neutral/idle.png": "11ae699b48555d4a93ff38ab63f7aaf666b77498751785202a63d3c118322804",
+    "spritesheets/head/faces/female/neutral/walk.png": "d0323ff601ed07203bc64a37dfdd08bf5fdb53c2744dd1dda6cd3b07e4d5e068",
+    "spritesheets/head/faces/female/neutral/run.png": "25918bf8059154bb4058c544f5dd3e8cbca359d13dc4b6b291e2555378fa9e9f",
+    "spritesheets/head/faces/female/neutral/jump.png": "304eb741d4f717c949f57293b320fc96a20845c143432fa066310e698a73fd9c",
+    "spritesheets/head/faces/female/neutral/spellcast.png": "cc6c55dec0ecdbea45900a3b719782453dad7b575446686333388d98a0f5ed38",
+    "spritesheets/head/faces/female/neutral/sit.png": "5241c04f729966202c57f43b2ec6a705aade8f4e953e17c4e7f00b034f7833b8",
+    "spritesheets/head/faces/female/neutral/emote.png": "021febdf3d3b85d3a81b99830d16b60a2c69b1e4b8f8fdda503e06384844bdac",
+    "spritesheets/head/faces/elderly/neutral/idle.png": "cc7a91a4dcd10d26a4b520960e1bd66ef83e0a44cc1887e5e50d4950a446cab2",
+    "spritesheets/head/faces/elderly/neutral/walk.png": "40ede578756e26188176a9880ee2c845cf2b38bc4fd443f55b8f2e82e975b979",
+    "spritesheets/head/faces/elderly/neutral/run.png": "6d58727eb933bef6435dd1bf9e54d1e93bce8be895f400f9dde5789f335e0a3f",
+    "spritesheets/head/faces/elderly/neutral/jump.png": "594f79263e42dc7ade07911e4c3061eff552f33cd5a99795040a216ebe57400d",
+    "spritesheets/head/faces/elderly/neutral/spellcast.png": "0dfae8c4c549eb1ddaa3f1cd2b811c30887af8bacd033765055f4d8b2abb26cf",
+    "spritesheets/head/faces/elderly/neutral/sit.png": "1cc5d0505659f3e45ef2597bcb0e76fa9c370858eb57b6542d80a1e4c08f33be",
+    "spritesheets/head/faces/elderly/neutral/emote.png": "541c31475fabd8ee67bad1899b2f04e36a1fc168d5b0ee8e7b5c1dabbb5f4d4d"
+  },
+  "items": {
+    "face_neutral": {
+      "name": "Neutral face",
+      "slot": "expression",
+      "bodyTypes": [
+        "male"
+      ],
+      "counterparts": {
+        "male": "face_neutral",
+        "female": "face_neutral_female"
+      },
+      "material": "body",
+      "selectedLicense": "OGA-BY 3.0",
+      "sourcePalette": "light",
+      "layers": [
+        {
+          "z": 101,
+          "required": true,
+          "paths": {
+            "idle": "spritesheets/head/faces/male/neutral/idle.png",
+            "walk": "spritesheets/head/faces/male/neutral/walk.png",
+            "run": "spritesheets/head/faces/male/neutral/run.png",
+            "jump": "spritesheets/head/faces/male/neutral/jump.png",
+            "spellcast": "spritesheets/head/faces/male/neutral/spellcast.png",
+            "sit": "spritesheets/head/faces/male/neutral/sit.png",
+            "emote": "spritesheets/head/faces/male/neutral/emote.png"
+          }
+        }
+      ],
+      "requiredLayerCount": 1,
+      "occupies": [
+        "expression"
+      ],
+      "requires": {
+        "head": [
+          "heads_human_male"
+        ]
+      },
+      "conflictsWith": [],
+      "credits": [
+        {
+          "file": "head/faces",
+          "notes": "Original by Redshrike, Expressions by ElizaWy, mapped to all frames by JaidynReiman",
+          "authors": [
+            "JaidynReiman",
+            "ElizaWy",
+            "Stephen Challener (Redshrike)"
+          ],
+          "licenses": [
+            "OGA-BY 3.0"
+          ],
+          "urls": [
+            "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+            "https://opengameart.org/content/ulpc-expanded-expressions"
+          ]
+        },
+        {
+          "file": "head/faces/elderly/neutral",
+          "notes": "Original by Redshrike, Elderly Head/Eyes by ElizaWy, mapped to all frames by JaidynReiman",
+          "authors": [
+            "JaidynReiman",
+            "ElizaWy",
+            "Stephen Challener (Redshrike)"
+          ],
+          "licenses": [
+            "OGA-BY 3.0",
+            "CC-BY-SA 3.0",
+            "GPL 3.0"
+          ],
+          "urls": [
+            "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+            "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+            "https://opengameart.org/content/ulpc-expanded-expressions"
+          ]
+        },
+        {
+          "file": "head/faces/female/neutral",
+          "notes": "Original by Redshrike, spellcast and jump overrides by JaidynReiman",
+          "authors": [
+            "JaidynReiman",
+            "Stephen Challener (Redshrike)"
+          ],
+          "licenses": [
+            "OGA-BY 3.0",
+            "CC-BY-SA 3.0",
+            "GPL 3.0"
+          ],
+          "urls": [
+            "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+            "https://opengameart.org/content/ulpc-expanded-expressions"
+          ]
+        },
+        {
+          "file": "head/faces/male/neutral",
+          "notes": "Original by Redshrike, spellcast and jump overrides by JaidynReiman",
+          "authors": [
+            "JaidynReiman",
+            "Stephen Challener (Redshrike)"
+          ],
+          "licenses": [
+            "OGA-BY 3.0",
+            "CC-BY-SA 3.0",
+            "GPL 3.0"
+          ],
+          "urls": [
+            "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+            "https://opengameart.org/content/ulpc-expanded-expressions"
+          ]
+        }
+      ]
+    },
+    "face_neutral_female": {
+      "name": "Neutral face",
+      "slot": "expression",
+      "bodyTypes": [
+        "female"
+      ],
+      "counterparts": {
+        "male": "face_neutral",
+        "female": "face_neutral_female"
+      },
+      "material": "body",
+      "selectedLicense": "OGA-BY 3.0",
+      "sourcePalette": "light",
+      "layers": [
+        {
+          "z": 101,
+          "required": true,
+          "paths": {
+            "idle": "spritesheets/head/faces/female/neutral/idle.png",
+            "walk": "spritesheets/head/faces/female/neutral/walk.png",
+            "run": "spritesheets/head/faces/female/neutral/run.png",
+            "jump": "spritesheets/head/faces/female/neutral/jump.png",
+            "spellcast": "spritesheets/head/faces/female/neutral/spellcast.png",
+            "sit": "spritesheets/head/faces/female/neutral/sit.png",
+            "emote": "spritesheets/head/faces/female/neutral/emote.png"
+          }
+        }
+      ],
+      "requiredLayerCount": 1,
+      "occupies": [
+        "expression"
+      ],
+      "requires": {
+        "head": [
+          "heads_human_female"
+        ]
+      },
+      "conflictsWith": [],
+      "credits": [
+        {
+          "file": "head/faces",
+          "notes": "Original by Redshrike, Expressions by ElizaWy, mapped to all frames by JaidynReiman",
+          "authors": [
+            "JaidynReiman",
+            "ElizaWy",
+            "Stephen Challener (Redshrike)"
+          ],
+          "licenses": [
+            "OGA-BY 3.0"
+          ],
+          "urls": [
+            "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+            "https://opengameart.org/content/ulpc-expanded-expressions"
+          ]
+        },
+        {
+          "file": "head/faces/elderly/neutral",
+          "notes": "Original by Redshrike, Elderly Head/Eyes by ElizaWy, mapped to all frames by JaidynReiman",
+          "authors": [
+            "JaidynReiman",
+            "ElizaWy",
+            "Stephen Challener (Redshrike)"
+          ],
+          "licenses": [
+            "OGA-BY 3.0",
+            "CC-BY-SA 3.0",
+            "GPL 3.0"
+          ],
+          "urls": [
+            "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+            "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+            "https://opengameart.org/content/ulpc-expanded-expressions"
+          ]
+        },
+        {
+          "file": "head/faces/female/neutral",
+          "notes": "Original by Redshrike, spellcast and jump overrides by JaidynReiman",
+          "authors": [
+            "JaidynReiman",
+            "Stephen Challener (Redshrike)"
+          ],
+          "licenses": [
+            "OGA-BY 3.0",
+            "CC-BY-SA 3.0",
+            "GPL 3.0"
+          ],
+          "urls": [
+            "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+            "https://opengameart.org/content/ulpc-expanded-expressions"
+          ]
+        },
+        {
+          "file": "head/faces/male/neutral",
+          "notes": "Original by Redshrike, spellcast and jump overrides by JaidynReiman",
+          "authors": [
+            "JaidynReiman",
+            "Stephen Challener (Redshrike)"
+          ],
+          "licenses": [
+            "OGA-BY 3.0",
+            "CC-BY-SA 3.0",
+            "GPL 3.0"
+          ],
+          "urls": [
+            "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+            "https://opengameart.org/content/ulpc-expanded-expressions"
+          ]
+        }
+      ]
+    },
+    "face_neutral_elder": {
+      "name": "Neutral face",
+      "slot": "expression",
+      "bodyTypes": [
+        "male",
+        "female"
+      ],
+      "counterparts": {},
+      "material": "body",
+      "selectedLicense": "OGA-BY 3.0",
+      "sourcePalette": "light",
+      "layers": [
+        {
+          "z": 101,
+          "required": true,
+          "paths": {
+            "idle": "spritesheets/head/faces/elderly/neutral/idle.png",
+            "walk": "spritesheets/head/faces/elderly/neutral/walk.png",
+            "run": "spritesheets/head/faces/elderly/neutral/run.png",
+            "jump": "spritesheets/head/faces/elderly/neutral/jump.png",
+            "spellcast": "spritesheets/head/faces/elderly/neutral/spellcast.png",
+            "sit": "spritesheets/head/faces/elderly/neutral/sit.png",
+            "emote": "spritesheets/head/faces/elderly/neutral/emote.png"
+          }
+        }
+      ],
+      "requiredLayerCount": 1,
+      "occupies": [
+        "expression"
+      ],
+      "requires": {
+        "head": [
+          "heads_human_male_elderly",
+          "heads_human_female_elderly"
+        ]
+      },
+      "conflictsWith": [],
+      "credits": [
+        {
+          "file": "head/faces",
+          "notes": "Original by Redshrike, Expressions by ElizaWy, mapped to all frames by JaidynReiman",
+          "authors": [
+            "JaidynReiman",
+            "ElizaWy",
+            "Stephen Challener (Redshrike)"
+          ],
+          "licenses": [
+            "OGA-BY 3.0"
+          ],
+          "urls": [
+            "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+            "https://opengameart.org/content/ulpc-expanded-expressions"
+          ]
+        },
+        {
+          "file": "head/faces/elderly/neutral",
+          "notes": "Original by Redshrike, Elderly Head/Eyes by ElizaWy, mapped to all frames by JaidynReiman",
+          "authors": [
+            "JaidynReiman",
+            "ElizaWy",
+            "Stephen Challener (Redshrike)"
+          ],
+          "licenses": [
+            "OGA-BY 3.0",
+            "CC-BY-SA 3.0",
+            "GPL 3.0"
+          ],
+          "urls": [
+            "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+            "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+            "https://opengameart.org/content/ulpc-expanded-expressions"
+          ]
+        },
+        {
+          "file": "head/faces/female/neutral",
+          "notes": "Original by Redshrike, spellcast and jump overrides by JaidynReiman",
+          "authors": [
+            "JaidynReiman",
+            "Stephen Challener (Redshrike)"
+          ],
+          "licenses": [
+            "OGA-BY 3.0",
+            "CC-BY-SA 3.0",
+            "GPL 3.0"
+          ],
+          "urls": [
+            "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+            "https://opengameart.org/content/ulpc-expanded-expressions"
+          ]
+        },
+        {
+          "file": "head/faces/male/neutral",
+          "notes": "Original by Redshrike, spellcast and jump overrides by JaidynReiman",
+          "authors": [
+            "JaidynReiman",
+            "Stephen Challener (Redshrike)"
+          ],
+          "licenses": [
+            "OGA-BY 3.0",
+            "CC-BY-SA 3.0",
+            "GPL 3.0"
+          ],
+          "urls": [
+            "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+            "https://opengameart.org/content/ulpc-expanded-expressions"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "sourceCommit": "86160e7507d6841259cff624a51a63c1d4847ee3",
+  "transforms": [
+    {
+      "id": "layout-pad:skeleton-halfslash",
+      "itemId": "heads_skeleton",
+      "action": "1h_halfslash",
+      "path": "spritesheets/head/heads/skeleton/adult/halfslash.png",
+      "sha256": "0e2812a4a0f8039f2632ec507cc965dede59cbad6b75bf527da58039d35411b6",
+      "sourceWidth": 384,
+      "sourceHeight": 254,
+      "outputWidth": 384,
+      "outputHeight": 256,
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "kind": "transparent_padding",
+      "rawCells": null,
+      "cells": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "copies": []
+    }
+  ]
+}

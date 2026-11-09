@@ -1,0 +1,17 @@
+{
+  "commit": "86160e7507d6841259cff624a51a63c1d4847ee3",
+  "scope": "All declared bodies, variants, actions, layers and path-substitution values; pinned Git-tree existence only. Decoding, frame/layout, palette, dependency-context and license selection remain unverified.",
+  "summary": {
+    "items": 657,
+    "expansionAttempts": 268699,
+    "uniquePaths": 77088,
+    "existingPaths": 73917,
+    "missingPaths": 3171,
+    "itemsWithMissingPaths": 184,
+    "itemsWithPathProblems": 0,
+    "itemsWithUncoveredCreditPaths": 0
+  },
+  "indexSha256": "25c55062bc241a15d48bb5f7f01ef59dce49642b3d074a14a51875143669d74e",
+  "rendererSha256": "2da2d818de9091b88c1ba71105c78505e12ea2f023b713f0901dc7b2fc96ad31",
+  "auditToolSha256": "f2caf8729fed1069c3df2eec23f7e6df87b02b2968f948e0c77053322a28dde7"
+}

@@ -1,0 +1,836 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "urn:lpc-companion:source-state:2",
+  "title": "Full-source definitions and isolated history contracts",
+  "definitions": {
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "bodyType",
+        "selections",
+        "colorMemory"
+      ],
+      "properties": {
+        "bodyType": {
+          "enum": [
+            "child",
+            "female",
+            "male",
+            "muscular",
+            "pregnant",
+            "teen"
+          ]
+        },
+        "selections": {
+          "type": "object",
+          "maxProperties": 34,
+          "propertyNames": {
+            "enum": [
+              "body",
+              "head",
+              "hair",
+              "beard",
+              "mustache",
+              "ears",
+              "ears_inner",
+              "eyebrows",
+              "eyes",
+              "fins",
+              "furry_ears",
+              "furry_ears_skin",
+              "hairextl",
+              "hairextr",
+              "horns",
+              "nose",
+              "ponytail",
+              "prosthesis_hand",
+              "prosthesis_leg",
+              "tail",
+              "updo",
+              "wings",
+              "wings_dots",
+              "wings_edge",
+              "wrinkles",
+              "wheelchair",
+              "expression",
+              "expression_crying",
+              "wound_arm",
+              "wound_brain",
+              "wound_eye_left",
+              "wound_eye_right",
+              "wound_mouth",
+              "wound_ribs"
+            ]
+          },
+          "additionalProperties": {
+            "$ref": "urn:lpc-companion:source-recipe:2#/definitions/selection"
+          }
+        },
+        "colorMemory": {
+          "type": "object",
+          "maxProperties": 34,
+          "propertyNames": {
+            "enum": [
+              "body",
+              "head",
+              "hair",
+              "beard",
+              "mustache",
+              "ears",
+              "ears_inner",
+              "eyebrows",
+              "eyes",
+              "fins",
+              "furry_ears",
+              "furry_ears_skin",
+              "hairextl",
+              "hairextr",
+              "horns",
+              "nose",
+              "ponytail",
+              "prosthesis_hand",
+              "prosthesis_leg",
+              "tail",
+              "updo",
+              "wings",
+              "wings_dots",
+              "wings_edge",
+              "wrinkles",
+              "wheelchair",
+              "expression",
+              "expression_crying",
+              "wound_arm",
+              "wound_brain",
+              "wound_eye_left",
+              "wound_eye_right",
+              "wound_mouth",
+              "wound_ribs"
+            ]
+          },
+          "additionalProperties": {
+            "type": "object",
+            "maxProperties": 32,
+            "propertyNames": {
+              "type": "string",
+              "maxLength": 64,
+              "pattern": "^[a-z][a-z0-9_]*$"
+            },
+            "additionalProperties": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 96,
+              "pattern": "^[a-z][a-z0-9_.-]*$"
+            }
+          }
+        }
+      }
+    },
+    "rest": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "actionId",
+        "frame"
+      ],
+      "properties": {
+        "actionId": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9_]{0,63}$"
+        },
+        "frame": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 63
+        }
+      }
+    },
+    "playback": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "mode",
+            "actionId",
+            "frame"
+          ],
+          "properties": {
+            "mode": {
+              "const": "hold"
+            },
+            "actionId": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9_]{0,63}$"
+            },
+            "frame": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 63
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "mode",
+            "actionId"
+          ],
+          "properties": {
+            "mode": {
+              "const": "loop"
+            },
+            "actionId": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9_]{0,63}$"
+            }
+          }
+        }
+      ]
+    },
+    "outfit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "selections",
+        "selectionOrder",
+        "rest"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "urn:lpc-companion:state:1#/definitions/id"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80,
+          "pattern": "\\S"
+        },
+        "selections": {
+          "type": "object",
+          "maxProperties": 72,
+          "propertyNames": {
+            "enum": [
+              "accessory",
+              "ammo",
+              "apron",
+              "armour",
+              "arms",
+              "backpack",
+              "backpack_straps",
+              "bandages",
+              "bandana",
+              "bandana_overlay",
+              "bauldron",
+              "belt",
+              "bracers",
+              "buckles",
+              "cape",
+              "cape_trim",
+              "cargo",
+              "chainmail",
+              "charm",
+              "clothes",
+              "dress",
+              "dress_sleeves",
+              "dress_sleeves_trim",
+              "dress_trim",
+              "earring_left",
+              "earring_right",
+              "earrings",
+              "facial_eyes",
+              "facial_left",
+              "facial_left_trim",
+              "facial_mask",
+              "facial_right",
+              "facial_right_trim",
+              "gloves",
+              "hairtie",
+              "hairtie_rune",
+              "hat",
+              "hat_accessory",
+              "hat_buckle",
+              "hat_overlay",
+              "hat_trim",
+              "headcover",
+              "headcover_rune",
+              "jacket",
+              "jacket_collar",
+              "jacket_pockets",
+              "jacket_trim",
+              "legs",
+              "neck",
+              "necklace",
+              "overalls",
+              "quiver",
+              "ring",
+              "sash",
+              "sash_tie",
+              "shadow",
+              "shield",
+              "shield_paint",
+              "shield_pattern",
+              "shield_trim",
+              "shoes",
+              "shoes_toe",
+              "shoulders",
+              "sleeves",
+              "socks",
+              "undergarment_bottom",
+              "undergarment_top",
+              "vest",
+              "visor",
+              "weapon",
+              "weapon_magic_crystal",
+              "wrists"
+            ]
+          },
+          "additionalProperties": {
+            "$ref": "urn:lpc-companion:source-recipe:2#/definitions/selection"
+          }
+        },
+        "selectionOrder": {
+          "type": "array",
+          "maxItems": 106,
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "accessory",
+              "ammo",
+              "apron",
+              "armour",
+              "arms",
+              "backpack",
+              "backpack_straps",
+              "bandages",
+              "bandana",
+              "bandana_overlay",
+              "bauldron",
+              "beard",
+              "belt",
+              "body",
+              "bracers",
+              "buckles",
+              "cape",
+              "cape_trim",
+              "cargo",
+              "chainmail",
+              "charm",
+              "clothes",
+              "dress",
+              "dress_sleeves",
+              "dress_sleeves_trim",
+              "dress_trim",
+              "earring_left",
+              "earring_right",
+              "earrings",
+              "ears",
+              "ears_inner",
+              "expression",
+              "expression_crying",
+              "eyebrows",
+              "eyes",
+              "facial_eyes",
+              "facial_left",
+              "facial_left_trim",
+              "facial_mask",
+              "facial_right",
+              "facial_right_trim",
+              "fins",
+              "furry_ears",
+              "furry_ears_skin",
+              "gloves",
+              "hair",
+              "hairextl",
+              "hairextr",
+              "hairtie",
+              "hairtie_rune",
+              "hat",
+              "hat_accessory",
+              "hat_buckle",
+              "hat_overlay",
+              "hat_trim",
+              "head",
+              "headcover",
+              "headcover_rune",
+              "horns",
+              "jacket",
+              "jacket_collar",
+              "jacket_pockets",
+              "jacket_trim",
+              "legs",
+              "mustache",
+              "neck",
+              "necklace",
+              "nose",
+              "overalls",
+              "ponytail",
+              "prosthesis_hand",
+              "prosthesis_leg",
+              "quiver",
+              "ring",
+              "sash",
+              "sash_tie",
+              "shadow",
+              "shield",
+              "shield_paint",
+              "shield_pattern",
+              "shield_trim",
+              "shoes",
+              "shoes_toe",
+              "shoulders",
+              "sleeves",
+              "socks",
+              "tail",
+              "undergarment_bottom",
+              "undergarment_top",
+              "updo",
+              "vest",
+              "visor",
+              "weapon",
+              "weapon_magic_crystal",
+              "wheelchair",
+              "wings",
+              "wings_dots",
+              "wings_edge",
+              "wound_arm",
+              "wound_brain",
+              "wound_eye_left",
+              "wound_eye_right",
+              "wound_mouth",
+              "wound_ribs",
+              "wrinkles",
+              "wrists"
+            ]
+          }
+        },
+        "rest": {
+          "$ref": "#/definitions/rest"
+        },
+        "favorite": {
+          "type": "boolean"
+        }
+      }
+    },
+    "presentation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "outfitId",
+        "playback",
+        "facing",
+        "scene"
+      ],
+      "properties": {
+        "outfitId": {
+          "$ref": "urn:lpc-companion:state:1#/definitions/id"
+        },
+        "playback": {
+          "$ref": "#/definitions/playback"
+        },
+        "facing": {
+          "enum": [
+            "north",
+            "west",
+            "south",
+            "east"
+          ]
+        },
+        "scene": {
+          "$ref": "urn:lpc-companion:state:1#/definitions/scene"
+        },
+        "partySceneId": {
+          "enum": [
+            "together",
+            "woodland",
+            "hearth",
+            "courtyard"
+          ]
+        },
+        "moodId": {
+          "enum": [
+            "none",
+            "calm",
+            "cheerful",
+            "blush",
+            "thoughtful",
+            "concerned",
+            "angry",
+            "shock",
+            "eyeroll",
+            "shame",
+            "closed",
+            "look_right"
+          ]
+        }
+      }
+    },
+    "characterDefinition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schemaVersion",
+        "kind",
+        "characterId",
+        "revision",
+        "catalogVersion",
+        "sourceCommit",
+        "identity",
+        "outfits",
+        "renderOptions",
+        "startingPresentation"
+      ],
+      "properties": {
+        "schemaVersion": {
+          "const": 2
+        },
+        "kind": {
+          "const": "character-definition"
+        },
+        "characterId": {
+          "$ref": "urn:lpc-companion:state:1#/definitions/uuid"
+        },
+        "revision": {
+          "$ref": "urn:lpc-companion:state:1#/definitions/revision"
+        },
+        "catalogVersion": {
+          "const": "lpc-source-v1"
+        },
+        "sourceCommit": {
+          "const": "86160e7507d6841259cff624a51a63c1d4847ee3"
+        },
+        "identity": {
+          "$ref": "#/definitions/identity"
+        },
+        "outfits": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 99,
+          "items": {
+            "$ref": "#/definitions/outfit"
+          }
+        },
+        "renderOptions": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "matchBodyColor",
+            "applyMask"
+          ],
+          "properties": {
+            "matchBodyColor": {
+              "type": "boolean"
+            },
+            "applyMask": {
+              "type": "boolean"
+            }
+          }
+        },
+        "startingPresentation": {
+          "$ref": "#/definitions/presentation"
+        },
+        "importProvenance": {
+          "$ref": "#/definitions/sourceProvenance"
+        }
+      }
+    },
+    "chatSnapshot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schemaVersion",
+        "kind",
+        "characterId",
+        "catalogVersion",
+        "sourceCommit",
+        "identity",
+        "outfits",
+        "renderOptions",
+        "startingPresentation",
+        "chatInstanceId",
+        "sourceDefinitionRevision"
+      ],
+      "properties": {
+        "schemaVersion": {
+          "const": 2
+        },
+        "kind": {
+          "const": "chat-snapshot"
+        },
+        "characterId": {
+          "$ref": "urn:lpc-companion:state:1#/definitions/uuid"
+        },
+        "catalogVersion": {
+          "const": "lpc-source-v1"
+        },
+        "sourceCommit": {
+          "const": "86160e7507d6841259cff624a51a63c1d4847ee3"
+        },
+        "identity": {
+          "$ref": "#/definitions/identity"
+        },
+        "outfits": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 99,
+          "items": {
+            "$ref": "#/definitions/outfit"
+          }
+        },
+        "renderOptions": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "matchBodyColor",
+            "applyMask"
+          ],
+          "properties": {
+            "matchBodyColor": {
+              "type": "boolean"
+            },
+            "applyMask": {
+              "type": "boolean"
+            }
+          }
+        },
+        "startingPresentation": {
+          "$ref": "#/definitions/presentation"
+        },
+        "importProvenance": {
+          "$ref": "#/definitions/sourceProvenance"
+        },
+        "chatInstanceId": {
+          "$ref": "urn:lpc-companion:state:1#/definitions/uuid"
+        },
+        "sourceDefinitionRevision": {
+          "$ref": "urn:lpc-companion:state:1#/definitions/revision"
+        }
+      }
+    },
+    "presentationPatch": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schemaVersion",
+        "kind",
+        "patch"
+      ],
+      "properties": {
+        "schemaVersion": {
+          "const": 2
+        },
+        "kind": {
+          "const": "presentation-patch"
+        },
+        "patch": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [],
+          "properties": {
+            "outfitId": {
+              "$ref": "urn:lpc-companion:state:1#/definitions/id"
+            },
+            "playback": {
+              "$ref": "#/definitions/playback"
+            },
+            "facing": {
+              "enum": [
+                "north",
+                "west",
+                "south",
+                "east"
+              ]
+            },
+            "scene": {
+              "$ref": "urn:lpc-companion:state:1#/definitions/scene"
+            },
+            "partySceneId": {
+              "enum": [
+                "together",
+                "woodland",
+                "hearth",
+                "courtyard"
+              ]
+            },
+            "moodId": {
+              "enum": [
+                "none",
+                "calm",
+                "cheerful",
+                "blush",
+                "thoughtful",
+                "concerned",
+                "angry",
+                "shock",
+                "eyeroll",
+                "shame",
+                "closed",
+                "look_right"
+              ]
+            }
+          },
+          "minProperties": 1
+        },
+        "definitionHash": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      }
+    },
+    "companionReplacement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schemaVersion",
+        "kind",
+        "definition",
+        "presentation"
+      ],
+      "properties": {
+        "schemaVersion": {
+          "const": 2
+        },
+        "kind": {
+          "const": "companion-replacement"
+        },
+        "definition": {
+          "$ref": "#/definitions/characterDefinition"
+        },
+        "presentation": {
+          "$ref": "#/definitions/presentation"
+        }
+      }
+    },
+    "historyEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "entryId",
+        "sequence",
+        "origin",
+        "response",
+        "change"
+      ],
+      "properties": {
+        "entryId": {
+          "$ref": "urn:lpc-companion:state:1#/definitions/uuid"
+        },
+        "sequence": {
+          "$ref": "urn:lpc-companion:state:1#/definitions/revision"
+        },
+        "origin": {
+          "enum": [
+            "manual",
+            "model"
+          ]
+        },
+        "response": {
+          "anyOf": [
+            {
+              "$ref": "urn:lpc-companion:state:1#/definitions/response"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "change": {
+          "oneOf": [
+            {
+              "$ref": "#/definitions/presentationPatch"
+            },
+            {
+              "$ref": "#/definitions/companionReplacement"
+            }
+          ]
+        }
+      },
+      "if": {
+        "properties": {
+          "origin": {
+            "const": "model"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "response": {
+            "$ref": "urn:lpc-companion:state:1#/definitions/response"
+          }
+        }
+      }
+    },
+    "chatState": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schemaVersion",
+        "kind",
+        "snapshot",
+        "presentation",
+        "history"
+      ],
+      "properties": {
+        "schemaVersion": {
+          "const": 1
+        },
+        "kind": {
+          "const": "chat-state"
+        },
+        "snapshot": {
+          "$ref": "#/definitions/chatSnapshot"
+        },
+        "presentation": {
+          "$ref": "#/definitions/presentation"
+        },
+        "history": {
+          "type": "array",
+          "maxItems": 1000,
+          "items": {
+            "$ref": "#/definitions/historyEntry"
+          }
+        }
+      }
+    },
+    "sourceProvenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "format",
+        "sourceCommit",
+        "metadataOnly",
+        "ignoredJson"
+      ],
+      "properties": {
+        "format": {
+          "const": "official-generator-v2"
+        },
+        "sourceCommit": {
+          "const": "86160e7507d6841259cff624a51a63c1d4847ee3"
+        },
+        "metadataOnly": {
+          "type": "array",
+          "maxItems": 5,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "layers",
+              "credits",
+              "url",
+              "enabledAnimations",
+              "enabledLicenses"
+            ]
+          }
+        },
+        "ignoredJson": {
+          "type": "string",
+          "maxLength": 16384
+        }
+      }
+    }
+  }
+}

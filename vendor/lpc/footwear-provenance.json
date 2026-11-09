@@ -1,0 +1,508 @@
+{
+  "repository": "https://github.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator",
+  "commit": "86160e7507d6841259cff624a51a63c1d4847ee3",
+  "metadata": {
+    "palette_definitions/cloth/cloth_ulpc.json": "5958053c1492f79a5a994b5e0c5c3bd07c14b8f7431e08444f164e0902301411",
+    "sheet_definitions/feet/shoes/feet_shoes_basic.json": "f5a0a5316a7ac48634a8ee866b13ea988e4c57b9889caaf445fa1718638c9744",
+    "sheet_definitions/feet/boots/feet_boots_basic.json": "9424a1d99a5d55f928c9650384092defd30a606b206f48c68c159e3481ce1c0e",
+    "sheet_definitions/feet/feet_sandals.json": "5aaa167ed065c90effd63bc588c24b858d02b1837f6cd084064b9e504c0a0a6f"
+  },
+  "sprites": {
+    "spritesheets/feet/shoes/basic/male/idle.png": "5b4c7ebda343325425fbb9ceb1350e05d148816d672dafa521b3b2f8880334d1",
+    "spritesheets/feet/shoes/basic/male/walk.png": "f544c6f65a3d87f08d8449e87a4f889bd1bc1bf6d714066ef5c30ab2bdafab46",
+    "spritesheets/feet/shoes/basic/male/run.png": "562d66a6b3d5f4ad4e2b07675d0628a31a08f34c14e8dbc60850475d50d9e2cf",
+    "spritesheets/feet/shoes/basic/male/jump.png": "7349d4f443e327c62bf0caaa8303ea75dcf958f964bd74487500ffd909a526d3",
+    "spritesheets/feet/shoes/basic/male/spellcast.png": "757044b1fabe52e82e73384940583edff6a0a60f7c720bfd98bd0d74ab94b919",
+    "spritesheets/feet/shoes/basic/male/sit.png": "f181e8d8248a7a57a559d9faccefa2a73b2223cb0c8988dd8593ea28d6bec6e9",
+    "spritesheets/feet/shoes/basic/male/emote.png": "055244928978b93ce68d4cec91d4772a854244f50b0d3738338bf4c53a8e8554",
+    "spritesheets/feet/shoes/basic/thin/idle.png": "2d6c44587c1c741af1e82a2a93654d0d7f297fb673108c6bd3dc851e4d26523e",
+    "spritesheets/feet/shoes/basic/thin/walk.png": "b8cb7d702e03637a9207b3544a20909a287e1bde93b4208a6544a0b2b9d3c12a",
+    "spritesheets/feet/shoes/basic/thin/run.png": "64747a5e8e3f334679f8f36eaf925178b5b97336cae385a9197e2420af98dc4d",
+    "spritesheets/feet/shoes/basic/thin/jump.png": "0d2bbd24b09177c15c8dd2cdc7efaab781171b9d7fa58783d486cc5d085789e9",
+    "spritesheets/feet/shoes/basic/thin/spellcast.png": "f659a5bd941918e692952d663996b9773d7c2e77ab7b70309d323f7f96215610",
+    "spritesheets/feet/shoes/basic/thin/sit.png": "ca6e1877e96c952ce1c2ae95436b3370797ddca0f0847461f2e9dcd2957dbb4e",
+    "spritesheets/feet/shoes/basic/thin/emote.png": "88a93934402cd7f4f10177fc6096f2ac9e69f8ba2eb10b726a03727ec0b49363",
+    "spritesheets/feet/boots/basic/male/idle.png": "6a454e19edabc7ca95f00073d3bb6fa9e528bd7c8c7860e4df5a6d2612579cf0",
+    "spritesheets/feet/boots/basic/male/walk.png": "13521e96fe8c6033c54622a8137cc1a05964a9db3bd1f5a115028951e5cecf18",
+    "spritesheets/feet/boots/basic/male/run.png": "360cf5404353425f2d66a7b3bf38b5e0626ea0b6684379708cc0f1226e7deff0",
+    "spritesheets/feet/boots/basic/male/jump.png": "b0b2351a4d2cd5135808b0073b385d8a9ca9753ec55c90f4b28914b6a8adebcb",
+    "spritesheets/feet/boots/basic/male/spellcast.png": "c8db655fe32b7dea648f4aee2334d0c22751129e2f172fdc34ef0318fb0f10e6",
+    "spritesheets/feet/boots/basic/male/sit.png": "d467b5cfae308a8d16807ab2dc57eae76948dd51392d0319da0fe9ac89c37760",
+    "spritesheets/feet/boots/basic/male/emote.png": "b1188c73b321d572a69e2289846bd0370f326248b1b5210e95ff421608dae7cf",
+    "spritesheets/feet/boots/basic/thin/idle.png": "9e7085836baa32a8dddadb7af4e203d97266630051699fa9eb7e2c6e3b788e40",
+    "spritesheets/feet/boots/basic/thin/walk.png": "50eb7e0a6b3cb1c939ee1a68bd0ac42736f6dbf55f2e5aa4ecef7d2ff858a1d7",
+    "spritesheets/feet/boots/basic/thin/run.png": "e3bbba693dbf8cd1058cfada883973ad96f3b7d4bcdbdd666991fc64e1b4858d",
+    "spritesheets/feet/boots/basic/thin/jump.png": "71cba398d0fdea94d25bfe6b1ef51481a190b5cf0c6d4b940d913880cc35edeb",
+    "spritesheets/feet/boots/basic/thin/spellcast.png": "cccb942f9e2c0e6816305035455eaa07ac79482a3213e24af9361b90f11ade41",
+    "spritesheets/feet/boots/basic/thin/sit.png": "a4f44723366520e56cef8a3fbd9340a87722c95df757e0146048e9e1bfc2d117",
+    "spritesheets/feet/boots/basic/thin/emote.png": "317e8290aef2cdbf559ac640d1cd03a2532bac92ac0e4e0c71d56b4b0a4fb7de",
+    "spritesheets/feet/sandals/male/idle.png": "c412297ee76aa155908e54f6d98955e33814db0066fd314840ccaffa1559bcda",
+    "spritesheets/feet/sandals/male/walk.png": "66dc21e4032c16f2e477ca31eb5344e6b8a16efe5fc4eca5d806758b767f173c",
+    "spritesheets/feet/sandals/male/run.png": "dcff25a60276291151d1df98f581d749d8e1bb3d3ffa6499a0703934b48ed868",
+    "spritesheets/feet/sandals/male/jump.png": "e7d502678625849fc1b8275c35ca68de9459a5b167b0d2e4909c03ee16b8ef3f",
+    "spritesheets/feet/sandals/male/spellcast.png": "176cb618866681d4f57651af50813e080d8e4b415b32de9a820613e412789dcc",
+    "spritesheets/feet/sandals/male/sit.png": "eb6eb0fbd5023a64a6516c5c15f0f89ee2cb824f41badda55d06f62146e216f7",
+    "spritesheets/feet/sandals/male/emote.png": "358744cf15caa96d918b2fd58e6beaeaff3a44c2c33e20141b8ca14a6d20c8ec",
+    "spritesheets/feet/sandals/thin/idle.png": "6dc53ff2829d35f427c5c12c9b115fc3141fa550f96d4091dec29d0fb7e8e5d4",
+    "spritesheets/feet/sandals/thin/walk.png": "43d8c81b647e0adc3d742481988087112c5028cdeb5083eee8a0f802a7f2aaf9",
+    "spritesheets/feet/sandals/thin/run.png": "a444316a8c4d9c97f12c949f0eb10e4a36352e337ce19c965c86f295837785c2",
+    "spritesheets/feet/sandals/thin/jump.png": "6810c4c6d9f395e1cf1bdfea9ed009112da80ad2f418edded7fa835283bbdb1c",
+    "spritesheets/feet/sandals/thin/spellcast.png": "cdeb846c85fe1df47e813f1793de0a55766ea2b37ec95b95c75173e8ef28db8e",
+    "spritesheets/feet/sandals/thin/sit.png": "2ff816a241688be94d13c13589340372d6ccac239e551aafbb46926c237a864d",
+    "spritesheets/feet/sandals/thin/emote.png": "c038a91cdc22e8436eeb082b01eadcd3edac763338d9c64deb8a7b10877339ad"
+  },
+  "items": {
+    "feet_shoes_basic": {
+      "name": "Basic shoes",
+      "slot": "shoes",
+      "bodyTypes": [
+        "male"
+      ],
+      "counterparts": {
+        "male": "feet_shoes_basic",
+        "female": "feet_shoes_basic_female"
+      },
+      "material": "cloth",
+      "sourcePalette": "white",
+      "selectedLicense": "OGA-BY 3.0",
+      "layers": [
+        {
+          "z": 15,
+          "required": true,
+          "paths": {
+            "idle": "spritesheets/feet/shoes/basic/male/idle.png",
+            "walk": "spritesheets/feet/shoes/basic/male/walk.png",
+            "run": "spritesheets/feet/shoes/basic/male/run.png",
+            "jump": "spritesheets/feet/shoes/basic/male/jump.png",
+            "spellcast": "spritesheets/feet/shoes/basic/male/spellcast.png",
+            "sit": "spritesheets/feet/shoes/basic/male/sit.png",
+            "emote": "spritesheets/feet/shoes/basic/male/emote.png"
+          }
+        }
+      ],
+      "requiredLayerCount": 1,
+      "occupies": [
+        "feet"
+      ],
+      "requires": {},
+      "conflictsWith": [],
+      "credits": [
+        {
+          "file": "feet/shoes",
+          "notes": "original by wulax, edited for v3 base by bluecarrot16, Jump/Sit/Emote/Run/Revised Combat by JaidynReiman",
+          "authors": [
+            "JaidynReiman",
+            "bluecarrot16",
+            "Johannes Sjölund (wulax)"
+          ],
+          "licenses": [
+            "OGA-BY 3.0",
+            "CC-BY-SA 3.0",
+            "GPL 3.0"
+          ],
+          "urls": [
+            "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+            "http://opengameart.org/content/lpc-clothing-updates",
+            "https://opengameart.org/content/lpc-expanded-socks-shoes"
+          ]
+        },
+        {
+          "file": "feet/shoes/basic/thin",
+          "notes": "original by wulax, edited for female base by Joe White, edited for v3 base by bluecarrot16, Jump/Sit/Emote/Run/Revised Combat by JaidynReiman",
+          "authors": [
+            "JaidynReiman",
+            "Joe White",
+            "Johannes Sjölund (wulax)"
+          ],
+          "licenses": [
+            "OGA-BY 3.0",
+            "CC-BY-SA 3.0",
+            "GPL 3.0"
+          ],
+          "urls": [
+            "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+            "http://opengameart.org/content/lpc-clothing-updates",
+            "https://opengameart.org/content/lpc-expanded-socks-shoes"
+          ]
+        }
+      ],
+      "upstreamSource": {
+        "repository": "https://github.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator",
+        "commit": "86160e7507d6841259cff624a51a63c1d4847ee3",
+        "itemId": "feet_shoes_basic",
+        "bodyType": "male"
+      }
+    },
+    "feet_shoes_basic_female": {
+      "name": "Basic shoes (female)",
+      "slot": "shoes",
+      "bodyTypes": [
+        "female"
+      ],
+      "counterparts": {
+        "male": "feet_shoes_basic",
+        "female": "feet_shoes_basic_female"
+      },
+      "material": "cloth",
+      "sourcePalette": "white",
+      "selectedLicense": "OGA-BY 3.0",
+      "layers": [
+        {
+          "z": 15,
+          "required": true,
+          "paths": {
+            "idle": "spritesheets/feet/shoes/basic/thin/idle.png",
+            "walk": "spritesheets/feet/shoes/basic/thin/walk.png",
+            "run": "spritesheets/feet/shoes/basic/thin/run.png",
+            "jump": "spritesheets/feet/shoes/basic/thin/jump.png",
+            "spellcast": "spritesheets/feet/shoes/basic/thin/spellcast.png",
+            "sit": "spritesheets/feet/shoes/basic/thin/sit.png",
+            "emote": "spritesheets/feet/shoes/basic/thin/emote.png"
+          }
+        }
+      ],
+      "requiredLayerCount": 1,
+      "occupies": [
+        "feet"
+      ],
+      "requires": {},
+      "conflictsWith": [],
+      "credits": [
+        {
+          "file": "feet/shoes",
+          "notes": "original by wulax, edited for v3 base by bluecarrot16, Jump/Sit/Emote/Run/Revised Combat by JaidynReiman",
+          "authors": [
+            "JaidynReiman",
+            "bluecarrot16",
+            "Johannes Sjölund (wulax)"
+          ],
+          "licenses": [
+            "OGA-BY 3.0",
+            "CC-BY-SA 3.0",
+            "GPL 3.0"
+          ],
+          "urls": [
+            "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+            "http://opengameart.org/content/lpc-clothing-updates",
+            "https://opengameart.org/content/lpc-expanded-socks-shoes"
+          ]
+        },
+        {
+          "file": "feet/shoes/basic/thin",
+          "notes": "original by wulax, edited for female base by Joe White, edited for v3 base by bluecarrot16, Jump/Sit/Emote/Run/Revised Combat by JaidynReiman",
+          "authors": [
+            "JaidynReiman",
+            "Joe White",
+            "Johannes Sjölund (wulax)"
+          ],
+          "licenses": [
+            "OGA-BY 3.0",
+            "CC-BY-SA 3.0",
+            "GPL 3.0"
+          ],
+          "urls": [
+            "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+            "http://opengameart.org/content/lpc-clothing-updates",
+            "https://opengameart.org/content/lpc-expanded-socks-shoes"
+          ]
+        }
+      ],
+      "upstreamSource": {
+        "repository": "https://github.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator",
+        "commit": "86160e7507d6841259cff624a51a63c1d4847ee3",
+        "itemId": "feet_shoes_basic",
+        "bodyType": "female"
+      }
+    },
+    "feet_boots_basic": {
+      "name": "Basic boots",
+      "slot": "shoes",
+      "bodyTypes": [
+        "male"
+      ],
+      "counterparts": {
+        "male": "feet_boots_basic",
+        "female": "feet_boots_basic_female"
+      },
+      "material": "cloth",
+      "sourcePalette": "white",
+      "selectedLicense": "OGA-BY 3.0",
+      "layers": [
+        {
+          "z": 25,
+          "required": true,
+          "paths": {
+            "idle": "spritesheets/feet/boots/basic/male/idle.png",
+            "walk": "spritesheets/feet/boots/basic/male/walk.png",
+            "run": "spritesheets/feet/boots/basic/male/run.png",
+            "jump": "spritesheets/feet/boots/basic/male/jump.png",
+            "spellcast": "spritesheets/feet/boots/basic/male/spellcast.png",
+            "sit": "spritesheets/feet/boots/basic/male/sit.png",
+            "emote": "spritesheets/feet/boots/basic/male/emote.png"
+          }
+        }
+      ],
+      "requiredLayerCount": 1,
+      "occupies": [
+        "feet"
+      ],
+      "requires": {},
+      "conflictsWith": [],
+      "credits": [
+        {
+          "file": "feet/boots/basic",
+          "notes": "original by Nila122, edited for male and v3 bases by bluecarrot16, Jump/Sit/Emote/Run/Revised Combat by JaidynReiman",
+          "authors": [
+            "JaidynReiman",
+            "bluecarrot16",
+            "Nila122"
+          ],
+          "licenses": [
+            "OGA-BY 3.0",
+            "CC-BY-SA 3.0",
+            "GPL 2.0",
+            "GPL 3.0"
+          ],
+          "urls": [
+            "https://opengameart.org/content/lpc-clothes-and-hair",
+            "https://opengameart.org/content/lpc-expanded-socks-shoes"
+          ]
+        },
+        {
+          "file": "feet/boots/basic/thin",
+          "notes": "original by Nila122, edited for v3 bases by bluecarrot16, Jump/Sit/Emote/Run/Revised Combat by JaidynReiman",
+          "authors": [
+            "JaidynReiman",
+            "bluecarrot16",
+            "Nila122"
+          ],
+          "licenses": [
+            "OGA-BY 3.0",
+            "CC-BY-SA 3.0",
+            "GPL 2.0",
+            "GPL 3.0"
+          ],
+          "urls": [
+            "https://opengameart.org/content/lpc-clothes-and-hair",
+            "https://opengameart.org/content/lpc-expanded-socks-shoes"
+          ]
+        }
+      ],
+      "upstreamSource": {
+        "repository": "https://github.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator",
+        "commit": "86160e7507d6841259cff624a51a63c1d4847ee3",
+        "itemId": "feet_boots_basic",
+        "bodyType": "male"
+      }
+    },
+    "feet_boots_basic_female": {
+      "name": "Basic boots (female)",
+      "slot": "shoes",
+      "bodyTypes": [
+        "female"
+      ],
+      "counterparts": {
+        "male": "feet_boots_basic",
+        "female": "feet_boots_basic_female"
+      },
+      "material": "cloth",
+      "sourcePalette": "white",
+      "selectedLicense": "OGA-BY 3.0",
+      "layers": [
+        {
+          "z": 25,
+          "required": true,
+          "paths": {
+            "idle": "spritesheets/feet/boots/basic/thin/idle.png",
+            "walk": "spritesheets/feet/boots/basic/thin/walk.png",
+            "run": "spritesheets/feet/boots/basic/thin/run.png",
+            "jump": "spritesheets/feet/boots/basic/thin/jump.png",
+            "spellcast": "spritesheets/feet/boots/basic/thin/spellcast.png",
+            "sit": "spritesheets/feet/boots/basic/thin/sit.png",
+            "emote": "spritesheets/feet/boots/basic/thin/emote.png"
+          }
+        }
+      ],
+      "requiredLayerCount": 1,
+      "occupies": [
+        "feet"
+      ],
+      "requires": {},
+      "conflictsWith": [],
+      "credits": [
+        {
+          "file": "feet/boots/basic",
+          "notes": "original by Nila122, edited for male and v3 bases by bluecarrot16, Jump/Sit/Emote/Run/Revised Combat by JaidynReiman",
+          "authors": [
+            "JaidynReiman",
+            "bluecarrot16",
+            "Nila122"
+          ],
+          "licenses": [
+            "OGA-BY 3.0",
+            "CC-BY-SA 3.0",
+            "GPL 2.0",
+            "GPL 3.0"
+          ],
+          "urls": [
+            "https://opengameart.org/content/lpc-clothes-and-hair",
+            "https://opengameart.org/content/lpc-expanded-socks-shoes"
+          ]
+        },
+        {
+          "file": "feet/boots/basic/thin",
+          "notes": "original by Nila122, edited for v3 bases by bluecarrot16, Jump/Sit/Emote/Run/Revised Combat by JaidynReiman",
+          "authors": [
+            "JaidynReiman",
+            "bluecarrot16",
+            "Nila122"
+          ],
+          "licenses": [
+            "OGA-BY 3.0",
+            "CC-BY-SA 3.0",
+            "GPL 2.0",
+            "GPL 3.0"
+          ],
+          "urls": [
+            "https://opengameart.org/content/lpc-clothes-and-hair",
+            "https://opengameart.org/content/lpc-expanded-socks-shoes"
+          ]
+        }
+      ],
+      "upstreamSource": {
+        "repository": "https://github.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator",
+        "commit": "86160e7507d6841259cff624a51a63c1d4847ee3",
+        "itemId": "feet_boots_basic",
+        "bodyType": "female"
+      }
+    },
+    "feet_sandals": {
+      "name": "Sandals",
+      "slot": "shoes",
+      "bodyTypes": [
+        "male"
+      ],
+      "counterparts": {
+        "male": "feet_sandals",
+        "female": "feet_sandals_female"
+      },
+      "material": "cloth",
+      "sourcePalette": "white",
+      "selectedLicense": "OGA-BY 3.0",
+      "layers": [
+        {
+          "z": 15,
+          "required": true,
+          "paths": {
+            "idle": "spritesheets/feet/sandals/male/idle.png",
+            "walk": "spritesheets/feet/sandals/male/walk.png",
+            "run": "spritesheets/feet/sandals/male/run.png",
+            "jump": "spritesheets/feet/sandals/male/jump.png",
+            "spellcast": "spritesheets/feet/sandals/male/spellcast.png",
+            "sit": "spritesheets/feet/sandals/male/sit.png",
+            "emote": "spritesheets/feet/sandals/male/emote.png"
+          }
+        }
+      ],
+      "requiredLayerCount": 1,
+      "occupies": [
+        "feet"
+      ],
+      "requires": {},
+      "conflictsWith": [],
+      "credits": [
+        {
+          "file": "feet/sandals",
+          "notes": "edited for v3 bases by bluecarrot16, Jump/Sit/Emote/Run/Revised Combat by JaidynReiman",
+          "authors": [
+            "Nila122",
+            "JaidynReiman",
+            "Matthew Krohn (makrohn)",
+            "Johannes Sjölund (wulax)"
+          ],
+          "licenses": [
+            "OGA-BY 3.0",
+            "CC-BY-SA 3.0",
+            "GPL 2.0",
+            "GPL 3.0"
+          ],
+          "urls": [
+            "https://opengameart.org/content/lpc-roman-armor",
+            "http://opengameart.org/content/lpc-clothing-updates",
+            "https://opengameart.org/content/lpc-expanded-socks-shoes"
+          ]
+        }
+      ],
+      "upstreamSource": {
+        "repository": "https://github.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator",
+        "commit": "86160e7507d6841259cff624a51a63c1d4847ee3",
+        "itemId": "feet_sandals",
+        "bodyType": "male"
+      }
+    },
+    "feet_sandals_female": {
+      "name": "Sandals (female)",
+      "slot": "shoes",
+      "bodyTypes": [
+        "female"
+      ],
+      "counterparts": {
+        "male": "feet_sandals",
+        "female": "feet_sandals_female"
+      },
+      "material": "cloth",
+      "sourcePalette": "white",
+      "selectedLicense": "OGA-BY 3.0",
+      "layers": [
+        {
+          "z": 15,
+          "required": true,
+          "paths": {
+            "idle": "spritesheets/feet/sandals/thin/idle.png",
+            "walk": "spritesheets/feet/sandals/thin/walk.png",
+            "run": "spritesheets/feet/sandals/thin/run.png",
+            "jump": "spritesheets/feet/sandals/thin/jump.png",
+            "spellcast": "spritesheets/feet/sandals/thin/spellcast.png",
+            "sit": "spritesheets/feet/sandals/thin/sit.png",
+            "emote": "spritesheets/feet/sandals/thin/emote.png"
+          }
+        }
+      ],
+      "requiredLayerCount": 1,
+      "occupies": [
+        "feet"
+      ],
+      "requires": {},
+      "conflictsWith": [],
+      "credits": [
+        {
+          "file": "feet/sandals",
+          "notes": "edited for v3 bases by bluecarrot16, Jump/Sit/Emote/Run/Revised Combat by JaidynReiman",
+          "authors": [
+            "Nila122",
+            "JaidynReiman",
+            "Matthew Krohn (makrohn)",
+            "Johannes Sjölund (wulax)"
+          ],
+          "licenses": [
+            "OGA-BY 3.0",
+            "CC-BY-SA 3.0",
+            "GPL 2.0",
+            "GPL 3.0"
+          ],
+          "urls": [
+            "https://opengameart.org/content/lpc-roman-armor",
+            "http://opengameart.org/content/lpc-clothing-updates",
+            "https://opengameart.org/content/lpc-expanded-socks-shoes"
+          ]
+        }
+      ],
+      "upstreamSource": {
+        "repository": "https://github.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator",
+        "commit": "86160e7507d6841259cff624a51a63c1d4847ee3",
+        "itemId": "feet_sandals",
+        "bodyType": "female"
+      }
+    }
+  }
+}

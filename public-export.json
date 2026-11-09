@@ -1,0 +1,4204 @@
+{
+  "schemaVersion": 1,
+  "kind": "lpc-publication-review",
+  "archiveModes": {
+    "files": "0644",
+    "directories": "0755"
+  },
+  "version": "0.1.0-dev.38",
+  "runtimeSha256": "8ab7dc4343957f62dcdd390d950658539407b40f87e649670c6633750843b5c2",
+  "upstream": {
+    "modern": "7736d762aa2113f29342dad869ef4931218aa7ae",
+    "official": "86160e7507d6841259cff624a51a63c1d4847ee3"
+  },
+  "files": {
+    ".github/workflows/check.yml": {
+      "bytes": 537,
+      "sha256": "0b7135f9319fc5f40096f4ea86841b24124efdc645798fed54c95ee80d8acf0b"
+    },
+    ".gitignore": {
+      "bytes": 123,
+      "sha256": "debb5b7040c7fc089c14c2c8f73c6acd55df7c7037327040d8a1e1c35a1860a7"
+    },
+    "CONTRIBUTING.md": {
+      "bytes": 1476,
+      "sha256": "944d5695ce38eb26902412de028ce4cdd24867348099c21e62c6754e49c4b2b6"
+    },
+    "LICENSE": {
+      "bytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    "NOTICE.md": {
+      "bytes": 1574,
+      "sha256": "60136e6b6c177d777d71483f1b9af1e90e9f93dc945d9efb6ff07c9587e358b0"
+    },
+    "README.md": {
+      "bytes": 18386,
+      "sha256": "1cc9877cfe248157f48b064bca5a586c3e683c6b64a80d78108b7271727ee7d4"
+    },
+    "assets/lpc/NOTICE.md": {
+      "bytes": 13161,
+      "sha256": "6d35fc967d9a6852db6ab564291bb72b1db465423a9d8200e6b17023168375a5"
+    },
+    "assets/lpc/activity-assets.proposed.json": {
+      "bytes": 45806,
+      "sha256": "99104c829d450ae9fae8d34f6593bd9be5c2f1b68b95646d224c16276a321463"
+    },
+    "assets/lpc/backgrounds/LICENSE-MIT.txt": {
+      "bytes": 1088,
+      "sha256": "5da65409e18528b586064f3c70f3a365fb8bc16dd7f258231fd26116dc8f2176"
+    },
+    "assets/lpc/backgrounds/courtyard.svg": {
+      "bytes": 940,
+      "sha256": "dc07aa2cb505cba15591429602e40abf58b7dd15c7b2130a7737835b3623cbb9"
+    },
+    "assets/lpc/backgrounds/hearth.svg": {
+      "bytes": 957,
+      "sha256": "24ae80204aaf5663d8157626a6e30c4750bdd6297181f06eb31a1bbec3d3651b"
+    },
+    "assets/lpc/backgrounds/woodland.svg": {
+      "bytes": 747,
+      "sha256": "01314d52282612c7dcf875fad84881a146e6138a56df9ab2109dc4fece1c23c1"
+    },
+    "assets/lpc/catalog.json": {
+      "bytes": 145233,
+      "sha256": "f46cc8a39ed0d6ed1e74e2c64715278bd28c99d38abf69a352d910698b39d180"
+    },
+    "assets/lpc/credits-data.json": {
+      "bytes": 108622,
+      "sha256": "321387e029158f0cd787a2dd2d667f41518a35ba2b793f8507bfb5d970a8e317"
+    },
+    "assets/lpc/credits.html": {
+      "bytes": 101172,
+      "sha256": "f2264d332acaa5a94db53e90da6c679ae598674eae49f576623d4e9317f444cd"
+    },
+    "assets/lpc/full-source/art-0000.bin": {
+      "bytes": 261703,
+      "sha256": "55abdb9533c0e43997be7b0cd75b6161e14b4cfd3eabd1d31f4c137be61a1c56"
+    },
+    "assets/lpc/full-source/art-0001.bin": {
+      "bytes": 261670,
+      "sha256": "7a97663049fbff9caab6e11cc91aef7d5f7ef6369db64d338f356955ce602bf5"
+    },
+    "assets/lpc/full-source/art-0002.bin": {
+      "bytes": 261718,
+      "sha256": "372d3db0ec3b35a9c149699872153ab74b5b45d8d13454fe3f9e9f374b7f7771"
+    },
+    "assets/lpc/full-source/art-0003.bin": {
+      "bytes": 261719,
+      "sha256": "6bec1049d7bae3718143cbe92dd9fccce86d39d65fe0e52e94ee83a10586f62b"
+    },
+    "assets/lpc/full-source/art-0004.bin": {
+      "bytes": 261815,
+      "sha256": "1577f399d4a722c71f20b1adc5af3e8709a2fc4212e085639bb98506e8008758"
+    },
+    "assets/lpc/full-source/art-0005.bin": {
+      "bytes": 260208,
+      "sha256": "2bf029c9c5327492f3935914ffc9cd4fb82c56b2e5583955ad8cdd2fd4fcb03f"
+    },
+    "assets/lpc/full-source/art-0006.bin": {
+      "bytes": 260738,
+      "sha256": "f00970ae86728662f89e58dfbd0f0b6d124a5aa179c82361fd923d123ac70207"
+    },
+    "assets/lpc/full-source/art-0007.bin": {
+      "bytes": 260978,
+      "sha256": "742ad040fe47fe8d253ea6b03aba4e8851f4da36ae471f7c9c5c8da793ed6fbd"
+    },
+    "assets/lpc/full-source/art-0008.bin": {
+      "bytes": 261854,
+      "sha256": "9b9b78572adbcfbad39a0c50a8be5b37fe359868cfbe5c24738d39c587735c54"
+    },
+    "assets/lpc/full-source/art-0009.bin": {
+      "bytes": 261652,
+      "sha256": "36bf37063710b224073f91d85034642308d4a1687b153c339ee00bed52c66acb"
+    },
+    "assets/lpc/full-source/art-0010.bin": {
+      "bytes": 260766,
+      "sha256": "ecbb8ee79ff7db88b0fb45c5e87d72326e41f7a8b91cf0ad5cd16f930b1073a1"
+    },
+    "assets/lpc/full-source/art-0011.bin": {
+      "bytes": 261817,
+      "sha256": "1b75accac53bbdddbdf83613e1fed63a4aa7f91300e389f9f27e5ba4cf1b0bf2"
+    },
+    "assets/lpc/full-source/art-0012.bin": {
+      "bytes": 260951,
+      "sha256": "9768b3a1d81cbbb6dcfca6a9173c6ac3c01f86a5d59cba0c776d1a1771018471"
+    },
+    "assets/lpc/full-source/art-0013.bin": {
+      "bytes": 261585,
+      "sha256": "bd9467c2ee8e86092a212d47d79376af37d077bc63dd8ec3d8d6a66d09b3e21d"
+    },
+    "assets/lpc/full-source/art-0014.bin": {
+      "bytes": 261566,
+      "sha256": "4349c42d6a56ed750c00f89512097abce71a5a234e5dbcd484c4646bb8ea0e2e"
+    },
+    "assets/lpc/full-source/art-0015.bin": {
+      "bytes": 260598,
+      "sha256": "19e21a930a207b13f7871db5a87111cd3d43f984c1afe088945224d7c3db4cb6"
+    },
+    "assets/lpc/full-source/art-0016.bin": {
+      "bytes": 260360,
+      "sha256": "67bf83f8708df77210d39dd9fba50a9a1cc62ba881755dc8aa4640b7c775322a"
+    },
+    "assets/lpc/full-source/art-0017.bin": {
+      "bytes": 260440,
+      "sha256": "9e699718cbcc69dde367edb5cb7bb7b41faa949506dbfafe582c54a45edbccb5"
+    },
+    "assets/lpc/full-source/art-0018.bin": {
+      "bytes": 261800,
+      "sha256": "6e3246e546d84ed616e8d6051596cd30a79eada9c5ee888b7b14a88912f50244"
+    },
+    "assets/lpc/full-source/art-0019.bin": {
+      "bytes": 262134,
+      "sha256": "9595a36262b10781e9c718f77fb6af5240d5f9628549eac146b451d31f14018b"
+    },
+    "assets/lpc/full-source/art-0020.bin": {
+      "bytes": 262070,
+      "sha256": "e39fffa582d22e1010f19187a7dab286cdb226da3c2eeffd1106644e069c3dc9"
+    },
+    "assets/lpc/full-source/art-0021.bin": {
+      "bytes": 261727,
+      "sha256": "b95630e4ff8388f94cc660b109a562e9fe9a4038e856728bc33008c1816fc557"
+    },
+    "assets/lpc/full-source/art-0022.bin": {
+      "bytes": 260158,
+      "sha256": "873c79675d1a0e5135572d9d4dc810ffca26b5746837f146c4799ba39aa4c17c"
+    },
+    "assets/lpc/full-source/art-0023.bin": {
+      "bytes": 261942,
+      "sha256": "1db320b68c0fbd49f5cefe3a35111df561c9335aa18053d6ade1a0e251deca6c"
+    },
+    "assets/lpc/full-source/art-0024.bin": {
+      "bytes": 262004,
+      "sha256": "3f95ac2deee3d37d726e232bf20214ffc25f691a0981ee47656d0028b2b00d15"
+    },
+    "assets/lpc/full-source/art-0025.bin": {
+      "bytes": 261518,
+      "sha256": "39305d318c7320b1970732ffad0ee3d20898f7d7ab8153a320f85095d68d6ba2"
+    },
+    "assets/lpc/full-source/art-0026.bin": {
+      "bytes": 261682,
+      "sha256": "7208a58eec069863c18dcccd3f98538e38ae862c2b86688c0766daa42444b0eb"
+    },
+    "assets/lpc/full-source/art-0027.bin": {
+      "bytes": 261814,
+      "sha256": "3b360e4b6c0f779937d93ee6272ccfece7c6a44421f5e1c740e5880a2bac4406"
+    },
+    "assets/lpc/full-source/art-0028.bin": {
+      "bytes": 261729,
+      "sha256": "708f3dc56946f41742997fed12d9580b4725ed0770e9bedbd464b3437f31ba60"
+    },
+    "assets/lpc/full-source/art-0029.bin": {
+      "bytes": 261910,
+      "sha256": "da7239be508a7a8ac226d91c22aa1defe850ea4c677c4e43c61d643da94747ee"
+    },
+    "assets/lpc/full-source/art-0030.bin": {
+      "bytes": 262061,
+      "sha256": "54e70e8707c6707572e7a6193b70725d6ddbd092cbf9c58538ab5dd65bc187cf"
+    },
+    "assets/lpc/full-source/art-0031.bin": {
+      "bytes": 261838,
+      "sha256": "c91a8fd9cb2fd229b2da69a589940047b1f7d757070b7e19f7279044956bae31"
+    },
+    "assets/lpc/full-source/art-0032.bin": {
+      "bytes": 261690,
+      "sha256": "47a867032d1fc7963c333bc96dfe836ef68fe58ef9352f4ac9d45a677f4a3b8d"
+    },
+    "assets/lpc/full-source/art-0033.bin": {
+      "bytes": 261687,
+      "sha256": "2971f9f387965f0b800031fc4d1d88f2fdc35d7a0582efcb0426b6af76c62b64"
+    },
+    "assets/lpc/full-source/art-0034.bin": {
+      "bytes": 262005,
+      "sha256": "4df34bb3eae65704d38f7a4c06f259b54a9f6cf8310a519d41b53ef226efec4c"
+    },
+    "assets/lpc/full-source/art-0035.bin": {
+      "bytes": 261774,
+      "sha256": "6951bd1d22dd9c67e2a4dd5686ed7b0914f993484ce65f8a54b8e4e417d5e73b"
+    },
+    "assets/lpc/full-source/art-0036.bin": {
+      "bytes": 261350,
+      "sha256": "ad9629721ea4a977bba480b53b9ac6df25bf9007f27491b423d5437179bf1732"
+    },
+    "assets/lpc/full-source/art-0037.bin": {
+      "bytes": 261659,
+      "sha256": "d24b09e4ba1c88028838eddd44b9cbd2ebe6094d1d0bac5002ae730e1dab6477"
+    },
+    "assets/lpc/full-source/art-0038.bin": {
+      "bytes": 261999,
+      "sha256": "ebdda31bac6b840870219aefe8296def270873e934fb07c1a22b9223143f1962"
+    },
+    "assets/lpc/full-source/art-0039.bin": {
+      "bytes": 261253,
+      "sha256": "78ccf73d68320d0206cd86e4be9562e188d4b530964ee9801521814e6059fd55"
+    },
+    "assets/lpc/full-source/art-0040.bin": {
+      "bytes": 258252,
+      "sha256": "8a4ed55ae2988e2c1e0b2e3bc1c442f4a5e226daeb24a88be9d6acf837e39be4"
+    },
+    "assets/lpc/full-source/art-0041.bin": {
+      "bytes": 260711,
+      "sha256": "5d6af8e9cb49f7fd69c4409b201ecc6e95f71b4f0f20d207ec2c96c95f0600c6"
+    },
+    "assets/lpc/full-source/art-0042.bin": {
+      "bytes": 262123,
+      "sha256": "f9a66786fb42a2307eea90e30ad208557bbfd4c6b95d48d035ab77bd122c76c6"
+    },
+    "assets/lpc/full-source/art-0043.bin": {
+      "bytes": 262076,
+      "sha256": "7ad8fa4024cdb475bddfe827418df2ffde4cd474a82bc3438fb4cb92dae5426e"
+    },
+    "assets/lpc/full-source/art-0044.bin": {
+      "bytes": 261675,
+      "sha256": "b65a10fd1f0fabbb836ac5217837439d8150bf2488e6f9d62665e8c25f90142b"
+    },
+    "assets/lpc/full-source/art-0045.bin": {
+      "bytes": 261958,
+      "sha256": "5e611415c0e172032014108fc051eebde9bf6991ce578c9fea01be3dbf29ca32"
+    },
+    "assets/lpc/full-source/art-0046.bin": {
+      "bytes": 259782,
+      "sha256": "26f78e1abce967b2e04f4c1fcd44110201b633ff87db16ea9fd1f46fc0741693"
+    },
+    "assets/lpc/full-source/art-0047.bin": {
+      "bytes": 260904,
+      "sha256": "1866789139ed12ddb0d0cf4ca918ba2207b7ce760a6e62fec2fb0cfde56ddbe8"
+    },
+    "assets/lpc/full-source/art-0048.bin": {
+      "bytes": 259545,
+      "sha256": "f02b943c3504bcd393c1e5b669881b64c30789393879a04e3221f0749f46a3b1"
+    },
+    "assets/lpc/full-source/art-0049.bin": {
+      "bytes": 257895,
+      "sha256": "a25d35b2281c399647fb1b48df16feee73d4be0f48a89dbf32ec31f38db0ae96"
+    },
+    "assets/lpc/full-source/art-0050.bin": {
+      "bytes": 260692,
+      "sha256": "6cee59be5bba743e1ded6e8c8520bdcdc6caa319a570ed5fb76d738eaf7bd090"
+    },
+    "assets/lpc/full-source/art-0051.bin": {
+      "bytes": 261231,
+      "sha256": "828b4ddcf922940774094af62719dd7f2b216707cd19f6b9bbd5b1b42018ad19"
+    },
+    "assets/lpc/full-source/art-0052.bin": {
+      "bytes": 260206,
+      "sha256": "fc00596bb3fc043751717f2e3e3925560a407a1b863a3ae223e72aaf440c8f86"
+    },
+    "assets/lpc/full-source/art-0053.bin": {
+      "bytes": 261416,
+      "sha256": "57881b9da711982919b3de9495e26f07f2614405e10b20b79352e53269c745c7"
+    },
+    "assets/lpc/full-source/art-0054.bin": {
+      "bytes": 261468,
+      "sha256": "da083594c21c80245cdef8c756510039d127a50afa5835dca36ced3be53000a8"
+    },
+    "assets/lpc/full-source/art-0055.bin": {
+      "bytes": 261359,
+      "sha256": "20dce59036154079a0512a9ca1e5665a73bac0734d8de5694b4d464294fc0dc4"
+    },
+    "assets/lpc/full-source/art-0056.bin": {
+      "bytes": 261804,
+      "sha256": "1f68f7a021cf3d4f7a4a7adcb2321253a2179d0d23e4715ad5e0233c1a6be02a"
+    },
+    "assets/lpc/full-source/art-0057.bin": {
+      "bytes": 262002,
+      "sha256": "0852f2d3e7745fe07c7acacf059990e5ff048da3880240242a962d8fdcaaf980"
+    },
+    "assets/lpc/full-source/art-0058.bin": {
+      "bytes": 261252,
+      "sha256": "98edce53c239bcef66c5a8dbca746de488a49988604336ca55baaa85f5ea806b"
+    },
+    "assets/lpc/full-source/art-0059.bin": {
+      "bytes": 261728,
+      "sha256": "ceece732f5ef8af14f1bfabda6c1d513b42c7ea323294970a03a89af571ecf16"
+    },
+    "assets/lpc/full-source/art-0060.bin": {
+      "bytes": 254979,
+      "sha256": "a3e9982653998fbd1daa17c7d2ecbcc60fab6aea6442e8be8122b5091b6e093d"
+    },
+    "assets/lpc/full-source/art-0061.bin": {
+      "bytes": 260363,
+      "sha256": "74493e337771b3971445c30f64d984266ca1f2250b555ec728127cdbdf090787"
+    },
+    "assets/lpc/full-source/art-0062.bin": {
+      "bytes": 261863,
+      "sha256": "2123c226887ca84d3876c0da825b903a6d0d876f51783a3f2b826346eebf8736"
+    },
+    "assets/lpc/full-source/art-0063.bin": {
+      "bytes": 257647,
+      "sha256": "5540e2049be543825d65969f92a5e2822fd0a5f2ccfb5bd066c3b867086e07db"
+    },
+    "assets/lpc/full-source/art-0064.bin": {
+      "bytes": 260819,
+      "sha256": "2e8bce81f5d70b0b273072dadec7c8bef649e0613aaa95fcf516a0d11df298b7"
+    },
+    "assets/lpc/full-source/art-0065.bin": {
+      "bytes": 260448,
+      "sha256": "9b6c17940e52315fd017883998990914f89a1ef3b1d221cd55922306e89ae5c0"
+    },
+    "assets/lpc/full-source/art-0066.bin": {
+      "bytes": 257125,
+      "sha256": "3dcc39f1afdedb4e23d718c5e0779611c3dbc12efd6dcac76c537e697ae34dcf"
+    },
+    "assets/lpc/full-source/art-0067.bin": {
+      "bytes": 260559,
+      "sha256": "a3ce603c1c0427a5b5ad36e8cf3819f920f42046de6de16e6d3e45ddf36a73d3"
+    },
+    "assets/lpc/full-source/art-0068.bin": {
+      "bytes": 261846,
+      "sha256": "571ca6e8444bfc4890cf85b635c5a3076f2c1d9314869f9a7d95c57ec22fc9fc"
+    },
+    "assets/lpc/full-source/art-0069.bin": {
+      "bytes": 257863,
+      "sha256": "bf2c3cde9f9c298ec9e680f3b84a1257ca7388d7ffb3ef56295e170a4024c866"
+    },
+    "assets/lpc/full-source/art-0070.bin": {
+      "bytes": 261146,
+      "sha256": "4c4c20aebb40e787b1d1f74a66517d56b0ceeea54d64cde1d415f0d216015295"
+    },
+    "assets/lpc/full-source/art-0071.bin": {
+      "bytes": 261799,
+      "sha256": "1359772120399983dc68c69501d78ea13bca1424fac15a44275651c0530a49a6"
+    },
+    "assets/lpc/full-source/art-0072.bin": {
+      "bytes": 261294,
+      "sha256": "98a6d1d6b23588e5a703f9ff006c8d3bab169add238d7581cc2d61654b87fc6a"
+    },
+    "assets/lpc/full-source/art-0073.bin": {
+      "bytes": 261764,
+      "sha256": "7a37a3dfaf72ad6dd4524ffea8c3e20dce69f81b9d03ac2608a01f553a20e7db"
+    },
+    "assets/lpc/full-source/art-0074.bin": {
+      "bytes": 261433,
+      "sha256": "9c611b53eefceb2d9804befb5cd4cee1895cc4cfeb43c71b7f381f0234217e33"
+    },
+    "assets/lpc/full-source/art-0075.bin": {
+      "bytes": 260527,
+      "sha256": "e7fa7a80af1309ab3e0544c5a41c9b258c9be572947fb663f78aa1dc4db9cfb8"
+    },
+    "assets/lpc/full-source/art-0076.bin": {
+      "bytes": 261231,
+      "sha256": "cb2df01f65e22af48a937238d96022095a7d5e2973aa84f4a376439b8657f7cd"
+    },
+    "assets/lpc/full-source/art-0077.bin": {
+      "bytes": 261596,
+      "sha256": "ffc2fb7ebacb23f4f685a29950ee9bb402b61b33c2fd00806721dc860a3c72a1"
+    },
+    "assets/lpc/full-source/art-0078.bin": {
+      "bytes": 260179,
+      "sha256": "a55ef37aa9a1e6409e7ad379c19926f6863960588f7b7f4d7b6b4ad7fa61d7e3"
+    },
+    "assets/lpc/full-source/art-0079.bin": {
+      "bytes": 260381,
+      "sha256": "4617e6e4d89e9da90a8964e5eaca7ab1b58a30ef18663e8dabb57841cdb7af23"
+    },
+    "assets/lpc/full-source/art-0080.bin": {
+      "bytes": 260296,
+      "sha256": "f7e20a37623374ec2f0e9ba83b2e061ce6d31ec4862a023a4bc79306952fc8b2"
+    },
+    "assets/lpc/full-source/art-0081.bin": {
+      "bytes": 261058,
+      "sha256": "201d22b62b0e879668297e8e504e4b3caeceaf4d9ed3c8562ec4d8bc00fbc3c4"
+    },
+    "assets/lpc/full-source/art-0082.bin": {
+      "bytes": 261587,
+      "sha256": "9035e3161b8cd1f3f7b5c45c63129d9b6ffea8c6851ac39378a200cdeca69f52"
+    },
+    "assets/lpc/full-source/art-0083.bin": {
+      "bytes": 261786,
+      "sha256": "880a291005f930c18cd253aacd7c6b93ebbb7ce61438c70080f10296c3038326"
+    },
+    "assets/lpc/full-source/art-0084.bin": {
+      "bytes": 262025,
+      "sha256": "b510444da1d4181346f4f4a7f10e37d5f3735b97c6110f9a619465e686f09e2d"
+    },
+    "assets/lpc/full-source/art-0085.bin": {
+      "bytes": 260928,
+      "sha256": "3b79308ea90947f9f2822bb99485c5d1d33c21cb3cb92af43acde13b3081f6ee"
+    },
+    "assets/lpc/full-source/art-0086.bin": {
+      "bytes": 262098,
+      "sha256": "9803778e5323d83794f6ae9e8cd5873e2cf93c33e44c67ae4b0f103f0375f0b0"
+    },
+    "assets/lpc/full-source/art-0087.bin": {
+      "bytes": 261525,
+      "sha256": "99f907adc3c96a663217e53917f4d596829bdb28c692ff8b5952bd4ff8d72105"
+    },
+    "assets/lpc/full-source/art-0088.bin": {
+      "bytes": 261202,
+      "sha256": "4439f86a73d40f8e0c5c031d558a2f4581ac7d6600d70aefe7502208d46bc334"
+    },
+    "assets/lpc/full-source/art-0089.bin": {
+      "bytes": 261949,
+      "sha256": "5a7f5ef6f4863b19c8da70c3c2e2e45e66727c24cd3d51efc7007085e33392b2"
+    },
+    "assets/lpc/full-source/art-0090.bin": {
+      "bytes": 261783,
+      "sha256": "305b0cdd3297dbc076c522e1589c528c337c13eb31bec39b9c9b3eb00e3a7d69"
+    },
+    "assets/lpc/full-source/art-0091.bin": {
+      "bytes": 261235,
+      "sha256": "1dc33c2e48193b759b6de014aba85f8eae0e5b413e9f3e38da10d821395594e6"
+    },
+    "assets/lpc/full-source/art-0092.bin": {
+      "bytes": 260969,
+      "sha256": "c78ea0622de98e567725617724285229df1603d7902e86842ccd1df2f53036ff"
+    },
+    "assets/lpc/full-source/art-0093.bin": {
+      "bytes": 261026,
+      "sha256": "15a4b25c8b3fa52ca8883465735c9f727fd206a7fd91631a2488432bb5f10080"
+    },
+    "assets/lpc/full-source/art-0094.bin": {
+      "bytes": 259218,
+      "sha256": "0fe4467e95b77ffbbf168fe21bb1b6cf66a30abd8d73a7ba0f3919e37b098fc8"
+    },
+    "assets/lpc/full-source/art-0095.bin": {
+      "bytes": 261409,
+      "sha256": "79212f6c3b597f8c4411d0268597d4ac605343a0e47b9ca22ce00d9ee9e43d67"
+    },
+    "assets/lpc/full-source/art-0096.bin": {
+      "bytes": 261281,
+      "sha256": "5fa04b1f7fb495e84c6d26c8a3126e9a6fe058e4cd61e34df1adc25d3e061686"
+    },
+    "assets/lpc/full-source/art-0097.bin": {
+      "bytes": 259036,
+      "sha256": "72ba23bde246e5d289a9807d9b160d9bedd639762e7867e97eb5c12fe6b805ae"
+    },
+    "assets/lpc/full-source/art-0098.bin": {
+      "bytes": 261678,
+      "sha256": "1e3183376f306e48ce0837c0d1402f2c16a5c9c642baa9e693a190cd295b02e5"
+    },
+    "assets/lpc/full-source/art-0099.bin": {
+      "bytes": 260126,
+      "sha256": "55ed3e23e5d11c023b12d50b7bd744f232e9e6b36546f7ce4c8eef7c168b45d9"
+    },
+    "assets/lpc/full-source/art-0100.bin": {
+      "bytes": 261845,
+      "sha256": "afdc6ac4ac0ee554aca10d7d7d7aca493647c70a5b5c7792ad9360cb731b832b"
+    },
+    "assets/lpc/full-source/art-0101.bin": {
+      "bytes": 261230,
+      "sha256": "845935177e44e79a0aa668224ce4a1f4b2b095134c6044c21869bb609f90033f"
+    },
+    "assets/lpc/full-source/art-0102.bin": {
+      "bytes": 261228,
+      "sha256": "f55231dd8fd48ff40bab0b1d379253d6ad61fe36c9407d7783c9688606bb1609"
+    },
+    "assets/lpc/full-source/art-0103.bin": {
+      "bytes": 260002,
+      "sha256": "c1109f079805a2b204e94f4b0730b8cdcbffdd06b5619b0471b83b9154258f26"
+    },
+    "assets/lpc/full-source/art-0104.bin": {
+      "bytes": 262091,
+      "sha256": "51080f82e7d3500741390b519bafed398f3acab04d005b1f09f530fec6b44c13"
+    },
+    "assets/lpc/full-source/art-0105.bin": {
+      "bytes": 259946,
+      "sha256": "a58983441e28437c5793fa64b4cbd1529e95d6d2dcef8b4b29de1c114452f3a4"
+    },
+    "assets/lpc/full-source/art-0106.bin": {
+      "bytes": 261618,
+      "sha256": "ceec6a9d62c4234d307c98a84ac108d2f0ef55602e179a1bc4df61bc33515edb"
+    },
+    "assets/lpc/full-source/art-0107.bin": {
+      "bytes": 261736,
+      "sha256": "eaba67b87f745137ec888ccd8a5e9653d944ea41e0be3597dfacc8411a803dc9"
+    },
+    "assets/lpc/full-source/art-0108.bin": {
+      "bytes": 261683,
+      "sha256": "db06233c0b808149ba3fea98289abbee763793b878cd069dc86a0a026ddc3f20"
+    },
+    "assets/lpc/full-source/art-0109.bin": {
+      "bytes": 261941,
+      "sha256": "fc81bfb6ccf8f749bc391ce5c1e1a4edf1c37e829eef02afe8575dccc0e3c7d8"
+    },
+    "assets/lpc/full-source/art-0110.bin": {
+      "bytes": 262053,
+      "sha256": "0bb5b092f90af2d15a7f40cd507d6a153740726abe528ecd87dd8c44c50f9e75"
+    },
+    "assets/lpc/full-source/art-0111.bin": {
+      "bytes": 261985,
+      "sha256": "774cd9c98875fd9503369c062df51ab9505d87ad497dae66fb6239ac5b376b08"
+    },
+    "assets/lpc/full-source/art-0112.bin": {
+      "bytes": 261839,
+      "sha256": "206ba293d15d096cbf40b3e143eae9aa2890907d0022a43cb83f032c484b1cf2"
+    },
+    "assets/lpc/full-source/art-0113.bin": {
+      "bytes": 261781,
+      "sha256": "d513130a758109361b8801573561dda252bdb535fc1770911c734a91ad7d0413"
+    },
+    "assets/lpc/full-source/art-0114.bin": {
+      "bytes": 261908,
+      "sha256": "411831c67413eca661e4e77c354d3ef0d1c5ab8648757cd47cddf4722c385db5"
+    },
+    "assets/lpc/full-source/art-0115.bin": {
+      "bytes": 261602,
+      "sha256": "348d337692b6357f93eaf013543f8c1368147e590218f99df52118a93d5695bd"
+    },
+    "assets/lpc/full-source/art-0116.bin": {
+      "bytes": 261877,
+      "sha256": "7e8b1b41d5a76d37a614b8e117958fe95777f61605be6578d8065a12343c108b"
+    },
+    "assets/lpc/full-source/art-0117.bin": {
+      "bytes": 262002,
+      "sha256": "105ef2b9326b62af406f645daa175eecc1ebf3f981f05b1141b468fe2389bf4b"
+    },
+    "assets/lpc/full-source/art-0118.bin": {
+      "bytes": 261714,
+      "sha256": "3e6c134a37cf8c73cb1b877a39a34faf35ac9a9694eccf039624fd34b7aeb173"
+    },
+    "assets/lpc/full-source/art-0119.bin": {
+      "bytes": 261686,
+      "sha256": "04db2975e40ed05598bb7dd5b320645ea8db8828fc1b6797e3ab61b3af8aa16a"
+    },
+    "assets/lpc/full-source/art-0120.bin": {
+      "bytes": 261644,
+      "sha256": "5dfd790a51c48366c4780c9273348cda8620d222dd3ba819da316eb2ad9a544e"
+    },
+    "assets/lpc/full-source/art-0121.bin": {
+      "bytes": 261303,
+      "sha256": "8ed0924460554c20d1fa3dba3e19eec89370c29bd45d070bcd036c9656776554"
+    },
+    "assets/lpc/full-source/art-0122.bin": {
+      "bytes": 261515,
+      "sha256": "e5ac35fdc2d2b947466b4cfd5aef9e5f8e2539f1ec1d22727921b7c5f64d465b"
+    },
+    "assets/lpc/full-source/art-0123.bin": {
+      "bytes": 261721,
+      "sha256": "a50528e65f251bdf8936c8ecb30c4dbec03704a5e634da00f83aa9cfad961269"
+    },
+    "assets/lpc/full-source/art-0124.bin": {
+      "bytes": 261753,
+      "sha256": "e69a5f89e463adce947c4a8554d2972bc146f60408fc4dc8859c3c3924db7fe2"
+    },
+    "assets/lpc/full-source/art-0125.bin": {
+      "bytes": 261731,
+      "sha256": "34d448d073f17c7f707200dc8b319e5914e6e75a435e47ccf62df733970cb0b6"
+    },
+    "assets/lpc/full-source/art-0126.bin": {
+      "bytes": 262119,
+      "sha256": "710bbe78ffbb0a1dd49dbb25aafc442120cd0639514427dc08fcc6523d01462a"
+    },
+    "assets/lpc/full-source/art-0127.bin": {
+      "bytes": 261602,
+      "sha256": "5a715451d504d3c9a6d4490607d72247c46f17cfbc9d1d0622af6a183e807f95"
+    },
+    "assets/lpc/full-source/art-0128.bin": {
+      "bytes": 261014,
+      "sha256": "1d09358f760592e18bdef521fd3672aca8e15204b9a96165dfb9f33404dddbb3"
+    },
+    "assets/lpc/full-source/art-0129.bin": {
+      "bytes": 261626,
+      "sha256": "b574eb657f890fe03e34e7197dbe9c36d60b969a137ea4168a5f94668d876012"
+    },
+    "assets/lpc/full-source/art-0130.bin": {
+      "bytes": 261949,
+      "sha256": "d22a7bb56f6e511e969d645be5db2e00cb1217e43ee58afb8adb72d4173188a4"
+    },
+    "assets/lpc/full-source/art-0131.bin": {
+      "bytes": 262132,
+      "sha256": "ca5242ec599f2cdf66c3f22bd326612149fbe27f994d6d8fa9246dce51f9235b"
+    },
+    "assets/lpc/full-source/art-0132.bin": {
+      "bytes": 261974,
+      "sha256": "5b2e8851241a9ffa31fb56b20714a984758d2d5e7c7023f5d99c12a74ba948ac"
+    },
+    "assets/lpc/full-source/art-0133.bin": {
+      "bytes": 261546,
+      "sha256": "956aef5c4e5c8a53393d1df54ca2cf50b6ec3ffb7806072f7cd04d16ef6b5ff1"
+    },
+    "assets/lpc/full-source/art-0134.bin": {
+      "bytes": 261746,
+      "sha256": "464931561d37b548e437e86341ec30e544304625e1d8683685375380f2ca390c"
+    },
+    "assets/lpc/full-source/art-0135.bin": {
+      "bytes": 261661,
+      "sha256": "0f791e9781e63f7742c5e9d8ea184907692e57d3ed24caca16cb555a801c8292"
+    },
+    "assets/lpc/full-source/art-0136.bin": {
+      "bytes": 261779,
+      "sha256": "6597351b4b8834f9c193041b25a38f0ac7e214860685bd7bb8e8f9e9187452bd"
+    },
+    "assets/lpc/full-source/art-0137.bin": {
+      "bytes": 261661,
+      "sha256": "0ece74b92979c91c4a48dfde52362e26d808bc7ec76f849c414218d9d0a6b85b"
+    },
+    "assets/lpc/full-source/art-0138.bin": {
+      "bytes": 262016,
+      "sha256": "867b03ce7d2f92fcedc8d0d5cc1803bcda9ec88a1a035ca2c7269f2be7681051"
+    },
+    "assets/lpc/full-source/art-0139.bin": {
+      "bytes": 261658,
+      "sha256": "888f0c65f976456ef3c2e080e170e15c155f95a9f4a1f98f37958b50de1a6f02"
+    },
+    "assets/lpc/full-source/art-0140.bin": {
+      "bytes": 261926,
+      "sha256": "4e5ff30fb9f01ebd59a4fa987d15c06a51f2acf3a09d8b77f7b686942a647d38"
+    },
+    "assets/lpc/full-source/art-0141.bin": {
+      "bytes": 261474,
+      "sha256": "16045c72591e0679f7fd1e26da2b0b3e1b654cd8cef7bf04bb4ce97eec827f35"
+    },
+    "assets/lpc/full-source/art-0142.bin": {
+      "bytes": 261494,
+      "sha256": "d4f23c5f11c92c11f5203587879789148bcb070a54cfbe14612ba8121230a5d9"
+    },
+    "assets/lpc/full-source/art-0143.bin": {
+      "bytes": 262059,
+      "sha256": "36cbd88f4f126365ecc6a00b256e78f5af5ba4f4e16000e6cb311813ed872e83"
+    },
+    "assets/lpc/full-source/art-0144.bin": {
+      "bytes": 260345,
+      "sha256": "e64c92bf9971f9b7bbbc77cf0c332a21b4ba5aae00830182c6fbdf6b0773d136"
+    },
+    "assets/lpc/full-source/art-0145.bin": {
+      "bytes": 259601,
+      "sha256": "b948b753226eb29490b1c395215d0573c1feb2766b83391dc723e8a7100f4f4c"
+    },
+    "assets/lpc/full-source/art-0146.bin": {
+      "bytes": 262074,
+      "sha256": "d065793cf7586fa9a6e35cd04bb8443028f14a1dbd9c4470ba392d85641354dd"
+    },
+    "assets/lpc/full-source/art-0147.bin": {
+      "bytes": 260800,
+      "sha256": "aa0402086c0d45615d88a0d253a0343684ac26b37ab5f7858df9f15652d3cc0a"
+    },
+    "assets/lpc/full-source/art-0148.bin": {
+      "bytes": 261592,
+      "sha256": "505d52ef4fe2d1e531831a235ab2a047f3beda62fa5e04f1a5464a9c96a422f9"
+    },
+    "assets/lpc/full-source/art-0149.bin": {
+      "bytes": 260800,
+      "sha256": "9a30657265c08553fbdc375fceeaa79783ca34364903e115166adb8249388966"
+    },
+    "assets/lpc/full-source/art-0150.bin": {
+      "bytes": 261280,
+      "sha256": "3fc67394787e33b41210140babe453c8595d3d62deb3870fcfa5a91a672b9143"
+    },
+    "assets/lpc/full-source/art-0151.bin": {
+      "bytes": 261654,
+      "sha256": "64913469ac576adff82c866ee71b519b0d485832f0733e1c39d6458ed566fd9a"
+    },
+    "assets/lpc/full-source/art-0152.bin": {
+      "bytes": 260336,
+      "sha256": "cdca83dd8d9b9edd844fa7535f128b4a5b634f6abdc8341bed67cfcc5e835e43"
+    },
+    "assets/lpc/full-source/art-0153.bin": {
+      "bytes": 261092,
+      "sha256": "cc2e2c3b87048790fd89854a0f5081589edfdfff3e2945fbcebcac9805d03281"
+    },
+    "assets/lpc/full-source/art-0154.bin": {
+      "bytes": 261386,
+      "sha256": "67c499a2f84cde0a0564c3570e3dcb43080396e39ace3ab3312f2eaa15acf4d0"
+    },
+    "assets/lpc/full-source/art-0155.bin": {
+      "bytes": 257744,
+      "sha256": "9b8fdfb9b745b418dea175fc02a1f48e4fe23ec12dde5d873d0cfba6517cf1fb"
+    },
+    "assets/lpc/full-source/art-0156.bin": {
+      "bytes": 261673,
+      "sha256": "78dfd406f04038ee99c19d60bda9342c955dc58cb399daac2bb124c835f1b3b1"
+    },
+    "assets/lpc/full-source/art-0157.bin": {
+      "bytes": 260188,
+      "sha256": "5340c233a944be022b0a506655b4bd91eb10166da90a3b8859aa9c9b10e1819f"
+    },
+    "assets/lpc/full-source/art-0158.bin": {
+      "bytes": 257265,
+      "sha256": "e31f5b0c9af6470919b864f45b3029402b598efc8f65a4f8923eacaae3cd7528"
+    },
+    "assets/lpc/full-source/art-0159.bin": {
+      "bytes": 256974,
+      "sha256": "d390311f019872c6feaf32b5becf19c1fd47439dad1540bcb635ff53602129dc"
+    },
+    "assets/lpc/full-source/art-0160.bin": {
+      "bytes": 258263,
+      "sha256": "0e0059b6ff527fc562300cba033e00033cf1f6684734cb97c4e57b88f1a7fdce"
+    },
+    "assets/lpc/full-source/art-0161.bin": {
+      "bytes": 261452,
+      "sha256": "44d735a2b7791f9fd0a0cadfd1921e1313282a7f2f2c66ae43c76bf63651d4b5"
+    },
+    "assets/lpc/full-source/art-0162.bin": {
+      "bytes": 261145,
+      "sha256": "87e966bfa6071e9e391c21255285a7825a23322508df65b617b8cbabb40aa8bd"
+    },
+    "assets/lpc/full-source/art-0163.bin": {
+      "bytes": 247373,
+      "sha256": "f8e4fe89b47bffded4619bae4b55a12e0dc6e417a021d36bfbea72f735ae8a77"
+    },
+    "assets/lpc/full-source/art-0164.bin": {
+      "bytes": 260018,
+      "sha256": "37cd658ba4de8032bb52eecfe8f897b46103701517768051f0b8fe4c94b90ca2"
+    },
+    "assets/lpc/full-source/art-0165.bin": {
+      "bytes": 259610,
+      "sha256": "f29fe533a557fdf7185dfecc6c597d56986380e7045ccdacafb12235dedbb714"
+    },
+    "assets/lpc/full-source/art-0166.bin": {
+      "bytes": 260024,
+      "sha256": "768ffcdcf9d2befa5d541542f4023f09db276d29ffa8127e335c50c0c13a1347"
+    },
+    "assets/lpc/full-source/art-0167.bin": {
+      "bytes": 258889,
+      "sha256": "e4b039cb586c8d551d823faf9563efa019419a98b39965f2fc4a01f564eb1198"
+    },
+    "assets/lpc/full-source/art-0168.bin": {
+      "bytes": 256920,
+      "sha256": "f2400be76624864b7f6f4530bd880c835b070b7a4a5d7b8353102c85c5898775"
+    },
+    "assets/lpc/full-source/art-0169.bin": {
+      "bytes": 259485,
+      "sha256": "6b9790ca70f90daa69b000c6ed85f1fd7173078225e46e10c93e3b7dad3edb88"
+    },
+    "assets/lpc/full-source/art-0170.bin": {
+      "bytes": 262052,
+      "sha256": "7d86ea347c7d30ebb3ffe12c6cd45cda55ca16ddda3fa506fe89ef2781be5f80"
+    },
+    "assets/lpc/full-source/art-0171.bin": {
+      "bytes": 261497,
+      "sha256": "a8e4770157afcbe0a434eea34f90352e9e1e911f464ece5e931fba1428fb1e63"
+    },
+    "assets/lpc/full-source/art-0172.bin": {
+      "bytes": 258115,
+      "sha256": "7fafe55d091d0c34f367abed286acf24f10ad728d0cdd9f4834d13f07c398adb"
+    },
+    "assets/lpc/full-source/art-0173.bin": {
+      "bytes": 257894,
+      "sha256": "188a835c1fc15c42dd439a3efc29d28604c90ff4bf7767d42d24db06f2f5600a"
+    },
+    "assets/lpc/full-source/art-0174.bin": {
+      "bytes": 261854,
+      "sha256": "cd00a866383e262d2cdf5da1c6cc7f0f802d46f4a30964ad352678f4a006f6cc"
+    },
+    "assets/lpc/full-source/art-0175.bin": {
+      "bytes": 257998,
+      "sha256": "87257fcc54a5640cca8df0782a8fea45d9c83069ccc6cb2c24620ba8cbe52376"
+    },
+    "assets/lpc/full-source/art-0176.bin": {
+      "bytes": 257173,
+      "sha256": "37e1fdd704f7e12df75d87b103e669fc871415efbabc51d1f83bbfb20395f293"
+    },
+    "assets/lpc/full-source/art-0177.bin": {
+      "bytes": 260423,
+      "sha256": "f1120162a28400ddc084e928e13ed1429e6e663bdf1b6084579ea500c646bc8b"
+    },
+    "assets/lpc/full-source/art-0178.bin": {
+      "bytes": 254589,
+      "sha256": "493fd569e97096ea7fb69909d2ed2ab9d2c2f30191dd5f9c446b0eeffb3618de"
+    },
+    "assets/lpc/full-source/art-0179.bin": {
+      "bytes": 256873,
+      "sha256": "28ab78c5b8f48fa0331cc8c28f90a147cc0e76ac0dc494ea10c6a77f779a109a"
+    },
+    "assets/lpc/full-source/art-0180.bin": {
+      "bytes": 261718,
+      "sha256": "7025423dd392e0fb56e9f70f9fafed55a3c6210e122cdd37e59b85e8c0d35a1f"
+    },
+    "assets/lpc/full-source/art-0181.bin": {
+      "bytes": 258996,
+      "sha256": "6b9734e67caf4c4ad5ca617fa2eb6d89eda43b8e8096047398663c45c7c032f6"
+    },
+    "assets/lpc/full-source/art-0182.bin": {
+      "bytes": 260887,
+      "sha256": "5d07ef665e5fe809faa4c9e73780aec27d870e574d8a95548277907355f12aeb"
+    },
+    "assets/lpc/full-source/art-0183.bin": {
+      "bytes": 259920,
+      "sha256": "f0ae905b660508473d95c9a98f23ed3c83b8cf9a42a50e65c81182b30754662c"
+    },
+    "assets/lpc/full-source/art-0184.bin": {
+      "bytes": 262088,
+      "sha256": "ed4a2eb548db2dc876c20be8c633e47ffb45bcf83e3383792f4a8824a138765e"
+    },
+    "assets/lpc/full-source/art-0185.bin": {
+      "bytes": 261302,
+      "sha256": "8d4f5b99494bd84a231ace8f1729f0619fdd369cf087d4e092486395991e5737"
+    },
+    "assets/lpc/full-source/art-0186.bin": {
+      "bytes": 261606,
+      "sha256": "e6a76f5e56cbbbf9d965883059b353abdf203f3aa743e288b87c51cc302f9115"
+    },
+    "assets/lpc/full-source/art-0187.bin": {
+      "bytes": 262097,
+      "sha256": "c150b541e9cbb278b11904d8ddded957c474393c009c4403ec95c875feed3561"
+    },
+    "assets/lpc/full-source/art-0188.bin": {
+      "bytes": 261063,
+      "sha256": "f1e6f648660e76a05ac8647f24885a80decae773b128cee3d01abb44805a3c58"
+    },
+    "assets/lpc/full-source/art-0189.bin": {
+      "bytes": 261090,
+      "sha256": "179bb7e3f393f29f9529df5ce86fc3e11047f706492360347a2e30eeab90f516"
+    },
+    "assets/lpc/full-source/art-0190.bin": {
+      "bytes": 261618,
+      "sha256": "953216606a5b0dd275f50f18f13da3492b0e217d2e35819961d0d8e4444e5d26"
+    },
+    "assets/lpc/full-source/art-0191.bin": {
+      "bytes": 261645,
+      "sha256": "9fd45df2646b330beb0f897f6d5d7fb53864cb533554920e6146bec22f9d28fb"
+    },
+    "assets/lpc/full-source/art-0192.bin": {
+      "bytes": 261865,
+      "sha256": "7ae94991e6652ed2f21ea671eb51719aabf8956b590a4d0b7a4f172cf1ecbad4"
+    },
+    "assets/lpc/full-source/art-0193.bin": {
+      "bytes": 262106,
+      "sha256": "0dbb1b32ad7c7c936d3c3110b9b480afe9f959d27deb3b046799ea02d7284c2a"
+    },
+    "assets/lpc/full-source/art-0194.bin": {
+      "bytes": 261342,
+      "sha256": "7aafc287f1ec5bad1c237863c0ec33da618cdf327740d9ab8ea96ab1b9deed24"
+    },
+    "assets/lpc/full-source/art-0195.bin": {
+      "bytes": 260808,
+      "sha256": "9d44a8e2809460910f3be92674bbf980d922ad294d72b9924610484562a45ee9"
+    },
+    "assets/lpc/full-source/art-0196.bin": {
+      "bytes": 258931,
+      "sha256": "102914d4f4d61665c1b34ae2d36ee75aaa16d338eace4a209531bd4bdfd7eb7c"
+    },
+    "assets/lpc/full-source/art-0197.bin": {
+      "bytes": 257671,
+      "sha256": "7fe6319bf48e6f0ac3140e6f45ed460ed86677b7bb1a286e64071fe4476c0f43"
+    },
+    "assets/lpc/full-source/art-0198.bin": {
+      "bytes": 261377,
+      "sha256": "11e69600fa39f17c275c97499ae1d59cbf6d1e6a63a0e816421b06a06e140d2d"
+    },
+    "assets/lpc/full-source/art-0199.bin": {
+      "bytes": 260674,
+      "sha256": "17bede6d94a092f227c0347f1c2469ede1c86d109ae6cadd307edc91104a464b"
+    },
+    "assets/lpc/full-source/art-0200.bin": {
+      "bytes": 261916,
+      "sha256": "3e23795066c75e03ab3174682fe244afd33dd28d8bdedf84bff1acc5a55a3e9a"
+    },
+    "assets/lpc/full-source/art-0201.bin": {
+      "bytes": 261817,
+      "sha256": "cac0a46025fab48e26a5de3248799af353d94bdc4ab46c0d2c5c73d3e54cc203"
+    },
+    "assets/lpc/full-source/art-0202.bin": {
+      "bytes": 261185,
+      "sha256": "a28e0757bcc5b73db40c6ec9cced0ee41b7c2aebff88b5085c8f4abdac76ccd9"
+    },
+    "assets/lpc/full-source/art-0203.bin": {
+      "bytes": 261191,
+      "sha256": "f1fe3d6f94b0fab93ddc2655176fc2a637aff0a8a7b7bad740e378417ea3190c"
+    },
+    "assets/lpc/full-source/art-0204.bin": {
+      "bytes": 257152,
+      "sha256": "5f9e07894d6ecdddc65a50d526599c970a64ae303589d242c164c398a5019887"
+    },
+    "assets/lpc/full-source/art-0205.bin": {
+      "bytes": 258631,
+      "sha256": "0b50e9cf67727bd3613e1ce79d982da1cd23f7435d4384effa2c602f4e91177e"
+    },
+    "assets/lpc/full-source/art-0206.bin": {
+      "bytes": 256890,
+      "sha256": "b52d255e159147f0ae49c652fcc1219fa235c9ba28bff19b9bdb4ac869970d2e"
+    },
+    "assets/lpc/full-source/art-0207.bin": {
+      "bytes": 260529,
+      "sha256": "2a99d8c541330ab01aa57c6579882f3c4e0d722a2e595188909cd320f62cda78"
+    },
+    "assets/lpc/full-source/art-0208.bin": {
+      "bytes": 257779,
+      "sha256": "a4168fe5d8654dff1cace2a4fb5bfd921d4805c2c6e6d000a6030e9796695991"
+    },
+    "assets/lpc/full-source/art-0209.bin": {
+      "bytes": 260669,
+      "sha256": "62f87f2a17fa54993cbbf1a37edd8ba59b7abf5276e70a4625c396760e7ab32c"
+    },
+    "assets/lpc/full-source/art-0210.bin": {
+      "bytes": 261444,
+      "sha256": "33af996ff25355704c694c445fa2d94e29d85cf6b2206d113d59a9fa6cf158c2"
+    },
+    "assets/lpc/full-source/art-0211.bin": {
+      "bytes": 261357,
+      "sha256": "1280476d065870e8b3a0387e1e622a9de564fd3a84ad68a3da817841bdea29e2"
+    },
+    "assets/lpc/full-source/art-0212.bin": {
+      "bytes": 259625,
+      "sha256": "5998abe062d022f06666f5671f4c803660d1c76c202176e994d188f6eb84efb3"
+    },
+    "assets/lpc/full-source/art-0213.bin": {
+      "bytes": 260861,
+      "sha256": "0b7ad268c00e3674dfe2c4ac7edd2d44bed86d3569074786db64414e77a3e0bc"
+    },
+    "assets/lpc/full-source/art-0214.bin": {
+      "bytes": 255273,
+      "sha256": "b5d886874bc4616fa930e696eb5089478554aeaeee619af5fee38ffedb3cf874"
+    },
+    "assets/lpc/full-source/art-0215.bin": {
+      "bytes": 257389,
+      "sha256": "22bdb964ac3df19ec9a4af56b05c3e66bba852cf14ab88f73841d47bef18d6a9"
+    },
+    "assets/lpc/full-source/art-0216.bin": {
+      "bytes": 261458,
+      "sha256": "5a783314bcd169d17911fa239a760727b9c9a78d37befe5a69cdaa94a9d001c0"
+    },
+    "assets/lpc/full-source/art-0217.bin": {
+      "bytes": 261196,
+      "sha256": "eccb72752d4c9cf0875d52847234d287845dea91572557f64d9b1a06014044d7"
+    },
+    "assets/lpc/full-source/art-0218.bin": {
+      "bytes": 261820,
+      "sha256": "98e05274be126ef71a682a37c21b706fa00121e7d1a438ee927856e53bc65697"
+    },
+    "assets/lpc/full-source/art-0219.bin": {
+      "bytes": 257903,
+      "sha256": "e55db133c600d44cb8d9444144cd3ab919584124a11daa26b7e725828a427eab"
+    },
+    "assets/lpc/full-source/art-0220.bin": {
+      "bytes": 257854,
+      "sha256": "2fa1bd3101b675d0d409a1f294bfe0bdd9a441c04e71d36f54798d7786e8818c"
+    },
+    "assets/lpc/full-source/art-0221.bin": {
+      "bytes": 261153,
+      "sha256": "142f10ef5de8946b3c512d46a2cb42ed8484672ce83e25b6775e154c3dc4462c"
+    },
+    "assets/lpc/full-source/art-0222.bin": {
+      "bytes": 260019,
+      "sha256": "f4db1d8389cf1b5ad65a0cd095f59d397ae55fcd3771abdbbf5746e2111dd7d9"
+    },
+    "assets/lpc/full-source/art-0223.bin": {
+      "bytes": 261398,
+      "sha256": "4387205b180b864fa0363eb2189b3c9b9d1cdf15df9f0d9141440f4b5449eb31"
+    },
+    "assets/lpc/full-source/art-0224.bin": {
+      "bytes": 261664,
+      "sha256": "648b9ec43f1e37647980705f4fa5aaa28429bbf2860fdbe630062747546c45f1"
+    },
+    "assets/lpc/full-source/art-0225.bin": {
+      "bytes": 260784,
+      "sha256": "c1ca638bf94eb8a38729a8271c519fb8dc8ad867ed0652c4054b52296c8b0dd6"
+    },
+    "assets/lpc/full-source/art-0226.bin": {
+      "bytes": 259863,
+      "sha256": "c1fe076bbd7d2dae2407ede8199f1334424f4071d21d89f0f135c21325ac6cbf"
+    },
+    "assets/lpc/full-source/art-0227.bin": {
+      "bytes": 261233,
+      "sha256": "c2162091f246431931b69a604ff13fd2de527c0a1d27f4e7ab88e5ec59c372c9"
+    },
+    "assets/lpc/full-source/art-0228.bin": {
+      "bytes": 261803,
+      "sha256": "26fbc749b2964452485d2a3aca5c5bf5fcec53db37ddc4dd1cf441ec2d7bff5e"
+    },
+    "assets/lpc/full-source/art-0229.bin": {
+      "bytes": 262094,
+      "sha256": "33ee74fb46e72ec9bdcd51acb6ec5269bb5df6db6f86638b0155d74d8cec8f68"
+    },
+    "assets/lpc/full-source/art-0230.bin": {
+      "bytes": 261899,
+      "sha256": "fd02fc013b2bacc67aed45d9b86208546bcd05e9d3cc9b6f917b77a71929d401"
+    },
+    "assets/lpc/full-source/art-0231.bin": {
+      "bytes": 261271,
+      "sha256": "4fdd9a86cc3ee2d96d55b1e083b5aeba887291a6879e2a2f949aa29c721e3f09"
+    },
+    "assets/lpc/full-source/art-0232.bin": {
+      "bytes": 261790,
+      "sha256": "e7bbff78a42d44b77c354cdda7f2eb8e78aae0748528c997b39b6755ddc8e0fa"
+    },
+    "assets/lpc/full-source/art-0233.bin": {
+      "bytes": 262089,
+      "sha256": "0c4db5ead76b7844d7ade339486af26d3667e66622f62ec689df2f91806f69d4"
+    },
+    "assets/lpc/full-source/art-0234.bin": {
+      "bytes": 261996,
+      "sha256": "7c48de7effb297bc6b34c3cc7bec96c68e0e8c062baeea6fb3fbbb4f0893792d"
+    },
+    "assets/lpc/full-source/art-0235.bin": {
+      "bytes": 260659,
+      "sha256": "025b56677558141dd878495e36306c100e083c9cccb5f845cd90923066b6096c"
+    },
+    "assets/lpc/full-source/art-0236.bin": {
+      "bytes": 262075,
+      "sha256": "fe0dfa1fdc41973d94cd535a7e0d9fe2f3a33750a625c771c424cd2eec8f05db"
+    },
+    "assets/lpc/full-source/art-0237.bin": {
+      "bytes": 261986,
+      "sha256": "577782fd1fbfa857d1cf1f187daec8969c3684209844dba5073d7878f1193b68"
+    },
+    "assets/lpc/full-source/art-0238.bin": {
+      "bytes": 261698,
+      "sha256": "4ccd0d14ce7113dc2c9fa47868f5486cbf14c5c866f3cb61fddd818a17e79ff6"
+    },
+    "assets/lpc/full-source/art-0239.bin": {
+      "bytes": 261180,
+      "sha256": "daa873f0c0807b6ed81680a009b48b6158e7c205de8344be3acf233063613dde"
+    },
+    "assets/lpc/full-source/art-0240.bin": {
+      "bytes": 260544,
+      "sha256": "4ebd9219caa59861e1d21f443d83dc12fcbea7030c16b30693f39fd1d1b8507f"
+    },
+    "assets/lpc/full-source/art-0241.bin": {
+      "bytes": 261132,
+      "sha256": "085d45711c05b829423f46e1d8b6e47ee4986e66aad0da1f21ba2339e4d8ab4e"
+    },
+    "assets/lpc/full-source/art-0242.bin": {
+      "bytes": 260954,
+      "sha256": "cf58c322098bc3999ab49026d4e84f5b7cfe778571e51560fe7a0eecfc9adfca"
+    },
+    "assets/lpc/full-source/art-0243.bin": {
+      "bytes": 261582,
+      "sha256": "9d3901dfad9b9c33cb8bf43b4f708a5b79694f3fbf96530d20c985a048d9f0ff"
+    },
+    "assets/lpc/full-source/art-0244.bin": {
+      "bytes": 261723,
+      "sha256": "3a9e5fb24fb41690f49a5c726eaad5d4c312e0d470e236ec95d514df6c1c0eb1"
+    },
+    "assets/lpc/full-source/art-0245.bin": {
+      "bytes": 260862,
+      "sha256": "39471b0a77a6b124d10cb0d1c7a31be900d91b0f538a42678c56258d2febba2e"
+    },
+    "assets/lpc/full-source/art-0246.bin": {
+      "bytes": 261609,
+      "sha256": "78f79751d9df874085dbad595d54e08032e6a217d92bfdbee5366dc041c4dc28"
+    },
+    "assets/lpc/full-source/art-0247.bin": {
+      "bytes": 262044,
+      "sha256": "055650e4e272b18e2a538d1e55753dd20ffe60f7792a4246f20ddbd213647433"
+    },
+    "assets/lpc/full-source/art-0248.bin": {
+      "bytes": 261420,
+      "sha256": "087826a77d312d959b7c8a28edc90190b012b14452e70c0d19abd43f26e68265"
+    },
+    "assets/lpc/full-source/art-0249.bin": {
+      "bytes": 261959,
+      "sha256": "9166b4cceabeefb545d0fd842948472d1e63601d0f420660bbc555ee41d4ef46"
+    },
+    "assets/lpc/full-source/art-0250.bin": {
+      "bytes": 262135,
+      "sha256": "c249c91482aae71c9c0cee1dd7078675fd0f026af753c498871e74357212b84e"
+    },
+    "assets/lpc/full-source/art-0251.bin": {
+      "bytes": 260939,
+      "sha256": "e027e72bffcc25d0eca68b55961beb9d3be00579f6338e9eaa616c6ec1780bbb"
+    },
+    "assets/lpc/full-source/art-0252.bin": {
+      "bytes": 261878,
+      "sha256": "2f30382019f05ac827f77a37c0050d6b6e6b46de6e0890f52d128d97e78a441f"
+    },
+    "assets/lpc/full-source/art-0253.bin": {
+      "bytes": 261473,
+      "sha256": "4f952a8489587a9ca65784de29617e953980928d902e149bade2e0f970669bd5"
+    },
+    "assets/lpc/full-source/art-0254.bin": {
+      "bytes": 260478,
+      "sha256": "e2af5da1759af616a59e5582aabc9e95729387a702b48a24e836fb3d70c24176"
+    },
+    "assets/lpc/full-source/art-0255.bin": {
+      "bytes": 260889,
+      "sha256": "3e5cd66f0abbec11793beb349b83fdb8f977d5bfb4b6bf3c3ad442543ceae768"
+    },
+    "assets/lpc/full-source/art-0256.bin": {
+      "bytes": 261667,
+      "sha256": "783d72188711f865eeb5f97e32576547d9298a2fabc60fd87dfce67e441535cf"
+    },
+    "assets/lpc/full-source/art-0257.bin": {
+      "bytes": 262024,
+      "sha256": "929e7e45e42d2de19e051dd5b65d443c6b4742fb937d4db9f149a9a78f7af552"
+    },
+    "assets/lpc/full-source/art-0258.bin": {
+      "bytes": 261588,
+      "sha256": "3279477e0dc7ff7cb751048e9135a57aa4da2706d70d0de3ecf739de22cc8861"
+    },
+    "assets/lpc/full-source/art-0259.bin": {
+      "bytes": 261863,
+      "sha256": "fb7b1bdb9bf710223e5219149ba518e7e79f5a8d37c4c083126c9482e0657716"
+    },
+    "assets/lpc/full-source/art-0260.bin": {
+      "bytes": 261550,
+      "sha256": "2ce2c2c124d767db4d308825ba39c52bb823a65769f629220509885b516d7b38"
+    },
+    "assets/lpc/full-source/art-0261.bin": {
+      "bytes": 261824,
+      "sha256": "273a55cd347788e2a4b5d9ff5d7fc2864ff86723f13a8166d7573cd220823362"
+    },
+    "assets/lpc/full-source/art-0262.bin": {
+      "bytes": 261943,
+      "sha256": "5086d1256357a48b696718e9c96a9e2873353bf1c51fb855803e3067fe379007"
+    },
+    "assets/lpc/full-source/art-0263.bin": {
+      "bytes": 261527,
+      "sha256": "1422b30179c7aa3465bdbdb2dbab637f3bf19aa680b5ee9aa404fa2df61220d0"
+    },
+    "assets/lpc/full-source/art-0264.bin": {
+      "bytes": 260964,
+      "sha256": "00c20e5d6c16b1391f9b12d58217bf36ebe5524f67b4d197b44a36b2a798d26e"
+    },
+    "assets/lpc/full-source/art-0265.bin": {
+      "bytes": 261016,
+      "sha256": "8d15be310bb1c7fff441692bff3749ac568623b3e7d9b62f3928037b77ce4028"
+    },
+    "assets/lpc/full-source/art-0266.bin": {
+      "bytes": 262026,
+      "sha256": "9f99ad5f0fb611e4d95bf6cfc2d10e1c550c09a0503f25ba35602c2d21f7ac20"
+    },
+    "assets/lpc/full-source/art-0267.bin": {
+      "bytes": 260571,
+      "sha256": "5ae3c8caf33df43516b754f583a5779a2da44dd0e0631c6b9c78fb96f8ba5431"
+    },
+    "assets/lpc/full-source/art-0268.bin": {
+      "bytes": 261281,
+      "sha256": "17a1205cd04048b0b951ac49e2aae0eb8e1c535e99b3e6e683ff35de72fdc01a"
+    },
+    "assets/lpc/full-source/art-0269.bin": {
+      "bytes": 261824,
+      "sha256": "0e0cb14ce00473e81c81d7b9987af7e1f8f64682f739436c98042942db854824"
+    },
+    "assets/lpc/full-source/art-0270.bin": {
+      "bytes": 261434,
+      "sha256": "5e0a293f1d0ec7f514a5db9b74d106d9961606c041dc920b3935a409fcc00567"
+    },
+    "assets/lpc/full-source/art-0271.bin": {
+      "bytes": 261942,
+      "sha256": "9e0966cc67e228f021b4c2352aaf4190bc2d12d98cd5fd39b55355be512f20c7"
+    },
+    "assets/lpc/full-source/art-0272.bin": {
+      "bytes": 261641,
+      "sha256": "b42cf4a24614c68f0fcfbeeec18a5be739b4de58f52a584bb22cc12bdbba8e9b"
+    },
+    "assets/lpc/full-source/art-0273.bin": {
+      "bytes": 261728,
+      "sha256": "4f61a3523ab4485d6499dcd06e00c78a61597f39841e7629e224c4de3995c78c"
+    },
+    "assets/lpc/full-source/art-0274.bin": {
+      "bytes": 262133,
+      "sha256": "c131cc899d5cda07c19c8c3d81a9c425e69bfe8952204594c84b058fe7ed6e65"
+    },
+    "assets/lpc/full-source/art-0275.bin": {
+      "bytes": 261879,
+      "sha256": "4779450237a5103cadbe8898ae491e24a5d1334b95bf8e3329b267af06277323"
+    },
+    "assets/lpc/full-source/art-0276.bin": {
+      "bytes": 262015,
+      "sha256": "cd3d7d3c67c6a7ac12359acfa3cc6e1c853e55438c47b7bcb30364de85c9cb57"
+    },
+    "assets/lpc/full-source/art-0277.bin": {
+      "bytes": 261702,
+      "sha256": "4c67290898e3a7d29c0d2388e6f2ab3590a2caa93acc978ecb2a1ebeda7087ea"
+    },
+    "assets/lpc/full-source/art-0278.bin": {
+      "bytes": 260192,
+      "sha256": "102cc8af541bd7defabdd5adc834e357928144ae4c83c1b061b4129335c073a0"
+    },
+    "assets/lpc/full-source/art-0279.bin": {
+      "bytes": 259017,
+      "sha256": "7607f96134fff16a1bfc948207dea418242cb4cb4d58517f3b59a75571b5f80f"
+    },
+    "assets/lpc/full-source/art-0280.bin": {
+      "bytes": 261247,
+      "sha256": "f5e250040a3eda07e0fdb84f83ad3bf98096137833bee2fcaf15ef2eac227647"
+    },
+    "assets/lpc/full-source/art-0281.bin": {
+      "bytes": 261617,
+      "sha256": "2241f41d1eeaec2c27da8775842b1bcc3289f3127b3894504a3f7fb08442bde6"
+    },
+    "assets/lpc/full-source/art-0282.bin": {
+      "bytes": 260335,
+      "sha256": "1ee67de215952386642211565c4c1677ec7e900d0258bedf26a521320a12e78e"
+    },
+    "assets/lpc/full-source/art-0283.bin": {
+      "bytes": 261249,
+      "sha256": "f2ce0585e1c33fc85d0fd215e088c499174329445759cf07e7b181838c6d2c0b"
+    },
+    "assets/lpc/full-source/art-0284.bin": {
+      "bytes": 260864,
+      "sha256": "72ef29fd949d63df19f662395822f45468a93b4280455fb42a5ff3db01215392"
+    },
+    "assets/lpc/full-source/art-0285.bin": {
+      "bytes": 257086,
+      "sha256": "edeaaccc60ec3b613bd4f1f3febd53d1f4650d93072be44af6a93d8340f1d6fe"
+    },
+    "assets/lpc/full-source/art-0286.bin": {
+      "bytes": 261944,
+      "sha256": "a79c31ef6bb2e40f7e0738c9d5bd082843455c3ab678b5a73daa8f70ca943a3f"
+    },
+    "assets/lpc/full-source/art-0287.bin": {
+      "bytes": 260520,
+      "sha256": "f350f9da1bb93ccd4702f27bf1c689f6e0576d15e97855d53c704605f170844c"
+    },
+    "assets/lpc/full-source/art-0288.bin": {
+      "bytes": 258486,
+      "sha256": "c01370b0124c6fad2bdbc05c0ec130ef9497f01f965b7af930ed96b6484d181f"
+    },
+    "assets/lpc/full-source/art-0289.bin": {
+      "bytes": 260278,
+      "sha256": "a44b81b622f7dd16ae796e2adfa09453479eddcfcf154155b33537c9dcb8a779"
+    },
+    "assets/lpc/full-source/art-0290.bin": {
+      "bytes": 261120,
+      "sha256": "a1c9b77a1dc515d4fd2f46b0470fef82796b000a8dca4233bddb6bc2ea5fb424"
+    },
+    "assets/lpc/full-source/art-0291.bin": {
+      "bytes": 261676,
+      "sha256": "40e081ed6eca767a18f5962791e10d1c365432ed53af4bded35f5b80cf57b38a"
+    },
+    "assets/lpc/full-source/art-0292.bin": {
+      "bytes": 262082,
+      "sha256": "40b9959531403f2308a5313d20c6a539728c1d26093f9464762fa2ee58e8ff57"
+    },
+    "assets/lpc/full-source/art-0293.bin": {
+      "bytes": 262026,
+      "sha256": "248fe7c1b3e9644643e4014f3ba8ed7914a99e7ba8ea9668f8a6c389ee0f0c5e"
+    },
+    "assets/lpc/full-source/art-0294.bin": {
+      "bytes": 261906,
+      "sha256": "48b533b1afc3041cfcff8e7ecfb78abb085fbf4c979ac6a410ce4064b58f8a1a"
+    },
+    "assets/lpc/full-source/art-0295.bin": {
+      "bytes": 261508,
+      "sha256": "1f10020ca7646c550dc1edae1d16d492ff24e9acad1b8106dae2f5d6dc08cce6"
+    },
+    "assets/lpc/full-source/art-0296.bin": {
+      "bytes": 262131,
+      "sha256": "5f71c3272f4438eec8d9aecc33250863ff7b4424ba6ee322eb54fd345dfa5b6d"
+    },
+    "assets/lpc/full-source/art-0297.bin": {
+      "bytes": 261415,
+      "sha256": "3e0ca810ff75c0322bf7418f14172a58054c8eacb7c6942aad1bde480777c354"
+    },
+    "assets/lpc/full-source/art-0298.bin": {
+      "bytes": 261420,
+      "sha256": "a56c88bc7f829a8371c8ba566e15680d29264affbbdfdbbf0678c3ddc2623ed7"
+    },
+    "assets/lpc/full-source/art-0299.bin": {
+      "bytes": 261743,
+      "sha256": "2b46db50f9d8e643a814d0394b0c988f7de050e2f35e8c12b025ff433964497b"
+    },
+    "assets/lpc/full-source/art-0300.bin": {
+      "bytes": 261994,
+      "sha256": "b096650fbe20a60b9767405e16308be434e82b6caede6463e0eb08029d04e317"
+    },
+    "assets/lpc/full-source/art-0301.bin": {
+      "bytes": 262129,
+      "sha256": "93903fa699522aafac752bf9850d18d6abe0ffd69b7b03fb726afacf454d90c5"
+    },
+    "assets/lpc/full-source/art-0302.bin": {
+      "bytes": 261900,
+      "sha256": "4d1c762c38b55f540d251417da9bfbc0bfb50c1688279d833458140729dfb72c"
+    },
+    "assets/lpc/full-source/art-0303.bin": {
+      "bytes": 262030,
+      "sha256": "f6342433200630ba25e5e851731c9732f477511b0b80cca05321e736ea46aa65"
+    },
+    "assets/lpc/full-source/art-0304.bin": {
+      "bytes": 261459,
+      "sha256": "cf76299a567b8b51840747c14c52622b7dade0be6d4e71d66c88e153c88694de"
+    },
+    "assets/lpc/full-source/art-0305.bin": {
+      "bytes": 261784,
+      "sha256": "434fcedd937e988b17fa53eef72659fdf4fd038f69ffd2de281babacfedef284"
+    },
+    "assets/lpc/full-source/art-0306.bin": {
+      "bytes": 262044,
+      "sha256": "9e87a0dadb1b90cbf0a790b90a7ccd0b253d80500f48d3ef13d4dfd0af27375c"
+    },
+    "assets/lpc/full-source/art-0307.bin": {
+      "bytes": 261080,
+      "sha256": "375112688c0778c56f77754027cae2fd98b1075b0fc8f6dc4b3cb6ff45394265"
+    },
+    "assets/lpc/full-source/art-0308.bin": {
+      "bytes": 261744,
+      "sha256": "00ae146c0ac05be7f9720d234e7b6027ee06cfc8d50b675f96c88cab660ffc37"
+    },
+    "assets/lpc/full-source/art-0309.bin": {
+      "bytes": 258535,
+      "sha256": "d5c633b298d2c51dc23e35d896a67d37ab09c3e02ae26ac65d90d90a074aa1b0"
+    },
+    "assets/lpc/full-source/art-0310.bin": {
+      "bytes": 258896,
+      "sha256": "9771e90a224e94582354620034b70b9de7f64b160684ddd4fdc4ddc067bac2a7"
+    },
+    "assets/lpc/full-source/art-0311.bin": {
+      "bytes": 261981,
+      "sha256": "2003096697a1abfe3d5302f266ebd0ac01b3579f9c47baa64ae3924b5bd82078"
+    },
+    "assets/lpc/full-source/art-0312.bin": {
+      "bytes": 260968,
+      "sha256": "d83023b0a99d5c636c89a05bde133ff704c3d0767e258a5f8b0053741881132f"
+    },
+    "assets/lpc/full-source/art-0313.bin": {
+      "bytes": 261585,
+      "sha256": "833cd9f5af5db207a7d7dc49d42aa24db5e371980697e8810a7d8468c9f1099f"
+    },
+    "assets/lpc/full-source/art-0314.bin": {
+      "bytes": 261685,
+      "sha256": "6e36872523d449f5105da9568d0cb19e96ada33f3d792faf128ec7c619fe9024"
+    },
+    "assets/lpc/full-source/art-0315.bin": {
+      "bytes": 261369,
+      "sha256": "a6efea8fa88905c56730c254474441fc03c1f348e60381db6b8bed17487c4f55"
+    },
+    "assets/lpc/full-source/art-0316.bin": {
+      "bytes": 259688,
+      "sha256": "52b8dba3554629d61fbe02c5ab33dce25f271fba779a2b959cbd3541139faa81"
+    },
+    "assets/lpc/full-source/art-0317.bin": {
+      "bytes": 260790,
+      "sha256": "2dfa2006e327e77796be0e6023395d1f955d2aa78aba481a5b61eeff1a222b64"
+    },
+    "assets/lpc/full-source/art-0318.bin": {
+      "bytes": 258199,
+      "sha256": "4d9f56d2a1ed27c6299ec71157e3860358723a9bdb17f65211fd898d671db578"
+    },
+    "assets/lpc/full-source/art-0319.bin": {
+      "bytes": 260407,
+      "sha256": "1d78030b184d6b39f10871a26ba3684d1c98c202b9a38fe5de6249d4c8907a65"
+    },
+    "assets/lpc/full-source/art-0320.bin": {
+      "bytes": 260973,
+      "sha256": "66a993b7b1edc0c156c3b64dbd32bb4aa23a6bac541d088ebece72821a60e9aa"
+    },
+    "assets/lpc/full-source/art-0321.bin": {
+      "bytes": 261154,
+      "sha256": "a34c6beef2c39b63af6816eb52b97922ab06a38f48c99e702b8406381e14358b"
+    },
+    "assets/lpc/full-source/art-0322.bin": {
+      "bytes": 261015,
+      "sha256": "f5ad60cb1788445e3913d681e6fcb4912dda2ee763b322e11bae1944c19c640b"
+    },
+    "assets/lpc/full-source/art-0323.bin": {
+      "bytes": 260565,
+      "sha256": "a9b2e3edb005e5ad7c47cce917f0abae5bb5fa3fcb02d4da5fe192000ada0bda"
+    },
+    "assets/lpc/full-source/art-0324.bin": {
+      "bytes": 260776,
+      "sha256": "f948844f585f6910ce5b82965bc748db7fcfb4598a8b48419df9d772041dba51"
+    },
+    "assets/lpc/full-source/art-0325.bin": {
+      "bytes": 261932,
+      "sha256": "e4b4c3a03e1bca6ee341108321deaf4de9ed4aac321c7b5709552177f0dc5f37"
+    },
+    "assets/lpc/full-source/art-0326.bin": {
+      "bytes": 261892,
+      "sha256": "f7ac27c96914a779aabaf6d654d1ba854f46176bbfc1953bda18c8f1efc880cb"
+    },
+    "assets/lpc/full-source/art-0327.bin": {
+      "bytes": 261853,
+      "sha256": "6111f8a10f4b264738178ad2a67a19fe1202b370262e1bdd4340c4f288002e30"
+    },
+    "assets/lpc/full-source/art-0328.bin": {
+      "bytes": 261642,
+      "sha256": "6c86ba018517ecccd4d5ac7a36afcc461e39be6c73a2a1dcd6676104902103dc"
+    },
+    "assets/lpc/full-source/art-0329.bin": {
+      "bytes": 261731,
+      "sha256": "471fece699884231453e76ae88a91437afe8780d30f26be39dd67356b2598647"
+    },
+    "assets/lpc/full-source/art-0330.bin": {
+      "bytes": 259232,
+      "sha256": "c4962c8e6aae2acc102f665f66a8a758b8bc6040bceb53acac41e19b1841c1f7"
+    },
+    "assets/lpc/full-source/art-0331.bin": {
+      "bytes": 261583,
+      "sha256": "0b00efb40484763e059fdbaf5be0ea73644d9ded74bf68f0b1bf898aaa393fb5"
+    },
+    "assets/lpc/full-source/art-0332.bin": {
+      "bytes": 261366,
+      "sha256": "a4402c4dd48e4c03dd4f7c59c2359a90ecff2d3c6dbbdd2cd2b993894dad2e26"
+    },
+    "assets/lpc/full-source/art-0333.bin": {
+      "bytes": 261678,
+      "sha256": "23ddb2ade18ff4fcf06da047797378949420328d5c25ace09a6f2ee8f70e9f1d"
+    },
+    "assets/lpc/full-source/art-0334.bin": {
+      "bytes": 260695,
+      "sha256": "97daa7f59c016d696cf97a81e55aefe45259d0bda9bffdc5dd49153d7f55bcc6"
+    },
+    "assets/lpc/full-source/art-0335.bin": {
+      "bytes": 260054,
+      "sha256": "b892692c8ee8cdd3862d1dc1d6b75554df6d218f316ac91b4ab55bb5b381dfe6"
+    },
+    "assets/lpc/full-source/art-0336.bin": {
+      "bytes": 261676,
+      "sha256": "e6a1d27fa713ddfb30f95dca451ec6b9f5f7e61e74c1cad2ffb6298c15c2bb3f"
+    },
+    "assets/lpc/full-source/art-0337.bin": {
+      "bytes": 257268,
+      "sha256": "bf4b85a9796f7701e7956fbf7cddd0561fcc24d3de1c06e0415ca695a885ac11"
+    },
+    "assets/lpc/full-source/art-0338.bin": {
+      "bytes": 261932,
+      "sha256": "623071377cd7958e3200e027e93ad058144319662dfa6f281f25f49ae0ba3fd5"
+    },
+    "assets/lpc/full-source/art-0339.bin": {
+      "bytes": 261020,
+      "sha256": "91b002f036fac6735bdacf1e1ab501d244532d813f67a1e931ad9ac98fb17caf"
+    },
+    "assets/lpc/full-source/art-0340.bin": {
+      "bytes": 261919,
+      "sha256": "7cbb1edfe8cb75d0ab32a6818e44d6d6365a094387f6a42a6f58eacb0a6ff2d4"
+    },
+    "assets/lpc/full-source/art-0341.bin": {
+      "bytes": 260902,
+      "sha256": "ae6b3aca03171e83bd4a5b553288d01265dd27f02c6c1a7c6b7b3b176869912f"
+    },
+    "assets/lpc/full-source/art-0342.bin": {
+      "bytes": 258507,
+      "sha256": "116e6abe31b1d7fd30b317e21562349e8bc0ab10cc8c9a7b2b90af80bdcc86c1"
+    },
+    "assets/lpc/full-source/art-0343.bin": {
+      "bytes": 260022,
+      "sha256": "34204f65c0a0e73f33d3365aca050784eff6afe8bf03e10c28c71ba753aab6c4"
+    },
+    "assets/lpc/full-source/art-0344.bin": {
+      "bytes": 258246,
+      "sha256": "e1a16859c46cce9d2d72933d3199ededd1de2752d32c2e08b0bcb60497569af1"
+    },
+    "assets/lpc/full-source/art-0345.bin": {
+      "bytes": 255129,
+      "sha256": "00f95dac452eb3409f2071a5dc0141737d87ae820e9d6468fb59a075fb5190e6"
+    },
+    "assets/lpc/full-source/art-0346.bin": {
+      "bytes": 261229,
+      "sha256": "c05b43e2024e9043daf20ec964cd2bf2df8ad67005614fc339379b2794074246"
+    },
+    "assets/lpc/full-source/art-0347.bin": {
+      "bytes": 259017,
+      "sha256": "52a5dee2b282a4123e65043c0cc254e528dd92fbdcaefcf96ccf7b2709fd4074"
+    },
+    "assets/lpc/full-source/art-0348.bin": {
+      "bytes": 258053,
+      "sha256": "3e9f8668f5cda6d164900823a7f8ceae51ef8796ffcb5b385c661b81017d2cf7"
+    },
+    "assets/lpc/full-source/art-0349.bin": {
+      "bytes": 260182,
+      "sha256": "068d181d06956b9506dfbdc8cab08c6d7cc3f4ef1ef955f60511cbaf81827e22"
+    },
+    "assets/lpc/full-source/art-0350.bin": {
+      "bytes": 261866,
+      "sha256": "1a599f0ac945c52194a8628240cdfd764bcde6863b190fa377500c3e11c13d87"
+    },
+    "assets/lpc/full-source/art-0351.bin": {
+      "bytes": 261824,
+      "sha256": "2332c494066db8c96ba75a6f98f6aaf1805d38633b1c0db44bbda002e9a4fdda"
+    },
+    "assets/lpc/full-source/art-0352.bin": {
+      "bytes": 261156,
+      "sha256": "75f7d9cf4738b72a26e32cc66ffd0a355a223d88139d384d190f8235e4f37855"
+    },
+    "assets/lpc/full-source/art-0353.bin": {
+      "bytes": 260773,
+      "sha256": "416aaa578a16933a0b950dc9ce855dfa27d94a0142e8a46e31efec3d2b2d857a"
+    },
+    "assets/lpc/full-source/art-0354.bin": {
+      "bytes": 262101,
+      "sha256": "199755c7bb886826bdf5d4b74e24e94c2fc60d1b15b7a97c178814a79f1d6daf"
+    },
+    "assets/lpc/full-source/art-0355.bin": {
+      "bytes": 261923,
+      "sha256": "74f09febfab29fdaf305ca0cebf9951f2c5c771457cbf5939ebf4f72aa5f7214"
+    },
+    "assets/lpc/full-source/art-0356.bin": {
+      "bytes": 261824,
+      "sha256": "7a27ca0259d553c033020eb59af3bffe789230075a9a78976e4d0d460524e26e"
+    },
+    "assets/lpc/full-source/art-0357.bin": {
+      "bytes": 261808,
+      "sha256": "c8aaedaa081b9ff847c8edb79492bbfd68247f20b59571b78e00c092eab10ea4"
+    },
+    "assets/lpc/full-source/art-0358.bin": {
+      "bytes": 259689,
+      "sha256": "4e86d2ee3ce9849587435b186fb3b11b82ba16f26f574df81ea3c55ce4bb17c8"
+    },
+    "assets/lpc/full-source/art-0359.bin": {
+      "bytes": 261418,
+      "sha256": "5237b70f5780a0f6632ad7f5aeb5de1ae7c8fd08af3e94beb623f7766666d11e"
+    },
+    "assets/lpc/full-source/art-0360.bin": {
+      "bytes": 261702,
+      "sha256": "00713509d6be4f23cac309e45ebac6d03d509b12fa17cd3213cb9f1449a5eb11"
+    },
+    "assets/lpc/full-source/art-0361.bin": {
+      "bytes": 258300,
+      "sha256": "e872654b92f7ea1e0280c399e23a757f8e96effaed73a2a75ab0ce853631ad7b"
+    },
+    "assets/lpc/full-source/art-0362.bin": {
+      "bytes": 260535,
+      "sha256": "65790ec52e9ea144135f9c6f25a8d2ca6d7067d3aefd450eaef0d879b5455cfd"
+    },
+    "assets/lpc/full-source/art-0363.bin": {
+      "bytes": 259766,
+      "sha256": "e9b4400937d0c0f881bf00e134c0a908d33943b1095dea2110fadc7f15efeb8a"
+    },
+    "assets/lpc/full-source/art-0364.bin": {
+      "bytes": 261080,
+      "sha256": "e826d4781eecba18411d858dd8cc6e16322e71c6871d5b423dda1dea41574c05"
+    },
+    "assets/lpc/full-source/art-0365.bin": {
+      "bytes": 259805,
+      "sha256": "bdfea2e10c6ed770ded36dd5e22866f191668d180eed1c65278d126fd69635d1"
+    },
+    "assets/lpc/full-source/art-0366.bin": {
+      "bytes": 262141,
+      "sha256": "e3f63141952c6fc0b6ac405b904b0fa92b4e73fa29b36472a93a64f962ae79bf"
+    },
+    "assets/lpc/full-source/art-0367.bin": {
+      "bytes": 262079,
+      "sha256": "b215c75e0a40acbd418fbb8006e001dc5b6e20197d2e3003d23a3ec1a6f011fc"
+    },
+    "assets/lpc/full-source/art-0368.bin": {
+      "bytes": 260635,
+      "sha256": "0efe0117883ea171f5a6803dfcbad8f5f10b3e48e72b447e9f6e4900ce94a9ed"
+    },
+    "assets/lpc/full-source/art-0369.bin": {
+      "bytes": 261913,
+      "sha256": "55199d9b2cfee28cc92dce359977924ffcd5c41193f63e3f974e92a9edf2f417"
+    },
+    "assets/lpc/full-source/art-0370.bin": {
+      "bytes": 262052,
+      "sha256": "a0a35b27262a2b9f6593371edf66f269edc13da80aef8824be048e1be4ecfe60"
+    },
+    "assets/lpc/full-source/art-0371.bin": {
+      "bytes": 261917,
+      "sha256": "0597b2152355d5aafff5a392535f230407cefa6da2bde2dfc7d77ecfc73c118c"
+    },
+    "assets/lpc/full-source/art-0372.bin": {
+      "bytes": 261324,
+      "sha256": "86c38062d3f71640ecfe69b6c6428fdb754ef9b8490e5978e44572b7328b17e8"
+    },
+    "assets/lpc/full-source/art-0373.bin": {
+      "bytes": 261672,
+      "sha256": "19dee2fb7388695a39e70ea93aa16a150fc0336fe16c7b757c27a1acb5df4e03"
+    },
+    "assets/lpc/full-source/art-0374.bin": {
+      "bytes": 262143,
+      "sha256": "855ce09ad07050354a02fc8886c6e49a42742ee225160f5e4450da24a29f98f5"
+    },
+    "assets/lpc/full-source/art-0375.bin": {
+      "bytes": 261750,
+      "sha256": "539f158d54825fb9de84e33924d97ea47c3d162b1089b608ddf86049d38562eb"
+    },
+    "assets/lpc/full-source/art-0376.bin": {
+      "bytes": 262074,
+      "sha256": "33f438a3fcfb1f447935730a5fb3d1c4edff36ae36fc387474a424c6a5854150"
+    },
+    "assets/lpc/full-source/art-0377.bin": {
+      "bytes": 261864,
+      "sha256": "d8bd72084528437645183d995dc5ed1c0530400e753542adaf220e670843da05"
+    },
+    "assets/lpc/full-source/art-0378.bin": {
+      "bytes": 261882,
+      "sha256": "fbfdcc4541fb085a50297509d484200c3374a2bc221545fe907c58a906351f98"
+    },
+    "assets/lpc/full-source/art-0379.bin": {
+      "bytes": 262032,
+      "sha256": "9f59b3566b04f88f7b4a379b1aae0fa7eec7dc4e2de211aeff823b56f727c51d"
+    },
+    "assets/lpc/full-source/art-0380.bin": {
+      "bytes": 260756,
+      "sha256": "fd1b60b53324150f31a5151f7354803369fb501b060db02510b53bd2d098e625"
+    },
+    "assets/lpc/full-source/art-0381.bin": {
+      "bytes": 261220,
+      "sha256": "183c43a944d03871b30160c7c169deabcd5770972e755fb9cd524c1bd35bff1d"
+    },
+    "assets/lpc/full-source/art-0382.bin": {
+      "bytes": 262129,
+      "sha256": "052aa922a388fa789ce5ff8c1824183badef74de15013e5c85f5d89912b65c9a"
+    },
+    "assets/lpc/full-source/art-0383.bin": {
+      "bytes": 260581,
+      "sha256": "052874cf3cccadcbea5f031e4ea5d74d6ba4337821ca0308fe4f138022b82011"
+    },
+    "assets/lpc/full-source/art-0384.bin": {
+      "bytes": 254888,
+      "sha256": "d49fa9b56d7f09533317aa070f6f1c6109093fd979ecdc5631fd754f5338939e"
+    },
+    "assets/lpc/full-source/art-0385.bin": {
+      "bytes": 253042,
+      "sha256": "26573daf05e0a1da9021fe1c0e903f3cb2c0754cfb48c558dd40d3281a2c0d1f"
+    },
+    "assets/lpc/full-source/art-0386.bin": {
+      "bytes": 260126,
+      "sha256": "bf62128523679068815887e092bd3197f8cd0e44e444ec65db78a1364d971861"
+    },
+    "assets/lpc/full-source/art-0387.bin": {
+      "bytes": 259552,
+      "sha256": "d9d2560b17ad96706e24fa8ae9a331511f855727e0eaae01750d404f237c4871"
+    },
+    "assets/lpc/full-source/art-0388.bin": {
+      "bytes": 250105,
+      "sha256": "a7ff87e9b1b3bb1baf244f4c15b121a820662ce4ecf3405ead27259db809db05"
+    },
+    "assets/lpc/full-source/art-0389.bin": {
+      "bytes": 257596,
+      "sha256": "d75623be7dba07f4db28350c05a1197df9e9ea497c08857a27277b01f04b5e9d"
+    },
+    "assets/lpc/full-source/art-0390.bin": {
+      "bytes": 258411,
+      "sha256": "744f5667e992b41b4b33ae929c67c6743bcde97ccd8fbaa55f6e48ea25892d99"
+    },
+    "assets/lpc/full-source/art-0391.bin": {
+      "bytes": 261965,
+      "sha256": "f3e95c28e8050bd31c99749cc6a03b9e49102eadd1f048dbf270a81c6ad54076"
+    },
+    "assets/lpc/full-source/art-0392.bin": {
+      "bytes": 249176,
+      "sha256": "fcebd4c5f7521e36eb387c02b29f39d4d76a081e18fdfb81769b42545d47a309"
+    },
+    "assets/lpc/full-source/art-0393.bin": {
+      "bytes": 248889,
+      "sha256": "c39318986861a612c7ec55070f2bbc34c342b22723166a67c9ef9e70d1b29eb9"
+    },
+    "assets/lpc/full-source/art-0394.bin": {
+      "bytes": 259884,
+      "sha256": "312cd7b0a42a2d615ab7a0f6fbf85e29895babc8b599da9e546b578e43eb5eea"
+    },
+    "assets/lpc/full-source/art-0395.bin": {
+      "bytes": 260673,
+      "sha256": "84c58cec9f208838164d9cf9b501573dd18e6eeda50f4b81bad901f8b7a07278"
+    },
+    "assets/lpc/full-source/art-0396.bin": {
+      "bytes": 260790,
+      "sha256": "1dde538dc255d41b117e943b864c849ce2cfabaae4e90b342073e54b1e5d6aec"
+    },
+    "assets/lpc/full-source/art-0397.bin": {
+      "bytes": 260039,
+      "sha256": "a9b958e79ada35a3c0736586a113bb94617ec28eb89fafc7548b446ea4c73bc3"
+    },
+    "assets/lpc/full-source/art-0398.bin": {
+      "bytes": 258406,
+      "sha256": "260bca12047b622aa01373f690e1e172a78c80f5cfaaa29a758ca5ffdd0310cd"
+    },
+    "assets/lpc/full-source/art-0399.bin": {
+      "bytes": 212207,
+      "sha256": "a8b16dfa58a33ebf74738431211b4534a563be2fa83c593e1c75dacb1d59d57a"
+    },
+    "assets/lpc/full-source/credits-data.json.gz": {
+      "bytes": 3253214,
+      "sha256": "2c17c4223977ec4731d837a5ad7431cb1a607d4d456cd78f43de45fe2d2b599b"
+    },
+    "assets/lpc/full-source/credits.html": {
+      "bytes": 758873,
+      "sha256": "13ed43a42e85c4b9df2c8ff8264ed9f05357a6f3cee6ff6fd114ee7a57fa84ab"
+    },
+    "assets/lpc/full-source/index.json.gz": {
+      "bytes": 7800601,
+      "sha256": "b0579d8d5445de198088b2e0ad465231d5a163b29cce9dfb31c1deaaaa4b7257"
+    },
+    "assets/lpc/full-source/metadata.json.gz": {
+      "bytes": 119380,
+      "sha256": "fc9af4b1ed04b3d7466e11ddc3ac0a8d7bd2211396ecd6731a94bcf198bc0290"
+    },
+    "assets/lpc/full-source/repairs.json.gz": {
+      "bytes": 3779,
+      "sha256": "bc9e9caeac697eeae4cee37930d0b09e986383ec29d4634a4df9987e61e4817c"
+    },
+    "assets/lpc/pack-manifest.json": {
+      "bytes": 52836,
+      "sha256": "2bc94c3e2395863224b61f476eda0df13f5d5486602814080d3d33fe39fc5e89"
+    },
+    "assets/lpc/scenes.json": {
+      "bytes": 2694,
+      "sha256": "9a29a79b9eb96f73e1dfbca8afb79fee27642305cd6e28ba0c2f887b3f791947"
+    },
+    "assets/lpc/source-catalog.json": {
+      "bytes": 70056,
+      "sha256": "30651123c475f3381990d7d2424e47c9c2c920c9580314caf96a9fcb381d537d"
+    },
+    "assets/lpc/source-credits.html": {
+      "bytes": 626018,
+      "sha256": "60fdc010583f1679cc3cb825fdf0348106a6f15ec1f6608610af5082779d4b8e"
+    },
+    "assets/lpc/spritesheets/beards/beard/trimmed/emote.png": {
+      "bytes": 516,
+      "sha256": "5dd154cbdfcacbea3bcad09c73381b4bde2a4b5a7d744848cd566d58cb24a6d2"
+    },
+    "assets/lpc/spritesheets/beards/beard/trimmed/idle.png": {
+      "bytes": 473,
+      "sha256": "10a881b082886011dc3141fa74df6d071141f585cde2c241c37fa01f789427c8"
+    },
+    "assets/lpc/spritesheets/beards/beard/trimmed/jump.png": {
+      "bytes": 629,
+      "sha256": "a54ded06c407d48cf280840f683ba187cb1fa9beb9beeda4d0fbb35724b44411"
+    },
+    "assets/lpc/spritesheets/beards/beard/trimmed/run.png": {
+      "bytes": 615,
+      "sha256": "b1b8a8b74cc2788646a269b03091dcea79945cf4d42e762265ba98413eed7d6a"
+    },
+    "assets/lpc/spritesheets/beards/beard/trimmed/sit.png": {
+      "bytes": 540,
+      "sha256": "1cdebbdf77f7684716285f033e565ac364e31f4ebf822a324ecd9b895ea0e519"
+    },
+    "assets/lpc/spritesheets/beards/beard/trimmed/spellcast.png": {
+      "bytes": 509,
+      "sha256": "2cf0793320d815500c2e6523be24a18de91eefd09b82b218b825272cda9f26ab"
+    },
+    "assets/lpc/spritesheets/beards/beard/trimmed/walk.png": {
+      "bytes": 601,
+      "sha256": "f7477aca2a172358f56d4f8109af0c788938c1fc8e392af48f29b65085fd6d0e"
+    },
+    "assets/lpc/spritesheets/body/bodies/female/emote.png": {
+      "bytes": 8627,
+      "sha256": "22940470ca23acd6fbff26352ff3964ec5da7670ee8307987a83ffd7a8d37c16"
+    },
+    "assets/lpc/spritesheets/body/bodies/female/idle.png": {
+      "bytes": 4207,
+      "sha256": "817b9f90478c75e32c0c085338cab1f0743cb908c2fa506faed38a1978eab24d"
+    },
+    "assets/lpc/spritesheets/body/bodies/female/jump.png": {
+      "bytes": 4313,
+      "sha256": "06db318483e84d87ae10d2a0a7587cc4bf50a47cf30ca6ea55ac9311179886ba"
+    },
+    "assets/lpc/spritesheets/body/bodies/female/run.png": {
+      "bytes": 5760,
+      "sha256": "bba8de1e57951eed05c8685502caab858fe54058f537205737b50a33a839d79b"
+    },
+    "assets/lpc/spritesheets/body/bodies/female/sit.png": {
+      "bytes": 2183,
+      "sha256": "02d844996bc94c57b5f30ae1aa919db1f6003a51b109250f071670bbf01f0b92"
+    },
+    "assets/lpc/spritesheets/body/bodies/female/spellcast.png": {
+      "bytes": 3854,
+      "sha256": "f02ad3ac5024d9693c430827d6f1efb0c75eeb705cb319e767a49c56cdc506c6"
+    },
+    "assets/lpc/spritesheets/body/bodies/female/walk.png": {
+      "bytes": 5905,
+      "sha256": "594cb64a032d06d560f23b17f77b572e2dc8ba61df490cfca43f15316c85cfcf"
+    },
+    "assets/lpc/spritesheets/body/bodies/male/emote.png": {
+      "bytes": 2738,
+      "sha256": "ccfd43b427ef44825ab0ab0c8862736d3f5bf18c98250a2b623f7d3d17253632"
+    },
+    "assets/lpc/spritesheets/body/bodies/male/idle.png": {
+      "bytes": 1698,
+      "sha256": "9c3d17def9bd0574e25ce3162a243f18654479e38c04164bc12607429b013fa2"
+    },
+    "assets/lpc/spritesheets/body/bodies/male/jump.png": {
+      "bytes": 4520,
+      "sha256": "bcfaab14f55a8f741c5e8444efed59d4eb0d21519ee754b8e8e56a7c421a3b4a"
+    },
+    "assets/lpc/spritesheets/body/bodies/male/run.png": {
+      "bytes": 6420,
+      "sha256": "f8eaec1f9a80b8bad5c402ac4d3215f0a513acfae988dd84a39cb370a78fde92"
+    },
+    "assets/lpc/spritesheets/body/bodies/male/sit.png": {
+      "bytes": 2336,
+      "sha256": "ff339e6b3e34894d32db67c61d6a396e2d4286764aa26be79f0660f439317d0c"
+    },
+    "assets/lpc/spritesheets/body/bodies/male/spellcast.png": {
+      "bytes": 4220,
+      "sha256": "fbfe1225c84f362daeb18ed8429cf3764353409d4bf82f1710e53cf17807d040"
+    },
+    "assets/lpc/spritesheets/body/bodies/male/walk.png": {
+      "bytes": 6479,
+      "sha256": "1e0e8f0c11ba5f4f7b3d4439fc416802b4227da2fe146c13de3de254d9f87f77"
+    },
+    "assets/lpc/spritesheets/cape/solid/bg/idle.png": {
+      "bytes": 1625,
+      "sha256": "bfef4eec024c1ece7f10bc3ac47cc298770eb2cfd7958d057c598bd85c060686"
+    },
+    "assets/lpc/spritesheets/cape/solid/bg/spellcast.png": {
+      "bytes": 1037,
+      "sha256": "d36116f2f9393ee853010f9251cc8e55e896fae95889403c51624b929e28b523"
+    },
+    "assets/lpc/spritesheets/cape/solid/bg/walk.png": {
+      "bytes": 3998,
+      "sha256": "27b02ac756f4a3d19f46fa0f113b42f40387e8f6d8c98a6487f1fc1a525fe059"
+    },
+    "assets/lpc/spritesheets/cape/solid/fg/idle.png": {
+      "bytes": 1499,
+      "sha256": "90cb4f80f778bfdc010ec5a4709f4584bf828908d9cf4bbc506588eb48853a9e"
+    },
+    "assets/lpc/spritesheets/cape/solid/fg/spellcast.png": {
+      "bytes": 2276,
+      "sha256": "7dd247d96bee931acce54d45fb9a25ff3a91e45379db8bbc094f1efc2669d06d"
+    },
+    "assets/lpc/spritesheets/cape/solid/fg/walk.png": {
+      "bytes": 3710,
+      "sha256": "1aa730ea5691a376b91fa44db7c8fa369127b9e0347c3a31d6654fa3a932b472"
+    },
+    "assets/lpc/spritesheets/cape/tattered/bg/idle.png": {
+      "bytes": 2175,
+      "sha256": "a3291a364a280dac0b53a7ef6d24e4c20172bf6012215e35c2a4c7fb2e699885"
+    },
+    "assets/lpc/spritesheets/cape/tattered/bg/spellcast.png": {
+      "bytes": 2872,
+      "sha256": "8cb8e21307b7d00068676d36f87125f45dcf0210b75d0b9500ed3f52157ec24b"
+    },
+    "assets/lpc/spritesheets/cape/tattered/bg/walk.png": {
+      "bytes": 5558,
+      "sha256": "f9ac931ff31865f5a9a84bf32ebf09e163d0da13b2706f3fc69f93d842d880ad"
+    },
+    "assets/lpc/spritesheets/cape/tattered/fg/idle.png": {
+      "bytes": 1598,
+      "sha256": "0dae3d1117708967710f84c274a95e15b772a80d97fbbc3bd515b25fcaf29e8c"
+    },
+    "assets/lpc/spritesheets/cape/tattered/fg/spellcast.png": {
+      "bytes": 2469,
+      "sha256": "640318c4cdd0f8a4baae766fdc9c95c0582b9b9759b05237190953d9717cf32b"
+    },
+    "assets/lpc/spritesheets/cape/tattered/fg/walk.png": {
+      "bytes": 4495,
+      "sha256": "e5a3173f75a0f1d5c3b4dd5afad252904b619bb501148fec74bff5a984a8366d"
+    },
+    "assets/lpc/spritesheets/cape/trim/idle.png": {
+      "bytes": 787,
+      "sha256": "ea2eeb963519c11962f103187c682d65aeca93f3101d2d83411f83ab294304ce"
+    },
+    "assets/lpc/spritesheets/cape/trim/spellcast.png": {
+      "bytes": 1169,
+      "sha256": "a06b6e4a9c2c8f879091e6c6172054c8b81148ac46f660d182d7dc6a40d244b8"
+    },
+    "assets/lpc/spritesheets/cape/trim/walk.png": {
+      "bytes": 2430,
+      "sha256": "2df06214c08457fc37a3a6bae1658e787c234224989fc6e938513776ca5e8fbd"
+    },
+    "assets/lpc/spritesheets/feet/boots/basic/male/emote.png": {
+      "bytes": 3290,
+      "sha256": "b1188c73b321d572a69e2289846bd0370f326248b1b5210e95ff421608dae7cf"
+    },
+    "assets/lpc/spritesheets/feet/boots/basic/male/idle.png": {
+      "bytes": 1418,
+      "sha256": "6a454e19edabc7ca95f00073d3bb6fa9e528bd7c8c7860e4df5a6d2612579cf0"
+    },
+    "assets/lpc/spritesheets/feet/boots/basic/male/jump.png": {
+      "bytes": 5208,
+      "sha256": "b0b2351a4d2cd5135808b0073b385d8a9ca9753ec55c90f4b28914b6a8adebcb"
+    },
+    "assets/lpc/spritesheets/feet/boots/basic/male/run.png": {
+      "bytes": 9481,
+      "sha256": "360cf5404353425f2d66a7b3bf38b5e0626ea0b6684379708cc0f1226e7deff0"
+    },
+    "assets/lpc/spritesheets/feet/boots/basic/male/sit.png": {
+      "bytes": 2565,
+      "sha256": "d467b5cfae308a8d16807ab2dc57eae76948dd51392d0319da0fe9ac89c37760"
+    },
+    "assets/lpc/spritesheets/feet/boots/basic/male/spellcast.png": {
+      "bytes": 2167,
+      "sha256": "c8db655fe32b7dea648f4aee2334d0c22751129e2f172fdc34ef0318fb0f10e6"
+    },
+    "assets/lpc/spritesheets/feet/boots/basic/male/walk.png": {
+      "bytes": 6376,
+      "sha256": "13521e96fe8c6033c54622a8137cc1a05964a9db3bd1f5a115028951e5cecf18"
+    },
+    "assets/lpc/spritesheets/feet/boots/basic/thin/emote.png": {
+      "bytes": 3231,
+      "sha256": "317e8290aef2cdbf559ac640d1cd03a2532bac92ac0e4e0c71d56b4b0a4fb7de"
+    },
+    "assets/lpc/spritesheets/feet/boots/basic/thin/idle.png": {
+      "bytes": 1371,
+      "sha256": "9e7085836baa32a8dddadb7af4e203d97266630051699fa9eb7e2c6e3b788e40"
+    },
+    "assets/lpc/spritesheets/feet/boots/basic/thin/jump.png": {
+      "bytes": 4998,
+      "sha256": "71cba398d0fdea94d25bfe6b1ef51481a190b5cf0c6d4b940d913880cc35edeb"
+    },
+    "assets/lpc/spritesheets/feet/boots/basic/thin/run.png": {
+      "bytes": 9220,
+      "sha256": "e3bbba693dbf8cd1058cfada883973ad96f3b7d4bcdbdd666991fc64e1b4858d"
+    },
+    "assets/lpc/spritesheets/feet/boots/basic/thin/sit.png": {
+      "bytes": 2563,
+      "sha256": "a4f44723366520e56cef8a3fbd9340a87722c95df757e0146048e9e1bfc2d117"
+    },
+    "assets/lpc/spritesheets/feet/boots/basic/thin/spellcast.png": {
+      "bytes": 2143,
+      "sha256": "cccb942f9e2c0e6816305035455eaa07ac79482a3213e24af9361b90f11ade41"
+    },
+    "assets/lpc/spritesheets/feet/boots/basic/thin/walk.png": {
+      "bytes": 5437,
+      "sha256": "50eb7e0a6b3cb1c939ee1a68bd0ac42736f6dbf55f2e5aa4ecef7d2ff858a1d7"
+    },
+    "assets/lpc/spritesheets/feet/sandals/male/emote.png": {
+      "bytes": 1578,
+      "sha256": "358744cf15caa96d918b2fd58e6beaeaff3a44c2c33e20141b8ca14a6d20c8ec"
+    },
+    "assets/lpc/spritesheets/feet/sandals/male/idle.png": {
+      "bytes": 931,
+      "sha256": "c412297ee76aa155908e54f6d98955e33814db0066fd314840ccaffa1559bcda"
+    },
+    "assets/lpc/spritesheets/feet/sandals/male/jump.png": {
+      "bytes": 2600,
+      "sha256": "e7d502678625849fc1b8275c35ca68de9459a5b167b0d2e4909c03ee16b8ef3f"
+    },
+    "assets/lpc/spritesheets/feet/sandals/male/run.png": {
+      "bytes": 3371,
+      "sha256": "dcff25a60276291151d1df98f581d749d8e1bb3d3ffa6499a0703934b48ed868"
+    },
+    "assets/lpc/spritesheets/feet/sandals/male/sit.png": {
+      "bytes": 1200,
+      "sha256": "eb6eb0fbd5023a64a6516c5c15f0f89ee2cb824f41badda55d06f62146e216f7"
+    },
+    "assets/lpc/spritesheets/feet/sandals/male/spellcast.png": {
+      "bytes": 1512,
+      "sha256": "176cb618866681d4f57651af50813e080d8e4b415b32de9a820613e412789dcc"
+    },
+    "assets/lpc/spritesheets/feet/sandals/male/walk.png": {
+      "bytes": 3665,
+      "sha256": "66dc21e4032c16f2e477ca31eb5344e6b8a16efe5fc4eca5d806758b767f173c"
+    },
+    "assets/lpc/spritesheets/feet/sandals/thin/emote.png": {
+      "bytes": 1446,
+      "sha256": "c038a91cdc22e8436eeb082b01eadcd3edac763338d9c64deb8a7b10877339ad"
+    },
+    "assets/lpc/spritesheets/feet/sandals/thin/idle.png": {
+      "bytes": 920,
+      "sha256": "6dc53ff2829d35f427c5c12c9b115fc3141fa550f96d4091dec29d0fb7e8e5d4"
+    },
+    "assets/lpc/spritesheets/feet/sandals/thin/jump.png": {
+      "bytes": 2583,
+      "sha256": "6810c4c6d9f395e1cf1bdfea9ed009112da80ad2f418edded7fa835283bbdb1c"
+    },
+    "assets/lpc/spritesheets/feet/sandals/thin/run.png": {
+      "bytes": 3146,
+      "sha256": "a444316a8c4d9c97f12c949f0eb10e4a36352e337ce19c965c86f295837785c2"
+    },
+    "assets/lpc/spritesheets/feet/sandals/thin/sit.png": {
+      "bytes": 1199,
+      "sha256": "2ff816a241688be94d13c13589340372d6ccac239e551aafbb46926c237a864d"
+    },
+    "assets/lpc/spritesheets/feet/sandals/thin/spellcast.png": {
+      "bytes": 1488,
+      "sha256": "cdeb846c85fe1df47e813f1793de0a55766ea2b37ec95b95c75173e8ef28db8e"
+    },
+    "assets/lpc/spritesheets/feet/sandals/thin/walk.png": {
+      "bytes": 3200,
+      "sha256": "43d8c81b647e0adc3d742481988087112c5028cdeb5083eee8a0f802a7f2aaf9"
+    },
+    "assets/lpc/spritesheets/feet/shoes/basic/male/emote.png": {
+      "bytes": 2664,
+      "sha256": "055244928978b93ce68d4cec91d4772a854244f50b0d3738338bf4c53a8e8554"
+    },
+    "assets/lpc/spritesheets/feet/shoes/basic/male/idle.png": {
+      "bytes": 1190,
+      "sha256": "5b4c7ebda343325425fbb9ceb1350e05d148816d672dafa521b3b2f8880334d1"
+    },
+    "assets/lpc/spritesheets/feet/shoes/basic/male/jump.png": {
+      "bytes": 3877,
+      "sha256": "7349d4f443e327c62bf0caaa8303ea75dcf958f964bd74487500ffd909a526d3"
+    },
+    "assets/lpc/spritesheets/feet/shoes/basic/male/run.png": {
+      "bytes": 8052,
+      "sha256": "562d66a6b3d5f4ad4e2b07675d0628a31a08f34c14e8dbc60850475d50d9e2cf"
+    },
+    "assets/lpc/spritesheets/feet/shoes/basic/male/sit.png": {
+      "bytes": 2127,
+      "sha256": "f181e8d8248a7a57a559d9faccefa2a73b2223cb0c8988dd8593ea28d6bec6e9"
+    },
+    "assets/lpc/spritesheets/feet/shoes/basic/male/spellcast.png": {
+      "bytes": 1786,
+      "sha256": "757044b1fabe52e82e73384940583edff6a0a60f7c720bfd98bd0d74ab94b919"
+    },
+    "assets/lpc/spritesheets/feet/shoes/basic/male/walk.png": {
+      "bytes": 5082,
+      "sha256": "f544c6f65a3d87f08d8449e87a4f889bd1bc1bf6d714066ef5c30ab2bdafab46"
+    },
+    "assets/lpc/spritesheets/feet/shoes/basic/thin/emote.png": {
+      "bytes": 2660,
+      "sha256": "88a93934402cd7f4f10177fc6096f2ac9e69f8ba2eb10b726a03727ec0b49363"
+    },
+    "assets/lpc/spritesheets/feet/shoes/basic/thin/idle.png": {
+      "bytes": 1184,
+      "sha256": "2d6c44587c1c741af1e82a2a93654d0d7f297fb673108c6bd3dc851e4d26523e"
+    },
+    "assets/lpc/spritesheets/feet/shoes/basic/thin/jump.png": {
+      "bytes": 3856,
+      "sha256": "0d2bbd24b09177c15c8dd2cdc7efaab781171b9d7fa58783d486cc5d085789e9"
+    },
+    "assets/lpc/spritesheets/feet/shoes/basic/thin/run.png": {
+      "bytes": 7745,
+      "sha256": "64747a5e8e3f334679f8f36eaf925178b5b97336cae385a9197e2420af98dc4d"
+    },
+    "assets/lpc/spritesheets/feet/shoes/basic/thin/sit.png": {
+      "bytes": 2103,
+      "sha256": "ca6e1877e96c952ce1c2ae95436b3370797ddca0f0847461f2e9dcd2957dbb4e"
+    },
+    "assets/lpc/spritesheets/feet/shoes/basic/thin/spellcast.png": {
+      "bytes": 1787,
+      "sha256": "f659a5bd941918e692952d663996b9773d7c2e77ab7b70309d323f7f96215610"
+    },
+    "assets/lpc/spritesheets/feet/shoes/basic/thin/walk.png": {
+      "bytes": 4702,
+      "sha256": "b8cb7d702e03637a9207b3544a20909a287e1bde93b4208a6544a0b2b9d3c12a"
+    },
+    "assets/lpc/spritesheets/hair/afro/adult/emote.png": {
+      "bytes": 3229,
+      "sha256": "d22e4069cfbc0d3be233de1e7d63b81102512cd57d7e1278001fa01e568b47fc"
+    },
+    "assets/lpc/spritesheets/hair/afro/adult/idle.png": {
+      "bytes": 2544,
+      "sha256": "c680cfe8d8afad2a733aac79d7250dcc52f8f45d413b8806a2e5da72366b0386"
+    },
+    "assets/lpc/spritesheets/hair/afro/adult/jump.png": {
+      "bytes": 4751,
+      "sha256": "61babd0dd63afba164856abb8ddb99edaaec2021b6f7caa7c8fb346beda0b008"
+    },
+    "assets/lpc/spritesheets/hair/afro/adult/run.png": {
+      "bytes": 4992,
+      "sha256": "17821109c342f1be81aec3abcdeb07db5a6f0b70ce12385e1d0b013dededfca2"
+    },
+    "assets/lpc/spritesheets/hair/afro/adult/sit.png": {
+      "bytes": 3721,
+      "sha256": "03b0112786e172cff58d7b117308184c2dc6f8a13ee2bd64f9c3ba349e48ac07"
+    },
+    "assets/lpc/spritesheets/hair/afro/adult/spellcast.png": {
+      "bytes": 3513,
+      "sha256": "6898b55b43b9e08b5bbe00c91af05f5501f4b2771c779e8252366ddd9a75c7c7"
+    },
+    "assets/lpc/spritesheets/hair/afro/adult/walk.png": {
+      "bytes": 4801,
+      "sha256": "3f01666af81773d3a844b121547f59389bbf4145ef5ad05c76ccbd1de357d134"
+    },
+    "assets/lpc/spritesheets/hair/bob/adult/emote.png": {
+      "bytes": 1424,
+      "sha256": "788f5c491fadd4f93518c5164d9ce67c695fc280346ed526b5c3d9777a871b8e"
+    },
+    "assets/lpc/spritesheets/hair/bob/adult/idle.png": {
+      "bytes": 1212,
+      "sha256": "bb3ebba5c1ccf618cc4a6ca7af39e8d39b628e7b746ad1d82d20fc188c305b13"
+    },
+    "assets/lpc/spritesheets/hair/bob/adult/jump.png": {
+      "bytes": 2229,
+      "sha256": "f2d94a2e2d428d32191e34c0d2624da4b1ba2d1860bfc7cd5c857e51f69a3a15"
+    },
+    "assets/lpc/spritesheets/hair/bob/adult/run.png": {
+      "bytes": 2143,
+      "sha256": "a9bdf1a907b1faf9b85608770e8ce467bc8e5194e589cdfbc9599853bb574d2a"
+    },
+    "assets/lpc/spritesheets/hair/bob/adult/sit.png": {
+      "bytes": 1853,
+      "sha256": "192997e01bd35645e9aae89bb1ae1e020953913aa4b7e55882a1b0971635ed9b"
+    },
+    "assets/lpc/spritesheets/hair/bob/adult/spellcast.png": {
+      "bytes": 1263,
+      "sha256": "bce76b37afead53e888b78f97c276c2697c8f3d437012de6c75ee85dbe7cc868"
+    },
+    "assets/lpc/spritesheets/hair/bob/adult/walk.png": {
+      "bytes": 1723,
+      "sha256": "40f1d1420f3bdbe2646654995cd2906b9a0edf4252c73060b34d5fcc27be0bcf"
+    },
+    "assets/lpc/spritesheets/hair/curly_short/adult/emote.png": {
+      "bytes": 2598,
+      "sha256": "5ffd62d37b6c0b8894e3aa47f7c7e44a66203eff9cdf029b7ba14a9c37b5ecde"
+    },
+    "assets/lpc/spritesheets/hair/curly_short/adult/idle.png": {
+      "bytes": 2209,
+      "sha256": "c383cbe299a49d09aea9fa90a0feca4f8a08bfd1501ee4b325a92ad45f92c22e"
+    },
+    "assets/lpc/spritesheets/hair/curly_short/adult/jump.png": {
+      "bytes": 4345,
+      "sha256": "1a3dab74e08e1406d48cc4701d3609f5e84730cc35a9c339272acc1be2b33c93"
+    },
+    "assets/lpc/spritesheets/hair/curly_short/adult/run.png": {
+      "bytes": 6339,
+      "sha256": "d462f02ed31b26e668066e97fa92aafed39db7f07054b34655765ffa931c9722"
+    },
+    "assets/lpc/spritesheets/hair/curly_short/adult/sit.png": {
+      "bytes": 2817,
+      "sha256": "2eba97c76c47e6d441cb0a74cb56990b04c874dc655a165bb957de7317c447c2"
+    },
+    "assets/lpc/spritesheets/hair/curly_short/adult/spellcast.png": {
+      "bytes": 1344,
+      "sha256": "9b7cd44577454b573e94731c4aa1bf12b398dfb95acd387b0186fc0a8c54c16a"
+    },
+    "assets/lpc/spritesheets/hair/curly_short/adult/walk.png": {
+      "bytes": 1857,
+      "sha256": "aca65f3f0e4c16ae936a9ed5aa78ffe439cc8f6abc9df79cbe796bae308e7317"
+    },
+    "assets/lpc/spritesheets/hair/long/adult/emote.png": {
+      "bytes": 3766,
+      "sha256": "7166d90a4dd9d7eb91d06f290f0bd5217ead8ac59f1334c99b68a8d2af6f1bae"
+    },
+    "assets/lpc/spritesheets/hair/long/adult/idle.png": {
+      "bytes": 3079,
+      "sha256": "0a34120b5a95f090dac1268b378285632735872c5489343c624ea5d715f61d3e"
+    },
+    "assets/lpc/spritesheets/hair/long/adult/jump.png": {
+      "bytes": 5081,
+      "sha256": "743edfee9d3559b378b44722192cb2fd51624b28c2e4b298eda3ccb255ab737e"
+    },
+    "assets/lpc/spritesheets/hair/long/adult/run.png": {
+      "bytes": 5823,
+      "sha256": "eb040736100e65246aa9c96e564103a119e752349dea34dcd37b2530ce1153d3"
+    },
+    "assets/lpc/spritesheets/hair/long/adult/sit.png": {
+      "bytes": 4235,
+      "sha256": "23e212d60c06ab55b4c2b09028b95f2e4d9d32d855c9b0549782c48a5acb3559"
+    },
+    "assets/lpc/spritesheets/hair/long/adult/spellcast.png": {
+      "bytes": 4007,
+      "sha256": "51ebbebdf682a19a75f8e213ce827e2b3b16bef2483c856f77bf0d0bf46cead2"
+    },
+    "assets/lpc/spritesheets/hair/long/adult/walk.png": {
+      "bytes": 5627,
+      "sha256": "e5017ce13b1788fb70e0268170cebff2819f5dbf3256a108189816b3f219bbb0"
+    },
+    "assets/lpc/spritesheets/hair/natural/adult/emote.png": {
+      "bytes": 1125,
+      "sha256": "17cebdd42380dc84c8104ec7c5fac621ca020e01dd0fd93c316dda0313fb5269"
+    },
+    "assets/lpc/spritesheets/hair/natural/adult/idle.png": {
+      "bytes": 948,
+      "sha256": "e4563da9078cfda64bd99d203ab5c4f432b49b0ba84ab85170601df83b801623"
+    },
+    "assets/lpc/spritesheets/hair/natural/adult/jump.png": {
+      "bytes": 1722,
+      "sha256": "483be2dc85de32050b94fa6c0db4828611be9f425f8e58e835364f32719b562f"
+    },
+    "assets/lpc/spritesheets/hair/natural/adult/run.png": {
+      "bytes": 1554,
+      "sha256": "4657220917319c5e8bb60daf1593c895f7f1e49a2eface8570f672c93d62b11d"
+    },
+    "assets/lpc/spritesheets/hair/natural/adult/sit.png": {
+      "bytes": 1421,
+      "sha256": "902f7d8d78600911fdfffcbf0f8a2a730efb74ec3bb69af78af7a294214cec75"
+    },
+    "assets/lpc/spritesheets/hair/natural/adult/spellcast.png": {
+      "bytes": 1013,
+      "sha256": "499506d4da20d460a2b8dafb5ecda6e7b90854d6aad8f44e16bcce5d315776f8"
+    },
+    "assets/lpc/spritesheets/hair/natural/adult/walk.png": {
+      "bytes": 1454,
+      "sha256": "6eb73784312a2497bdd8bf1fd142c677763b1da05cf65e306c44aaf03934918d"
+    },
+    "assets/lpc/spritesheets/hair/plain/adult/emote.png": {
+      "bytes": 2869,
+      "sha256": "1dd99bc0b66c1721ebc9c723adf5e019e71a54436bc92f18e4a22fb00a5ce99c"
+    },
+    "assets/lpc/spritesheets/hair/plain/adult/idle.png": {
+      "bytes": 2284,
+      "sha256": "b3eed6441080adcb418a50e323f9fd46aa1b2ba042aea662a82c9f1bc596fd85"
+    },
+    "assets/lpc/spritesheets/hair/plain/adult/jump.png": {
+      "bytes": 4117,
+      "sha256": "e6c45cb162133a69d1ab82ba45a86839c53a43cf18072cf511f85c6ce504e86b"
+    },
+    "assets/lpc/spritesheets/hair/plain/adult/run.png": {
+      "bytes": 4586,
+      "sha256": "5e1eefe9a08150887d07db41bac3fe02f673aadf4579b0e439619e8b6444bd32"
+    },
+    "assets/lpc/spritesheets/hair/plain/adult/sit.png": {
+      "bytes": 3339,
+      "sha256": "053cdd196f34f1d2ceb8de1bccaf3ab8a28dbf677a624788eab22a23a099ea0d"
+    },
+    "assets/lpc/spritesheets/hair/plain/adult/spellcast.png": {
+      "bytes": 3012,
+      "sha256": "be52ae6141af33c4dd1528e85bc2b983d2797e0c83380e00df77964420793bf4"
+    },
+    "assets/lpc/spritesheets/hair/plain/adult/walk.png": {
+      "bytes": 4308,
+      "sha256": "4198b372f7381b7d12e516ddc69818dd50132224d1e6d8825f3dd920b0995b28"
+    },
+    "assets/lpc/spritesheets/head/ears/elven/adult/emote.png": {
+      "bytes": 537,
+      "sha256": "5bfe128e3c6816c5270f3fc85ebf9f7d7ed333d1651cd2a8e9071cf607615429"
+    },
+    "assets/lpc/spritesheets/head/ears/elven/adult/idle.png": {
+      "bytes": 484,
+      "sha256": "a4dbd76d47119390f736105a1d045c359c752ce83a8ddc91c6a9d9c658995653"
+    },
+    "assets/lpc/spritesheets/head/ears/elven/adult/jump.png": {
+      "bytes": 652,
+      "sha256": "d0470098ca034051f42553852d90de29633aa7babf879971082dfb45176cc458"
+    },
+    "assets/lpc/spritesheets/head/ears/elven/adult/run.png": {
+      "bytes": 662,
+      "sha256": "347e4643aff9fe7d9de1dfa4f36db4667e803320d0f9bd5f3c71e130fbf9aa2c"
+    },
+    "assets/lpc/spritesheets/head/ears/elven/adult/sit.png": {
+      "bytes": 559,
+      "sha256": "c2be4dd7f38a07b623e0edb56c2071574b3df0185bbdb58f4b00a009a6a85370"
+    },
+    "assets/lpc/spritesheets/head/ears/elven/adult/spellcast.png": {
+      "bytes": 532,
+      "sha256": "f01ab14373ef6a94a7a63936cd75dc3319e026567c959e8a67f3d3e43a9abacb"
+    },
+    "assets/lpc/spritesheets/head/ears/elven/adult/walk.png": {
+      "bytes": 666,
+      "sha256": "7a04b1d8f5095e53dad4da5d497fb8db7e709eba4ab022d2d5f3000b4c547b66"
+    },
+    "assets/lpc/spritesheets/head/faces/elderly/neutral/emote.png": {
+      "bytes": 1309,
+      "sha256": "541c31475fabd8ee67bad1899b2f04e36a1fc168d5b0ee8e7b5c1dabbb5f4d4d"
+    },
+    "assets/lpc/spritesheets/head/faces/elderly/neutral/idle.png": {
+      "bytes": 1089,
+      "sha256": "cc7a91a4dcd10d26a4b520960e1bd66ef83e0a44cc1887e5e50d4950a446cab2"
+    },
+    "assets/lpc/spritesheets/head/faces/elderly/neutral/jump.png": {
+      "bytes": 1894,
+      "sha256": "594f79263e42dc7ade07911e4c3061eff552f33cd5a99795040a216ebe57400d"
+    },
+    "assets/lpc/spritesheets/head/faces/elderly/neutral/run.png": {
+      "bytes": 2134,
+      "sha256": "6d58727eb933bef6435dd1bf9e54d1e93bce8be895f400f9dde5789f335e0a3f"
+    },
+    "assets/lpc/spritesheets/head/faces/elderly/neutral/sit.png": {
+      "bytes": 1314,
+      "sha256": "1cc5d0505659f3e45ef2597bcb0e76fa9c370858eb57b6542d80a1e4c08f33be"
+    },
+    "assets/lpc/spritesheets/head/faces/elderly/neutral/spellcast.png": {
+      "bytes": 1394,
+      "sha256": "0dfae8c4c549eb1ddaa3f1cd2b811c30887af8bacd033765055f4d8b2abb26cf"
+    },
+    "assets/lpc/spritesheets/head/faces/elderly/neutral/walk.png": {
+      "bytes": 1916,
+      "sha256": "40ede578756e26188176a9880ee2c845cf2b38bc4fd443f55b8f2e82e975b979"
+    },
+    "assets/lpc/spritesheets/head/faces/female/neutral/emote.png": {
+      "bytes": 1248,
+      "sha256": "021febdf3d3b85d3a81b99830d16b60a2c69b1e4b8f8fdda503e06384844bdac"
+    },
+    "assets/lpc/spritesheets/head/faces/female/neutral/idle.png": {
+      "bytes": 1103,
+      "sha256": "11ae699b48555d4a93ff38ab63f7aaf666b77498751785202a63d3c118322804"
+    },
+    "assets/lpc/spritesheets/head/faces/female/neutral/jump.png": {
+      "bytes": 1731,
+      "sha256": "304eb741d4f717c949f57293b320fc96a20845c143432fa066310e698a73fd9c"
+    },
+    "assets/lpc/spritesheets/head/faces/female/neutral/run.png": {
+      "bytes": 2019,
+      "sha256": "25918bf8059154bb4058c544f5dd3e8cbca359d13dc4b6b291e2555378fa9e9f"
+    },
+    "assets/lpc/spritesheets/head/faces/female/neutral/sit.png": {
+      "bytes": 1202,
+      "sha256": "5241c04f729966202c57f43b2ec6a705aade8f4e953e17c4e7f00b034f7833b8"
+    },
+    "assets/lpc/spritesheets/head/faces/female/neutral/spellcast.png": {
+      "bytes": 1216,
+      "sha256": "cc6c55dec0ecdbea45900a3b719782453dad7b575446686333388d98a0f5ed38"
+    },
+    "assets/lpc/spritesheets/head/faces/female/neutral/walk.png": {
+      "bytes": 1938,
+      "sha256": "d0323ff601ed07203bc64a37dfdd08bf5fdb53c2744dd1dda6cd3b07e4d5e068"
+    },
+    "assets/lpc/spritesheets/head/faces/male/neutral/emote.png": {
+      "bytes": 1283,
+      "sha256": "354f51ec2f4d3b81660f2c2f3ca1f51198a5236b7fa08c21f0ae4c63885b27ee"
+    },
+    "assets/lpc/spritesheets/head/faces/male/neutral/idle.png": {
+      "bytes": 1131,
+      "sha256": "cac832a04e22a8f8d0e10b103e77b5483ae5bd79226eb5867cdc5dfe3ee39737"
+    },
+    "assets/lpc/spritesheets/head/faces/male/neutral/jump.png": {
+      "bytes": 1827,
+      "sha256": "c4d3e4122561300515eb3a7d89c418ff42d4ad4de16a7f5147f562eabbf4b7cd"
+    },
+    "assets/lpc/spritesheets/head/faces/male/neutral/run.png": {
+      "bytes": 1979,
+      "sha256": "fd49d504dc80396ea5885763b4e8b162446596da4fbb425d7f51b18aafa7015e"
+    },
+    "assets/lpc/spritesheets/head/faces/male/neutral/sit.png": {
+      "bytes": 1233,
+      "sha256": "9777d3ca5e7cb4fb903db84cc44d7a0908de790a59400df5cbabb68c563a9c9e"
+    },
+    "assets/lpc/spritesheets/head/faces/male/neutral/spellcast.png": {
+      "bytes": 1364,
+      "sha256": "931d2d3cb83061128a9eb7e6e79dc4862cc09bf44f5a3392994089976b8032c9"
+    },
+    "assets/lpc/spritesheets/head/faces/male/neutral/walk.png": {
+      "bytes": 1937,
+      "sha256": "fdf6a898252038e61c3d0b582795df87b04afb4738c6ca1eefda2e317b16fe25"
+    },
+    "assets/lpc/spritesheets/head/heads/human/female/emote.png": {
+      "bytes": 1114,
+      "sha256": "7c5344638ab3a1b30686fb0420c7d23720f0ccbc5ef9fd5777ec6279b5ff4f56"
+    },
+    "assets/lpc/spritesheets/head/heads/human/female/idle.png": {
+      "bytes": 844,
+      "sha256": "a225e256118c2a5a060d3f8d577e710079322ee0afc8e04e31f65441069e9d87"
+    },
+    "assets/lpc/spritesheets/head/heads/human/female/jump.png": {
+      "bytes": 1645,
+      "sha256": "f79df6fe0ce9554908d5242254744a3c9ff01cccb8ffc08091852562ec8da08e"
+    },
+    "assets/lpc/spritesheets/head/heads/human/female/run.png": {
+      "bytes": 1646,
+      "sha256": "2ea26a58f267ec5d8312668138c2240d589c21c2550e2f1bb444a85d47441fe4"
+    },
+    "assets/lpc/spritesheets/head/heads/human/female/sit.png": {
+      "bytes": 1195,
+      "sha256": "8180341d3c2d7208f01e462fc606a81b8a72edacda6f9161fcd37de79b9af135"
+    },
+    "assets/lpc/spritesheets/head/heads/human/female/spellcast.png": {
+      "bytes": 1304,
+      "sha256": "d24e003041fb79a56a19887a7827f52d641827ac588ca1549e5e9152f45c721f"
+    },
+    "assets/lpc/spritesheets/head/heads/human/female/walk.png": {
+      "bytes": 1613,
+      "sha256": "7ac84c09c9e126e5fd0b648c180901e24ddb116c7965cd3db6f2f653947b90bd"
+    },
+    "assets/lpc/spritesheets/head/heads/human/female_elderly/emote.png": {
+      "bytes": 3323,
+      "sha256": "3a9d7b5e2d54271030c9cd7d798e1202fdd7bed9b865a1cdb2c4a97c9ef96317"
+    },
+    "assets/lpc/spritesheets/head/heads/human/female_elderly/idle.png": {
+      "bytes": 2423,
+      "sha256": "1595f3b496bad9a8d018949bca554d36af012c5ee0d203511ac3be44827964fe"
+    },
+    "assets/lpc/spritesheets/head/heads/human/female_elderly/jump.png": {
+      "bytes": 5129,
+      "sha256": "5c2472b986e3601e355a5567e65ba93c9e35eed39b0340e7120a3062e5787641"
+    },
+    "assets/lpc/spritesheets/head/heads/human/female_elderly/run.png": {
+      "bytes": 5362,
+      "sha256": "9b19ca5f59e2afed37afe10a587f4f36f6d8e967aee026cf399968d77f7b83c5"
+    },
+    "assets/lpc/spritesheets/head/heads/human/female_elderly/sit.png": {
+      "bytes": 3775,
+      "sha256": "5a3106ded62e60af0b2597659c6c165328c6f5651b4f9551617ee22d0f004418"
+    },
+    "assets/lpc/spritesheets/head/heads/human/female_elderly/spellcast.png": {
+      "bytes": 3394,
+      "sha256": "a3a2f7961512f84249faa9ceff2c0ace004d71c26bf4d8edd90394c6b8d2cabb"
+    },
+    "assets/lpc/spritesheets/head/heads/human/female_elderly/walk.png": {
+      "bytes": 4485,
+      "sha256": "fa73ae9482c1a697ef4fbdb6e0d8d709d2a80aaff29f31054e5c8c0b3b59a2ca"
+    },
+    "assets/lpc/spritesheets/head/heads/human/male/emote.png": {
+      "bytes": 1231,
+      "sha256": "932c180f4476c83a82cf92c5489c0c58dae6ba2049c406d21e1eca25e9ac98d2"
+    },
+    "assets/lpc/spritesheets/head/heads/human/male/idle.png": {
+      "bytes": 847,
+      "sha256": "10d58c1dd05592dfb436da42e4d6e582058306e1b6c98c85697ad97d1a5b82f4"
+    },
+    "assets/lpc/spritesheets/head/heads/human/male/jump.png": {
+      "bytes": 1654,
+      "sha256": "612f09bf7fc2eacb3e4308ab7697de5af397ab626b2a22450bb67ca7b2556da5"
+    },
+    "assets/lpc/spritesheets/head/heads/human/male/run.png": {
+      "bytes": 1659,
+      "sha256": "5b8eb37b66677a0d65afbc85dd4f5a11156276ce6ff3c5425597e59fa93b3bd1"
+    },
+    "assets/lpc/spritesheets/head/heads/human/male/sit.png": {
+      "bytes": 1210,
+      "sha256": "5902e48ed23e8ce593e4fbf4d9f6371aba0f1d71966441075118fad0d8debd21"
+    },
+    "assets/lpc/spritesheets/head/heads/human/male/spellcast.png": {
+      "bytes": 1303,
+      "sha256": "38000fc6f24431f37f7b88b647bf776ccda4b91c088a3303b8e660e5874d748e"
+    },
+    "assets/lpc/spritesheets/head/heads/human/male/walk.png": {
+      "bytes": 1631,
+      "sha256": "7e863954dc8c3c748d0727415c39888106bdd3779beb2e3b18011a3a9ef3e53c"
+    },
+    "assets/lpc/spritesheets/head/heads/human/male_elderly/emote.png": {
+      "bytes": 3118,
+      "sha256": "3f77d4842b55efcc971d5ebc37328d4b57e7b2a6e1c672b3da1ee50e951b4e06"
+    },
+    "assets/lpc/spritesheets/head/heads/human/male_elderly/idle.png": {
+      "bytes": 2500,
+      "sha256": "135f9ff9f2bf483a327e81911de0a83497065d5370140d467c9cdbdb51f8f041"
+    },
+    "assets/lpc/spritesheets/head/heads/human/male_elderly/jump.png": {
+      "bytes": 5160,
+      "sha256": "ce96a7a90b48c42485ed2c65aea10d362d4b3a399297a6ead5e0065db9bd26a9"
+    },
+    "assets/lpc/spritesheets/head/heads/human/male_elderly/run.png": {
+      "bytes": 5391,
+      "sha256": "69b714f3d898db59f05d406145e5f6a281318103bcb107d0141b14c8d9a2bace"
+    },
+    "assets/lpc/spritesheets/head/heads/human/male_elderly/sit.png": {
+      "bytes": 3790,
+      "sha256": "eb43bf64f13c04a0e8468963a57b137418545e203cd3dfadde792e3127aea334"
+    },
+    "assets/lpc/spritesheets/head/heads/human/male_elderly/spellcast.png": {
+      "bytes": 3436,
+      "sha256": "e94be5cfa4aecea6f8bbc3a3c1ed020086ae8630fd3da2a1526d45e4de5de83a"
+    },
+    "assets/lpc/spritesheets/head/heads/human/male_elderly/walk.png": {
+      "bytes": 4662,
+      "sha256": "4d23bd0f66514d1b56760d576f0a4b73b1c9731976931b4f51434bb0eb45a904"
+    },
+    "assets/lpc/spritesheets/legs/cuffed/male/emote.png": {
+      "bytes": 1142,
+      "sha256": "9dfcd1b7f03fe0afa71e1a0c911ae84c30c1fa9f0f7b40ee07f12d616e3a40f8"
+    },
+    "assets/lpc/spritesheets/legs/cuffed/male/idle.png": {
+      "bytes": 897,
+      "sha256": "db3e652780e311164da2ae62523118962244cccbaf05e55b2a429d70ff507e09"
+    },
+    "assets/lpc/spritesheets/legs/cuffed/male/jump.png": {
+      "bytes": 1816,
+      "sha256": "60be9cbd206bad309a5f3fb09736bffabc4f4982ed6650a56b69a89e8c7cb48e"
+    },
+    "assets/lpc/spritesheets/legs/cuffed/male/run.png": {
+      "bytes": 2880,
+      "sha256": "322bcda19de42dea7436aa681eb1531d68b4a52dbbdad7f7a91a4a8097bb47ed"
+    },
+    "assets/lpc/spritesheets/legs/cuffed/male/sit.png": {
+      "bytes": 1217,
+      "sha256": "8669c192086424f903d97a809ddbede306d2064cd2b52b1d7ce18318ecd56399"
+    },
+    "assets/lpc/spritesheets/legs/cuffed/male/spellcast.png": {
+      "bytes": 1005,
+      "sha256": "f9f63caf1c48b4d238fd2ff1fe695be79499a19fb72a57423c111078d13c1d72"
+    },
+    "assets/lpc/spritesheets/legs/cuffed/male/walk.png": {
+      "bytes": 2632,
+      "sha256": "e30da63131fec2b9ba4d1cbf04846b9529a213348eaf8324a303b0be03b8986b"
+    },
+    "assets/lpc/spritesheets/legs/cuffed/thin/emote.png": {
+      "bytes": 1104,
+      "sha256": "779c27c649fb67b7f4c57bb08451246ebb0c426ccdf9e26ee3d69602577e7778"
+    },
+    "assets/lpc/spritesheets/legs/cuffed/thin/idle.png": {
+      "bytes": 766,
+      "sha256": "02f9baca1ec70a8273829a1fd832d2a7360e6680ab3bc929064e4be473f1751e"
+    },
+    "assets/lpc/spritesheets/legs/cuffed/thin/jump.png": {
+      "bytes": 1721,
+      "sha256": "b2c75f492d0254f4414fde6da18072b240f86cf50595248d513fb11f3e5b39aa"
+    },
+    "assets/lpc/spritesheets/legs/cuffed/thin/run.png": {
+      "bytes": 2612,
+      "sha256": "b09e332202e9eeda4a0faa5ae6fa7174b8dd4270a4ea1468e70e608bff297ffd"
+    },
+    "assets/lpc/spritesheets/legs/cuffed/thin/sit.png": {
+      "bytes": 1082,
+      "sha256": "d4c8ff59871e5f8cda8edcd60de1ffe0f9b4e20e8f10d47456c65f5f14798685"
+    },
+    "assets/lpc/spritesheets/legs/cuffed/thin/spellcast.png": {
+      "bytes": 903,
+      "sha256": "e567c762205a7a4b03842c684cc5e8e7ca7529943e9e07217149ac175f6e06bb"
+    },
+    "assets/lpc/spritesheets/legs/cuffed/thin/walk.png": {
+      "bytes": 2463,
+      "sha256": "47da2bbc5d592ea4dc33ca15611b1f8a1efb2db3035b02b99382a641370bba92"
+    },
+    "assets/lpc/spritesheets/legs/leggings2/male/emote.png": {
+      "bytes": 1136,
+      "sha256": "61fed5ab60c2d89673e584b22b5955dcb51fbf8c4344d9eddfa13f6a8a38b56e"
+    },
+    "assets/lpc/spritesheets/legs/leggings2/male/idle.png": {
+      "bytes": 853,
+      "sha256": "acbf6153c2101f06d7f0687cf8c9d1560456e12d2e69f22eda80abbd36718d54"
+    },
+    "assets/lpc/spritesheets/legs/leggings2/male/jump.png": {
+      "bytes": 1809,
+      "sha256": "20072a53d91596b29d683d59082ee9c677412a851098c1dc74f50f91655f4d6e"
+    },
+    "assets/lpc/spritesheets/legs/leggings2/male/run.png": {
+      "bytes": 2813,
+      "sha256": "babe25fb59049755de6906ccd6f2e868ef127af0b6126003276bc58bf0669af9"
+    },
+    "assets/lpc/spritesheets/legs/leggings2/male/sit.png": {
+      "bytes": 1105,
+      "sha256": "ec7a2a820dbebc6fbddffe4241460f2848d0cb29b4a8aced602655486b0094f1"
+    },
+    "assets/lpc/spritesheets/legs/leggings2/male/spellcast.png": {
+      "bytes": 982,
+      "sha256": "fc408f675ba75f5e4288b3a92b0408c0ca60891b6b7588f87466d875a7f0df84"
+    },
+    "assets/lpc/spritesheets/legs/leggings2/male/walk.png": {
+      "bytes": 2854,
+      "sha256": "1ccae1d503bd0cf0016240a2ed59cb684ce4a560c1fce3abb4547418981cefb3"
+    },
+    "assets/lpc/spritesheets/legs/leggings2/thin/emote.png": {
+      "bytes": 1059,
+      "sha256": "215844117b819241b322e567421a95ba38095264fca6f94af241a8c6dd900d15"
+    },
+    "assets/lpc/spritesheets/legs/leggings2/thin/idle.png": {
+      "bytes": 741,
+      "sha256": "3fc5c439bde1af61a95739aefd233b66a0480fb624fb48732f1d33294df91b30"
+    },
+    "assets/lpc/spritesheets/legs/leggings2/thin/jump.png": {
+      "bytes": 1671,
+      "sha256": "ec8aa943d234db360d160ddbe39e91c1159d0e21294cc1a03dc96d65a42c23fc"
+    },
+    "assets/lpc/spritesheets/legs/leggings2/thin/run.png": {
+      "bytes": 2475,
+      "sha256": "ed30f47aefe2739f368f799dcc2aa18334e2e58d2bfbc02728dd0144058fb561"
+    },
+    "assets/lpc/spritesheets/legs/leggings2/thin/sit.png": {
+      "bytes": 1058,
+      "sha256": "55b7ea9ea9fe0f888bc4e0180f2267ab062bc1809131440b9b3c43df869dcfde"
+    },
+    "assets/lpc/spritesheets/legs/leggings2/thin/spellcast.png": {
+      "bytes": 909,
+      "sha256": "55125d99db9bf375ef30480ef1772b867127ac97355981e44002ae0765d04ce4"
+    },
+    "assets/lpc/spritesheets/legs/leggings2/thin/walk.png": {
+      "bytes": 2436,
+      "sha256": "a0d001d3dc0dabae671f537ae9a1774c2158d924245d7e78cc3ac362d35442f9"
+    },
+    "assets/lpc/spritesheets/legs/pants/male/emote.png": {
+      "bytes": 1064,
+      "sha256": "1d494dc79864c04be97cfb7af7afb99fca2209d1583ae660be30f99d8c205aa8"
+    },
+    "assets/lpc/spritesheets/legs/pants/male/idle.png": {
+      "bytes": 764,
+      "sha256": "717a5133533ccf18ccb3cced5653702be1d21a9ac6002dc9a84f3e1fb80087b3"
+    },
+    "assets/lpc/spritesheets/legs/pants/male/jump.png": {
+      "bytes": 1691,
+      "sha256": "4dbb9c584f7289daeb5eb4b569c974e98b225207b69fdfe649eff9dbac60d3f6"
+    },
+    "assets/lpc/spritesheets/legs/pants/male/run.png": {
+      "bytes": 2601,
+      "sha256": "adffa55d7cccb1c0dac875c34770b0a5305211b6e1d81f42ed9a61220c9f130d"
+    },
+    "assets/lpc/spritesheets/legs/pants/male/sit.png": {
+      "bytes": 1012,
+      "sha256": "993759f60d5098653deb549ae2457f736fe56cadd414d281e981d40c719359a5"
+    },
+    "assets/lpc/spritesheets/legs/pants/male/spellcast.png": {
+      "bytes": 1030,
+      "sha256": "dc8258125b8e065668bc19f2cdf2b255a6031beb979956de3eba569aa8485717"
+    },
+    "assets/lpc/spritesheets/legs/pants/male/walk.png": {
+      "bytes": 2371,
+      "sha256": "2de5a3247743ffa37febdf3464cc0a83e79f64d1028aed410832ee29bea850b6"
+    },
+    "assets/lpc/spritesheets/legs/pants/thin/emote.png": {
+      "bytes": 1006,
+      "sha256": "0544fe4d2acedb20d6308903a2b1f14ef3b879eb185a0eb7c249aaf8594c066f"
+    },
+    "assets/lpc/spritesheets/legs/pants/thin/idle.png": {
+      "bytes": 698,
+      "sha256": "53cbb8f3f67ee809c51e590db1f916a4e6e79bcebab174210b7247c4f8593b09"
+    },
+    "assets/lpc/spritesheets/legs/pants/thin/jump.png": {
+      "bytes": 1630,
+      "sha256": "ac31861241a3cc6b18110a8894e5ba48d4bab1d0116b8713d3d4253f6e7cc44b"
+    },
+    "assets/lpc/spritesheets/legs/pants/thin/run.png": {
+      "bytes": 2341,
+      "sha256": "ccfdc7d80462f2aaeeb71e00a81791711b940654349993ce6f781a960ba5df93"
+    },
+    "assets/lpc/spritesheets/legs/pants/thin/sit.png": {
+      "bytes": 1031,
+      "sha256": "82aad1d1c6eb2761d88538552aa2e86ad140108717ea69426e91541f90439535"
+    },
+    "assets/lpc/spritesheets/legs/pants/thin/spellcast.png": {
+      "bytes": 911,
+      "sha256": "734872f46eec4adfe8bea635b39419dc7af6f1384df08ee868248d93a5987960"
+    },
+    "assets/lpc/spritesheets/legs/pants/thin/walk.png": {
+      "bytes": 2177,
+      "sha256": "064ffc33544e67bd13c574fd8b18a82a51e25d77e628f5eeccbc76a8860b2f83"
+    },
+    "assets/lpc/spritesheets/legs/pants2/male/emote.png": {
+      "bytes": 1122,
+      "sha256": "11106c805eedc54656fe231afd5da1ad443a6db541954e8c05210678843be028"
+    },
+    "assets/lpc/spritesheets/legs/pants2/male/idle.png": {
+      "bytes": 782,
+      "sha256": "0334abc861cca5574f364a288a32b9f49518feb27715af977390b0b411e1194c"
+    },
+    "assets/lpc/spritesheets/legs/pants2/male/jump.png": {
+      "bytes": 1804,
+      "sha256": "79cb3e3c480a6cebd4b164d18e55f84b3b8acd64f3503a8407e3fcbe76c531dd"
+    },
+    "assets/lpc/spritesheets/legs/pants2/male/run.png": {
+      "bytes": 2870,
+      "sha256": "67c9f487f70dc09c4bd5b27bf7f7ed41c7ced14164596b872e2dbc7458f0f8f3"
+    },
+    "assets/lpc/spritesheets/legs/pants2/male/sit.png": {
+      "bytes": 1104,
+      "sha256": "a41f53c501bb774602bb3ff8d1de91364295d607c1f021ddbe2fcff60cf8c219"
+    },
+    "assets/lpc/spritesheets/legs/pants2/male/spellcast.png": {
+      "bytes": 1004,
+      "sha256": "4bab9e82b6f6d203cc6d749422a2277e0bea29c3b096c517280599efd28c6a27"
+    },
+    "assets/lpc/spritesheets/legs/pants2/male/walk.png": {
+      "bytes": 2696,
+      "sha256": "80532e64a8af149bba33a3677be7ab11b16323a4ab7cd263f5f3b73b89a2e6e6"
+    },
+    "assets/lpc/spritesheets/legs/pants2/thin/emote.png": {
+      "bytes": 1100,
+      "sha256": "98abe6fba55040859adef261d3aa5f3eebd43f23ae1eb134d4d74335768dd6e2"
+    },
+    "assets/lpc/spritesheets/legs/pants2/thin/idle.png": {
+      "bytes": 771,
+      "sha256": "ab60c65157ce8103d388462dc2795030ce387a4acef74144164d313976873406"
+    },
+    "assets/lpc/spritesheets/legs/pants2/thin/jump.png": {
+      "bytes": 1707,
+      "sha256": "45865149b42050d551dc3a2f0049eb186be606f474addfc19dc11e4be5722096"
+    },
+    "assets/lpc/spritesheets/legs/pants2/thin/run.png": {
+      "bytes": 2559,
+      "sha256": "4617dd7a5c1a66b5a6c88e88c84ba3b46f8d6c0698ae54eba8005ed84714f7b0"
+    },
+    "assets/lpc/spritesheets/legs/pants2/thin/sit.png": {
+      "bytes": 1068,
+      "sha256": "f99790f1fb19ac3d87a343367378a0f6650f6e1b8c49ad90f0c54d68d79252e8"
+    },
+    "assets/lpc/spritesheets/legs/pants2/thin/spellcast.png": {
+      "bytes": 3163,
+      "sha256": "52e70eb3aad1653f7272ab49f4954165f50f98cfba29c637c625b562bbaaebfa"
+    },
+    "assets/lpc/spritesheets/legs/pants2/thin/walk.png": {
+      "bytes": 2442,
+      "sha256": "ec5f085eab4f3cd1088a97bdde9831f24dbd90adaa3bc66c4adf28f5b386d773"
+    },
+    "assets/lpc/spritesheets/legs/shorts/shorts/male/emote.png": {
+      "bytes": 2510,
+      "sha256": "4e41cda90c14eeaac88566386dba32f3edd458fc11e0aeef16eff217cfd6edaf"
+    },
+    "assets/lpc/spritesheets/legs/shorts/shorts/male/idle.png": {
+      "bytes": 696,
+      "sha256": "3c9d546f1721797e996c3fb2eb0eef3c2cfd121ff1955c7c18d02ed7c88d7e18"
+    },
+    "assets/lpc/spritesheets/legs/shorts/shorts/male/jump.png": {
+      "bytes": 4546,
+      "sha256": "138b43a7af3afcd16a5662b4deb96e4abadc0dac6b7f7d7091faea73f4f7f6a9"
+    },
+    "assets/lpc/spritesheets/legs/shorts/shorts/male/run.png": {
+      "bytes": 5895,
+      "sha256": "f96a272e461870a3889d9cfe6418809fc103d67b453de24c531322a224c6f2f0"
+    },
+    "assets/lpc/spritesheets/legs/shorts/shorts/male/sit.png": {
+      "bytes": 2597,
+      "sha256": "da64757e1e8261bef4865ae6a5c714e9c1125ae887fceb514c981703382c3a39"
+    },
+    "assets/lpc/spritesheets/legs/shorts/shorts/male/spellcast.png": {
+      "bytes": 865,
+      "sha256": "c35996604032f7f1ba5122128b8a80567cb9c81657aa201986f6d9b02b451221"
+    },
+    "assets/lpc/spritesheets/legs/shorts/shorts/male/walk.png": {
+      "bytes": 5147,
+      "sha256": "1d72031ba3af2d0e7a41d7148556b51641ba2dedb8f12554c60cc22c3e78781a"
+    },
+    "assets/lpc/spritesheets/legs/shorts/shorts/thin/emote.png": {
+      "bytes": 865,
+      "sha256": "14ec1363007358f7c75b74aede954c45030ae4a683016e1dfdc567380af76576"
+    },
+    "assets/lpc/spritesheets/legs/shorts/shorts/thin/idle.png": {
+      "bytes": 644,
+      "sha256": "00d8623d915d6065d0939b86a6b50ca2216fd7e956e022e3c62062a7ac176c37"
+    },
+    "assets/lpc/spritesheets/legs/shorts/shorts/thin/jump.png": {
+      "bytes": 1296,
+      "sha256": "04e83a3a18b49036815006628fe11370ecc67e4e55102f6f844c4b8202c3f123"
+    },
+    "assets/lpc/spritesheets/legs/shorts/shorts/thin/run.png": {
+      "bytes": 1842,
+      "sha256": "3c0c5fb7a0de976afd54e9fc99671943b9b317ae019c4bee1c023b36e9ed2754"
+    },
+    "assets/lpc/spritesheets/legs/shorts/shorts/thin/sit.png": {
+      "bytes": 729,
+      "sha256": "f06af07a6bade66f895689b74388c3665757b5462b7da1f22f3f42909d18f635"
+    },
+    "assets/lpc/spritesheets/legs/shorts/shorts/thin/spellcast.png": {
+      "bytes": 789,
+      "sha256": "3c6240dc2b4bf6e31f99eadfcef67a6529927fd83f4d0d891854c5c067f4ab42"
+    },
+    "assets/lpc/spritesheets/legs/shorts/shorts/thin/walk.png": {
+      "bytes": 1899,
+      "sha256": "5cecbc6bf4922c65f737e67e2dbb98ca6e154513614d4ce2097abe4aec502ba8"
+    },
+    "assets/lpc/spritesheets/shield/heater/revised/wood/bg/idle.png": {
+      "bytes": 674,
+      "sha256": "d8a1d28fc502fc89586d730f598b39d7ca4bde596a64ebd16c88fb778464684e"
+    },
+    "assets/lpc/spritesheets/shield/heater/revised/wood/bg/idle/brown.png": {
+      "bytes": 538,
+      "sha256": "cc97173f0bd2dfb06c5aebbf190b22c188e91aff3fad68050deba62a08d9a53c"
+    },
+    "assets/lpc/spritesheets/shield/heater/revised/wood/bg/jump.png": {
+      "bytes": 2162,
+      "sha256": "18c7a050fc78cd87db40655617924b585e5061edf24cdb8fa7e849a43bc72984"
+    },
+    "assets/lpc/spritesheets/shield/heater/revised/wood/bg/jump/brown.png": {
+      "bytes": 1217,
+      "sha256": "928064171f529eb0a2173a2481487a2aa80150636b8257e37c6b6d6a9fe4d3f9"
+    },
+    "assets/lpc/spritesheets/shield/heater/revised/wood/bg/run.png": {
+      "bytes": 2865,
+      "sha256": "7b7f2ce9f352466f7eda02db1abb704a7f04aca98b9bec1626a536c943f6db9e"
+    },
+    "assets/lpc/spritesheets/shield/heater/revised/wood/bg/run/brown.png": {
+      "bytes": 1934,
+      "sha256": "4133840b5f40c776a289d441684999e51bedcaf7354823e70ed909add7b5fe6d"
+    },
+    "assets/lpc/spritesheets/shield/heater/revised/wood/bg/spellcast.png": {
+      "bytes": 1298,
+      "sha256": "ef7d872c79b5f3d73c5860efb1213aa876dfdf7537e0a6e305a536f6898b728a"
+    },
+    "assets/lpc/spritesheets/shield/heater/revised/wood/bg/spellcast/brown.png": {
+      "bytes": 647,
+      "sha256": "30c99e92b603baaeb6692c032f172541c18ca102f856d97385cd367275d141c2"
+    },
+    "assets/lpc/spritesheets/shield/heater/revised/wood/bg/walk.png": {
+      "bytes": 2455,
+      "sha256": "e734677f5cd6945972dd6615595da8bcbe21a7e2d2670ef006880c46b55e2384"
+    },
+    "assets/lpc/spritesheets/shield/heater/revised/wood/bg/walk/brown.png": {
+      "bytes": 1977,
+      "sha256": "0b0949239d9876f3d9f0c4a1c700544c2ab4ef164d6c36a70cba79cf8be786f5"
+    },
+    "assets/lpc/spritesheets/shield/heater/revised/wood/fg/idle.png": {
+      "bytes": 747,
+      "sha256": "8be08dc8ce38c591fd0d5b1909b36576d55bf7580fbc9598fdfda2d8f5cd5dbd"
+    },
+    "assets/lpc/spritesheets/shield/heater/revised/wood/fg/idle/brown.png": {
+      "bytes": 561,
+      "sha256": "378f582bff989a8d4d05c6e3fa622099e483fe4f7b628a6cb1d3a763339f09e3"
+    },
+    "assets/lpc/spritesheets/shield/heater/revised/wood/fg/jump.png": {
+      "bytes": 1146,
+      "sha256": "73c5713c1a8350b04b043dfd13a32146bd7d831f0e83644c02972d7a7445b231"
+    },
+    "assets/lpc/spritesheets/shield/heater/revised/wood/fg/jump/brown.png": {
+      "bytes": 760,
+      "sha256": "869bf0838005755253384b5815ea3b714b5d4860e2de422ec049eee69fec46c7"
+    },
+    "assets/lpc/spritesheets/shield/heater/revised/wood/fg/run.png": {
+      "bytes": 1284,
+      "sha256": "4e0e92d476ca448f65d20ec4ad9a0c9b1a9bc1d1647952efa211b73df577ed8b"
+    },
+    "assets/lpc/spritesheets/shield/heater/revised/wood/fg/run/brown.png": {
+      "bytes": 738,
+      "sha256": "efaa919a8598c6c8c7bb3e6f36be7cd2e769591b5829fd9a0224883bf6d7c808"
+    },
+    "assets/lpc/spritesheets/shield/heater/revised/wood/fg/spellcast.png": {
+      "bytes": 941,
+      "sha256": "9c317867894fa97a7af1ef53184ccf29e2752d25633ef393178a8a1479407afe"
+    },
+    "assets/lpc/spritesheets/shield/heater/revised/wood/fg/spellcast/brown.png": {
+      "bytes": 523,
+      "sha256": "58d94aeccacbc83927f8c89f5d40ccc1e8045f788941cb1823038e1767c2be54"
+    },
+    "assets/lpc/spritesheets/shield/heater/revised/wood/fg/walk.png": {
+      "bytes": 1991,
+      "sha256": "821dd9694e1c744fabdf4887f7f5389c5f3946c7b9c142470b207373e16aa198"
+    },
+    "assets/lpc/spritesheets/shield/heater/revised/wood/fg/walk/brown.png": {
+      "bytes": 1337,
+      "sha256": "7fda56ede31dbe1bad6237f7294e89094c34400da455053bd7b92607743185da"
+    },
+    "assets/lpc/spritesheets/torso/clothes/longsleeve/longsleeve/female/emote.png": {
+      "bytes": 3617,
+      "sha256": "904692fc4cb6abe73e57049470cad2c667f53952e35fdf20f46cfdb9997290bb"
+    },
+    "assets/lpc/spritesheets/torso/clothes/longsleeve/longsleeve/female/idle.png": {
+      "bytes": 3379,
+      "sha256": "58089af57af0e888117d8d7e9b9bdcefaab23edaaeec09b6d22cd9f5e43036e5"
+    },
+    "assets/lpc/spritesheets/torso/clothes/longsleeve/longsleeve/female/jump.png": {
+      "bytes": 9220,
+      "sha256": "823b6f2763a1df51200ac5355c1dd96669a4ba332d01fd7c12fe9b7779813501"
+    },
+    "assets/lpc/spritesheets/torso/clothes/longsleeve/longsleeve/female/run.png": {
+      "bytes": 8293,
+      "sha256": "aa9b4ade82dfde1161edeb2ef8b50a9c9cef612235b96255294a487b9efad8a3"
+    },
+    "assets/lpc/spritesheets/torso/clothes/longsleeve/longsleeve/female/sit.png": {
+      "bytes": 3605,
+      "sha256": "8c7b2bc1e8f0d29d31271d704e28ee925ebc45bc53c294a113b1204da0be5fe4"
+    },
+    "assets/lpc/spritesheets/torso/clothes/longsleeve/longsleeve/female/spellcast.png": {
+      "bytes": 5321,
+      "sha256": "1902718971685dc666e0d99a434457259723ef3d56492cf53fd705e71a30e529"
+    },
+    "assets/lpc/spritesheets/torso/clothes/longsleeve/longsleeve/female/walk.png": {
+      "bytes": 6199,
+      "sha256": "6833ea1facfa45d07356a3b85ac022742db916f677c0a20474719aad61a13bc8"
+    },
+    "assets/lpc/spritesheets/torso/clothes/longsleeve/longsleeve/male/emote.png": {
+      "bytes": 4722,
+      "sha256": "75db1fccf2d6ceed2a298ccc5e0c980b7a6eef4585c1590f3c86666584300269"
+    },
+    "assets/lpc/spritesheets/torso/clothes/longsleeve/longsleeve/male/idle.png": {
+      "bytes": 2291,
+      "sha256": "c543a71e589b7a7142b860813fed42a3752e71b8fa074058796afb1f7772d807"
+    },
+    "assets/lpc/spritesheets/torso/clothes/longsleeve/longsleeve/male/jump.png": {
+      "bytes": 8138,
+      "sha256": "52af4bdacf6a5715a9fc98f904f880cdc75e914081faa104e1218a0b48f345e7"
+    },
+    "assets/lpc/spritesheets/torso/clothes/longsleeve/longsleeve/male/run.png": {
+      "bytes": 12080,
+      "sha256": "cb559cd9619c8a7399caba47a9ac6bb7146ebd45db7fee8a3cb811939392b13b"
+    },
+    "assets/lpc/spritesheets/torso/clothes/longsleeve/longsleeve/male/sit.png": {
+      "bytes": 4651,
+      "sha256": "151c715412c988c4d3de1dac42c06b1c9eb468f93971fa5f03a8ea8dfb17d9b7"
+    },
+    "assets/lpc/spritesheets/torso/clothes/longsleeve/longsleeve/male/spellcast.png": {
+      "bytes": 5209,
+      "sha256": "25aea2b07fff6d6849b424061cd651dd2758c21b2a2201e61f65dece165f07dc"
+    },
+    "assets/lpc/spritesheets/torso/clothes/longsleeve/longsleeve/male/walk.png": {
+      "bytes": 6046,
+      "sha256": "8b1c79d535d7a233371c9398ca51b196aa8fdf06117bd0eafd7fbcbf438d711b"
+    },
+    "assets/lpc/spritesheets/torso/clothes/longsleeve/longsleeve2_cardigan/female/emote.png": {
+      "bytes": 1491,
+      "sha256": "1ff0c3a3cc1eea20717125a32e728956f153183847013a3723ee1f33f6b04031"
+    },
+    "assets/lpc/spritesheets/torso/clothes/longsleeve/longsleeve2_cardigan/female/idle.png": {
+      "bytes": 1042,
+      "sha256": "908ac13d04b82ea3568da8e60c985919a0ad1895e5e3c333ba458b30be8f8e36"
+    },
+    "assets/lpc/spritesheets/torso/clothes/longsleeve/longsleeve2_cardigan/female/jump.png": {
+      "bytes": 2272,
+      "sha256": "65d324e43502516b8f984f12d42d17b5fe12f3c185a3f634a39f602264e6b9ee"
+    },
+    "assets/lpc/spritesheets/torso/clothes/longsleeve/longsleeve2_cardigan/female/run.png": {
+      "bytes": 3002,
+      "sha256": "eab1017fc2b0d0985ac3449347fa7675ad1f7e73fd1a49b5d2d6a7afc4edfc03"
+    },
+    "assets/lpc/spritesheets/torso/clothes/longsleeve/longsleeve2_cardigan/female/sit.png": {
+      "bytes": 1453,
+      "sha256": "c6e24d657ed4e3c703deb9d8bca787ef99668aaedc53f69ab19528e209b05ad8"
+    },
+    "assets/lpc/spritesheets/torso/clothes/longsleeve/longsleeve2_cardigan/female/spellcast.png": {
+      "bytes": 2069,
+      "sha256": "4769329a9477fd202e981c7ac1a85b1364f51449643d6c905725086abce9e22a"
+    },
+    "assets/lpc/spritesheets/torso/clothes/longsleeve/longsleeve2_cardigan/female/walk.png": {
+      "bytes": 2837,
+      "sha256": "0ba3fe357fafc384d08de8262317d02f1f6e6d4642aa19b8b3f9840d462369b3"
+    },
+    "assets/lpc/spritesheets/torso/clothes/longsleeve/longsleeve2_cardigan/male/emote.png": {
+      "bytes": 5482,
+      "sha256": "378d3545ca0d30220875b51fe6d7279e68c555f25f735be584b9672838ff39c3"
+    },
+    "assets/lpc/spritesheets/torso/clothes/longsleeve/longsleeve2_cardigan/male/idle.png": {
+      "bytes": 3429,
+      "sha256": "42f08aa82fe0f7c61016bb12bca5954942840c516311ee9ee48751ffe68e4a08"
+    },
+    "assets/lpc/spritesheets/torso/clothes/longsleeve/longsleeve2_cardigan/male/jump.png": {
+      "bytes": 9802,
+      "sha256": "51013fc128fc7b8d362afc36a22cb9623b45a45c24279a75d3831d2048cfd75b"
+    },
+    "assets/lpc/spritesheets/torso/clothes/longsleeve/longsleeve2_cardigan/male/run.png": {
+      "bytes": 13875,
+      "sha256": "c1387be93417acebb3c23ec16e971d714fc4f1bf4f5f12752febe88dc6044692"
+    },
+    "assets/lpc/spritesheets/torso/clothes/longsleeve/longsleeve2_cardigan/male/sit.png": {
+      "bytes": 5251,
+      "sha256": "a613fa7978cae055b281db5d2426198362e39f499479774ea85e41961c5517d5"
+    },
+    "assets/lpc/spritesheets/torso/clothes/longsleeve/longsleeve2_cardigan/male/spellcast.png": {
+      "bytes": 6939,
+      "sha256": "c2dc70059293427922049b00634a2f3457ed932f5f123d32f5fe1a18793920d4"
+    },
+    "assets/lpc/spritesheets/torso/clothes/longsleeve/longsleeve2_cardigan/male/walk.png": {
+      "bytes": 9618,
+      "sha256": "d29f452e7d89404514a3992ef0d48ecdd7df262b819a04735cbc4c889f762202"
+    },
+    "assets/lpc/spritesheets/torso/clothes/longsleeve/longsleeve2_polo/female/emote.png": {
+      "bytes": 1477,
+      "sha256": "897e5f2593a1287e55f7684bc3d0a7a3f2b7895d61db8c66f4912bda07a214dd"
+    },
+    "assets/lpc/spritesheets/torso/clothes/longsleeve/longsleeve2_polo/female/idle.png": {
+      "bytes": 968,
+      "sha256": "542e1a94c6b7855be62ab7caf999ca276b9d84a64dc2140f5b7a4c3740ca2367"
+    },
+    "assets/lpc/spritesheets/torso/clothes/longsleeve/longsleeve2_polo/female/jump.png": {
+      "bytes": 2308,
+      "sha256": "93dfc846cf79376649d4b7ba915c767340eb7352a3b8c38e49cc2fa18d707bb8"
+    },
+    "assets/lpc/spritesheets/torso/clothes/longsleeve/longsleeve2_polo/female/run.png": {
+      "bytes": 3163,
+      "sha256": "de039e31063b89f99e10bcf9137df6f9cf87cf3b310603f90c55aa4a3e3dc091"
+    },
+    "assets/lpc/spritesheets/torso/clothes/longsleeve/longsleeve2_polo/female/sit.png": {
+      "bytes": 1387,
+      "sha256": "45da5f057eab256db042443d76ffac158fd19a6e8bcfd162ccfa3bb3c0c78100"
+    },
+    "assets/lpc/spritesheets/torso/clothes/longsleeve/longsleeve2_polo/female/spellcast.png": {
+      "bytes": 2221,
+      "sha256": "f74874d7b051d4bf86b85027a175e139065e4c8e7be21f6b5d10890810a7324d"
+    },
+    "assets/lpc/spritesheets/torso/clothes/longsleeve/longsleeve2_polo/female/walk.png": {
+      "bytes": 2900,
+      "sha256": "86212bed71e55b9e7894c99564670444fb9e974a21b66945b20da68b052cbc14"
+    },
+    "assets/lpc/spritesheets/torso/clothes/longsleeve/longsleeve2_polo/male/emote.png": {
+      "bytes": 5340,
+      "sha256": "3ed34f1089e0a82856537cc918414df0c5f7f88d09b7996b2656e1ea3173b9a3"
+    },
+    "assets/lpc/spritesheets/torso/clothes/longsleeve/longsleeve2_polo/male/idle.png": {
+      "bytes": 3406,
+      "sha256": "7f1049881e62aa58484e6350a0a78cf2145fb4bcaafafb3d45406d2093cdbc6e"
+    },
+    "assets/lpc/spritesheets/torso/clothes/longsleeve/longsleeve2_polo/male/jump.png": {
+      "bytes": 9851,
+      "sha256": "905d4b7134b2f2d12d213c0909efc5fe2a502d974ef46176a3a143ee9beb02d5"
+    },
+    "assets/lpc/spritesheets/torso/clothes/longsleeve/longsleeve2_polo/male/run.png": {
+      "bytes": 13612,
+      "sha256": "57727295808bddeaf71ef3ef9342341f98cb7fc14f796276f8a356486fe71a94"
+    },
+    "assets/lpc/spritesheets/torso/clothes/longsleeve/longsleeve2_polo/male/sit.png": {
+      "bytes": 5309,
+      "sha256": "c1a23b83944a2f20eeeaef10507edbee48bce2e3850b37223e998ec789ae61a9"
+    },
+    "assets/lpc/spritesheets/torso/clothes/longsleeve/longsleeve2_polo/male/spellcast.png": {
+      "bytes": 6990,
+      "sha256": "a12da5b9926277ea8b4c1eb8784adde678fbdf0c7e88fa7ddc65b79baf4c2733"
+    },
+    "assets/lpc/spritesheets/torso/clothes/longsleeve/longsleeve2_polo/male/walk.png": {
+      "bytes": 9645,
+      "sha256": "aebbc80a3533b795de8589690b05299d161d1d232fc888849277b10e00ea1e3d"
+    },
+    "assets/lpc/spritesheets/torso/clothes/shortsleeve/tshirt/female/emote.png": {
+      "bytes": 1277,
+      "sha256": "2534bad5ab80bd47fbf957912e696a106d037cf4dcad6825d46e65f1263a1902"
+    },
+    "assets/lpc/spritesheets/torso/clothes/shortsleeve/tshirt/female/idle.png": {
+      "bytes": 990,
+      "sha256": "6b4faaeac19f7235d212ec9fbc26cdd9c878cd753d69ef0a02912a66030b50de"
+    },
+    "assets/lpc/spritesheets/torso/clothes/shortsleeve/tshirt/female/jump.png": {
+      "bytes": 1937,
+      "sha256": "a4ff3cb682f984e23343a3805ed4d5ecabb58665d90e112c57510e1e70fdc705"
+    },
+    "assets/lpc/spritesheets/torso/clothes/shortsleeve/tshirt/female/run.png": {
+      "bytes": 2683,
+      "sha256": "1184abaf892e4ccc4db03ce83b02d4a6af205162d31af5cd539233a6d400a564"
+    },
+    "assets/lpc/spritesheets/torso/clothes/shortsleeve/tshirt/female/sit.png": {
+      "bytes": 1311,
+      "sha256": "420ddc132604c3ee32dc390605b8573b93ebf65000c01d1afc0cb97ff9856620"
+    },
+    "assets/lpc/spritesheets/torso/clothes/shortsleeve/tshirt/female/spellcast.png": {
+      "bytes": 1605,
+      "sha256": "e36946bbcd048dc010b265b55b3910091057e7e94cf6da20defe2d17130a815b"
+    },
+    "assets/lpc/spritesheets/torso/clothes/shortsleeve/tshirt/female/walk.png": {
+      "bytes": 2319,
+      "sha256": "b427b289323857107abc67c69a5afe38250edee717ebf769a7d776172086adb0"
+    },
+    "assets/lpc/spritesheets/torso/clothes/shortsleeve/tshirt/male/emote.png": {
+      "bytes": 3166,
+      "sha256": "0916b33b3a6800c2e7ae244699efcde7618bddf80edbda33b6e20384b26af86d"
+    },
+    "assets/lpc/spritesheets/torso/clothes/shortsleeve/tshirt/male/idle.png": {
+      "bytes": 2320,
+      "sha256": "d2452a1bd4f4cc612fa3e0c91365b121b74ae7462855f5b2372987f7ba4173d8"
+    },
+    "assets/lpc/spritesheets/torso/clothes/shortsleeve/tshirt/male/jump.png": {
+      "bytes": 5882,
+      "sha256": "d99e04e97ab820a9a3e6e7838388d921f3f59d0ca1435e38b6a04150ea4a1165"
+    },
+    "assets/lpc/spritesheets/torso/clothes/shortsleeve/tshirt/male/run.png": {
+      "bytes": 7900,
+      "sha256": "822d595731af2a9d80a84884a2988963208281c1683e95cf574af4cd4f4797de"
+    },
+    "assets/lpc/spritesheets/torso/clothes/shortsleeve/tshirt/male/sit.png": {
+      "bytes": 3769,
+      "sha256": "8b238e45182c23f2ef421f439a4230f5050ae9858c9bb36e8e4ef72067b93623"
+    },
+    "assets/lpc/spritesheets/torso/clothes/shortsleeve/tshirt/male/spellcast.png": {
+      "bytes": 4673,
+      "sha256": "d9d5df8484aa405c27d649586d3f46f43c8448f389c8e54f3d6d7633992cfede"
+    },
+    "assets/lpc/spritesheets/torso/clothes/shortsleeve/tshirt/male/walk.png": {
+      "bytes": 7477,
+      "sha256": "3cabfc598bdff51b1db092bffff42f646f11c897bdad8320a9385f5b70a1a7a9"
+    },
+    "assets/lpc/spritesheets/torso/clothes/sleeveless/sleeveless2/female/emote.png": {
+      "bytes": 966,
+      "sha256": "c8a78704a5f3d3a65c856e67f534d422e124bd02f33dc10954eebcab76367802"
+    },
+    "assets/lpc/spritesheets/torso/clothes/sleeveless/sleeveless2/female/idle.png": {
+      "bytes": 809,
+      "sha256": "99d3c1cf70988833ab916066dda6726eafd8e4c598a2e78a88ca82a3b2146898"
+    },
+    "assets/lpc/spritesheets/torso/clothes/sleeveless/sleeveless2/female/jump.png": {
+      "bytes": 3842,
+      "sha256": "5b9755e10b57a351ca08df09156db7939a41e324359889395c4fc4b9c439142e"
+    },
+    "assets/lpc/spritesheets/torso/clothes/sleeveless/sleeveless2/female/run.png": {
+      "bytes": 2250,
+      "sha256": "549d07db510c3c263fa700a5cb90be57da1c38570f00f2fae80fc0fc6d5286f5"
+    },
+    "assets/lpc/spritesheets/torso/clothes/sleeveless/sleeveless2/female/sit.png": {
+      "bytes": 1053,
+      "sha256": "9d130afe0479310343fe731f6d491586c47e3d81e3fc6d41b8ed533ecb1b7d7d"
+    },
+    "assets/lpc/spritesheets/torso/clothes/sleeveless/sleeveless2/female/spellcast.png": {
+      "bytes": 1097,
+      "sha256": "182b45a356e8778df45705019847ba78fd0f90615620ac8cca03526b4c9e1c04"
+    },
+    "assets/lpc/spritesheets/torso/clothes/sleeveless/sleeveless2/female/walk.png": {
+      "bytes": 1903,
+      "sha256": "fab759f5fba4526f9c7a5be90bdcbfb4805417c4d4c6bd264285eeb623c61daf"
+    },
+    "assets/lpc/spritesheets/torso/clothes/sleeveless/sleeveless2/male/emote.png": {
+      "bytes": 2676,
+      "sha256": "b492a1e491689e9c04b9d8195adcfe00d3e8ae1dad308ce3a2ac7ad7e876c959"
+    },
+    "assets/lpc/spritesheets/torso/clothes/sleeveless/sleeveless2/male/idle.png": {
+      "bytes": 1977,
+      "sha256": "6afa5c5c53bd5eaefb83fbd66406dafa4fa532c077e5b5a64eddec3186d1db8f"
+    },
+    "assets/lpc/spritesheets/torso/clothes/sleeveless/sleeveless2/male/jump.png": {
+      "bytes": 4828,
+      "sha256": "bb475837b7dc3a0a2a64f9ada142307c0b0a9f8f090a82f8a5ea0279e6ff6b76"
+    },
+    "assets/lpc/spritesheets/torso/clothes/sleeveless/sleeveless2/male/run.png": {
+      "bytes": 5831,
+      "sha256": "7e1bbd03cf88d2c5571da33fb9d2cc406b7db74669d4c107323017f285b85631"
+    },
+    "assets/lpc/spritesheets/torso/clothes/sleeveless/sleeveless2/male/sit.png": {
+      "bytes": 2949,
+      "sha256": "4e48d202c92f04f2206674db74af93c08ab52b10d874fed62c530e0b395b0342"
+    },
+    "assets/lpc/spritesheets/torso/clothes/sleeveless/sleeveless2/male/spellcast.png": {
+      "bytes": 3227,
+      "sha256": "7d16e2be65aa19f0361964acfe385f1f16a5a41034228b3292e95becafc35281"
+    },
+    "assets/lpc/spritesheets/torso/clothes/sleeveless/sleeveless2/male/walk.png": {
+      "bytes": 5309,
+      "sha256": "f532eab031a7c4b8e47634e60138e0be32f568659381bda1038689a0fca94836"
+    },
+    "docs/DEVELOPMENT.md": {
+      "bytes": 1982,
+      "sha256": "20d6e9bfb3f6d7a16e0f97e24b8edbf396061c46cfb2a045fb27cd6474b65e43"
+    },
+    "docs/INSTALLATION.md": {
+      "bytes": 1260,
+      "sha256": "fd22ff908d0a60b2dfae685939234e92f4a71ec926bdd6c69f2408d0735ca4ef"
+    },
+    "docs/STATUS.md": {
+      "bytes": 2606,
+      "sha256": "3099e74c938782a6290c0dbf1ae7f15e664a42c3c2c23150cf323d9c578ea86e"
+    },
+    "docs/UPSTREAM.md": {
+      "bytes": 4630,
+      "sha256": "53b0529b2ef4749b23d0c7b1cb7517cac85df74e7f8d08f2a8f5be78b7ed36fe"
+    },
+    "docs/USER_GUIDE.md": {
+      "bytes": 7071,
+      "sha256": "1a4c98a3eef857402f9dda8baa87f08630db3fb0cbfdef9646d190837366d72d"
+    },
+    "docs/media/README.md": {
+      "bytes": 2087,
+      "sha256": "c769149beac5b81dbad7bd004eb17457203b97ebb7433b6082fc971952de2d99"
+    },
+    "docs/media/cover.svg": {
+      "bytes": 2450,
+      "sha256": "f1a9056945a4b788abb7ad9e720750f37a9b39d5c97701110dd004d48c0cd3ad"
+    },
+    "docs/media/current-party-desktop.png": {
+      "bytes": 78557,
+      "sha256": "de0b4383f6a3eeed8391a652597e1df3f9a646f4a4a023381cab379c2dbb23d6"
+    },
+    "docs/media/current-wardrobe-desktop.png": {
+      "bytes": 121693,
+      "sha256": "3da5233cca39091d06eef5878d6fa5ec1ec3da6239b34b192a3982323f980afa"
+    },
+    "docs/media/current-wardrobe-narrow.png": {
+      "bytes": 67587,
+      "sha256": "87f5b43aa26604afc8d6195b7165a5378986cfddda2601db3f1cab4520b93095"
+    },
+    "docs/media/promo/CREDITS.md": {
+      "bytes": 25140,
+      "sha256": "3158488ecca8686bf0a8cac45c91770c1161d1b7750bcc7ad252765ef63e3ad4"
+    },
+    "docs/media/promo/LICENSE-CC0-1.0.txt": {
+      "bytes": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    "docs/media/promo/LICENSE-OGA-BY-3.0.txt": {
+      "bytes": 18213,
+      "sha256": "a88798a4f7ec10432d3ed2bf92e4a7ecae0db1e4b55f29c160cb8689201efdad"
+    },
+    "docs/media/promo/LICENSE-scenes-MIT.txt": {
+      "bytes": 1088,
+      "sha256": "5da65409e18528b586064f3c70f3a365fb8bc16dd7f258231fd26116dc8f2176"
+    },
+    "docs/media/promo/README.md": {
+      "bytes": 485,
+      "sha256": "adb310dc79e573d0969ebfdf0bfc6027cae37bd9f7a49c513a06ed3bbdc29302"
+    },
+    "docs/media/promo/attribution.json": {
+      "bytes": 48730,
+      "sha256": "8da5e192844bbeb3cc527403dd1b6d039aad0075309ec97b767ebc7701c16b81"
+    },
+    "docs/media/promo/closing.png": {
+      "bytes": 483171,
+      "sha256": "cbcb058f3a0fcb50e144221347fad65431c0ede0fc69769622ce56ad4a0520a2"
+    },
+    "docs/media/promo/lpc-companion-12s.gif": {
+      "bytes": 1591379,
+      "sha256": "bbdbe62f38799f033157e64ca2e2f10f00854bf4952972e560b6434cf1fb39f2"
+    },
+    "docs/media/promo/lpc-companion-12s.mp4": {
+      "bytes": 410213,
+      "sha256": "8edcb489459ce3e42499e8eece3d3ab9ba8c0eabeee16fafcbd9bcd9cd2a0b0e"
+    },
+    "docs/media/promo/party.png": {
+      "bytes": 477614,
+      "sha256": "0aad05fed0bf9e2dba210e5bfda5bd0c0182ce6e4fbe841e14e78530977f4b59"
+    },
+    "docs/media/promo/post-caption.txt": {
+      "bytes": 1027,
+      "sha256": "611889b8bb4e038003393510408f8dae15954bd51ff9ab75f7dea4c30509c827"
+    },
+    "docs/media/promo/poster.png": {
+      "bytes": 471615,
+      "sha256": "c7001dc41c4495f446a7202de1aff40eeb85bc4dee1c6c804f66c26a2ef0371e"
+    },
+    "docs/media/promo/render.json": {
+      "bytes": 1227,
+      "sha256": "2fa90ebe36b50c704907bedb4bbb2d733b2cf1d4eb236bf49b371845f1e326ff"
+    },
+    "docs/media/promo/wardrobe.png": {
+      "bytes": 468850,
+      "sha256": "85fcffb29c0d7cd7ed8ac4a374312abf68e7ceaa006cc2b3f9c13d16f4d5cacb"
+    },
+    "docs/media/studio-desktop.png": {
+      "bytes": 104052,
+      "sha256": "ada4dd476b64dedb980424e6b61a58ca1cbf4149c7c47bacf40546254112ca76"
+    },
+    "docs/media/usage-closet-crown.jpg": {
+      "bytes": 81830,
+      "sha256": "feee3e99be8f1c9e9fcc4a29bdc45d82def991ad134a55c09708bf430d510b04"
+    },
+    "docs/media/usage-emote-cast.jpg": {
+      "bytes": 108227,
+      "sha256": "9f31dccaac7619712dc49206ebb4f46a72ca4a9258910085527f8fd6708d9bca"
+    },
+    "docs/media/usage-tool-payload.jpg": {
+      "bytes": 47336,
+      "sha256": "95e51ca168e8871d2927206df498097f5683eefac42d62e0614dd990753de879"
+    },
+    "extension/manifest.json": {
+      "bytes": 436,
+      "sha256": "59c11cea199fd7cb08efefcd41f122877cf3c9f6b6d642c71ae7120a9b6176a2"
+    },
+    "extension/style.css": {
+      "bytes": 62833,
+      "sha256": "71daa3c01378d40efdbb07ec118313d4786d16f5e458059cdf341d8f3c4ab0e0"
+    },
+    "lpc-runtime.mjs": {
+      "bytes": 4611702,
+      "sha256": "8ab7dc4343957f62dcdd390d950658539407b40f87e649670c6633750843b5c2"
+    },
+    "manifest.json": {
+      "bytes": 453,
+      "sha256": "ef240bae39f108546b709d20fe2f1faad783c05c83e797b3bc9c48d82ff8a1ac"
+    },
+    "package-lock.json": {
+      "bytes": 18889,
+      "sha256": "d334429bb56bde0afec89321eb8fddad08c2684b823569d6adc473289ff375ff"
+    },
+    "package.json": {
+      "bytes": 578,
+      "sha256": "8bb67e018a5456dbe01dd5f0394a13418053013b96b65d15ed1fcea13a994fb9"
+    },
+    "schemas/lpc-source-recipe.schema.json": {
+      "bytes": 4524,
+      "sha256": "34d9dd292e02731cd9ff983c055cfa54e750422a829c0848d30c068d1f3c31af"
+    },
+    "schemas/lpc-source-state.schema.json": {
+      "bytes": 20401,
+      "sha256": "b99a99abb6f72a0c76b38679d5583864551d2a55da3fd87065961440acee01cc"
+    },
+    "schemas/lpc-state.schema.json": {
+      "bytes": 18228,
+      "sha256": "d7f1ece33a01718ab4a3f9ffe0122850057c23ca1138a02b60577262ac4f113b"
+    },
+    "src/adapter/card-namespace-patch.mjs": {
+      "bytes": 1534,
+      "sha256": "711bfad67bf9104da95d7534e668c9488002bcb8e9ef9178dcef00504175a5fb"
+    },
+    "src/adapter/companion-headers.mjs": {
+      "bytes": 2277,
+      "sha256": "91407591a665141f9b2585508a586ed435317b5473578f911671115a647ac2b8"
+    },
+    "src/adapter/context.mjs": {
+      "bytes": 1336,
+      "sha256": "bb5c04be2e95e88a248f987f61ce9fa29aee6a1a0f8a69038c1e262e092ba6c1"
+    },
+    "src/adapter/continuity.mjs": {
+      "bytes": 17298,
+      "sha256": "90fb639726766f00d361daa60cd10816201e1ae359216956dd75c0fe6a208941"
+    },
+    "src/adapter/lifecycle.mjs": {
+      "bytes": 4186,
+      "sha256": "3317c1037f602427639b5378547eb57a4cffd1cefb4a57093c363c48f8861980"
+    },
+    "src/adapter/model-control.mjs": {
+      "bytes": 15392,
+      "sha256": "968619bf92e8498f236d9c832ec9555135c249975291f52df34509d111b451c0"
+    },
+    "src/adapter/preferences.mjs": {
+      "bytes": 3992,
+      "sha256": "870e97729469911e8afadea7e1f84f7701233d21c04723c92e946d532715d633"
+    },
+    "src/adapter/roster-context.mjs": {
+      "bytes": 1829,
+      "sha256": "e33879c10c77f20d336beb544bf7f509a8b5a42a88336b05bea4794d45457547"
+    },
+    "src/adapter/roster-continuity.mjs": {
+      "bytes": 19045,
+      "sha256": "8a13084ccfcf2c8e3d172b5bd56c5f11c4148b994bfa3ed60f11935fafbe19e5"
+    },
+    "src/adapter/roster-storage.mjs": {
+      "bytes": 7990,
+      "sha256": "99c4193fd836942bb4267a35146e2bba3e6f61355cc97af25cf1e2126e57e8fb"
+    },
+    "src/adapter/session.mjs": {
+      "bytes": 1196,
+      "sha256": "b560c979b5c2fb75c7298c79b626a03b46fbb1ba74b5aa8f56025b2126fcdcd2"
+    },
+    "src/adapter/settings.mjs": {
+      "bytes": 529,
+      "sha256": "b317dcdbc96b0df562d0ffd7f76c1e72db42c722931c4a96601fd990dbd92cdc"
+    },
+    "src/adapter/storage.mjs": {
+      "bytes": 10308,
+      "sha256": "9df21c84103510518c470dfd0a7eeb8a96b5d847fdb1aedd6e1cb5eb20c1dcff"
+    },
+    "src/adapter/tool-hub.mjs": {
+      "bytes": 14518,
+      "sha256": "824ecbcdc17038ba46b6dba21fa1abc5b38367ec9850ea61c16563b858890496"
+    },
+    "src/adapter/uuid.mjs": {
+      "bytes": 455,
+      "sha256": "34475ff5d3afe999dd606cc4a98a0c4a4b19c544b856cdbb7b659a5250714d48"
+    },
+    "src/adapter/work-queue.mjs": {
+      "bytes": 255,
+      "sha256": "b99f5ff912b71c673a38ba0e28b4cf96458a783379672fa9ec02205809070758"
+    },
+    "src/catalog/catalog.mjs": {
+      "bytes": 3826,
+      "sha256": "3123bce886b9103a0cb8d282f9f81e54108946257f29887ca0fcf244c11985a5"
+    },
+    "src/catalog/full-catalog.mjs": {
+      "bytes": 25928,
+      "sha256": "f7abb97e65f4edbc9863bd5c15af44dc72a615d56ab7095285fe2312e9eb0473"
+    },
+    "src/catalog/full-color-coverage.mjs": {
+      "bytes": 919,
+      "sha256": "02ed8deb07e8c95801bd4a3a0854583373623695f174313790e00b78b8574c36"
+    },
+    "src/catalog/full-coverage.mjs": {
+      "bytes": 2050,
+      "sha256": "55337ce230a57242eb9c65e1b17c49b6329ec599809c48483b73b9a16dab4da0"
+    },
+    "src/catalog/full-licenses.mjs": {
+      "bytes": 3660,
+      "sha256": "648187f801a469d8f33808a586c058bcb326364a855fcf16a53cbd37f0579c47"
+    },
+    "src/catalog/full-structure.mjs": {
+      "bytes": 357,
+      "sha256": "b1bc890e8a2f6a6ac3c083b26d74c20594e2dd888939b86601e97fd7461ff19a"
+    },
+    "src/catalog/rendering-credits.mjs": {
+      "bytes": 675,
+      "sha256": "e78023e4b558953d7415e8dd9cb3adfcef5c5bc87343b70d41d9df606d1077f3"
+    },
+    "src/catalog/scenes.mjs": {
+      "bytes": 2668,
+      "sha256": "a7272b2a61e02e57a4bce7e5835f8a13e9ac03bee678ec958064a40d0980f912"
+    },
+    "src/catalog/source-availability.mjs": {
+      "bytes": 3553,
+      "sha256": "3e8d2561ac934a082a5e7e801980d9671ecfde263450bdd887ced5e8ac576435"
+    },
+    "src/catalog/source-hurt-phases.mjs": {
+      "bytes": 3435,
+      "sha256": "2036f42c89a673aacea687382efeac6808a6f7f7259a62ea6600f63800cf914b"
+    },
+    "src/catalog/source-layout-preparation.mjs": {
+      "bytes": 1028,
+      "sha256": "11715e18c0e219ec7951cd1a39d5c2817d493c19dd456aeb17524979e845779a"
+    },
+    "src/catalog/source-native-repairs.mjs": {
+      "bytes": 1866,
+      "sha256": "55569cd777c92406ccf0d9e22f47df066fa22d0ce25e4313d64bffd1537d196b"
+    },
+    "src/catalog/source-orientation-phases.mjs": {
+      "bytes": 2813,
+      "sha256": "9670436c31725bfe117181f2fcc184da3c38309ae259936549388703e62a13df"
+    },
+    "src/catalog/source-phase-registry.mjs": {
+      "bytes": 3031,
+      "sha256": "8cfb85efbe4f78efab6d133c79ea86f38f9b4cc0cab895a4c4553fe16b339933"
+    },
+    "src/catalog/source-phase-signatures.mjs": {
+      "bytes": 448,
+      "sha256": "fed8ac396c8cd1a6905bbd707899d34a199282356945275f4e29262880cb96f5"
+    },
+    "src/catalog/source-phases.mjs": {
+      "bytes": 2392,
+      "sha256": "90495a93341810e30856f80b09cf8307c5e6edcc5ec3c3ec9d3e4cf33595f435"
+    },
+    "src/catalog/source-policy.mjs": {
+      "bytes": 2876,
+      "sha256": "b706984f6f44143613fa0e7edc94118db15082c44b77beae1e588e79b7dd43e8"
+    },
+    "src/catalog/source-pose-phases.mjs": {
+      "bytes": 305,
+      "sha256": "66323a74985cf4483839e76ad1c96155ce1149967c034938a39705b255351e47"
+    },
+    "src/catalog/source-preparation-credits.mjs": {
+      "bytes": 2172,
+      "sha256": "ad9d6525268b866b34ca655eaf8c7eca566b2135db55f7e2a3297f944a6c8281"
+    },
+    "src/catalog/source-prop-phases.mjs": {
+      "bytes": 383,
+      "sha256": "a0023231d4f9eb601c7187ebed35a9081e297a6c74503a3fe67bc1c79e8ae3c5"
+    },
+    "src/composition/cache.mjs": {
+      "bytes": 1607,
+      "sha256": "01bca0f51b5813667595c26d5e2f6bc3161357e3a761d55c63386db2b161624f"
+    },
+    "src/composition/composer.mjs": {
+      "bytes": 2360,
+      "sha256": "da9f679889b637249cfe190db0031467f141dc4d5c52f1c792ea1fe8a0bec68c"
+    },
+    "src/composition/full-art-store.mjs": {
+      "bytes": 3863,
+      "sha256": "9757ebaf0d45e42687b9e0267774e1a5cd3ddc26c0204d4b1342a356ebe1db85"
+    },
+    "src/composition/full-composer.mjs": {
+      "bytes": 2457,
+      "sha256": "a84fa8c7945b3e0b807d62144ec39d99f3e372488080504283dcdad01296a2c1"
+    },
+    "src/composition/source-transforms.mjs": {
+      "bytes": 2750,
+      "sha256": "af81c4a23e92ff55ea1c995e1c021473f206153875624810241f6c5170b32b95"
+    },
+    "src/index.mjs": {
+      "bytes": 4735,
+      "sha256": "8c76437d1fd17fcfa0da24b428c7ec1ce2f10b84230dc57e23c17373c7615973"
+    },
+    "src/presentation/adaptive-view.mjs": {
+      "bytes": 10441,
+      "sha256": "c0d722a078f34d9cdc35b8a2f58cd3c2562aa04961acdff4a8530cbefae64c2d"
+    },
+    "src/presentation/animation-sheets.mjs": {
+      "bytes": 1501,
+      "sha256": "df9357854b82547f564bccfe7dee171f3b49680ccab836ae9bb550e2e8d3b9d9"
+    },
+    "src/presentation/browser-composer.mjs": {
+      "bytes": 19709,
+      "sha256": "81b1746c3460d2b5c720d09d3cacba394c72da6e6a427a624584cce2f521cd00"
+    },
+    "src/presentation/closet-ui.mjs": {
+      "bytes": 24258,
+      "sha256": "20c189a4a8df3f78ab5c8405aeec2fb73ef8a6032f9bc1acc42fd69c06fc22cf"
+    },
+    "src/presentation/companion-settings.mjs": {
+      "bytes": 4184,
+      "sha256": "76ca6df99f26cf30ee9471dcd0cd4b67671bd0463d8fb2c0e092f128766f088e"
+    },
+    "src/presentation/companion-view.mjs": {
+      "bytes": 82359,
+      "sha256": "758aec1a7b10559c12158a2601e5371d267e7e24be8c61287b9eafd2e2d8246a"
+    },
+    "src/presentation/floating-launcher.mjs": {
+      "bytes": 17067,
+      "sha256": "6db3bd0f3d29549dafa779098d81ee73d1a42674944e7eaeee4dab8f5cc0e91f"
+    },
+    "src/presentation/full-library.mjs": {
+      "bytes": 3153,
+      "sha256": "56a7c494004117bd6bbe24309d6d60f3e81cf54b2ce8dfd171bfb86376914419"
+    },
+    "src/presentation/full-runtime.mjs": {
+      "bytes": 1780,
+      "sha256": "88945fb488d1957052f53c12e133e56f90d3943284e51c40e90d2339af10f76a"
+    },
+    "src/presentation/molecules.mjs": {
+      "bytes": 13455,
+      "sha256": "8a0c72447570146d4352043f23ee970380284fe41b1dffe91d8de99ec9b4d893"
+    },
+    "src/presentation/no-chat-settings.mjs": {
+      "bytes": 2478,
+      "sha256": "15bb8949c8bb0e1e2c4d6e8e718256e3b56a35c3838f2e83678342c5da45a450"
+    },
+    "src/presentation/outfit-gallery.mjs": {
+      "bytes": 3820,
+      "sha256": "e692d11a2a156c94d5a744ba913b81a9263b12a870f1f3fbc83a1c09336e1c81"
+    },
+    "src/presentation/party-view.mjs": {
+      "bytes": 11907,
+      "sha256": "b6bdaea9e7190dcfa06f42b456abdc5a164d35201defd82e259646c45c6cbe99"
+    },
+    "src/presentation/player.mjs": {
+      "bytes": 6319,
+      "sha256": "9544cbe099f04c157bb91a5060ea055885778df1f1fb3b86406b9b651aa7b263"
+    },
+    "src/presentation/presence.mjs": {
+      "bytes": 1708,
+      "sha256": "49cb2d611d935ea694cbc5b8c0208aa63685fd84c14ef5106c46bb4ec9cbfdde"
+    },
+    "src/presentation/repertoire-ui.mjs": {
+      "bytes": 7762,
+      "sha256": "87c59ba760bfde175138329c0e8bd18eb2f69dd9c5116bba2ec42a6c936c290c"
+    },
+    "src/presentation/roster-workspace.mjs": {
+      "bytes": 22136,
+      "sha256": "c2984e241f8087f34a4078fdaa7d5db22bbfb5b929d72ed6d1a8bbfc1982e643"
+    },
+    "src/presentation/settings-drawer.mjs": {
+      "bytes": 1803,
+      "sha256": "56e59c6682875b93405e10238e2889045139a1123f6837fe5d301b42783a3cfe"
+    },
+    "src/presentation/source-frames.mjs": {
+      "bytes": 2604,
+      "sha256": "c44bf072c98f641873bf1e878677809525cb97b1dac9adc23d9555f8a9741671"
+    },
+    "src/presentation/source-renderer.mjs": {
+      "bytes": 3537,
+      "sha256": "40736c54c79efb21c5bd7da2348b81560a980861873e9c436efeea0ff23217ac"
+    },
+    "src/presentation/source-studio.mjs": {
+      "bytes": 27774,
+      "sha256": "fb9380a1787efe2a9066e798e61ce887c22d52825c0f0a99e3592b31481ad23b"
+    },
+    "src/presentation/source-ui.mjs": {
+      "bytes": 11774,
+      "sha256": "0b47032c93020088dda5b994830fbb984f01bd1fd5a5156785b7a964d525521c"
+    },
+    "src/presentation/source-view.mjs": {
+      "bytes": 36771,
+      "sha256": "dff6f043ff55ec0b3c49c046894eada9016eb13b799156d1c78b6aa84852d9a3"
+    },
+    "src/presentation/stage.mjs": {
+      "bytes": 7150,
+      "sha256": "93b235c006ca088977073b229876ae39a245f7ce0aa92e7670f29df4bc30d746"
+    },
+    "src/state/actions.mjs": {
+      "bytes": 506,
+      "sha256": "997f8573043df8e656c6a6d83c63eb0fb2db4a7393aa43e78358c8d644f9e665"
+    },
+    "src/state/animation-program.mjs": {
+      "bytes": 6412,
+      "sha256": "aed115f397213ca65e9eac9b375babf57026b09516fcbac22a3517f74463fc8d"
+    },
+    "src/state/artwork-licenses.mjs": {
+      "bytes": 740,
+      "sha256": "b9ff6564772e3bc74b8738f9a219a8008e72d497997cd845c4b6093016013b6b"
+    },
+    "src/state/closet.mjs": {
+      "bytes": 16316,
+      "sha256": "72a8952a742bb42b1c34d6b1562407396c7ce1c28e2536c87becd7e607c04baa"
+    },
+    "src/state/combined-schema.mjs": {
+      "bytes": 1046,
+      "sha256": "2ab800ac46492d3bace562d2f9eb3e432d14d03356a6341fd88f523dfc230f51"
+    },
+    "src/state/defaults.mjs": {
+      "bytes": 1199,
+      "sha256": "b83897e176ab8cf087c3797f3a8e39eed646fba16ae28a735ed1c8817802ff90"
+    },
+    "src/state/definition-digest.mjs": {
+      "bytes": 377,
+      "sha256": "da1678895566a7494e75733aa3b59899c10e12e763518e7b01b28831a26ba683"
+    },
+    "src/state/full-generator-import.mjs": {
+      "bytes": 8653,
+      "sha256": "74c94e6f864495618650870b244b269d53a9e3817d34f8ac24e6fe519b4bcc87"
+    },
+    "src/state/full-state.mjs": {
+      "bytes": 7583,
+      "sha256": "ed965e59ddede6cb93f2e29803d170a1e2d12c77f5711a6c456aa0c13386a500"
+    },
+    "src/state/generator-import.mjs": {
+      "bytes": 10344,
+      "sha256": "2ac6979dbbcca2de75b1f8c6457473b494ca1a9727216a5a71ca3dda561da5ff"
+    },
+    "src/state/history.mjs": {
+      "bytes": 8596,
+      "sha256": "0998ad759bf6153187f01b4dd0aeeaad50070478a25bd83b2a792cb81ed727d9"
+    },
+    "src/state/invariants.mjs": {
+      "bytes": 3349,
+      "sha256": "5329c8648f02bb832c37a85bd9715b60b5bfd9230576f590ca587070c43f12fe"
+    },
+    "src/state/model-arguments.mjs": {
+      "bytes": 2970,
+      "sha256": "bfa0abd8d99e8a88bb5d3af8920e6b7baea0e833172e1a3ff48d0c84b10feab8"
+    },
+    "src/state/model-contract.mjs": {
+      "bytes": 21818,
+      "sha256": "c23a96fa44a9eec96723fa48934b37feb1b94d64cdb6cc5a6ebbe3bd0fea0f51"
+    },
+    "src/state/model-schema.mjs": {
+      "bytes": 721,
+      "sha256": "1dda6b48e1748011839d06c64da1d92b190203e1eaf2b9b6ab328084aba27d6f"
+    },
+    "src/state/packages.mjs": {
+      "bytes": 3199,
+      "sha256": "58c81afb5d765cc949ca9e5e5da1905468f8861975a75f09c54e7424d40a2200"
+    },
+    "src/state/party.mjs": {
+      "bytes": 579,
+      "sha256": "4c774c3e17981dabe6efeb6f2c266f739cf0e00ca1904d3d506c4ca3e036e319"
+    },
+    "src/state/portable-assets.mjs": {
+      "bytes": 4572,
+      "sha256": "893cd7c490b42068c8074d730411ac8864932cc8b39cc26af15f0515dd70aab5"
+    },
+    "src/state/portable-packages.mjs": {
+      "bytes": 4549,
+      "sha256": "bf25946bdad948e89bb6edd1f1d09372ab238b8b1f1816d48161e792579c9585"
+    },
+    "src/state/presence.mjs": {
+      "bytes": 1511,
+      "sha256": "60a51081af36993038eaeae7b563ce169804136e1bc2250c8545999a9f779a24"
+    },
+    "src/state/render-transaction.mjs": {
+      "bytes": 755,
+      "sha256": "452970b4af120cd83a367f663ad4074f34211265c9acc94a377bccb2d6d3e4e0"
+    },
+    "src/state/repertoire.mjs": {
+      "bytes": 6737,
+      "sha256": "136d9e949575f27593cc606e0415a239fb0cb11a8d78b25934fb24c09ea2f118"
+    },
+    "src/state/roster.mjs": {
+      "bytes": 1579,
+      "sha256": "b88c3b4d91de62d586dae227d9051d3029993c020f719cf1f089a419e30bb726"
+    },
+    "src/state/source-artwork.mjs": {
+      "bytes": 1430,
+      "sha256": "9fe355641688c5b52960fa5d6a4a0cf14c7981c66e4b9c0d54ed04f13a62bdd4"
+    },
+    "src/state/source-contracts.mjs": {
+      "bytes": 1201,
+      "sha256": "6f9c742c314f37fa24c44744708ebdab25a1a0235533d4aca31e801e260b6097"
+    },
+    "src/state/source-draft.mjs": {
+      "bytes": 8578,
+      "sha256": "26311db9e90b2436d7f4ea36252359ad1d1e8401cadeab63adeaa6d9fc218eaf"
+    },
+    "src/state/source-model-contract.mjs": {
+      "bytes": 11548,
+      "sha256": "01fa961be133c171be7b9eb2037c20f88ca0a8c3da137e947d4498fe6c7a6ca7"
+    },
+    "src/state/source-packages.mjs": {
+      "bytes": 8696,
+      "sha256": "e55ea8bcf9bfa90d5294a3daf6b326cacdc04872a29a842665397756545d04f3"
+    },
+    "src/state/source-playback.mjs": {
+      "bytes": 108,
+      "sha256": "9c93cf4af0d41f8614f2890a89d49c312aad8aecfd831d203dee8ccf5f46d595"
+    },
+    "src/state/validate.mjs": {
+      "bytes": 3649,
+      "sha256": "e0adb4f1d2b1088cf4031ae974c46c8487153b48f96b110a38df351d4fed53e5"
+    },
+    "src/state/wardrobe.mjs": {
+      "bytes": 3868,
+      "sha256": "bcac250e1cf1b273efe2a5bc3be37b03dfaf26837393f82faa2bb575d3092efc"
+    },
+    "test/actions.test.mjs": {
+      "bytes": 8292,
+      "sha256": "057cec514c252d2292e9656109fb6dedd85068935124611a2cedd6533b82d68c"
+    },
+    "test/animation-program.test.mjs": {
+      "bytes": 7269,
+      "sha256": "60792b76569b0abc5ab34cdb32e0da7799016314d4ddf73ae7d5d03a5b184185"
+    },
+    "test/composition.test.mjs": {
+      "bytes": 7063,
+      "sha256": "af1510abb519a3c7c724fbabb9adf67981fb922a10e5a9caad6439460ed6414a"
+    },
+    "test/context.test.mjs": {
+      "bytes": 1649,
+      "sha256": "8b9b802609bcb22596c585a4b6f0025232538dde74bbf8bfbd342b3d33bb8894"
+    },
+    "test/contracts.test.mjs": {
+      "bytes": 3710,
+      "sha256": "9e42ac5e47aeb9fd69b71864d4aabbc0c88718fa21fd4437622ff34a281a3b39"
+    },
+    "test/fixtures/generator-default.json": {
+      "bytes": 5820,
+      "sha256": "609741bc33dcf7882b593f32503e23be11107889a2d6abe68707063d4686dbd3"
+    },
+    "test/full-art-store.test.mjs": {
+      "bytes": 2762,
+      "sha256": "a03dd2a108e32943e36ba5bd24ebd2ba7c881100f73b29513560aa1a43bec8ae"
+    },
+    "test/full-catalog-engine.test.mjs": {
+      "bytes": 8444,
+      "sha256": "7a02b4e4efa22676d00173eb8f4cb4de413d226cb8f74632a46c3cb7d7425117"
+    },
+    "test/full-coverage.test.mjs": {
+      "bytes": 1596,
+      "sha256": "7528a36305b307f80cb0070185fa9d7dab70ef66651e55f513470c39cc3a6692"
+    },
+    "test/full-licenses.test.mjs": {
+      "bytes": 4018,
+      "sha256": "0247f1375bc8c8619762b561e2d0b68827d15375414ccc53fbd0a52753b0ee7a"
+    },
+    "test/full-state.test.mjs": {
+      "bytes": 15032,
+      "sha256": "6ebc58d48d2b032540547ba531073ad58f701dabd846b2745fc39311f1c425ca"
+    },
+    "test/lifecycle.test.mjs": {
+      "bytes": 9250,
+      "sha256": "e72b8ee41b62af9cabe9c231ec9cc558ea0135815f71f2ce1a6b76a9f27d15a0"
+    },
+    "test/model-control.test.mjs": {
+      "bytes": 20759,
+      "sha256": "7782653caa90a659f391bf7562464de60c2ca4a5d6cf1c4698d678b925ef104e"
+    },
+    "test/party.test.mjs": {
+      "bytes": 3958,
+      "sha256": "1f284720f5e7b0b95cd0b81fee48827632420a3070e07e8c977c4ec16e57fd56"
+    },
+    "test/persistence.test.mjs": {
+      "bytes": 23152,
+      "sha256": "40d75c0dda09d4db055ada84f617ee6c7900c67943779db4cc2b21ff627829af"
+    },
+    "test/preferences.test.mjs": {
+      "bytes": 4115,
+      "sha256": "c7cb019ef5cf11c0355e99d4b600e92ed9749385772261292eccfb98e279b064"
+    },
+    "test/presence.test.mjs": {
+      "bytes": 11167,
+      "sha256": "9768b3aef25089e8d4ed455c4023d0041cbe778a320324e027ebd1fc8033bf00"
+    },
+    "test/roster.test.mjs": {
+      "bytes": 21655,
+      "sha256": "fa2b0ad39d6cb6a4b9c83257f4b1d891b6dad8aa5085a1fb1c8b255e7b4a3a03"
+    },
+    "test/scenes.test.mjs": {
+      "bytes": 3168,
+      "sha256": "21c1ea8846826aa89c2caf340328ce0ee017bc87e1b2a593097193310f204463"
+    },
+    "test/source-model.test.mjs": {
+      "bytes": 23217,
+      "sha256": "c72048078f45b0e4a21c3aef0a628531b5cd5f677b0396e6c53d4616aa39f675"
+    },
+    "test/tool-hub.test.mjs": {
+      "bytes": 18008,
+      "sha256": "ab525b8eea502184dfdbfb4ffae0d1e96f5eb954844fae75d48349eeb6d72553"
+    },
+    "tools/body-assets.mjs": {
+      "bytes": 954,
+      "sha256": "99af27b38a6ee60ff4bcf96a1fa9c66d432dc2923cca6e639c6993e5f3aa9037"
+    },
+    "tools/build.mjs": {
+      "bytes": 2110,
+      "sha256": "d4c9b02cfeda537df3cc97649ec538421d8053292aab5224ccf7d08a25375d96"
+    },
+    "tools/catalog.mjs": {
+      "bytes": 28479,
+      "sha256": "9f47d7daef3413b3cd0be893f7ff919f29f1ed91932f58357926d56169e37b88"
+    },
+    "tools/check-full-library.mjs": {
+      "bytes": 5323,
+      "sha256": "5f56de5f161a48ec958c5da7de6c4b41ea1018da6e14f7c62186afc2f5050ec4"
+    },
+    "tools/credits-template.html": {
+      "bytes": 3005,
+      "sha256": "5e88b4e0ca28e78b6c41e88c7c7b6990415ea1b4b99c846ad668c449f61edb54"
+    },
+    "tools/credits.mjs": {
+      "bytes": 7473,
+      "sha256": "24e6c09e6de83feab63dae777d742ca3ed04c043f505c715bd0c7f57b554f3aa"
+    },
+    "tools/everyday-bottom-assets.mjs": {
+      "bytes": 582,
+      "sha256": "b111d533b1afd2a137f96b54bfab699eb102ab2ea981e76c0f946a9d8151a7d6"
+    },
+    "tools/everyday-top-assets.mjs": {
+      "bytes": 719,
+      "sha256": "464c9a1b6c8b73349f5730a9b3b8e416c6200676e13ae9788b21564883fcb0dd"
+    },
+    "tools/footwear-assets.mjs": {
+      "bytes": 595,
+      "sha256": "d8ca0893040bc6f6a9e54628976215b3931b84c5afdf2ec7db8202e2b4445811"
+    },
+    "tools/full-catalog-fixtures.mjs": {
+      "bytes": 1567,
+      "sha256": "6a3d3c3d8482be97d6caea2d655bcd261a3c04ee2fc45f90deabfe54345cdbe7"
+    },
+    "tools/hair-assets.mjs": {
+      "bytes": 407,
+      "sha256": "c2626922ec9897206836773c26fb06576d3ce8ce8eb6fef919b3ccc8c9d36aba"
+    },
+    "tools/head-assets.mjs": {
+      "bytes": 377,
+      "sha256": "243d59cd94ac422a87231e4dc69c0119ff43c439a414100fd37af97a9e6ea980"
+    },
+    "tools/identity-feature-assets.mjs": {
+      "bytes": 381,
+      "sha256": "853764f600ddbb66c892384d363d2cbb9fffebe6a21b448d69f04650c9a1cf21"
+    },
+    "tools/mock-card-merge.mjs": {
+      "bytes": 795,
+      "sha256": "233724fddc4a6b5aa862eaecc05c35691abe1873a12923096f1c844e1d005d84"
+    },
+    "tools/neutral-face-assets.mjs": {
+      "bytes": 496,
+      "sha256": "c5a7516a7fe9ee9883f6a9a1552110ed4b89f6ee5593b3e6ef5fb5ea4c80b2cc"
+    },
+    "tools/promo/characters.mjs": {
+      "bytes": 801,
+      "sha256": "4c83fa109800e5813e97a9c81336fa3827053f231b20dc43e50302cd6839ad30"
+    },
+    "tools/promo/scene.mjs": {
+      "bytes": 5642,
+      "sha256": "d2f759bc02efda9a5e79beb76301700f3166b72685aef572ce65c3e7d6cac148"
+    },
+    "tools/render-promo.mjs": {
+      "bytes": 7874,
+      "sha256": "511454bd4f1fbe34f51cce30ab7c87ceb11992769bfa895fb66ae781d67b1dec"
+    },
+    "tools/scene-assets.mjs": {
+      "bytes": 1090,
+      "sha256": "60d09c929b9823541928d94d648d5a9a857700a83c9d9335d9561668f7599670"
+    },
+    "tools/test-utils.mjs": {
+      "bytes": 1192,
+      "sha256": "e761fb6aa0d1d2976cdeb8420185196c9a0bf807f5a737d9a73110985a3bb0d4"
+    },
+    "tools/textured-hair-assets.mjs": {
+      "bytes": 511,
+      "sha256": "e524e2935d876239826c0694fe54a67d6a5bb28e3fa8810a527dc9c90bc92e12"
+    },
+    "tools/wardrobe-assets.mjs": {
+      "bytes": 1329,
+      "sha256": "fe2d53ea36e325b2363e24d492130d6acdaca15c80c636e8890103bdca9057e9"
+    },
+    "tools/wood-shield-assets.mjs": {
+      "bytes": 401,
+      "sha256": "0657469d4a2f1cba6b04ba03f58ddab515849d562e638f5ca8e2989c38aa3400"
+    },
+    "vendor/LICENSE-ajv": {
+      "bytes": 1090,
+      "sha256": "a05350a88e318e4f5f2c2a1ff1e2e88daa4dd38e6e78b71cccae422bdc762cc3"
+    },
+    "vendor/LICENSE-fast-deep-equal": {
+      "bytes": 1074,
+      "sha256": "7bf9b2de73a6b356761c948d0e9eeb4be6c1270bd04c79cd489c1e400ffdfc1a"
+    },
+    "vendor/LICENSE-fast-uri": {
+      "bytes": 1813,
+      "sha256": "b010b0dfdfdb23d7396e03b82cd4621fc9bb8f95d6b0aea70b9c24e12074c786"
+    },
+    "vendor/LICENSE-json-schema-traverse": {
+      "bytes": 1074,
+      "sha256": "7bf9b2de73a6b356761c948d0e9eeb4be6c1270bd04c79cd489c1e400ffdfc1a"
+    },
+    "vendor/LICENSE-noble-hashes": {
+      "bytes": 1109,
+      "sha256": "4f221aee6e072336700c408c68ab3b96a3fc09f6aebe6f48f1bd99e5ef13faec"
+    },
+    "vendor/LICENSE-require-from-string": {
+      "bytes": 1128,
+      "sha256": "6ee0feb1f6ef996ff5a68600f8cf98909cf412d39ef3cdceaefd87d636fa1b7f"
+    },
+    "vendor/lpc/LICENSE-CC-BY-3.0.txt": {
+      "bytes": 19467,
+      "sha256": "e6bc9e9c474700b708f568bac9e5a8a9bcb2b1dad53442f5ba449fcb848b8e76"
+    },
+    "vendor/lpc/LICENSE-CC-BY-4.0.txt": {
+      "bytes": 18657,
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+    },
+    "vendor/lpc/LICENSE-CC-BY-SA-3.0.txt": {
+      "bytes": 22240,
+      "sha256": "3f941b3b89cf7b8370ceb83cc76d2120d471b58735d8ca60238a751a48d7f72f"
+    },
+    "vendor/lpc/LICENSE-CC-BY-SA-4.0.txt": {
+      "bytes": 20138,
+      "sha256": "28a9529c7d0bb4dc51f4bf5c116a3d16ef247a052f7591466768ddf563fd1cf5"
+    },
+    "vendor/lpc/LICENSE-CC0-1.0.txt": {
+      "bytes": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    "vendor/lpc/LICENSE-GPL-3.0": {
+      "bytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    "vendor/lpc/LICENSE-OGA-BY-3.0.txt": {
+      "bytes": 18213,
+      "sha256": "a88798a4f7ec10432d3ed2bf92e4a7ecae0db1e4b55f29c160cb8689201efdad"
+    },
+    "vendor/lpc/LICENSE-neverthrow": {
+      "bytes": 1073,
+      "sha256": "3f4f7f9d7c4a9965aeef4a9c95de38f73ecbab96bed68d320a224a74dfcaa973"
+    },
+    "vendor/lpc/activity-provenance.json": {
+      "bytes": 32014,
+      "sha256": "a0f0c317d6b95206ebc020fffbb8635dfd16febb6191f49e507e70c1c436a535"
+    },
+    "vendor/lpc/body-provenance.json": {
+      "bytes": 4082,
+      "sha256": "3cbbfea92afac54b98653132165c0be1705b7d13f4a981f9ed8f46d93865d365"
+    },
+    "vendor/lpc/everyday-bottom-provenance.json": {
+      "bytes": 22009,
+      "sha256": "c864c756aa1f456b0d446dab0908cbf2d79a5df971f0a3e358beb8218318d818"
+    },
+    "vendor/lpc/everyday-bottom-source/legs_cuffed.json": {
+      "bytes": 1911,
+      "sha256": "29f200159232c16766ed99a5dff62928dc63c07fbafc348cada3c72c7592144b"
+    },
+    "vendor/lpc/everyday-bottom-source/legs_leggings2.json": {
+      "bytes": 1736,
+      "sha256": "b956402920394c7084d2bedde1e0180f6e06af3dd52f7105cc9406075584a98e"
+    },
+    "vendor/lpc/everyday-bottom-source/legs_pants2.json": {
+      "bytes": 1844,
+      "sha256": "db66d2871acaa4920d6192dba518d4cacb1104c2be87286f81e2225a85560f76"
+    },
+    "vendor/lpc/everyday-bottom-source/palettes.json": {
+      "bytes": 3247,
+      "sha256": "5958053c1492f79a5a994b5e0c5c3bd07c14b8f7431e08444f164e0902301411"
+    },
+    "vendor/lpc/everyday-top-provenance.json": {
+      "bytes": 21124,
+      "sha256": "1e531bbd918da9c985a531b634ccf83293639c5cf3a429baf235a3d3ec38b9ff"
+    },
+    "vendor/lpc/everyday-top-source/palettes.json": {
+      "bytes": 3247,
+      "sha256": "5958053c1492f79a5a994b5e0c5c3bd07c14b8f7431e08444f164e0902301411"
+    },
+    "vendor/lpc/everyday-top-source/torso_clothes_longsleeve2_cardigan.json": {
+      "bytes": 1365,
+      "sha256": "215bb4e4e4f2926e491f6e5ad744c7962f75f44f935379b02a39b54fbc949422"
+    },
+    "vendor/lpc/everyday-top-source/torso_clothes_longsleeve2_polo.json": {
+      "bytes": 1356,
+      "sha256": "385382b6dd176500c9869bafd9a6bb54964d39d4e953a667cbd83b7aa48e48df"
+    },
+    "vendor/lpc/everyday-top-source/torso_clothes_sleeveless2.json": {
+      "bytes": 1311,
+      "sha256": "b9d6cf887b1dbcb3562e0e8e899fbd810a70be680c36eabb14be0020c6720c20"
+    },
+    "vendor/lpc/extracted.ts": {
+      "bytes": 8299,
+      "sha256": "0ed86d79621a120fb57dd30aaa7bed17f9c929a9aa900bca6b68919d27689988"
+    },
+    "vendor/lpc/footwear-provenance.json": {
+      "bytes": 20496,
+      "sha256": "e7c0c59f57cb65bfe2ea81684746065f61a34846c0242a784255a3d40dbdb759"
+    },
+    "vendor/lpc/footwear-source/feet_boots_basic.json": {
+      "bytes": 1788,
+      "sha256": "9424a1d99a5d55f928c9650384092defd30a606b206f48c68c159e3481ce1c0e"
+    },
+    "vendor/lpc/footwear-source/feet_sandals.json": {
+      "bytes": 1277,
+      "sha256": "5aaa167ed065c90effd63bc588c24b858d02b1837f6cd084064b9e504c0a0a6f"
+    },
+    "vendor/lpc/footwear-source/feet_shoes_basic.json": {
+      "bytes": 1961,
+      "sha256": "f5a0a5316a7ac48634a8ee866b13ea988e4c57b9889caaf445fa1718638c9744"
+    },
+    "vendor/lpc/footwear-source/palettes.json": {
+      "bytes": 3247,
+      "sha256": "5958053c1492f79a5a994b5e0c5c3bd07c14b8f7431e08444f164e0902301411"
+    },
+    "vendor/lpc/full-catalog/art-audit.json.gz": {
+      "bytes": 7342238,
+      "sha256": "90dcb67346c6669f1089de7f734f03597c6965bc407996b5dd3c26506e42b740"
+    },
+    "vendor/lpc/full-catalog/art-provenance.json": {
+      "bytes": 858,
+      "sha256": "beb71c72ba18e5e5b88bc9c7afe246dd29e47cac7fb53265f3d31e1e57d7ed6c"
+    },
+    "vendor/lpc/full-catalog/color-pairs-origin.json": {
+      "bytes": 297774,
+      "sha256": "8d6cee91b3330966237459b8f3e36427db11a4b204820ffec6e014dd9344e7fa"
+    },
+    "vendor/lpc/full-catalog/color-policy.json": {
+      "bytes": 140074,
+      "sha256": "b0ed0f77dd02c32ff6d2b852bf037c59540c8747f8c27460b3a75cd853f433a9"
+    },
+    "vendor/lpc/full-catalog/core-provenance.json": {
+      "bytes": 8632,
+      "sha256": "2bf7481c87eb927623b6bcf52c0002f89382ef736b4370155afc4197955ed083"
+    },
+    "vendor/lpc/full-catalog/core.mjs": {
+      "bytes": 48681,
+      "sha256": "166a8f425a074e6c1677e1d97d70e94e68183b0d6063664a6f29af7cf8911e13"
+    },
+    "vendor/lpc/full-catalog/custom-animations.ts": {
+      "bytes": 13098,
+      "sha256": "b3fe11bc316284cf2bd972ec7f957da75e65fee77bb93e10cbef6eb68bcc3f2b"
+    },
+    "vendor/lpc/full-catalog/extracted.ts": {
+      "bytes": 28513,
+      "sha256": "b0f8f1794e2d4715df6df6e7772825e138e6280c161e6d6c7f75df05f30191d0"
+    },
+    "vendor/lpc/full-catalog/gap-review.json": {
+      "bytes": 126284,
+      "sha256": "98b567443f6fa83f0321ecf028fc38ec0a3aea7365d14a1749d52f34504af5f5"
+    },
+    "vendor/lpc/full-catalog/hair-shadow-origin.json": {
+      "bytes": 75821,
+      "sha256": "2dc00cc9ff831989ced82ac5f764089ead99b9c7f20cb6cbf040638020cdafda"
+    },
+    "vendor/lpc/full-catalog/hair-shadow.json": {
+      "bytes": 1922,
+      "sha256": "3034a628dbcb8f7deff74716ba5c436047feab942e31c596fac24cd6f771492d"
+    },
+    "vendor/lpc/full-catalog/hurt-phases.json": {
+      "bytes": 902138,
+      "sha256": "3ffa36e7f56fcdd09cb319be644d4a00de35a2867e3655c9fc5206730ed1f75f"
+    },
+    "vendor/lpc/full-catalog/hurt-review.json": {
+      "bytes": 6671,
+      "sha256": "aaca5e3a0886ef2b4db3d299bc8b921d94e389aecfcb1ac9f875f5824dd47eae"
+    },
+    "vendor/lpc/full-catalog/layout-preparation.json": {
+      "bytes": 978,
+      "sha256": "2ebe736f380b52f5476087ab97d3aa5bb1ac5765d7aa842b6f137ba5e6a48e24"
+    },
+    "vendor/lpc/full-catalog/layout-review.json": {
+      "bytes": 619,
+      "sha256": "84bff99414b8f5e836376f0488449b9892e01508d7cdcd17e74bd334efa7d499"
+    },
+    "vendor/lpc/full-catalog/library-provenance.json": {
+      "bytes": 1031,
+      "sha256": "49d1684c33e4ee58a80c6eace5e324acea0073ae6e189376f996ff89447fd5ca"
+    },
+    "vendor/lpc/full-catalog/license-notice-provenance.json": {
+      "bytes": 1317,
+      "sha256": "930c9e8c8e8a865c6f0a822182bb32859d6e51eb4215a8d10bcc04457124c30a"
+    },
+    "vendor/lpc/full-catalog/license-policy.json": {
+      "bytes": 87817,
+      "sha256": "d9c031fe1c3da430c5144ded950a1943af83451469c5ee6f508cd08bfb6e77e3"
+    },
+    "vendor/lpc/full-catalog/metadata.json": {
+      "bytes": 4225033,
+      "sha256": "e16f85ded3cd5cd10e41f091cdbbc54c4b2b4444854ccf19787c79e8f630e02a"
+    },
+    "vendor/lpc/full-catalog/native-repair-review.json": {
+      "bytes": 808,
+      "sha256": "1442d3f1855862a15a2d696e1a9b8003aaaafc0372358c79d471d646ae7899a4"
+    },
+    "vendor/lpc/full-catalog/native-repairs.json": {
+      "bytes": 527694,
+      "sha256": "9812483cbcc57fc4a3a22e544f4d8c97508ccbffe2997d9e09e985477f54322d"
+    },
+    "vendor/lpc/full-catalog/orientation-phases.json": {
+      "bytes": 2750044,
+      "sha256": "eadde531c1331178d8ddfd98d642019d5bf280311f781632b90251f374c40ecb"
+    },
+    "vendor/lpc/full-catalog/orientation-review.json": {
+      "bytes": 27616,
+      "sha256": "aea81c0b0424f37978c28b89743b2a60b17ff4ce338bc3c916e1c1d00f5a2a04"
+    },
+    "vendor/lpc/full-catalog/package-art-audit.json": {
+      "bytes": 557,
+      "sha256": "f8d87f887ba0841022e6af58965f87b1343a5ffb7f521932ad06ae6a3036315d"
+    },
+    "vendor/lpc/full-catalog/package-notices.json": {
+      "bytes": 143757,
+      "sha256": "d891a797f406774be1ec0746e0becb00b957a4cf3d1a1baf39eb027e6262dca5"
+    },
+    "vendor/lpc/full-catalog/palette-origin.json": {
+      "bytes": 7484,
+      "sha256": "57c3d3da9870bab3c533a0f27d2abebcf0d7ef70f7378b74b11dd471a5d80e1a"
+    },
+    "vendor/lpc/full-catalog/path-index.json.gz": {
+      "bytes": 2163170,
+      "sha256": "25c55062bc241a15d48bb5f7f01ef59dce49642b3d074a14a51875143669d74e"
+    },
+    "vendor/lpc/full-catalog/path-provenance.json": {
+      "bytes": 793,
+      "sha256": "700bf406c4964179a01a461ab12e7ee42eaec62fb2c6cedfe9b0dfb36eedd69d"
+    },
+    "vendor/lpc/full-catalog/pose-phases.json": {
+      "bytes": 2835011,
+      "sha256": "07fb77053908afc2ec30ff26c20f27f625bb6628cf3b7c5fb30b4d344d539f49"
+    },
+    "vendor/lpc/full-catalog/pose-review.json": {
+      "bytes": 24629,
+      "sha256": "5e780ca590d22e799802ccf265237a5864cbbcf2ee31715121f39f561715ad71"
+    },
+    "vendor/lpc/full-catalog/prop-phases.json": {
+      "bytes": 1151553,
+      "sha256": "c3505415cbf32b20a8a6cddb05a93ee30b96dd6c59a6189381d3c0a54dd1d679"
+    },
+    "vendor/lpc/full-catalog/prop-review.json": {
+      "bytes": 1890,
+      "sha256": "c901d42fdbe8b65bf98f15ad5b4578d07d2534c7ad200309d98054fb3a69c491"
+    },
+    "vendor/lpc/full-catalog/provenance.json": {
+      "bytes": 107170,
+      "sha256": "b68f489b89f3d329d84d05fddcc2fe8c97e1105e01825f8891b80712871250c8"
+    },
+    "vendor/lpc/full-catalog/repairs.json": {
+      "bytes": 18011,
+      "sha256": "5d063d341afb857078be03447380b0b5eb7c4c6df16b696b608dee512f9843e4"
+    },
+    "vendor/lpc/full-catalog/shield-phases.json": {
+      "bytes": 675988,
+      "sha256": "72ca0f08e7fa569e8f31ea02ed2218ac0f522f7b76f8fb13b69ddcdb255f1b09"
+    },
+    "vendor/lpc/full-catalog/source-colors-provenance.json": {
+      "bytes": 447,
+      "sha256": "b87fc4ac7a69055a5e275e37967d3eefdb31a1aae94e4800932c700decbfa1a7"
+    },
+    "vendor/lpc/full-catalog/source-colors.json.gz": {
+      "bytes": 4624434,
+      "sha256": "e9cd96be9dedd16913fb7c34902e20a36f1ea898a689a224f25febf0d6635bc6"
+    },
+    "vendor/lpc/hair-notices.json": {
+      "bytes": 7217,
+      "sha256": "a501445530244fff7f68ebb50b1db01bffb659a4bf90ddd14850c0f45f46a896"
+    },
+    "vendor/lpc/hair-provenance.json": {
+      "bytes": 12155,
+      "sha256": "64bc5d688b2fc9b39ac72adea4ed33daf9dbcf617533f8d0f9e00e400619b9e2"
+    },
+    "vendor/lpc/hair-source/hair_bob.json": {
+      "bytes": 1082,
+      "sha256": "e6fba4e460f540fd9f3161ca736d52d2a2bb3a7cf1872b3c44cfbad823e827a9"
+    },
+    "vendor/lpc/hair-source/hair_long.json": {
+      "bytes": 1040,
+      "sha256": "647e2ebe7f12341c435cfb872ca8150a429cb9395a2dfad31a7f52f40f091ea0"
+    },
+    "vendor/lpc/hair-source/hair_natural.json": {
+      "bytes": 1101,
+      "sha256": "bfca5376ac87b78516ed60980eead2538f15d1cc8fd02695c3f17bea4b8efc82"
+    },
+    "vendor/lpc/head-provenance.json": {
+      "bytes": 9968,
+      "sha256": "2ea87d60422e16d5e789b096753891dcbf8ba6f84bf85bc1dc4b2ea2e4ed18b0"
+    },
+    "vendor/lpc/head-source/heads_human_female_elderly.json": {
+      "bytes": 1551,
+      "sha256": "c5aaa131082b36e154317fb55b31afacc5945aaf24e6a43750b7bd675629ffc3"
+    },
+    "vendor/lpc/head-source/heads_human_male_elderly.json": {
+      "bytes": 1537,
+      "sha256": "9341b060e5d162565b93a43c2ea91575bf339a9094fe3fd5b0c440b436cf4cbd"
+    },
+    "vendor/lpc/identity-feature-provenance.json": {
+      "bytes": 8318,
+      "sha256": "199bac1aa6e7b3a1960d1e075fba40ea491d1ff7ba3440c40c3087eab5c51122"
+    },
+    "vendor/lpc/identity-feature-source/beards_trimmed.json": {
+      "bytes": 1009,
+      "sha256": "31d21d20396f6194b09407328394f2eb13794e5d56682afa89ce2b822bc18ec1"
+    },
+    "vendor/lpc/identity-feature-source/head_ears_elven.json": {
+      "bytes": 1325,
+      "sha256": "a26d85dfab2ff37995ed0dadd00718fbcb1e040e2e91f8b497148f0378d69cbc"
+    },
+    "vendor/lpc/lpc-core.js": {
+      "bytes": 20553,
+      "sha256": "139ca862c04486df51ada784d8ed4a4d92ed2e54583b63b5dffcb5a00bc6238b"
+    },
+    "vendor/lpc/neutral-face-provenance.json": {
+      "bytes": 17993,
+      "sha256": "ae0bb70cf0306dbcfd14d604d591e61124483023666414d9178f3405d7d9574a"
+    },
+    "vendor/lpc/neutral-face-source/face_neutral.json": {
+      "bytes": 3468,
+      "sha256": "1418d3c092e8a95538ea5524f9a53c0a369dacaddd44137fdef8a9c5fa2a31bf"
+    },
+    "vendor/lpc/neutral-face-source/face_neutral_elder.json": {
+      "bytes": 3468,
+      "sha256": "1418d3c092e8a95538ea5524f9a53c0a369dacaddd44137fdef8a9c5fa2a31bf"
+    },
+    "vendor/lpc/neutral-face-source/face_neutral_female.json": {
+      "bytes": 3468,
+      "sha256": "1418d3c092e8a95538ea5524f9a53c0a369dacaddd44137fdef8a9c5fa2a31bf"
+    },
+    "vendor/lpc/package-notices.json": {
+      "bytes": 54311,
+      "sha256": "1af5a790ff5fd5de9f4012d26dde36960a6ad647ea1a438de8c2214cf75aa66d"
+    },
+    "vendor/lpc/package.json": {
+      "bytes": 38,
+      "sha256": "ad91c9ac9136396f5249a45e093bab863e9a23646620d911af827986f6180283"
+    },
+    "vendor/lpc/provenance.json": {
+      "bytes": 1452,
+      "sha256": "cfeb4436a9b512c3d297806c80c263724032e3e352a4e66115010e0f7c86553d"
+    },
+    "vendor/lpc/sheet_definitions/body/body.json": {
+      "bytes": 8278,
+      "sha256": "8298ebb76c327c821f466a7bffa2eeccc45af105b8ad0ab18381bd254d942e87"
+    },
+    "vendor/lpc/sheet_definitions/hair/short/hair_plain.json": {
+      "bytes": 1163,
+      "sha256": "b2ef814bccab7c474da625b22d3b8d5453c96afd55b43849b8ffe2613238ade5"
+    },
+    "vendor/lpc/sheet_definitions/head/heads/human/heads_human_female.json": {
+      "bytes": 1486,
+      "sha256": "4012ebc5cc914b2e0b16a547613c7dcd6fad7a697d7d8785eb6d954c36c1badc"
+    },
+    "vendor/lpc/sheet_definitions/head/heads/human/heads_human_male.json": {
+      "bytes": 1512,
+      "sha256": "0d6a55e0c410c81cb7c3f536c05bace550c8c4adf80e23bb9956f39a0a59e0dc"
+    },
+    "vendor/lpc/sheet_definitions/legs/pants/legs_pants.json": {
+      "bytes": 2372,
+      "sha256": "91f0a9f9d3661aafa865a57448f9c72d9b957e35a5cae512cc2a84142327e896"
+    },
+    "vendor/lpc/sheet_definitions/legs/shorts/legs_shorts.json": {
+      "bytes": 1916,
+      "sha256": "242ccffc1f067e194c7946d17601b7f5e0d50dfb645b8d19e9926132ef3da2fc"
+    },
+    "vendor/lpc/sheet_definitions/torso/cape/cape_solid.json": {
+      "bytes": 1630,
+      "sha256": "99578e7fb92e38f716e017870cf6e9d144ed831f37ea50071d98c167969b4fc2"
+    },
+    "vendor/lpc/sheet_definitions/torso/cape/cape_tattered.json": {
+      "bytes": 1601,
+      "sha256": "3a901744f52eb70be87d65d88b58d02853a66b9d52edadbfe6ebd6a117ecd68a"
+    },
+    "vendor/lpc/sheet_definitions/torso/cape/cape_trim.json": {
+      "bytes": 1103,
+      "sha256": "492717d8bb835c7bdc12251723bc62ace4bc364d589e78eb17f9a37f2f6da8cb"
+    },
+    "vendor/lpc/sheet_definitions/torso/shirts/longsleeve/torso_clothes_longsleeve.json": {
+      "bytes": 4465,
+      "sha256": "fe808e1b46fe11099c472ed9c54f71c9abf3270c34012f9f6445f811d03b7d7c"
+    },
+    "vendor/lpc/sheet_definitions/torso/shirts/shortsleeve/torso_clothes_tshirt.json": {
+      "bytes": 1312,
+      "sha256": "1d9cc905cf914473d88367c31c1d31065a4600bb840c8c43c956f19f05acbc26"
+    },
+    "vendor/lpc/sheet_definitions/weapons/shields/heater/shield_heater_revised_wood.json": {
+      "bytes": 1365,
+      "sha256": "6685353a960131ad1f513bda1ad1ff563afc874254769c9a3ed90b84494e1acd"
+    },
+    "vendor/lpc/textured-hair-provenance.json": {
+      "bytes": 5333,
+      "sha256": "cd1d69f23dc84f39b5dd15e021633ab685840308a05c8eee85765d35ef8e5e89"
+    },
+    "vendor/lpc/textured-hair-source/hair_afro.json": {
+      "bytes": 871,
+      "sha256": "529ff4da431f44fe589f8c1c30d92aec1c67234772a4620cc202efd0d3418815"
+    },
+    "vendor/lpc/textured-hair-source/hair_curly_short.json": {
+      "bytes": 996,
+      "sha256": "bf703e31625d538144b1d3c11bd2a30c440cb8741987b8f8683c0f0f069d7761"
+    },
+    "vendor/lpc/textured-hair-source/palettes.json": {
+      "bytes": 3538,
+      "sha256": "1a15d9856ee8ab52d93baa334503fbca5a7261449320ae9d82e53bc962d5cc7b"
+    },
+    "vendor/lpc/wardrobe-provenance.json": {
+      "bytes": 3728,
+      "sha256": "0bf91a84bfa11ccbee8cafd29f0ff7fa4f70d5d344d44a5e5b77902ffc95df08"
+    },
+    "vendor/lpc/wood-shield-provenance.json": {
+      "bytes": 3750,
+      "sha256": "bd1adc32f318d3f553e67d72522319afc0348be1543d961757cc5171690ffdd1"
+    },
+    "vendor/lpc/wood-shield-source/item.json": {
+      "bytes": 1397,
+      "sha256": "d95643ec99d2041fa0e307192484e459f79de952579c95e1fedbf5214389d9d4"
+    },
+    "vendor/lpc/wood-shield-source/material.json": {
+      "bytes": 169,
+      "sha256": "733c3f6fc2adea232693539e39c0a69e45cb395be8b0d571806968370548b68f"
+    },
+    "vendor/lpc/wood-shield-source/palettes.json": {
+      "bytes": 544,
+      "sha256": "2fa7b09c07a86cf3ea89775c3fb043524eaefbde8d22550bf741665f04081c24"
+    }
+  }
+}

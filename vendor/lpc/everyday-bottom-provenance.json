@@ -1,0 +1,544 @@
+{
+  "repository": "https://github.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator",
+  "commit": "86160e7507d6841259cff624a51a63c1d4847ee3",
+  "metadata": {
+    "palette_definitions/cloth/cloth_ulpc.json": "5958053c1492f79a5a994b5e0c5c3bd07c14b8f7431e08444f164e0902301411",
+    "sheet_definitions/legs/pants/legs_cuffed.json": "29f200159232c16766ed99a5dff62928dc63c07fbafc348cada3c72c7592144b",
+    "sheet_definitions/legs/pants/legs_pants2.json": "db66d2871acaa4920d6192dba518d4cacb1104c2be87286f81e2225a85560f76",
+    "sheet_definitions/legs/leggings/legs_leggings2.json": "b956402920394c7084d2bedde1e0180f6e06af3dd52f7105cc9406075584a98e"
+  },
+  "sprites": {
+    "spritesheets/legs/cuffed/male/idle.png": "db3e652780e311164da2ae62523118962244cccbaf05e55b2a429d70ff507e09",
+    "spritesheets/legs/cuffed/male/walk.png": "e30da63131fec2b9ba4d1cbf04846b9529a213348eaf8324a303b0be03b8986b",
+    "spritesheets/legs/cuffed/male/run.png": "322bcda19de42dea7436aa681eb1531d68b4a52dbbdad7f7a91a4a8097bb47ed",
+    "spritesheets/legs/cuffed/male/jump.png": "60be9cbd206bad309a5f3fb09736bffabc4f4982ed6650a56b69a89e8c7cb48e",
+    "spritesheets/legs/cuffed/male/spellcast.png": "f9f63caf1c48b4d238fd2ff1fe695be79499a19fb72a57423c111078d13c1d72",
+    "spritesheets/legs/cuffed/male/sit.png": "8669c192086424f903d97a809ddbede306d2064cd2b52b1d7ce18318ecd56399",
+    "spritesheets/legs/cuffed/male/emote.png": "9dfcd1b7f03fe0afa71e1a0c911ae84c30c1fa9f0f7b40ee07f12d616e3a40f8",
+    "spritesheets/legs/cuffed/thin/idle.png": "02f9baca1ec70a8273829a1fd832d2a7360e6680ab3bc929064e4be473f1751e",
+    "spritesheets/legs/cuffed/thin/walk.png": "47da2bbc5d592ea4dc33ca15611b1f8a1efb2db3035b02b99382a641370bba92",
+    "spritesheets/legs/cuffed/thin/run.png": "b09e332202e9eeda4a0faa5ae6fa7174b8dd4270a4ea1468e70e608bff297ffd",
+    "spritesheets/legs/cuffed/thin/jump.png": "b2c75f492d0254f4414fde6da18072b240f86cf50595248d513fb11f3e5b39aa",
+    "spritesheets/legs/cuffed/thin/spellcast.png": "e567c762205a7a4b03842c684cc5e8e7ca7529943e9e07217149ac175f6e06bb",
+    "spritesheets/legs/cuffed/thin/sit.png": "d4c8ff59871e5f8cda8edcd60de1ffe0f9b4e20e8f10d47456c65f5f14798685",
+    "spritesheets/legs/cuffed/thin/emote.png": "779c27c649fb67b7f4c57bb08451246ebb0c426ccdf9e26ee3d69602577e7778",
+    "spritesheets/legs/pants2/male/idle.png": "0334abc861cca5574f364a288a32b9f49518feb27715af977390b0b411e1194c",
+    "spritesheets/legs/pants2/male/walk.png": "80532e64a8af149bba33a3677be7ab11b16323a4ab7cd263f5f3b73b89a2e6e6",
+    "spritesheets/legs/pants2/male/run.png": "67c9f487f70dc09c4bd5b27bf7f7ed41c7ced14164596b872e2dbc7458f0f8f3",
+    "spritesheets/legs/pants2/male/jump.png": "79cb3e3c480a6cebd4b164d18e55f84b3b8acd64f3503a8407e3fcbe76c531dd",
+    "spritesheets/legs/pants2/male/spellcast.png": "4bab9e82b6f6d203cc6d749422a2277e0bea29c3b096c517280599efd28c6a27",
+    "spritesheets/legs/pants2/male/sit.png": "a41f53c501bb774602bb3ff8d1de91364295d607c1f021ddbe2fcff60cf8c219",
+    "spritesheets/legs/pants2/male/emote.png": "11106c805eedc54656fe231afd5da1ad443a6db541954e8c05210678843be028",
+    "spritesheets/legs/pants2/thin/idle.png": "ab60c65157ce8103d388462dc2795030ce387a4acef74144164d313976873406",
+    "spritesheets/legs/pants2/thin/walk.png": "ec5f085eab4f3cd1088a97bdde9831f24dbd90adaa3bc66c4adf28f5b386d773",
+    "spritesheets/legs/pants2/thin/run.png": "4617dd7a5c1a66b5a6c88e88c84ba3b46f8d6c0698ae54eba8005ed84714f7b0",
+    "spritesheets/legs/pants2/thin/jump.png": "45865149b42050d551dc3a2f0049eb186be606f474addfc19dc11e4be5722096",
+    "spritesheets/legs/pants2/thin/spellcast.png": "52e70eb3aad1653f7272ab49f4954165f50f98cfba29c637c625b562bbaaebfa",
+    "spritesheets/legs/pants2/thin/sit.png": "f99790f1fb19ac3d87a343367378a0f6650f6e1b8c49ad90f0c54d68d79252e8",
+    "spritesheets/legs/pants2/thin/emote.png": "98abe6fba55040859adef261d3aa5f3eebd43f23ae1eb134d4d74335768dd6e2",
+    "spritesheets/legs/leggings2/male/idle.png": "acbf6153c2101f06d7f0687cf8c9d1560456e12d2e69f22eda80abbd36718d54",
+    "spritesheets/legs/leggings2/male/walk.png": "1ccae1d503bd0cf0016240a2ed59cb684ce4a560c1fce3abb4547418981cefb3",
+    "spritesheets/legs/leggings2/male/run.png": "babe25fb59049755de6906ccd6f2e868ef127af0b6126003276bc58bf0669af9",
+    "spritesheets/legs/leggings2/male/jump.png": "20072a53d91596b29d683d59082ee9c677412a851098c1dc74f50f91655f4d6e",
+    "spritesheets/legs/leggings2/male/spellcast.png": "fc408f675ba75f5e4288b3a92b0408c0ca60891b6b7588f87466d875a7f0df84",
+    "spritesheets/legs/leggings2/male/sit.png": "ec7a2a820dbebc6fbddffe4241460f2848d0cb29b4a8aced602655486b0094f1",
+    "spritesheets/legs/leggings2/male/emote.png": "61fed5ab60c2d89673e584b22b5955dcb51fbf8c4344d9eddfa13f6a8a38b56e",
+    "spritesheets/legs/leggings2/thin/idle.png": "3fc5c439bde1af61a95739aefd233b66a0480fb624fb48732f1d33294df91b30",
+    "spritesheets/legs/leggings2/thin/walk.png": "a0d001d3dc0dabae671f537ae9a1774c2158d924245d7e78cc3ac362d35442f9",
+    "spritesheets/legs/leggings2/thin/run.png": "ed30f47aefe2739f368f799dcc2aa18334e2e58d2bfbc02728dd0144058fb561",
+    "spritesheets/legs/leggings2/thin/jump.png": "ec8aa943d234db360d160ddbe39e91c1159d0e21294cc1a03dc96d65a42c23fc",
+    "spritesheets/legs/leggings2/thin/spellcast.png": "55125d99db9bf375ef30480ef1772b867127ac97355981e44002ae0765d04ce4",
+    "spritesheets/legs/leggings2/thin/sit.png": "55b7ea9ea9fe0f888bc4e0180f2267ab062bc1809131440b9b3c43df869dcfde",
+    "spritesheets/legs/leggings2/thin/emote.png": "215844117b819241b322e567421a95ba38095264fca6f94af241a8c6dd900d15"
+  },
+  "items": {
+    "legs_cuffed": {
+      "name": "Cuffed pants",
+      "slot": "legs",
+      "bodyTypes": [
+        "male"
+      ],
+      "counterparts": {
+        "male": "legs_cuffed",
+        "female": "legs_cuffed_female"
+      },
+      "material": "cloth",
+      "sourcePalette": "white",
+      "selectedLicense": "OGA-BY 3.0",
+      "layers": [
+        {
+          "z": 20,
+          "required": true,
+          "paths": {
+            "idle": "spritesheets/legs/cuffed/male/idle.png",
+            "walk": "spritesheets/legs/cuffed/male/walk.png",
+            "run": "spritesheets/legs/cuffed/male/run.png",
+            "jump": "spritesheets/legs/cuffed/male/jump.png",
+            "spellcast": "spritesheets/legs/cuffed/male/spellcast.png",
+            "sit": "spritesheets/legs/cuffed/male/sit.png",
+            "emote": "spritesheets/legs/cuffed/male/emote.png"
+          }
+        }
+      ],
+      "requiredLayerCount": 1,
+      "occupies": [
+        "legs"
+      ],
+      "requires": {},
+      "conflictsWith": [],
+      "credits": [
+        {
+          "file": "legs/cuffed/male",
+          "notes": "Original bases by Redshrike, thrust/shoot bases by Wulax, original overalls by ElizaWy, base animations adapted from v3 overalls by bluecarrot16, pants by JaidynReiman",
+          "authors": [
+            "JaidynReiman",
+            "ElizaWy",
+            "Bluecarrot16",
+            "Johannes Sjölund (wulax)",
+            "Stephen Challener (Redshrike)"
+          ],
+          "licenses": [
+            "OGA-BY 3.0",
+            "GPL 3.0"
+          ],
+          "urls": [
+            "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+            "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+            "https://opengameart.org/content/lpc-expanded-pants"
+          ]
+        },
+        {
+          "file": "legs/cuffed",
+          "notes": "Original bases by Redshrike, thrust/shoot bases by Wulax, original cuffed pants by ElizaWy, climb/jump/run/sit/emotes/revised combat by JaidynReiman",
+          "authors": [
+            "ElizaWy",
+            "JaidynReiman",
+            "Johannes Sjölund (wulax)",
+            "Stephen Challener (Redshrike)"
+          ],
+          "licenses": [
+            "OGA-BY 3.0"
+          ],
+          "urls": [
+            "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+            "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+            "https://opengameart.org/content/lpc-expanded-pants"
+          ]
+        }
+      ],
+      "upstreamSource": {
+        "repository": "https://github.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator",
+        "commit": "86160e7507d6841259cff624a51a63c1d4847ee3",
+        "itemId": "legs_cuffed",
+        "bodyType": "male"
+      }
+    },
+    "legs_cuffed_female": {
+      "name": "Cuffed pants (female)",
+      "slot": "legs",
+      "bodyTypes": [
+        "female"
+      ],
+      "counterparts": {
+        "male": "legs_cuffed",
+        "female": "legs_cuffed_female"
+      },
+      "material": "cloth",
+      "sourcePalette": "white",
+      "selectedLicense": "OGA-BY 3.0",
+      "layers": [
+        {
+          "z": 20,
+          "required": true,
+          "paths": {
+            "idle": "spritesheets/legs/cuffed/thin/idle.png",
+            "walk": "spritesheets/legs/cuffed/thin/walk.png",
+            "run": "spritesheets/legs/cuffed/thin/run.png",
+            "jump": "spritesheets/legs/cuffed/thin/jump.png",
+            "spellcast": "spritesheets/legs/cuffed/thin/spellcast.png",
+            "sit": "spritesheets/legs/cuffed/thin/sit.png",
+            "emote": "spritesheets/legs/cuffed/thin/emote.png"
+          }
+        }
+      ],
+      "requiredLayerCount": 1,
+      "occupies": [
+        "legs"
+      ],
+      "requires": {},
+      "conflictsWith": [],
+      "credits": [
+        {
+          "file": "legs/cuffed/male",
+          "notes": "Original bases by Redshrike, thrust/shoot bases by Wulax, original overalls by ElizaWy, base animations adapted from v3 overalls by bluecarrot16, pants by JaidynReiman",
+          "authors": [
+            "JaidynReiman",
+            "ElizaWy",
+            "Bluecarrot16",
+            "Johannes Sjölund (wulax)",
+            "Stephen Challener (Redshrike)"
+          ],
+          "licenses": [
+            "OGA-BY 3.0",
+            "GPL 3.0"
+          ],
+          "urls": [
+            "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+            "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+            "https://opengameart.org/content/lpc-expanded-pants"
+          ]
+        },
+        {
+          "file": "legs/cuffed",
+          "notes": "Original bases by Redshrike, thrust/shoot bases by Wulax, original cuffed pants by ElizaWy, climb/jump/run/sit/emotes/revised combat by JaidynReiman",
+          "authors": [
+            "ElizaWy",
+            "JaidynReiman",
+            "Johannes Sjölund (wulax)",
+            "Stephen Challener (Redshrike)"
+          ],
+          "licenses": [
+            "OGA-BY 3.0"
+          ],
+          "urls": [
+            "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+            "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+            "https://opengameart.org/content/lpc-expanded-pants"
+          ]
+        }
+      ],
+      "upstreamSource": {
+        "repository": "https://github.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator",
+        "commit": "86160e7507d6841259cff624a51a63c1d4847ee3",
+        "itemId": "legs_cuffed",
+        "bodyType": "female"
+      }
+    },
+    "legs_pants2": {
+      "name": "Long pants",
+      "slot": "legs",
+      "bodyTypes": [
+        "male"
+      ],
+      "counterparts": {
+        "male": "legs_pants2",
+        "female": "legs_pants2_female"
+      },
+      "material": "cloth",
+      "sourcePalette": "white",
+      "selectedLicense": "OGA-BY 3.0",
+      "layers": [
+        {
+          "z": 20,
+          "required": true,
+          "paths": {
+            "idle": "spritesheets/legs/pants2/male/idle.png",
+            "walk": "spritesheets/legs/pants2/male/walk.png",
+            "run": "spritesheets/legs/pants2/male/run.png",
+            "jump": "spritesheets/legs/pants2/male/jump.png",
+            "spellcast": "spritesheets/legs/pants2/male/spellcast.png",
+            "sit": "spritesheets/legs/pants2/male/sit.png",
+            "emote": "spritesheets/legs/pants2/male/emote.png"
+          }
+        }
+      ],
+      "requiredLayerCount": 1,
+      "occupies": [
+        "legs"
+      ],
+      "requires": {},
+      "conflictsWith": [],
+      "credits": [
+        {
+          "file": "legs/pants2/male",
+          "notes": "original overalls by ElizaWy, base animations adapted from v3 overalls by bluecarrot16, pants by JaidynReiman",
+          "authors": [
+            "JaidynReiman",
+            "ElizaWy",
+            "Bluecarrot16",
+            "Johannes Sjölund (wulax)",
+            "Stephen Challener (Redshrike)"
+          ],
+          "licenses": [
+            "OGA-BY 3.0",
+            "GPL 3.0"
+          ],
+          "urls": [
+            "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+            "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+            "https://opengameart.org/content/lpc-expanded-pants"
+          ]
+        },
+        {
+          "file": "legs/pants2",
+          "notes": "Original bases by Redshrike, thrust/shoot bases by Wulax, original pants by ElizaWy, climb/jump/run/sit/emotes/revised combat by JaidynReiman",
+          "authors": [
+            "ElizaWy",
+            "JaidynReiman",
+            "Johannes Sjölund (wulax)",
+            "Stephen Challener (Redshrike)"
+          ],
+          "licenses": [
+            "OGA-BY 3.0"
+          ],
+          "urls": [
+            "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+            "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+            "https://opengameart.org/content/lpc-expanded-pants"
+          ]
+        }
+      ],
+      "upstreamSource": {
+        "repository": "https://github.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator",
+        "commit": "86160e7507d6841259cff624a51a63c1d4847ee3",
+        "itemId": "legs_pants2",
+        "bodyType": "male"
+      }
+    },
+    "legs_pants2_female": {
+      "name": "Long pants (female)",
+      "slot": "legs",
+      "bodyTypes": [
+        "female"
+      ],
+      "counterparts": {
+        "male": "legs_pants2",
+        "female": "legs_pants2_female"
+      },
+      "material": "cloth",
+      "sourcePalette": "white",
+      "selectedLicense": "OGA-BY 3.0",
+      "layers": [
+        {
+          "z": 20,
+          "required": true,
+          "paths": {
+            "idle": "spritesheets/legs/pants2/thin/idle.png",
+            "walk": "spritesheets/legs/pants2/thin/walk.png",
+            "run": "spritesheets/legs/pants2/thin/run.png",
+            "jump": "spritesheets/legs/pants2/thin/jump.png",
+            "spellcast": "spritesheets/legs/pants2/thin/spellcast.png",
+            "sit": "spritesheets/legs/pants2/thin/sit.png",
+            "emote": "spritesheets/legs/pants2/thin/emote.png"
+          }
+        }
+      ],
+      "requiredLayerCount": 1,
+      "occupies": [
+        "legs"
+      ],
+      "requires": {},
+      "conflictsWith": [],
+      "credits": [
+        {
+          "file": "legs/pants2/male",
+          "notes": "original overalls by ElizaWy, base animations adapted from v3 overalls by bluecarrot16, pants by JaidynReiman",
+          "authors": [
+            "JaidynReiman",
+            "ElizaWy",
+            "Bluecarrot16",
+            "Johannes Sjölund (wulax)",
+            "Stephen Challener (Redshrike)"
+          ],
+          "licenses": [
+            "OGA-BY 3.0",
+            "GPL 3.0"
+          ],
+          "urls": [
+            "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+            "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+            "https://opengameart.org/content/lpc-expanded-pants"
+          ]
+        },
+        {
+          "file": "legs/pants2",
+          "notes": "Original bases by Redshrike, thrust/shoot bases by Wulax, original pants by ElizaWy, climb/jump/run/sit/emotes/revised combat by JaidynReiman",
+          "authors": [
+            "ElizaWy",
+            "JaidynReiman",
+            "Johannes Sjölund (wulax)",
+            "Stephen Challener (Redshrike)"
+          ],
+          "licenses": [
+            "OGA-BY 3.0"
+          ],
+          "urls": [
+            "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+            "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+            "https://opengameart.org/content/lpc-expanded-pants"
+          ]
+        }
+      ],
+      "upstreamSource": {
+        "repository": "https://github.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator",
+        "commit": "86160e7507d6841259cff624a51a63c1d4847ee3",
+        "itemId": "legs_pants2",
+        "bodyType": "female"
+      }
+    },
+    "legs_leggings2": {
+      "name": "Leggings",
+      "slot": "legs",
+      "bodyTypes": [
+        "male"
+      ],
+      "counterparts": {
+        "male": "legs_leggings2",
+        "female": "legs_leggings2_female"
+      },
+      "material": "cloth",
+      "sourcePalette": "white",
+      "selectedLicense": "OGA-BY 3.0",
+      "layers": [
+        {
+          "z": 20,
+          "required": true,
+          "paths": {
+            "idle": "spritesheets/legs/leggings2/male/idle.png",
+            "walk": "spritesheets/legs/leggings2/male/walk.png",
+            "run": "spritesheets/legs/leggings2/male/run.png",
+            "jump": "spritesheets/legs/leggings2/male/jump.png",
+            "spellcast": "spritesheets/legs/leggings2/male/spellcast.png",
+            "sit": "spritesheets/legs/leggings2/male/sit.png",
+            "emote": "spritesheets/legs/leggings2/male/emote.png"
+          }
+        }
+      ],
+      "requiredLayerCount": 1,
+      "occupies": [
+        "legs"
+      ],
+      "requires": {},
+      "conflictsWith": [],
+      "credits": [
+        {
+          "file": "legs/leggings2/male",
+          "notes": "original overalls by ElizaWy, base animations adapted from v3 overalls by bluecarrot16, leggings by JaidynReiman",
+          "authors": [
+            "bluecarrot16",
+            "ElizaWy",
+            "JaidynReiman",
+            "Mandi Paugh",
+            "William.Thompsonj",
+            "Johannes Sjölund (wulax)",
+            "Stephen Challener (Redshrike)"
+          ],
+          "licenses": [
+            "OGA-BY 3.0",
+            "GPL 3.0"
+          ],
+          "urls": [
+            "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+            "https://opengameart.org/content/lpc-expanded-pants"
+          ]
+        },
+        {
+          "file": "legs/leggings2",
+          "notes": "original by ElizaWy, remaining frames",
+          "authors": [
+            "ElizaWy",
+            "JaidynReiman",
+            "Johannes Sjölund (wulax)",
+            "Stephen Challener (Redshrike)"
+          ],
+          "licenses": [
+            "OGA-BY 3.0"
+          ],
+          "urls": [
+            "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+            "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+            "https://opengameart.org/content/lpc-expanded-pants"
+          ]
+        }
+      ],
+      "upstreamSource": {
+        "repository": "https://github.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator",
+        "commit": "86160e7507d6841259cff624a51a63c1d4847ee3",
+        "itemId": "legs_leggings2",
+        "bodyType": "male"
+      }
+    },
+    "legs_leggings2_female": {
+      "name": "Leggings (female)",
+      "slot": "legs",
+      "bodyTypes": [
+        "female"
+      ],
+      "counterparts": {
+        "male": "legs_leggings2",
+        "female": "legs_leggings2_female"
+      },
+      "material": "cloth",
+      "sourcePalette": "white",
+      "selectedLicense": "OGA-BY 3.0",
+      "layers": [
+        {
+          "z": 20,
+          "required": true,
+          "paths": {
+            "idle": "spritesheets/legs/leggings2/thin/idle.png",
+            "walk": "spritesheets/legs/leggings2/thin/walk.png",
+            "run": "spritesheets/legs/leggings2/thin/run.png",
+            "jump": "spritesheets/legs/leggings2/thin/jump.png",
+            "spellcast": "spritesheets/legs/leggings2/thin/spellcast.png",
+            "sit": "spritesheets/legs/leggings2/thin/sit.png",
+            "emote": "spritesheets/legs/leggings2/thin/emote.png"
+          }
+        }
+      ],
+      "requiredLayerCount": 1,
+      "occupies": [
+        "legs"
+      ],
+      "requires": {},
+      "conflictsWith": [],
+      "credits": [
+        {
+          "file": "legs/leggings2/male",
+          "notes": "original overalls by ElizaWy, base animations adapted from v3 overalls by bluecarrot16, leggings by JaidynReiman",
+          "authors": [
+            "bluecarrot16",
+            "ElizaWy",
+            "JaidynReiman",
+            "Mandi Paugh",
+            "William.Thompsonj",
+            "Johannes Sjölund (wulax)",
+            "Stephen Challener (Redshrike)"
+          ],
+          "licenses": [
+            "OGA-BY 3.0",
+            "GPL 3.0"
+          ],
+          "urls": [
+            "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+            "https://opengameart.org/content/lpc-expanded-pants"
+          ]
+        },
+        {
+          "file": "legs/leggings2",
+          "notes": "original by ElizaWy, remaining frames",
+          "authors": [
+            "ElizaWy",
+            "JaidynReiman",
+            "Johannes Sjölund (wulax)",
+            "Stephen Challener (Redshrike)"
+          ],
+          "licenses": [
+            "OGA-BY 3.0"
+          ],
+          "urls": [
+            "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+            "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+            "https://opengameart.org/content/lpc-expanded-pants"
+          ]
+        }
+      ],
+      "upstreamSource": {
+        "repository": "https://github.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator",
+        "commit": "86160e7507d6841259cff624a51a63c1d4847ee3",
+        "itemId": "legs_leggings2",
+        "bodyType": "female"
+      }
+    }
+  }
+}

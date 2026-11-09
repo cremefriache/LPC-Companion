@@ -1,0 +1,39 @@
+{
+  "repository": "https://github.com/codyaboyd/Universal-LPC-Modern-Sprite-Generator",
+  "commit": "7736d762aa2113f29342dad869ef4931218aa7ae",
+  "metadata": {
+    "sheet_definitions/head/heads/human/heads_human_female.json": "4012ebc5cc914b2e0b16a547613c7dcd6fad7a697d7d8785eb6d954c36c1badc"
+  },
+  "sprites": {
+    "spritesheets/body/bodies/female/idle.png": "817b9f90478c75e32c0c085338cab1f0743cb908c2fa506faed38a1978eab24d",
+    "spritesheets/body/bodies/female/walk.png": "594cb64a032d06d560f23b17f77b572e2dc8ba61df490cfca43f15316c85cfcf",
+    "spritesheets/body/bodies/female/run.png": "bba8de1e57951eed05c8685502caab858fe54058f537205737b50a33a839d79b",
+    "spritesheets/body/bodies/female/jump.png": "06db318483e84d87ae10d2a0a7587cc4bf50a47cf30ca6ea55ac9311179886ba",
+    "spritesheets/body/bodies/female/spellcast.png": "f02ad3ac5024d9693c430827d6f1efb0c75eeb705cb319e767a49c56cdc506c6",
+    "spritesheets/head/heads/human/female/idle.png": "a225e256118c2a5a060d3f8d577e710079322ee0afc8e04e31f65441069e9d87",
+    "spritesheets/head/heads/human/female/walk.png": "7ac84c09c9e126e5fd0b648c180901e24ddb116c7965cd3db6f2f653947b90bd",
+    "spritesheets/head/heads/human/female/run.png": "2ea26a58f267ec5d8312668138c2240d589c21c2550e2f1bb444a85d47441fe4",
+    "spritesheets/head/heads/human/female/jump.png": "f79df6fe0ce9554908d5242254744a3c9ff01cccb8ffc08091852562ec8da08e",
+    "spritesheets/head/heads/human/female/spellcast.png": "d24e003041fb79a56a19887a7827f52d641827ac588ca1549e5e9152f45c721f",
+    "spritesheets/torso/clothes/shortsleeve/tshirt/female/idle.png": "6b4faaeac19f7235d212ec9fbc26cdd9c878cd753d69ef0a02912a66030b50de",
+    "spritesheets/torso/clothes/shortsleeve/tshirt/female/walk.png": "b427b289323857107abc67c69a5afe38250edee717ebf769a7d776172086adb0",
+    "spritesheets/torso/clothes/shortsleeve/tshirt/female/run.png": "1184abaf892e4ccc4db03ce83b02d4a6af205162d31af5cd539233a6d400a564",
+    "spritesheets/torso/clothes/shortsleeve/tshirt/female/jump.png": "a4ff3cb682f984e23343a3805ed4d5ecabb58665d90e112c57510e1e70fdc705",
+    "spritesheets/torso/clothes/shortsleeve/tshirt/female/spellcast.png": "e36946bbcd048dc010b265b55b3910091057e7e94cf6da20defe2d17130a815b",
+    "spritesheets/torso/clothes/longsleeve/longsleeve/female/idle.png": "58089af57af0e888117d8d7e9b9bdcefaab23edaaeec09b6d22cd9f5e43036e5",
+    "spritesheets/torso/clothes/longsleeve/longsleeve/female/walk.png": "6833ea1facfa45d07356a3b85ac022742db916f677c0a20474719aad61a13bc8",
+    "spritesheets/torso/clothes/longsleeve/longsleeve/female/run.png": "aa9b4ade82dfde1161edeb2ef8b50a9c9cef612235b96255294a487b9efad8a3",
+    "spritesheets/torso/clothes/longsleeve/longsleeve/female/jump.png": "823b6f2763a1df51200ac5355c1dd96669a4ba332d01fd7c12fe9b7779813501",
+    "spritesheets/torso/clothes/longsleeve/longsleeve/female/spellcast.png": "1902718971685dc666e0d99a434457259723ef3d56492cf53fd705e71a30e529",
+    "spritesheets/legs/pants/thin/idle.png": "53cbb8f3f67ee809c51e590db1f916a4e6e79bcebab174210b7247c4f8593b09",
+    "spritesheets/legs/pants/thin/walk.png": "064ffc33544e67bd13c574fd8b18a82a51e25d77e628f5eeccbc76a8860b2f83",
+    "spritesheets/legs/pants/thin/run.png": "ccfdc7d80462f2aaeeb71e00a81791711b940654349993ce6f781a960ba5df93",
+    "spritesheets/legs/pants/thin/jump.png": "ac31861241a3cc6b18110a8894e5ba48d4bab1d0116b8713d3d4253f6e7cc44b",
+    "spritesheets/legs/pants/thin/spellcast.png": "734872f46eec4adfe8bea635b39419dc7af6f1384df08ee868248d93a5987960",
+    "spritesheets/legs/shorts/shorts/thin/idle.png": "00d8623d915d6065d0939b86a6b50ca2216fd7e956e022e3c62062a7ac176c37",
+    "spritesheets/legs/shorts/shorts/thin/walk.png": "5cecbc6bf4922c65f737e67e2dbb98ca6e154513614d4ce2097abe4aec502ba8",
+    "spritesheets/legs/shorts/shorts/thin/run.png": "3c0c5fb7a0de976afd54e9fc99671943b9b317ae019c4bee1c023b36e9ed2754",
+    "spritesheets/legs/shorts/shorts/thin/jump.png": "04e83a3a18b49036815006628fe11370ecc67e4e55102f6f844c4b8202c3f123",
+    "spritesheets/legs/shorts/shorts/thin/spellcast.png": "3c6240dc2b4bf6e31f99eadfcef67a6529927fd83f4d0d891854c5c067f4ab42"
+  }
+}

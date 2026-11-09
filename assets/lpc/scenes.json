@@ -1,0 +1,51 @@
+{
+  "version": "lpc-scenes-v1",
+  "backgrounds": {
+    "woodland": {
+      "name": "Woodland clearing",
+      "path": "backgrounds/woodland.svg",
+      "sha256": "01314d52282612c7dcf875fad84881a146e6138a56df9ab2109dc4fece1c23c1",
+      "width": 320,
+      "height": 240,
+      "credits": {
+        "authors": [
+          "Extension-LPC_Tool contributors"
+        ],
+        "license": "MIT",
+        "source": "backgrounds/woodland.svg",
+        "provenance": "Original repository-authored geometric vector artwork; not extracted from LPC."
+      }
+    },
+    "hearth": {
+      "name": "Hearth room",
+      "path": "backgrounds/hearth.svg",
+      "sha256": "24ae80204aaf5663d8157626a6e30c4750bdd6297181f06eb31a1bbec3d3651b",
+      "width": 320,
+      "height": 240,
+      "credits": {
+        "authors": [
+          "Extension-LPC_Tool contributors"
+        ],
+        "license": "MIT",
+        "source": "backgrounds/hearth.svg",
+        "provenance": "Original repository-authored geometric vector artwork; not extracted from LPC."
+      }
+    },
+    "courtyard": {
+      "name": "Stone courtyard",
+      "path": "backgrounds/courtyard.svg",
+      "sha256": "dc07aa2cb505cba15591429602e40abf58b7dd15c7b2130a7737835b3623cbb9",
+      "width": 320,
+      "height": 240,
+      "credits": {
+        "authors": [
+          "Extension-LPC_Tool contributors"
+        ],
+        "license": "MIT",
+        "source": "backgrounds/courtyard.svg",
+        "provenance": "Original repository-authored geometric vector artwork; not extracted from LPC."
+      }
+    }
+  },
+  "licenseText": "MIT License\n\nCopyright (c) 2026 Extension-LPC_Tool contributors\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+}

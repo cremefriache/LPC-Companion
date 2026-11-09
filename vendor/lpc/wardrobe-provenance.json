@@ -1,0 +1,37 @@
+{
+  "repository": "https://github.com/codyaboyd/Universal-LPC-Modern-Sprite-Generator",
+  "commit": "7736d762aa2113f29342dad869ef4931218aa7ae",
+  "metadata": {
+    "sheet_definitions/torso/cape/cape_solid.json": "99578e7fb92e38f716e017870cf6e9d144ed831f37ea50071d98c167969b4fc2",
+    "sheet_definitions/torso/cape/cape_tattered.json": "3a901744f52eb70be87d65d88b58d02853a66b9d52edadbfe6ebd6a117ecd68a",
+    "sheet_definitions/torso/cape/cape_trim.json": "492717d8bb835c7bdc12251723bc62ace4bc364d589e78eb17f9a37f2f6da8cb",
+    "sheet_definitions/weapons/shields/heater/shield_heater_revised_wood.json": "6685353a960131ad1f513bda1ad1ff563afc874254769c9a3ed90b84494e1acd"
+  },
+  "sprites": {
+    "spritesheets/cape/solid/bg/idle.png": "bfef4eec024c1ece7f10bc3ac47cc298770eb2cfd7958d057c598bd85c060686",
+    "spritesheets/cape/solid/bg/walk.png": "27b02ac756f4a3d19f46fa0f113b42f40387e8f6d8c98a6487f1fc1a525fe059",
+    "spritesheets/cape/solid/bg/spellcast.png": "d36116f2f9393ee853010f9251cc8e55e896fae95889403c51624b929e28b523",
+    "spritesheets/cape/solid/fg/idle.png": "90cb4f80f778bfdc010ec5a4709f4584bf828908d9cf4bbc506588eb48853a9e",
+    "spritesheets/cape/solid/fg/walk.png": "1aa730ea5691a376b91fa44db7c8fa369127b9e0347c3a31d6654fa3a932b472",
+    "spritesheets/cape/solid/fg/spellcast.png": "7dd247d96bee931acce54d45fb9a25ff3a91e45379db8bbc094f1efc2669d06d",
+    "spritesheets/cape/tattered/bg/idle.png": "a3291a364a280dac0b53a7ef6d24e4c20172bf6012215e35c2a4c7fb2e699885",
+    "spritesheets/cape/tattered/bg/walk.png": "f9ac931ff31865f5a9a84bf32ebf09e163d0da13b2706f3fc69f93d842d880ad",
+    "spritesheets/cape/tattered/bg/spellcast.png": "8cb8e21307b7d00068676d36f87125f45dcf0210b75d0b9500ed3f52157ec24b",
+    "spritesheets/cape/tattered/fg/idle.png": "0dae3d1117708967710f84c274a95e15b772a80d97fbbc3bd515b25fcaf29e8c",
+    "spritesheets/cape/tattered/fg/walk.png": "e5a3173f75a0f1d5c3b4dd5afad252904b619bb501148fec74bff5a984a8366d",
+    "spritesheets/cape/tattered/fg/spellcast.png": "640318c4cdd0f8a4baae766fdc9c95c0582b9b9759b05237190953d9717cf32b",
+    "spritesheets/cape/trim/idle.png": "ea2eeb963519c11962f103187c682d65aeca93f3101d2d83411f83ab294304ce",
+    "spritesheets/cape/trim/walk.png": "2df06214c08457fc37a3a6bae1658e787c234224989fc6e938513776ca5e8fbd",
+    "spritesheets/cape/trim/spellcast.png": "a06b6e4a9c2c8f879091e6c6172054c8b81148ac46f660d182d7dc6a40d244b8",
+    "spritesheets/shield/heater/revised/wood/bg/idle/brown.png": "cc97173f0bd2dfb06c5aebbf190b22c188e91aff3fad68050deba62a08d9a53c",
+    "spritesheets/shield/heater/revised/wood/bg/walk/brown.png": "0b0949239d9876f3d9f0c4a1c700544c2ab4ef164d6c36a70cba79cf8be786f5",
+    "spritesheets/shield/heater/revised/wood/bg/run/brown.png": "4133840b5f40c776a289d441684999e51bedcaf7354823e70ed909add7b5fe6d",
+    "spritesheets/shield/heater/revised/wood/bg/jump/brown.png": "928064171f529eb0a2173a2481487a2aa80150636b8257e37c6b6d6a9fe4d3f9",
+    "spritesheets/shield/heater/revised/wood/bg/spellcast/brown.png": "30c99e92b603baaeb6692c032f172541c18ca102f856d97385cd367275d141c2",
+    "spritesheets/shield/heater/revised/wood/fg/idle/brown.png": "378f582bff989a8d4d05c6e3fa622099e483fe4f7b628a6cb1d3a763339f09e3",
+    "spritesheets/shield/heater/revised/wood/fg/walk/brown.png": "7fda56ede31dbe1bad6237f7294e89094c34400da455053bd7b92607743185da",
+    "spritesheets/shield/heater/revised/wood/fg/run/brown.png": "efaa919a8598c6c8c7bb3e6f36be7cd2e769591b5829fd9a0224883bf6d7c808",
+    "spritesheets/shield/heater/revised/wood/fg/jump/brown.png": "869bf0838005755253384b5815ea3b714b5d4860e2de422ec049eee69fec46c7",
+    "spritesheets/shield/heater/revised/wood/fg/spellcast/brown.png": "58d94aeccacbc83927f8c89f5d40ccc1e8045f788941cb1823038e1767c2be54"
+  }
+}

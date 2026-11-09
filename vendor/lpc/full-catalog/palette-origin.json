@@ -1,0 +1,302 @@
+{
+  "scope": "Palette provenance only; the original XCF is not shipped art or a runtime dependency.",
+  "sourceUrl": "https://opengameart.org/sites/default/files/accessories.xcf",
+  "creditPage": "https://opengameart.org/content/lpc-base-character-expressions",
+  "fileSha256": "2b0a358ee49afa95754562923307ba6ff372bd94c52b4ddeee0415f42e3fec0c",
+  "bytes": 30466,
+  "decoderFormatReference": "https://developer.gimp.org/core/standards/xcf/",
+  "layers": [
+    {
+      "name": "Ears",
+      "width": 120,
+      "height": 40,
+      "rgbaSha256": "17744bb6a4ed1d9d51d85d7eb645cde30352530d494233c434027f9e3193bae4",
+      "colors": {}
+    },
+    {
+      "name": "Big Ears",
+      "width": 120,
+      "height": 40,
+      "rgbaSha256": "cdb1ccbaabe7785304f2b17df69cf13a15c684bf7b2ad91eb5df3d1ee0ad3c8f",
+      "colors": {
+        "#281820": 24,
+        "#D28560": 14,
+        "#EAA377": 21,
+        "#FDD5B7": 12,
+        "#9E3E37": 2
+      }
+    },
+    {
+      "name": "Elf Ears",
+      "width": 120,
+      "height": 40,
+      "rgbaSha256": "d29891bb5253858623b5b37feb0708113a7a3ebbd6943889a760a8118cb0b66f",
+      "colors": {
+        "#281820": 24,
+        "#FDD5B7": 10,
+        "#EAA377": 6,
+        "#D28560": 6
+      }
+    },
+    {
+      "name": "Hair",
+      "width": 120,
+      "height": 40,
+      "rgbaSha256": "d32269dcb5370ade45e7c1ce3d19ef6abb3a8473304b1c9d9a8f7874f7614dfc",
+      "colors": {
+        "#0B070F": 229,
+        "#255537": 148,
+        "#192A24": 202,
+        "#31864B": 101,
+        "#6E9254": 3,
+        "#3CB95F": 30,
+        "#7AC368": 19,
+        "#85F67C": 4,
+        "#C9FF98": 2,
+        "#BEFE84": 4,
+        "#B2CD70": 1,
+        "#626741": 1,
+        "#EAA377": 24
+      }
+    },
+    {
+      "name": "Accessories",
+      "width": 120,
+      "height": 40,
+      "rgbaSha256": "17744bb6a4ed1d9d51d85d7eb645cde30352530d494233c434027f9e3193bae4",
+      "colors": {}
+    },
+    {
+      "name": "Nerd Glasses",
+      "width": 120,
+      "height": 40,
+      "rgbaSha256": "85ee165ec1536caa66d965e14cda0a6d1bf1a7ac2a0060445d0d27278b95df57",
+      "colors": {
+        "#080A0A": 75,
+        "#FFFFFF": 45
+      }
+    },
+    {
+      "name": "Sunglasses",
+      "width": 120,
+      "height": 40,
+      "rgbaSha256": "7c44d718184fc1b2ccb1642eee0d29b86a7503ef79a28179a96c037089732ba2",
+      "colors": {
+        "#080A0A": 98,
+        "#FDD5B7": 2,
+        "#949525": 7,
+        "#000000": 4
+      }
+    },
+    {
+      "name": "Secretary Glasses",
+      "width": 120,
+      "height": 40,
+      "rgbaSha256": "2cbb607c0bb2f4efa9cabe28f0c220d36d58bf1c635507e2f5593d7e39c5276c",
+      "colors": {
+        "#2F1C40": 73,
+        "#FDD5B7": 2,
+        "#F4D0BA": 1,
+        "#FFFFFF": 44
+      }
+    },
+    {
+      "name": "Monocle",
+      "width": 120,
+      "height": 40,
+      "rgbaSha256": "ec2feb49663d6d01e475175f0517a99e022988573f7a62005f9b9145b04880ba",
+      "colors": {
+        "#744B30": 12,
+        "#C39753": 3,
+        "#FFFFFF": 28,
+        "#FFFF3A": 2,
+        "#FFE900": 6,
+        "#2B1C1D": 12,
+        "#DFBD00": 16,
+        "#130D14": 3
+      }
+    },
+    {
+      "name": "Facial Features",
+      "width": 120,
+      "height": 40,
+      "rgbaSha256": "17744bb6a4ed1d9d51d85d7eb645cde30352530d494233c434027f9e3193bae4",
+      "colors": {}
+    },
+    {
+      "name": "Noses",
+      "width": 120,
+      "height": 40,
+      "rgbaSha256": "17744bb6a4ed1d9d51d85d7eb645cde30352530d494233c434027f9e3193bae4",
+      "colors": {}
+    },
+    {
+      "name": "Big Nose",
+      "width": 120,
+      "height": 40,
+      "rgbaSha256": "01d184c9629c08b04611867ddb52a4480043bdc97cc1b716788e1a9cfaca19d1",
+      "colors": {
+        "#EAA377": 7,
+        "#D28560": 5,
+        "#FBECE6": 2,
+        "#FDD5B7": 3,
+        "#281820": 7,
+        "#9E3E37": 2
+      }
+    },
+    {
+      "name": "Straight Nose",
+      "width": 120,
+      "height": 40,
+      "rgbaSha256": "2db2962a04070615f728d0c0538c57929cec9935378797c2b162e8d8109a0983",
+      "colors": {
+        "#EAA377": 8,
+        "#D28560": 5,
+        "#FDD5B7": 1,
+        "#FBECE6": 2,
+        "#9E3E37": 2
+      }
+    },
+    {
+      "name": "Button Nose",
+      "width": 120,
+      "height": 40,
+      "rgbaSha256": "440790799fe7ff97491a90b8f9fcf91023bf3dffdab6a87a8a1af454e5889623",
+      "colors": {
+        "#EAA377": 3,
+        "#FBECE6": 3,
+        "#D28560": 1,
+        "#281820": 3,
+        "#FDD5B7": 1,
+        "#9E3E37": 1
+      }
+    },
+    {
+      "name": "Facial Hair",
+      "width": 120,
+      "height": 40,
+      "rgbaSha256": "17744bb6a4ed1d9d51d85d7eb645cde30352530d494233c434027f9e3193bae4",
+      "colors": {}
+    },
+    {
+      "name": "Big Moustache",
+      "width": 120,
+      "height": 40,
+      "rgbaSha256": "a5f393fe96afb3f734033c1f719d27b7fe5e8458b960267c4df8692f7530926c",
+      "colors": {
+        "#080A0A": 75
+      }
+    },
+    {
+      "name": "French Moustache",
+      "width": 120,
+      "height": 40,
+      "rgbaSha256": "ca8ddedc7077bc5292d7aa5051bc4744695fc02bc0f31683d457c3f32725ca32",
+      "colors": {
+        "#080A0A": 18,
+        "#EAA377": 1
+      }
+    },
+    {
+      "name": "5 o'clock Shadow",
+      "width": 120,
+      "height": 40,
+      "rgbaSha256": "cc434b6c1b4d674d25b394e966c71b85b9376cde9a05fb856fd89fc07de63273",
+      "colors": {
+        "#455D4F": 92
+      }
+    },
+    {
+      "name": "Eyes",
+      "width": 120,
+      "height": 40,
+      "rgbaSha256": "17744bb6a4ed1d9d51d85d7eb645cde30352530d494233c434027f9e3193bae4",
+      "colors": {}
+    },
+    {
+      "name": "Tears",
+      "width": 120,
+      "height": 40,
+      "rgbaSha256": "100b83afa4840b7247555b1abd5c11333e2d3f6cc159096451db3c8c0f4bdbb2",
+      "colors": {
+        "#50D4EC": 54
+      }
+    },
+    {
+      "name": "Sad Eyes",
+      "width": 120,
+      "height": 40,
+      "rgbaSha256": "ab9500278384121484d94963de903fb03ae384ca6497e49ae08c7c29066ca889",
+      "colors": {
+        "#EAA377": 6,
+        "#D28560": 5,
+        "#9E3E37": 8,
+        "#281820": 8,
+        "#50D4EC": 2,
+        "#FDD5B7": 11,
+        "#F2F8F9": 16,
+        "#5187B3": 3,
+        "#293D4B": 6
+      }
+    },
+    {
+      "name": "Angry Eyes",
+      "width": 120,
+      "height": 40,
+      "rgbaSha256": "065054fbb8b216bf27da17a91af440817f82ec37fa39ba5c687bab2b9b9efabd",
+      "colors": {
+        "#D28560": 29,
+        "#EAA377": 7,
+        "#FDD5B7": 2
+      }
+    },
+    {
+      "name": "Happy Eyes",
+      "width": 120,
+      "height": 40,
+      "rgbaSha256": "939572b58b3cce9ef18ef1b12176bdc8c7051f545a330c973a046e44881ae4ee",
+      "colors": {
+        "#FDD5B7": 30,
+        "#EAA377": 7,
+        "#FBECE6": 4,
+        "#FDB4B7": 12
+      }
+    },
+    {
+      "name": "Male Base",
+      "width": 120,
+      "height": 40,
+      "rgbaSha256": "d5f08b42aa0f5aefbbfa9334f19c47a306848bce7a5676668e3094e2c8f1c857",
+      "colors": {
+        "#281820": 247,
+        "#9E3E37": 108,
+        "#D28560": 117,
+        "#EAA377": 358,
+        "#FDD5B7": 804,
+        "#FBECE6": 91,
+        "#50D4EC": 6,
+        "#F2F8F9": 9,
+        "#5187B3": 3,
+        "#293D4B": 6
+      }
+    },
+    {
+      "name": "Female Base",
+      "width": 120,
+      "height": 40,
+      "rgbaSha256": "abd7a726207842f06c8e527772d2b6f0d87cee27d5e64d2b148ffc1ee811d799",
+      "colors": {
+        "#281820": 229,
+        "#9E3E37": 109,
+        "#D28560": 129,
+        "#EAA377": 331,
+        "#FDD5B7": 674,
+        "#FBECE6": 85,
+        "#50D4EC": 6,
+        "#F2F8F9": 9,
+        "#5187B3": 3,
+        "#293D4B": 6
+      }
+    }
+  ]
+}

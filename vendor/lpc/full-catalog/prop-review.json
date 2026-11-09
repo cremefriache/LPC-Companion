@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "sourceCommit": "86160e7507d6841259cff624a51a63c1d4847ee3",
+  "reviewedLedgerSha256": "cd1c699bcbc73f2bd3419788884ad57e7b8bd205c4d489e9f046d2ff18c50b7f",
+  "scope": "Five inspected original prop trajectories plus the explicit Necklace Watering projection from its already reviewed Thrust cells. Exact source/geometry and known actually visible body/head frames are mandatory. Only the named projected physical cells are approved; other unused padding and whole-direction omissions retain refusal.",
+  "approved": [
+    {
+      "itemId": "tool_axe",
+      "action": "tool_axe",
+      "kind": "prop_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "weapon_magic_wand",
+      "action": "slash",
+      "kind": "prop_occlusion",
+      "bodies": [
+        "male",
+        "muscular",
+        "female"
+      ]
+    },
+    {
+      "itemId": "weapon_sword_dagger",
+      "action": "slash",
+      "kind": "prop_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "muscular",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "weapon_sword_longsword",
+      "action": "slash_reverse_oversize",
+      "kind": "prop_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "muscular",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "weapon_sword_saber",
+      "action": "slash_oversize",
+      "kind": "prop_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "muscular",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "neck_necklace",
+      "action": "watering",
+      "kind": "prop_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ],
+      "derivedFrom": "thrust",
+      "includePhysicalColumns": true
+    }
+  ]
+}

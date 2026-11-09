@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420" role="img" aria-labelledby="title desc">
+<title id="title">LPC Companion</title><desc id="desc">A small stage. A familiar face. Pixel-art companions for SillyTavern.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#172b30"/><stop offset="1" stop-color="#111820"/></linearGradient><pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#9dcdb7" stroke-opacity=".04"/></pattern><radialGradient id="glow"><stop stop-color="#79b99b" stop-opacity=".15"/><stop offset="1" stop-color="#79b99b" stop-opacity="0"/></radialGradient></defs>
+<rect width="1280" height="420" rx="22" fill="url(#bg)"/><rect width="1280" height="420" rx="22" fill="url(#grid)"/><ellipse cx="1070" cy="185" rx="340" ry="320" fill="url(#glow)"/>
+<rect x="1" y="1" width="1278" height="418" rx="21" fill="none" stroke="#94b6a7" stroke-opacity=".22"/>
+<g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif">
+<rect x="56" y="44" width="7" height="7" fill="#abd8c2"/><text x="76" y="53" font-size="12" font-weight="600" letter-spacing="2.3" fill="#abd8c2">FOR SILLYTAVERN · BUILT WITH LPC</text>
+<text x="52" y="145" font-size="72" font-weight="650" letter-spacing="-3" fill="#f0f4ef">LPC Companion</text>
+<text x="56" y="205" font-size="30" font-weight="400" letter-spacing="-.6" fill="#cad8d0">A small stage. A familiar face.</text>
+<text x="56" y="250" font-size="18" fill="#97aba4">Dress your character. Set the scene. Carry the story forward.</text>
+<path d="M56 302H1224" stroke="#a3c6b3" stroke-opacity=".18"/>
+<text x="56" y="352" font-size="12" font-weight="600" letter-spacing="2" fill="#a8c6b5">WARDROBES</text><text x="250" y="352" font-size="12" font-weight="600" letter-spacing="2" fill="#a8c6b5">SCENES</text><text x="396" y="352" font-size="12" font-weight="600" letter-spacing="2" fill="#a8c6b5">CHAT CONTINUITY</text>
+<rect x="1045" y="328" width="179" height="36" rx="18" fill="#a8c6b5" fill-opacity=".07" stroke="#a8c6b5" stroke-opacity=".25"/><text x="1134" y="351" text-anchor="middle" font-size="12" fill="#c7d6cd">DEVELOPMENT PREVIEW</text>
+</g>
+<g fill="#c5d6bd" fill-opacity=".8"><path d="M1120 94h12v12h12v12h-12v12h-12v-12h-12v-12h12z"/><path d="M1181 160h6v6h6v6h-6v6h-6v-6h-6v-6h6z" opacity=".5"/><rect x="1047" y="161" width="6" height="6" opacity=".35"/></g>
+</svg>

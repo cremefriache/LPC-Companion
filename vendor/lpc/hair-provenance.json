@@ -1,0 +1,380 @@
+{
+  "repository": "https://github.com/codyaboyd/Universal-LPC-Modern-Sprite-Generator",
+  "commit": "7736d762aa2113f29342dad869ef4931218aa7ae",
+  "selectedLicenses": {
+    "hair_natural": "CC0",
+    "hair_bob": "CC0",
+    "hair_long": "GPL 3.0"
+  },
+  "metadata": {
+    "sheet_definitions/hair/afro/hair_natural.json": {
+      "sha256": "bfca5376ac87b78516ed60980eead2538f15d1cc8fd02695c3f17bea4b8efc82",
+      "original": {
+        "name": "Natural",
+        "layer_1": {
+          "zPos": 120,
+          "male": "hair/natural/adult/",
+          "muscular": "hair/natural/adult/",
+          "female": "hair/natural/adult/",
+          "pregnant": "hair/natural/adult/",
+          "teen": "hair/natural/adult/"
+        },
+        "animations": [
+          "spellcast",
+          "thrust",
+          "walk",
+          "slash",
+          "shoot",
+          "hurt",
+          "watering",
+          "idle",
+          "jump",
+          "run",
+          "sit",
+          "emote",
+          "climb",
+          "combat",
+          "1h_slash",
+          "1h_backslash",
+          "1h_halfslash"
+        ],
+        "credits": [
+          {
+            "file": "hair/natural",
+            "notes": "Original by bluecarrot16, animations by ElizaWy.",
+            "authors": [
+              "ElizaWy",
+              "bluecarrot16"
+            ],
+            "licenses": [
+              "CC0"
+            ],
+            "urls": [
+              "https://opengameart.org/content/lpc-hair",
+              "https://github.com/ElizaWy/LPC/blob/main/Characters/Hair",
+              "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
+            ]
+          }
+        ],
+        "recolors": {
+          "material": "hair",
+          "palettes": [
+            "ulpc",
+            "lpcr",
+            "all.lpcr"
+          ]
+        },
+        "type_name": "hair"
+      }
+    },
+    "sheet_definitions/hair/bob/hair_bob.json": {
+      "sha256": "e6fba4e460f540fd9f3161ca736d52d2a2bb3a7cf1872b3c44cfbad823e827a9",
+      "original": {
+        "name": "Bob",
+        "layer_1": {
+          "zPos": 120,
+          "male": "hair/bob/adult/",
+          "muscular": "hair/bob/adult/",
+          "female": "hair/bob/adult/",
+          "pregnant": "hair/bob/adult/",
+          "teen": "hair/bob/adult/"
+        },
+        "animations": [
+          "spellcast",
+          "thrust",
+          "walk",
+          "slash",
+          "shoot",
+          "hurt",
+          "watering",
+          "idle",
+          "jump",
+          "run",
+          "sit",
+          "emote",
+          "climb",
+          "combat",
+          "1h_slash",
+          "1h_backslash",
+          "1h_halfslash"
+        ],
+        "credits": [
+          {
+            "file": "hair/bob",
+            "notes": "Original by bluecarrot16. Edited and animated by ElizaWy.",
+            "authors": [
+              "ElizaWy",
+              "bluecarrot16"
+            ],
+            "licenses": [
+              "CC0"
+            ],
+            "urls": [
+              "https://opengameart.org/content/lpc-hair",
+              "https://github.com/ElizaWy/LPC/blob/main/Characters/Hair",
+              "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
+            ]
+          }
+        ],
+        "recolors": {
+          "material": "hair",
+          "palettes": [
+            "ulpc",
+            "lpcr",
+            "all.lpcr"
+          ]
+        },
+        "type_name": "hair"
+      }
+    },
+    "sheet_definitions/hair/long/hair_long.json": {
+      "sha256": "647e2ebe7f12341c435cfb872ca8150a429cb9395a2dfad31a7f52f40f091ea0",
+      "original": {
+        "name": "Long",
+        "layer_1": {
+          "zPos": 120,
+          "male": "hair/long/adult/",
+          "muscular": "hair/long/adult/",
+          "female": "hair/long/adult/",
+          "pregnant": "hair/long/adult/",
+          "teen": "hair/long/adult/"
+        },
+        "animations": [
+          "spellcast",
+          "thrust",
+          "walk",
+          "slash",
+          "shoot",
+          "hurt",
+          "watering",
+          "idle",
+          "jump",
+          "run",
+          "sit",
+          "emote",
+          "climb",
+          "combat",
+          "1h_slash",
+          "1h_backslash",
+          "1h_halfslash"
+        ],
+        "credits": [
+          {
+            "file": "hair/long",
+            "notes": "",
+            "authors": [
+              "JaidynReiman",
+              "Manuel Riecke (MrBeast)"
+            ],
+            "licenses": [
+              "CC-BY-SA 3.0",
+              "GPL 3.0"
+            ],
+            "urls": [
+              "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+              "https://opengameart.org/content/lpc-expanded-hair"
+            ]
+          }
+        ],
+        "recolors": {
+          "material": "hair",
+          "palettes": [
+            "ulpc",
+            "lpcr",
+            "all.lpcr"
+          ]
+        },
+        "type_name": "hair"
+      }
+    }
+  },
+  "sprites": {
+    "spritesheets/hair/natural/adult/idle.png": "e4563da9078cfda64bd99d203ab5c4f432b49b0ba84ab85170601df83b801623",
+    "spritesheets/hair/natural/adult/walk.png": "6eb73784312a2497bdd8bf1fd142c677763b1da05cf65e306c44aaf03934918d",
+    "spritesheets/hair/natural/adult/run.png": "4657220917319c5e8bb60daf1593c895f7f1e49a2eface8570f672c93d62b11d",
+    "spritesheets/hair/natural/adult/jump.png": "483be2dc85de32050b94fa6c0db4828611be9f425f8e58e835364f32719b562f",
+    "spritesheets/hair/natural/adult/spellcast.png": "499506d4da20d460a2b8dafb5ecda6e7b90854d6aad8f44e16bcce5d315776f8",
+    "spritesheets/hair/natural/adult/sit.png": "902f7d8d78600911fdfffcbf0f8a2a730efb74ec3bb69af78af7a294214cec75",
+    "spritesheets/hair/natural/adult/emote.png": "17cebdd42380dc84c8104ec7c5fac621ca020e01dd0fd93c316dda0313fb5269",
+    "spritesheets/hair/bob/adult/idle.png": "bb3ebba5c1ccf618cc4a6ca7af39e8d39b628e7b746ad1d82d20fc188c305b13",
+    "spritesheets/hair/bob/adult/walk.png": "40f1d1420f3bdbe2646654995cd2906b9a0edf4252c73060b34d5fcc27be0bcf",
+    "spritesheets/hair/bob/adult/run.png": "a9bdf1a907b1faf9b85608770e8ce467bc8e5194e589cdfbc9599853bb574d2a",
+    "spritesheets/hair/bob/adult/jump.png": "f2d94a2e2d428d32191e34c0d2624da4b1ba2d1860bfc7cd5c857e51f69a3a15",
+    "spritesheets/hair/bob/adult/spellcast.png": "bce76b37afead53e888b78f97c276c2697c8f3d437012de6c75ee85dbe7cc868",
+    "spritesheets/hair/bob/adult/sit.png": "192997e01bd35645e9aae89bb1ae1e020953913aa4b7e55882a1b0971635ed9b",
+    "spritesheets/hair/bob/adult/emote.png": "788f5c491fadd4f93518c5164d9ce67c695fc280346ed526b5c3d9777a871b8e",
+    "spritesheets/hair/long/adult/idle.png": "0a34120b5a95f090dac1268b378285632735872c5489343c624ea5d715f61d3e",
+    "spritesheets/hair/long/adult/walk.png": "e5017ce13b1788fb70e0268170cebff2819f5dbf3256a108189816b3f219bbb0",
+    "spritesheets/hair/long/adult/run.png": "eb040736100e65246aa9c96e564103a119e752349dea34dcd37b2530ce1153d3",
+    "spritesheets/hair/long/adult/jump.png": "743edfee9d3559b378b44722192cb2fd51624b28c2e4b298eda3ccb255ab737e",
+    "spritesheets/hair/long/adult/spellcast.png": "51ebbebdf682a19a75f8e213ce827e2b3b16bef2483c856f77bf0d0bf46cead2",
+    "spritesheets/hair/long/adult/sit.png": "23e212d60c06ab55b4c2b09028b95f2e4d9d32d855c9b0549782c48a5acb3559",
+    "spritesheets/hair/long/adult/emote.png": "7166d90a4dd9d7eb91d06f290f0bd5217ead8ac59f1334c99b68a8d2af6f1bae"
+  },
+  "items": {
+    "hair_natural": {
+      "name": "Natural",
+      "slot": "hair",
+      "bodyTypes": [
+        "male",
+        "female"
+      ],
+      "counterparts": {},
+      "material": "hair",
+      "selectedLicense": "CC0",
+      "sourceColorAliases": {
+        "#A22600": "#A42600"
+      },
+      "sourcePalette": "orange",
+      "layers": [
+        {
+          "z": 120,
+          "required": true,
+          "paths": {
+            "idle": "spritesheets/hair/natural/adult/idle.png",
+            "walk": "spritesheets/hair/natural/adult/walk.png",
+            "run": "spritesheets/hair/natural/adult/run.png",
+            "jump": "spritesheets/hair/natural/adult/jump.png",
+            "spellcast": "spritesheets/hair/natural/adult/spellcast.png",
+            "sit": "spritesheets/hair/natural/adult/sit.png",
+            "emote": "spritesheets/hair/natural/adult/emote.png"
+          }
+        }
+      ],
+      "requiredLayerCount": 1,
+      "occupies": [
+        "hair"
+      ],
+      "requires": {},
+      "conflictsWith": [],
+      "credits": [
+        {
+          "file": "hair/natural",
+          "notes": "Original by bluecarrot16, animations by ElizaWy.",
+          "authors": [
+            "ElizaWy",
+            "bluecarrot16"
+          ],
+          "licenses": [
+            "CC0"
+          ],
+          "urls": [
+            "https://opengameart.org/content/lpc-hair",
+            "https://github.com/ElizaWy/LPC/blob/main/Characters/Hair",
+            "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
+          ]
+        }
+      ]
+    },
+    "hair_bob": {
+      "name": "Bob",
+      "slot": "hair",
+      "bodyTypes": [
+        "male",
+        "female"
+      ],
+      "counterparts": {},
+      "material": "hair",
+      "selectedLicense": "CC0",
+      "sourceColorAliases": {
+        "#A22600": "#A42600"
+      },
+      "sourcePalette": "orange",
+      "layers": [
+        {
+          "z": 120,
+          "required": true,
+          "paths": {
+            "idle": "spritesheets/hair/bob/adult/idle.png",
+            "walk": "spritesheets/hair/bob/adult/walk.png",
+            "run": "spritesheets/hair/bob/adult/run.png",
+            "jump": "spritesheets/hair/bob/adult/jump.png",
+            "spellcast": "spritesheets/hair/bob/adult/spellcast.png",
+            "sit": "spritesheets/hair/bob/adult/sit.png",
+            "emote": "spritesheets/hair/bob/adult/emote.png"
+          }
+        }
+      ],
+      "requiredLayerCount": 1,
+      "occupies": [
+        "hair"
+      ],
+      "requires": {},
+      "conflictsWith": [],
+      "credits": [
+        {
+          "file": "hair/bob",
+          "notes": "Original by bluecarrot16. Edited and animated by ElizaWy.",
+          "authors": [
+            "ElizaWy",
+            "bluecarrot16"
+          ],
+          "licenses": [
+            "CC0"
+          ],
+          "urls": [
+            "https://opengameart.org/content/lpc-hair",
+            "https://github.com/ElizaWy/LPC/blob/main/Characters/Hair",
+            "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
+          ]
+        }
+      ]
+    },
+    "hair_long": {
+      "name": "Long",
+      "slot": "hair",
+      "bodyTypes": [
+        "male",
+        "female"
+      ],
+      "counterparts": {},
+      "material": "hair",
+      "selectedLicense": "GPL 3.0",
+      "sourceColorAliases": {},
+      "sourcePalette": "orange",
+      "layers": [
+        {
+          "z": 120,
+          "required": true,
+          "paths": {
+            "idle": "spritesheets/hair/long/adult/idle.png",
+            "walk": "spritesheets/hair/long/adult/walk.png",
+            "run": "spritesheets/hair/long/adult/run.png",
+            "jump": "spritesheets/hair/long/adult/jump.png",
+            "spellcast": "spritesheets/hair/long/adult/spellcast.png",
+            "sit": "spritesheets/hair/long/adult/sit.png",
+            "emote": "spritesheets/hair/long/adult/emote.png"
+          }
+        }
+      ],
+      "requiredLayerCount": 1,
+      "occupies": [
+        "hair"
+      ],
+      "requires": {},
+      "conflictsWith": [],
+      "credits": [
+        {
+          "file": "hair/long",
+          "notes": "",
+          "authors": [
+            "JaidynReiman",
+            "Manuel Riecke (MrBeast)"
+          ],
+          "licenses": [
+            "CC-BY-SA 3.0",
+            "GPL 3.0"
+          ],
+          "urls": [
+            "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+            "https://opengameart.org/content/lpc-expanded-hair"
+          ]
+        }
+      ]
+    }
+  },
+  "legalText": {
+    "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode.txt",
+    "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+  }
+}

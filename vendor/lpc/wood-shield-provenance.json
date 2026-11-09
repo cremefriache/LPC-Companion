@@ -1,0 +1,85 @@
+{
+  "repository": "https://github.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator",
+  "commit": "86160e7507d6841259cff624a51a63c1d4847ee3",
+  "sourceId": "shield_heater_revised_wood",
+  "metadata": {
+    "sheet_definitions/weapons/shields/heater/shield_heater_revised_wood.json": "d95643ec99d2041fa0e307192484e459f79de952579c95e1fedbf5214389d9d4",
+    "palette_definitions/wood/wood_ulpc.json": "2fa7b09c07a86cf3ea89775c3fb043524eaefbde8d22550bf741665f04081c24",
+    "palette_definitions/wood/meta_wood.json": "733c3f6fc2adea232693539e39c0a69e45cb395be8b0d571806968370548b68f"
+  },
+  "sprites": {
+    "spritesheets/shield/heater/revised/wood/bg/idle.png": "d8a1d28fc502fc89586d730f598b39d7ca4bde596a64ebd16c88fb778464684e",
+    "spritesheets/shield/heater/revised/wood/bg/walk.png": "e734677f5cd6945972dd6615595da8bcbe21a7e2d2670ef006880c46b55e2384",
+    "spritesheets/shield/heater/revised/wood/bg/run.png": "7b7f2ce9f352466f7eda02db1abb704a7f04aca98b9bec1626a536c943f6db9e",
+    "spritesheets/shield/heater/revised/wood/bg/jump.png": "18c7a050fc78cd87db40655617924b585e5061edf24cdb8fa7e849a43bc72984",
+    "spritesheets/shield/heater/revised/wood/bg/spellcast.png": "ef7d872c79b5f3d73c5860efb1213aa876dfdf7537e0a6e305a536f6898b728a",
+    "spritesheets/shield/heater/revised/wood/fg/idle.png": "8be08dc8ce38c591fd0d5b1909b36576d55bf7580fbc9598fdfda2d8f5cd5dbd",
+    "spritesheets/shield/heater/revised/wood/fg/walk.png": "821dd9694e1c744fabdf4887f7f5389c5f3946c7b9c142470b207373e16aa198",
+    "spritesheets/shield/heater/revised/wood/fg/run.png": "4e0e92d476ca448f65d20ec4ad9a0c9b1a9bc1d1647952efa211b73df577ed8b",
+    "spritesheets/shield/heater/revised/wood/fg/jump.png": "73c5713c1a8350b04b043dfd13a32146bd7d831f0e83644c02972d7a7445b231",
+    "spritesheets/shield/heater/revised/wood/fg/spellcast.png": "9c317867894fa97a7af1ef53184ccf29e2752d25633ef393178a8a1479407afe"
+  },
+  "item": {
+    "name": "Wood heater shield (recolorable)",
+    "slot": "prop",
+    "bodyTypes": [
+      "male",
+      "female"
+    ],
+    "counterparts": {},
+    "material": "wood",
+    "sourcePalette": "maple",
+    "layers": [
+      {
+        "z": 2,
+        "required": true,
+        "paths": {
+          "idle": "spritesheets/shield/heater/revised/wood/bg/idle.png",
+          "walk": "spritesheets/shield/heater/revised/wood/bg/walk.png",
+          "run": "spritesheets/shield/heater/revised/wood/bg/run.png",
+          "jump": "spritesheets/shield/heater/revised/wood/bg/jump.png",
+          "spellcast": "spritesheets/shield/heater/revised/wood/bg/spellcast.png"
+        }
+      },
+      {
+        "z": 110,
+        "required": true,
+        "paths": {
+          "idle": "spritesheets/shield/heater/revised/wood/fg/idle.png",
+          "walk": "spritesheets/shield/heater/revised/wood/fg/walk.png",
+          "run": "spritesheets/shield/heater/revised/wood/fg/run.png",
+          "jump": "spritesheets/shield/heater/revised/wood/fg/jump.png",
+          "spellcast": "spritesheets/shield/heater/revised/wood/fg/spellcast.png"
+        }
+      }
+    ],
+    "requiredLayerCount": 2,
+    "occupies": [
+      "left_hand"
+    ],
+    "requires": {},
+    "conflictsWith": [],
+    "credits": [
+      {
+        "file": "shield/heater/revised/wood",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ],
+    "selectedLicense": "OGA-BY 3.0",
+    "unavailableAnimations": {
+      "spellcast": "Shield Cast has no south-facing pixels. Remove the shield or choose another action."
+    }
+  }
+}

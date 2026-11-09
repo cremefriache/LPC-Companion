@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "kind": "pinned-full-art-library",
+  "sourceCommit": "86160e7507d6841259cff624a51a63c1d4847ee3",
+  "index": {
+    "file": "index.json.gz",
+    "sha256": "b0579d8d5445de198088b2e0ad465231d5a163b29cce9dfb31c1deaaaa4b7257",
+    "bytes": 7800601,
+    "decodedSha256": "41495e044f83262dbb7c5e195ba9c29532f5d634675a79cede30d3bf4a6302ef"
+  },
+  "inputs": {
+    "metadata.json": {
+      "file": "metadata.json.gz",
+      "sha256": "fc9af4b1ed04b3d7466e11ddc3ac0a8d7bd2211396ecd6731a94bcf198bc0290",
+      "bytes": 119380,
+      "decodedSha256": "e16f85ded3cd5cd10e41f091cdbbc54c4b2b4444854ccf19787c79e8f630e02a"
+    },
+    "repairs.json": {
+      "file": "repairs.json.gz",
+      "sha256": "bc9e9caeac697eeae4cee37930d0b09e986383ec29d4634a4df9987e61e4817c",
+      "bytes": 3779,
+      "decodedSha256": "5d063d341afb857078be03447380b0b5eb7c4c6df16b696b608dee512f9843e4"
+    }
+  },
+  "summary": {
+    "paths": 73924,
+    "blobs": 72914,
+    "packs": 400,
+    "pngBytes": 104256434,
+    "maxPackBytes": 262143
+  }
+}

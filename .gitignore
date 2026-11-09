@@ -1,0 +1,13 @@
+node_modules/
+dist/
+*.log
+.env
+.env.*
+AGENTS.md
+GEMINI.md
+CLAUDE.md
+.codex/
+.codex-attachments/
+.agents/
+.aws/
+.reference/

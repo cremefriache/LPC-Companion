@@ -1,0 +1,1323 @@
+{
+  "schemaVersion": 1,
+  "sourceCommit": "86160e7507d6841259cff624a51a63c1d4847ee3",
+  "reviewedLedgerSha256": "5c6f1c57bfb1a5f4d1144dc67b14cffb4a7b6e179fca9223f9571d8b26035722",
+  "scope": "Explicit reviewed native-program omissions. All199 alpha-shape groups were visually inspected; these120 item/action groups exclude seven source-gap and six unresolved pose-witness patterns. No unreviewed held padding or missing source is approved.",
+  "approved": [
+    {
+      "itemId": "arms_bracers",
+      "action": "emote",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "arms_bracers",
+      "action": "run",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "arms_bracers",
+      "action": "shoot",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "arms_bracers",
+      "action": "sit",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "arms_bracers",
+      "action": "spellcast",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "arms_bracers",
+      "action": "thrust",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "arms_bracers",
+      "action": "watering",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "arms_gloves",
+      "action": "1h_backslash",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen"
+      ]
+    },
+    {
+      "itemId": "arms_gloves",
+      "action": "emote",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "arms_gloves",
+      "action": "shoot",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "arms_gloves",
+      "action": "sit",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "arms_gloves",
+      "action": "spellcast",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "arms_gloves",
+      "action": "thrust",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "arms_gloves",
+      "action": "watering",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "arms_hands_ring_stud",
+      "action": "emote",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "arms_hands_ring_stud",
+      "action": "shoot",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "arms_hands_ring_stud",
+      "action": "spellcast",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "backpack_jetpack_fins",
+      "action": "shoot",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "female",
+        "pregnant",
+        "male"
+      ]
+    },
+    {
+      "itemId": "backpack_jetpack_fins",
+      "action": "spellcast",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "muscular"
+      ]
+    },
+    {
+      "itemId": "backpack_jetpack_fins",
+      "action": "thrust",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "female",
+        "pregnant",
+        "male",
+        "muscular"
+      ]
+    },
+    {
+      "itemId": "backpack_jetpack_fins",
+      "action": "walk",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "muscular"
+      ]
+    },
+    {
+      "itemId": "backpack_jetpack_fins",
+      "action": "watering",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "backpack_jetpack",
+      "action": "shoot",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "backpack_jetpack",
+      "action": "thrust",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "backpack_jetpack",
+      "action": "watering",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "backpack_squarepack",
+      "action": "shoot",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "backpack_squarepack",
+      "action": "thrust",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "female",
+        "pregnant",
+        "male",
+        "muscular"
+      ]
+    },
+    {
+      "itemId": "backpack_squarepack",
+      "action": "watering",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "female",
+        "pregnant",
+        "male",
+        "muscular"
+      ]
+    },
+    {
+      "itemId": "backpack",
+      "action": "shoot",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "backpack",
+      "action": "thrust",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "backpack",
+      "action": "watering",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "beards_handlebar",
+      "action": "shoot",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "beards_lampshade",
+      "action": "shoot",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "belt_formal",
+      "action": "thrust",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male"
+      ]
+    },
+    {
+      "itemId": "belt_formal",
+      "action": "watering",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male"
+      ]
+    },
+    {
+      "itemId": "belt_leather2",
+      "action": "shoot",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male"
+      ]
+    },
+    {
+      "itemId": "belt_leather2",
+      "action": "spellcast",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male"
+      ]
+    },
+    {
+      "itemId": "belt_obi_knot_left",
+      "action": "run",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "female",
+        "teen",
+        "pregnant",
+        "male",
+        "muscular"
+      ]
+    },
+    {
+      "itemId": "belt_obi_knot_left",
+      "action": "sit",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "belt_obi_knot_right",
+      "action": "run",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "belt_obi_knot_right",
+      "action": "sit",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "belt_obi",
+      "action": "1h_halfslash",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen"
+      ]
+    },
+    {
+      "itemId": "belt_robe",
+      "action": "shoot",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male"
+      ]
+    },
+    {
+      "itemId": "belt_robe",
+      "action": "spellcast",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male"
+      ]
+    },
+    {
+      "itemId": "cape_trim",
+      "action": "walk",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "dress_kimono_longsleeve_trim",
+      "action": "shoot",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "female",
+        "teen"
+      ]
+    },
+    {
+      "itemId": "dress_kimono_oversize_trim",
+      "action": "shoot",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "female",
+        "teen"
+      ]
+    },
+    {
+      "itemId": "facial_earring_left",
+      "action": "shoot",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "facial_earring_right",
+      "action": "1h_backslash",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen"
+      ]
+    },
+    {
+      "itemId": "facial_earring_right",
+      "action": "shoot",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "facial_earrings_emerald",
+      "action": "shoot",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "facial_earrings_moon",
+      "action": "shoot",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "facial_earrings_pear",
+      "action": "shoot",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "facial_earrings_princess",
+      "action": "shoot",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "facial_earrings_stud",
+      "action": "shoot",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "facial_glasses_halfmoon",
+      "action": "shoot",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "feet_armour",
+      "action": "sit",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "feet_boots_basic",
+      "action": "sit",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "feet_boots_fold",
+      "action": "sit",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "feet_boots_revised",
+      "action": "sit",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "feet_boots_rim",
+      "action": "sit",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "feet_hoofs",
+      "action": "sit",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "feet_plate_toe_thick",
+      "action": "sit",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "feet_plate_toe",
+      "action": "sit",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "feet_sandals",
+      "action": "sit",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "feet_shoes_basic",
+      "action": "sit",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "feet_shoes_ghillies",
+      "action": "sit",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "feet_shoes_revised",
+      "action": "sit",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "feet_shoes_sara",
+      "action": "sit",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "feet_slippers",
+      "action": "sit",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "feet_socks_ankle",
+      "action": "sit",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "feet_socks_high",
+      "action": "sit",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "feet_socks_tabi",
+      "action": "sit",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "hairext_xlong_braidl",
+      "action": "emote",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "hairext_xlong_braidr",
+      "action": "emote",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "head_ears_down",
+      "action": "shoot",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "head_ears_hang",
+      "action": "shoot",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "head_ears_zabos_skin",
+      "action": "shoot",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "neck_bowtie",
+      "action": "1h_backslash",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen"
+      ]
+    },
+    {
+      "itemId": "neck_bowtie",
+      "action": "1h_halfslash",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen"
+      ]
+    },
+    {
+      "itemId": "neck_bowtie",
+      "action": "run",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "neck_bowtie2",
+      "action": "shoot",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "neck_necklace_beaded_small",
+      "action": "sit",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "neck_necklace",
+      "action": "shoot",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "neck_necklace",
+      "action": "slash",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "neck_necklace",
+      "action": "spellcast",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "neck_necklace",
+      "action": "thrust",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "neck_necktie",
+      "action": "1h_backslash",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen"
+      ]
+    },
+    {
+      "itemId": "neck_necktie",
+      "action": "1h_halfslash",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen"
+      ]
+    },
+    {
+      "itemId": "prosthesis_hook",
+      "action": "emote",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male"
+      ]
+    },
+    {
+      "itemId": "prosthesis_hook",
+      "action": "spellcast",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male"
+      ]
+    },
+    {
+      "itemId": "shoulders_pauldrons",
+      "action": "1h_backslash",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen"
+      ]
+    },
+    {
+      "itemId": "shoulders_pauldrons",
+      "action": "shoot",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "tail_lizard_alt",
+      "action": "sit",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant",
+        "child"
+      ]
+    },
+    {
+      "itemId": "tail_lizard",
+      "action": "sit",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant",
+        "child"
+      ]
+    },
+    {
+      "itemId": "tool_rod",
+      "action": "tool_rod",
+      "kind": "program_stage",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "torso_clothes_shortsleeves2",
+      "action": "jump",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "female",
+        "teen"
+      ]
+    },
+    {
+      "itemId": "torso_jacket_frock_buttons",
+      "action": "spellcast",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male"
+      ]
+    },
+    {
+      "itemId": "torso_jacket_frock_buttons",
+      "action": "thrust",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male"
+      ]
+    },
+    {
+      "itemId": "weapon_ranged_bow_arrow",
+      "action": "shoot",
+      "kind": "program_stage",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "wound_arm",
+      "action": "emote",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "wound_arm",
+      "action": "jump",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "wound_arm",
+      "action": "run",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "wound_arm",
+      "action": "sit",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "wound_arm",
+      "action": "slash",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "wound_arm",
+      "action": "walk",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "muscular",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "wound_eye_left",
+      "action": "shoot",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "wound_eye_right",
+      "action": "shoot",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "wrists_cuffs_lace",
+      "action": "shoot",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "wrists_cuffs_lace",
+      "action": "sit",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "wrists_cuffs_lace",
+      "action": "spellcast",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "wrists_cuffs_lace",
+      "action": "thrust",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "wrists_cuffs_lace",
+      "action": "watering",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "wrists_cuffs",
+      "action": "emote",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male"
+      ]
+    },
+    {
+      "itemId": "wrists_cuffs",
+      "action": "run",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "wrists_cuffs",
+      "action": "shoot",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "wrists_cuffs",
+      "action": "sit",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "wrists_cuffs",
+      "action": "spellcast",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "wrists_cuffs",
+      "action": "thrust",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    },
+    {
+      "itemId": "wrists_cuffs",
+      "action": "watering",
+      "kind": "pose_occlusion",
+      "bodies": [
+        "male",
+        "muscular",
+        "female",
+        "teen",
+        "pregnant"
+      ]
+    }
+  ],
+  "reviewedBaselineCommit": "3ac5058"
+}

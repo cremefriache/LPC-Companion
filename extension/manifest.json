@@ -1,0 +1,19 @@
+{
+  "display_name": "LPC Companion (development)",
+  "loading_order": 100,
+  "requires": [],
+  "optional": [],
+  "dependencies": [],
+  "js": "index.js",
+  "css": "style.css",
+  "author": "LPC Companion contributors",
+  "version": "0.1.0-dev.38",
+  "minimum_client_version": "1.18.0",
+  "auto_update": false,
+  "hooks": {
+    "activate": "onActivate",
+    "enable": "onEnable",
+    "disable": "onDisable",
+    "delete": "onDelete"
+  }
+}

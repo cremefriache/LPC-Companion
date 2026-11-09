@@ -1,0 +1,203 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "urn:lpc-companion:source-recipe:2",
+  "title": "Pinned full-source composition recipe (independent of generator JSON and companion package formats)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "sourceCommit",
+    "bodyType",
+    "selections",
+    "matchBodyColor",
+    "applyMask"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 2
+    },
+    "sourceCommit": {
+      "const": "86160e7507d6841259cff624a51a63c1d4847ee3"
+    },
+    "bodyType": {
+      "enum": [
+        "child",
+        "female",
+        "male",
+        "muscular",
+        "pregnant",
+        "teen"
+      ]
+    },
+    "matchBodyColor": {
+      "type": "boolean"
+    },
+    "applyMask": {
+      "type": "boolean"
+    },
+    "selections": {
+      "type": "object",
+      "minProperties": 1,
+      "maxProperties": 106,
+      "propertyNames": {
+        "enum": [
+          "accessory",
+          "ammo",
+          "apron",
+          "armour",
+          "arms",
+          "backpack",
+          "backpack_straps",
+          "bandages",
+          "bandana",
+          "bandana_overlay",
+          "bauldron",
+          "beard",
+          "belt",
+          "body",
+          "bracers",
+          "buckles",
+          "cape",
+          "cape_trim",
+          "cargo",
+          "chainmail",
+          "charm",
+          "clothes",
+          "dress",
+          "dress_sleeves",
+          "dress_sleeves_trim",
+          "dress_trim",
+          "earring_left",
+          "earring_right",
+          "earrings",
+          "ears",
+          "ears_inner",
+          "expression",
+          "expression_crying",
+          "eyebrows",
+          "eyes",
+          "facial_eyes",
+          "facial_left",
+          "facial_left_trim",
+          "facial_mask",
+          "facial_right",
+          "facial_right_trim",
+          "fins",
+          "furry_ears",
+          "furry_ears_skin",
+          "gloves",
+          "hair",
+          "hairextl",
+          "hairextr",
+          "hairtie",
+          "hairtie_rune",
+          "hat",
+          "hat_accessory",
+          "hat_buckle",
+          "hat_overlay",
+          "hat_trim",
+          "head",
+          "headcover",
+          "headcover_rune",
+          "horns",
+          "jacket",
+          "jacket_collar",
+          "jacket_pockets",
+          "jacket_trim",
+          "legs",
+          "mustache",
+          "neck",
+          "necklace",
+          "nose",
+          "overalls",
+          "ponytail",
+          "prosthesis_hand",
+          "prosthesis_leg",
+          "quiver",
+          "ring",
+          "sash",
+          "sash_tie",
+          "shadow",
+          "shield",
+          "shield_paint",
+          "shield_pattern",
+          "shield_trim",
+          "shoes",
+          "shoes_toe",
+          "shoulders",
+          "sleeves",
+          "socks",
+          "tail",
+          "undergarment_bottom",
+          "undergarment_top",
+          "updo",
+          "vest",
+          "visor",
+          "weapon",
+          "weapon_magic_crystal",
+          "wheelchair",
+          "wings",
+          "wings_dots",
+          "wings_edge",
+          "wound_arm",
+          "wound_brain",
+          "wound_eye_left",
+          "wound_eye_right",
+          "wound_mouth",
+          "wound_ribs",
+          "wrinkles",
+          "wrists"
+        ]
+      },
+      "additionalProperties": {
+        "$ref": "#/definitions/selection"
+      }
+    }
+  },
+  "definitions": {
+    "selection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "itemId",
+        "variant",
+        "colors"
+      ],
+      "properties": {
+        "itemId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[a-z][a-z0-9_]*$"
+        },
+        "variant": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128
+            }
+          ]
+        },
+        "colors": {
+          "type": "object",
+          "maxProperties": 32,
+          "propertyNames": {
+            "type": "string",
+            "maxLength": 64,
+            "pattern": "^[a-z][a-z0-9_]*$"
+          },
+          "additionalProperties": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 96,
+            "pattern": "^[a-z][a-z0-9_.-]*$"
+          }
+        }
+      }
+    }
+  }
+}

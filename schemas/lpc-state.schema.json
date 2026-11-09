@@ -1,0 +1,836 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "urn:lpc-companion:state:1",
+  "title": "LPC Companion state contracts v1",
+  "oneOf": [
+    {
+      "$ref": "#/definitions/characterDefinition"
+    },
+    {
+      "$ref": "#/definitions/chatSnapshot"
+    },
+    {
+      "$ref": "#/definitions/chatState"
+    },
+    {
+      "$ref": "#/definitions/presentationPatch"
+    },
+    {
+      "$ref": "#/definitions/actionCue"
+    },
+    {
+      "$ref": "#/definitions/characterBinding"
+    },
+    {
+      "$ref": "#/definitions/chatRecord"
+    },
+    {
+      "$ref": "#/definitions/companionRoster"
+    }
+  ],
+  "definitions": {
+    "uuid": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9_-]{0,63}$"
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 2147483647
+    },
+    "selection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "itemId",
+        "paletteId"
+      ],
+      "properties": {
+        "itemId": {
+          "$ref": "#/definitions/id"
+        },
+        "paletteId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_.-]{0,95}$"
+        }
+      }
+    },
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "bodyType",
+        "body",
+        "head"
+      ],
+      "properties": {
+        "bodyType": {
+          "enum": [
+            "male",
+            "female"
+          ]
+        },
+        "body": {
+          "$ref": "#/definitions/selection"
+        },
+        "head": {
+          "$ref": "#/definitions/selection"
+        },
+        "hair": {
+          "$ref": "#/definitions/selection"
+        },
+        "beard": {
+          "$ref": "#/definitions/selection"
+        },
+        "ears": {
+          "$ref": "#/definitions/selection"
+        },
+        "expression": {
+          "$ref": "#/definitions/selection"
+        },
+        "bald": {
+          "const": true
+        }
+      },
+      "oneOf": [
+        {
+          "required": [
+            "hair"
+          ],
+          "properties": {
+            "hair": {
+              "$ref": "#/definitions/selection"
+            }
+          }
+        },
+        {
+          "required": [
+            "bald"
+          ],
+          "properties": {
+            "bald": {
+              "const": true
+            }
+          }
+        }
+      ]
+    },
+    "outfit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "selections"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/definitions/id"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80,
+          "pattern": "\\S"
+        },
+        "selections": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "clothes": {
+              "$ref": "#/definitions/selection"
+            },
+            "legs": {
+              "$ref": "#/definitions/selection"
+            },
+            "shoes": {
+              "$ref": "#/definitions/selection"
+            },
+            "cape": {
+              "$ref": "#/definitions/selection"
+            },
+            "accessory": {
+              "$ref": "#/definitions/selection"
+            },
+            "prop": {
+              "$ref": "#/definitions/selection"
+            }
+          }
+        },
+        "favorite": {
+          "type": "boolean"
+        }
+      }
+    },
+    "outfits": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 99,
+      "items": {
+        "$ref": "#/definitions/outfit"
+      }
+    },
+    "scene": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "backgroundId",
+        "x",
+        "y",
+        "scale"
+      ],
+      "properties": {
+        "backgroundId": {
+          "enum": [
+            "plain",
+            "woodland",
+            "hearth",
+            "courtyard"
+          ]
+        },
+        "x": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "y": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "scale": {
+          "type": "number",
+          "minimum": 0.5,
+          "maximum": 1.25
+        },
+        "lightId": {
+          "enum": [
+            "day",
+            "dusk",
+            "night"
+          ]
+        }
+      }
+    },
+    "presentation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "outfitId",
+        "posture",
+        "facing",
+        "scene"
+      ],
+      "properties": {
+        "outfitId": {
+          "$ref": "#/definitions/id"
+        },
+        "posture": {
+          "enum": [
+            "idle",
+            "walk"
+          ]
+        },
+        "facing": {
+          "enum": [
+            "north",
+            "west",
+            "south",
+            "east"
+          ]
+        },
+        "scene": {
+          "$ref": "#/definitions/scene"
+        },
+        "moodId": {
+          "enum": [
+            "none",
+            "calm",
+            "cheerful",
+            "blush",
+            "thoughtful",
+            "concerned",
+            "angry",
+            "shock",
+            "eyeroll",
+            "shame",
+            "closed",
+            "look_right"
+          ]
+        },
+        "partySceneId": {
+          "enum": [
+            "together",
+            "woodland",
+            "hearth",
+            "courtyard"
+          ]
+        },
+        "activityId": {
+          "enum": [
+            "none",
+            "walk",
+            "run",
+            "sit_low",
+            "sit_upright",
+            "sit_relaxed",
+            "dozing",
+            "sleeping",
+            "hands_on_hips",
+            "looking_around",
+            "guard_stance",
+            "tending",
+            "pacing"
+          ]
+        }
+      }
+    },
+    "characterDefinition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schemaVersion",
+        "kind",
+        "characterId",
+        "revision",
+        "catalogVersion",
+        "identity",
+        "outfits",
+        "startingPresentation"
+      ],
+      "properties": {
+        "schemaVersion": {
+          "const": 1
+        },
+        "kind": {
+          "const": "character-definition"
+        },
+        "characterId": {
+          "$ref": "#/definitions/uuid"
+        },
+        "revision": {
+          "$ref": "#/definitions/revision"
+        },
+        "catalogVersion": {
+          "$ref": "#/definitions/id"
+        },
+        "identity": {
+          "$ref": "#/definitions/identity"
+        },
+        "outfits": {
+          "$ref": "#/definitions/outfits"
+        },
+        "startingPresentation": {
+          "$ref": "#/definitions/presentation"
+        },
+        "importProvenance": {
+          "$ref": "#/definitions/importProvenance"
+        }
+      }
+    },
+    "chatSnapshot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schemaVersion",
+        "kind",
+        "chatInstanceId",
+        "characterId",
+        "sourceDefinitionRevision",
+        "catalogVersion",
+        "identity",
+        "outfits",
+        "startingPresentation"
+      ],
+      "properties": {
+        "schemaVersion": {
+          "const": 1
+        },
+        "kind": {
+          "const": "chat-snapshot"
+        },
+        "chatInstanceId": {
+          "$ref": "#/definitions/uuid"
+        },
+        "characterId": {
+          "$ref": "#/definitions/uuid"
+        },
+        "sourceDefinitionRevision": {
+          "$ref": "#/definitions/revision"
+        },
+        "catalogVersion": {
+          "$ref": "#/definitions/id"
+        },
+        "identity": {
+          "$ref": "#/definitions/identity"
+        },
+        "outfits": {
+          "$ref": "#/definitions/outfits"
+        },
+        "startingPresentation": {
+          "$ref": "#/definitions/presentation"
+        },
+        "importProvenance": {
+          "$ref": "#/definitions/importProvenance"
+        }
+      }
+    },
+    "patch": {
+      "type": "object",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "properties": {
+        "outfitId": {
+          "$ref": "#/definitions/id"
+        },
+        "posture": {
+          "enum": [
+            "idle",
+            "walk"
+          ]
+        },
+        "facing": {
+          "enum": [
+            "north",
+            "west",
+            "south",
+            "east"
+          ]
+        },
+        "scene": {
+          "$ref": "#/definitions/scene"
+        },
+        "moodId": {
+          "enum": [
+            "none",
+            "calm",
+            "cheerful",
+            "blush",
+            "thoughtful",
+            "concerned",
+            "angry",
+            "shock",
+            "eyeroll",
+            "shame",
+            "closed",
+            "look_right"
+          ]
+        },
+        "partySceneId": {
+          "enum": [
+            "together",
+            "woodland",
+            "hearth",
+            "courtyard"
+          ]
+        },
+        "activityId": {
+          "enum": [
+            "none",
+            "walk",
+            "run",
+            "sit_low",
+            "sit_upright",
+            "sit_relaxed",
+            "dozing",
+            "sleeping",
+            "hands_on_hips",
+            "looking_around",
+            "guard_stance",
+            "tending",
+            "pacing"
+          ]
+        }
+      }
+    },
+    "presentationPatch": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schemaVersion",
+        "kind",
+        "patch"
+      ],
+      "properties": {
+        "schemaVersion": {
+          "const": 1
+        },
+        "kind": {
+          "const": "presentation-patch"
+        },
+        "patch": {
+          "$ref": "#/definitions/patch"
+        }
+      }
+    },
+    "response": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "messageId",
+        "swipeId"
+      ],
+      "properties": {
+        "messageId": {
+          "$ref": "#/definitions/uuid"
+        },
+        "swipeId": {
+          "$ref": "#/definitions/uuid"
+        }
+      }
+    },
+    "historyEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "entryId",
+        "sequence",
+        "origin",
+        "response",
+        "change"
+      ],
+      "properties": {
+        "entryId": {
+          "$ref": "#/definitions/uuid"
+        },
+        "sequence": {
+          "$ref": "#/definitions/revision"
+        },
+        "origin": {
+          "enum": [
+            "manual",
+            "model"
+          ]
+        },
+        "response": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/response"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "change": {
+          "oneOf": [
+            {
+              "$ref": "#/definitions/presentationPatch"
+            },
+            {
+              "$ref": "#/definitions/companionReplacement"
+            }
+          ]
+        }
+      },
+      "if": {
+        "properties": {
+          "origin": {
+            "const": "model"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "response": {
+            "$ref": "#/definitions/response"
+          }
+        }
+      }
+    },
+    "chatState": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schemaVersion",
+        "kind",
+        "snapshot",
+        "presentation",
+        "history"
+      ],
+      "properties": {
+        "schemaVersion": {
+          "const": 1
+        },
+        "kind": {
+          "const": "chat-state"
+        },
+        "snapshot": {
+          "$ref": "#/definitions/chatSnapshot"
+        },
+        "presentation": {
+          "$ref": "#/definitions/presentation"
+        },
+        "history": {
+          "type": "array",
+          "maxItems": 1000,
+          "items": {
+            "$ref": "#/definitions/historyEntry"
+          }
+        }
+      }
+    },
+    "actionCue": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schemaVersion",
+        "kind",
+        "cueId",
+        "actionId",
+        "durationMs",
+        "response"
+      ],
+      "properties": {
+        "schemaVersion": {
+          "const": 1
+        },
+        "kind": {
+          "const": "action-cue"
+        },
+        "cueId": {
+          "$ref": "#/definitions/uuid"
+        },
+        "actionId": {
+          "$ref": "#/definitions/id"
+        },
+        "durationMs": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10000
+        },
+        "response": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/response"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "locator": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 255,
+      "pattern": "^[^/\\\\\\u0000]+$"
+    },
+    "characterBinding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schemaVersion",
+        "kind",
+        "ownerAvatar",
+        "previousAvatars",
+        "definition"
+      ],
+      "properties": {
+        "schemaVersion": {
+          "const": 1
+        },
+        "kind": {
+          "const": "character-binding"
+        },
+        "ownerAvatar": {
+          "$ref": "#/definitions/locator"
+        },
+        "previousAvatars": {
+          "type": "array",
+          "maxItems": 32,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/definitions/locator"
+          }
+        },
+        "definition": {
+          "$ref": "#/definitions/characterDefinition"
+        },
+        "embeddedAssets": {
+          "type": "object",
+          "maxProperties": 1024,
+          "propertyNames": {
+            "pattern": "^(spritesheets/[a-z0-9_/-]+\\.png|backgrounds/[a-z]+\\.svg|full-source/spritesheets/[A-Za-z0-9_/-]+\\.png)$"
+          },
+          "additionalProperties": {
+            "type": "string",
+            "maxLength": 180000
+          }
+        }
+      }
+    },
+    "chatRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schemaVersion",
+        "kind",
+        "ownerAvatar",
+        "ownerChat",
+        "state"
+      ],
+      "properties": {
+        "schemaVersion": {
+          "const": 1
+        },
+        "kind": {
+          "const": "chat-record"
+        },
+        "ownerAvatar": {
+          "$ref": "#/definitions/locator"
+        },
+        "ownerChat": {
+          "$ref": "#/definitions/locator"
+        },
+        "state": {
+          "$ref": "#/definitions/chatState"
+        }
+      }
+    },
+    "companionReplacement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schemaVersion",
+        "kind",
+        "definition",
+        "presentation"
+      ],
+      "properties": {
+        "schemaVersion": {
+          "const": 1
+        },
+        "kind": {
+          "const": "companion-replacement"
+        },
+        "definition": {
+          "$ref": "#/definitions/characterDefinition"
+        },
+        "presentation": {
+          "$ref": "#/definitions/presentation"
+        }
+      }
+    },
+    "importProvenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "format",
+        "ignoredJson"
+      ],
+      "properties": {
+        "format": {
+          "const": "generator-v2"
+        },
+        "ignoredJson": {
+          "type": "string",
+          "maxLength": 16384
+        }
+      }
+    },
+    "rosterEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "companionId",
+        "label",
+        "sourceAvatar",
+        "sourceCharacterId",
+        "sourceAliases",
+        "state",
+        "sourceRevision"
+      ],
+      "properties": {
+        "companionId": {
+          "$ref": "#/definitions/uuid"
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "sourceAvatar": {
+          "$ref": "#/definitions/locator"
+        },
+        "sourceCharacterId": {
+          "$ref": "#/definitions/uuid"
+        },
+        "sourceAliases": {
+          "type": "array",
+          "maxItems": 32,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/definitions/locator"
+          }
+        },
+        "state": {
+          "$ref": "#/definitions/chatState"
+        },
+        "sourceRevision": {
+          "$ref": "#/definitions/revision"
+        }
+      }
+    },
+    "companionRoster": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schemaVersion",
+        "kind",
+        "rosterId",
+        "ownerKind",
+        "ownerId",
+        "ownerChat",
+        "companions",
+        "embeddedAssets"
+      ],
+      "properties": {
+        "schemaVersion": {
+          "const": 1
+        },
+        "kind": {
+          "const": "companion-roster"
+        },
+        "rosterId": {
+          "$ref": "#/definitions/uuid"
+        },
+        "ownerKind": {
+          "enum": [
+            "character",
+            "group"
+          ]
+        },
+        "ownerId": {
+          "$ref": "#/definitions/locator"
+        },
+        "ownerChat": {
+          "$ref": "#/definitions/locator"
+        },
+        "companions": {
+          "type": "array",
+          "maxItems": 2,
+          "items": {
+            "$ref": "#/definitions/rosterEntry"
+          }
+        },
+        "embeddedAssets": {
+          "type": "object",
+          "maxProperties": 1024,
+          "propertyNames": {
+            "pattern": "^(spritesheets/[a-z0-9_/-]+\\.png|backgrounds/[a-z]+\\.svg|full-source/spritesheets/[A-Za-z0-9_/-]+\\.png)$"
+          },
+          "additionalProperties": {
+            "type": "string",
+            "maxLength": 180000
+          }
+        }
+      }
+    }
+  }
+}

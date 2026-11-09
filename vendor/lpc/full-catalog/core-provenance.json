@@ -1,0 +1,241 @@
+{
+  "repository": "https://github.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator",
+  "commit": "86160e7507d6841259cff624a51a63c1d4847ee3",
+  "license": "GPL-3.0",
+  "functions": [
+    {
+      "file": "sources/utils/helpers.ts",
+      "name": "variantToFilename",
+      "line": 23,
+      "sha256": "2a2b79edc91f6db758f5158799efa661a20412aef1d23c8fa87bef0ec9a8b0af"
+    },
+    {
+      "file": "sources/utils/helpers.ts",
+      "name": "es6DynamicTemplate",
+      "line": 10,
+      "sha256": "4217d32cfc01a43b360fd584f6d54431b8144e9152da731736c2a16052e1327e"
+    },
+    {
+      "file": "sources/state/constants.ts",
+      "name": "FRAME_SIZE",
+      "line": 2,
+      "sha256": "154d5a2e60e9acb1837f784ac343bb20d71ecf2303f83ad14707d38a4644339d"
+    },
+    {
+      "file": "sources/state/constants.ts",
+      "name": "BODY_TYPES",
+      "line": 9,
+      "sha256": "c9ed0586ae881d82ab2ab3a107838b1d8aa31caa055ae622610b84f125f95b33"
+    },
+    {
+      "file": "sources/state/constants.ts",
+      "name": "ANIMATIONS",
+      "line": 60,
+      "sha256": "1bcf0113f7acf613e9a6071c9c58dd50acc3aa20f5bf93c616a05a2fbf85d175"
+    },
+    {
+      "file": "sources/state/constants.ts",
+      "name": "ANIMATION_OFFSETS",
+      "line": 105,
+      "sha256": "8eb4b92c4c95a15d37b9c1964097329521c977149fc8fa0a4df2d4432e81cb1d"
+    },
+    {
+      "file": "sources/state/constants.ts",
+      "name": "ANIMATION_CONFIGS",
+      "line": 124,
+      "sha256": "69ed72e8e793f2d1a070efca9846839bc9bf9991efe4d816da44aa6c82f87991"
+    },
+    {
+      "file": "sources/state/hash.ts",
+      "name": "getHashParamsforSelections",
+      "line": 181,
+      "sha256": "2bd73f5ab5219b96dd488a511e4ffa47f98f29ef416088842535c03cf009bd80"
+    },
+    {
+      "file": "sources/state/path.ts",
+      "name": "getSpritePath",
+      "line": 115,
+      "sha256": "a753787b16cb52c3853d42c50e1483773e934ddc28fa5bf075fa6477e3568c1e"
+    },
+    {
+      "file": "sources/state/path.ts",
+      "name": "getNameWithoutVariant",
+      "line": 83,
+      "sha256": "c11d94db8c99747f6f2bd4e301a9b7fd0494d1fc50b3c7690a72b93bbfb7afb9"
+    },
+    {
+      "file": "sources/state/path.ts",
+      "name": "replaceInPath",
+      "line": 161,
+      "sha256": "d514dc674d4550dfcabbfe3d3eb7966ef3346212d302d9ddbd370c5e31b30d96"
+    },
+    {
+      "file": "sources/state/path.ts",
+      "name": "_getNameWithoutVariant",
+      "line": 197,
+      "sha256": "c389ee75e26ecfaf6512c0f9231791811d96b313d0a510f8493fee511115d9c3"
+    },
+    {
+      "file": "sources/state/meta.ts",
+      "name": "logIfNotFound",
+      "line": 18,
+      "sha256": "8f13af443b383444f53207e85c0290d048217d0acd77771c8469998e35c6809b"
+    },
+    {
+      "file": "sources/state/meta.ts",
+      "name": "getSortedLayers",
+      "line": 30,
+      "sha256": "18f3006067c02e332e1e98ec828d751247152bd844272fa9920a65a8267090ff"
+    },
+    {
+      "file": "sources/state/meta.ts",
+      "name": "getSortedLayersWithCustomFallback",
+      "line": 56,
+      "sha256": "c22fcadb5fca4cff4e1340689b55c417d4bcf60b4f17549f47350ecb70300d10"
+    },
+    {
+      "file": "sources/state/meta.ts",
+      "name": "getSortedLayersByAnim",
+      "line": 66,
+      "sha256": "715c92ba7384a6fbf959ebf24ed139c2f22fcf173f32632bf7dda6024cc18b62"
+    },
+    {
+      "file": "sources/state/meta.ts",
+      "name": "getLayersToLoad",
+      "line": 113,
+      "sha256": "20ebd992646f3ffda9d55fe1d9725f8f17bc3fff4362f3a3da26b7854dd95eb0"
+    },
+    {
+      "file": "sources/state/palettes.ts",
+      "name": "liteOrNull",
+      "line": 14,
+      "sha256": "c62f1382991fbf7830c39a399e78c6e070f2c2fe8230881cf09cb536dfa8b014"
+    },
+    {
+      "file": "sources/state/palettes.ts",
+      "name": "paletteMetaOrNull",
+      "line": 17,
+      "sha256": "937f0b0929643bfe35cfd276c42b197ee531aac2a9110897b925d70bd41cf4c9"
+    },
+    {
+      "file": "sources/state/palettes.ts",
+      "name": "parseRecolorKey",
+      "line": 355,
+      "sha256": "5f69eec9a49f35115edb5a55dfa4185ea0baa817bfcb8dc8ee7a86eb1f940941"
+    },
+    {
+      "file": "sources/state/palettes.ts",
+      "name": "getBasePalette",
+      "line": 173,
+      "sha256": "d79b7f035d5ddfc47b43723cd2a1953615f341cf66db42d51d8df555ddc3a8ee"
+    },
+    {
+      "file": "sources/state/palettes.ts",
+      "name": "getTargetPalette",
+      "line": 199,
+      "sha256": "4428383948dd0c26c16beab4762030702e01286afbc1ac5317ee1a41c3d2d29d"
+    },
+    {
+      "file": "sources/state/palettes.ts",
+      "name": "getPalettesFromMeta",
+      "line": 246,
+      "sha256": "62e098a163a2027a477da2e45db4ca3149dbe674d94a8b980df39675ed915cdb"
+    },
+    {
+      "file": "sources/state/palettes.ts",
+      "name": "fixMissingRecolor",
+      "line": 37,
+      "sha256": "a8393cb5c9e6024adc150bd22ded64ab9c9e3b78a741731f8d6164c24f1ebf43"
+    },
+    {
+      "file": "sources/state/palettes.ts",
+      "name": "getBodyColor",
+      "line": 139,
+      "sha256": "1acfd9ce3e65e22a086638168b0baf332483a0f3a06daf67304f40e4c056083a"
+    },
+    {
+      "file": "sources/state/palettes.ts",
+      "name": "getMultiRecolors",
+      "line": 76,
+      "sha256": "73bae7227f5cb6fe97dc982d8ea669a3f3a95c52af245788240830d7fe6b674f"
+    },
+    {
+      "file": "sources/canvas/canvas-utils.ts",
+      "name": "get2DContext",
+      "line": 32,
+      "sha256": "69c66ce04964754b1b9b16f6cf54eab6f19ed8d9ea15364f9209ff40f114f1e2"
+    },
+    {
+      "file": "sources/canvas/palette-recolor.ts",
+      "name": "hexToRgb",
+      "line": 49,
+      "sha256": "fd4966099d99423fa29b1d0911157bbbe2d99dd6a4130be1d92802fdf4493e6f"
+    },
+    {
+      "file": "sources/canvas/palette-recolor.ts",
+      "name": "buildColorMap",
+      "line": 64,
+      "sha256": "ffcf822127c9700a2fec0e6be65b5f0be1e09df471cb4fcab22fecc3af1cc2f1"
+    },
+    {
+      "file": "sources/canvas/palette-recolor.ts",
+      "name": "findMatchingColor",
+      "line": 86,
+      "sha256": "1af952df4b94e030ee69a39d4984070e6b5c2581ef58c8085d1df9ecf0205348"
+    },
+    {
+      "file": "sources/canvas/palette-recolor.ts",
+      "name": "recolorImageCPU",
+      "line": 111,
+      "sha256": "ad7d2625af05408c40734990739244dca0e4b0e4068162aaca9a68062da24d91"
+    },
+    {
+      "file": "sources/canvas/mask.ts",
+      "name": "applyTransparencyMaskToCanvas",
+      "line": 1,
+      "sha256": "938575a533b2ec6c2140acc36c48bf5110706547a7b58610cd4898b6619ba238"
+    },
+    {
+      "file": "sources/canvas/draw-frames.ts",
+      "name": "drawFrameToFrame",
+      "line": 11,
+      "sha256": "2a13934252f820b02277e061a41d7d21b498db5ca4fc913b6f96f047170b70d2"
+    },
+    {
+      "file": "sources/canvas/draw-frames.ts",
+      "name": "drawFramesToCustomAnimation",
+      "line": 48,
+      "sha256": "b7fa4d32a0f02b5fca7e089c9d0a74acd53d1ab0437e52be275426801afe2ad6"
+    },
+    {
+      "file": "sources/canvas/draw-frames.ts",
+      "name": "drawSingleAnimSpriteToCustomAnimation",
+      "line": 100,
+      "sha256": "858811b9908889b9665e20ebc0bb013293b86dd06caedf516815265da09c9d89"
+    }
+  ],
+  "sourceFiles": {
+    "sources/utils/helpers.ts": "904b55d31806ce8099e58298d832042fe1c2436c636fdd66a9c203884f338a47",
+    "sources/state/constants.ts": "c96ac684cb238e9d57ebde69c3b73b4f2abdcf92c8fa75487096c566fe6eb857",
+    "sources/state/hash.ts": "713af4ec131dd1b4d3b95cd77fc4851b642978aa4e69c56990a346e9b86d4f56",
+    "sources/state/path.ts": "b430679f3137107a8117ab8f281b75c3d75cd1bd33c94aa3ace16564cae2ee11",
+    "sources/state/meta.ts": "4e6c063817dc26de3149caa166729b6bed94a732e38e792a81ce47db0cc849b2",
+    "sources/state/palettes.ts": "0e3ff3cd84c84fb643e008479694b039d161e80b01da4f2a1bfbf078e5539b93",
+    "sources/canvas/canvas-utils.ts": "aa33b6457dd86d8554885deb4da4a56a282355c480afb36562b7bb93df5073f9",
+    "sources/canvas/palette-recolor.ts": "db0fae969371ccea974c814f344dd04bb5506db3f6435463e5c8206cb85e0f6f",
+    "sources/canvas/mask.ts": "344d9f503954838bb35fc7c641411cffab11d89aaec348162f194735101ab005",
+    "sources/canvas/draw-frames.ts": "ec3f84b53dbc18d7ab4d9dba2bb6f9e9402929d8f7e4a1ffa7e76d2fadbaf8fc",
+    "sources/custom-animations.ts": "b3fe11bc316284cf2bd972ec7f957da75e65fee77bb93e10cbef6eb68bcc3f2b"
+  },
+  "bindings": {
+    "result": "neverthrow 8.2.0 (MIT)",
+    "pathDeps": "Exact extracted variant/template helpers and ANIMATIONS; debug output disabled, no UI globals."
+  },
+  "bundleSha256": "166a8f425a074e6c1677e1d97d70e94e68183b0d6063664a6f29af7cf8911e13",
+  "extractedSha256": "b0f8f1794e2d4715df6df6e7772825e138e6280c161e6d6c7f75df05f30191d0",
+  "inputs": [
+    "experiments/lpc-clothing-demo/node_modules/neverthrow/dist/index.es.js",
+    "vendor/lpc/full-catalog/custom-animations.ts",
+    "vendor/lpc/full-catalog/extracted.ts"
+  ]
+}

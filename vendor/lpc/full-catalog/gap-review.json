@@ -1,0 +1,5468 @@
+{
+  "schemaVersion": 1,
+  "sourceCommit": "86160e7507d6841259cff624a51a63c1d4847ee3",
+  "scope": "Explicit conservative dispositions for every remaining reviewed-but-unsupported blank pattern. These records grant no rendering allowance, invent no replacement pixels and assert no artistic intent where evidence is insufficient. Exact affected source/geometry/context bindings are compiled separately.",
+  "rules": [
+    {
+      "id": "whole:backpack_jetpack_fins",
+      "itemId": "backpack_jetpack_fins",
+      "scope": "whole_direction",
+      "actions": [
+        "slash"
+      ],
+      "directions": [
+        "east",
+        "west"
+      ],
+      "disposition": "unverified_omission",
+      "reason": "Slash side views omit the fin surfaces that are visible in other source actions. The complete body/arm/fin relationship is not proved, so the side programs remain unavailable.",
+      "blockingItems": [
+        "backpack_jetpack_fins"
+      ],
+      "cases": [
+        {
+          "action": "slash",
+          "direction": "west",
+          "body": "male",
+          "variant": "bronze"
+        },
+        {
+          "action": "slash",
+          "direction": "west",
+          "body": "muscular",
+          "variant": "bronze"
+        },
+        {
+          "action": "slash",
+          "direction": "east",
+          "body": "male",
+          "variant": "bronze"
+        },
+        {
+          "action": "slash",
+          "direction": "east",
+          "body": "muscular",
+          "variant": "bronze"
+        },
+        {
+          "action": "slash",
+          "direction": "west",
+          "body": "male",
+          "variant": "gold"
+        },
+        {
+          "action": "slash",
+          "direction": "west",
+          "body": "muscular",
+          "variant": "gold"
+        },
+        {
+          "action": "slash",
+          "direction": "east",
+          "body": "male",
+          "variant": "gold"
+        },
+        {
+          "action": "slash",
+          "direction": "east",
+          "body": "muscular",
+          "variant": "gold"
+        },
+        {
+          "action": "slash",
+          "direction": "west",
+          "body": "male",
+          "variant": "steel"
+        },
+        {
+          "action": "slash",
+          "direction": "west",
+          "body": "muscular",
+          "variant": "steel"
+        },
+        {
+          "action": "slash",
+          "direction": "east",
+          "body": "male",
+          "variant": "steel"
+        },
+        {
+          "action": "slash",
+          "direction": "east",
+          "body": "muscular",
+          "variant": "steel"
+        }
+      ]
+    },
+    {
+      "id": "whole:beards_winter",
+      "itemId": "beards_winter",
+      "scope": "whole_direction",
+      "actions": [
+        "1h_backslash",
+        "1h_halfslash",
+        "1h_slash",
+        "combat",
+        "emote",
+        "idle",
+        "jump",
+        "run",
+        "sit"
+      ],
+      "directions": [
+        "north"
+      ],
+      "disposition": "source_gap",
+      "reason": "These rear-facing source programs omit the beard fringes present in the original Walk sheet. No exact matching replacement glyph or authored hidden-surface witness is supplied.",
+      "blockingItems": [
+        "beards_winter"
+      ],
+      "cases": [
+        {
+          "action": "idle",
+          "direction": "north",
+          "body": "male",
+          "variant": null
+        },
+        {
+          "action": "idle",
+          "direction": "north",
+          "body": "muscular",
+          "variant": null
+        },
+        {
+          "action": "jump",
+          "direction": "north",
+          "body": "male",
+          "variant": null
+        },
+        {
+          "action": "jump",
+          "direction": "north",
+          "body": "muscular",
+          "variant": null
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "male",
+          "variant": null
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "muscular",
+          "variant": null
+        },
+        {
+          "action": "sit",
+          "direction": "north",
+          "body": "male",
+          "variant": null
+        },
+        {
+          "action": "sit",
+          "direction": "north",
+          "body": "muscular",
+          "variant": null
+        },
+        {
+          "action": "emote",
+          "direction": "north",
+          "body": "male",
+          "variant": null
+        },
+        {
+          "action": "combat",
+          "direction": "north",
+          "body": "male",
+          "variant": null
+        },
+        {
+          "action": "1h_slash",
+          "direction": "north",
+          "body": "male",
+          "variant": null
+        },
+        {
+          "action": "1h_backslash",
+          "direction": "north",
+          "body": "male",
+          "variant": null
+        },
+        {
+          "action": "1h_halfslash",
+          "direction": "north",
+          "body": "male",
+          "variant": null
+        },
+        {
+          "action": "idle",
+          "direction": "north",
+          "body": "female",
+          "variant": null
+        },
+        {
+          "action": "idle",
+          "direction": "north",
+          "body": "teen",
+          "variant": null
+        },
+        {
+          "action": "idle",
+          "direction": "north",
+          "body": "pregnant",
+          "variant": null
+        },
+        {
+          "action": "jump",
+          "direction": "north",
+          "body": "female",
+          "variant": null
+        },
+        {
+          "action": "jump",
+          "direction": "north",
+          "body": "teen",
+          "variant": null
+        },
+        {
+          "action": "jump",
+          "direction": "north",
+          "body": "pregnant",
+          "variant": null
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "female",
+          "variant": null
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "teen",
+          "variant": null
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "pregnant",
+          "variant": null
+        },
+        {
+          "action": "sit",
+          "direction": "north",
+          "body": "female",
+          "variant": null
+        },
+        {
+          "action": "sit",
+          "direction": "north",
+          "body": "teen",
+          "variant": null
+        },
+        {
+          "action": "sit",
+          "direction": "north",
+          "body": "pregnant",
+          "variant": null
+        },
+        {
+          "action": "emote",
+          "direction": "north",
+          "body": "female",
+          "variant": null
+        },
+        {
+          "action": "emote",
+          "direction": "north",
+          "body": "teen",
+          "variant": null
+        },
+        {
+          "action": "emote",
+          "direction": "north",
+          "body": "pregnant",
+          "variant": null
+        },
+        {
+          "action": "combat",
+          "direction": "north",
+          "body": "female",
+          "variant": null
+        },
+        {
+          "action": "combat",
+          "direction": "north",
+          "body": "teen",
+          "variant": null
+        },
+        {
+          "action": "combat",
+          "direction": "north",
+          "body": "pregnant",
+          "variant": null
+        },
+        {
+          "action": "1h_slash",
+          "direction": "north",
+          "body": "female",
+          "variant": null
+        },
+        {
+          "action": "1h_slash",
+          "direction": "north",
+          "body": "teen",
+          "variant": null
+        },
+        {
+          "action": "1h_backslash",
+          "direction": "north",
+          "body": "female",
+          "variant": null
+        },
+        {
+          "action": "1h_backslash",
+          "direction": "north",
+          "body": "teen",
+          "variant": null
+        },
+        {
+          "action": "1h_halfslash",
+          "direction": "north",
+          "body": "female",
+          "variant": null
+        },
+        {
+          "action": "1h_halfslash",
+          "direction": "north",
+          "body": "teen",
+          "variant": null
+        }
+      ]
+    },
+    {
+      "id": "whole:hairext_xlong_braidl",
+      "itemId": "hairext_xlong_braidl",
+      "scope": "whole_direction",
+      "actions": [
+        "emote",
+        "jump",
+        "shoot",
+        "sit",
+        "slash",
+        "thrust",
+        "walk",
+        "watering"
+      ],
+      "directions": [
+        "east"
+      ],
+      "disposition": "unverified_omission",
+      "reason": "The far-side braid is absent in these views but appears in Spellcast. The cross-action head/body relationship does not establish a certified hidden surface for these programs.",
+      "blockingItems": [
+        "hairext_xlong_braidl"
+      ],
+      "cases": [
+        {
+          "action": "thrust",
+          "direction": "east",
+          "body": "male",
+          "variant": null
+        },
+        {
+          "action": "thrust",
+          "direction": "east",
+          "body": "female",
+          "variant": null
+        },
+        {
+          "action": "thrust",
+          "direction": "east",
+          "body": "teen",
+          "variant": null
+        },
+        {
+          "action": "thrust",
+          "direction": "east",
+          "body": "muscular",
+          "variant": null
+        },
+        {
+          "action": "thrust",
+          "direction": "east",
+          "body": "pregnant",
+          "variant": null
+        },
+        {
+          "action": "walk",
+          "direction": "east",
+          "body": "male",
+          "variant": null
+        },
+        {
+          "action": "walk",
+          "direction": "east",
+          "body": "female",
+          "variant": null
+        },
+        {
+          "action": "walk",
+          "direction": "east",
+          "body": "teen",
+          "variant": null
+        },
+        {
+          "action": "walk",
+          "direction": "east",
+          "body": "muscular",
+          "variant": null
+        },
+        {
+          "action": "walk",
+          "direction": "east",
+          "body": "pregnant",
+          "variant": null
+        },
+        {
+          "action": "slash",
+          "direction": "east",
+          "body": "male",
+          "variant": null
+        },
+        {
+          "action": "slash",
+          "direction": "east",
+          "body": "female",
+          "variant": null
+        },
+        {
+          "action": "slash",
+          "direction": "east",
+          "body": "teen",
+          "variant": null
+        },
+        {
+          "action": "slash",
+          "direction": "east",
+          "body": "muscular",
+          "variant": null
+        },
+        {
+          "action": "slash",
+          "direction": "east",
+          "body": "pregnant",
+          "variant": null
+        },
+        {
+          "action": "shoot",
+          "direction": "east",
+          "body": "male",
+          "variant": null
+        },
+        {
+          "action": "shoot",
+          "direction": "east",
+          "body": "female",
+          "variant": null
+        },
+        {
+          "action": "shoot",
+          "direction": "east",
+          "body": "teen",
+          "variant": null
+        },
+        {
+          "action": "shoot",
+          "direction": "east",
+          "body": "pregnant",
+          "variant": null
+        },
+        {
+          "action": "watering",
+          "direction": "east",
+          "body": "male",
+          "variant": null
+        },
+        {
+          "action": "watering",
+          "direction": "east",
+          "body": "female",
+          "variant": null
+        },
+        {
+          "action": "watering",
+          "direction": "east",
+          "body": "teen",
+          "variant": null
+        },
+        {
+          "action": "watering",
+          "direction": "east",
+          "body": "muscular",
+          "variant": null
+        },
+        {
+          "action": "watering",
+          "direction": "east",
+          "body": "pregnant",
+          "variant": null
+        },
+        {
+          "action": "jump",
+          "direction": "east",
+          "body": "male",
+          "variant": null
+        },
+        {
+          "action": "jump",
+          "direction": "east",
+          "body": "female",
+          "variant": null
+        },
+        {
+          "action": "jump",
+          "direction": "east",
+          "body": "teen",
+          "variant": null
+        },
+        {
+          "action": "jump",
+          "direction": "east",
+          "body": "muscular",
+          "variant": null
+        },
+        {
+          "action": "jump",
+          "direction": "east",
+          "body": "pregnant",
+          "variant": null
+        },
+        {
+          "action": "sit",
+          "direction": "east",
+          "body": "male",
+          "variant": null
+        },
+        {
+          "action": "sit",
+          "direction": "east",
+          "body": "female",
+          "variant": null
+        },
+        {
+          "action": "sit",
+          "direction": "east",
+          "body": "teen",
+          "variant": null
+        },
+        {
+          "action": "sit",
+          "direction": "east",
+          "body": "muscular",
+          "variant": null
+        },
+        {
+          "action": "sit",
+          "direction": "east",
+          "body": "pregnant",
+          "variant": null
+        },
+        {
+          "action": "emote",
+          "direction": "east",
+          "body": "male",
+          "variant": null
+        },
+        {
+          "action": "emote",
+          "direction": "east",
+          "body": "female",
+          "variant": null
+        },
+        {
+          "action": "emote",
+          "direction": "east",
+          "body": "teen",
+          "variant": null
+        },
+        {
+          "action": "emote",
+          "direction": "east",
+          "body": "pregnant",
+          "variant": null
+        }
+      ]
+    },
+    {
+      "id": "whole:hairext_xlong_braidr",
+      "itemId": "hairext_xlong_braidr",
+      "scope": "whole_direction",
+      "actions": [
+        "emote",
+        "jump",
+        "shoot",
+        "sit",
+        "slash",
+        "thrust",
+        "walk",
+        "watering"
+      ],
+      "directions": [
+        "west"
+      ],
+      "disposition": "unverified_omission",
+      "reason": "The far-side braid is absent in these views but appears in Spellcast. The cross-action head/body relationship does not establish a certified hidden surface for these programs.",
+      "blockingItems": [
+        "hairext_xlong_braidr"
+      ],
+      "cases": [
+        {
+          "action": "thrust",
+          "direction": "west",
+          "body": "male",
+          "variant": null
+        },
+        {
+          "action": "thrust",
+          "direction": "west",
+          "body": "female",
+          "variant": null
+        },
+        {
+          "action": "thrust",
+          "direction": "west",
+          "body": "teen",
+          "variant": null
+        },
+        {
+          "action": "thrust",
+          "direction": "west",
+          "body": "muscular",
+          "variant": null
+        },
+        {
+          "action": "thrust",
+          "direction": "west",
+          "body": "pregnant",
+          "variant": null
+        },
+        {
+          "action": "walk",
+          "direction": "west",
+          "body": "male",
+          "variant": null
+        },
+        {
+          "action": "walk",
+          "direction": "west",
+          "body": "female",
+          "variant": null
+        },
+        {
+          "action": "walk",
+          "direction": "west",
+          "body": "teen",
+          "variant": null
+        },
+        {
+          "action": "walk",
+          "direction": "west",
+          "body": "muscular",
+          "variant": null
+        },
+        {
+          "action": "walk",
+          "direction": "west",
+          "body": "pregnant",
+          "variant": null
+        },
+        {
+          "action": "slash",
+          "direction": "west",
+          "body": "male",
+          "variant": null
+        },
+        {
+          "action": "slash",
+          "direction": "west",
+          "body": "female",
+          "variant": null
+        },
+        {
+          "action": "slash",
+          "direction": "west",
+          "body": "teen",
+          "variant": null
+        },
+        {
+          "action": "slash",
+          "direction": "west",
+          "body": "muscular",
+          "variant": null
+        },
+        {
+          "action": "slash",
+          "direction": "west",
+          "body": "pregnant",
+          "variant": null
+        },
+        {
+          "action": "shoot",
+          "direction": "west",
+          "body": "male",
+          "variant": null
+        },
+        {
+          "action": "shoot",
+          "direction": "west",
+          "body": "female",
+          "variant": null
+        },
+        {
+          "action": "shoot",
+          "direction": "west",
+          "body": "teen",
+          "variant": null
+        },
+        {
+          "action": "shoot",
+          "direction": "west",
+          "body": "pregnant",
+          "variant": null
+        },
+        {
+          "action": "watering",
+          "direction": "west",
+          "body": "male",
+          "variant": null
+        },
+        {
+          "action": "watering",
+          "direction": "west",
+          "body": "female",
+          "variant": null
+        },
+        {
+          "action": "watering",
+          "direction": "west",
+          "body": "teen",
+          "variant": null
+        },
+        {
+          "action": "watering",
+          "direction": "west",
+          "body": "muscular",
+          "variant": null
+        },
+        {
+          "action": "watering",
+          "direction": "west",
+          "body": "pregnant",
+          "variant": null
+        },
+        {
+          "action": "jump",
+          "direction": "west",
+          "body": "male",
+          "variant": null
+        },
+        {
+          "action": "jump",
+          "direction": "west",
+          "body": "female",
+          "variant": null
+        },
+        {
+          "action": "jump",
+          "direction": "west",
+          "body": "teen",
+          "variant": null
+        },
+        {
+          "action": "jump",
+          "direction": "west",
+          "body": "muscular",
+          "variant": null
+        },
+        {
+          "action": "jump",
+          "direction": "west",
+          "body": "pregnant",
+          "variant": null
+        },
+        {
+          "action": "sit",
+          "direction": "west",
+          "body": "male",
+          "variant": null
+        },
+        {
+          "action": "sit",
+          "direction": "west",
+          "body": "female",
+          "variant": null
+        },
+        {
+          "action": "sit",
+          "direction": "west",
+          "body": "teen",
+          "variant": null
+        },
+        {
+          "action": "sit",
+          "direction": "west",
+          "body": "muscular",
+          "variant": null
+        },
+        {
+          "action": "sit",
+          "direction": "west",
+          "body": "pregnant",
+          "variant": null
+        },
+        {
+          "action": "emote",
+          "direction": "west",
+          "body": "male",
+          "variant": null
+        },
+        {
+          "action": "emote",
+          "direction": "west",
+          "body": "female",
+          "variant": null
+        },
+        {
+          "action": "emote",
+          "direction": "west",
+          "body": "teen",
+          "variant": null
+        },
+        {
+          "action": "emote",
+          "direction": "west",
+          "body": "pregnant",
+          "variant": null
+        }
+      ]
+    },
+    {
+      "id": "whole:head_ears_cat_skin",
+      "itemId": "head_ears_cat_skin",
+      "scope": "whole_direction",
+      "actions": [
+        "walk"
+      ],
+      "directions": [
+        "south"
+      ],
+      "disposition": "source_gap",
+      "reason": "The Child Walk front row has no cat-ear artwork, while the Child Idle front row contains visible ears. Other head/body pixels do not supply the missing ear layer.",
+      "blockingItems": [
+        "head_ears_cat_skin"
+      ],
+      "cases": [
+        {
+          "action": "walk",
+          "direction": "south",
+          "body": "child",
+          "variant": null
+        }
+      ]
+    },
+    {
+      "id": "whole:neck_necklace",
+      "itemId": "neck_necklace",
+      "scope": "whole_direction",
+      "actions": [
+        "idle",
+        "spellcast",
+        "walk"
+      ],
+      "directions": [
+        "north"
+      ],
+      "disposition": "unverified_omission",
+      "reason": "These rear-view necklace sources omit chain pixels that are present in other original variants or actions. No general back-of-neck exemption or replacement is inferred.",
+      "blockingItems": [
+        "neck_necklace"
+      ],
+      "cases": [
+        {
+          "action": "walk",
+          "direction": "north",
+          "body": "male",
+          "variant": "steel"
+        },
+        {
+          "action": "walk",
+          "direction": "north",
+          "body": "male",
+          "variant": "iron"
+        },
+        {
+          "action": "walk",
+          "direction": "north",
+          "body": "male",
+          "variant": "silver"
+        },
+        {
+          "action": "walk",
+          "direction": "north",
+          "body": "male",
+          "variant": "gold"
+        },
+        {
+          "action": "walk",
+          "direction": "north",
+          "body": "female",
+          "variant": "steel"
+        },
+        {
+          "action": "walk",
+          "direction": "north",
+          "body": "female",
+          "variant": "iron"
+        },
+        {
+          "action": "walk",
+          "direction": "north",
+          "body": "female",
+          "variant": "silver"
+        },
+        {
+          "action": "walk",
+          "direction": "north",
+          "body": "female",
+          "variant": "gold"
+        },
+        {
+          "action": "walk",
+          "direction": "north",
+          "body": "teen",
+          "variant": "steel"
+        },
+        {
+          "action": "walk",
+          "direction": "north",
+          "body": "teen",
+          "variant": "iron"
+        },
+        {
+          "action": "walk",
+          "direction": "north",
+          "body": "teen",
+          "variant": "silver"
+        },
+        {
+          "action": "walk",
+          "direction": "north",
+          "body": "teen",
+          "variant": "gold"
+        },
+        {
+          "action": "walk",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "steel"
+        },
+        {
+          "action": "walk",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "iron"
+        },
+        {
+          "action": "walk",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "silver"
+        },
+        {
+          "action": "walk",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "gold"
+        },
+        {
+          "action": "walk",
+          "direction": "north",
+          "body": "pregnant",
+          "variant": "steel"
+        },
+        {
+          "action": "walk",
+          "direction": "north",
+          "body": "pregnant",
+          "variant": "iron"
+        },
+        {
+          "action": "walk",
+          "direction": "north",
+          "body": "pregnant",
+          "variant": "silver"
+        },
+        {
+          "action": "walk",
+          "direction": "north",
+          "body": "pregnant",
+          "variant": "gold"
+        },
+        {
+          "action": "idle",
+          "direction": "north",
+          "body": "male",
+          "variant": "steel"
+        },
+        {
+          "action": "idle",
+          "direction": "north",
+          "body": "male",
+          "variant": "iron"
+        },
+        {
+          "action": "idle",
+          "direction": "north",
+          "body": "male",
+          "variant": "ceramic"
+        },
+        {
+          "action": "idle",
+          "direction": "north",
+          "body": "male",
+          "variant": "brass"
+        },
+        {
+          "action": "idle",
+          "direction": "north",
+          "body": "male",
+          "variant": "copper"
+        },
+        {
+          "action": "idle",
+          "direction": "north",
+          "body": "male",
+          "variant": "bronze"
+        },
+        {
+          "action": "idle",
+          "direction": "north",
+          "body": "male",
+          "variant": "silver"
+        },
+        {
+          "action": "idle",
+          "direction": "north",
+          "body": "male",
+          "variant": "gold"
+        },
+        {
+          "action": "idle",
+          "direction": "north",
+          "body": "female",
+          "variant": "steel"
+        },
+        {
+          "action": "idle",
+          "direction": "north",
+          "body": "female",
+          "variant": "iron"
+        },
+        {
+          "action": "idle",
+          "direction": "north",
+          "body": "female",
+          "variant": "ceramic"
+        },
+        {
+          "action": "idle",
+          "direction": "north",
+          "body": "female",
+          "variant": "brass"
+        },
+        {
+          "action": "idle",
+          "direction": "north",
+          "body": "female",
+          "variant": "copper"
+        },
+        {
+          "action": "idle",
+          "direction": "north",
+          "body": "female",
+          "variant": "bronze"
+        },
+        {
+          "action": "idle",
+          "direction": "north",
+          "body": "female",
+          "variant": "silver"
+        },
+        {
+          "action": "idle",
+          "direction": "north",
+          "body": "female",
+          "variant": "gold"
+        },
+        {
+          "action": "idle",
+          "direction": "north",
+          "body": "teen",
+          "variant": "steel"
+        },
+        {
+          "action": "idle",
+          "direction": "north",
+          "body": "teen",
+          "variant": "iron"
+        },
+        {
+          "action": "idle",
+          "direction": "north",
+          "body": "teen",
+          "variant": "ceramic"
+        },
+        {
+          "action": "idle",
+          "direction": "north",
+          "body": "teen",
+          "variant": "brass"
+        },
+        {
+          "action": "idle",
+          "direction": "north",
+          "body": "teen",
+          "variant": "copper"
+        },
+        {
+          "action": "idle",
+          "direction": "north",
+          "body": "teen",
+          "variant": "bronze"
+        },
+        {
+          "action": "idle",
+          "direction": "north",
+          "body": "teen",
+          "variant": "silver"
+        },
+        {
+          "action": "idle",
+          "direction": "north",
+          "body": "teen",
+          "variant": "gold"
+        },
+        {
+          "action": "idle",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "steel"
+        },
+        {
+          "action": "idle",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "iron"
+        },
+        {
+          "action": "idle",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "ceramic"
+        },
+        {
+          "action": "idle",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "brass"
+        },
+        {
+          "action": "idle",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "copper"
+        },
+        {
+          "action": "idle",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "bronze"
+        },
+        {
+          "action": "idle",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "silver"
+        },
+        {
+          "action": "idle",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "gold"
+        },
+        {
+          "action": "idle",
+          "direction": "north",
+          "body": "pregnant",
+          "variant": "steel"
+        },
+        {
+          "action": "idle",
+          "direction": "north",
+          "body": "pregnant",
+          "variant": "iron"
+        },
+        {
+          "action": "idle",
+          "direction": "north",
+          "body": "pregnant",
+          "variant": "ceramic"
+        },
+        {
+          "action": "idle",
+          "direction": "north",
+          "body": "pregnant",
+          "variant": "brass"
+        },
+        {
+          "action": "idle",
+          "direction": "north",
+          "body": "pregnant",
+          "variant": "copper"
+        },
+        {
+          "action": "idle",
+          "direction": "north",
+          "body": "pregnant",
+          "variant": "bronze"
+        },
+        {
+          "action": "idle",
+          "direction": "north",
+          "body": "pregnant",
+          "variant": "silver"
+        },
+        {
+          "action": "idle",
+          "direction": "north",
+          "body": "pregnant",
+          "variant": "gold"
+        },
+        {
+          "action": "walk",
+          "direction": "north",
+          "body": "male",
+          "variant": "ceramic"
+        },
+        {
+          "action": "walk",
+          "direction": "north",
+          "body": "male",
+          "variant": "brass"
+        },
+        {
+          "action": "walk",
+          "direction": "north",
+          "body": "male",
+          "variant": "copper"
+        },
+        {
+          "action": "walk",
+          "direction": "north",
+          "body": "male",
+          "variant": "bronze"
+        },
+        {
+          "action": "walk",
+          "direction": "north",
+          "body": "female",
+          "variant": "ceramic"
+        },
+        {
+          "action": "walk",
+          "direction": "north",
+          "body": "female",
+          "variant": "brass"
+        },
+        {
+          "action": "walk",
+          "direction": "north",
+          "body": "female",
+          "variant": "copper"
+        },
+        {
+          "action": "walk",
+          "direction": "north",
+          "body": "female",
+          "variant": "bronze"
+        },
+        {
+          "action": "walk",
+          "direction": "north",
+          "body": "teen",
+          "variant": "ceramic"
+        },
+        {
+          "action": "walk",
+          "direction": "north",
+          "body": "teen",
+          "variant": "brass"
+        },
+        {
+          "action": "walk",
+          "direction": "north",
+          "body": "teen",
+          "variant": "copper"
+        },
+        {
+          "action": "walk",
+          "direction": "north",
+          "body": "teen",
+          "variant": "bronze"
+        },
+        {
+          "action": "walk",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "ceramic"
+        },
+        {
+          "action": "walk",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "brass"
+        },
+        {
+          "action": "walk",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "copper"
+        },
+        {
+          "action": "walk",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "bronze"
+        },
+        {
+          "action": "walk",
+          "direction": "north",
+          "body": "pregnant",
+          "variant": "ceramic"
+        },
+        {
+          "action": "walk",
+          "direction": "north",
+          "body": "pregnant",
+          "variant": "brass"
+        },
+        {
+          "action": "walk",
+          "direction": "north",
+          "body": "pregnant",
+          "variant": "copper"
+        },
+        {
+          "action": "walk",
+          "direction": "north",
+          "body": "pregnant",
+          "variant": "bronze"
+        },
+        {
+          "action": "spellcast",
+          "direction": "north",
+          "body": "male",
+          "variant": "pirate"
+        },
+        {
+          "action": "spellcast",
+          "direction": "north",
+          "body": "female",
+          "variant": "pirate"
+        },
+        {
+          "action": "spellcast",
+          "direction": "north",
+          "body": "teen",
+          "variant": "pirate"
+        },
+        {
+          "action": "spellcast",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "pirate"
+        },
+        {
+          "action": "spellcast",
+          "direction": "north",
+          "body": "pregnant",
+          "variant": "pirate"
+        }
+      ]
+    },
+    {
+      "id": "whole:shield_heater_revised_trim",
+      "itemId": "shield_heater_revised_trim",
+      "scope": "whole_direction",
+      "actions": [
+        "emote",
+        "sit"
+      ],
+      "directions": [
+        "south"
+      ],
+      "disposition": "required_layer_gap",
+      "reason": "The selected trim cannot make the required Wood shield base visible in its missing front-facing Sit/Emote programs.",
+      "blockingItems": [
+        "shield_heater_revised_wood"
+      ],
+      "cases": [
+        {
+          "action": "sit",
+          "direction": "south",
+          "body": "male",
+          "variant": null
+        },
+        {
+          "action": "sit",
+          "direction": "south",
+          "body": "female",
+          "variant": null
+        },
+        {
+          "action": "sit",
+          "direction": "south",
+          "body": "teen",
+          "variant": null
+        },
+        {
+          "action": "sit",
+          "direction": "south",
+          "body": "muscular",
+          "variant": null
+        },
+        {
+          "action": "sit",
+          "direction": "south",
+          "body": "pregnant",
+          "variant": null
+        },
+        {
+          "action": "emote",
+          "direction": "south",
+          "body": "male",
+          "variant": null
+        },
+        {
+          "action": "emote",
+          "direction": "south",
+          "body": "female",
+          "variant": null
+        },
+        {
+          "action": "emote",
+          "direction": "south",
+          "body": "teen",
+          "variant": null
+        },
+        {
+          "action": "emote",
+          "direction": "south",
+          "body": "pregnant",
+          "variant": null
+        }
+      ]
+    },
+    {
+      "id": "whole:shield_heater_revised_wood",
+      "itemId": "shield_heater_revised_wood",
+      "scope": "whole_direction",
+      "actions": [
+        "emote",
+        "sit"
+      ],
+      "directions": [
+        "south"
+      ],
+      "disposition": "source_gap",
+      "reason": "The original front-facing Sit/Emote programs omit the substantial Wood shield. No visible matching-base certificate establishes this as a hidden shield.",
+      "blockingItems": [
+        "shield_heater_revised_wood"
+      ],
+      "cases": [
+        {
+          "action": "sit",
+          "direction": "south",
+          "body": "male",
+          "variant": null
+        },
+        {
+          "action": "sit",
+          "direction": "south",
+          "body": "female",
+          "variant": null
+        },
+        {
+          "action": "sit",
+          "direction": "south",
+          "body": "teen",
+          "variant": null
+        },
+        {
+          "action": "sit",
+          "direction": "south",
+          "body": "muscular",
+          "variant": null
+        },
+        {
+          "action": "sit",
+          "direction": "south",
+          "body": "pregnant",
+          "variant": null
+        },
+        {
+          "action": "emote",
+          "direction": "south",
+          "body": "male",
+          "variant": null
+        },
+        {
+          "action": "emote",
+          "direction": "south",
+          "body": "female",
+          "variant": null
+        },
+        {
+          "action": "emote",
+          "direction": "south",
+          "body": "teen",
+          "variant": null
+        },
+        {
+          "action": "emote",
+          "direction": "south",
+          "body": "pregnant",
+          "variant": null
+        }
+      ]
+    },
+    {
+      "id": "whole:shield_heater_trim",
+      "itemId": "shield_heater_trim",
+      "scope": "whole_direction",
+      "actions": [
+        "emote",
+        "sit"
+      ],
+      "directions": [
+        "south"
+      ],
+      "disposition": "required_layer_gap",
+      "reason": "The selected trim cannot make the required Wood shield base visible in its missing front-facing Sit/Emote programs.",
+      "blockingItems": [
+        "shield_heater_revised_wood"
+      ],
+      "cases": [
+        {
+          "action": "sit",
+          "direction": "south",
+          "body": "male",
+          "variant": null
+        },
+        {
+          "action": "sit",
+          "direction": "south",
+          "body": "female",
+          "variant": null
+        },
+        {
+          "action": "sit",
+          "direction": "south",
+          "body": "teen",
+          "variant": null
+        },
+        {
+          "action": "sit",
+          "direction": "south",
+          "body": "muscular",
+          "variant": null
+        },
+        {
+          "action": "sit",
+          "direction": "south",
+          "body": "pregnant",
+          "variant": null
+        },
+        {
+          "action": "emote",
+          "direction": "south",
+          "body": "male",
+          "variant": null
+        },
+        {
+          "action": "emote",
+          "direction": "south",
+          "body": "female",
+          "variant": null
+        },
+        {
+          "action": "emote",
+          "direction": "south",
+          "body": "teen",
+          "variant": null
+        },
+        {
+          "action": "emote",
+          "direction": "south",
+          "body": "pregnant",
+          "variant": null
+        }
+      ]
+    },
+    {
+      "id": "whole:shield_heater_wood",
+      "itemId": "shield_heater_wood",
+      "scope": "whole_direction",
+      "actions": [
+        "emote",
+        "sit"
+      ],
+      "directions": [
+        "south"
+      ],
+      "disposition": "source_gap",
+      "reason": "The original front-facing Sit/Emote programs omit the substantial Wood shield. No visible matching-base certificate establishes this as a hidden shield.",
+      "blockingItems": [
+        "shield_heater_wood"
+      ],
+      "cases": [
+        {
+          "action": "sit",
+          "direction": "south",
+          "body": "male",
+          "variant": null
+        },
+        {
+          "action": "sit",
+          "direction": "south",
+          "body": "female",
+          "variant": null
+        },
+        {
+          "action": "sit",
+          "direction": "south",
+          "body": "teen",
+          "variant": null
+        },
+        {
+          "action": "sit",
+          "direction": "south",
+          "body": "muscular",
+          "variant": null
+        },
+        {
+          "action": "sit",
+          "direction": "south",
+          "body": "pregnant",
+          "variant": null
+        },
+        {
+          "action": "emote",
+          "direction": "south",
+          "body": "male",
+          "variant": null
+        },
+        {
+          "action": "emote",
+          "direction": "south",
+          "body": "female",
+          "variant": null
+        },
+        {
+          "action": "emote",
+          "direction": "south",
+          "body": "teen",
+          "variant": null
+        },
+        {
+          "action": "emote",
+          "direction": "south",
+          "body": "pregnant",
+          "variant": null
+        }
+      ]
+    },
+    {
+      "id": "whole:weapon_polearm_cane",
+      "itemId": "weapon_polearm_cane",
+      "scope": "whole_direction",
+      "actions": [
+        "walk"
+      ],
+      "directions": [
+        "north"
+      ],
+      "disposition": "unverified_omission",
+      "reason": "The complete rear Walk source is blank while another source action shows the cane. No exact parent/prop witness proves the long cane is hidden for this whole program.",
+      "blockingItems": [
+        "weapon_polearm_cane"
+      ],
+      "cases": [
+        {
+          "action": "walk",
+          "direction": "north",
+          "body": "male",
+          "variant": "cane"
+        },
+        {
+          "action": "walk",
+          "direction": "north",
+          "body": "female",
+          "variant": "cane"
+        },
+        {
+          "action": "walk",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "cane"
+        },
+        {
+          "action": "walk",
+          "direction": "north",
+          "body": "pregnant",
+          "variant": "cane"
+        }
+      ]
+    },
+    {
+      "id": "whole:weapon_sword_dagger",
+      "itemId": "weapon_sword_dagger",
+      "scope": "whole_direction",
+      "actions": [
+        "walk"
+      ],
+      "directions": [
+        "north"
+      ],
+      "disposition": "unverified_omission",
+      "reason": "The complete rear Walk source is blank. The reviewed finite Slash omissions do not authorize a different source action or an entire missing view.",
+      "blockingItems": [
+        "weapon_sword_dagger"
+      ],
+      "cases": [
+        {
+          "action": "walk",
+          "direction": "north",
+          "body": "male",
+          "variant": "dagger"
+        },
+        {
+          "action": "walk",
+          "direction": "north",
+          "body": "female",
+          "variant": "dagger"
+        },
+        {
+          "action": "walk",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "dagger"
+        },
+        {
+          "action": "walk",
+          "direction": "north",
+          "body": "pregnant",
+          "variant": "dagger"
+        }
+      ]
+    },
+    {
+      "id": "partial:hat_accessory_wings:1h_halfslash",
+      "itemId": "hat_accessory_wings",
+      "scope": "intermittent",
+      "actions": [
+        "1h_halfslash"
+      ],
+      "cells": {
+        "south": [
+          2,
+          3,
+          4
+        ]
+      },
+      "disposition": "unverified_omission",
+      "reason": "Both hat wings disappear while the front head remains exposed. No exact authored parent/wing witness establishes a valid hidden surface.",
+      "cases": [
+        {
+          "action": "1h_halfslash",
+          "direction": "south",
+          "body": "male",
+          "variant": null
+        },
+        {
+          "action": "1h_halfslash",
+          "direction": "south",
+          "body": "female",
+          "variant": null
+        }
+      ]
+    },
+    {
+      "id": "partial:hat_cap_cavalier_feather:run",
+      "itemId": "hat_cap_cavalier_feather",
+      "scope": "intermittent",
+      "actions": [
+        "run"
+      ],
+      "cells": {
+        "north": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "west": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "south": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "east": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "disposition": "source_gap",
+      "reason": "Only column 0 contains the feather in each Run view. Copying it to moving head poses is not an authored complete loop.",
+      "cases": [
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "male",
+          "variant": "white"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "male",
+          "variant": "white"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "male",
+          "variant": "white"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "male",
+          "variant": "white"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "female",
+          "variant": "white"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "female",
+          "variant": "white"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "female",
+          "variant": "white"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "female",
+          "variant": "white"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "teen",
+          "variant": "white"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "teen",
+          "variant": "white"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "teen",
+          "variant": "white"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "teen",
+          "variant": "white"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "white"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "muscular",
+          "variant": "white"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "white"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "muscular",
+          "variant": "white"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "pregnant",
+          "variant": "white"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "pregnant",
+          "variant": "white"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "pregnant",
+          "variant": "white"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "pregnant",
+          "variant": "white"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "male",
+          "variant": "black"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "male",
+          "variant": "black"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "male",
+          "variant": "black"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "male",
+          "variant": "black"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "female",
+          "variant": "black"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "female",
+          "variant": "black"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "female",
+          "variant": "black"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "female",
+          "variant": "black"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "teen",
+          "variant": "black"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "teen",
+          "variant": "black"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "teen",
+          "variant": "black"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "teen",
+          "variant": "black"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "black"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "muscular",
+          "variant": "black"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "black"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "muscular",
+          "variant": "black"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "pregnant",
+          "variant": "black"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "pregnant",
+          "variant": "black"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "pregnant",
+          "variant": "black"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "pregnant",
+          "variant": "black"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "male",
+          "variant": "blue"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "male",
+          "variant": "blue"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "male",
+          "variant": "blue"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "male",
+          "variant": "blue"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "female",
+          "variant": "blue"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "female",
+          "variant": "blue"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "female",
+          "variant": "blue"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "female",
+          "variant": "blue"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "teen",
+          "variant": "blue"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "teen",
+          "variant": "blue"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "teen",
+          "variant": "blue"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "teen",
+          "variant": "blue"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "blue"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "muscular",
+          "variant": "blue"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "blue"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "muscular",
+          "variant": "blue"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "pregnant",
+          "variant": "blue"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "pregnant",
+          "variant": "blue"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "pregnant",
+          "variant": "blue"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "pregnant",
+          "variant": "blue"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "male",
+          "variant": "bluegray"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "male",
+          "variant": "bluegray"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "male",
+          "variant": "bluegray"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "male",
+          "variant": "bluegray"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "female",
+          "variant": "bluegray"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "female",
+          "variant": "bluegray"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "female",
+          "variant": "bluegray"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "female",
+          "variant": "bluegray"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "teen",
+          "variant": "bluegray"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "teen",
+          "variant": "bluegray"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "teen",
+          "variant": "bluegray"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "teen",
+          "variant": "bluegray"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "bluegray"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "muscular",
+          "variant": "bluegray"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "bluegray"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "muscular",
+          "variant": "bluegray"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "pregnant",
+          "variant": "bluegray"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "pregnant",
+          "variant": "bluegray"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "pregnant",
+          "variant": "bluegray"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "pregnant",
+          "variant": "bluegray"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "male",
+          "variant": "brown"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "male",
+          "variant": "brown"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "male",
+          "variant": "brown"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "male",
+          "variant": "brown"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "female",
+          "variant": "brown"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "female",
+          "variant": "brown"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "female",
+          "variant": "brown"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "female",
+          "variant": "brown"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "teen",
+          "variant": "brown"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "teen",
+          "variant": "brown"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "teen",
+          "variant": "brown"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "teen",
+          "variant": "brown"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "brown"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "muscular",
+          "variant": "brown"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "brown"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "muscular",
+          "variant": "brown"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "pregnant",
+          "variant": "brown"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "pregnant",
+          "variant": "brown"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "pregnant",
+          "variant": "brown"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "pregnant",
+          "variant": "brown"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "male",
+          "variant": "charcoal"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "male",
+          "variant": "charcoal"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "male",
+          "variant": "charcoal"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "male",
+          "variant": "charcoal"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "female",
+          "variant": "charcoal"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "female",
+          "variant": "charcoal"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "female",
+          "variant": "charcoal"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "female",
+          "variant": "charcoal"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "teen",
+          "variant": "charcoal"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "teen",
+          "variant": "charcoal"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "teen",
+          "variant": "charcoal"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "teen",
+          "variant": "charcoal"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "charcoal"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "muscular",
+          "variant": "charcoal"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "charcoal"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "muscular",
+          "variant": "charcoal"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "pregnant",
+          "variant": "charcoal"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "pregnant",
+          "variant": "charcoal"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "pregnant",
+          "variant": "charcoal"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "pregnant",
+          "variant": "charcoal"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "male",
+          "variant": "forest"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "male",
+          "variant": "forest"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "male",
+          "variant": "forest"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "male",
+          "variant": "forest"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "female",
+          "variant": "forest"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "female",
+          "variant": "forest"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "female",
+          "variant": "forest"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "female",
+          "variant": "forest"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "teen",
+          "variant": "forest"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "teen",
+          "variant": "forest"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "teen",
+          "variant": "forest"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "teen",
+          "variant": "forest"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "forest"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "muscular",
+          "variant": "forest"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "forest"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "muscular",
+          "variant": "forest"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "pregnant",
+          "variant": "forest"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "pregnant",
+          "variant": "forest"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "pregnant",
+          "variant": "forest"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "pregnant",
+          "variant": "forest"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "male",
+          "variant": "gray"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "male",
+          "variant": "gray"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "male",
+          "variant": "gray"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "male",
+          "variant": "gray"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "female",
+          "variant": "gray"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "female",
+          "variant": "gray"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "female",
+          "variant": "gray"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "female",
+          "variant": "gray"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "teen",
+          "variant": "gray"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "teen",
+          "variant": "gray"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "teen",
+          "variant": "gray"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "teen",
+          "variant": "gray"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "gray"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "muscular",
+          "variant": "gray"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "gray"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "muscular",
+          "variant": "gray"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "pregnant",
+          "variant": "gray"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "pregnant",
+          "variant": "gray"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "pregnant",
+          "variant": "gray"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "pregnant",
+          "variant": "gray"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "male",
+          "variant": "green"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "male",
+          "variant": "green"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "male",
+          "variant": "green"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "male",
+          "variant": "green"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "female",
+          "variant": "green"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "female",
+          "variant": "green"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "female",
+          "variant": "green"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "female",
+          "variant": "green"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "teen",
+          "variant": "green"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "teen",
+          "variant": "green"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "teen",
+          "variant": "green"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "teen",
+          "variant": "green"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "green"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "muscular",
+          "variant": "green"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "green"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "muscular",
+          "variant": "green"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "pregnant",
+          "variant": "green"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "pregnant",
+          "variant": "green"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "pregnant",
+          "variant": "green"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "pregnant",
+          "variant": "green"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "male",
+          "variant": "lavender"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "male",
+          "variant": "lavender"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "male",
+          "variant": "lavender"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "male",
+          "variant": "lavender"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "female",
+          "variant": "lavender"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "female",
+          "variant": "lavender"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "female",
+          "variant": "lavender"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "female",
+          "variant": "lavender"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "teen",
+          "variant": "lavender"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "teen",
+          "variant": "lavender"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "teen",
+          "variant": "lavender"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "teen",
+          "variant": "lavender"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "lavender"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "muscular",
+          "variant": "lavender"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "lavender"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "muscular",
+          "variant": "lavender"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "pregnant",
+          "variant": "lavender"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "pregnant",
+          "variant": "lavender"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "pregnant",
+          "variant": "lavender"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "pregnant",
+          "variant": "lavender"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "male",
+          "variant": "leather"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "male",
+          "variant": "leather"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "male",
+          "variant": "leather"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "male",
+          "variant": "leather"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "female",
+          "variant": "leather"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "female",
+          "variant": "leather"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "female",
+          "variant": "leather"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "female",
+          "variant": "leather"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "teen",
+          "variant": "leather"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "teen",
+          "variant": "leather"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "teen",
+          "variant": "leather"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "teen",
+          "variant": "leather"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "leather"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "muscular",
+          "variant": "leather"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "leather"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "muscular",
+          "variant": "leather"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "pregnant",
+          "variant": "leather"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "pregnant",
+          "variant": "leather"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "pregnant",
+          "variant": "leather"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "pregnant",
+          "variant": "leather"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "male",
+          "variant": "maroon"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "male",
+          "variant": "maroon"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "male",
+          "variant": "maroon"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "male",
+          "variant": "maroon"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "female",
+          "variant": "maroon"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "female",
+          "variant": "maroon"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "female",
+          "variant": "maroon"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "female",
+          "variant": "maroon"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "teen",
+          "variant": "maroon"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "teen",
+          "variant": "maroon"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "teen",
+          "variant": "maroon"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "teen",
+          "variant": "maroon"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "maroon"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "muscular",
+          "variant": "maroon"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "maroon"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "muscular",
+          "variant": "maroon"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "pregnant",
+          "variant": "maroon"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "pregnant",
+          "variant": "maroon"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "pregnant",
+          "variant": "maroon"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "pregnant",
+          "variant": "maroon"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "male",
+          "variant": "navy"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "male",
+          "variant": "navy"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "male",
+          "variant": "navy"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "male",
+          "variant": "navy"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "female",
+          "variant": "navy"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "female",
+          "variant": "navy"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "female",
+          "variant": "navy"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "female",
+          "variant": "navy"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "teen",
+          "variant": "navy"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "teen",
+          "variant": "navy"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "teen",
+          "variant": "navy"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "teen",
+          "variant": "navy"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "navy"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "muscular",
+          "variant": "navy"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "navy"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "muscular",
+          "variant": "navy"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "pregnant",
+          "variant": "navy"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "pregnant",
+          "variant": "navy"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "pregnant",
+          "variant": "navy"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "pregnant",
+          "variant": "navy"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "male",
+          "variant": "orange"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "male",
+          "variant": "orange"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "male",
+          "variant": "orange"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "male",
+          "variant": "orange"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "female",
+          "variant": "orange"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "female",
+          "variant": "orange"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "female",
+          "variant": "orange"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "female",
+          "variant": "orange"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "teen",
+          "variant": "orange"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "teen",
+          "variant": "orange"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "teen",
+          "variant": "orange"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "teen",
+          "variant": "orange"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "orange"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "muscular",
+          "variant": "orange"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "orange"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "muscular",
+          "variant": "orange"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "pregnant",
+          "variant": "orange"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "pregnant",
+          "variant": "orange"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "pregnant",
+          "variant": "orange"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "pregnant",
+          "variant": "orange"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "male",
+          "variant": "pink"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "male",
+          "variant": "pink"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "male",
+          "variant": "pink"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "male",
+          "variant": "pink"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "female",
+          "variant": "pink"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "female",
+          "variant": "pink"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "female",
+          "variant": "pink"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "female",
+          "variant": "pink"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "teen",
+          "variant": "pink"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "teen",
+          "variant": "pink"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "teen",
+          "variant": "pink"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "teen",
+          "variant": "pink"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "pink"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "muscular",
+          "variant": "pink"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "pink"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "muscular",
+          "variant": "pink"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "pregnant",
+          "variant": "pink"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "pregnant",
+          "variant": "pink"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "pregnant",
+          "variant": "pink"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "pregnant",
+          "variant": "pink"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "male",
+          "variant": "purple"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "male",
+          "variant": "purple"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "male",
+          "variant": "purple"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "male",
+          "variant": "purple"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "female",
+          "variant": "purple"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "female",
+          "variant": "purple"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "female",
+          "variant": "purple"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "female",
+          "variant": "purple"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "teen",
+          "variant": "purple"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "teen",
+          "variant": "purple"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "teen",
+          "variant": "purple"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "teen",
+          "variant": "purple"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "purple"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "muscular",
+          "variant": "purple"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "purple"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "muscular",
+          "variant": "purple"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "pregnant",
+          "variant": "purple"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "pregnant",
+          "variant": "purple"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "pregnant",
+          "variant": "purple"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "pregnant",
+          "variant": "purple"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "male",
+          "variant": "red"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "male",
+          "variant": "red"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "male",
+          "variant": "red"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "male",
+          "variant": "red"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "female",
+          "variant": "red"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "female",
+          "variant": "red"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "female",
+          "variant": "red"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "female",
+          "variant": "red"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "teen",
+          "variant": "red"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "teen",
+          "variant": "red"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "teen",
+          "variant": "red"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "teen",
+          "variant": "red"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "red"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "muscular",
+          "variant": "red"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "red"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "muscular",
+          "variant": "red"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "pregnant",
+          "variant": "red"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "pregnant",
+          "variant": "red"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "pregnant",
+          "variant": "red"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "pregnant",
+          "variant": "red"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "male",
+          "variant": "rose"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "male",
+          "variant": "rose"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "male",
+          "variant": "rose"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "male",
+          "variant": "rose"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "female",
+          "variant": "rose"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "female",
+          "variant": "rose"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "female",
+          "variant": "rose"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "female",
+          "variant": "rose"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "teen",
+          "variant": "rose"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "teen",
+          "variant": "rose"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "teen",
+          "variant": "rose"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "teen",
+          "variant": "rose"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "rose"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "muscular",
+          "variant": "rose"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "rose"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "muscular",
+          "variant": "rose"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "pregnant",
+          "variant": "rose"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "pregnant",
+          "variant": "rose"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "pregnant",
+          "variant": "rose"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "pregnant",
+          "variant": "rose"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "male",
+          "variant": "sky"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "male",
+          "variant": "sky"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "male",
+          "variant": "sky"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "male",
+          "variant": "sky"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "female",
+          "variant": "sky"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "female",
+          "variant": "sky"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "female",
+          "variant": "sky"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "female",
+          "variant": "sky"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "teen",
+          "variant": "sky"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "teen",
+          "variant": "sky"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "teen",
+          "variant": "sky"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "teen",
+          "variant": "sky"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "sky"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "muscular",
+          "variant": "sky"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "sky"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "muscular",
+          "variant": "sky"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "pregnant",
+          "variant": "sky"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "pregnant",
+          "variant": "sky"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "pregnant",
+          "variant": "sky"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "pregnant",
+          "variant": "sky"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "male",
+          "variant": "slate"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "male",
+          "variant": "slate"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "male",
+          "variant": "slate"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "male",
+          "variant": "slate"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "female",
+          "variant": "slate"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "female",
+          "variant": "slate"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "female",
+          "variant": "slate"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "female",
+          "variant": "slate"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "teen",
+          "variant": "slate"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "teen",
+          "variant": "slate"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "teen",
+          "variant": "slate"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "teen",
+          "variant": "slate"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "slate"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "muscular",
+          "variant": "slate"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "slate"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "muscular",
+          "variant": "slate"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "pregnant",
+          "variant": "slate"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "pregnant",
+          "variant": "slate"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "pregnant",
+          "variant": "slate"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "pregnant",
+          "variant": "slate"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "male",
+          "variant": "tan"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "male",
+          "variant": "tan"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "male",
+          "variant": "tan"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "male",
+          "variant": "tan"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "female",
+          "variant": "tan"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "female",
+          "variant": "tan"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "female",
+          "variant": "tan"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "female",
+          "variant": "tan"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "teen",
+          "variant": "tan"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "teen",
+          "variant": "tan"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "teen",
+          "variant": "tan"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "teen",
+          "variant": "tan"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "tan"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "muscular",
+          "variant": "tan"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "tan"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "muscular",
+          "variant": "tan"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "pregnant",
+          "variant": "tan"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "pregnant",
+          "variant": "tan"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "pregnant",
+          "variant": "tan"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "pregnant",
+          "variant": "tan"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "male",
+          "variant": "teal"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "male",
+          "variant": "teal"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "male",
+          "variant": "teal"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "male",
+          "variant": "teal"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "female",
+          "variant": "teal"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "female",
+          "variant": "teal"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "female",
+          "variant": "teal"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "female",
+          "variant": "teal"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "teen",
+          "variant": "teal"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "teen",
+          "variant": "teal"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "teen",
+          "variant": "teal"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "teen",
+          "variant": "teal"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "teal"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "muscular",
+          "variant": "teal"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "teal"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "muscular",
+          "variant": "teal"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "pregnant",
+          "variant": "teal"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "pregnant",
+          "variant": "teal"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "pregnant",
+          "variant": "teal"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "pregnant",
+          "variant": "teal"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "male",
+          "variant": "walnut"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "male",
+          "variant": "walnut"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "male",
+          "variant": "walnut"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "male",
+          "variant": "walnut"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "female",
+          "variant": "walnut"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "female",
+          "variant": "walnut"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "female",
+          "variant": "walnut"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "female",
+          "variant": "walnut"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "teen",
+          "variant": "walnut"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "teen",
+          "variant": "walnut"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "teen",
+          "variant": "walnut"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "teen",
+          "variant": "walnut"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "walnut"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "muscular",
+          "variant": "walnut"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "walnut"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "muscular",
+          "variant": "walnut"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "pregnant",
+          "variant": "walnut"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "pregnant",
+          "variant": "walnut"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "pregnant",
+          "variant": "walnut"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "pregnant",
+          "variant": "walnut"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "male",
+          "variant": "yellow"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "male",
+          "variant": "yellow"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "male",
+          "variant": "yellow"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "male",
+          "variant": "yellow"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "female",
+          "variant": "yellow"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "female",
+          "variant": "yellow"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "female",
+          "variant": "yellow"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "female",
+          "variant": "yellow"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "teen",
+          "variant": "yellow"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "teen",
+          "variant": "yellow"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "teen",
+          "variant": "yellow"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "teen",
+          "variant": "yellow"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "yellow"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "muscular",
+          "variant": "yellow"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "yellow"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "muscular",
+          "variant": "yellow"
+        },
+        {
+          "action": "run",
+          "direction": "north",
+          "body": "pregnant",
+          "variant": "yellow"
+        },
+        {
+          "action": "run",
+          "direction": "west",
+          "body": "pregnant",
+          "variant": "yellow"
+        },
+        {
+          "action": "run",
+          "direction": "south",
+          "body": "pregnant",
+          "variant": "yellow"
+        },
+        {
+          "action": "run",
+          "direction": "east",
+          "body": "pregnant",
+          "variant": "yellow"
+        }
+      ]
+    },
+    {
+      "id": "partial:legs_pantaloons:jump",
+      "itemId": "legs_pantaloons",
+      "scope": "intermittent",
+      "actions": [
+        "jump"
+      ],
+      "cells": {
+        "north": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "west": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "south": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "east": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "disposition": "source_gap",
+      "reason": "The muscular Jump sheet supplies only column 0. Exposed legs in the remaining poses cannot stand in for the missing pants.",
+      "cases": [
+        {
+          "action": "jump",
+          "direction": "north",
+          "body": "muscular",
+          "variant": null
+        },
+        {
+          "action": "jump",
+          "direction": "west",
+          "body": "muscular",
+          "variant": null
+        },
+        {
+          "action": "jump",
+          "direction": "south",
+          "body": "muscular",
+          "variant": null
+        },
+        {
+          "action": "jump",
+          "direction": "east",
+          "body": "muscular",
+          "variant": null
+        }
+      ]
+    },
+    {
+      "id": "partial:legs_widepants:thrust",
+      "itemId": "legs_widepants",
+      "scope": "intermittent",
+      "actions": [
+        "thrust"
+      ],
+      "cells": {
+        "north": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "south": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "disposition": "source_gap",
+      "reason": "The muscular front/rear Thrust sheet supplies pants only at column 0; side-facing artwork does not supply those missing poses.",
+      "cases": [
+        {
+          "action": "thrust",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "black"
+        },
+        {
+          "action": "thrust",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "black"
+        },
+        {
+          "action": "thrust",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "blue"
+        },
+        {
+          "action": "thrust",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "blue"
+        },
+        {
+          "action": "thrust",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "bluegray"
+        },
+        {
+          "action": "thrust",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "bluegray"
+        },
+        {
+          "action": "thrust",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "brown"
+        },
+        {
+          "action": "thrust",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "brown"
+        },
+        {
+          "action": "thrust",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "charcoal"
+        },
+        {
+          "action": "thrust",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "charcoal"
+        },
+        {
+          "action": "thrust",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "forest"
+        },
+        {
+          "action": "thrust",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "forest"
+        },
+        {
+          "action": "thrust",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "gray"
+        },
+        {
+          "action": "thrust",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "gray"
+        },
+        {
+          "action": "thrust",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "green"
+        },
+        {
+          "action": "thrust",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "green"
+        },
+        {
+          "action": "thrust",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "lavender"
+        },
+        {
+          "action": "thrust",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "lavender"
+        },
+        {
+          "action": "thrust",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "leather"
+        },
+        {
+          "action": "thrust",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "leather"
+        },
+        {
+          "action": "thrust",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "maroon"
+        },
+        {
+          "action": "thrust",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "maroon"
+        },
+        {
+          "action": "thrust",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "navy"
+        },
+        {
+          "action": "thrust",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "navy"
+        },
+        {
+          "action": "thrust",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "orange"
+        },
+        {
+          "action": "thrust",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "orange"
+        },
+        {
+          "action": "thrust",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "pink"
+        },
+        {
+          "action": "thrust",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "pink"
+        },
+        {
+          "action": "thrust",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "purple"
+        },
+        {
+          "action": "thrust",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "purple"
+        },
+        {
+          "action": "thrust",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "red"
+        },
+        {
+          "action": "thrust",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "red"
+        },
+        {
+          "action": "thrust",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "rose"
+        },
+        {
+          "action": "thrust",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "rose"
+        },
+        {
+          "action": "thrust",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "sky"
+        },
+        {
+          "action": "thrust",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "sky"
+        },
+        {
+          "action": "thrust",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "slate"
+        },
+        {
+          "action": "thrust",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "slate"
+        },
+        {
+          "action": "thrust",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "tan"
+        },
+        {
+          "action": "thrust",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "tan"
+        },
+        {
+          "action": "thrust",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "teal"
+        },
+        {
+          "action": "thrust",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "teal"
+        },
+        {
+          "action": "thrust",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "walnut"
+        },
+        {
+          "action": "thrust",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "walnut"
+        },
+        {
+          "action": "thrust",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "white"
+        },
+        {
+          "action": "thrust",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "white"
+        },
+        {
+          "action": "thrust",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "yellow"
+        },
+        {
+          "action": "thrust",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "yellow"
+        }
+      ]
+    },
+    {
+      "id": "partial:legs_widepants:watering",
+      "itemId": "legs_widepants",
+      "scope": "intermittent",
+      "actions": [
+        "watering"
+      ],
+      "cells": {
+        "north": [
+          1,
+          4,
+          5
+        ],
+        "south": [
+          1,
+          4,
+          5
+        ]
+      },
+      "disposition": "source_gap",
+      "reason": "Watering reuses the incomplete muscular front/rear Thrust cells. The native program remains unavailable in those views.",
+      "cases": [
+        {
+          "action": "watering",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "black"
+        },
+        {
+          "action": "watering",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "black"
+        },
+        {
+          "action": "watering",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "blue"
+        },
+        {
+          "action": "watering",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "blue"
+        },
+        {
+          "action": "watering",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "bluegray"
+        },
+        {
+          "action": "watering",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "bluegray"
+        },
+        {
+          "action": "watering",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "brown"
+        },
+        {
+          "action": "watering",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "brown"
+        },
+        {
+          "action": "watering",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "charcoal"
+        },
+        {
+          "action": "watering",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "charcoal"
+        },
+        {
+          "action": "watering",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "forest"
+        },
+        {
+          "action": "watering",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "forest"
+        },
+        {
+          "action": "watering",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "gray"
+        },
+        {
+          "action": "watering",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "gray"
+        },
+        {
+          "action": "watering",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "green"
+        },
+        {
+          "action": "watering",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "green"
+        },
+        {
+          "action": "watering",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "lavender"
+        },
+        {
+          "action": "watering",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "lavender"
+        },
+        {
+          "action": "watering",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "leather"
+        },
+        {
+          "action": "watering",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "leather"
+        },
+        {
+          "action": "watering",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "maroon"
+        },
+        {
+          "action": "watering",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "maroon"
+        },
+        {
+          "action": "watering",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "navy"
+        },
+        {
+          "action": "watering",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "navy"
+        },
+        {
+          "action": "watering",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "orange"
+        },
+        {
+          "action": "watering",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "orange"
+        },
+        {
+          "action": "watering",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "pink"
+        },
+        {
+          "action": "watering",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "pink"
+        },
+        {
+          "action": "watering",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "purple"
+        },
+        {
+          "action": "watering",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "purple"
+        },
+        {
+          "action": "watering",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "red"
+        },
+        {
+          "action": "watering",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "red"
+        },
+        {
+          "action": "watering",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "rose"
+        },
+        {
+          "action": "watering",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "rose"
+        },
+        {
+          "action": "watering",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "sky"
+        },
+        {
+          "action": "watering",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "sky"
+        },
+        {
+          "action": "watering",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "slate"
+        },
+        {
+          "action": "watering",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "slate"
+        },
+        {
+          "action": "watering",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "tan"
+        },
+        {
+          "action": "watering",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "tan"
+        },
+        {
+          "action": "watering",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "teal"
+        },
+        {
+          "action": "watering",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "teal"
+        },
+        {
+          "action": "watering",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "walnut"
+        },
+        {
+          "action": "watering",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "walnut"
+        },
+        {
+          "action": "watering",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "white"
+        },
+        {
+          "action": "watering",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "white"
+        },
+        {
+          "action": "watering",
+          "direction": "north",
+          "body": "muscular",
+          "variant": "yellow"
+        },
+        {
+          "action": "watering",
+          "direction": "south",
+          "body": "muscular",
+          "variant": "yellow"
+        }
+      ]
+    },
+    {
+      "id": "partial:shoulders_mantal:sit",
+      "itemId": "shoulders_mantal",
+      "scope": "intermittent",
+      "actions": [
+        "sit"
+      ],
+      "cells": {
+        "east": [
+          0,
+          1
+        ]
+      },
+      "disposition": "source_gap",
+      "reason": "The male/muscular seated east poses lack the shoulder cape. Its existing east column 2 is a different standing pose and is not a verified seated substitute.",
+      "cases": [
+        {
+          "action": "sit",
+          "direction": "east",
+          "body": "male",
+          "variant": null
+        },
+        {
+          "action": "sit",
+          "direction": "east",
+          "body": "muscular",
+          "variant": null
+        }
+      ]
+    }
+  ],
+  "reviewBaseline": "b0beba2"
+}
