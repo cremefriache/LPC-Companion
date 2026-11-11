@@ -1,4 +1,10 @@
-import policy from '../../vendor/lpc/full-catalog/pose-phases.json' with {type:'json'};
+import {getSourceCertificate} from './source-certificates.mjs';
 import {createSourcePhaseRegistry} from './source-phase-registry.mjs';
-const registry=createSourcePhaseRegistry(policy,{version:6});
-export const reviewedPosePhase=registry.reviewed,posePhaseVersion=registry.version;
+let cachedPolicy=null,registry=null;
+function getRegistry(){
+ const policy=getSourceCertificate('pose-phases.json');
+ if(policy!==cachedPolicy){registry=createSourcePhaseRegistry(policy,{version:6});cachedPolicy=policy;}
+ return registry;
+}
+export function reviewedPosePhase(plan,itemId){return getRegistry().reviewed(plan,itemId);}
+export function posePhaseVersion(recipe){return getRegistry().version(recipe);}

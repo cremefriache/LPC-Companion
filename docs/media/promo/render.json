@@ -11,8 +11,8 @@
   "pageErrors": [],
   "files": {
     "lpc-companion-12s.gif": {
-      "bytes": 1591379,
-      "sha256": "bbdbe62f38799f033157e64ca2e2f10f00854bf4952972e560b6434cf1fb39f2",
+      "bytes": 1600889,
+      "sha256": "f0594e49355b6ca9cd12e802b12901133b8ef8b92c73ff2ffd675fd35272e676",
       "probe": {
         "programs": [],
         "streams": [
@@ -30,8 +30,8 @@
       }
     },
     "lpc-companion-12s.mp4": {
-      "bytes": 410213,
-      "sha256": "8edcb489459ce3e42499e8eece3d3ab9ba8c0eabeee16fafcbd9bcd9cd2a0b0e",
+      "bytes": 406674,
+      "sha256": "a22efb97823c0d7d5ee3589fc18875ef6ce231e22a42d379f1de6db623f7d6cc",
       "probe": {
         "programs": [],
         "streams": [

@@ -66,6 +66,47 @@ test('LRU byte bounds, deduplication, retry and clear during a load', async () =
     assert.equal(cache.bytes, 0); assert.equal(cache.entries.size, 0);
 });
 
+test('ImageCache semaphore queues beyond 32 concurrent loads in FIFO order with cancellation, waiter cap, and dispose', async () => {
+    const defaultCache = new ImageCache();
+    const gate = [];
+    const burst = Array.from({ length: 40 }, (_, i) => defaultCache.get(`k${i}`, () => new Promise(resolve => gate.push(() => resolve({ width: 1, height: 1, i })))));
+    await Promise.resolve();
+    assert.equal(defaultCache.stats().active, 32);
+    assert.equal(defaultCache.stats().queued, 8);
+    while (gate.length) {
+        const step = gate.splice(0);
+        step.forEach(fn => fn());
+        await new Promise(r => setTimeout(r, 0));
+    }
+    const resolved = await Promise.all(burst);
+    assert.equal(resolved.length, 40);
+    assert.equal(resolved[39].i, 39);
+    defaultCache.dispose();
+
+    const started = [], resolvers = new Map();
+    const bounded = new ImageCache(1024, { maxConcurrentLoads: 2, maxWaiters: 2 });
+    const makeLoad = key => () => { started.push(key); return new Promise(r => resolvers.set(key, () => r({ width: 1, height: 1, key }))); };
+    const a = bounded.get('a', makeLoad('a'));
+    const b = bounded.get('b', makeLoad('b'));
+    const abortC = new AbortController();
+    const c = bounded.get('c', makeLoad('c'), { signal: abortC.signal });
+    const d = bounded.get('d', makeLoad('d'));
+    await assert.rejects(bounded.get('e', makeLoad('e')), /Renderer is busy/);
+    abortC.abort();
+    await assert.rejects(c, /cancelled/);
+    const e = bounded.get('e', makeLoad('e'));
+    await Promise.resolve();
+    assert.deepEqual(started, ['a', 'b']);
+    resolvers.get('a')();
+    await new Promise(r => setTimeout(r, 0));
+    assert.deepEqual(started, ['a', 'b', 'd']);
+    bounded.dispose();
+    await assert.rejects(b, /Renderer is closed/);
+    await assert.rejects(d, /Renderer is closed/);
+    await assert.rejects(e, /Renderer is closed/);
+    assert.equal((await a).key, 'a');
+});
+
 test('failed recolor and wrong image dimensions reject without retaining a bad colored result', async () => {
     let broken = true;
     const composer = createComposer({ catalog,

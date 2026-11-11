@@ -77,6 +77,9 @@ const ICON_PATHS = {
         ['path', { d: 'm5 12 7-7 7 7' }],
         ['path', { d: 'M12 19V5' }],
     ],
+    'chevron-down': [
+        ['path', { d: 'm6 9 6 6 6-6' }],
+    ],
     hand: [
         ['path', { d: 'M18 11V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2' }],
         ['path', { d: 'M14 10V4a2 2 0 0 0-2-2a2 2 0 0 0-2 2v2' }],
@@ -168,6 +171,17 @@ const ICON_PATHS = {
         ['line', { x1: '9', x2: '9.01', y1: '9', y2: '9' }],
         ['line', { x1: '15', x2: '15.01', y1: '9', y2: '9' }],
     ],
+    terminal: [
+        ['polyline', { points: '4 17 10 11 4 5' }],
+        ['line', { x1: '12', x2: '20', y1: '19', y2: '19' }],
+    ],
+    'file-text': [
+        ['path', { d: 'M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z' }],
+        ['path', { d: 'M14 2v4a2 2 0 0 0 2 2h4' }],
+        ['line', { x1: '10', x2: '8', y1: '9', y2: '9' }],
+        ['line', { x1: '16', x2: '8', y1: '13', y2: '13' }],
+        ['line', { x1: '16', x2: '8', y1: '17', y2: '17' }],
+    ],
 };
 
 export const ACTION_ICONS = {
@@ -223,7 +237,7 @@ export function createLuciteIcon(document, name, extraClass = '') {
     return well;
 }
 
-export function createSectionHeader(document, { icon, title, subtitle, badge, headingTag = 'h3', actions } = {}) {
+export function createSectionHeader(document, { icon, title, subtitle, badge, badgeTone, headingTag = 'h3', actions } = {}) {
     const head = document.createElement('div');
     head.className = 'lpc-molecule-head';
     const lead = document.createElement('div');
@@ -247,6 +261,7 @@ export function createSectionHeader(document, { icon, title, subtitle, badge, he
     if (badge) {
         badgeNode = document.createElement('span');
         badgeNode.className = 'lpc-badge';
+        if (badgeTone) badgeNode.dataset.tone = badgeTone;
         badgeNode.textContent = badge;
         head.append(badgeNode);
     }
@@ -254,9 +269,51 @@ export function createSectionHeader(document, { icon, title, subtitle, badge, he
     return { element: head, heading, subtitle: subtitleNode, badge: badgeNode };
 }
 
+export function createField(document, {
+    label,
+    controlNode,
+    control,
+    reason = '',
+    hint = '',
+    className = '',
+} = {}) {
+    const wrap = document.createElement('label');
+    wrap.className = `lpc-field${className ? ` ${className}` : ''}`;
+    const labelSpan = document.createElement('span');
+    labelSpan.className = 'lpc-field-label';
+    labelSpan.textContent = label ?? '';
+    const input = controlNode ?? document.createElement('input');
+    if (control) input.dataset.control = control;
+    wrap.append(labelSpan, input);
+    let hintNode = null;
+    if (hint) {
+        hintNode = document.createElement('small');
+        hintNode.className = 'lpc-field-hint';
+        hintNode.textContent = hint;
+        wrap.append(hintNode);
+    }
+    const reasonNode = document.createElement('small');
+    reasonNode.className = 'lpc-field-reason';
+    reasonNode.textContent = reason ?? '';
+    reasonNode.hidden = !reason;
+    wrap.append(reasonNode);
+    if (input.disabled) wrap.classList.add('is-disabled');
+    function setReason(nextReason = '') {
+        reasonNode.textContent = nextReason;
+        reasonNode.hidden = !nextReason;
+    }
+    function setDisabled(disabled, nextReason = reasonNode.textContent) {
+        input.disabled = Boolean(disabled);
+        wrap.classList.toggle('is-disabled', Boolean(disabled));
+        setReason(disabled ? nextReason : '');
+    }
+    return { element: wrap, wrap, label: labelSpan, input, control: input, reason: reasonNode, hint: hintNode, setReason, setDisabled };
+}
+
 export function createToggleRow(document, { control, title, hint, icon, checked = false, disabled = false, className = '' } = {}) {
     const label = document.createElement('label');
     label.className = `lpc-setting-toggle lpc-toggle-card${className ? ` ${className}` : ''}`;
+    if (disabled) label.classList.add('is-disabled');
     const input = document.createElement('input');
     input.type = 'checkbox';
     input.className = 'lpc-switch-input';
@@ -283,8 +340,45 @@ export function createToggleRow(document, { control, title, hint, icon, checked 
     return { wrap: label, input };
 }
 
-export function decorateButton(document, buttonNode, iconName, text) {
+export function createButton(document, {
+    label = '',
+    icon = null,
+    variant = 'secondary',
+    size = 'md',
+    control = '',
+    onClick = null,
+    disabled = false,
+    title = '',
+    ariaLabel = '',
+    className = '',
+} = {}) {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    if (className) btn.className = className;
+    if (variant) btn.dataset.variant = variant;
+    if (size) btn.dataset.size = size;
+    if (control) btn.dataset.control = control;
+    btn.disabled = Boolean(disabled);
+    if (title) btn.title = title;
+    if (ariaLabel) btn.setAttribute('aria-label', ariaLabel);
+    if (onClick) btn.onclick = onClick;
+    if (icon && label) {
+        decorateButton(document, btn, icon, label);
+    } else if (icon) {
+        decorateIconButton(document, btn, icon, ariaLabel || title);
+    } else {
+        const span = document.createElement('span');
+        span.className = 'lpc-btn-label';
+        span.textContent = label;
+        btn.append(span);
+    }
+    return btn;
+}
+
+export function decorateButton(document, buttonNode, iconName, text, { variant, size } = {}) {
     for (const old of [...buttonNode.querySelectorAll('.lpc-svg-icon')]) old.remove();
+    if (variant) buttonNode.dataset.variant = variant;
+    if (size) buttonNode.dataset.size = size;
     const labelText = text ?? buttonNode.textContent;
     const span = document.createElement('span');
     span.className = 'lpc-btn-label';
@@ -301,6 +395,272 @@ export function decorateIconButton(document, buttonNode, iconName, ariaLabel) {
     }
     buttonNode.replaceChildren(createIcon(document, iconName));
     return buttonNode;
+}
+
+export function createSegmentedTabs(document, {
+    tabs = [],
+    activeId,
+    ariaLabel = 'Section tabs',
+    controlPrefix = 'tab',
+    onSelect = () => {},
+    className = '',
+} = {}) {
+    const bar = document.createElement('div');
+    bar.className = `lpc-segmented${className ? ` ${className}` : ''}`;
+    bar.setAttribute('role', 'tablist');
+    if (ariaLabel) bar.setAttribute('aria-label', ariaLabel);
+    const buttons = new Map();
+    const order = tabs.map(t => t.id);
+    let current = activeId ?? order[0] ?? '';
+
+    function sync() {
+        for (const [id, btn] of buttons) {
+            const selected = id === current;
+            btn.setAttribute('aria-selected', String(selected));
+            btn.tabIndex = selected ? 0 : -1;
+        }
+    }
+
+    function setActive(id, notify = false) {
+        if (!buttons.has(id)) return;
+        current = id;
+        sync();
+        if (notify) onSelect(id);
+    }
+
+    for (const tab of tabs) {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'lpc-segmented-tab lpc-wardrobe-tab';
+        btn.setAttribute('role', 'tab');
+        btn.dataset.control = tab.control ?? `${controlPrefix}-${tab.id}`;
+        if (tab.icon) btn.append(createIcon(document, tab.icon));
+        const text = document.createElement('span');
+        text.className = 'lpc-segmented-label';
+        text.textContent = tab.label ?? tab.id;
+        if (tab.labelControl) text.dataset.control = tab.labelControl;
+        btn.append(text);
+        btn.onclick = () => setActive(tab.id, true);
+        btn.onkeydown = event => {
+            const idx = order.indexOf(tab.id);
+            if (idx < 0) return;
+            let nextIdx = -1;
+            if (event.key === 'ArrowRight') nextIdx = (idx + 1) % order.length;
+            else if (event.key === 'ArrowLeft') nextIdx = (idx - 1 + order.length) % order.length;
+            else if (event.key === 'Home') nextIdx = 0;
+            else if (event.key === 'End') nextIdx = order.length - 1;
+            if (nextIdx >= 0) {
+                event.preventDefault();
+                const nextId = order[nextIdx];
+                setActive(nextId, true);
+                buttons.get(nextId)?.focus?.();
+            }
+        };
+        buttons.set(tab.id, btn);
+        bar.append(btn);
+    }
+    sync();
+    return { element: bar, buttons, setActive: id => setActive(id, false), getActive: () => current };
+}
+
+export function createChip(document, {
+    label = '',
+    icon = null,
+    pressed = false,
+    removable = false,
+    control = '',
+    title = '',
+    onClick = null,
+    className = '',
+} = {}) {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = `lpc-chip${className ? ` ${className}` : ''}`;
+    btn.setAttribute('aria-pressed', String(Boolean(pressed)));
+    if (control) btn.dataset.control = control;
+    btn.title = title || label;
+    if (icon) btn.append(createIcon(document, icon));
+    const text = document.createElement('span');
+    text.className = 'lpc-chip-label';
+    text.textContent = label;
+    btn.append(text);
+    if (removable) btn.append(createIcon(document, 'x', 'lpc-svg-icon lpc-chip-remove'));
+    if (onClick) btn.onclick = onClick;
+    return {
+        element: btn,
+        label: text,
+        setPressed(next) {
+            btn.setAttribute('aria-pressed', String(Boolean(next)));
+        },
+    };
+}
+
+export function createAccordion(document, {
+    title = '',
+    icon = null,
+    badge = '',
+    open = false,
+    control = '',
+    children = [],
+    className = '',
+} = {}) {
+    const details = document.createElement('details');
+    details.className = `lpc-accordion${className ? ` ${className}` : ''}`;
+    details.open = Boolean(open);
+    if (control) details.dataset.control = control;
+    const summary = document.createElement('summary');
+    const lead = document.createElement('span');
+    lead.className = 'lpc-summary-lead';
+    if (icon) lead.append(createIcon(document, icon));
+    const titleSpan = document.createElement('span');
+    titleSpan.textContent = title;
+    lead.append(titleSpan);
+    summary.append(lead);
+    let badgeNode = null;
+    if (badge !== undefined && badge !== null && badge !== '') {
+        badgeNode = document.createElement('span');
+        badgeNode.className = 'lpc-badge';
+        badgeNode.textContent = String(badge);
+        summary.append(badgeNode);
+    }
+    const body = document.createElement('div');
+    body.className = 'lpc-accordion-body';
+    for (const child of children) if (child) body.append(child);
+    details.append(summary, body);
+    return { element: details, summary, body, badge: badgeNode };
+}
+
+export function createItemRow(document, {
+    title = '',
+    name = '',
+    meta = '',
+    active = false,
+    worn = false,
+    control = '',
+    titleHint = '',
+    onSelect = null,
+    actions = [],
+    className = '',
+} = {}) {
+    const resolvedTitle = title || name;
+    const row = document.createElement('div');
+    row.className = `lpc-item-row lpc-wardrobe-row${className ? ` ${className}` : ''}`;
+    row.dataset.active = String(Boolean(active));
+    row.dataset.worn = String(Boolean(worn));
+    const mainBtn = document.createElement('button');
+    mainBtn.type = 'button';
+    mainBtn.className = 'lpc-item-row-main lpc-wardrobe-row-main';
+    if (control) mainBtn.dataset.control = control;
+    mainBtn.setAttribute('aria-pressed', String(Boolean(active || worn)));
+    mainBtn.title = titleHint || (meta ? `${resolvedTitle} (${meta})` : resolvedTitle);
+    const nameSpan = document.createElement('span');
+    nameSpan.className = 'lpc-item-row-name lpc-wardrobe-row-name';
+    if (worn) nameSpan.append(createIcon(document, 'check', 'lpc-svg-icon lpc-inline-check'));
+    const nameText = document.createElement('span');
+    nameText.textContent = resolvedTitle;
+    nameSpan.append(nameText);
+    mainBtn.append(nameSpan);
+    let metaSpan = null;
+    if (meta) {
+        metaSpan = document.createElement('span');
+        metaSpan.className = 'lpc-item-row-meta lpc-wardrobe-row-meta';
+        metaSpan.textContent = meta;
+        mainBtn.append(' ', metaSpan);
+    }
+    if (onSelect) mainBtn.onclick = onSelect;
+    const actionsWrap = document.createElement('div');
+    actionsWrap.className = 'lpc-item-row-actions lpc-wardrobe-row-actions';
+    for (const actionNode of actions) if (actionNode) actionsWrap.append(actionNode);
+    row.append(mainBtn, actionsWrap);
+    return { element: row, main: mainBtn, name: nameText, meta: metaSpan, actions: actionsWrap };
+}
+
+export function createPopover(document, {
+    trigger,
+    ariaLabel = 'Options',
+    role = 'dialog',
+    control = '',
+    rootContainer = null,
+    className = '',
+} = {}) {
+    const popover = document.createElement('div');
+    popover.className = `lpc-popover${className ? ` ${className}` : ''}`;
+    popover.setAttribute('role', role);
+    if (ariaLabel) popover.setAttribute('aria-label', ariaLabel);
+    if (control) popover.dataset.control = control;
+    popover.hidden = true;
+
+    function place() {
+        const trig = trigger?.getBoundingClientRect?.();
+        if (!trig || (!trig.width && !trig.height)) return;
+        popover.style.left = '0px';
+        popover.style.top = '0px';
+        const origin = popover.getBoundingClientRect?.() ?? { left: 0, top: 0, width: 206, height: 196 };
+        const popW = origin.width || 206;
+        const popH = origin.height || 196;
+        const win = document.defaultView;
+        const vw = win?.innerWidth || 1024;
+        const vh = win?.innerHeight || 768;
+        const rootRect = rootContainer?.getBoundingClientRect?.();
+        const minX = Math.max(8, (rootRect?.left ?? 0) + 8);
+        const maxX = Math.max(minX, Math.min(vw - popW - 8, (rootRect?.right ?? vw) - popW - 8));
+        const minY = Math.max(8, (rootRect?.top ?? 0) + 8);
+        const maxY = Math.max(minY, Math.min(vh - 8, (rootRect?.bottom ?? vh) - 8));
+        let vx = trig.right - popW;
+        if (vx < minX) vx = trig.left;
+        vx = Math.max(minX, Math.min(maxX, vx));
+        let vy = trig.bottom + 6;
+        if (vy + popH > maxY && trig.top - popH - 6 >= minY) vy = trig.top - popH - 6;
+        else vy = Math.max(minY, Math.min(Math.max(minY, maxY - popH), vy));
+        popover.style.left = `${Math.round(vx - origin.left)}px`;
+        popover.style.top = `${Math.round(vy - origin.top)}px`;
+    }
+
+    const onKeyDown = event => {
+        if (!popover.hidden && event.key === 'Escape') {
+            event.stopPropagation();
+            close();
+            trigger?.focus?.();
+        }
+    };
+    const onPointerDown = event => {
+        if (!popover.hidden && !popover.contains?.(event.target) && !trigger?.contains?.(event.target)) {
+            close();
+        }
+    };
+    const onScroll = event => {
+        if (!popover.hidden && event?.target !== popover) place();
+    };
+
+    function open() {
+        popover.hidden = false;
+        trigger?.setAttribute?.('aria-expanded', 'true');
+        place();
+        document.addEventListener?.('keydown', onKeyDown, true);
+        document.addEventListener?.('pointerdown', onPointerDown, true);
+        rootContainer?.addEventListener?.('scroll', onScroll, true);
+    }
+
+    function close() {
+        if (popover.hidden) return;
+        popover.hidden = true;
+        trigger?.setAttribute?.('aria-expanded', 'false');
+        document.removeEventListener?.('keydown', onKeyDown, true);
+        document.removeEventListener?.('pointerdown', onPointerDown, true);
+        rootContainer?.removeEventListener?.('scroll', onScroll, true);
+    }
+
+    function toggle() {
+        if (popover.hidden) open();
+        else close();
+    }
+
+    function dispose() {
+        close();
+        popover.remove?.();
+    }
+
+    return { element: popover, open, close, toggle, place, dispose };
 }
 
 export function createControlGroup(document, { icon, title, rightNode } = {}) {

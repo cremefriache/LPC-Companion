@@ -87,7 +87,7 @@ test('all 12 expressive moods, grouped 104-slot studio selector, and extended ma
     const optgroups = selectInput.children.slice(1);
     assert.ok(optgroups.every(g => g.tagName === 'OPTGROUP' && g.label.length > 0));
     const optionValues = optgroups.flatMap(g => g.children.map(o => o.value));
-    assert.equal(new Set(optionValues).size, 106);
+    assert.equal(new Set(optionValues).size, 104);
     assert.equal(selectInput.value, 'body');
     assert.ok(SLOT_CATEGORIES.length >= 7);
     assert.equal(slotShortName('clothes'), 'Tops & shirts');

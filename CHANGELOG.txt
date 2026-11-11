@@ -1,0 +1,20 @@
+LPC Companion — What's New
+==========================
+
+Version 0.2.0 (2026-11-10)
+--------------------------
+Performance & Memory:
+- Much faster startup: SillyTavern loads the extension significantly faster, and your companion appears almost immediately when opening a chat while using noticeably less memory in the background.
+
+Character Closet & Studio:
+- Closet & Pose lists save with your character: Your saved Closet pieces and custom Pose/Mood lists are now stored directly with your character and chat—and travel with exported character files—rather than staying tied to a single browser.
+- Safe Studio canceling: Closing or canceling the Wardrobe Studio now cleanly discards any trial Closet, color, or pose-list tweaks without changing your saved character.
+- Accurate item descriptions: Updated Studio labels so wardrobe counts reflect only the items actually included in the extension.
+
+Interface & Theme Polish:
+- Cleaner theme-matching controls: Refreshed buttons, tabs, collapsible sections, and color-swatch menus so they blend smoothly into light, dark, and high-contrast SillyTavern themes.
+- Clearer pose restrictions: Unavailable poses and controls now look clearly inactive and explain right alongside the button when a worn item (such as a cape) prevents an action.
+- Better small-screen & large-text fit: Fixed clipped item names in the Studio list and improved wrapping on narrow phone screens and larger font sizes.
+- More compact starter outfit editor: Placed the four-angle character preview in a single row at the top so your named outfits and clothing color choices stay visible without extra scrolling.
+- Built-in What's New notes and troubleshooting log: Check your installed version, read release highlights, or copy and download a privacy-safe diagnostic report right from LPC Companion settings.
+- Simpler extension name: Listed as "LPC Companion" in Manage Extensions with standard version numbers starting at 0.2.0.

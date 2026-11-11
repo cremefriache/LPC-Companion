@@ -1,5 +1,5 @@
 import { slotShortName, formatSourceColorLabel, formatShortColorName } from './source-ui.mjs';
-import { createLuciteIcon } from './molecules.mjs';
+import { createIcon, createLuciteIcon } from './molecules.mjs';
 import {
     readCloset,
     isEntryWorn,
@@ -40,7 +40,7 @@ export function describeSelectionColor(catalog, item, selection) {
 
 export function swatchGradientForRamp(ramp) {
     if (!Array.isArray(ramp) || !ramp.length) {
-        return 'linear-gradient(90deg, #475569 0% 33.33%, #94a3b8 33.33% 66.66%, #e2e8f0 66.66% 100%)';
+        return 'linear-gradient(90deg, var(--lpc-inset) 0% 33.33%, var(--lpc-muted) 33.33% 66.66%, var(--lpc-ink) 66.66% 100%)';
     }
     const c1 = ramp[Math.min(1, ramp.length - 1)] ?? ramp[0];
     const c2 = ramp[Math.floor(ramp.length / 2)] ?? c1;
@@ -94,10 +94,7 @@ export function createInlineSwatchDropdown({
     trigger.title = `${channel.label} (${prettyCurrent}) — click to pick color`;
 
     const rect = createSwatchRect(document, catalog.colorRamp(itemId, channel.channel, currentColor));
-    const caret = document.createElement('span');
-    caret.className = 'lpc-swatch-caret';
-    caret.setAttribute('aria-hidden', 'true');
-    caret.textContent = '▾';
+    const caret = createIcon(document, 'chevron-down', 'lpc-svg-icon lpc-swatch-caret');
     trigger.append(rect, caret);
 
     const popover = document.createElement('div');
@@ -351,7 +348,7 @@ export function createStudioClosetSection({
                 unequipBtn.type = 'button';
                 unequipBtn.className = 'lpc-wardrobe-row-remove';
                 unequipBtn.dataset.control = `source-remove-slot-${slot}`;
-                unequipBtn.textContent = '×';
+                unequipBtn.append(createIcon(document, 'x'));
                 unequipBtn.setAttribute('aria-label', `Take off ${item.name}`);
                 unequipBtn.title = `Take off ${item.name}`;
                 unequipBtn.onclick = e => {
@@ -398,7 +395,10 @@ export function createStudioClosetSection({
 
             const nameSpan = document.createElement('span');
             nameSpan.className = 'lpc-wardrobe-row-name';
-            nameSpan.textContent = (worn ? '✓ ' : '') + item.name;
+            if (worn) nameSpan.append(createIcon(document, 'check', 'lpc-svg-icon lpc-inline-check'));
+            const nameText = document.createElement('span');
+            nameText.textContent = item.name;
+            nameSpan.append(nameText);
             const metaSpan = document.createElement('span');
             metaSpan.className = 'lpc-wardrobe-row-meta';
             metaSpan.textContent = slotAndColor;
@@ -430,14 +430,17 @@ export function createStudioClosetSection({
             const removeBtn = document.createElement('button');
             removeBtn.type = 'button';
             removeBtn.className = 'lpc-wardrobe-row-remove';
-            removeBtn.textContent = '×';
+            removeBtn.append(createIcon(document, 'x'));
             removeBtn.setAttribute('aria-label', `Remove ${item.name} from closet`);
             removeBtn.title = 'Remove from closet';
             removeBtn.onclick = e => {
                 e.stopPropagation();
-                removeClosetEntry(def, entry.key, catalog, window?.localStorage);
-                onRemoveEntry?.(entry);
-                sync();
+                if (onRemoveEntry) {
+                    onRemoveEntry(entry);
+                } else {
+                    removeClosetEntry(def, entry.key, catalog, window?.localStorage);
+                    sync();
+                }
             };
             actions.append(removeBtn);
 
@@ -533,10 +536,7 @@ export function createLiveClosetBar({
                 }
                 const label = document.createElement('span');
                 label.textContent = colorInfo.label ? `${item.name} (${colorInfo.label})` : item.name;
-                const x = document.createElement('span');
-                x.className = 'lpc-worn-layer-x';
-                x.setAttribute('aria-hidden', 'true');
-                x.textContent = '×';
+                const x = createIcon(document, 'x', 'lpc-svg-icon lpc-worn-layer-x');
                 chip.append(label, x);
                 chip.onclick = () => onUnequipSlot?.(slot);
                 wornRow.append(chip);

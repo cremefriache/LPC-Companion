@@ -38,7 +38,7 @@
     "selections": {
       "type": "object",
       "minProperties": 1,
-      "maxProperties": 106,
+      "maxProperties": 104,
       "propertyNames": {
         "enum": [
           "accessory",
@@ -128,8 +128,6 @@
           "sleeves",
           "socks",
           "tail",
-          "undergarment_bottom",
-          "undergarment_top",
           "updo",
           "vest",
           "visor",

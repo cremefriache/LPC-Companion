@@ -1,15 +1,17 @@
 import { readChatContext, STATE_KEY } from './context.mjs';
 import { sessionKey } from './session.mjs';
 import { equal, MESSAGE_KEY } from '../state/history.mjs';
-import { validateContract } from '../state/validate.mjs';
+import { validateContract as defaultValidateContract } from '../state/validate.mjs';
 import { assertLoadedCompanionHeaders, captureCompanionChatSave } from './companion-headers.mjs';
-import { validateRoster } from '../state/roster.mjs';
+import { validateRoster as defaultValidateRoster } from '../state/roster.mjs';
 import {cardNamespacePatch} from './card-namespace-patch.mjs';
 
 const locator = value => typeof value === 'string' && value.length > 0 && value.length <= 255 && value !== '.' && value !== '..' && !/[\\/\0]/.test(value);
 
 /** Explicit captured targets, acknowledged writes and read-back. Never force-save. */
-export function createHostStorage({ getContext, fetch, host, synchronizeCard = () => {}, prepareData=async()=>{} }) {
+export function createHostStorage({ getContext, fetch, host, synchronizeCard = () => {}, prepareData=async()=>{}, contracts }) {
+    const validateContract = contracts?.validateContract ?? defaultValidateContract;
+    const validateRoster = contracts?.validateRoster ?? defaultValidateRoster;
     async function request(path, body, method = 'POST', prepare = true) {
         const context = getContext();
         const response = await fetch(path, { method, headers: context.getRequestHeaders(), cache: 'no-store',

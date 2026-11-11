@@ -211,7 +211,7 @@
         },
         "selections": {
           "type": "object",
-          "maxProperties": 72,
+          "maxProperties": 70,
           "propertyNames": {
             "enum": [
               "accessory",
@@ -279,8 +279,6 @@
               "shoulders",
               "sleeves",
               "socks",
-              "undergarment_bottom",
-              "undergarment_top",
               "vest",
               "visor",
               "weapon",
@@ -294,7 +292,7 @@
         },
         "selectionOrder": {
           "type": "array",
-          "maxItems": 106,
+          "maxItems": 104,
           "minItems": 1,
           "uniqueItems": true,
           "items": {
@@ -386,8 +384,6 @@
               "sleeves",
               "socks",
               "tail",
-              "undergarment_bottom",
-              "undergarment_top",
               "updo",
               "vest",
               "visor",
@@ -533,6 +529,16 @@
         "startingPresentation": {
           "$ref": "#/definitions/presentation"
         },
+        "closet": {
+          "type": "array",
+          "maxItems": 96,
+          "items": {
+            "$ref": "#/definitions/closetEntry"
+          }
+        },
+        "repertoire": {
+          "$ref": "#/definitions/repertoire"
+        },
         "importProvenance": {
           "$ref": "#/definitions/sourceProvenance"
         }
@@ -599,6 +605,16 @@
         },
         "startingPresentation": {
           "$ref": "#/definitions/presentation"
+        },
+        "closet": {
+          "type": "array",
+          "maxItems": 96,
+          "items": {
+            "$ref": "#/definitions/closetEntry"
+          }
+        },
+        "repertoire": {
+          "$ref": "#/definitions/repertoire"
         },
         "importProvenance": {
           "$ref": "#/definitions/sourceProvenance"
@@ -829,6 +845,138 @@
         "ignoredJson": {
           "type": "string",
           "maxLength": 16384
+        }
+      }
+    },
+    "closetEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "slot",
+        "itemId",
+        "variant",
+        "colors"
+      ],
+      "properties": {
+        "slot": {
+          "$ref": "#/definitions/outfit/properties/selections/propertyNames"
+        },
+        "itemId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[a-z][a-z0-9_]*$"
+        },
+        "variant": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128
+            }
+          ]
+        },
+        "colors": {
+          "type": "object",
+          "maxProperties": 32,
+          "propertyNames": {
+            "type": "string",
+            "maxLength": 64,
+            "pattern": "^[a-z][a-z0-9_]*$"
+          },
+          "additionalProperties": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 96,
+            "pattern": "^[a-z][a-z0-9_.-]*$"
+          }
+        }
+      }
+    },
+    "repertoire": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "mode",
+        "poses",
+        "expressions",
+        "actions"
+      ],
+      "properties": {
+        "mode": {
+          "enum": [
+            "auto",
+            "custom"
+          ]
+        },
+        "poses": {
+          "type": "array",
+          "maxItems": 32,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "walk",
+              "run",
+              "pacing",
+              "sit_low",
+              "sit_upright",
+              "sit_relaxed",
+              "dozing",
+              "sleeping",
+              "hands_on_hips",
+              "looking_around",
+              "guard_stance",
+              "tending"
+            ]
+          }
+        },
+        "expressions": {
+          "type": "array",
+          "maxItems": 32,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "calm",
+              "cheerful",
+              "blush",
+              "thoughtful",
+              "concerned",
+              "angry",
+              "shock",
+              "eyeroll",
+              "shame",
+              "closed",
+              "look_right"
+            ]
+          }
+        },
+        "actions": {
+          "type": "array",
+          "maxItems": 32,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "nod",
+              "laugh",
+              "sigh",
+              "bounce",
+              "startle",
+              "shiver",
+              "shrug",
+              "polite_bow",
+              "arms_raise",
+              "jump",
+              "spellcast",
+              "watering",
+              "thrust",
+              "slash",
+              "shoot",
+              "hurt"
+            ]
+          }
         }
       }
     }

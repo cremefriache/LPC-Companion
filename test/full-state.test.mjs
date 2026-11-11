@@ -2,14 +2,16 @@ import test from 'node:test';import assert from 'node:assert/strict';import {rea
 import {createFullCatalog} from '../src/catalog/full-catalog.mjs';import {createFullState,SOURCE_IDENTITY_SLOTS,SOURCE_OUTFIT_SLOTS} from '../src/state/full-state.mjs';import {sourceFixture} from '../tools/full-catalog-fixtures.mjs';import {MESSAGE_KEY} from '../src/state/history.mjs';
 import {createDefinition as curatedDefinition} from '../src/state/defaults.mjs';
 import {changeBodyType} from '../src/state/wardrobe.mjs';
-import {upgradeCuratedDefinitionToSource} from '../src/state/source-draft.mjs';
-import {readCloset} from '../src/state/closet.mjs';
+import {upgradeCuratedDefinitionToSource,sourceDraft} from '../src/state/source-draft.mjs';
+import {readCloset,addClosetEntry,removeClosetEntry,seedClosetFromDefinition,describeClosetForModel,applyModelClosetChanges} from '../src/state/closet.mjs';
+import {readRepertoire,presetRepertoire,applyRepertoireToDefinition} from '../src/state/repertoire.mjs';
+import {createSourcePackages} from '../src/state/source-packages.mjs';
 import {initializeState as initializeCurated,appendChange as appendCurated,reconstruct as replayCurated} from '../src/state/history.mjs';
 const root=new URL('../',import.meta.url),metadata=JSON.parse(await readFile(new URL('vendor/lpc/full-catalog/metadata.json',root),'utf8')),repairs=JSON.parse(await readFile(new URL('vendor/lpc/full-catalog/repairs.json',root),'utf8')),index=JSON.parse(gunzipSync(await readFile(new URL('assets/lpc/full-source/index.json.gz',root)))),assets=Object.entries(index.paths).map(([path,sha256])=>({path,sha256,width:index.blobs[sha256].width,height:index.blobs[sha256].height})),catalog=createFullCatalog({metadata,assets,repairs}),state=createFullState(catalog);let count=0;const uuid=()=>`12345678-1234-4234-8234-${String(++count).padStart(12,'0')}`;
 function definition(id='hair_bob',body='male'){const recipe=sourceFixture(metadata,id,body),actions=catalog.resolvableActions(recipe),restActionId=actions.includes('walk')?'walk':actions[0];return state.createDefinition(recipe,uuid(),{restActionId});}
 const patch=p=>({schemaVersion:2,kind:'presentation-patch',patch:p});
-test('source identity/outfit partition covers all 106 slots and every definition round-trips original selection and layer order',()=>{
- assert.equal(new Set([...SOURCE_IDENTITY_SLOTS,...SOURCE_OUTFIT_SLOTS]).size,106);assert.equal(SOURCE_IDENTITY_SLOTS.some(s=>SOURCE_OUTFIT_SLOTS.includes(s)),false);
+test('source identity/outfit partition covers all 104 slots and every definition round-trips original selection and layer order',()=>{
+ assert.equal(new Set([...SOURCE_IDENTITY_SLOTS,...SOURCE_OUTFIT_SLOTS]).size,104);assert.equal(SOURCE_IDENTITY_SLOTS.some(s=>SOURCE_OUTFIT_SLOTS.includes(s)),false);
  for(const item of metadata.items){let r,actions;for(const body of item.required){r=sourceFixture(metadata,item.id,body);actions=catalog.resolvableActions(r);if(actions.length)break;}assert(actions.length,item.id);const d=state.createDefinition(r,uuid(),{restActionId:actions.includes('walk')?'walk':actions[0]});assert.deepEqual(state.recipeFor(d,'imported'),catalog.validateRecipe(r));assert.deepEqual(d.outfits[0].selectionOrder,Object.keys(r.selections));}
 });
 test('identity fields cannot enter outfits; duplicate IDs, omitted order, changed memory and unsupported playback fail separately',()=>{
@@ -105,4 +107,99 @@ test('upgradeCuratedDefinitionToSource upgrades male and female v1 definitions i
  assert.equal(upgradedFemale.identity.bodyType,'female');
  assert.equal(upgradedFemale.identity.selections.head.itemId,'heads_human_female');
  assert.deepEqual(upgradedFemale.outfits.map(o=>o.name),['Everyday','Evening','Summer']);
+});
+
+test('retired experimental undergarment slots are rejected across recipe and v2 state contracts',()=>{
+ const base=sourceFixture(metadata,'hair_bob','male');
+ for(const slot of ['undergarment_bottom','undergarment_top']){
+  assert.throws(()=>catalog.validateRecipe({...base,selections:{...base.selections,[slot]:{itemId:'torso_clothes_tshirt',variant:null,colors:{}}}}));
+  const bad=definition();
+  bad.outfits[0].selections[slot]={itemId:'torso_clothes_tshirt',variant:null,colors:{}};
+  bad.outfits[0].selectionOrder.push(slot);
+  assert.throws(()=>state.validateDefinition(bad));
+ }
+});
+
+test('v2 closet and repertoire persist in definitions, snapshots, history and packages with zero-write Studio cancel and read-only legacy fallback',async()=>{
+ const d=definition('torso_clothes_tshirt');
+ const storageReads=[],storageWrites=[];
+ const legacyCloset=[{slot:'hat',itemId:'hat_formal_crown',variant:null,colors:{hat:'metal.ulpc.crown_gold'}}];
+ const legacyRep={schemaVersion:1,mode:'custom',poses:['walk'],expressions:['cheerful'],actions:['nod','jump']};
+ const mockStorage={
+  getItem(k){
+   storageReads.push(k);
+   if(k===`lpc-companion:closet:v1:${d.characterId}`)return JSON.stringify(legacyCloset);
+   if(k===`lpc-companion:repertoire:v1:${d.characterId}`)return JSON.stringify(legacyRep);
+   return null;
+  },
+  setItem(k,v){storageWrites.push([k,v]);},
+  removeItem(k){storageWrites.push([k,null]);},
+ };
+
+ // 1. Read-only legacy localStorage fallback when definition.closet / definition.repertoire are absent
+ assert.equal(readCloset(d,catalog,mockStorage,{includeOutfits:false})[0].itemId,'hat_formal_crown');
+ assert.deepEqual(readRepertoire(d,'imported',mockStorage).actions,['nod','jump']);
+ assert.equal(storageWrites.length,0,'Legacy fallback reads must perform zero localStorage writes.');
+
+ // 2. Studio draft staging + Cancel performs zero writes to source definition or localStorage
+ const beforeSeed=structuredClone(d);
+ const studioSeed=structuredClone(d);
+ seedClosetFromDefinition(studioSeed,catalog,mockStorage);
+ const draft=sourceDraft(studioSeed,catalog);
+ const tmp=draft.read();
+ addClosetEntry(tmp,{slot:'cape',itemId:'cape_solid',variant:null,colors:{cape:'cloth.ulpc.navy'}},catalog,mockStorage);
+ draft.replace(tmp);
+ draft.repertoire(presetRepertoire('minimal',draft.read(),'imported'));
+ // Simulate clicking Cancel by discarding draft
+ assert.deepEqual(d,beforeSeed,'Studio edits before Apply must leave initial definition untouched.');
+ assert.equal(storageWrites.length,0,'Studio Closet and Repertoire staging must never write localStorage.');
+
+ // 3. Apply persists validated closet and repertoire across snapshot, history replay, and auto override
+ const applied=state.validateDefinition(draft.canonicalize());
+ assert(applied.closet.some(e=>e.itemId==='hat_formal_crown'));
+ assert(applied.closet.some(e=>e.itemId==='cape_solid'));
+ assert.equal(applied.repertoire.mode,'custom');
+ assert.deepEqual(applied.repertoire.poses,['walk','sit_relaxed','sleeping','hands_on_hips','looking_around']);
+
+ const chatA=state.initializeState(applied,uuid);
+ assert.deepEqual(chatA.snapshot.closet,applied.closet);
+ assert.deepEqual(chatA.snapshot.repertoire,applied.repertoire);
+
+ const autoDef=applyRepertoireToDefinition(applied,{mode:'auto'});
+ removeClosetEntry(autoDef,'cape:cape_solid::cape=cloth.ulpc.navy',catalog,mockStorage);
+ const replaced=state.appendChange(chatA,[{is_user:false,mes:'Switched repertoire.'}],{schemaVersion:2,kind:'companion-replacement',definition:autoDef,presentation:autoDef.startingPresentation},uuid);
+ const replayedActive=state.reconstruct(replaced.state,replaced.messages);
+ assert(!replayedActive.definition.closet.some(e=>e.itemId==='cape_solid'));
+ assert.equal(readRepertoire(replayedActive.definition,'imported',mockStorage).mode,'auto','Explicit auto repertoire on v2 definition must override stale legacy localStorage.');
+ const replayedReverted=state.reconstruct(replaced.state,[]);
+ assert(replayedReverted.definition.closet.some(e=>e.itemId==='cape_solid'),'Deleting response must restore prior v2 closet from snapshot.');
+ assert.equal(readRepertoire(replayedReverted.definition,'imported',mockStorage).mode,'custom');
+ assert.equal(storageWrites.length,0);
+
+ // 4. Deterministic model c01..cNN IDs derive strictly from definition state without cross-chat leakage
+ const modelDescA=describeClosetForModel(replayedReverted.definition,'imported',catalog,null);
+ const modelDescB=describeClosetForModel(replayedActive.definition,'imported',catalog,null);
+ assert.equal(modelDescA.closet[0].id,'c01');
+ assert.equal(modelDescA.closet[0].itemId,'cape_solid');
+ assert.equal(modelDescB.closet[0].id,'c01');
+ assert.equal(modelDescB.closet[0].itemId,'hat_formal_crown');
+ const equippedCape=applyModelClosetChanges(replayedReverted.definition,'imported',{wear:['c01']},catalog,null);
+ assert.equal(equippedCape.outfits[0].selections.cape.itemId,'cape_solid');
+
+ // 5. Schema/invariant rejection of invalid closet entries & round-trip through config/complete packages
+ const dupCloset=structuredClone(applied);
+ dupCloset.closet.push(structuredClone(dupCloset.closet[0]));
+ assert.throws(()=>state.validateDefinition(dupCloset),/Duplicate closet/);
+ const nonCanonical=structuredClone(applied);
+ nonCanonical.closet[0].colors={cape:'navy'};
+ assert.throws(()=>state.validateDefinition(nonCanonical));
+
+ const pngStub=new Uint8Array([137,80,78,71,13,10,26,10]);
+ const pkgs=createSourcePackages({catalog,state,metadata,assets,artwork:{loadBytes:async()=>pngStub}});
+ const configPkg=pkgs.config(applied);
+ assert(configPkg.attribution.items.hat_formal_crown,'Unworn closet items must carry full attribution in packages.');
+ assert(configPkg.attribution.items.cape_solid);
+ const reimported=pkgs.importDocument(JSON.stringify(configPkg),uuid());
+ assert.deepEqual(reimported.definition.closet,applied.closet);
+ assert.deepEqual(reimported.definition.repertoire,applied.repertoire);
 });

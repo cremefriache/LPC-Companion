@@ -30,6 +30,6 @@ export function createComposer({ catalog, loadImage, recolor, createCanvas, cach
             return { canvas, layout, layers };
         },
         stats: () => ({ decodedBytes: decoded.bytes, recoloredBytes: colored.bytes, maxBytesPerCache: decoded.maxBytes }),
-        dispose() { disposed = true; decoded.clear(); colored.clear(); },
+        dispose() { disposed = true; decoded.dispose(); colored.dispose(); },
     };
 }

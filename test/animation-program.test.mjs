@@ -41,7 +41,13 @@ test('cape stays visible: incompatible activity or later jump rejects the entire
 
 test('starting activities roundtrip credited packages while legacy definitions remain field-free',async()=>{
     const {exportCompanion,importCompanion}=await import('../src/state/packages.mjs');
-    const next=structuredClone(definition);next.startingPresentation.activityId='walk';const value=exportCompanion(next);assert.equal(importCompanion(JSON.stringify(value),definition.characterId).startingPresentation.activityId,'walk');assert.equal(Object.hasOwn(definition.startingPresentation,'activityId'),false);
+    const next=structuredClone(definition);next.startingPresentation.activityId='walk';const value=exportCompanion(next);assert.equal(importCompanion(JSON.stringify(value),definition.characterId).startingPresentation.activityId,'walk');assert.equal(Object.hasOwn(definition.startingPresentation,'activityId'),false);assert.equal(value.attribution.optionalBankEnhancements,undefined);
+    const bankNext=structuredClone(definition);bankNext.startingPresentation={...bankNext.startingPresentation,moodId:'thoughtful',activityId:'tending'};
+    const bankPkg=exportCompanion(bankNext);
+    assert.deepEqual(bankPkg.attribution.optionalBankEnhancements,{embeddedInCuratedPackage:false,fallback:{expression:'none',animation:'idle'},moodId:'thoughtful',activityId:'tending'});
+    assert.equal(importCompanion(JSON.stringify(bankPkg),definition.characterId).startingPresentation.activityId,'tending');
+    const altered=structuredClone(bankPkg);altered.attribution.optionalBankEnhancements.fallback.animation='thrust';
+    assert.throws(()=>importCompanion(JSON.stringify(altered),definition.characterId),/attribution/);
 });
 
 test('held rest selects a physical column after full composition; expressive gesture uses its explicit finite program',async()=>{

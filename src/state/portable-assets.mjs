@@ -2,11 +2,15 @@ import { sha256 } from '@noble/hashes/sha2.js';
 import manifest from '../../assets/lpc/pack-manifest.json' with { type: 'json' };
 import { catalog } from '../catalog/catalog.mjs';
 import { scenes } from '../catalog/scenes.mjs';
+import { defaultSourceReadiness } from './source-contracts.mjs';
 
 export const PACKAGE_LIMIT = 2_000_000;
 export const SOURCE_ART_PREFIX = 'full-source/';
-let sourceArtworkValidator=null;
-export function registerSourceArtworkValidator(validate){sourceArtworkValidator=validate;}
+
+export function registerSourceArtworkValidator(validate) {
+    defaultSourceReadiness.bind({ validateArtwork: validate });
+}
+
 export const digest = bytes => Array.from(sha256(bytes), byte => byte.toString(16).padStart(2, '0')).join('');
 export function encodePng(bytes) {
     let binary = ''; for (const byte of bytes) binary += String.fromCharCode(byte);
@@ -47,26 +51,35 @@ for (const item of Object.values(catalog.items)) for (const layer of item.layers
     const layout = catalog.animations[action];
     dimensions.set(path, [(Math.max(...layout.cycle) + 1) * layout.frameWidth, layout.directions.length * layout.frameHeight]);
 }
-export function validateEmbeddedAssets(value = {}) {
-    if (!value || typeof value !== 'object' || Array.isArray(value) || Object.keys(value).length > 1024
-        || JSON.stringify(value).length > PACKAGE_LIMIT - 100_000) throw Error('Invalid or oversized companion artwork library.');
-    if(Object.keys(value).filter(path=>!path.startsWith(SOURCE_ART_PREFIX)).length>Object.keys(manifest.files).length+backgrounds.size)throw Error('Invalid or oversized curated artwork library.');
-    const result = {};
-    for (const [path, text] of Object.entries(value)) {
-        if(path.startsWith(SOURCE_ART_PREFIX)){
-            if(!sourceArtworkValidator)throw Error('The full catalog is still loading. Reload before validating source artwork.');
-            sourceArtworkValidator(path,text);result[path]=text;continue;
+
+export function createEmbeddedAssetsValidator({ readiness = defaultSourceReadiness, validateSourceArtwork } = {}) {
+    return function validateEmbeddedAssets(value = {}, options = {}) {
+        if (!value || typeof value !== 'object' || Array.isArray(value) || Object.keys(value).length > 1024
+            || JSON.stringify(value).length > PACKAGE_LIMIT - 100_000) throw Error('Invalid or oversized companion artwork library.');
+        if (Object.keys(value).filter(path => !path.startsWith(SOURCE_ART_PREFIX)).length > Object.keys(manifest.files).length + backgrounds.size) {
+            throw Error('Invalid or oversized curated artwork library.');
         }
-        if (backgrounds.has(path)) {
-            if (typeof text !== 'string' || text.length > 12000 || !/^[A-Za-z0-9+/]+={0,2}$/.test(text)) throw Error('Invalid background encoding.');
-            const bytes = Uint8Array.from(atob(text),c=>c.charCodeAt(0));
-            if (encodePng(bytes) !== text || digest(bytes) !== backgrounds.get(path).sha256) throw Error('Background artwork verification failed. Only the exact curated vectors are supported.');
-            result[path] = text; continue;
+        const result = {};
+        for (const [path, text] of Object.entries(value)) {
+            if (path.startsWith(SOURCE_ART_PREFIX)) {
+                const validator = options.validateSourceArtwork ?? validateSourceArtwork ?? readiness.artworkValidator();
+                validator(path, text);
+                result[path] = text;
+                continue;
+            }
+            if (backgrounds.has(path)) {
+                if (typeof text !== 'string' || text.length > 12000 || !/^[A-Za-z0-9+/]+={0,2}$/.test(text)) throw Error('Invalid background encoding.');
+                const bytes = Uint8Array.from(atob(text), c => c.charCodeAt(0));
+                if (encodePng(bytes) !== text || digest(bytes) !== backgrounds.get(path).sha256) throw Error('Background artwork verification failed. Only the exact curated vectors are supported.');
+                result[path] = text; continue;
+            }
+            if (!Object.hasOwn(manifest.files, path) || !dimensions.has(path)) throw Error('Package contains an unknown artwork path.');
+            const bytes = decodePng(text, ...dimensions.get(path));
+            if (digest(bytes) !== manifest.files[path]) throw Error(`Artwork verification failed: ${path}`);
+            result[path] = text;
         }
-        if (!Object.hasOwn(manifest.files, path) || !dimensions.has(path)) throw Error('Package contains an unknown artwork path.');
-        const bytes = decodePng(text, ...dimensions.get(path));
-        if (digest(bytes) !== manifest.files[path]) throw Error(`Artwork verification failed: ${path}`);
-        result[path] = text;
-    }
-    return result;
+        return result;
+    };
 }
+
+export const validateEmbeddedAssets = createEmbeddedAssetsValidator();

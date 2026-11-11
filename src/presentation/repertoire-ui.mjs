@@ -13,6 +13,7 @@ export function createRepertoireCustomizer({
     window,
     getDefinition,
     getOutfitId,
+    onWrite,
     onChange = () => {},
 }) {
     const el = (tag, text, className) => {
@@ -27,6 +28,7 @@ export function createRepertoireCustomizer({
     details.dataset.control = 'repertoire-drawer';
     const summary = el('summary', undefined, 'lpc-repertoire-summary');
     const summaryTitle = el('span', 'Customize main panel', 'lpc-repertoire-title');
+    summaryTitle.title = 'Customize main panel';
     const summaryBadge = el('span', '', 'lpc-repertoire-badge');
     summary.prepend(createIcon(document, 'sliders'));
     summary.append(summaryTitle, summaryBadge);
@@ -51,7 +53,8 @@ export function createRepertoireCustomizer({
             const next = presetId === 'auto'
                 ? { mode: 'auto' }
                 : presetRepertoire(presetId, def, outfitId);
-            writeRepertoire(def?.characterId, next, window?.localStorage);
+            if (onWrite) onWrite(next);
+            else writeRepertoire(def?.characterId, next, window?.localStorage);
             sync();
             onChange();
         };
@@ -116,16 +119,17 @@ export function createRepertoireCustomizer({
                 if (input.checked) set.add(id);
                 else set.delete(id);
                 chip.dataset.checked = String(input.checked);
-                writeRepertoire(
-                    def?.characterId,
-                    {
-                        mode: 'custom',
-                        poses: key === 'poses' ? [...set] : current.poses,
-                        expressions: key === 'expressions' ? [...set] : current.expressions,
-                        actions: key === 'actions' ? [...set] : current.actions,
-                    },
-                    window?.localStorage,
-                );
+                const nextValue = {
+                    mode: 'custom',
+                    poses: key === 'poses' ? [...set] : current.poses,
+                    expressions: key === 'expressions' ? [...set] : current.expressions,
+                    actions: key === 'actions' ? [...set] : current.actions,
+                };
+                if (onWrite) {
+                    onWrite(nextValue);
+                } else {
+                    writeRepertoire(def?.characterId, nextValue, window?.localStorage);
+                }
                 syncBadge();
                 onChange();
             };

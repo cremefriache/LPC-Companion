@@ -26,8 +26,6 @@ Identity is separate from named outfits. Preview clothes in the catalog, pick 3-
 
 Idle/Walk/Run provide supported ongoing loops. Other supported actions are held poses (including sitting, sleeping/dozing, and hands on hips), 12 facial moods, or 15 brief emotes/actions, with a customizable **Main Panel Repertoire** per character/outfit. Brief actions do not replay on reload. Pause, hidden panels and reduced motion affect playback. Missing required source art refuses a combination rather than silently removing garments. Source-authored views and frame layouts remain authoritative. Presentation does not resolve combat or establish inventory ownership.
 
-Speech bubbles stay visible until you press **× (Dismiss speech)** or send the next reply. New speech replaces the previous bubble. Speech clears when a new generation starts or the chat/workspace is closed, and never saves or replays on reload.
-
 ## Import and share
 
 In **Import JSON**, paste an official generator **version 2** export or choose its `.json` file. Preview, review diagnostics, choose the destination and Apply; Cancel makes no saved changes. The live generator can advance beyond our pin; unknown/custom art and unavailable combinations receive diagnostics.
@@ -48,6 +46,6 @@ Use the visible reload/recovery controls when a save cannot be confirmed. Keep t
 
 If a host message changes while a companion save is preparing, the companion save is rejected; wait for the host edit to finish and retry.
 
-The LPC settings drawer is available even before selecting a chat. It explains how to begin and disables companion controls until a character or group chat is ready. Artwork and code credits remain available. Opening this drawer does not initialize or save companion state.
+The LPC settings drawer is available even before selecting a chat. It explains how to begin, disables companion controls until a character or group chat is ready, and includes **About & diagnostics** with the installed version, *What’s new* notes, and a privacy-safe in-memory *Debug log* you can copy or download as JSON. Artwork and code credits remain available. Opening this drawer does not initialize or save companion state.
 
 Brief actions and sequences repeat after a seven-second cooldown while their panel remains active, until stopped or replaced. Pause and hidden panels suspend playback. Repeats are page-local and do not resume after reload or a history/context change.

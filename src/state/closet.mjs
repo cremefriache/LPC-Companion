@@ -5,7 +5,6 @@ import { MAX_OUTFITS, nextOutfitId } from './wardrobe.mjs';
 const STORAGE_PREFIX = 'lpc-companion:closet:v1:';
 const MAX_CLOSET_ITEMS = 96;
 const identitySet = new Set(SOURCE_IDENTITY_SLOTS);
-const memoryCloset = new Map();
 const listeners = new Set();
 
 function storageKey(characterId) {
@@ -58,64 +57,65 @@ export function normalizeClosetEntry(raw, catalog, bodyType) {
     };
 }
 
-function readRawStored(characterId, storage = globalThis.localStorage) {
-    const k = storageKey(characterId);
-    let list = memoryCloset.get(k);
-    if (!list && storage) {
-        try {
-            const raw = storage.getItem(k);
-            if (raw) list = JSON.parse(raw);
-        } catch {
-            list = null;
-        }
-    }
-    return Array.isArray(list) ? list : [];
+function toStoredClosetEntry(entry) {
+    return {
+        slot: entry.slot,
+        itemId: entry.itemId,
+        variant: entry.variant ?? null,
+        colors: structuredClone(entry.colors ?? {}),
+    };
 }
 
-function writeRawStored(characterId, list, storage = globalThis.localStorage) {
+function readLegacyStoredCloset(characterId, storage = globalThis.localStorage) {
+    if (!storage || typeof storage.getItem !== 'function') return [];
     const k = storageKey(characterId);
-    const bounded = list.slice(0, MAX_CLOSET_ITEMS);
-    memoryCloset.set(k, bounded);
-    if (storage) {
-        try {
-            storage.setItem(k, JSON.stringify(bounded));
-        } catch {
-            // Ignore storage quota errors
-        }
+    try {
+        const raw = storage.getItem(k);
+        if (!raw) return [];
+        const parsed = JSON.parse(raw);
+        return Array.isArray(parsed) ? parsed : [];
+    } catch {
+        return [];
     }
+}
+
+function baseClosetSource(definition, storage) {
+    if (Array.isArray(definition?.closet)) return definition.closet;
+    return readLegacyStoredCloset(definition?.characterId, storage);
+}
+
+function notifyClosetListeners(characterId, list) {
     for (const fn of [...listeners]) {
-        try { fn(characterId, bounded); } catch {}
+        try { fn(characterId, list); } catch {}
     }
 }
 
 export function seedClosetFromDefinition(definition, catalog, storage = globalThis.localStorage) {
     if (!definition || definition.schemaVersion !== 2 || !catalog) return [];
     const bodyType = definition.identity?.bodyType;
-    const current = readRawStored(definition.characterId, storage)
-        .map(r => normalizeClosetEntry(r, catalog, bodyType))
-        .filter(Boolean);
-    const seen = new Set(current.map(e => e.key));
-    let changed = false;
+    const current = [];
+    const seen = new Set();
+    const push = raw => {
+        const norm = normalizeClosetEntry(raw, catalog, bodyType);
+        if (!norm || seen.has(norm.key)) return;
+        seen.add(norm.key);
+        current.push(norm);
+    };
+    for (const raw of baseClosetSource(definition, storage)) push(raw);
     for (const outfit of definition.outfits ?? []) {
         for (const [slot, sel] of Object.entries(outfit.selections ?? {})) {
-            const norm = normalizeClosetEntry({ slot, itemId: sel.itemId, variant: sel.variant, colors: sel.colors }, catalog, bodyType);
-            if (norm && !seen.has(norm.key)) {
-                seen.add(norm.key);
-                current.push(norm);
-                changed = true;
-            }
+            push({ slot, itemId: sel.itemId, variant: sel.variant, colors: sel.colors });
         }
     }
-    if (changed || !current.length) {
-        writeRawStored(definition.characterId, current, storage);
-    }
-    return current;
+    const bounded = current.slice(0, MAX_CLOSET_ITEMS);
+    definition.closet = bounded.map(toStoredClosetEntry);
+    return bounded;
 }
 
 export function readCloset(definition, catalog, storage = globalThis.localStorage, options = {}) {
     if (!definition || definition.schemaVersion !== 2 || !catalog) return [];
     const bodyType = definition.identity?.bodyType;
-    const stored = readRawStored(definition.characterId, storage);
+    const stored = baseClosetSource(definition, storage);
     const seen = new Set();
     const result = [];
 
@@ -141,25 +141,43 @@ export function addClosetEntry(definition, rawEntry, catalog, storage = globalTh
     if (!definition || !catalog) return null;
     const norm = normalizeClosetEntry(rawEntry, catalog, definition.identity?.bodyType);
     if (!norm) return null;
-    const current = readRawStored(definition.characterId, storage)
+    const current = baseClosetSource(definition, storage)
         .map(r => normalizeClosetEntry(r, catalog, definition.identity?.bodyType))
         .filter(Boolean);
-    const idx = current.findIndex(e => e.key === norm.key);
-    if (idx === -1) {
-        current.unshift(norm);
-    } else {
-        current[idx] = norm;
+    const seen = new Set();
+    const deduped = [];
+    for (const entry of current) {
+        if (seen.has(entry.key)) continue;
+        seen.add(entry.key);
+        deduped.push(entry);
     }
-    writeRawStored(definition.characterId, current, storage);
+    const idx = deduped.findIndex(e => e.key === norm.key);
+    if (idx === -1) {
+        deduped.unshift(norm);
+    } else {
+        deduped[idx] = norm;
+    }
+    const bounded = deduped.slice(0, MAX_CLOSET_ITEMS);
+    definition.closet = bounded.map(toStoredClosetEntry);
+    notifyClosetListeners(definition.characterId, definition.closet);
     return norm;
 }
 
 export function removeClosetEntry(definition, key, catalog, storage = globalThis.localStorage) {
     if (!definition) return;
-    const current = readRawStored(definition.characterId, storage)
+    const current = baseClosetSource(definition, storage)
         .map(r => catalog ? normalizeClosetEntry(r, catalog, definition.identity?.bodyType) : r)
-        .filter(e => e && e.key !== key);
-    writeRawStored(definition.characterId, current, storage);
+        .filter(e => e && (e.key ?? closetKeyForSelection(e.slot, e)) !== key);
+    const seen = new Set();
+    const deduped = [];
+    for (const entry of current) {
+        const entryKey = entry.key ?? closetKeyForSelection(entry.slot, entry);
+        if (seen.has(entryKey)) continue;
+        seen.add(entryKey);
+        deduped.push(entry);
+    }
+    definition.closet = deduped.slice(0, MAX_CLOSET_ITEMS).map(toStoredClosetEntry);
+    notifyClosetListeners(definition.characterId, definition.closet);
 }
 
 export function isEntryInCloset(definition, rawEntry, catalog, storage = globalThis.localStorage) {

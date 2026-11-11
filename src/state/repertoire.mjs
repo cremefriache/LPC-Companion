@@ -137,7 +137,33 @@ function storageKey(characterId) {
     return `${STORAGE_PREFIX}${characterId || 'default'}`;
 }
 
+export function toDefinitionRepertoire(value) {
+    if (!value || value.mode === 'auto') {
+        return {
+            mode: 'auto',
+            poses: [],
+            expressions: [],
+            actions: [],
+        };
+    }
+    return {
+        mode: 'custom',
+        poses: [...new Set(value.poses ?? [])].filter(id => ALL_POSE_IDS.includes(id)),
+        expressions: [...new Set(value.expressions ?? [])].filter(id => ALL_EXPRESSION_IDS.includes(id)),
+        actions: [...new Set(value.actions ?? [])].filter(id => ALL_ACTION_IDS.includes(id)),
+    };
+}
+
+export function applyRepertoireToDefinition(definition, value) {
+    const clone = structuredClone(definition);
+    clone.repertoire = toDefinitionRepertoire(value);
+    return clone;
+}
+
 export function readRepertoire(definition, outfitId, storage = globalThis.window?.localStorage) {
+    if (definition && typeof definition === 'object' && Object.hasOwn(definition, 'repertoire') && definition.repertoire) {
+        return sanitizeRepertoire(definition.repertoire, definition, outfitId);
+    }
     const characterId = definition?.characterId ?? 'default';
     const key = storageKey(characterId);
     try {

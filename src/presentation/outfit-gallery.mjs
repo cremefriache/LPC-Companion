@@ -1,6 +1,7 @@
 import { validateDefinition } from '../state/validate.mjs';
 import { selectionsFor } from '../catalog/catalog.mjs';
 import { drawFrame } from './player.mjs';
+import { createIcon } from './molecules.mjs';
 
 /** Static 64px tiles, sequential composition, at most one canvas per current outfit. */
 export function createOutfitGallery({ document, compose, onSelect, label }) {
@@ -23,8 +24,11 @@ export function createOutfitGallery({ document, compose, onSelect, label }) {
             const tiles = outfits.map(outfit => {
                 const tile = document.createElement('button'); tile.type = 'button'; tile.className = 'lpc-outfit-tile'; tile.dataset.outfitId = outfit.id;
                 tile.setAttribute('aria-label', `${outfit.name}${outfit.favorite ? ', favorite' : ''}`);
+                tile.title = outfit.name;
                 tile.setAttribute('aria-pressed', String(outfit.id === selectedId));
-                const text = document.createElement('span'); text.textContent = `${outfit.favorite ? '★ ' : ''}${outfit.name}`;
+                const text = document.createElement('span'); text.className = 'lpc-outfit-tile-label';
+                if (outfit.favorite) text.append(createIcon(document, 'star', 'lpc-svg-icon lpc-favorite-star'));
+                text.append(outfit.name);
                 tile.append(text); tile.onclick = () => { if (document.activeElement === tile) focusRequest = outfit.id; onSelect(outfit.id); }; element.append(tile);
                 return { tile, outfit };
             });

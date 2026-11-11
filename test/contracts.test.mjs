@@ -1,6 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { readFile } from 'node:fs/promises';
+import { readdir, readFile } from 'node:fs/promises';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import Ajv from 'ajv';
 import { assertStateInvariants } from '../src/state/invariants.mjs';
 
@@ -65,4 +67,45 @@ test('cross-field invariants reject unknown outfits, duplicate IDs and unordered
         assert.equal(check(value), true, JSON.stringify(check.errors));
         assert.throws(() => assertStateInvariants(value));
     }
+});
+
+test('module layers enforce strict Catalog -> Composition -> State -> Presentation -> Adapter directionality', async () => {
+    const srcRoot = fileURLToPath(new URL('../src', import.meta.url));
+    const layerRank = { catalog: 1, composition: 2, state: 3, presentation: 4, adapter: 5, runtime: 5 };
+    async function walk(dir) {
+        const entries = await readdir(dir, { withFileTypes: true });
+        const files = [];
+        for (const entry of entries) {
+            const full = path.join(dir, entry.name);
+            if (entry.isDirectory()) files.push(...(await walk(full)));
+            else if (entry.name.endsWith('.mjs')) files.push(full);
+        }
+        return files;
+    }
+    const violations = [];
+    for (const file of await walk(srcRoot)) {
+        const rel = path.relative(srcRoot, file).split(path.sep).join('/');
+        const parts = rel.split('/');
+        if (parts.length < 2) continue;
+        const fromLayer = parts[0];
+        const fromRank = layerRank[fromLayer];
+        if (!fromRank) continue;
+        const text = await readFile(file, 'utf8');
+        if (fromLayer === 'presentation' && /\bregisterSource(Contracts|ArtworkValidator)\b/.test(text)) {
+            violations.push(`src/${rel} mutates global source contract singletons instead of using explicit readiness wiring`);
+        }
+        const importRe = /(?:from|import\s*\()\s*['"](\.[^'"]+)['"]/g;
+        let match;
+        while ((match = importRe.exec(text)) !== null) {
+            const resolved = path.posix.normalize(path.posix.join(path.posix.dirname(rel), match[1]));
+            if (resolved.startsWith('..')) continue;
+            const targetParts = resolved.split('/');
+            const toLayer = targetParts.length >= 2 ? targetParts[0] : 'entry';
+            const toRank = layerRank[toLayer];
+            if (toLayer === 'entry' || (toRank && toRank > fromRank)) {
+                violations.push(`src/${rel} (${fromLayer}) -> src/${resolved} (${toLayer})`);
+            }
+        }
+    }
+    assert.deepEqual(violations, []);
 });

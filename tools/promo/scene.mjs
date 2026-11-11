@@ -20,11 +20,11 @@ function drawBeat(index,t,alpha=1){const beat=beats[index];ctx.save();ctx.global
  if(index===0){stage('woodland',t);pill('A familiar face',462,534,148,true);pill('Manual controls',622,534,151);}
  if(index===1){const outfit=['everyday','evening','summer'][Math.min(2,Math.floor(t/.95))];stage('courtyard',3,1,outfit);for(const [i,id]of ['everyday','evening','summer'].entries())pill(id[0].toUpperCase()+id.slice(1),462+i*151,534,139,id===outfit);}
  if(index===2){const scene=t<1.45?'woodland':'hearth';stage(scene,3,2,'summer');pill(scene==='woodland'?'Woodland clearing':'Hearth room',462,534,177,true);pill('Together',651,534,107);}
- if(index===3){stage('woodland',t);pill('Development preview',48,458,198,true);text('Install from GitHub · model tools optional',48,518,14,muted);text('github.com/cremefriache/',48,554,17,ink,500);text('LPC-Companion',48,580,21,mint,600);pill('Built with the LPC community',462,534,276);}
+ if(index===3){stage('woodland',t);pill('Beta · v0.2.0',48,458,142,true);text('Install from GitHub · model tools optional',48,518,14,muted);text('github.com/cremefriache/',48,554,17,ink,500);text('LPC-Companion',48,580,21,mint,600);pill('Built with the LPC community',462,534,276);}
  ctx.restore();}
 window.renderPromo=time=>{const t=((time%12)+12)%12;ctx.clearRect(0,0,W,H);const bg=ctx.createLinearGradient(0,0,W,H);bg.addColorStop(0,'#14262a');bg.addColorStop(1,'#10181f');ctx.fillStyle=bg;ctx.fillRect(0,0,W,H);ctx.strokeStyle='#b4d5bd07';ctx.lineWidth=1;for(let x=0;x<W;x+=32){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,H);ctx.stroke();}for(let y=0;y<H;y+=32){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(W,y);ctx.stroke();}
  text('LPC Companion',48,65,23,ink,600);pill('FOR SILLYTAVERN',730,39,182);ctx.fillStyle='#b8d8bd';ctx.fillRect(48,96,26,3);ctx.fillStyle='#b8d8bd22';ctx.fillRect(74,96,838,1);
  const index=Math.floor(t/3),local=t-index*3;if(t>11.65){const a=(t-11.65)/.35;drawBeat(3,local,1-a);drawBeat(0,.3,a);}else if(local<.22&&index>0){const a=local/.22;drawBeat(index-1,2.9,1-a);drawBeat(index,Math.max(local,.3),a);}else drawBeat(index,Math.max(local,.3));
  for(let i=0;i<4;i++)rect(48+i*219,617,207,3,1.5,i===index?'#b8d8bd':'#b8d8bd22');
- text('LPC community artwork · Modern LPC + Universal LPC',48,657,12,muted);text('Credits & source: github.com/cremefriache/LPC-Companion',48,682,11,'#80988c');text('DEVELOPMENT PREVIEW',748,680,10,'#98b0a3',500);
+ text('LPC community artwork · Modern LPC + Universal LPC',48,657,12,muted);text('Credits & source: github.com/cremefriache/LPC-Companion',48,682,11,'#80988c');text('BETA · v0.2.0',812,680,10,'#98b0a3',600);
 };window.renderPromo(0);window.promoReady=true;window.disposePromo=()=>composer.dispose();

@@ -8,7 +8,7 @@
 
 Named outfits · expressive poses · shared scenes · appearance that follows your chat
 
-[Get started](#get-started) · [Import a character](#bring-your-generator-character) · [Things to know](#before-you-settle-in) · [LPC & credits](#made-possible-by-lpc)
+[Get started](#get-started) · [Import a character](#bring-your-generator-character) · [Things to know](#before-you-settle-in) · [LPC & credits](#made-possible-by-lpc) · [Discord](https://discord.gg/AhXhWaRKfM)
 
 </div>
 
@@ -16,9 +16,9 @@ LPC Companion brings layered pixel-art characters into SillyTavern. Build a look
 
 Use the manual controls on their own, or opt into model tools for supported presentation changes. **No separate model subscription, extension-owned API credentials or server plugin is required for manual use.**
 
-> **Development preview · `0.1.0-dev.38`**
+> **Beta release · `0.2.0`** · [What's new](CHANGELOG.txt) · [Join our Discord](https://discord.gg/AhXhWaRKfM) *(support, beta testers & contributors)*
 >
-> Tested on SillyTavern **1.18.0**. Install through SillyTavern’s **Extensions → Install extension** using the repository URL. Actual Android acceptance is still pending.
+> Tested on **SillyTavern 1.18.0+** (`1.19.0` automated baseline; `1.18.0` and **Android** owner-accepted). Install through SillyTavern’s **Extensions → Install extension** using the repository URL.
 
 ## Meet your companion
 
@@ -44,7 +44,7 @@ Use the manual controls on their own, or opt into model tools for supported pres
 </tr>
 </table>
 
-<sub>Live roleplay and inspector captures in SillyTavern 1.19.0. Pixel art belongs to the credited LPC artists; see [artwork attribution](docs/UPSTREAM.md). Narrow screenshots elsewhere in this repository are desktop emulation, not Android acceptance.</sub>
+<sub>Live roleplay and inspector captures in SillyTavern 1.19.0. Pixel art belongs to the credited LPC artists; see [artwork attribution](docs/UPSTREAM.md).</sub>
 
 ### Built around the conversation
 
@@ -59,7 +59,7 @@ The full catalog is a **pinned content library**, not a promise that every outfi
 
 ## Get started
 
-The loader permits **SillyTavern 1.18.0 and newer** for compatibility testing; **1.19.0 is the verified host baseline**. Compatibility testing on 1.18.0 is pending. Git must be available on the computer running SillyTavern for repository installation. You do not need Node/npm commands or a model backend to install and use the companion manually.
+Supports **SillyTavern 1.18.0 and newer** (`1.19.0` is the automated host baseline; `1.18.0` and Android are owner-accepted). Git must be available on the computer running SillyTavern for repository installation. You do not need Node/npm commands or a model backend to install and use the companion manually.
 
 ### 1. Install from the repository URL
 
@@ -69,7 +69,7 @@ Open **Extensions → Install extension**, paste this URL and choose **Install**
 https://github.com/cremefriache/LPC-Companion
 ```
 
-Choose a single-user or all-user installation as appropriate, then reload SillyTavern. Confirm **LPC Companion (development)** appears in **Manage Extensions**. The repository ships its compiled browser entry point, local artwork and notices; nothing needs to be built on your device.
+Choose a single-user or all-user installation as appropriate, then reload SillyTavern. Confirm **LPC Companion** appears in **Manage Extensions**. The repository ships its compiled browser entry point, local artwork and notices; nothing needs to be built on your device.
 
 The full artwork library makes the first download larger than a typical small extension. 
 
@@ -93,7 +93,7 @@ After setup, use the minimize (`—`) button to toggle between the full companio
 
 Manual controls always work without a model backend. If you want the AI model to update the avatar’s outfit, pose, mood, brief action, or stage during roleplay:
 
-1. **In Extensions → LPC Companion**: Enable **Allow model tool calls**, choose a **Model tool scope** (`Character only` registers `lpc_outfit`, `lpc_pose`, and `lpc_emote`; `Character + Scene` adds `lpc_scene`), and toggle **Allow model controls** in the companion panel.
+1. **In Extensions → LPC Companion**: Enable **Enable Tool Calling**, choose an **AI tool calling scope** (`Character only` registers `lpc_outfit`, `lpc_pose`, and `lpc_emote`; `Character + stage backdrop & lighting` adds `lpc_scene`), and toggle **Allow model controls** in the companion panel.
 2. **In API Connections (plug icon 🔌, second from left on SillyTavern’s top bar)**:
    - **Prompt Post-Processing**: Keep set to **`None`** (default) or **`Merge consecutive roles (with tools)`**. Avoid *"No Tools"* or strict user-first post-processing modes, which rewrite tool-continuation or system messages into user turns.
 3. **In AI Response Configuration (sliders icon on SillyTavern’s top bar)**:
@@ -127,15 +127,15 @@ To share an authored companion, use a configuration or complete companion packag
 ## Before you settle in
 
 - **One writer per chat.** SillyTavern does not provide a general compare-and-swap save API. Avoid editing the same chat from two tabs/devices at once. Read-back verification and stale-context guards help, but do not create a server transaction.
-- **Development, with a clear test boundary.** Desktop integration is verified on SillyTavern 1.19.0, commit `7e8663c`. Android’s actual-device checklist and performance budgets remain pending. Other host versions need their own acceptance.
-- **Known cold-start delay.** Automatic blink preparation can delay the first curated render while opening the local artwork library. The desktop cold-composition performance gate remains open; this preview is not a completed performance release.
+- **Beta release, with a clear test boundary.** Automated desktop integration and cold-start rendering suites verify SillyTavern 1.19.0 (commit `7e8663c`), alongside owner UAT acceptance on SillyTavern 1.18.0 and Android.
 - **Animation depends on the outfit.** Missing art or unsupported source frames refuse the action; garments do not silently disappear to make it play. Full-source poses follow their authored views and layouts. This is presentation, not combat resolution or an inventory system.
 - **Brief actions are transient.** They are bounded and do not replay after reload. Ongoing activities and accepted presentation follow history. Pause, hidden panels and reduced motion affect playback.
 - **Model tools are opt-in.** They use SillyTavern’s configured provider. Global tool permission defaults off and is saved in this browser; enabling it allows companion controls when panels open. Closing a panel discards pending requests. Live provider acceptance covers the documented non-streaming Chat Completions setup; other providers and streaming modes remain unverified. A tool request alone does not save a change.
 - **Keep backups before upgrading or downgrading.** Export a recovery backup and any complete companions you want to preserve. Older builds may reject newer fields, catalog IDs or package markers. Unreadable or ambiguous state blocks writes and offers recovery; history is bounded without silent pruning.
+- **Built-in release notes & troubleshooting log.** Open **Extensions → LPC Companion → About & diagnostics** to check your installed version, read *What’s new* highlights, or copy/download a sanitized *Debug log* (no chat messages, character prose, or credentials) when asking for help.
 - **The launcher stays inside the page.** You can drag it with mouse or touch, but it is not an Android system overlay over other apps.
 
-[Continuity & recovery](docs/USER_GUIDE.md) · [Update guide](docs/INSTALLATION.md) · [Android checklist](docs/USER_GUIDE.md) · [Verified release evidence](docs/STATUS.md)
+[Continuity & recovery](docs/USER_GUIDE.md) · [Update guide](docs/INSTALLATION.md) · [Verified release evidence](docs/STATUS.md) · [Community Discord](https://discord.gg/AhXhWaRKfM)
 
 ## Made possible by LPC
 
@@ -162,13 +162,13 @@ Open **Artwork & code credits** or **Full artwork credits** in the installed ext
 
 | I want to… | Start here |
 | --- | --- |
+| Get support, join beta testing or contribute | [Join the Discord](https://discord.gg/AhXhWaRKfM) · [Roadmap](CONTRIBUTING.md) · [Architecture](docs/DEVELOPMENT.md) |
 | Build, test or package the extension | [Development guide](docs/DEVELOPMENT.md) |
 | Understand the catalog and explicit limitations | [Full catalog](docs/USER_GUIDE.md) · [Source gaps](docs/USER_GUIDE.md) |
 | Use activities and brief action sequences | [Activities & sequences](docs/USER_GUIDE.md) · [Full-source controls](docs/USER_GUIDE.md) |
 | Set up a second companion or group | [Companions & groups](docs/USER_GUIDE.md) · [Shared party scenes](docs/USER_GUIDE.md) |
 | Understand theme, launcher or studio behavior | [Theme](docs/USER_GUIDE.md) · [Launcher](docs/USER_GUIDE.md) · [Studio](docs/USER_GUIDE.md) |
 | Check what was actually tested | [Current content acceptance](docs/USER_GUIDE.md) · [Evidence](docs/STATUS.md) |
-| Contribute a focused improvement | [Roadmap](CONTRIBUTING.md) · [Architecture](docs/DEVELOPMENT.md) |
 
 Matching source, build instructions and complete artwork notices accompany this installation.
 
@@ -182,6 +182,3 @@ Built for the quiet details that make a character feel present.<br>
 </div>
 
 Brief actions and sequences repeat after a seven-second cooldown while their panel remains active, until stopped or replaced. Pause and hidden panels suspend playback. Repeats are page-local and do not resume after reload or a history/context change.
-
-### Special Thanks
-To the wonderful SillyTavern team for helping to create so many wonderful memories. https://github.com/SillyTavern/SillyTavern
