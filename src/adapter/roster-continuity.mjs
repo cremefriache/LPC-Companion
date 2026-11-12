@@ -270,6 +270,21 @@ export function createRosterContinuity({ storage, getContext, crypto, isGenerati
             return definition.characterId;
         });
     }
+    function remove(active, id, current = () => true) {
+        return queue.run(async () => {
+            const record = requireRecord(active);
+            if (isGenerating())
+                throw Error('Wait for generation to finish before removing a companion.');
+            if (!record.roster?.companions.some(entry => entry.companionId === id))
+                throw Error('Companion target is not in this roster.');
+            await storage.guard(active, record.account, current);
+            const roster = structuredClone(record.roster);
+            roster.companions = roster.companions.filter(entry => entry.companionId !== id);
+            if (!roster.companions.length) roster.embeddedAssets = {};
+            await saveRecord(active, record, roster, structuredClone(getContext().chat), current);
+            record.entries.delete(id);
+        });
+    }
     function commit(active, id, candidate, current = () => true) {
         return queue.run(async () => {
             const record = requireRecord(active),
@@ -399,6 +414,7 @@ export function createRosterContinuity({ storage, getContext, crypto, isGenerati
         sources,
         previewSource,
         add,
+        remove,
         recover,
         rebind,
         get: active => records.get(key(active)),

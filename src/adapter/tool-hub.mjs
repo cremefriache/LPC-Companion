@@ -33,16 +33,91 @@ export function createPromptBindings() {
     };
 }
 
-/** Insert outgoing system context before any trailing assistant tool-call / tool-result chain so continuation turns end with role:"tool". */
-export function insertPromptMessage(chat, message) {
+const AUXILIARY_GENERATION_TYPES = new Set(['quiet', 'impersonate']);
+
+export function isAuxiliaryGeneration(type) {
+    return typeof type === 'string' && AUXILIARY_GENERATION_TYPES.has(type.trim().toLowerCase());
+}
+
+export function isRawPromptCall() {
+    return /\bgenerateRaw(?:Data)?\b/.test(String(new Error().stack ?? ''));
+}
+
+export function inspectHostToolReadiness(context) {
+    if (!context || typeof context !== 'object') return { supported: true, reason: null, code: 'ready' };
+    const check = context.ToolManager?.isToolCallingSupported ?? context.isToolCallingSupported;
+    if (typeof check !== 'function') return { supported: true, reason: null, code: 'ready' };
+    let supported = true;
+    try {
+        supported = Boolean(check.call(context.ToolManager ?? context));
+    } catch {
+        return { supported: true, reason: null, code: 'ready' };
+    }
+    if (supported) return { supported: true, reason: null, code: 'ready' };
+    const mainApi = typeof context.mainApi === 'string' ? context.mainApi : '';
+    const oai = context.chatCompletionSettings;
+    if (mainApi && mainApi !== 'openai') {
+        return {
+            supported: false,
+            code: 'unsupported-api',
+            reason: 'SillyTavern tool calling requires a Chat Completion API connection. Switch API to Chat Completion to let the model call companion tools.',
+        };
+    }
+    const postProc = typeof oai?.custom_prompt_post_processing === 'string' ? oai.custom_prompt_post_processing : '';
+    if (oai?.function_calling === false && postProc && !postProc.endsWith('_tools')) {
+        return {
+            supported: false,
+            code: 'preset-function-calling-and-postproc',
+            reason: 'Your active SillyTavern preset has "Enable function calling" turned off and uses a non-tools Prompt Post-Processing mode. Enable "Function calling", switch Prompt Post-Processing to "None" or a "(with tools)" mode in AI Response Configuration, and save your preset.',
+        };
+    }
+    if (oai?.function_calling === false) {
+        return {
+            supported: false,
+            code: 'preset-function-calling-off',
+            reason: 'Your active SillyTavern preset has "Enable function calling" turned off (custom presets often save it off). Turn on "Enable function calling" in AI Response Configuration and save your preset.',
+        };
+    }
+    if (postProc && !postProc.endsWith('_tools')) {
+        return {
+            supported: false,
+            code: 'preset-postproc-no-tools',
+            reason: `Your active SillyTavern preset uses Prompt Post-Processing ("${postProc}") which strips function tools. Switch Prompt Post-Processing to "None" or a "(with tools)" mode in AI Response Configuration and save your preset.`,
+        };
+    }
+    return {
+        supported: false,
+        code: 'host-unsupported',
+        reason: 'SillyTavern reports function tool calling is disabled for the active preset or model. Check "Enable function calling" and Prompt Post-Processing in AI Response Configuration.',
+    };
+}
+
+/** Insert outgoing system context before any trailing assistant prefill or assistant tool-call / tool-result chain. */
+export function insertPromptMessage(chat, message, { storedChat = null, generationType = null } = {}) {
+    const isContinue = typeof generationType === 'string' && generationType.trim().toLowerCase() === 'continue';
+    const lastStored = Array.isArray(storedChat) ? storedChat.findLast(m => m && !m.is_system) : null;
+    const storedTailText = !isContinue && lastStored && !lastStored.is_user && typeof lastStored.mes === 'string'
+        ? lastStored.mes.trim()
+        : '';
+    const isCommittedTail = entry => {
+        if (!storedTailText || typeof entry?.content !== 'string') return false;
+        const trimmed = entry.content.trim();
+        return trimmed === storedTailText || trimmed.endsWith(`: ${storedTailText}`);
+    };
     let index = chat.length;
-    while (index > 0) {
-        const prev = chat[index -1];
-        if (prev?.role === 'tool' || (prev?.role === 'assistant' && Array.isArray(prev.tool_calls) && prev.tool_calls.length > 0)) {
+    if (index > 0) {
+        const tail = chat[index - 1];
+        const hasToolCalls = Array.isArray(tail?.tool_calls) && tail.tool_calls.length > 0;
+        if (tail?.role === 'assistant' && !hasToolCalls && !isCommittedTail(tail)) {
             index--;
-        } else {
-            break;
         }
+    }
+    while (index > 0) {
+        const prev = chat[index - 1];
+        const isToolChain = prev?.role === 'tool'
+            || (prev?.role === 'assistant' && Array.isArray(prev.tool_calls) && prev.tool_calls.length > 0);
+        if (isToolChain) index--;
+        else break;
     }
     chat.splice(index, 0, message);
 }
@@ -83,10 +158,16 @@ export function readOnlyContextFor(owners) {
 export function createToolHub({ getContext, toolPolicy, onDiagnostic = null }) {
     const owners = new Map(),
         prompts = new WeakMap(),
-        bindings = createPromptBindings();
+        bindings = createPromptBindings(),
+        lifecycleSubscriptions = [];
     let subscription = null, unsubscribePolicy = null;
+    let foregroundGenerationType = null;
+    let auxiliaryTurnActive = false;
     let registeredNames = [];
     let lastRegisteredSig = '';
+    const auxiliaryActive = (data = null) => data?.type !== undefined
+        ? isAuxiliaryGeneration(data.type)
+        : (auxiliaryTurnActive || isAuxiliaryGeneration(foregroundGenerationType) || isRawPromptCall());
     const emitDiagnostic = (level, event, detail) => {
         try {
             onDiagnostic?.(level, 'model', event, detail);
@@ -191,7 +272,7 @@ export function createToolHub({ getContext, toolPolicy, onDiagnostic = null }) {
                     description: explicit ? `${baseTool.description} Specify companionId matching the target UUID.`
                         : baseTool.description,
                     parameters: variants.length === 1 ? variants[0] : { oneOf: variants },
-                    shouldRegister: () => available().length > 0,
+                    shouldRegister: () => !auxiliaryActive() && available().length > 0,
                     formatMessage: () => `Preparing ${baseTool.displayName.toLowerCase()}`,
                     stealth: false,
                     action: async args => dispatchToTarget(baseTool.name, args),
@@ -214,7 +295,7 @@ export function createToolHub({ getContext, toolPolicy, onDiagnostic = null }) {
             displayName: 'Companion presentation',
             description: `${[...new Set(targets.map(o=>o.description??TOOL_DESCRIPTION))].join('\n')} When several companions are enabled, companionId is required and must match the listed UUID. Group models may update only their speaking member’s companion.`,
             parameters: variants.length === 1 ? variants[0] : { oneOf: variants },
-            shouldRegister: () => available().length > 0,
+            shouldRegister: () => !auxiliaryActive() && available().length > 0,
             formatMessage: () => 'Preparing targeted companion presentation',
             stealth: false,
             action: async args => dispatchToTarget(TOOL_NAME, args)
@@ -227,7 +308,7 @@ export function createToolHub({ getContext, toolPolicy, onDiagnostic = null }) {
         if (previous && data.chat.includes(previous)) data.chat.splice(data.chat.indexOf(previous), 1);
         prompts.delete (data.chat);
         bindings.restore(data.chat);
-        if (!sharingAllowed()) return;
+        if (auxiliaryActive(data) || !sharingAllowed()) return;
         const unique = new Map();
         for (const owner of owners.values())
             if (owner.describeAvailable?.() && owner.record()?.definition) {
@@ -256,9 +337,11 @@ export function createToolHub({ getContext, toolPolicy, onDiagnostic = null }) {
             }
             return content;
         });
+        const hostContext = getContext();
+        const insertOptions = { storedChat: hostContext?.chat, generationType: foregroundGenerationType };
         if (!writable) {
             const injected = { role: 'system', content: readOnlyContextFor(targets) };
-            insertPromptMessage(data.chat, injected);
+            insertPromptMessage(data.chat, injected, insertOptions);
             prompts.set(data.chat, injected);
             return;
         }
@@ -271,7 +354,7 @@ export function createToolHub({ getContext, toolPolicy, onDiagnostic = null }) {
             includeScene: sceneAllowed }),
             hasSource = targets.some(o => (o.state?.() ?? o.record()).definition.schemaVersion === 2);
         if (scoped) {
-            const ctx = getContext();
+            const ctx = hostContext;
             const anyPrepared = targets.some(owner => Boolean(owner.state?.()?.prepared));
             const injected = {
                 role: 'system',
@@ -301,10 +384,11 @@ export function createToolHub({ getContext, toolPolicy, onDiagnostic = null }) {
                         : {}),
                     ...(sceneAllowed && context.stage ? { stage: context.stage } : {}),
                     rules: anyPrepared ? 'Avatar updates for this turn are already prepared. Write the character narrative reply now without calling avatar tools again.'
-                        : 'If updating the avatar, call the needed tool(s) first with no narrative prose, then write the character reply after the tool result returns.',
+                        : 'If updating the avatar, call the needed tool(s) first with no narrative prose, then write the character reply after the tool result returns.'
+                            + (sceneAllowed ? ' When the narrative moves to or establishes a setting or time of day different from current.scene, include lpc_scene.' : ''),
                 })
             };
-            insertPromptMessage(data.chat, injected);
+            insertPromptMessage(data.chat, injected, insertOptions);
             prompts.set(data.chat, injected);
             return;
         }
@@ -350,7 +434,7 @@ export function createToolHub({ getContext, toolPolicy, onDiagnostic = null }) {
                     : '') +'Use explicit companionId for multiple targets and all group updates. Only established changes, never imagined/attempted changes. partySceneId moves only the targeted companion between listed visual scenes; no automatic inference from backdrops, and no UI layout control. Group targets are restricted to the speaking member. Prepared state is not yet applied. Application requires verified tool records and an accepted final response. Scene/pose/prop imply no story outcome. No inspection call needed.',
             })
         };
-        insertPromptMessage(data.chat, injected);
+        insertPromptMessage(data.chat, injected, insertOptions);
         prompts.set(data.chat, injected);
     }
     const policyChanged = () => {
@@ -382,6 +466,17 @@ export function createToolHub({ getContext, toolPolicy, onDiagnostic = null }) {
             }
             return out;
         },
+        noteGeneration(type) {
+            if (type === null || type === undefined) {
+                foregroundGenerationType = null;
+                auxiliaryTurnActive = false;
+            } else if (isAuxiliaryGeneration(type)) {
+                auxiliaryTurnActive = true;
+            } else if (typeof type === 'string') {
+                foregroundGenerationType = type;
+                auxiliaryTurnActive = false;
+            }
+        },
         refresh: register,
         update(key, owner) {
             owners.set(key, owner);
@@ -398,6 +493,50 @@ export function createToolHub({ getContext, toolPolicy, onDiagnostic = null }) {
             if (!event) return;
             context.eventSource.on(event, prompt);
             subscription = [context.eventSource, event];
+            const onGenStarted = (type, _options, dryRun) => {
+                if (dryRun) return;
+                if (isAuxiliaryGeneration(type)) {
+                    auxiliaryTurnActive = true;
+                } else {
+                    foregroundGenerationType = typeof type === 'string' ? type : 'normal';
+                    auxiliaryTurnActive = false;
+                }
+            };
+            const onGenEnded = () => {
+                if (auxiliaryTurnActive) {
+                    auxiliaryTurnActive = false;
+                    return;
+                }
+                foregroundGenerationType = null;
+            };
+            const onGenStopped = () => {
+                auxiliaryTurnActive = false;
+                foregroundGenerationType = null;
+            };
+            const onSettingsReady = settingsData => {
+                if (!isAuxiliaryGeneration(settingsData?.type)) return;
+                auxiliaryTurnActive = false;
+                const messages = settingsData?.messages;
+                if (!Array.isArray(messages)) return;
+                const previous = prompts.get(messages);
+                if (previous && messages.includes(previous)) {
+                    messages.splice(messages.indexOf(previous), 1);
+                }
+                prompts.delete (messages);
+                bindings.restore(messages);
+            };
+            for (const [name, fn] of [
+                ['GENERATION_STARTED', onGenStarted],
+                ['GENERATION_ENDED', onGenEnded],
+                ['GENERATION_STOPPED', onGenStopped],
+                ['CHAT_COMPLETION_SETTINGS_READY', onSettingsReady],
+            ]) {
+                const evt = context.eventTypes?.[name];
+                if (evt && typeof context.eventSource?.on === 'function') {
+                    context.eventSource.on(evt, fn);
+                    lifecycleSubscriptions.push([context.eventSource, evt, fn]);
+                }
+            }
             register();
         },
         stop() {
@@ -408,6 +547,11 @@ export function createToolHub({ getContext, toolPolicy, onDiagnostic = null }) {
                 subscription[0].removeListener(subscription[1], prompt);
                 subscription = null;
             }
+            for (const [src, evt, fn] of lifecycleSubscriptions.splice(0)) {
+                src.removeListener?.(evt, fn);
+            }
+            foregroundGenerationType = null;
+            auxiliaryTurnActive = false;
             owners.clear();
             registeredNames = [];
             lastRegisteredSig = '';

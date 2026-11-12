@@ -3,7 +3,7 @@ import {createFullCatalog} from '../src/catalog/full-catalog.mjs';import {create
 import {createDefinition as curatedDefinition} from '../src/state/defaults.mjs';
 import {changeBodyType} from '../src/state/wardrobe.mjs';
 import {upgradeCuratedDefinitionToSource,sourceDraft} from '../src/state/source-draft.mjs';
-import {readCloset,addClosetEntry,removeClosetEntry,seedClosetFromDefinition,describeClosetForModel,applyModelClosetChanges} from '../src/state/closet.mjs';
+import {readCloset,addClosetEntry,removeClosetEntry,toggleClosetLayer,seedClosetFromDefinition,describeClosetForModel,applyModelClosetChanges} from '../src/state/closet.mjs';
 import {readRepertoire,presetRepertoire,applyRepertoireToDefinition} from '../src/state/repertoire.mjs';
 import {createSourcePackages} from '../src/state/source-packages.mjs';
 import {initializeState as initializeCurated,appendChange as appendCurated,reconstruct as replayCurated} from '../src/state/history.mjs';
@@ -202,4 +202,74 @@ test('v2 closet and repertoire persist in definitions, snapshots, history and pa
  const reimported=pkgs.importDocument(JSON.stringify(configPkg),uuid());
  assert.deepEqual(reimported.definition.closet,applied.closet);
  assert.deepEqual(reimported.definition.repertoire,applied.repertoire);
+});
+
+test('generator import and studio draft auto-fallback from idle to walk for sleeveless outfits without idle sheets',async()=>{
+ const baseFixture=JSON.parse(await readFile(new URL('test/fixtures/generator-default.json',root),'utf8'));
+ baseFixture.selections.clothes={itemId:'torso_clothes_sleeveless',variant:'navy',name:'Sleeveless (navy)'};
+ baseFixture.selections.hat={itemId:'hat_formal_crown',variant:'crown_gold',name:'Crown (crown_gold)'};
+ const sleevelessExport=JSON.stringify(baseFixture);
+ const imported=state.importDefinition(sleevelessExport,uuid(),{restActionId:'idle',restFrame:0,facing:'south'});
+ assert.equal(imported.definition.outfits[0].rest.actionId,'walk');
+ assert.equal(imported.definition.outfits[0].rest.frame,0);
+ assert.equal(imported.definition.startingPresentation.playback.actionId,'walk');
+ assert.equal(imported.definition.outfits[0].selections.clothes.itemId,'torso_clothes_sleeveless');
+ assert.equal(imported.definition.outfits[0].selections.hat.itemId,'hat_formal_crown');
+ assert(imported.warnings.some(w=>w.code==='fallback_rest_action'&&w.requestedActionId==='idle'&&w.actionId==='walk'));
+
+ // Explicit non-idle poses or pixel-availability gaps must still fail loudly during generator import rather than silently falling back.
+ assert.throws(
+  ()=>state.importDefinition(sleevelessExport,uuid(),{restActionId:'1h_halfslash',restFrame:5,facing:'east'}),
+  /no required layers|outside its source layout/
+ );
+ const strictPlanState=createFullState(catalog,{
+  validatePlan(plan){
+   if(plan.action==='idle'){
+    const err=new Error('Source pose is incomplete in this view.');
+    err.code='incomplete_pose';
+    throw err;
+   }
+  }
+ });
+ const defaultExportText=await readFile(new URL('test/fixtures/generator-default.json',root),'utf8');
+ assert.throws(
+  ()=>strictPlanState.importDefinition(defaultExportText,uuid(),{restActionId:'idle',restFrame:0,facing:'north'}),
+  /incomplete/
+ );
+
+ const idleSeed=state.createDefinition(sourceFixture(metadata,'torso_clothes_tshirt','male'),uuid(),{restActionId:'idle'});
+ const draft=sourceDraft(idleSeed,catalog);
+ draft.setItem('clothes','torso_clothes_sleeveless');
+ assert.ok(draft.consumeNotices().some(msg=>/Resting pose adjusted to "walk"/.test(msg)));
+ draft.setItem('hat','hat_formal_crown');
+ const canonical=state.validateDefinition(draft.canonicalize());
+ assert.equal(canonical.outfits[0].rest.actionId,'walk');
+ assert.equal(canonical.startingPresentation.playback.actionId,'walk');
+ assert.equal(canonical.outfits[0].selections.clothes.itemId,'torso_clothes_sleeveless');
+ assert.equal(canonical.outfits[0].selections.hat.itemId,'hat_formal_crown');
+
+ // Explicit manual selection of an unsupported resting pose in Studio still fails validation rather than being silently overwritten.
+ draft.rest('idle',0);
+ assert.throws(()=>state.validateDefinition(draft.canonicalize()),/no required layers/);
+
+ // Closet equip (UI toggleClosetLayer and model applyModelClosetChanges) also reconciles rest.actionId from idle -> walk.
+ const withClosetSleeveless=structuredClone(idleSeed);
+ const outfitId=withClosetSleeveless.outfits[0].id;
+ seedClosetFromDefinition(withClosetSleeveless,catalog,null);
+ addClosetEntry(withClosetSleeveless,{slot:'clothes',itemId:'torso_clothes_sleeveless',variant:'navy',colors:{}},catalog,null);
+ const closetList=readCloset(withClosetSleeveless,catalog,null);
+ const sleevelessEntry=closetList.find(e=>e.itemId==='torso_clothes_sleeveless');
+ assert.ok(sleevelessEntry);
+ const toggled=state.validateDefinition(toggleClosetLayer(withClosetSleeveless,outfitId,sleevelessEntry,catalog,null));
+ assert.equal(toggled.outfits[0].selections.clothes.itemId,'torso_clothes_sleeveless');
+ assert.equal(toggled.outfits[0].rest.actionId,'walk');
+ assert.equal(toggled.startingPresentation.playback.actionId,'walk');
+
+ const desc=describeClosetForModel(withClosetSleeveless,outfitId,catalog,null);
+ const sleevelessModelItem=desc.closet.find(c=>c.itemId==='torso_clothes_sleeveless');
+ assert.ok(sleevelessModelItem);
+ const modelEquipped=state.validateDefinition(applyModelClosetChanges(withClosetSleeveless,outfitId,{wear:[sleevelessModelItem.id]},catalog,null));
+ assert.equal(modelEquipped.outfits[0].selections.clothes.itemId,'torso_clothes_sleeveless');
+ assert.equal(modelEquipped.outfits[0].rest.actionId,'walk');
+ assert.equal(modelEquipped.startingPresentation.playback.actionId,'walk');
 });

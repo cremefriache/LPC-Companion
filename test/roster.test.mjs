@@ -169,3 +169,21 @@ test('a captured group save stays targeted to its original file after the user s
     await a.view.commit(a.active,{definition:record.definition,presentation:{...record.presentation,outfitId:'summer'}});
     assert.equal(env.disk.get(a.active.chatLocator)[0].chat_metadata.lpc_companion_roster.companions[0].state.presentation.outfitId,'summer');assert.deepEqual(env.disk.get('other-chat'),[{chat_metadata:other}]);assert.deepEqual(env.getContext().chatMetadata,other);
 });
+
+test('removing a roster companion deletes only its chat snapshot while preserving source cards and allowing re-add',async()=>{
+    const env=environment(true),sourceBefore=structuredClone(env.cards),a=await add(env,'A.png'),b=await add(env,'B.png');
+    assert.equal(env.manager.get(a.active).roster.companions.length,2);
+    await assert.rejects(env.manager.remove(a.active,'nonexistent'),/not in this roster/);
+    await env.manager.remove(a.active,a.id);
+    assert.equal(env.manager.get(a.active).roster.companions.length,1);
+    assert.equal(env.manager.get(a.active).roster.companions[0].companionId,b.id);
+    assert.equal(env.manager.facade(a.active,a.id).get(),undefined);
+    assert.deepEqual(env.cards,sourceBefore);
+    await env.manager.remove(a.active,b.id);
+    assert.equal(env.manager.get(a.active).roster.companions.length,0);
+    assert.deepEqual(env.disk.get(a.active.chatLocator)[0].chat_metadata.lpc_companion_roster.companions,[]);
+    const readded=await add(env,'A.png');
+    assert.notEqual(readded.id,a.id);
+    assert.equal(env.manager.get(a.active).roster.companions.length,1);
+    assert.deepEqual(env.cards,sourceBefore);
+});

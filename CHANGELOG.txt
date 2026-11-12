@@ -1,6 +1,19 @@
 LPC Companion — What's New
 ==========================
 
+Version 0.2.1 (2026-11-11)
+--------------------------
+AI Presets & Extension Compatibility:
+- Works cleanly with assistant-prefill presets: Companion appearance updates now stay ahead of trailing assistant prefills and reasoning starters so community presets and strict chat providers accept requests without role-order errors.
+- Leaves background memory extensions undisturbed: Summarizer, memory, and quiet background prompts now run without companion instructions or avatar tools, while preserving message metadata used by third-party memory extensions.
+- Clearer preset readiness guidance: Turning on model tool calls now warns right in settings when your active SillyTavern preset has function calling turned off or uses a prompt post-processing mode that strips tools.
+- Smarter scene backdrop updates: Improved scene-tool guidance so models switch between woodland, hearth, courtyard, and plain backdrops more reliably when the story moves to a new location or time of day.
+
+Wardrobe, Party & Mobile Polish:
+- Smooth support for classic sleeveless garments: Importing or equipping classic garments that ship walking art without a separate standing-idle sheet now automatically selects a matching standing frame and explains the adjustment.
+- Remove extra companions right from Party view: Added a confirmation-guarded "Remove from chat" button directly inside the shared companion workspace (leaving the original character card untouched) alongside clearer management labels.
+- Steady companion size when pinch-zooming: Zooming in to read chat text on phones or trackpads now keeps floating companion panels and compact launchers comfortably sized instead of enlarging them over the conversation.
+
 Version 0.2.0 (2026-11-10)
 --------------------------
 Performance & Memory:

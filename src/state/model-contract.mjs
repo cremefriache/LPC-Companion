@@ -147,7 +147,7 @@ export function scopedToolsFor(
         tools.push({
             name: 'lpc_scene',
             displayName: 'Companion stage scene',
-            description: 'Change the stage backdrop and optional time-of-day lighting when the setting changes. Call before writing narrative text; write the reply after the tool result.',
+            description: 'Update the stage backdrop and optional time-of-day lighting whenever the narrative establishes or moves to a different setting ("woodland" = forest, trail, park, garden, outdoors in nature; "hearth" = indoor room, tavern, cabin, fireplace; "courtyard" = stone plaza, town street, archway, castle; "plain" = neutral or abstract space) or time of day ("day", "dusk", "night"). Call before writing narrative text; write the reply after the tool result.',
             parameters: {
                 type: 'object',
                 additionalProperties: false,

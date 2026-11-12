@@ -156,12 +156,15 @@ export function createRosterStorage({
             for (let i = 0; i < context.chat.length; i++) {
                 const receipt = messages[i]?.extra?.[MESSAGE_KEY];
                 if (!receipt) continue;
-                context.chat[i].extra = { ...context.chat[i].extra, [MESSAGE_KEY]: structuredClone(receipt) };
+                if (!context.chat[i].extra || typeof context.chat[i].extra !== 'object') context.chat[i].extra = {};
+                context.chat[i].extra[MESSAGE_KEY] = structuredClone(receipt);
                 const index = context.chat[i].swipe_id,
                     swipe = context.chat[i].swipe_info?.[index],
                     value = messages[i]?.swipe_info?.[index]?.extra?.[MESSAGE_KEY];
-                if (swipe && value)
-                    swipe.extra = { ...swipe.extra, [MESSAGE_KEY]: structuredClone(value) };
+                if (swipe && value) {
+                    if (!swipe.extra || typeof swipe.extra !== 'object') swipe.extra = {};
+                    swipe.extra[MESSAGE_KEY] = structuredClone(value);
+                }
             }
         }
         return roster;

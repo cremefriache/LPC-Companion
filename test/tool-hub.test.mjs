@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { webcrypto } from 'node:crypto';
 import { createDefinition } from '../src/state/defaults.mjs';
 import { createModelControl } from '../src/adapter/model-control.mjs';
-import { createToolHub } from '../src/adapter/tool-hub.mjs';
+import { createToolHub, inspectHostToolReadiness, insertPromptMessage } from '../src/adapter/tool-hub.mjs';
 import { readChatContext } from '../src/adapter/context.mjs';
 import { readRosterContext,rosterKey } from '../src/adapter/roster-context.mjs';
 import { matchesMemberResponse } from '../src/state/model-contract.mjs';
@@ -16,7 +16,7 @@ function fixture(group=false,defer=false,toolPolicy){
     const ids=['11111111-1111-4111-8111-111111111111','22222222-2222-4222-8222-222222222222'];
     const records=ids.map(id=>{const definition=createDefinition(id);return {definition,presentation:structuredClone(definition.startingPresentation),binding:{}};});
     const listeners=new Map(),tools=new Map(),applied=[];let generating=true,prepare=async()=>{},applyHook=async()=>{};
-    const names=['GENERATION_STARTED','CHAT_COMPLETION_PROMPT_READY','TOOL_CALLS_PERFORMED','MESSAGE_RECEIVED','GENERATION_ENDED','GENERATION_STOPPED','CHAT_CHANGED','MESSAGE_SWIPED','MESSAGE_DELETED','MESSAGE_SWIPE_DELETED','MESSAGE_EDITED','GROUP_WRAPPER_FINISHED'];
+    const names=['GENERATION_STARTED','CHAT_COMPLETION_PROMPT_READY','CHAT_COMPLETION_SETTINGS_READY','TOOL_CALLS_PERFORMED','MESSAGE_RECEIVED','GENERATION_ENDED','GENERATION_STOPPED','CHAT_CHANGED','MESSAGE_SWIPED','MESSAGE_DELETED','MESSAGE_SWIPE_DELETED','MESSAGE_EDITED','GROUP_WRAPPER_FINISHED'];
     const context={characterId:0,characters:[{avatar:'A.png'},{avatar:'B.png'}],groupId:group?'G':null,groups:[{id:'G',chat_id:'Chat',chats:['Chat'],members:['A.png','B.png']}],chatId:'Chat',chatMetadata:{integrity:ids[0]},getCurrentChatId:()=>context.chatId,chat:[],isToolCallingSupported:()=>true,canPerformToolCalls:type=>type==='normal',registerFunctionTool:tool=>tools.set(tool.name,tool),unregisterFunctionTool:name=>tools.delete(name),eventTypes:Object.fromEntries(names.map(name=>[name,name])),eventSource:{on(name,fn){if(!listeners.has(name))listeners.set(name,new Set());listeners.get(name).add(fn);},removeListener(name,fn){listeners.get(name)?.delete(fn);}}};
     const emit=async(name,...args)=>{for(const fn of [...listeners.get(name)??[]])await fn(...args);};
     const hub=createToolHub({getContext:()=>context,toolPolicy});hub.start();
@@ -176,4 +176,176 @@ test('outgoing live-state system prompt is inserted before trailing assistant to
     assert.equal(contData.companions[0].prepared.mood,'concerned');
     assert.match(contData.rules,/already prepared/i);
     f.dispose();
+});
+
+test('assistant prefill presets keep assistant prefill last and suppress quiet/impersonate generations',async()=>{
+    const prefs=policy({toolScope:'scene'}),f=fixture(false,false,prefs);f.controllers[1].dispose();await f.begin(0);
+    assert.ok(f.tools.has('lpc_scene'));
+    assert.match(f.tools.get('lpc_scene').description,/woodland.*hearth.*courtyard/i);
+
+    const prefillInitial={
+        chat:[
+            {role:'user',content:'Let us head into the forest.'},
+            {role:'assistant',content:'*Aria '},
+        ],
+        dryRun:false,
+    };
+    await f.emit('CHAT_COMPLETION_PROMPT_READY',prefillInitial);
+    assert.deepEqual(prefillInitial.chat.map(m=>m.role),['user','system','assistant']);
+    assert.equal(prefillInitial.chat[2].content,'*Aria ');
+    const sceneRules=JSON.parse(prefillInitial.chat[1].content.split('\n')[1]).rules;
+    assert.match(sceneRules,/lpc_scene/);
+
+    const prepared=JSON.parse(await f.tools.get('lpc_scene').action({backgroundId:'woodland',lightId:'dusk'}));
+    assert.equal(prepared.status,'prepared');
+
+    const prefillCont={
+        chat:[
+            {role:'user',content:'Let us head into the forest.'},
+            {role:'assistant',content:'',tool_calls:[{id:'call_scene',type:'function',function:{name:'lpc_scene',arguments:'{"backgroundId":"woodland","lightId":"dusk"}'}}]},
+            {role:'tool',tool_call_id:'call_scene',content:JSON.stringify(prepared)},
+            {role:'assistant',content:'*Aria '},
+        ],
+        dryRun:false,
+    };
+    await f.emit('CHAT_COMPLETION_PROMPT_READY',prefillCont);
+    assert.deepEqual(prefillCont.chat.map(m=>m.role),['user','system','assistant','tool','assistant']);
+    assert.equal(prefillCont.chat.at(-1).content,'*Aria ');
+
+    // Quiet background generations (e.g. Cairn-Memory state/summarizer) neither register tools, inject LPC live state, nor discard active runs.
+    await f.emit('GENERATION_STARTED','quiet',{},false);
+    assert.equal(f.tools.get('lpc_scene').shouldRegister(),false);
+    const quietPrompt={chat:[{role:'user',content:'Summarize scene JSON only.'}],dryRun:false};
+    await f.emit('CHAT_COMPLETION_PROMPT_READY',quietPrompt);
+    assert.equal(quietPrompt.chat.length,1);
+    await f.emit('GENERATION_ENDED');
+
+    // Verify insertPromptMessage helper directly on standalone prefill, greeting+PHI, multi-turn, and continue shapes.
+    const raw=[{role:'system',content:'Sys'},{role:'user',content:'Hi'},{role:'assistant',content:'*Reply '}];
+    insertPromptMessage(raw,{role:'system',content:'LPC'});
+    assert.deepEqual(raw.map(m=>m.content),['Sys','Hi','LPC','*Reply ']);
+
+    const greetingPhiPrefill=[
+        {role:'system',content:'Main'},
+        {role:'assistant',content:'Welcome!'},
+        {role:'system',content:'Post-history instructions'},
+        {role:'assistant',content:'<think>\n'},
+    ];
+    insertPromptMessage(greetingPhiPrefill,{role:'system',content:'LPC'},{
+        storedChat:[{is_user:false,is_system:false,mes:'Welcome!'}],
+        generationType:'normal',
+    });
+    assert.deepEqual(greetingPhiPrefill.map(m=>m.content),['Main','Welcome!','Post-history instructions','LPC','<think>\n']);
+
+    const consecutiveCommitted=[
+        {role:'system',content:'Main'},
+        {role:'user',content:'Go ahead.'},
+        {role:'assistant',content:'First reply.'},
+        {role:'assistant',content:'Second reply.'},
+    ];
+    insertPromptMessage(consecutiveCommitted,{role:'system',content:'LPC'},{
+        storedChat:[
+            {is_user:true,is_system:false,mes:'Go ahead.'},
+            {is_user:false,is_system:false,mes:'First reply.'},
+            {is_user:false,is_system:false,mes:'Second reply.'},
+        ],
+        generationType:'normal',
+    });
+    assert.deepEqual(consecutiveCommitted.map(m=>m.content),['Main','Go ahead.','First reply.','Second reply.','LPC']);
+
+    const consecutiveWithPrefill=[
+        {role:'system',content:'Main'},
+        {role:'user',content:'Go ahead.'},
+        {role:'assistant',content:'First reply.'},
+        {role:'assistant',content:'Second reply.'},
+        {role:'assistant',content:'<think>\n'},
+    ];
+    insertPromptMessage(consecutiveWithPrefill,{role:'system',content:'LPC'},{
+        storedChat:[
+            {is_user:true,is_system:false,mes:'Go ahead.'},
+            {is_user:false,is_system:false,mes:'First reply.'},
+            {is_user:false,is_system:false,mes:'Second reply.'},
+        ],
+        generationType:'normal',
+    });
+    assert.deepEqual(consecutiveWithPrefill.map(m=>m.content),['Main','Go ahead.','First reply.','Second reply.','LPC','<think>\n']);
+
+    const continueTurn=[
+        {role:'system',content:'Main'},
+        {role:'user',content:'Tell me more.'},
+        {role:'assistant',content:'Half-finished sentence'},
+    ];
+    insertPromptMessage(continueTurn,{role:'system',content:'LPC'},{
+        storedChat:[
+            {is_user:true,is_system:false,mes:'Tell me more.'},
+            {is_user:false,is_system:false,mes:'Half-finished sentence'},
+        ],
+        generationType:'continue',
+    });
+    assert.deepEqual(continueTurn.map(m=>m.content),['Main','Tell me more.','LPC','Half-finished sentence']);
+
+    // generateRawData skips GENERATION_STARTED; stack check and CHAT_COMPLETION_SETTINGS_READY keep raw/quiet prompts clean without clobbering active turns.
+    await f.begin(0);
+    async function generateRawData(){
+        assert.equal(f.tools.get('lpc_scene').shouldRegister(),false);
+        const rawChat=[{role:'system',content:'Return JSON [[LPC_OUTFIT]]'},{role:'user',content:'Extract memory'}];
+        await f.emit('CHAT_COMPLETION_PROMPT_READY',{chat:rawChat,dryRun:false});
+        return rawChat;
+    }
+    const rawMessages=await generateRawData();
+    assert.equal(rawMessages.length,2);
+    assert.equal(rawMessages[0].content,'Return JSON [[LPC_OUTFIT]]');
+
+    // Mid-stream quiet prompt where unblockGeneration('quiet') skips GENERATION_ENDED still clears via CHAT_COMPLETION_SETTINGS_READY.
+    await f.emit('GENERATION_STARTED','quiet',{},false);
+    assert.equal(f.tools.get('lpc_scene').shouldRegister(),false);
+    const midStreamQuiet=[{role:'user',content:'Summarize'}];
+    await f.emit('CHAT_COMPLETION_PROMPT_READY',{chat:midStreamQuiet,dryRun:false});
+    assert.equal(midStreamQuiet.length,1);
+    await f.emit('CHAT_COMPLETION_SETTINGS_READY',{type:'quiet',messages:midStreamQuiet});
+    assert.equal(f.tools.get('lpc_scene').shouldRegister(),true,'Foreground turn must remain active after mid-stream quiet prompt completes');
+
+    // Safety net: if a prompt was built before type='quiet' became visible, CHAT_COMPLETION_SETTINGS_READY strips injected context and restores bindings.
+    const fallbackQuiet=[{role:'user',content:'Outfit marker [[LPC_OUTFIT]]'}];
+    await f.emit('CHAT_COMPLETION_PROMPT_READY',{chat:fallbackQuiet,dryRun:false});
+    assert.equal(fallbackQuiet.length,2);
+    await f.emit('CHAT_COMPLETION_SETTINGS_READY',{type:'quiet',messages:fallbackQuiet});
+    assert.equal(fallbackQuiet.length,1);
+    assert.equal(fallbackQuiet[0].content,'Outfit marker [[LPC_OUTFIT]]');
+    f.dispose();
+});
+
+test('inspectHostToolReadiness diagnoses non-default preset function_calling and post-processing blockers',()=>{
+    assert.equal(inspectHostToolReadiness({isToolCallingSupported:()=>true}).supported,true);
+    const fcOff=inspectHostToolReadiness({
+        mainApi:'openai',
+        isToolCallingSupported:()=>false,
+        chatCompletionSettings:{function_calling:false,custom_prompt_post_processing:''},
+    });
+    assert.equal(fcOff.supported,false);
+    assert.equal(fcOff.code,'preset-function-calling-off');
+    assert.match(fcOff.reason,/Enable function calling/);
+
+    const postProc=inspectHostToolReadiness({
+        mainApi:'openai',
+        isToolCallingSupported:()=>false,
+        chatCompletionSettings:{function_calling:true,custom_prompt_post_processing:'semi'},
+    });
+    assert.equal(postProc.supported,false);
+    assert.equal(postProc.code,'preset-postproc-no-tools');
+    assert.match(postProc.reason,/semi/);
+
+    const both=inspectHostToolReadiness({
+        mainApi:'openai',
+        isToolCallingSupported:()=>false,
+        chatCompletionSettings:{function_calling:false,custom_prompt_post_processing:'strict'},
+    });
+    assert.equal(both.code,'preset-function-calling-and-postproc');
+
+    const wrongApi=inspectHostToolReadiness({
+        mainApi:'textgenerationwebui',
+        isToolCallingSupported:()=>false,
+        chatCompletionSettings:{function_calling:true},
+    });
+    assert.equal(wrongApi.code,'unsupported-api');
 });

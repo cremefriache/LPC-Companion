@@ -5,6 +5,7 @@ import { createDefinition } from '../src/state/defaults.mjs';
 import { initializeState, appendChange, reconstruct, MESSAGE_KEY } from '../src/state/history.mjs';
 import { createHostStorage } from '../src/adapter/storage.mjs';
 import { createContinuity } from '../src/adapter/continuity.mjs';
+import { createLifecycle } from '../src/adapter/lifecycle.mjs';
 import { exportCompanion, importCompanion } from '../src/state/packages.mjs';
 import { readFile } from 'node:fs/promises';
 
@@ -320,4 +321,78 @@ test('invalid identity/presentation cannot attach artwork; valid libraries survi
     await continuity.load(env.active); await continuity.resolve(env.active,'fork');
     assert.deepEqual(env.getBinding().embeddedAssets,embeddedAssets);
     assert.notEqual(env.getBinding().definition.characterId,definition.characterId);
+});
+
+test('saveChat mutates message.extra in place so third-party memory extensions keep object identity and symbols', async () => {
+    const env = environment();
+    const ignoreSym = Symbol.for('ignore');
+    const originalExtra = env.getContext().chat[0].extra;
+    const originalSwipeExtra = env.getContext().chat[0].swipe_info[0].extra;
+    originalExtra.cairnSummary = 'kept';
+    originalExtra[ignoreSym] = true;
+    const trackedSet = new Set([originalExtra]);
+    const result = appendChange(initializeState(definition, uuid), env.getContext().chat, patch('summer'), uuid);
+    const record = { schemaVersion: 1, kind: 'chat-record', ownerAvatar: 'Card.png', ownerChat: 'A', state: result.state };
+    await env.storage.saveChat(env.active, 'user', record, result.messages, null);
+    assert.equal(env.getContext().chat[0].extra, originalExtra, 'message.extra object reference must remain identical');
+    assert.equal(env.getContext().chat[0].swipe_info[0].extra, originalSwipeExtra, 'swipe.extra object reference must remain identical');
+    assert.equal(trackedSet.has(env.getContext().chat[0].extra), true);
+    assert.equal(env.getContext().chat[0].extra[ignoreSym], true);
+    delete originalExtra[ignoreSym];
+    assert.equal(env.getContext().chat[0].extra[ignoreSym], undefined);
+});
+
+test('createLifecycle ignores asymmetric quiet generation batches without suppressing subsequent normal generation refreshes', async () => {
+    const listeners = new Map();
+    const names = ['APP_READY', 'CHAT_CHANGED', 'GENERATION_STARTED', 'GENERATION_ENDED', 'GENERATION_STOPPED', 'MESSAGE_SWIPED', 'MESSAGE_DELETED', 'MESSAGE_SWIPE_DELETED', 'MESSAGE_EDITED', 'CHARACTER_RENAMED', 'CHAT_RENAMED'];
+    const context = {
+        characterId: 0,
+        groupId: null,
+        characters: [{ avatar: 'Card.png' }],
+        chatId: 'A',
+        getCurrentChatId: () => 'A',
+        chatMetadata: { integrity: uuid() },
+        eventTypes: Object.fromEntries(names.map(n => [n, n])),
+        eventSource: {
+            on(n, fn) { if (!listeners.has(n)) listeners.set(n, new Set()); listeners.get(n).add(fn); },
+            removeListener(n, fn) { listeners.get(n)?.delete(fn); },
+        },
+    };
+    const emit = async (n, ...args) => { for (const fn of [...(listeners.get(n) ?? [])]) await fn(...args); };
+    let refreshes = 0, began = [];
+    const lifecycle = createLifecycle({
+        getContext: () => context,
+        window: { addEventListener() {}, removeEventListener() {} },
+        continuity: { whenIdle: async () => {}, beginGeneration: t => began.push(t), noteRename() {} },
+        createView: () => ({ refresh: async () => { refreshes++; }, cancelActions() {}, remove() {} }),
+    });
+    lifecycle.start();
+    assert.equal(refreshes, 0);
+
+    // 1. Group-chat double Generate('quiet') emits two GENERATION_STARTED('quiet') and one GENERATION_ENDED.
+    await emit('GENERATION_STARTED', 'quiet', {}, false);
+    await emit('GENERATION_STARTED', 'quiet', {}, false);
+    await emit('GENERATION_ENDED');
+    assert.equal(refreshes, 0);
+    assert.deepEqual(began, []);
+
+    // Next normal generation must NOT be swallowed by a leftover quiet counter.
+    await emit('GENERATION_STARTED', 'normal', {}, false);
+    await emit('GENERATION_ENDED');
+    assert.equal(refreshes, 1);
+    assert.deepEqual(began, ['normal']);
+
+    // 2. Mid-stream Generate('quiet') skips GENERATION_ENDED; foreground GENERATION_ENDED must still refresh.
+    await emit('GENERATION_STARTED', 'normal', {}, false);
+    await emit('GENERATION_STARTED', 'quiet', {}, false);
+    await emit('GENERATION_ENDED');
+    assert.equal(refreshes, 2);
+
+    // 3. Offline early-aborted Generate('quiet') without GENERATION_ENDED resets on next foreground turn.
+    await emit('GENERATION_STARTED', 'quiet', {}, false);
+    await emit('GENERATION_STARTED', 'normal', {}, false);
+    await emit('GENERATION_ENDED');
+    assert.equal(refreshes, 3);
+
+    lifecycle.stop();
 });

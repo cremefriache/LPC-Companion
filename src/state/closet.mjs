@@ -290,6 +290,7 @@ export function toggleClosetLayer(definition, outfitId, rawEntry, catalog, stora
 
     const draft = sourceDraft(clone, catalog);
     draft.select(outfitId);
+    draft.reconcileRestActions(outfitId);
     return draft.canonicalize();
 }
 
@@ -302,6 +303,7 @@ export function unequipOutfitSlot(definition, outfitId, slot, catalog, storage =
     outfit.selections = pruneUnsatisfiedDependents(outfit.selections, clone.identity.selections, catalog);
     const draft = sourceDraft(clone, catalog);
     draft.select(outfitId);
+    draft.reconcileRestActions(outfitId);
     return draft.canonicalize();
 }
 
@@ -438,5 +440,6 @@ export function applyModelClosetChanges(definition, outfitId, { wear = [], remov
 
     const draft = sourceDraft(clone, catalog);
     draft.select(outfitId);
+    draft.reconcileRestActions(outfitId);
     return draft.canonicalize();
 }

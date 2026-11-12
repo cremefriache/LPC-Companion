@@ -143,9 +143,9 @@ export function createSourceView({
         }
         if (next.dock && next.dock !== previous?.dock) {
             if (record) record.dock = next.dock;
+            const d = panel?.querySelector('[data-control=dock]');
+            if (d) d.value = next.dock;
             if (panel && !managed) {
-                const d = panel.querySelector('[data-control=dock]');
-                if (d) d.value = next.dock;
                 panel.dataset.dock = next.dock;
                 (next.dock === 'inline' ? root : document.body).append(panel);
                 tamaBehaviors?.sync();
@@ -733,6 +733,7 @@ export function createSourceView({
                 'dock'
             );
             dock.input.value = record.dock;
+            dock.input.disabled = Boolean(managed);
             dock.input.setAttribute('aria-label', 'Panel position');
             dock.wrap.classList.add('lpc-toolbar-dock', 'lpc-header-dock');
             dock.wrap.hidden = Boolean(managed);
@@ -920,6 +921,18 @@ export function createSourceView({
                 title: 'Appearance & Pose',
                 rightNode: el('p', 'Saved chat appearance', 'lpc-note lpc-group-note')
             });
+            const presentationForUpdatedOutfit = nextDef => {
+                try {
+                    return runtime.state.validatePresentation(nextDef, record.presentation, {});
+                } catch {
+                    const updatedOutfit = nextDef.outfits.find(o => o.id === record.presentation.outfitId) ?? nextDef.outfits[0];
+                    return {
+                        ...record.presentation,
+                        outfitId: updatedOutfit.id,
+                        playback: { mode: 'hold', ...updatedOutfit.rest },
+                    };
+                }
+            };
             liveClosetBar = createLiveClosetBar({
                 document,
                 window,
@@ -940,7 +953,7 @@ export function createSourceView({
                             runtime.catalog,
                             window.localStorage
                         );
-                        void render({ definition: nextDef, presentation: record.presentation });
+                        void render({ definition: nextDef, presentation: presentationForUpdatedOutfit(nextDef) });
                     } catch (e) {
                         status.textContent = e.message;
                     }
@@ -959,7 +972,7 @@ export function createSourceView({
                             runtime.catalog,
                             window.localStorage
                         );
-                        void render({ definition: nextDef, presentation: record.presentation });
+                        void render({ definition: nextDef, presentation: presentationForUpdatedOutfit(nextDef) });
                     } catch (e) {
                         status.textContent = e.message;
                     }
@@ -1208,11 +1221,18 @@ export function createSourceView({
         },
         setManagedDock(node) {
             managed = node;
+            const fallbackDock = preferences?.get().dock ?? record?.dock ?? sessions.get(active)?.dock ?? 'left';
+            if (record) record.dock = fallbackDock;
             if (panel) {
-                panel.dataset.dock = 'inline';
-                node.append(panel);
+                panel.dataset.dock = node ? 'inline' : fallbackDock;
+                (node ?? (fallbackDock === 'inline' ? root : document.body)).append(panel);
                 const dock = panel.querySelector('[data-control=dock]');
-                if (dock) dock.closest('label').hidden = true;
+                if (dock) {
+                    dock.value = fallbackDock;
+                    dock.disabled = Boolean(node);
+                    const label = dock.closest('label');
+                    if (label) label.hidden = Boolean(node);
+                }
                 tamaBehaviors?.sync();
                 player?.redraw();
             }

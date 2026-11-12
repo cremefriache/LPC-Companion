@@ -7,6 +7,8 @@ export function createLifecycle({ getContext, createView, createInactiveView, in
     let view = null;
     let key = null;
     let epoch = 0;
+    let foregroundGenerating = false;
+    let quietTurnPending = false;
     const subscriptions = [];
     function activeKey() {
         try { const active = readContext(getContext()); return active ? contextKey(active) : null; }
@@ -24,6 +26,8 @@ export function createLifecycle({ getContext, createView, createInactiveView, in
         const nextKey = active ? contextKey(active) : inactiveKey();
         if (nextKey !== key) {
             epoch++;
+            foregroundGenerating = false;
+            quietTurnPending = false;
             view?.remove();
             view = null;
             key = nextKey;
@@ -33,6 +37,8 @@ export function createLifecycle({ getContext, createView, createInactiveView, in
 
     function stop() {
         epoch++;
+        foregroundGenerating = false;
+        quietTurnPending = false;
         running = false;
         for (const [source, event, handler] of subscriptions.splice(0)) {
             source.removeListener(event, handler);
@@ -64,12 +70,19 @@ export function createLifecycle({ getContext, createView, createInactiveView, in
             const listen = (event, handler) => { if (event) { subscriptions.push([source, event, handler]); source.on(event, handler); } };
             listen(types.GENERATION_STARTED, async (type, _options, dryRun) => {
                 if(dryRun)return;
+                if(typeof type==='string'&&type.trim().toLowerCase()==='quiet'){if(!foregroundGenerating)quietTurnPending=true;return;}
+                foregroundGenerating=true;quietTurnPending=false;
                 const generationKey=activeKey(),generationEpoch=epoch;if(generationKey===null||generationKey!==key)return;
                 view?.cancelActions?.();await continuity.whenIdle();
                 if(running&&epoch===generationEpoch&&key===generationKey&&activeKey()===generationKey)continuity.beginGeneration(type);
             });
             for (const name of ['MESSAGE_SWIPED', 'MESSAGE_DELETED', 'MESSAGE_SWIPE_DELETED', 'MESSAGE_EDITED', 'GENERATION_ENDED', 'GENERATION_STOPPED']) {
                 listen(types[name], async () => {
+                    if (name === 'GENERATION_ENDED' || name === 'GENERATION_STOPPED') {
+                        if (quietTurnPending && !foregroundGenerating) { quietTurnPending = false; return; }
+                        foregroundGenerating = false;
+                        quietTurnPending = false;
+                    }
                     if (name === 'MESSAGE_DELETED' && isGenerating()) return;
                     view?.cancelActions?.(); await continuity.whenIdle(); await view?.refresh?.();
                 });

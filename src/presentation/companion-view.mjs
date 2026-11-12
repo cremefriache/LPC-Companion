@@ -318,9 +318,9 @@ export function createCompanionView({
         }
         if (next.dock && next.dock !== previous?.dock) {
             if (record) record.dock = next.dock;
+            const dockInput = panel?.querySelector('[data-control=dock]');
+            if (dockInput) dockInput.value = next.dock;
             if (panel && !managedDockTarget) {
-                const dockInput = panel.querySelector('[data-control=dock]');
-                if (dockInput) dockInput.value = next.dock;
                 panel.dataset.dock = next.dock;
                 (next.dock === 'inline' ? root : document.body).append(panel);
                 tamaBehaviors?.sync();
@@ -413,8 +413,10 @@ export function createCompanionView({
             'dock'
         );
         dock.input.value = record.dock;
+        dock.input.disabled = Boolean(managedDockTarget);
         dock.input.setAttribute('aria-label', 'Panel position');
         dock.wrap.classList.add('lpc-toolbar-dock', 'lpc-header-dock');
+        dock.wrap.hidden = Boolean(managedDockTarget);
         dock.input.onchange = () => {
             record.dock = dock.input.value;
             if (!managedDockTarget) preferences?.set({ dock: dock.input.value });
@@ -895,9 +897,9 @@ export function createCompanionView({
         player = createPlayer(canvas, stage, window);
         player.pause(record.paused);
         function updateAvailability() {
-            if (!record.definition || !record.presentation) return;
             dock.input.disabled = Boolean(managedDockTarget);
             dock.wrap.hidden = Boolean(managedDockTarget);
+            if (!record.definition || !record.presentation) return;
             editDefaults.disabled = applyDefaults.disabled = reset.disabled = !record.binding;
             outfit.input.disabled = posture.input.disabled = facing.input.disabled = mood.input.disabled = !record.binding;
             for (const input of liveScene.inputs) input.disabled = !record.binding;
@@ -2118,9 +2120,18 @@ export function createCompanionView({
         isOpen: () => Boolean(panel),
         setManagedDock(target) {
             managedDockTarget = target;
-            if (panel && target) {
-                panel.dataset.dock = 'inline';
-                target.append(panel);
+            const fallbackDock = preferences?.get().dock ?? record?.dock ?? sessions.get(active)?.dock ?? 'left';
+            if (record) record.dock = fallbackDock;
+            if (panel) {
+                panel.dataset.dock = target ? 'inline' : fallbackDock;
+                (target ?? (fallbackDock === 'inline' ? root : document.body)).append(panel);
+                const dockInput = panel.querySelector('[data-control=dock]');
+                if (dockInput) {
+                    dockInput.value = fallbackDock;
+                    dockInput.disabled = Boolean(target);
+                    const label = dockInput.closest('label');
+                    if (label) label.hidden = Boolean(target);
+                }
                 tamaBehaviors?.sync();
                 refreshAvailability?.();
             }

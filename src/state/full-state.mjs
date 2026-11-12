@@ -178,10 +178,44 @@ export function createFullState(catalog, { validatePlan = () => {}
         });
     }
     function importDefinition(text, characterId, options) {
-        const imported = importFullGenerator(text, catalog),
+        const imported = importFullGenerator(text, catalog);
+        const requestedAction = options?.restActionId;
+        let definition;
+        let fallbackWarning = null;
+        try {
             definition = createDefinition(imported.recipe, characterId, options);
+        } catch (primaryError) {
+            const canFallbackDefaultIdle = requestedAction === 'idle'
+                && Number(options?.restFrame ?? 0) === 0
+                && primaryError?.code === 'unavailable_action';
+            if (!canFallbackDefaultIdle) throw primaryError;
+            const checked = catalog.validateRecipe(imported.recipe);
+            const actions = catalog.resolvableActions(checked);
+            const candidates = [
+                ...(actions.includes('walk') ? ['walk'] : []),
+                ...actions.filter(id => id !== 'idle' && id !== 'walk'),
+            ];
+            for (const candidate of candidates) {
+                try {
+                    definition = createDefinition(imported.recipe, characterId, {
+                        ...options,
+                        restActionId: candidate,
+                        restFrame: 0,
+                    });
+                    fallbackWarning = {
+                        code: 'fallback_rest_action',
+                        requestedActionId: requestedAction,
+                        actionId: candidate,
+                        message: `Resting pose adjusted to "${candidate}" (frame 0) because this outfit has no "${requestedAction}" sheet.`,
+                    };
+                    break;
+                } catch { /* Try next resolvable candidate action. */ }
+            }
+            if (!definition) throw primaryError;
+        }
         definition.importProvenance = imported.provenance;
-        return { ...imported, definition: validateDefinition(definition) };
+        const warnings = fallbackWarning ? [...(imported.warnings ?? []), fallbackWarning] : (imported.warnings ?? []);
+        return { ...imported, warnings, definition: validateDefinition(definition) };
     }
     return Object.freeze({
         validateContract,

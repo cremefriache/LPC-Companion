@@ -15,7 +15,13 @@ import { readChatContext } from './context.mjs';
 import { sessionKey } from './session.mjs';
 import { equal } from '../state/history.mjs';
 import { makeUuid } from '../state/uuid.mjs';
-import { readOnlyContextFor, createPromptBindings, insertPromptMessage } from './tool-hub.mjs';
+import {
+    readOnlyContextFor,
+    createPromptBindings,
+    insertPromptMessage,
+    isAuxiliaryGeneration,
+    isRawPromptCall
+} from './tool-hub.mjs';
 
 /** Per-open-panel, opt-in tool owner. No provider requests or pending writes. */
 export function createModelControl({
@@ -51,9 +57,14 @@ export function createModelControl({
     let enabled = false,
         disposed = false,
         run = null,
+        standaloneGenType = null,
+        standaloneAuxActive = false,
         epoch = 0,
         tail = Promise.resolve(),
         endTimer = null;
+    const standaloneAux = (data = null) => data?.type !== undefined
+        ? isAuxiliaryGeneration(data.type)
+        : (standaloneAuxActive || isAuxiliaryGeneration(standaloneGenType) || isRawPromptCall());
     const clearEndTimer = () => {
         if (endTimer !== null) {
             clearTimeout(endTimer);
@@ -78,6 +89,8 @@ export function createModelControl({
     const available = () => baseAvailable() && canTarget();
     const cancel = () => {
         clearEndTimer();
+        standaloneGenType = null;
+        standaloneAuxActive = false;
         const pending = run;
         epoch++;
         run = null;
@@ -171,12 +184,20 @@ export function createModelControl({
     }
     listen('GENERATION_STARTED', (type, options, dryRun) => {
         if (dryRun) return;
+        if (typeof type === 'string' && type.trim().toLowerCase() === 'quiet') {
+            standaloneAuxActive = true;
+            return;
+        }
+        standaloneAuxActive = isAuxiliaryGeneration(type);
+        standaloneGenType = typeof type === 'string' ? type : 'normal';
         if (!available() && deferGroupAcceptance && baseAvailable() && run?.target && isGenerating()) {
             if (hub) register();
             return;
         }
-        if (!available() || !getContext().canPerformToolCalls?.(type)) {
+        if (isAuxiliaryGeneration(type) || !available() || !getContext().canPerformToolCalls?.(type)) {
             cancel();
+            standaloneAuxActive = isAuxiliaryGeneration(type);
+            standaloneGenType = typeof type === 'string' ? type : 'normal';
             if (hub) register();
             return;
         }
@@ -186,6 +207,7 @@ export function createModelControl({
             return;
         }
         cancel();
+        standaloneGenType = typeof type === 'string' ? type : 'normal';
         const record = getRecord();
         run = {
             id: makeUuid(crypto),
@@ -213,7 +235,7 @@ export function createModelControl({
             if (previous && data.chat.includes(previous)) data.chat.splice(data.chat.indexOf(previous), 1);
             prompts.delete (data.chat);
             promptBindings.restore(data.chat);
-            if (!sharingAllowed() || !contextAvailable() || (!toolPolicy && (!available() || !run))) return;
+            if (standaloneAux(data) || !sharingAllowed() || !contextAvailable() || (!toolPolicy && (!available() || !run))) return;
             const writable = available() && run;
             const state = writable ? run : getRecord();
             const outfit = state.definition.outfits.find(outfit => outfit.id === state.presentation.outfitId);
@@ -234,10 +256,20 @@ export function createModelControl({
                     { compact: isScoped(), includeScene: includeScene() }
                 ) : readOnlyContextFor([{ record: getRecord, label, contextDataFor }])
             };
-            insertPromptMessage(data.chat, injected);
+            insertPromptMessage(data.chat, injected, { storedChat: getContext()?.chat, generationType: standaloneGenType });
             prompts.set(data.chat, injected);
         }
     );
+    listen('CHAT_COMPLETION_SETTINGS_READY', settingsData => {
+        if (hub || !isAuxiliaryGeneration(settingsData?.type)) return;
+        standaloneAuxActive = false;
+        const messages = settingsData?.messages;
+        if (!Array.isArray(messages)) return;
+        const previous = prompts.get(messages);
+        if (previous && messages.includes(previous)) messages.splice(messages.indexOf(previous), 1);
+        prompts.delete (messages);
+        promptBindings.restore(messages);
+    });
     listen('TOOL_CALLS_PERFORMED', invocations => {
         if (!run || !available()) return;
         for (const invocation of invocations ?? []) {
@@ -302,6 +334,11 @@ export function createModelControl({
         }
     }
     listen('GENERATION_ENDED', () => {
+        if (standaloneAuxActive) {
+            standaloneAuxActive = false;
+            if (!run || !run.target) return;
+        }
+        standaloneGenType = null;
         if (deferGroupAcceptance) return;
         if (run && run.receipts.size && !run.target && !isGenerating()) {
             const pending = run;
@@ -364,7 +401,7 @@ export function createModelControl({
                     context.registerFunctionTool({
                         ...tool,
                         action: args => invoke(args, tool.name),
-                        shouldRegister: available,
+                        shouldRegister: () => !standaloneAux() && available(),
                         formatMessage: () => `Preparing ${tool.displayName.toLowerCase()}`,
                         stealth: false,
                     });
@@ -380,7 +417,7 @@ export function createModelControl({
                         { includeScene: includeScene(), compact: false }
                     ).schema,
                     action: args => invoke(args, TOOL_NAME),
-                    shouldRegister: available,
+                    shouldRegister: () => !standaloneAux() && available(),
                     formatMessage: () => 'Preparing companion presentation',
                     stealth: false
                 });

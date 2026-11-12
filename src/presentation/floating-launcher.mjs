@@ -11,6 +11,16 @@ const DEFAULT_TAMA_STAGE_HEIGHT = 176,
     MAX_TAMA_STAGE_HEIGHT = 440;
 const clamp = (v, min, max) => Math.max(min, Math.min(max, v));
 
+export function viewportScale(window) {
+    const s = window?.visualViewport?.scale;
+    return typeof s === 'number' && Number.isFinite(s) && s > 1.04 ? s : 1;
+}
+
+function layoutViewportWidth(window) {
+    const v = window?.visualViewport;
+    return window?.innerWidth || (v ? Math.round(v.width * viewportScale(window)) : 0);
+}
+
 function readSavedPosition(window) {
     try {
         const raw = window.localStorage.getItem(POSITION_KEY);
@@ -128,7 +138,7 @@ export function createFloatingLauncher({ document, window, onToggle, tamagotchi 
     }
     function applySizeVars() {
         if (!isTamagotchiEnabled) return;
-        const w = window.visualViewport?.width ?? window.innerWidth;
+        const w = layoutViewportWidth(window);
         if (w > 700) {
             button.style.setProperty('--lpc-tama-width', `${size.width}px`);
             button.style.setProperty('--lpc-tama-stage-height', `${Math.max(112,size.stageHeight-34)}px`);
@@ -139,22 +149,36 @@ export function createFloatingLauncher({ document, window, onToggle, tamagotchi 
     }
     function bounds() {
         const v = window.visualViewport,
+            scale = viewportScale(window),
+            invScale = 1 / scale,
             w = v?.width ?? window.innerWidth,
-            h = v?.height ?? window.innerHeight;
-        const useTama = isTamagotchiEnabled && w > 700;
-        const bw = useTama ? (button.offsetWidth || size.width || DEFAULT_TAMA_WIDTH) : SIZE,
-            bh = useTama ? (button.offsetHeight || (size.stageHeight +48) || 224) : SIZE;
+            h = v?.height ?? window.innerHeight,
+            margin = MARGIN * invScale;
+        const useTama = isTamagotchiEnabled && layoutViewportWidth(window) > 700;
+        const rawW = useTama ? (button.offsetWidth || size.width || DEFAULT_TAMA_WIDTH) : SIZE,
+            rawH = useTama ? (button.offsetHeight || (size.stageHeight +48) || 224) : SIZE,
+            bw = rawW * invScale,
+            bh = rawH * invScale;
         return {
-            left: (v?.offsetLeft ?? 0) +MARGIN,
-            top: (v?.offsetTop ?? 0) +MARGIN,
-            width: Math.max(0, w -bw -2 * MARGIN),
-            height: Math.max(0, h -bh -2 * MARGIN)
+            left: (v?.offsetLeft ?? 0) +margin,
+            top: (v?.offsetTop ?? 0) +margin,
+            width: Math.max(0, w -bw -2 * margin),
+            height: Math.max(0, h -bh -2 * margin),
+            invScale,
+            scale,
         };
     }
     function place() {
         if (disposed) return;
         applySizeVars();
         const b = bounds();
+        if (b.invScale < 0.999) {
+            button.dataset.zoomScaled = 'true';
+            button.style.setProperty('--lpc-vv-inv-scale', String(b.invScale));
+        } else {
+            delete button.dataset.zoomScaled;
+            button.style.removeProperty('--lpc-vv-inv-scale');
+        }
         button.style.left = (b.left +position.x * b.width) +'px';
         button.style.top = (b.top +position.y * b.height) +'px';
     }
@@ -213,25 +237,26 @@ export function createFloatingLauncher({ document, window, onToggle, tamagotchi 
     };
     button.onpointermove = event => {
         if (!drag || event.pointerId !== drag.id) return;
+        const scale = viewportScale(window), invScale = 1 / scale;
         const dx = event.clientX -drag.x, dy = event.clientY -drag.y;
-        if (!drag.moved && Math.hypot(dx, dy) < 6) return;
+        if (!drag.moved && Math.hypot(dx, dy) < 6 * invScale) return;
         drag.moved = true;
         event.preventDefault();
         if (drag.mode === 'resize') {
             button.dataset.resizing = 'true';
             const v = window.visualViewport,
-                vw = v?.width ?? window.innerWidth,
-                vh = v?.height ?? window.innerHeight;
+                vwScreen = (v?.width ?? window.innerWidth) * scale,
+                vhScreen = (v?.height ?? window.innerHeight) * scale;
             size = {
                 width: clamp(
-                    Math.round(drag.startSize.width +dx),
+                    Math.round(drag.startSize.width +dx * scale),
                     MIN_TAMA_WIDTH,
-                    Math.min(MAX_TAMA_WIDTH, vw -2 * MARGIN)
+                    Math.min(MAX_TAMA_WIDTH, Math.floor(vwScreen -2 * MARGIN))
                 ),
                 stageHeight: clamp(
-                    Math.round(drag.startSize.stageHeight +dy),
+                    Math.round(drag.startSize.stageHeight +dy * scale),
                     MIN_TAMA_STAGE_HEIGHT,
-                    Math.min(MAX_TAMA_STAGE_HEIGHT, vh -120)
+                    Math.min(MAX_TAMA_STAGE_HEIGHT, Math.floor(vhScreen -120))
                 ),
             };
             applySizeVars();
@@ -274,7 +299,7 @@ export function createFloatingLauncher({ document, window, onToggle, tamagotchi 
         }[event.key];
         if (!direction) return;
         event.preventDefault();
-        const b = bounds(), step = event.shiftKey ? 25 : 10;
+        const b = bounds(), step = (event.shiftKey ? 25 : 10) * b.invScale;
         position = {
             x: b.width ? clamp(position.x +direction[0] * step / b.width, 0, 1) : 0,
             y: b.height ? clamp(position.y +direction[1] * step / b.height, 0, 1) : 0
@@ -365,6 +390,7 @@ export function attachTamagotchiBehaviors({
     let position = readSavedPosition(window),
         size = readSavedSize(window),
         drag = null,
+        zoomPinned = false,
         suppressStageClick = false,
         suppressTimer = null,
         disposed = false;
@@ -372,15 +398,20 @@ export function attachTamagotchiBehaviors({
 
     function bounds() {
         const v = window.visualViewport,
+            scale = viewportScale(window),
+            invScale = 1 / scale,
             w = v?.width ?? window.innerWidth,
-            h = v?.height ?? window.innerHeight;
-        const pw = panel.offsetWidth || size.width || DEFAULT_TAMA_WIDTH;
-        const ph = panel.offsetHeight || (size.stageHeight +96) || 272;
+            h = v?.height ?? window.innerHeight,
+            margin = MARGIN * invScale;
+        const pw = (panel.offsetWidth || size.width || DEFAULT_TAMA_WIDTH) * invScale;
+        const ph = (panel.offsetHeight || (size.stageHeight +96) || 272) * invScale;
         return {
-            left: (v?.offsetLeft ?? 0) +MARGIN,
-            top: (v?.offsetTop ?? 0) +MARGIN,
-            width: Math.max(0, w -pw -2 * MARGIN),
-            height: Math.max(0, h -ph -2 * MARGIN),
+            left: (v?.offsetLeft ?? 0) +margin,
+            top: (v?.offsetTop ?? 0) +margin,
+            width: Math.max(0, w -pw -2 * margin),
+            height: Math.max(0, h -ph -2 * margin),
+            invScale,
+            scale,
         };
     }
 
@@ -388,22 +419,46 @@ export function attachTamagotchiBehaviors({
         if (!isFloatingTama()) return;
         panel.style.setProperty('--lpc-tama-width', `${size.width}px`);
         panel.style.setProperty('--lpc-tama-stage-height', `${size.stageHeight}px`);
-        if (position.saved || panel.dataset.tamaPlaced === 'true') {
+        const b = bounds();
+        const zoomed = b.invScale < 0.999;
+        if (zoomed) {
+            panel.dataset.zoomScaled = 'true';
+            panel.style.setProperty('--lpc-vv-inv-scale', String(b.invScale));
+        } else {
+            delete panel.dataset.zoomScaled;
+            panel.style.removeProperty('--lpc-vv-inv-scale');
+        }
+        const manuallyPlaced = position.saved || (panel.dataset.tamaPlaced === 'true' && !zoomPinned);
+        if (manuallyPlaced) {
+            zoomPinned = false;
             panel.dataset.tamaPlaced = 'true';
-            const b = bounds();
             panel.style.left = `${Math.round(b.left+position.x*b.width)}px`;
             panel.style.top = `${Math.round(b.top+position.y*b.height)}px`;
+        } else if (zoomed) {
+            zoomPinned = true;
+            panel.dataset.tamaPlaced = 'true';
+            const defaultX = panel.dataset.dock === 'right' && layoutViewportWidth(window) > 700 ? 1 : 0;
+            panel.style.left = `${Math.round(b.left+defaultX*b.width)}px`;
+            panel.style.top = `${Math.round(b.top+0.06*b.height)}px`;
+        } else if (zoomPinned) {
+            zoomPinned = false;
+            delete panel.dataset.tamaPlaced;
+            panel.style.removeProperty('left');
+            panel.style.removeProperty('top');
         }
     }
 
     function sync() {
         if (disposed) return;
         if (!isFloatingTama()) {
+            zoomPinned = false;
             delete panel.dataset.tamaPlaced;
+            delete panel.dataset.zoomScaled;
             delete panel.dataset.dragging;
             delete panel.dataset.resizing;
             panel.style.removeProperty('left');
             panel.style.removeProperty('top');
+            panel.style.removeProperty('--lpc-vv-inv-scale');
             panel.style.removeProperty('--lpc-tama-width');
             panel.style.removeProperty('--lpc-tama-stage-height');
             onRedraw?.();
@@ -479,26 +534,28 @@ export function attachTamagotchiBehaviors({
 
     panel.addEventListener('pointermove', event => {
         if (!drag || event.pointerId !== drag.id || !isFloatingTama()) return;
+        const scale = viewportScale(window), invScale = 1 / scale;
         const dx = event.clientX -drag.x, dy = event.clientY -drag.y;
-        if (!drag.moved && Math.hypot(dx, dy) < 6) return;
+        if (!drag.moved && Math.hypot(dx, dy) < 6 * invScale) return;
         drag.moved = true;
+        zoomPinned = false;
         panel.dataset.tamaPlaced = 'true';
         event.preventDefault();
         if (drag.mode === 'resize') {
             panel.dataset.resizing = 'true';
             const v = window.visualViewport,
-                vw = v?.width ?? window.innerWidth,
-                vh = v?.height ?? window.innerHeight;
+                vwScreen = (v?.width ?? window.innerWidth) * scale,
+                vhScreen = (v?.height ?? window.innerHeight) * scale;
             size = {
                 width: clamp(
-                    Math.round(drag.startSize.width +dx),
+                    Math.round(drag.startSize.width +dx * scale),
                     MIN_TAMA_WIDTH,
-                    Math.min(MAX_TAMA_WIDTH, vw -2 * MARGIN)
+                    Math.min(MAX_TAMA_WIDTH, Math.floor(vwScreen -2 * MARGIN))
                 ),
                 stageHeight: clamp(
-                    Math.round(drag.startSize.stageHeight +dy),
+                    Math.round(drag.startSize.stageHeight +dy * scale),
                     MIN_TAMA_STAGE_HEIGHT,
-                    Math.min(MAX_TAMA_STAGE_HEIGHT, vh -120)
+                    Math.min(MAX_TAMA_STAGE_HEIGHT, Math.floor(vhScreen -120))
                 ),
             };
             panel.style.setProperty('--lpc-tama-width', `${size.width}px`);
@@ -533,8 +590,12 @@ export function attachTamagotchiBehaviors({
         if (drag) release({ pointerId: drag.id });
         if (isFloatingTama()) applyPlacement();
     };
+    const onViewportScroll = () => {
+        if (isFloatingTama()) applyPlacement();
+    };
     window.addEventListener('resize', onWindowResize);
     window.visualViewport?.addEventListener('resize', onWindowResize);
+    window.visualViewport?.addEventListener('scroll', onViewportScroll);
 
     sync();
     return {
@@ -545,6 +606,7 @@ export function attachTamagotchiBehaviors({
             if (suppressTimer !== null) window.clearTimeout(suppressTimer);
             window.removeEventListener('resize', onWindowResize);
             window.visualViewport?.removeEventListener('resize', onWindowResize);
+            window.visualViewport?.removeEventListener('scroll', onViewportScroll);
         },
     };
 }

@@ -339,4 +339,10 @@ test('sanitizeUiConfig allowlists explicit uiConfig booleans and setup modes whi
         },
     );
     assert.deepEqual(sanitizeUiConfig({ defaultSetupMode: 'unknown', tamagotchiLauncher: 'yes' }), {});
+
+    const { viewportScale } = await import('../src/presentation/floating-launcher.mjs');
+    assert.equal(viewportScale({ visualViewport: { scale: 1 } }), 1);
+    assert.equal(viewportScale({ visualViewport: { scale: 1.03 } }), 1);
+    assert.equal(viewportScale({ visualViewport: { scale: 1.04 } }), 1);
+    assert.equal(viewportScale({ visualViewport: { scale: 1.5 } }), 1.5);
 });

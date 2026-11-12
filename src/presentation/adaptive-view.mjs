@@ -14,6 +14,7 @@ export function createAdaptiveView(options) {
         switching = false,
         studio = null,
         studioOpening = false,
+        latestEnsure = null,
         backupUrl = null;
     const contextOwner = viewId +'-accepted-context';
     let contextRegistered = false;
@@ -123,54 +124,58 @@ export function createAdaptiveView(options) {
     };
     placeholderActions.append(launch, retry, backup);
     placeholder.append(placeholderActions);
-    async function ensure(reload = false) {
-        const token = ++epoch, release = reload ? inner?.beginReconciliation?.() : null;
-        try {
-            const record = await (reload || (!inner && options.freshRead) ? sessions.load(active) : sessions.create(active));
-            if (disposed || token !== epoch) return null;
-            const next = (record.definition ?? record.defaults ?? record.initial)?.schemaVersion === 2 ? 'source'
-                : 'legacy';
-            await registerContext(next, token);
-            if (disposed || token !== epoch) return null;
-            if (!inner || format !== next) {
-                const wasOpen = inner?.isOpen();
-                let factory = createLegacyView;
-                if (next === 'source') factory = (await import ('./source-view.mjs')).createSourceView;
+    function ensure(reload = false) {
+        const work = (async () => {
+            const token = ++epoch, release = reload ? inner?.beginReconciliation?.() : null;
+            try {
+                const record = await (reload || (!inner && options.freshRead) ? sessions.load(active) : sessions.create(active));
                 if (disposed || token !== epoch) return null;
-                switching = true;
-                inner?.remove();
-                switching = false;
-                format = next;
-                placeholder.id = viewId +'-loading';
+                const next = (record.definition ?? record.defaults ?? record.initial)?.schemaVersion === 2 ? 'source'
+                    : 'legacy';
+                await registerContext(next, token);
+                if (disposed || token !== epoch) return null;
+                if (!inner || format !== next) {
+                    const wasOpen = inner?.isOpen();
+                    let factory = createLegacyView;
+                    if (next === 'source') factory = (await import ('./source-view.mjs')).createSourceView;
+                    if (disposed || token !== epoch) return null;
+                    switching = true;
+                    inner?.remove();
+                    switching = false;
+                    format = next;
+                    placeholder.id = viewId +'-loading';
+                    placeholder.remove();
+                    inner = factory({
+                        ...options,
+                        settingsContainer: wrapper,
+                        settingsId: viewId +'-settings-card',
+                        initialRecord: record,
+                        onReload: refresh,
+                        onSourceStudio: openStudio,
+                        onPanelClosed() {
+                            if (!switching) options.onPanelClosed?.();
+                        }
+                    });
+                    if (target) inner?.setManagedDock(target);
+                    if (wasOpen) await inner?.openQuiet();
+                } else if (reload) await inner.refresh(record);
                 placeholder.remove();
-                inner = factory({
-                    ...options,
-                    settingsContainer: wrapper,
-                    settingsId: viewId +'-settings-card',
-                    initialRecord: record,
-                    onReload: refresh,
-                    onSourceStudio: openStudio,
-                    onPanelClosed() {
-                        if (!switching) options.onPanelClosed?.();
-                    }
-                });
-                if (target) inner?.setManagedDock(target);
-                if (wasOpen) await inner?.openQuiet();
-            } else if (reload) await inner.refresh(record);
-            placeholder.remove();
-            return inner;
-        } catch (error) {
-            if (!disposed && token === epoch) {
-                clearContext();
-                placeholder.hidden = false;
-                if (!placeholder.isConnected) wrapper.append(placeholder);
-                status.textContent = error.message;
-                inner?.cancelActions();
+                return inner;
+            } catch (error) {
+                if (!disposed && token === epoch) {
+                    clearContext();
+                    placeholder.hidden = false;
+                    if (!placeholder.isConnected) wrapper.append(placeholder);
+                    status.textContent = error.message;
+                    inner?.cancelActions();
+                }
+                return null;
+            } finally {
+                release?.();
             }
-            return null;
-        } finally {
-            release?.();
-        }
+        })();
+        latestEnsure = work;
+        return work;
     }
     async function openStudio(seed, seedPresentation, scope, openImport = false) {
         if (disposed || studio || studioOpening) return;
@@ -210,6 +215,11 @@ export function createAdaptiveView(options) {
                     studio?.remove();
                     studio = null;
                     await refresh();
+                    while (latestEnsure) {
+                        const settled = latestEnsure;
+                        await settled;
+                        if (latestEnsure === settled) break;
+                    }
                     await inner?.open();
                     return result;
                 }

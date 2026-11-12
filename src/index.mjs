@@ -8,7 +8,7 @@ import { readRosterContext, rosterKey } from './adapter/roster-context.mjs';
 import { createRosterStorage } from './adapter/roster-storage.mjs';
 import { createRosterContinuity } from './adapter/roster-continuity.mjs';
 import { createRosterWorkspace } from './presentation/roster-workspace.mjs';
-import { createToolHub } from './adapter/tool-hub.mjs';
+import { createToolHub, inspectHostToolReadiness } from './adapter/tool-hub.mjs';
 import { createModelControl } from './adapter/model-control.mjs';
 import { createWorkQueue } from './adapter/work-queue.mjs';
 import { createFullRuntime } from './presentation/full-runtime.mjs';
@@ -130,7 +130,51 @@ export async function onActivate(nextUiConfig) {
     })();
     await initialization;
     if (!enabled) return;
-    settingsUI ??= createCompanionSettings({ document, preferences, diagnostics });
+    settingsUI ??= createCompanionSettings({
+        document,
+        preferences,
+        diagnostics,
+        hostReadiness: {
+            read: () => inspectHostToolReadiness(globalThis.SillyTavern?.getContext?.()),
+            subscribe: listener => {
+                const ctx = globalThis.SillyTavern?.getContext?.();
+                const source = ctx?.eventSource;
+                const types = ctx?.eventTypes;
+                const attached = [];
+                if (typeof source?.on === 'function' && types) {
+                    for (const name of [
+                        'OAI_PRESET_CHANGED_AFTER',
+                        'PRESET_CHANGED',
+                        'CHAT_COMPLETION_SETTINGS_READY',
+                        'SETTINGS_UPDATED',
+                        'MAIN_API_CHANGED',
+                        'CONNECTION_PROFILE_LOADED',
+                    ]) {
+                        const evt = types[name];
+                        if (!evt) continue;
+                        source.on(evt, listener);
+                        attached.push([source, evt, listener]);
+                    }
+                }
+                const watchedIds = new Set([
+                    'openai_function_calling',
+                    'custom_prompt_post_processing',
+                    'main_api',
+                    'settings_preset_openai',
+                ]);
+                const onDomChange = event => {
+                    if (watchedIds.has(event?.target?.id)) listener();
+                };
+                document.addEventListener?.('change', onDomChange);
+                document.addEventListener?.('input', onDomChange);
+                return () => {
+                    for (const [src, evt, fn] of attached.splice(0)) src.removeListener?.(evt, fn);
+                    document.removeEventListener?.('change', onDomChange);
+                    document.removeEventListener?.('input', onDomChange);
+                };
+            },
+        },
+    });
     if (!settingsUI) return;
     diagnostics.info('lifecycle', 'extension-activated', { version: EXTENSION_VERSION });
     toolHub.start();

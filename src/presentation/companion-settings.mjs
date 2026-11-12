@@ -6,6 +6,7 @@ import {
 import { createSettingsDrawer } from './settings-drawer.mjs';
 import {
     createAccordion,
+    createBlockerBanner,
     createButton,
     createSectionHeader,
     createToggleRow,
@@ -73,7 +74,7 @@ function appendBulletCopy(document, li, text) {
 }
 
 /** Global switches survive chat/workspace teardown while the extension is enabled. */
-export function createCompanionSettings({ document, preferences, diagnostics = null }) {
+export function createCompanionSettings({ document, preferences, diagnostics = null, hostReadiness = null }) {
     const container = document.querySelector('#extensions_settings');
     if (!container) return null;
     const logSource = diagnostics ?? fallbackDiagnostics();
@@ -121,13 +122,16 @@ export function createCompanionSettings({ document, preferences, diagnostics = n
     scopeSelect.onchange = () => preferences.set({ toolScope: scopeSelect.value });
     scopeField.append(scopeLabel, scopeSelect);
     list.append(scopeField);
+    const hostBlocker = createBlockerBanner(document);
+    hostBlocker.element.dataset.control = 'host-tool-blocker';
+    hostBlocker.element.setAttribute('role', 'status');
     const status = document.createElement('p');
     status.className = 'lpc-note lpc-status-banner'; status.dataset.control = 'preferences-status';
     status.setAttribute('role', 'status');
     const note = document.createElement('p');
     note.className = 'lpc-note';
     note.textContent = 'Global controls are saved across reloads and chats. Character-only scope omits stage backdrops from the AI prompt.';
-    section.append(header.element, list, status, note);
+    section.append(header.element, list, hostBlocker.element, status, note);
     drawer.content.append(section);
 
     const content = document.createElement('div');
@@ -327,18 +331,25 @@ export function createCompanionSettings({ document, preferences, diagnostics = n
         for (const [field, input] of inputs) { input.checked = state[field]; input.disabled = field !== 'enabled' && !state.enabled; }
         scopeSelect.value = state.toolScope ?? (state.toolCalling ? 'character' : 'off');
         scopeSelect.disabled = !state.enabled;
+        const readiness = state.enabled && state.toolCalling && scopeSelect.value !== 'off'
+            ? hostReadiness?.read?.()
+            : null;
+        hostBlocker.set(readiness && readiness.supported === false ? readiness.reason : '');
         status.dataset.tone = !state.enabled ? 'muted' : state.toolCalling ? 'active' : 'ready';
         status.textContent = !state.enabled ? 'LPC Companion is disabled. Saved companions are retained.'
             : state.toolCalling ? `Tool calling (${scopeSelect.value === 'scene' ? 'character + stage' : 'character only'}) is permitted for selected companions. Appearance sharing is ${state.shareContext ? 'on' : 'off'}.`
             : state.shareContext ? 'Manual controls are available. Appearance sharing is read-only while tool calling is off.'
             : 'Manual controls are available. No LPC appearance summary is added to the model prompt.';
     }
-    const unsubscribe = preferences.subscribe(update); update();
+    const unsubscribe = preferences.subscribe(update);
+    const unsubscribeHost = hostReadiness?.subscribe?.(update) ?? (() => {});
+    update();
     return {
         ...drawer,
         content,
         remove() {
             unsubscribe();
+            unsubscribeHost();
             unsubscribeDiagnostics();
             if (feedbackTimer) clearTimeout(feedbackTimer);
             if (copyIconTimer) clearTimeout(copyIconTimer);

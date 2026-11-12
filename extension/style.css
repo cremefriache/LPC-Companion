@@ -733,6 +733,10 @@
     -webkit-user-select: none;
 }
 .lpc-companion.lpc-panel[data-minimized=true]:not([data-dock=inline]) { cursor: grab; }
+.lpc-companion.lpc-panel[data-minimized=true][data-zoom-scaled=true]:not([data-dock=inline]) {
+    transform-origin: top left;
+    transform: scale(var(--lpc-vv-inv-scale, 1));
+}
 .lpc-companion.lpc-panel[data-minimized=true][data-tama-placed=true] { right: auto; bottom: auto; }
 .lpc-companion.lpc-panel[data-minimized=true][data-dragging=true] { cursor: grabbing; }
 .lpc-panel[data-minimized=true] > header { position: static; padding: 0 0 var(--lpc-space-2); margin: 0 0 var(--lpc-space-2); gap: var(--lpc-space-1); }
@@ -1162,8 +1166,13 @@
 .lpc-roster-settings .lpc-roster-setup summary { margin-bottom: 0; }
 .lpc-roster-settings .lpc-roster-setup button { font-size: var(--lpc-text-md); }
 .lpc-roster-settings canvas { display: block; margin: var(--lpc-space-1) auto; border-radius: var(--lpc-radius-md); border: 1px solid var(--lpc-line); }
-.lpc-roster-entry { border-top: 1px solid var(--lpc-line); padding-top: var(--lpc-space-2); margin-top: var(--lpc-space-2); font-size: var(--lpc-text-sm); }
-.lpc-roster-entry .lpc-note { font-family: var(--monoFontFamily, monospace); font-size: var(--lpc-text-xs); }
+.lpc-roster-entry { display: grid; gap: var(--lpc-space-1); border-top: 1px solid var(--lpc-line); padding-top: var(--lpc-space-2); margin-top: var(--lpc-space-2); font-size: var(--lpc-text-sm); }
+.lpc-roster-entry-head { display: flex; justify-content: space-between; align-items: safe center; flex-wrap: wrap; gap: var(--lpc-space-2); }
+.lpc-roster-entry-uuid { font-family: var(--monoFontFamily, monospace); font-size: var(--lpc-text-xs); }
+.lpc-roster-confirm-note { font-family: inherit; font-size: var(--lpc-text-xs); margin: 0; }
+.lpc-roster-remove-confirm { display: grid; gap: var(--lpc-space-2); padding-top: var(--lpc-space-2); border-top: 1px solid var(--lpc-line); }
+.lpc-roster-remove-confirm > .lpc-note { margin: 0; font-size: var(--lpc-text-xs); }
+.lpc-roster-remove-actions { display: flex; flex-wrap: wrap; gap: var(--lpc-space-2); }
 
 /* The shared workspace keeps its 380px width when companions are added. */
 .lpc-roster-workspace { width: 380px; }
@@ -1294,9 +1303,7 @@
 }
 .lpc-party-view > [role=status] { font-size: var(--lpc-text-xs); color: var(--lpc-muted); margin: var(--lpc-space-2) 0 0; }
 .lpc-party-detailbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: safe center;
+    display: grid;
     gap: var(--lpc-space-2);
     margin: var(--lpc-space-3) 0 var(--lpc-space-2);
     padding: var(--lpc-space-2) var(--lpc-space-3);
@@ -1305,6 +1312,8 @@
     border: 1px solid var(--lpc-line);
     font-size: var(--lpc-text-sm);
 }
+.lpc-party-detailbar-main { display: flex; justify-content: space-between; align-items: safe center; flex-wrap: wrap; gap: var(--lpc-space-2); }
+.lpc-party-detailbar-actions { display: flex; align-items: safe center; flex-wrap: wrap; gap: var(--lpc-space-1); }
 .lpc-companion .lpc-party-detailbar button { font-size: var(--lpc-text-sm); min-height: 36px; padding: var(--lpc-space-1) var(--lpc-space-2); }
 
 @media (max-width: 700px) {
@@ -1410,6 +1419,10 @@
     -webkit-backdrop-filter: blur(14px);
 }
 .lpc-floating-launcher[aria-expanded=true] { display: none; }
+.lpc-floating-launcher[data-zoom-scaled=true] {
+    transform-origin: top left;
+    transform: scale(var(--lpc-vv-inv-scale, 1));
+}
 .lpc-floating-launcher svg {
     width: 22px;
     height: 22px;

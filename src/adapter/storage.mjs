@@ -128,14 +128,18 @@ export function createHostStorage({ getContext, fetch, host, synchronizeCard = (
             const now = getContext();
             if (!equal(now.chat, beforeMemory) || !equal(now.chatMetadata, beforeMetadata)) throw Error('Chat changed during the save. Reload to reconcile before another update.');
             now.chatMetadata[STATE_KEY] = structuredClone(record);
-            // Only this namespace is changed in host messages; never replace live prose.
+            // Only this namespace is changed in host messages; never replace live prose or extra object identity.
             for (let i = 0; i < now.chat.length; i++) {
                 const value = messages[i]?.extra?.[MESSAGE_KEY];
                 if (value) {
-                    now.chat[i].extra = { ...now.chat[i].extra, [MESSAGE_KEY]: structuredClone(value) };
+                    if (!now.chat[i].extra || typeof now.chat[i].extra !== 'object') now.chat[i].extra = {};
+                    now.chat[i].extra[MESSAGE_KEY] = structuredClone(value);
                     const swipe = now.chat[i].swipe_info?.[now.chat[i].swipe_id];
                     const receipt = messages[i].swipe_info?.[messages[i].swipe_id]?.extra?.[MESSAGE_KEY];
-                    if (swipe && receipt) swipe.extra = { ...swipe.extra, [MESSAGE_KEY]: structuredClone(receipt) };
+                    if (swipe && receipt) {
+                        if (!swipe.extra || typeof swipe.extra !== 'object') swipe.extra = {};
+                        swipe.extra[MESSAGE_KEY] = structuredClone(receipt);
+                    }
                 }
             }
         }

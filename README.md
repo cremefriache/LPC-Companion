@@ -16,7 +16,7 @@ LPC Companion brings layered pixel-art characters into SillyTavern. Build a look
 
 Use the manual controls on their own, or opt into model tools for supported presentation changes. **No separate model subscription, extension-owned API credentials or server plugin is required for manual use.**
 
-> **Beta release · `0.2.0`** · [What's new](CHANGELOG.txt) · [Join our Discord](https://discord.gg/AhXhWaRKfM) *(support, beta testers & contributors)*
+> **Beta release · `0.2.1`** · [What's new](CHANGELOG.txt) · [Join our Discord](https://discord.gg/AhXhWaRKfM) *(support, beta testers & contributors)*
 >
 > Tested on **SillyTavern 1.18.0+** (`1.19.0` automated baseline; `1.18.0` and **Android** owner-accepted). Install through SillyTavern’s **Extensions → Install extension** using the repository URL.
 

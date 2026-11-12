@@ -105,7 +105,8 @@ export async function createSourceStudio({
         showAllItems = false,
         importedAssets = {},
         importRead = 0,
-        importNotices = [];
+        importNotices = [],
+        draftNotices = [];
     const effectiveAssets = () => ({ ...getEmbeddedAssets(), ...importedAssets });
     const status = el('p', 'Loading preview…', 'lpc-note lpc-status-banner');
     status.setAttribute('role', 'status');
@@ -286,9 +287,14 @@ export async function createSourceStudio({
                 slots.input.value = entry.slot;
             }
             const selId = draft.selected();
+            const previousRest = draft.outfit()?.rest?.actionId;
             const next = toggleClosetLayer(draft.read(), selId, entry, catalog, null);
             draft.replace(next);
             draft.select(selId);
+            const nextRest = draft.outfit()?.rest?.actionId;
+            if (previousRest && nextRest && previousRest !== nextRest) {
+                draftNotices = [`Resting pose adjusted to "${nextRest}" (frame 0) because this outfit has no "${previousRest}" sheet.`];
+            }
         }),
         onRecolorEntry: (entry, channelName, newColor) => change(() => {
             const selId = draft.selected(),
@@ -651,7 +657,10 @@ export async function createSourceStudio({
         importRead++;
         try {
             const identity = JSON.stringify(draft.read().identity);
+            draftNotices = [];
             operation();
+            const consumed = draft.consumeNotices();
+            if (consumed.length) draftNotices = consumed;
             if (JSON.stringify(draft.read().identity) !== identity) importNotices = [];
             sync();
             void preview();
@@ -678,7 +687,7 @@ export async function createSourceStudio({
             player.publish(prepared.sheet, p.facing);
             stage.publish(background);
             valid = true;
-            status.textContent = [sourcePresentationNotice(prepared, true), ...importNotices].join(' ');
+            status.textContent = [sourcePresentationNotice(prepared, true), ...draftNotices, ...importNotices].join(' ');
             apply.disabled = busy;
         } catch (error) {
             if (!disposed && token === epoch) status.textContent = sourceProblem(error, catalog);
@@ -701,9 +710,11 @@ export async function createSourceStudio({
                     }
                 );
             draft.replace(imported.definition);
+            draftNotices = [];
             importedAssets = imported.embeddedAssets ?? {};
-            importNotices = [...new Set((imported.warnings ?? []).filter(w => w.code === 'reviewed_shared_eye_color')
-                .map(w => w.message))];
+            importNotices = [...new Set((imported.warnings ?? []).filter(
+                w => w.code === 'reviewed_shared_eye_color' || w.code === 'fallback_rest_action'
+            ).map(w => w.message))];
             sync();
             await preview();
         } catch (error) {

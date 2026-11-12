@@ -95,8 +95,37 @@ export function upgradeCuratedDefinitionToSource(v1Def, fullCatalog, fullState) 
 }
 /** Local editor operations. Invalid intermediate combinations remain local until validated. */
 export function sourceDraft(definition, catalog) {
-    let value = structuredClone(definition), selected = value.startingPresentation.outfitId;
+    let value = structuredClone(definition), selected = value.startingPresentation.outfitId, notices = [];
     const outfit = () => value.outfits.find(o => o.id === selected);
+    function reconcileRestActions(targets = value.outfits) {
+        for (const o of targets) {
+            if (!o) continue;
+            try {
+                const all = { ...value.identity.selections, ...o.selections };
+                const checked = catalog.validateRecipe({
+                    schemaVersion: 2,
+                    sourceCommit: value.sourceCommit,
+                    bodyType: value.identity.bodyType,
+                    ...value.renderOptions,
+                    selections: Object.fromEntries(o.selectionOrder.map(s => [s, all[s]])),
+                });
+                const actions = catalog.resolvableActions(checked);
+                if (actions.length && !actions.includes(o.rest.actionId)) {
+                    const previousAction = o.rest.actionId;
+                    const nextAction = actions.includes('idle') ? 'idle' : (actions.includes('walk') ? 'walk' : actions[0]);
+                    o.rest = { actionId: nextAction, frame: 0 };
+                    notices.push(`Resting pose adjusted to "${nextAction}" (frame 0) because this outfit has no "${previousAction}" sheet.`);
+                }
+                if (actions.length && value.startingPresentation.outfitId === o.id
+                    && !actions.includes(value.startingPresentation.playback.actionId)) {
+                    const previousAction = value.startingPresentation.playback.actionId;
+                    const nextAction = actions.includes('idle') ? 'idle' : (actions.includes('walk') ? 'walk' : actions[0]);
+                    value.startingPresentation.playback = { mode: 'hold', actionId: nextAction, frame: 0 };
+                    notices.push(`Resting pose adjusted to "${nextAction}" (frame 0) because this outfit has no "${previousAction}" sheet.`);
+                }
+            } catch { /* Incompatible body/slot combinations surface during validation. */ }
+        }
+    }
     function normalize() {
         for (const o of value.outfits) {
             const all = { ...value.identity.selections, ...o.selections };
@@ -163,12 +192,17 @@ export function sourceDraft(definition, catalog) {
                 target[slot] = { itemId: id, variant: item.variants[0] ?? null, colors };
             } else delete target[slot];
             normalize();
+            if (id) {
+                reconcileRestActions(identitySlots.has(slot) ? value.outfits : [outfit()]);
+            }
         },
         setVariant(slot, variant) {
             const s = value.identity.selections[slot] ?? outfit().selections[slot],
                 item = catalog.item(s.itemId);
             if (!item.variants.includes(variant)) throw Error('Unknown variant.');
             s.variant = variant;
+            normalize();
+            reconcileRestActions(identitySlots.has(slot) ? value.outfits : [outfit()]);
         },
         setColor(slot, channel, color) {
             const s = value.identity.selections[slot] ?? outfit().selections[slot];
@@ -251,6 +285,14 @@ export function sourceDraft(definition, catalog) {
                 outfitId: selected,
                 playback: selected === p.outfitId ? p.playback : { mode: 'hold', ...outfit().rest }
             };
+        },
+        reconcileRestActions(outfitId = null) {
+            reconcileRestActions(outfitId ? value.outfits.filter(o => o.id === outfitId) : value.outfits);
+        },
+        consumeNotices() {
+            const out = [...new Set(notices)];
+            notices = [];
+            return out;
         },
         canonicalize() {
             // The source's linked-color rule is explicit. Canonicalization cannot omit physical slots.

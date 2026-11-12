@@ -10,7 +10,7 @@ import { createSourceRenderer } from './source-renderer.mjs';
 import { createStage, drawScenePreview } from './stage.mjs';
 import { selectionsFor } from '../catalog/catalog.mjs';
 import { matchesMemberResponse } from '../state/model-contract.mjs';
-import { createLuciteIcon, createSectionHeader } from './molecules.mjs';
+import { createButton, createLuciteIcon, createSectionHeader } from './molecules.mjs';
 
 /** At most two panels share one dock, so narrow views cannot cover each other. */
 export function createRosterWorkspace({
@@ -102,7 +102,7 @@ export function createRosterWorkspace({
     settingsActions.append(launch, reload);
     const management = el('details', undefined, 'lpc-files');
     management.dataset.control = 'roster-management';
-    management.append(el('summary', 'Manage & recover'), entries);
+    management.append(el('summary', 'Manage companions & backups'), entries);
     root.append(cardHead.element, note, status, settingsActions, setup, recovery, management);
     container.append(root);
     const initialDock = preferences?.get().dock ?? primarySessions?.get(active)?.dock ?? 'left';
@@ -124,20 +124,71 @@ export function createRosterWorkspace({
     dock.value = initialDock;
     const detailBar = el('div', undefined, 'lpc-party-detailbar');
     detailBar.hidden = true;
-    const detailLead = el('div', undefined, 'lpc-panel-title-wrap'),
+    const detailMain = el('div', undefined, 'lpc-party-detailbar-main'),
+        detailLead = el('div', undefined, 'lpc-panel-title-wrap'),
         detailTitle = el('strong', 'Companion controls'),
+        detailActions = el('div', undefined, 'lpc-party-detailbar-actions'),
+        partyRemoveBtn = createButton(document, {
+            label: 'Remove from chat',
+            icon: 'trash',
+            variant: 'ghost',
+            size: 'sm',
+            control: 'party-remove',
+            onClick: () => {
+                if (!selected || selected === 'primary' || !children.has(selected)) return;
+                pendingRemoveId = pendingRemoveId === selected ? null : selected;
+                updateSlots();
+            },
+        }),
         collapse = button(
             'Hide details',
             () => {
                 const previous = selected;
                 selected = null;
+                pendingRemoveId = null;
                 updateSlots();
                 party?.element.querySelector(`[data-party-member="${previous}"] [data-control=party-details]`)?.focus();
             },
             'party-collapse'
         );
+    partyRemoveBtn.hidden = true;
+    const detailConfirm = el('div', undefined, 'lpc-roster-remove-confirm');
+    detailConfirm.hidden = true;
+    detailConfirm.dataset.control = 'party-remove-prompt';
+    const detailConfirmNote = el('p', 'Removes from this chat only; character card defaults are kept.', 'lpc-note');
+    const detailConfirmActions = el('div', undefined, 'lpc-roster-remove-actions');
+    const partyConfirmRemoveBtn = createButton(document, {
+        label: 'Confirm remove',
+        icon: 'trash',
+        variant: 'danger',
+        size: 'sm',
+        control: 'party-remove-confirm',
+        onClick: () => {
+            if (!selected || selected === 'primary' || !children.has(selected)) return;
+            const targetId = selected;
+            const targetLabel = accepted.get(targetId)?.label
+                ?? rosters.get(scope)?.roster?.companions.find(c => c.companionId === targetId)?.label
+                ?? 'companion';
+            void removeCompanion(targetId, targetLabel);
+        },
+    });
+    const partyCancelRemoveBtn = createButton(document, {
+        label: 'Cancel',
+        variant: 'secondary',
+        size: 'sm',
+        control: 'party-remove-cancel',
+        onClick: () => {
+            pendingRemoveId = null;
+            updateSlots();
+            partyRemoveBtn.focus();
+        },
+    });
+    detailConfirmActions.append(partyConfirmRemoveBtn, partyCancelRemoveBtn);
+    detailConfirm.append(detailConfirmNote, detailConfirmActions);
     detailLead.append(createLuciteIcon(document, 'sliders', 'lpc-lucite-icon-sm'), detailTitle);
-    detailBar.append(detailLead, collapse);
+    detailActions.append(partyRemoveBtn, collapse);
+    detailMain.append(detailLead, detailActions);
+    detailBar.append(detailMain, detailConfirm);
     const grid = el('div', undefined, 'lpc-roster-grid');
     headerLead.append(createLuciteIcon(document, 'users', 'lpc-lucite-icon-sm'), el('strong', 'Companions'));
     header.append(headerLead, dock, button('Close companions', () => minimize(), 'workspace-hide'));
@@ -169,6 +220,8 @@ export function createRosterWorkspace({
         loadingRoster = false,
         previewBusy = false,
         adding = false,
+        removing = false,
+        pendingRemoveId = null,
         party = null,
         selected = null;
     const accepted = new Map();
@@ -222,6 +275,16 @@ export function createRosterWorkspace({
         for (const [id, node]of slots) {
             node.hidden = id !== selected || (id === 'primary' ? !primary?.isOpen() : !children.get(id)?.isOpen());
             if (node.hidden) viewFor(id)?.endInspectorCue();
+        }
+        const removable = Boolean(selected && selected !== 'primary' && children.has(selected));
+        if (!removable) pendingRemoveId = null;
+        partyRemoveBtn.hidden = !removable;
+        detailConfirm.hidden = !removable || pendingRemoveId !== selected;
+        if (removable && pendingRemoveId === selected) {
+            const label = accepted.get(selected)?.label
+                ?? rosters.get(scope)?.roster?.companions.find(c => c.companionId === selected)?.label
+                ?? 'this companion';
+            detailConfirmNote.textContent = `Remove ${label} from this chat only? Their character card defaults are kept.`;
         }
         detailBar.hidden = !selected;
         for (const row of party?.element.querySelectorAll('[data-party-member]') ?? []) {
@@ -357,15 +420,42 @@ export function createRosterWorkspace({
         if (disposed) return;
         const record = rosters.get(scope),
             full = (record?.roster?.companions.length ?? 0) >= (scope.kind === 'group' ? 2 : 1),
-            blocked = Boolean(record?.conflict);
-        source.disabled = loadingRoster || adding || full || blocked;
-        previewButton.disabled = loadingRoster || adding || previewBusy || full || blocked || !source.options.length;
-        addButton.disabled = loadingRoster || adding || !preview?.ready || blocked;
+            blocked = Boolean(record?.conflict),
+            busy = loadingRoster || adding || removing;
+        source.disabled = busy || full || blocked;
+        previewButton.disabled = busy || previewBusy || full || blocked || !source.options.length;
+        addButton.disabled = busy || !preview?.ready || blocked;
         addButton.hidden = !preview?.ready;
-        cancelButton.disabled = adding;
+        cancelButton.disabled = adding || removing;
         cancelButton.hidden = !preview;
-        reload.disabled = loadingRoster || adding;
+        reload.disabled = busy;
+        partyRemoveBtn.disabled = busy || blocked;
+        partyConfirmRemoveBtn.disabled = busy || blocked;
+        partyCancelRemoveBtn.disabled = removing;
+        for (const btn of entries.querySelectorAll('button')) {
+            btn.disabled = busy || (btn.dataset.control !== 'roster-remove-cancel' && blocked);
+        }
         syncFloatingState();
+    }
+    async function removeCompanion(id, label) {
+        if (removing || disposed) return;
+        removing = true;
+        updateControls();
+        try {
+            await rosters.remove(scope, id, () => !disposed);
+            if (disposed) return;
+            pendingRemoveId = null;
+            if (selected === id) selected = null;
+            await refresh();
+            if (!disposed) {
+                status.textContent = `Removed ${label} from this chat. Their character card defaults were not changed.`;
+            }
+        } catch (error) {
+            if (!disposed) status.textContent = error.message;
+        } finally {
+            removing = false;
+            updateControls();
+        }
     }
     function clearPreview() {
         epoch++;
@@ -554,6 +644,21 @@ export function createRosterWorkspace({
             launch.hidden = !multi;
             if (multi && wantsOpen) ensureParty();
             if (primary && multi) primary.setManagedDock(slot('primary'));
+            if (!multi) {
+                selected = null;
+                pendingRemoveId = null;
+                party?.dispose();
+                party = null;
+                accepted.clear();
+                workspace.hidden = true;
+                if (primary) {
+                    primary.setManagedDock(null);
+                    slots.get('primary')?.remove();
+                    slots.delete('primary');
+                }
+                updateSlots();
+                floating.setExpanded(Boolean(primary?.isOpen()));
+            }
             for (const entry of record.roster?.companions ?? [])
                 if (!children.has(entry.companionId)) {
                     const sessions = rosters.facade(scope, entry.companionId),
@@ -609,10 +714,51 @@ export function createRosterWorkspace({
             for (const key of accepted.keys())
                 if (!validKeys.has(key)) accepted.delete (key);
             entries.replaceChildren();
-            for (const entry of record.roster?.companions ?? []) {
+            const rosterCompanions = record.roster?.companions ?? [];
+            if (!rosterCompanions.length) {
+                entries.append(el('p', 'No additional companions in this chat.', 'lpc-note'));
+            }
+            for (const entry of rosterCompanions) {
                 const box = el('div', undefined, 'lpc-roster-entry');
                 box.dataset.companionId = entry.companionId;
-                box.append(el('strong', entry.label), el('p', `Companion UUID: ${entry.companionId}`, 'lpc-note'));
+                const entryHead = el('div', undefined, 'lpc-roster-entry-head');
+                const confirmWrap = el('div', undefined, 'lpc-roster-remove-confirm');
+                confirmWrap.hidden = true;
+                confirmWrap.dataset.control = 'roster-remove-prompt';
+                const removeBtn = createButton(document, {
+                    label: 'Remove from this chat',
+                    icon: 'trash',
+                    variant: 'ghost',
+                    size: 'sm',
+                    control: 'roster-remove',
+                    onClick: () => {
+                        confirmWrap.hidden = !confirmWrap.hidden;
+                    },
+                });
+                const confirmNote = el('p', `Remove ${entry.label} from this chat only? Their character card defaults are kept.`, 'lpc-note lpc-roster-confirm-note');
+                const confirmActions = el('div', undefined, 'lpc-roster-remove-actions');
+                const confirmBtn = createButton(document, {
+                    label: 'Confirm remove',
+                    icon: 'trash',
+                    variant: 'danger',
+                    size: 'sm',
+                    control: 'roster-remove-confirm',
+                    onClick: () => void removeCompanion(entry.companionId, entry.label),
+                });
+                const cancelBtn = createButton(document, {
+                    label: 'Cancel',
+                    variant: 'secondary',
+                    size: 'sm',
+                    control: 'roster-remove-cancel',
+                    onClick: () => {
+                        confirmWrap.hidden = true;
+                        removeBtn.focus();
+                    },
+                });
+                confirmActions.append(confirmBtn, cancelBtn);
+                confirmWrap.append(confirmNote, confirmActions);
+                entryHead.append(el('strong', entry.label), removeBtn);
+                box.append(entryHead, el('p', `Companion UUID: ${entry.companionId}`, 'lpc-note lpc-roster-entry-uuid'), confirmWrap);
                 const problem = record.entries.get(entry.companionId)?.conflict;
                 if (problem) {
                     box.append(el('p', problem, 'lpc-note'));
